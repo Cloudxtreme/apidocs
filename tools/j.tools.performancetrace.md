@@ -1,3 +1,9 @@
+## j.tools.performancetrace
+
+- /opt/jumpscale7/lib/JumpScale/baselib/performancetrace/PerformanceTrace.py
+
+    
+
     #### def profile(methodstatement, locals=\{\},globals=\{\}) 
     
     create a wrapper method which has no args and then pass that wrapper method to this method as first arg

@@ -1,3 +1,9 @@
+## j.logger.utils
+
+- /opt/jumpscale7/lib/JumpScale/core/logging/LogHandler.py
+
+Some log related utilities.
+
     #### def trace(level=5, enabled=True) 
     
     Decorator factory. Use enabled to avoid the logging overhead when it's

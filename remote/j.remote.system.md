@@ -1,3 +1,9 @@
+## j.remote.system
+
+- /opt/jumpscale7/lib/JumpScale/baselib/remote/remotesystem/RemoteSystem.py
+- Properties
+    - connections
+
     #### def connect(ip, login="", password="", timeout=120.0, port=22) 
     
     Creates a connection object to a remote system via ssh.

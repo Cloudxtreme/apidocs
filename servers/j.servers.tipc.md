@@ -1,3 +1,8 @@
+## j.servers.tipc
+
+- /opt/jumpscale7/lib/JumpScale/grid/tipc/TipcFactory.py
+
+    #### def getClient(servaddr, category="core", org="myorg", user="root", passwd="passwd", ssl=False, roles=[]) 
     #### def getServer(servaddr, sslorg=None, ssluser=None, sslkeyvaluestor=None) 
     
     HOW TO USE:
