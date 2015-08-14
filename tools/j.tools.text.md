@@ -34,11 +34,20 @@
     - getInt
     - getList
 
-    #### @staticmethod 
-    #### @staticmethod 
-    #### @staticmethod 
-    #### @staticmethod 
+#### @staticmethod 
+
     
+
+#### @staticmethod 
+
+    
+
+#### @staticmethod 
+
+    
+
+#### @staticmethod 
+
     look for @ASK statements in text, where found replace with input from user
     
     syntax for ask is:
@@ -54,30 +63,46 @@
         dropdownvals is comma separated list of values to ask for when type dropdown
     
     @ASK can be at any position in the text
-    #### @staticmethod 
-    
+
+#### @staticmethod 
+
     look for [something,2] the comma needs to be converted to \k
-    #### @staticmethod 
-    
+
+#### @staticmethod 
+
     look for 'something,else' the comma needs to be converted to \k
-    #### @staticmethod 
-    
+
+#### @staticmethod 
+
     look for \{\{\}\} in code and evaluate as python result is converted back to str
-    #### @staticmethod 
-    #### @staticmethod 
+
+#### @staticmethod 
+
     
+
+#### @staticmethod 
+
     keys are always treated as string
     @type can be int,bool or float (otherwise its always str)
-    #### @staticmethod 
-    #### @staticmethod 
-    #### @staticmethod 
+
+#### @staticmethod 
+
     
+
+#### @staticmethod 
+
+    
+
+#### @staticmethod 
+
     @type can be int,bool or float (otherwise its always str)
-    #### @staticmethod 
-    
+
+#### @staticmethod 
+
     look for \{\{\}\} return as list
-    #### @staticmethod 
-    
+
+#### @staticmethod 
+
     'something ' removes ''
     all spaces & commas & : inside ' '  are converted
      SPACE -> \S
@@ -85,14 +110,25 @@
      , -> \K
      : -> \D
      \n -> \N
-    #### @staticmethod 
-    #### @staticmethod 
-    #### @staticmethod 
-    #### @staticmethod 
+
+#### @staticmethod 
+
     
+
+#### @staticmethod 
+
+    
+
+#### @staticmethod 
+
+    
+
+#### @staticmethod 
+
     remove all spaces at beginning & end of line when relevant
-    #### @staticmethod 
-    
+
+#### @staticmethod 
+
     do reverse of:
                 SPACE -> \S
                 " -> \Q
@@ -100,34 +136,59 @@
                 : -> \D
                 
     -> \N
-    #### @staticmethod 
-    
+
+#### @staticmethod 
+
     do reverse of:
          SPACE -> \S
          " -> \Q
          , -> \K
          : -> \D
          \n -> return
-    #### @staticmethod 
-    #### @staticmethod 
+
+#### @staticmethod 
+
     
+
+#### @staticmethod 
+
     @param onlyPrefix if True means only when prefix found will be returned, rest discarded
-    #### @staticmethod 
-    
+
+#### @staticmethod 
+
     there can be chars for prefix (e.g. '< :*: aline'  and this function looking for :*: would still work and ignore '< ')
     @param onlyPrefix if True means only when prefix found will be returned, rest discarded
-    #### @staticmethod 
-    
+
+#### @staticmethod 
+
     try to convert a python object to string representation works for None, bool, integer, float, dict, list
-    #### @staticmethod 
-    #### @staticmethod 
-    #### @staticmethod 
+
+#### @staticmethod 
+
     
+
+#### @staticmethod 
+
+    
+
+#### @staticmethod 
+
     convert list, dict of strings 
     or convert 1 string to python objects
-    #### @staticmethod 
-    #### @staticmethod 
+
+#### @staticmethod 
+
     
+
+#### @staticmethod 
+
     process string so it can be used in a path on windows or linux
-    #### @staticmethod 
-    #### @staticmethod 
+
+#### @staticmethod 
+
+    
+
+#### @staticmethod 
+
+    
+

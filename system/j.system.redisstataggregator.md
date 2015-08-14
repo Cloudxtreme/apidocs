@@ -4,5 +4,11 @@
 - Properties
     - redis
 
-    #### def popStats(key) 
-    #### def pushStats(key, data) 
+#### def popStats(key) 
+
+    
+
+#### def pushStats(key, data) 
+
+    
+

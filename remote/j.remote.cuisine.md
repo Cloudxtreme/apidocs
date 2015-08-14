@@ -5,5 +5,11 @@
     - api
     - fabric
 
-    #### def connect(addr,port,passwd=None) 
-    #### def help() 
+#### def connect(addr,port,passwd=None) 
+
+    
+
+#### def help() 
+
+    
+

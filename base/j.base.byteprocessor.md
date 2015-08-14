@@ -14,14 +14,39 @@
 
 ByteProcessor
 
-    #### @staticmethod 
-    #### @staticmethod 
-    #### @staticmethod 
+#### @staticmethod 
+
     
+
+#### @staticmethod 
+
+    
+
+#### @staticmethod 
+
     returns DispersedBlock object
-    #### @staticmethod 
-    #### @staticmethod 
-    #### @staticmethod 
-    #### @staticmethod 
-    #### @staticmethod 
-    #### @staticmethod 
+
+#### @staticmethod 
+
+    
+
+#### @staticmethod 
+
+    
+
+#### @staticmethod 
+
+    
+
+#### @staticmethod 
+
+    
+
+#### @staticmethod 
+
+    
+
+#### @staticmethod 
+
+    
+

@@ -2,6 +2,7 @@
 
 - /opt/jumpscale7/lib/JumpScale/lib/ssh/ubuntu/manager.py
 
-    #### def get(connection=None) 
-    
+#### def get(connection=None) 
+
     Returns Ubuntu Manager
+

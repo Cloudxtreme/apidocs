@@ -8,6 +8,15 @@
     - config
     - id
 
-    #### def getLocalIPAccessibleByGridMaster() 
-    #### def init(description="",instance=1) 
-    #### def isGridMasterLocal() 
+#### def getLocalIPAccessibleByGridMaster() 
+
+    
+
+#### def init(description="",instance=1) 
+
+    
+
+#### def isGridMasterLocal() 
+
+    
+

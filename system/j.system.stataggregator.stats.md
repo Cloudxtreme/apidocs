@@ -2,7 +2,19 @@
 
 - /opt/jumpscale7/lib/JumpScale/baselib/redis/Redis.py
 
-    #### def copy() 
-    #### def iteritems() 
-    #### def keys() 
-    #### def pop(key) 
+#### def copy() 
+
+    
+
+#### def iteritems() 
+
+    
+
+#### def keys() 
+
+    
+
+#### def pop(key) 
+
+    
+

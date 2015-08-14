@@ -2,9 +2,12 @@
 
 - /opt/jumpscale7/lib/JumpScale/grid/tipc/TipcFactory.py
 
-    #### def getClient(servaddr, category="core", org="myorg", user="root", passwd="passwd", ssl=False, roles=[]) 
-    #### def getServer(servaddr, sslorg=None, ssluser=None, sslkeyvaluestor=None) 
+#### def getClient(servaddr, category="core", org="myorg", user="root", passwd="passwd", ssl=False, roles=[]) 
+
     
+
+#### def getServer(servaddr, sslorg=None, ssluser=None, sslkeyvaluestor=None) 
+
     HOW TO USE:
     daemon=j.servers.tornado.getServer(port=4444)
     
@@ -22,3 +25,4 @@
     daemon.addCMDsInterface(MyCommands,category="optional")  #pass as class not as object !!! chose category if only 1 then can leave ""
     
     daemon.start()
+

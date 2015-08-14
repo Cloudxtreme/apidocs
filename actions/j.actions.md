@@ -4,20 +4,31 @@
 
 Manager controlling actions
 
-    #### def clean() 
-    
+#### def clean() 
+
     Clean the list of running actions
-    #### def getActionNamesDone(action) 
-    #### def hasRunningActions() 
+
+#### def getActionNamesDone(action) 
+
     
+
+#### def hasRunningActions() 
+
     Check whether actions are currently running
     
     @returns: Whether actions are runnin
     @rtype: bool
-    #### def reset(category=None) 
-    #### def setActionNamesDone(action) 
-    #### def start(description="", cmds="",action=None,actionRecover=None,actionArgs=\{\},category="unknown",name="unknown",\ 
+
+#### def reset(category=None) 
+
     
+
+#### def setActionNamesDone(action) 
+
+    
+
+#### def start(description="", cmds="",action=None,actionRecover=None,actionArgs=\{\},category="unknown",name="unknown",\ 
+
     @param id is unique id which allows finding back of action
     @param description: Action description (what are we doing)
     @param errorMessage: message to give when error
@@ -28,3 +39,4 @@ Manager controlling actions
     @param actionArgs is dict with arguments
     @param cmds is list of commands to execute on os
     @param state : INIT,RUNNING,OK,ERROR
+

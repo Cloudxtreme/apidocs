@@ -6,10 +6,23 @@
     - users
     - groups
 
-    #### def getCodeManagerForFile(path) 
-    #### def getUserId(username) 
-    #### def parse(path) 
+#### def getCodeManagerForFile(path) 
+
     
+
+#### def getUserId(username) 
+
+    
+
+#### def parse(path) 
+
     directory to walk over and find story, task, ... statements
-    #### def setgroups(config) 
-    #### def setusers(config) 
+
+#### def setgroups(config) 
+
+    
+
+#### def setusers(config) 
+
+    
+

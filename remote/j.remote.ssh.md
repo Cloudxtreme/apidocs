@@ -2,8 +2,8 @@
 
 - /opt/jumpscale7/lib/JumpScale/baselib/remote/ssh/SSHTool.py
 
-    #### def getSSHClient(password,  host="localhost", username="root", port=22,timeout=10) 
-    
+#### def getSSHClient(password,  host="localhost", username="root", port=22,timeout=10) 
+
     Create a new SSHClient instance.
     
     @param host: Hostname to connect to
@@ -17,11 +17,14 @@
     
     @return: SSHClient instance
     @rtype: SSHClient
-    #### def getSSHClientUsingKey(keypath,host="localhost",username="root",port=22,timeout=10) 
-    
+
+#### def getSSHClientUsingKey(keypath,host="localhost",username="root",port=22,timeout=10) 
+
     Create a new SSHClient instance.
     @return: SSHClient instance
     @rtype: SSHClient
-    #### def getSSHClientUsingSSHAgent(host="localhost",username="root",port=22,timeout=10) 
-    
+
+#### def getSSHClientUsingSSHAgent(host="localhost",username="root",port=22,timeout=10) 
+
     Create a new SSHClient instance using ssh agent.
+

@@ -10,14 +10,21 @@ self.width=120
 self.indent=0 #current indentation of messages send to console
 self.reformat=False #if True will make sure message fits nicely on screen
 
-    #### def askArrayRow(array,header=True,descr="",returncol=None) 
-    #### def askChoice(choicearray, descr="", sort=True,maxchoice=25,height=30,autocomplete=False) 
+#### def askArrayRow(array,header=True,descr="",returncol=None) 
+
     
+
+#### def askChoice(choicearray, descr="", sort=True,maxchoice=25,height=30,autocomplete=False) 
+
     @param choicearray is list or dict, when dict key needs to be the object to return,
            the value of the dics is what needs to be returned, the key is the str representation
-    #### def askChoiceMultiple(choicearray, descr=None, sort=True) 
-    #### def askInteger(question, defaultValue = None, minValue = None, maxValue = None, retry = -1, validate=None) 
+
+#### def askChoiceMultiple(choicearray, descr=None, sort=True) 
+
     
+
+#### def askInteger(question, defaultValue = None, minValue = None, maxValue = None, retry = -1, validate=None) 
+
     Get an integer response on asked question
     
     @param question: Question need to get response on
@@ -28,8 +35,9 @@ self.reformat=False #if True will make sure message fits nicely on screen
     @param validate: Function to validate provided value
     
     @return: integer representing the response on the question
-    #### def askIntegers(question, invalid_message="invalid input please try again.", min=None, max=None) 
-    
+
+#### def askIntegers(question, invalid_message="invalid input please try again.", min=None, max=None) 
+
     Ask the user for multiple integers
     
     @param question: question that will be echoed before the user needs to input integers
@@ -42,8 +50,9 @@ self.reformat=False #if True will make sure message fits nicely on screen
     @type max: number of None
     @return: the input numbers
     @rtype: list<number>
-    #### def askMultiline(question, escapeString='.') 
-    
+
+#### def askMultiline(question, escapeString='.') 
+
     Ask the user a question that needs a multi-line answer.
     
     @param question: The question that should be asked to the user
@@ -51,8 +60,9 @@ self.reformat=False #if True will make sure message fits nicely on screen
     @param escapeString: Optional custom escape string that is used by the user to indicate input has ended.
     @type escapeString: string
     @return: string multi-line reply by the user, always ending with a newline
-    #### def askPassword(question, confirm=True, regex=None, retry=-1, validate=None) 
-    
+
+#### def askPassword(question, confirm=True, regex=None, retry=-1, validate=None) 
+
     Present a password input question to the user
     
     @param question: Password prompt message
@@ -64,8 +74,9 @@ self.reformat=False #if True will make sure message fits nicely on screen
     
     @returns: Password provided by the user
     @rtype: string
-    #### def askString(question, defaultparam='', regex=None, retry=-1, validate=None) 
-    
+
+#### def askString(question, defaultparam='', regex=None, retry=-1, validate=None) 
+
     Get a string response on a question
     
     @param question: Question to respond to
@@ -76,8 +87,9 @@ self.reformat=False #if True will make sure message fits nicely on screen
     
     @returns: Response provided by the user
     @rtype: string
-    #### def askYesNo(message="") 
-    
+
+#### def askYesNo(message="") 
+
     Display a yes/no question and loop until a valid answer is entered
     
     @param message: Question message
@@ -85,21 +97,28 @@ self.reformat=False #if True will make sure message fits nicely on screen
     
     @return: Positive or negative answer
     @rtype: bool
-    #### def cls() 
-    
+
+#### def cls() 
+
     clear screen
-    #### def echo(msg,indent=None,withStar=False,prefix="",log=False,lf=True) 
-    
+
+#### def echo(msg,indent=None,withStar=False,prefix="",log=False,lf=True) 
+
     Display some text to the end-user, use this method instead of print
     @param indent std, will use indent from console object (same for all), this param allows to overrule
             will only work when j.console.reformat==True
-    #### def echoDict(dictionary,withStar=False,indent=None) 
-    #### def echoListItem(msg) 
+
+#### def echoDict(dictionary,withStar=False,indent=None) 
+
     
+
+#### def echoListItem(msg) 
+
     Echo a list item
     @param msg: Message to display
-    #### def echoListItems(messages, sort=False) 
-    
+
+#### def echoListItems(messages, sort=False) 
+
     Echo a sequence (iterator, generator, list, set) as list items
     
     @param messages: messages that need to be written to the console as list items
@@ -108,24 +127,47 @@ self.reformat=False #if True will make sure message fits nicely on screen
     @type sort: bool
     @param loglevel: Log level
     @type loglevel: number
-    #### def echoListWithPrefix(messages,prefix) 
-    
+
+#### def echoListWithPrefix(messages,prefix) 
+
     print messages
-    #### def echoWithPrefix(message,prefix,withStar=False,indent=None) 
-    
+
+#### def echoWithPrefix(message,prefix,withStar=False,indent=None) 
+
     print a message which is formatted with a prefix
-    #### def enableOutput() 
-    #### def formatMessage(message,prefix="",withStar=False,indent=0,width=0,removeemptylines=True) 
+
+#### def enableOutput() 
+
     
+
+#### def formatMessage(message,prefix="",withStar=False,indent=0,width=0,removeemptylines=True) 
+
     Reformat the message to display to the user and calculate length
     @param withStar means put * in front of message
     @returns: Length of last line and message to display
     @rtype: tuple<number, string>
-    #### def hideOutput() 
-    #### def printOutput() 
-    #### def rawInputPerChar(callback,params) 
+
+#### def hideOutput() 
+
     
+
+#### def printOutput() 
+
+    
+
+#### def rawInputPerChar(callback,params) 
+
     when typing, char per char will be returned
-    #### def showArray(array,header=True) 
-    #### def showOutput() 
-    #### def transformDictToMessage(dictionary,withStar=False,indent=None) 
+
+#### def showArray(array,header=True) 
+
+    
+
+#### def showOutput() 
+
+    
+
+#### def transformDictToMessage(dictionary,withStar=False,indent=None) 
+
+    
+

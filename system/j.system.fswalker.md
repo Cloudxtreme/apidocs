@@ -6,9 +6,12 @@
     - find
     - walkFunctional
 
-    #### @staticmethod 
-    #### @staticmethod 
+#### @staticmethod 
+
     
+
+#### @staticmethod 
+
     Walk through filesystem and execute a method per file
     
     Walk through all files and folders starting at C\{root\}, recursive by
@@ -52,8 +55,9 @@
     @param pathRegexIncludes / Excludes  match paths to array of regex expressions (array(strings))
     @param contentRegexIncludes / Excludes match content of files to array of regex expressions (array(strings))
     @param depths array of depth values e.g. only return depth 0 & 1 (would mean first dir depth and then 1 more deep) (array(int))
-    #### @staticmethod 
-    
+
+#### @staticmethod 
+
     Walk through filesystem and execute a method per file and dirname
     
     Walk through all files and folders starting at C\{root\}, recursive by
@@ -83,3 +87,4 @@
     
     @param root: Filesystem root to crawl (string)
     #@todo complete
+

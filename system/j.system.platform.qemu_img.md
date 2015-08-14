@@ -2,13 +2,14 @@
 
 - /opt/jumpscale7/lib/JumpScale/lib/qemu_img/qemu_img.py
 
-    #### def commit(fileName, diskImageFormat) 
-    
+#### def commit(fileName, diskImageFormat) 
+
     Commit the changes recorded in <fileName> in its base image.
     @param fileName: a disk image filename
     @param diskImageFormat: disk image format
-    #### def convert(fileName, diskImageFormat, outputFileName, outputFormat, compressTargetImage=False, encryptTargetImage=False, useCompatibilityLevel6=False, isTargetImageTypeSCSI=False, logger=None) 
-    
+
+#### def convert(fileName, diskImageFormat, outputFileName, outputFormat, compressTargetImage=False, encryptTargetImage=False, useCompatibilityLevel6=False, isTargetImageTypeSCSI=False, logger=None) 
+
     Convert the disk image <fileName> to disk image <outputFileName> using format <outputFormat>.
     It can be optionally encrypted ("-e" option) or compressed ("-c" option).
     Only the format "qcow" supports encryption or compression. The compression is read-only.
@@ -24,8 +25,9 @@
     @param isTargetImageTypeSCSI: indicates that the target image must be of type SCSI (vmdk format only)
     @param logger: Callback method to report progress
     @type logger: function
-    #### def create(fileName, diskImageFormat, size, baseImage=None, encryptTargetImage=False, useCompatibilityLevel6=False, isTargetImageTypeSCSI=False) 
-    
+
+#### def create(fileName, diskImageFormat, size, baseImage=None, encryptTargetImage=False, useCompatibilityLevel6=False, isTargetImageTypeSCSI=False) 
+
     Create a new disk image <fileName> of size <size> and format <diskImageFormat>.
     If base_image is specified, then the image will record only the differences from base_image. No size needs to be specified in this case. base_image will never be modified unless you use the "commit" monitor command.
     @param fileName: a disk image filename
@@ -35,8 +37,9 @@
     @param encryptTargetImage: indicates that the target image must be encrypted (qcow format only)
     @param useCompatibilityLevel6: indicates that the target image must use compatibility level 6 (vmdk format only)
     @param isTargetImageTypeSCSI: indicates that the target image must be of type SCSI (vmdk format only)
-    #### def info(fileName, diskImageFormat=None, chain=False, unit='K') 
-    
+
+#### def info(fileName, diskImageFormat=None, chain=False, unit='K') 
+
     Give information about the disk image <fileName>. Use it in particular to know the size reserved on
     disk which can be different from the displayed size. If VM snapshots are stored in the disk image,
     they are displayed too.
@@ -44,3 +47,4 @@
     @param fileName: a disk image filename
     @param diskImageFormat: disk image format
     @result: dict with info in KB
+

@@ -4,7 +4,19 @@
 - Properties
     - actorsinfo
 
-    #### def getActorsLoader() 
-    #### def getBucketsLoader() 
-    #### def getSpacesLoader() 
-    #### def getTemplatesPath() 
+#### def getActorsLoader() 
+
+    
+
+#### def getBucketsLoader() 
+
+    
+
+#### def getSpacesLoader() 
+
+    
+
+#### def getTemplatesPath() 
+
+    
+
