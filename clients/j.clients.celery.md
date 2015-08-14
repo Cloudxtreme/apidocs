@@ -5,13 +5,13 @@
     - app
     - actors
 
-### def getCodeServer(path) (l48)
+#### def celeryClient(actorName,url="redis//localhost9999/0",actorsPath="actors",local=False) 
 
-### def getCodeClient(path,actorName) (l56)
+#### def celeryStart(url="redis//localhost9999/0",concurrency=4,actorsPath="actors") 
 
-### def flowerStart(url="redis//localhost9999/0") (l11)
+#### def flowerStart(url="redis//localhost9999/0") 
 
-### def celeryStart(url="redis//localhost9999/0",concurrency=4,actorsPath="actors") (l64)
+#### def getCodeClient(path,actorName) 
 
-### def celeryClient(actorName,url="redis//localhost9999/0",actorsPath="actors",local=False) (l89)
+#### def getCodeServer(path) 
 

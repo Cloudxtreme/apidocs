@@ -10,35 +10,35 @@
     - appnames
     - specs
 
-### def parseSpecs(specpath,appname,actorname) (l796)
+#### def addSpec(spec) 
 
-@param specpath if empty will look for path specs in current dir
-
-### def resetMemNonSystem() (l782)
-
-### def getActorSpec(app,name,raiseError=True) (l575)
-
-### def findSpec(query="",appname="",actorname="",specname="",type="",findFromSpec=None,findOnlyOne=True) (l660)
+#### def findSpec(query="",appname="",actorname="",specname="",type="",findFromSpec=None,findOnlyOne=True) 
 
 do not specify query with one of the other filter criteria
 @param query is in dot notation e.g. $appname.$actorname.$modelname ... the items in front are optional
 
-### def init() (l762)
+#### def getActorSpec(app,name,raiseError=True) 
 
-### def getChildModelSpec(app,actorname,name,die=True) (l598)
+#### def getChildModelSpec(app,actorname,name,die=True) 
 
-### def getModelSpec(app,actorname,name,die=True) (l585)
+#### def getEnumerationSpec(app,actorname,name,die=True) 
 
-### def getSpecFromTypeStr(appname,actorname,typestr) (l812)
+#### def getModelNames(appname,actorname) 
+
+#### def getModelSpec(app,actorname,name,die=True) 
+
+#### def getSpecFromTypeStr(appname,actorname,typestr) 
 
 @param typestr e.g list(machine.status)
 @return $returntype,$spec  $returntype=list,dict,object,enum (list & dict can be of primitive types or objects (NOT enums))
 
-### def removeSpecsForActor(appname,actorname) (l765)
+#### def init() 
 
-### def addSpec(spec) (l617)
+#### def parseSpecs(specpath,appname,actorname) 
 
-### def getModelNames(appname,actorname) (l610)
+@param specpath if empty will look for path specs in current dir
 
-### def getEnumerationSpec(app,actorname,name,die=True) (l564)
+#### def removeSpecsForActor(appname,actorname) 
+
+#### def resetMemNonSystem() 
 

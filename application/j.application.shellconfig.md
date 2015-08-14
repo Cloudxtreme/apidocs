@@ -7,13 +7,13 @@
 
 attach configuration items to this configure object (can happen at runtime)
 
-### def checkCreateConfigFile(configType) (l39)
+#### def checkCreateConfigFile(configType) 
 
 check if config file exists, if not create and reload
 
-### def loadConfigFile(configType) (l48)
+#### def getConfigFileManager(configType) 
 
-### def getConfigFileManager(configType) (l52)
+#### def loadConfigFile(configType) 
 
-### def refresh() (l31)
+#### def refresh() 
 

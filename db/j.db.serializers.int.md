@@ -2,7 +2,7 @@
 
 - /opt/jumpscale7/lib/JumpScale/baselib/serializers/SerializerInt.py
 
-### def dumps(obj) (l4)
+#### def dumps(obj) 
 
-### def loads(s) (l6)
+#### def loads(s) 
 

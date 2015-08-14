@@ -6,28 +6,49 @@
     - domains
     - hrd
 
-### def getDomains() (l95)
+#### def findParents(service=None, name='', path='', limit=None) 
 
-### def findParents(service=None, name='', path='', limit=None) (l217)
+#### def findProducer(producercategory, instancename) 
 
-### def get(domain="", name="", instance="", parent='', precise=False) (l266)
+#### def findServices(domain="", name="", instance="", parent=None, precise=False) 
+
+FindServices looks for actual services that are created
+
+#### def findTemplates(domain="", name="", parent=None) 
+
+#### def get(domain="", name="", instance="", parent='', precise=False) 
 
 Return service indentifier by domain,name and instance
 throw error if service is not found or if more than one service is found
 
-### def getFromStr(representation, parent=None) (l359)
+#### def getActionsBaseClass() 
+
+#### def getDomains() 
+
+#### def getFromStr(representation, parent=None) 
 
 return a service instance from its representation 'domain      :name       :instance'
 
-### def remove(domain="", name="", instance="", parent=None) (l258)
+#### def getId(domain, name, instance, parent=None) 
 
-### def getId(domain, name, instance, parent=None) (l98)
+#### def loadService(path, parent=None) 
 
-### def findServices(domain="", name="", instance="", parent=None, precise=False) (l150)
+Load a service instance from files located at path.
+path should point to a directory that contains these files:
+    service.hrd
+    actions.py
 
-FindServices looks for actual services that are created
+#### def loadServicesInSQL() 
 
-### def updateTemplatesRepo(repos=[]) (l74)
+walk over all services and load into sqllite
+
+#### def new(domain="", name="", instance="main", path=None, parent=None, args=\{\}) 
+
+will create a new service
+
+#### def remove(domain="", name="", instance="", parent=None) 
+
+#### def updateTemplatesRepo(repos=[]) 
 
 update the git repo that contains the service templates
 args:
@@ -36,25 +57,4 @@ args:
                 'url' : 'http://github.com/account/repo',
                 'branch' : 'master'
             \}
-
-### def loadService(path, parent=None) (l289)
-
-Load a service instance from files located at path.
-path should point to a directory that contains these files:
-    service.hrd
-    actions.py
-
-### def loadServicesInSQL() (l320)
-
-walk over all services and load into sqllite
-
-### def findTemplates(domain="", name="", parent=None) (l107)
-
-### def new(domain="", name="", instance="main", path=None, parent=None, args=\{\}) (l246)
-
-will create a new service
-
-### def findProducer(producercategory, instancename) (l241)
-
-### def getActionsBaseClass() (l92)
 

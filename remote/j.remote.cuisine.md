@@ -5,7 +5,7 @@
     - api
     - fabric
 
-### def connect(addr,port,passwd=None) (l17)
+#### def connect(addr,port,passwd=None) 
 
-### def help() (l34)
+#### def help() 
 

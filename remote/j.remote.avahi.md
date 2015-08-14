@@ -2,7 +2,13 @@
 
 - /opt/jumpscale7/lib/JumpScale/baselib/remote/avahi/Avahi.py
 
-### def resolveAddress(ipAddress) (l79)
+#### def getServices() 
+
+#### def registerService(servicename, port, type='tcp') 
+
+#### def removeService(servicename) 
+
+#### def resolveAddress(ipAddress) 
 
 Resolve the ip address to its hostname
 
@@ -10,10 +16,4 @@ Resolve the ip address to its hostname
 @type ipAddress: string
 
 @return: the hostname attached to the ip address
-
-### def registerService(servicename, port, type='tcp') (l17)
-
-### def removeService(servicename) (l41)
-
-### def getServices() (l49)
 

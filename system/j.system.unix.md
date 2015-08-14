@@ -2,17 +2,22 @@
 
 - /opt/jumpscale7/lib/JumpScale/core/system/unix.py
 
-### def unixGroupExists(groupname) (l423)
+#### def addCronJob(commandToExecute, interval=1, logFilePath=None, replaceLineIfCommandAlreadyInCrontab=True, unit=TimeIntervalUnit.MINUTES) 
 
-Checks if a given group already exists in the system
+Add a cronjob to the system
 
-@param groupname: Name of the group to check for
-@type groupname: string
+@param commandToExecute: The command to execute
+@type commandToExecute: string
+@param interval: The interval at which to launch the commandToExecute
+@type interval: number
+@param logFilePath: the path of the logfile to redirect the output of crontab to
+@type logFilePath: string
+@param replaceLineIfCommandAlreadyInCrontab: Specifies whether to replace the line if a command already exists in crontab
+@type replaceLineIfCommandAlreadyInCrontab: bool
+@param unit: The unit of the interval
+@type unit: TimeIntervalUnit
 
-@returns: Whether the group exists
-@rtype: bool
-
-### def addSystemGroup(groupname) (l376)
+#### def addSystemGroup(groupname) 
 
 Add a group to the system
 
@@ -21,7 +26,7 @@ Note: you should be root to run this python command.
 @param groupname: Name of the group to add
 @type groupname : string
 
-### def addSystemUser(username, groupname=None, shell="/bin/bash", homedir=None) (l335)
+#### def addSystemUser(username, groupname=None, shell="/bin/bash", homedir=None) 
 
 Add a user to the system
 
@@ -32,78 +37,17 @@ Note: you should be root to run this python command.
 @param shell: Optional param to specify the shell of the user
 @type username: string
 
-### def chroot(path) (l323)
+#### def addUserToGroup(username, groupname) 
 
-Change root directory path
+#### def checkApplicationInstalled(appname) 
 
-@param path: Path to chroot() to
-@type path: string
+check if app is installed,  if yes return True
 
-### def executeAsUser(command, username, **kwargs) (l240)
+#### def chmod(root, mode, recurse=0, dirPattern='*', filePattern='*', dirs = True, files = True) 
 
-Execute a given command as a specific user
+Chmod based on system.fs.walk
 
-When calling this method, the command will be wrapped inside 'su' to
-be executed as some specific user. This requires the application which
-spawns the command to be running as root.
-
-Next to this, it behaves exactly as C\{j.system.process.execute\},
-including the same named arguments.
-
-@param command: Command to execute
-@type command: string
-@param username: Name of the user to impersonate
-@type username: string
-
-@returns: Exit code and command output
-@rtype: tuple
-
-@raises RuntimeError: When the application is not running as root
-@raises RuntimeError: If /bin/su is not available on the system
-@raises ValueError: When the provided username can't be resolved
-
-@see: jumpscale.system.process.SystemProcess.execute
-
-### def removeUnixUser(username, removehome=False,die=True) (l474)
-
-Remove a given unix user
-
-@param username: Name of the user to remove
-@type username: string
-
-### def executeDaemonAsUser(command, username, **kwargs) (l273)
-
-Execute a given command as a background process as a specific user
-
-When calling this method, the command will be wrapped inside 'su' to
-be executed as some specific user. This requires the application which
-spawns the command to be running as root.
-
-Next to this, it behaves exactly as C\{j.system.process.runDaemon\},
-including the same named arguments.
-
-@param command: Command to execute
-@type command: string
-@param username: Name of the user to impersonate
-@type username: string
-
-@returns: pid of the process
-@rtype: int
-
-@raises RuntimeError: When the application is not running as root
-@raises RuntimeError: If /bin/su is not available on the system
-@raises ValueError: When the provided username can't be resolved
-
-@see: jumpscale.system.process.runDaemon
-
-### def enableUnixUser(username) (l456)
-
-Enables a given unix user
-
-@param username: Name of the user to enable
-@type username: string
-
-### def chown(path, user, group,recursive=False) (l204)
+#### def chown(path, user, group,recursive=False) 
 
 Chown a file
 @param path: the path of a file or a directory to be chown
@@ -115,29 +59,14 @@ Chown a file
 @param recursive: if path is a directory, all files underneath the path are also chown if True (default False)
 @type recursive: boolean
 
-### def addUserToGroup(username, groupname) (l394)
+#### def chroot(path) 
 
-### def getMachineInfo() (l57)
+Change root directory path
 
-Get memory and CPU info about this machine
+@param path: Path to chroot() to
+@type path: string
 
-@returns: Amount of available memory, CPU speed and number of CPUs
-@rtype: tuple
-
-### def killGroup(pid) (l191)
-
-Kill a process group
-
-killGroup will get the parent pid from the pid given and kill the group with signal SIGKILL (default)
-
-@type pid: int
-@param pid: process id
-
-### def chmod(root, mode, recurse=0, dirPattern='*', filePattern='*', dirs = True, files = True) (l231)
-
-Chmod based on system.fs.walk
-
-### def daemonize(chdir='/', umask=0) (l535)
+#### def daemonize(chdir='/', umask=0) 
 
 Daemonize a process using a double fork
 
@@ -172,45 +101,71 @@ PID of the current process.
 
 @raise RuntimeError: System does not support fork(2)
 
-### def disableUnixUser(username) (l438)
+#### def disableUnixUser(username) 
 
 Disables a given unix user
 
 @param username: Name of the user to disable
 @type username: string
 
-### def checkApplicationInstalled(appname) (l630)
+#### def enableUnixUser(username) 
 
-check if app is installed,  if yes return True
+Enables a given unix user
 
-### def addCronJob(commandToExecute, interval=1, logFilePath=None, replaceLineIfCommandAlreadyInCrontab=True, unit=TimeIntervalUnit.MINUTES) (l94)
-
-Add a cronjob to the system
-
-@param commandToExecute: The command to execute
-@type commandToExecute: string
-@param interval: The interval at which to launch the commandToExecute
-@type interval: number
-@param logFilePath: the path of the logfile to redirect the output of crontab to
-@type logFilePath: string
-@param replaceLineIfCommandAlreadyInCrontab: Specifies whether to replace the line if a command already exists in crontab
-@type replaceLineIfCommandAlreadyInCrontab: bool
-@param unit: The unit of the interval
-@type unit: TimeIntervalUnit
-
-### @staticmethod (l517)
-
-Checks if a given user is a member of the given group
-
-@param username: Username to check for
+@param username: Name of the user to enable
 @type username: string
-@param groupname: Group to check for
-@type groupname: string
 
-@returns: Whether the user is a member of the group
-@rtype: bool
+#### def executeAsUser(command, username, **kwargs) 
 
-### def getBashEnvFromFile(file, var) (l43)
+Execute a given command as a specific user
+
+When calling this method, the command will be wrapped inside 'su' to
+be executed as some specific user. This requires the application which
+spawns the command to be running as root.
+
+Next to this, it behaves exactly as C\{j.system.process.execute\},
+including the same named arguments.
+
+@param command: Command to execute
+@type command: string
+@param username: Name of the user to impersonate
+@type username: string
+
+@returns: Exit code and command output
+@rtype: tuple
+
+@raises RuntimeError: When the application is not running as root
+@raises RuntimeError: If /bin/su is not available on the system
+@raises ValueError: When the provided username can't be resolved
+
+@see: jumpscale.system.process.SystemProcess.execute
+
+#### def executeDaemonAsUser(command, username, **kwargs) 
+
+Execute a given command as a background process as a specific user
+
+When calling this method, the command will be wrapped inside 'su' to
+be executed as some specific user. This requires the application which
+spawns the command to be running as root.
+
+Next to this, it behaves exactly as C\{j.system.process.runDaemon\},
+including the same named arguments.
+
+@param command: Command to execute
+@type command: string
+@param username: Name of the user to impersonate
+@type username: string
+
+@returns: pid of the process
+@rtype: int
+
+@raises RuntimeError: When the application is not running as root
+@raises RuntimeError: If /bin/su is not available on the system
+@raises ValueError: When the provided username can't be resolved
+
+@see: jumpscale.system.process.runDaemon
+
+#### def getBashEnvFromFile(file, var) 
 
 Get the value of an environment variable in a Bash file
 
@@ -219,7 +174,30 @@ Get the value of an environment variable in a Bash file
 @param var: Variable name
 @type var: string
 
-### def setUnixUserPassword(username, password) (l496)
+#### def getMachineInfo() 
+
+Get memory and CPU info about this machine
+
+@returns: Amount of available memory, CPU speed and number of CPUs
+@rtype: tuple
+
+#### def killGroup(pid) 
+
+Kill a process group
+
+killGroup will get the parent pid from the pid given and kill the group with signal SIGKILL (default)
+
+@type pid: int
+@param pid: process id
+
+#### def removeUnixUser(username, removehome=False,die=True) 
+
+Remove a given unix user
+
+@param username: Name of the user to remove
+@type username: string
+
+#### def setUnixUserPassword(username, password) 
 
 Set a password on unix user
 
@@ -229,7 +207,17 @@ Set a password on unix user
 @param password: Password to set on the user
 @type username: string
 
-### def unixUserExists(username) (l408)
+#### def unixGroupExists(groupname) 
+
+Checks if a given group already exists in the system
+
+@param groupname: Name of the group to check for
+@type groupname: string
+
+@returns: Whether the group exists
+@rtype: bool
+
+#### def unixUserExists(username) 
 
 Checks if a given user already exists in the system
 
@@ -237,5 +225,17 @@ Checks if a given user already exists in the system
 @type username: string
 
 @returns: Whether the user exists
+@rtype: bool
+
+#### @staticmethod 
+
+Checks if a given user is a member of the given group
+
+@param username: Username to check for
+@type username: string
+@param groupname: Group to check for
+@type groupname: string
+
+@returns: Whether the user is a member of the group
 @rtype: bool
 

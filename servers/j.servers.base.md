@@ -2,7 +2,7 @@
 
 - /opt/jumpscale7/lib/JumpScale/grid/serverbase/ServerBaseFactory.py
 
-### def getDaemon(name="unknown", sslorg=None, ssluser=None, sslkeyvaluestor=None) (l10)
+#### def getDaemon(name="unknown", sslorg=None, ssluser=None, sslkeyvaluestor=None) 
 
 is the basis for every daemon we create which can be exposed over e.g. zmq or sockets or http
 
@@ -23,9 +23,7 @@ daemon.addCMDsInterface(MyCommands,category="optional")  #pass as class not as o
 
 #now you need to pass this to a protocol server, its not usable by itself
 
-### def initSSL4Server(organization, serveruser, sslkeyvaluestor=None) (l51)
-
-### def getDaemonClientClass() (l56)
+#### def getDaemonClientClass() 
 
 example usage, see example for server at self.getDaemon (implement transport still)
 
@@ -57,4 +55,6 @@ myClient(DaemonClientClass):
 
 client=myClient()
 print client.echo("atest")
+
+#### def initSSL4Server(organization, serveruser, sslkeyvaluestor=None) 
 

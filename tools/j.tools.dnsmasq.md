@@ -2,19 +2,19 @@
 
 - /opt/jumpscale7/lib/JumpScale/baselib/dnsmasq/dnsmasq.py
 
-### def addHost(macaddress, ipaddress, name=None) (l48)
+#### def addHost(macaddress, ipaddress, name=None) 
 
-### def setConfigPath(namespace=None, config_path=None) (l12)
+#### def addToStartupManager() 
 
-### def reload() (l79)
+#### def reload() 
 
-### def removeHost(macaddress) (l62)
+#### def removeHost(macaddress) 
 
 Removes a dhcp-host entry from dnsmasq.conf file
 
-### def addToStartupManager() (l34)
-
-### def restart() (l72)
+#### def restart() 
 
 Restarts dnsmasq
+
+#### def setConfigPath(namespace=None, config_path=None) 
 

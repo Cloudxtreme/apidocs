@@ -5,13 +5,90 @@
     - loglevel
     - logenable
 
-### def moveDir(source, destin) (l470)
+#### def changeDir(path) 
 
-Move Directory from source to destination
-@param source: string (Source path where the directory should be removed from)
-@param destin: string (Destination path where the directory should be moved into)
+Changes Current Directory
+@param path: string (Directory path to be changed to)
 
-### def fileConvertLineEndingCRLF(file) (l1775)
+#### def changeFileNames(toReplace,replaceWith,pathToSearchIn,recursive=True, filter=None, minmtime=None, maxmtime=None) 
+
+@param toReplace e.g. \{name\}
+@param replace with e.g. "jumpscale"
+
+#### def checkDirOrLink(fullpath) 
+
+check if path is dir or link to a dir
+
+#### def checkDirOrLinkToDir(fullpath) 
+
+check if path is dir or link to a dir
+
+#### def checkDirParam(path) 
+
+#### def chmod(path,permissions) 
+
+@param permissions e.g. 0o660 (USE OCTAL !!!)
+
+#### def chown(path,user) 
+
+#### def cleanupString(string, replacewith="_", regex="([^A-Za-z0-9])") 
+
+Remove all non-numeric or alphanumeric characters
+
+#### def constructDirPathFromArray(array) 
+
+#### def constructFilePathFromArray(array) 
+
+#### def convertFileDirnamesSpaceToUnderscore(rootdir) 
+
+#### def convertFileDirnamesUnicodeToAscii(rootdir,spacesToUnderscore=False) 
+
+#### def copyDirTree(src, dst, keepsymlinks = False, eraseDestination = False, skipProtectedDirs=False, overwriteFiles=True,applyHrdOnDestPaths=None) 
+
+Recursively copy an entire directory tree rooted at src.
+The dst directory may already exist; if not,
+it will be created as well as missing parent directories
+@param src: string (source of directory tree to be copied)
+@param dst: string (path directory to be copied to...should not already exist)
+@param keepsymlinks: bool (True keeps symlinks instead of copying the content of the file)
+@param eraseDestination: bool (Set to True if you want to erase destination first, be carefull, this can erase directories)
+@param overwriteFiles: if True will overwrite files, otherwise will not overwrite when destination exists
+
+#### def copyFile(fileFrom, to ,createDirIfNeeded=False,skipProtectedDirs=False,overwriteFile=True) 
+
+Copy file
+
+Copies the file from C\{fileFrom\} to the file or directory C\{to\}.
+If C\{to\} is a directory, a file with the same basename as C\{fileFrom\} is
+created (or overwritten) in the directory specified.
+Permission bits are copied.
+
+@param fileFrom: Source file path name
+@type fileFrom: string
+@param to: Destination file or folder path name
+@type to: string
+
+#### def createDir(newdir,skipProtectedDirs=False) 
+
+Create new Directory
+@param newdir: string (Directory path/name)
+if newdir was only given as a directory name, the new directory will be created on the default path,
+if newdir was given as a complete path with the directory name, the new directory will be created in the specified path
+
+#### def createEmptyFile(filename) 
+
+Create an empty file
+@param filename: string (file path name to be created)
+
+#### def dirEqual(path1,path2) 
+
+#### def exists(path,followlinks=True) 
+
+Check if the specified path exists
+@param path: string
+@rtype: boolean (True if path refers to an existing path)
+
+#### def fileConvertLineEndingCRLF(file) 
 
 Convert CRLF line-endings in a file to LF-only endings (
  -> 
@@ -20,30 +97,31 @@ Convert CRLF line-endings in a file to LF-only endings (
         @param file: File to convert
         @type file: string
 
-### def move(source, destin) (l1036)
+#### def fileGetContents(filename) 
 
-Main Move function
-@param source: string (If the specified source is a File....Calls moveFile function)
-(If the specified source is a Directory....Calls moveDir function)
+Read a file and get contents of that file
+@param filename: string (filename to open for reading )
+@rtype: string representing the file contents
 
-### def fileGetTextContents(filename) (l1317)
+#### def fileGetTextContents(filename) 
 
 Read a UTF-8 file and get contents of that file. Takes care of the [BOM](http://en.wikipedia.org/wiki/Byte_order_mark)
 @param filename: string (filename to open for reading)
 @rtype: string representing the file contents
 
-### def pathDirClean(path) (l583)
+#### def fileGetUncommentedContents(filename) 
 
-### def touch(paths,overwrite=True) (l1334)
+Read a file and get uncommented contents of that file
+@param filename: string (filename to open for reading )
+@rtype: list of lines of uncommented file contents
 
-can be single path or multiple (then list)
+#### def fileSize(filename) 
 
-### def changeDir(path) (l452)
+Get Filesize of file in bytes
+@param filename: the file u want to know the filesize of
+@return: int representing file size
 
-Changes Current Directory
-@param path: string (Directory path to be changed to)
-
-### def find(startDir,fileregex) (l1791)
+#### def find(startDir,fileregex) 
 
 Search for files or folders matching a given pattern
 this is a very weard function, don't use is better to use the list functions
@@ -52,13 +130,223 @@ example: find("*.pyc")
 @param fileregex: The regex pattern to match
 @type fileregex: string
 
-### def isLink(path,checkJunction=False) (l1188)
+#### def getBaseName(path) 
+
+Return the base name of pathname path.
+
+#### def getDirName(path,lastOnly=False,levelsUp=None) 
+
+Return a directory name from pathname path.
+@param path the path to find a directory within
+@param lastOnly means only the last part of the path which is a dir (overrides levelsUp to 0)
+@param levelsUp means, return the parent dir levelsUp levels up
+ e.g. ...getDirName("/opt/qbase/bin/something/test.py", levelsUp=0) would return something
+ e.g. ...getDirName("/opt/qbase/bin/something/test.py", levelsUp=1) would return bin
+ e.g. ...getDirName("/opt/qbase/bin/something/test.py", levelsUp=10) would raise an error
+
+#### def getFileExtension(path) 
+
+#### def getFolderMD5sum(folder) 
+
+#### def getParent(path) 
+
+Returns the parent of the path:
+/dir1/dir2/file_or_dir -> /dir1/dir2/
+/dir1/dir2/            -> /dir1/
+@todo why do we have 2 implementations which are almost the same see getParentDirName()
+
+#### def getParentDirName(path) 
+
+returns parent of path (only for dirs)
+returns empty string when there is no parent
+
+#### def getTempFileName(dir=None, prefix='') 
+
+Generates a temp file for the directory specified
+@param dir: Directory to generate the temp file
+@param prefix: string to start the generated name with
+@rtype: string representing the generated temp file path
+
+#### def getTmpDirPath() 
+
+create a tmp dir name and makes sure the dir exists
+
+#### def getTmpFilePath(cygwin=False) 
+
+Generate a temp file path
+Located in temp dir of qbase
+@rtype: string representing the path of the temp file generated
+
+#### def getcwd() 
+
+get current working directory
+@rtype: string (current working directory path)
+
+#### def grep(fileregex, lineregex) 
+
+Search for lines matching a given regex in all files matching a regex
+
+@param fileregex: Files to search in
+@type fileregex: string
+@param lineregex: Regex pattern to search for in each file
+@type lineregex: string
+
+#### def gunzip(sourceFile,destFile) 
+
+#### def gzip(sourceFile,destFile) 
+
+#### def hardlinkFile(source, destin) 
+
+Create a hard link pointing to source named destin. Availability: Unix.
+@param source: string
+@param destin: string
+@rtype: concatenation of dirname, and optionally linkname, etc.
+with exactly one directory separator (os.sep) inserted between components, unless path2 is empty
+
+#### def isAsciiFile(filename, checksize=4096) 
+
+Read the first <checksize> bytes of <filename>.
+          Validate that only valid ascii characters (32-126), ,       , 
+are
+          present in the file
+
+#### def isBinaryFile(filename, checksize=4096) 
+
+#### def isDir(path, followSoftlink=True) 
+
+Check if the specified Directory path exists
+@param path: string
+@param followSoftlink: boolean
+@rtype: boolean (True if directory exists)
+
+#### def isEmptyDir(path) 
+
+Check if the specified directory path is empty
+@param path: string
+@rtype: boolean (True if directory is empty)
+
+#### def isExecutable(path) 
+
+#### def isFile(path, followSoftlink = True) 
+
+Check if the specified file exists for the given path
+@param path: string
+@param followSoftlink: boolean
+@rtype: boolean (True if file exists for the given path)
+
+#### def isLink(path,checkJunction=False) 
 
 Check if the specified path is a link
 @param path: string
 @rtype: boolean (True if the specified path is a link)
 
-### def parsePath(path, baseDir="",existCheck=True, checkIsFile=False) (l722)
+#### def isMount(path) 
+
+Return true if pathname path is a mount point:
+A point in a file system where a different file system has been mounted.
+
+#### def islocked(lockname, reentry=False) 
+
+Check if a system-wide interprocess exclusive lock is set
+
+#### def joinPaths(*args) 
+
+Join one or more path components.
+If any component is an absolute path, all previous components are thrown away, and joining continues.
+@param path1: string
+@param path2: string
+@param path3: string
+@param .... : string
+@rtype: Concatenation of path1, and optionally path2, etc...,
+with exactly one directory separator (os.sep) inserted between components, unless path2 is empty.
+
+#### def listDirsInDir(path,recursive=False,dirNameOnly=False,findDirectorySymlinks=True) 
+
+Retrieves list of directories found in the specified directory
+@param path: string represents directory path to search in
+@rtype: list
+
+#### def listFilesAndDirsInDir(path, recursive=False, filter=None, minmtime=None, maxmtime=None,depth=None,type="fd",followSymlinks=True,listSymlinks=False) 
+
+Retrieves list of files found in the specified directory
+@param path:       directory path to search in
+@type  path:       string
+@param recursive:  recursively look in all subdirs
+@type  recursive:  boolean
+@param filter:     unix-style wildcard (e.g. *.py) - this is not a regular expression
+@type  filter:     string
+@param minmtime:   if not None, only return files whose last modification time > minmtime (epoch in seconds)
+@type  minmtime:   integer
+@param maxmtime:   if not None, only return files whose last modification time < maxmtime (epoch in seconds)
+@Param depth: is levels deep wich we need to go
+@type  maxmtime:   integer
+@param type is string with f & d inside (f for when to find files, d for when to find dirs)
+@rtype: list
+
+#### def listFilesInDir(path, recursive=False, filter=None, minmtime=None, maxmtime=None,depth=None, case_sensitivity='os',exclude=[],followSymlinks=True,listSymlinks=False) 
+
+Retrieves list of files found in the specified directory
+@param path:       directory path to search in
+@type  path:       string
+@param recursive:  recursively look in all subdirs
+@type  recursive:  boolean
+@param filter:     unix-style wildcard (e.g. *.py) - this is not a regular expression
+@type  filter:     string
+@param minmtime:   if not None, only return files whose last modification time > minmtime (epoch in seconds)
+@type  minmtime:   integer
+@param maxmtime:   if not None, only return files whose last modification time < maxmtime (epoch in seconds)
+@Param depth: is levels deep wich we need to go
+@type  maxmtime:   integer
+@Param exclude: list of std filters if matches then exclude
+@rtype: list
+
+#### def listPyScriptsInDir(path,recursive=True, filter="*.py") 
+
+Retrieves list of python scripts (with extension .py) in the specified directory
+@param path: string represents the directory path to search in
+@rtype: list
+
+#### def lock(lockname, locktimeout=60, reentry=False) 
+
+Take a system-wide interprocess exclusive lock. Default timeout is 60 seconds
+
+#### def lock_(lockname, locktimeout=60, reentry=False) 
+
+Take a system-wide interprocess exclusive lock.
+
+Works similar to j.system.fs.lock but uses return values to denote lock
+success instead of raising fatal errors.
+
+This refactoring was mainly done to make the lock implementation easier
+to unit-test.
+
+#### def log(msg,level=5,category="") 
+
+#### def md5sum(filename) 
+
+Return the hex digest of a file without loading it all into memory
+@param filename: string (filename to get the hex digest of it) or list of files
+@rtype: md5 of the file
+
+#### def move(source, destin) 
+
+Main Move function
+@param source: string (If the specified source is a File....Calls moveFile function)
+(If the specified source is a Directory....Calls moveDir function)
+
+#### def moveDir(source, destin) 
+
+Move Directory from source to destination
+@param source: string (Source path where the directory should be removed from)
+@param destin: string (Destination path where the directory should be moved into)
+
+#### def moveFile(source, destin) 
+
+Move a  File from source path to destination path
+@param source: string (Source file path)
+@param destination: string (Destination path the file should be moved to )
+
+#### def parsePath(path, baseDir="",existCheck=True, checkIsFile=False) 
 
 parse paths of form /root/tmp/33_adoc.doc into the path, priority which is numbers before _ at beginning of path
 also returns filename
@@ -73,121 +361,34 @@ j.system.fs.parsePath("/opt/qbase3/apps/specs/myspecs/definitions/cloud/datacent
 @return list of dirpath,filename,extension,priority
      priority = 0 if not specified
 
-### def writeFile(filename, contents, append=False) (l1349)
-
-Open a file and write file contents, close file afterwards
-@param contents: string (file contents to be written)
-
-### def changeFileNames(toReplace,replaceWith,pathToSearchIn,recursive=True, filter=None, minmtime=None, maxmtime=None) (l970)
-
-@param toReplace e.g. \{name\}
-@param replace with e.g. "jumpscale"
-
-### def getTempFileName(dir=None, prefix='') (l1627)
-
-Generates a temp file for the directory specified
-@param dir: Directory to generate the temp file
-@param prefix: string to start the generated name with
-@rtype: string representing the generated temp file path
-
-### def processPathForDoubleDots(path) (l632)
-
-/root/somepath/.. would become /root
-/root/../somepath/ would become /somepath
-
-result will always be with / slashes
-
-### def walkExtended(root, recurse=0, dirPattern='*' , filePattern='*', followSoftLinks = True, dirs=True, files=True ) (l1442)
-
-Extended Walk version: seperate dir and file pattern
-@param  root                : start directory to start the search.
-@type   root                : string
-@param  recurse             : search also in subdirectories.
-@type   recurse             : number
-@param  dirPattern          : search pattern to match directory names. Wildcards can be included.
-@type   dirPattern          : string
-@param  filePattern         : search pattern to match file names. Wildcards can be included.
-@type   filePattern         : string
-@param  followSoftLinks     : determine if links must be followed.
-@type   followSoftLinks     : boolean
-@param  dirs                : determine to return dir results.
-@type   dirs                : boolean
-@param  files               : determine to return file results.
-@type   files               : boolean
-
-@return                     : List of files and / or directories that match the search patterns.
-@rtype                      : list of strings
-
-General guidelines in the usage of the method be means of some examples come next. For the example in /tmp there is
-
-* a file test.rtt
-* and ./folder1/subfolder/subsubfolder/small_test/test.rtt
-
-To find the first test you can use
-   j.system.fs.walkExtended('/tmp/', dirPattern="*tmp*", filePattern="*.rtt")
-To find only the second one you could use
-   j.system.fs.walkExtended('tmp', recurse=0, dirPattern="*small_test*", filePattern="*.rtt", dirs=False)
-
-### def writeObjectToFile(filelocation,obj) (l1381)
-
-Write a object to a file(pickle format)
-@param filelocation: location of the file to which we write
-@param obj: object to pickle and write to a file
-
-### def isAsciiFile(filename, checksize=4096) (l1639)
-
-Read the first <checksize> bytes of <filename>.
-          Validate that only valid ascii characters (32-126), ,       , 
-are
-          present in the file
-
-### def removeIrrelevantFiles(path,followSymlinks=True) (l288)
-
-### def remove(path) (l294)
-
-Remove a File
-@param path: string (File path required to be removed
-
-### def pathClean(path) (l571)
+#### def pathClean(path) 
 
 goal is to get a equal representation in / & \ in relation to os.sep
 
-### def getDirName(path,lastOnly=False,levelsUp=None) (l511)
+#### def pathDirClean(path) 
 
-Return a directory name from pathname path.
-@param path the path to find a directory within
-@param lastOnly means only the last part of the path which is a dir (overrides levelsUp to 0)
-@param levelsUp means, return the parent dir levelsUp levels up
- e.g. ...getDirName("/opt/qbase/bin/something/test.py", levelsUp=0) would return something
- e.g. ...getDirName("/opt/qbase/bin/something/test.py", levelsUp=1) would return bin
- e.g. ...getDirName("/opt/qbase/bin/something/test.py", levelsUp=10) would raise an error
+#### def pathNormalize(path,root="") 
 
-### def isEmptyDir(path) (l1142)
+paths are made absolute & made sure they are in line with os.sep
+@param path: path to normalize
+@root is std the application you are in, can overrule
 
-Check if the specified directory path is empty
-@param path: string
-@rtype: boolean (True if directory is empty)
+#### def pathRemoveDirPart(path,toremove,removeTrailingSlash=False) 
 
-### def exists(path,followlinks=True) (l1045)
+goal remove dirparts of a dirpath e,g, a basepath which is not needed
+will look for part to remove in full path but only full dirs
 
-Check if the specified path exists
-@param path: string
-@rtype: boolean (True if path refers to an existing path)
+#### def pathShorten(path) 
 
-### def unlock(lockname) (l140)
+Clean path (change /var/www/../lib to /var/lib). On Windows, if the
+path exists, the short path name is returned.
 
-Unlock system-wide interprocess lock
+@param path: Path to clean
+@type path: string
+@return: Cleaned (short) path
+@rtype: string
 
-### def isExecutable(path) (l1184)
-
-### def createDir(newdir,skipProtectedDirs=False) (l325)
-
-Create new Directory
-@param newdir: string (Directory path/name)
-if newdir was only given as a directory name, the new directory will be created on the default path,
-if newdir was given as a complete path with the directory name, the new directory will be created in the specified path
-
-### def pathToUnicode(path) (l1841)
+#### def pathToUnicode(path) 
 
 Convert path to unicode. Use the local filesystem encoding. Will return
 path unmodified if path already is unicode.
@@ -199,93 +400,77 @@ Use this to convert paths you received from the os module to unicode.
 @return: unicode path
 @rtype: unicode
 
-### def pathNormalize(path,root="") (l590)
+#### def processPathForDoubleDots(path) 
 
-paths are made absolute & made sure they are in line with os.sep
-@param path: path to normalize
-@root is std the application you are in, can overrule
+/root/somepath/.. would become /root
+/root/../somepath/ would become /somepath
 
-### def getcwd() (l778)
+result will always be with / slashes
 
-get current working directory
-@rtype: string (current working directory path)
+#### def readObjectFromFile(filelocation) 
 
-### def symlink(path, target, overwriteTarget=False) (l1064)
+Read a object from a file(file contents in pickle format)
+@param filelocation: location of the file
+@return: object
+
+#### def readlink(path) 
+
+Works only for unix
+Return a string representing the path to which the symbolic link points.
+
+#### def remove(path) 
+
+Remove a File
+@param path: string (File path required to be removed
+
+#### def removeDir(path) 
+
+Remove a Directory
+@param path: string (Directory path that should be removed)
+
+#### def removeDirTree(path, onlyLogWarningOnRemoveError=False) 
+
+Recursively delete a directory tree.
+@param path: the path to be removed
+
+#### def removeIrrelevantFiles(path,followSymlinks=True) 
+
+#### def removeLinks(path) 
+
+find all links & remove
+
+#### def renameDir(dirname, newname,overwrite=False) 
+
+Rename Directory from dirname to newname
+@param dirname: string (Directory original name)
+@param newname: string (Directory new name to be changed to)
+
+#### def renameFile(filePath, new_name) 
+
+OBSOLETE
+
+#### def replaceWordsInFiles(pathToSearchIn,templateengine,recursive=True, filter=None, minmtime=None, maxmtime=None) 
+
+apply templateengine to list of found files
+@param templateengine =te  #example below
+    te=j.codetools.templateengine.new()
+    te.add("name",self.a.name)
+    te.add("description",self.ayses.description)
+    te.add("version",self.ayses.version)
+
+#### def statPath(path) 
+
+Perform a stat() system call on the given path
+@rtype: object whose attributes correspond to the members of the stat structure
+
+#### def symlink(path, target, overwriteTarget=False) 
 
 Create a symbolic link
 @param path: source path desired to create a symbolic link for
 @param target: destination path required to create the symbolic link at
 @param overwriteTarget: boolean indicating whether target can be overwritten
 
-### def removeLinks(path) (l805)
-
-find all links & remove
-
-### def moveFile(source, destin) (l266)
-
-Move a  File from source path to destination path
-@param source: string (Source file path)
-@param destination: string (Destination path the file should be moved to )
-
-### def cleanupString(string, replacewith="_", regex="([^A-Za-z0-9])") (l54)
-
-Remove all non-numeric or alphanumeric characters
-
-### def listDirsInDir(path,recursive=False,dirNameOnly=False,findDirectorySymlinks=True) (l994)
-
-Retrieves list of directories found in the specified directory
-@param path: string represents directory path to search in
-@rtype: list
-
-### def fileSize(filename) (l1367)
-
-Get Filesize of file in bytes
-@param filename: the file u want to know the filesize of
-@return: int representing file size
-
-### def getTmpFilePath(cygwin=False) (l1609)
-
-Generate a temp file path
-Located in temp dir of qbase
-@rtype: string representing the path of the temp file generated
-
-### def pathShorten(path) (l550)
-
-Clean path (change /var/www/../lib to /var/lib). On Windows, if the
-path exists, the short path name is returned.
-
-@param path: Path to clean
-@type path: string
-@return: Cleaned (short) path
-@rtype: string
-
-### def copyDirTree(src, dst, keepsymlinks = False, eraseDestination = False, skipProtectedDirs=False, overwriteFiles=True,applyHrdOnDestPaths=None) (l360)
-
-Recursively copy an entire directory tree rooted at src.
-The dst directory may already exist; if not,
-it will be created as well as missing parent directories
-@param src: string (source of directory tree to be copied)
-@param dst: string (path directory to be copied to...should not already exist)
-@param keepsymlinks: bool (True keeps symlinks instead of copying the content of the file)
-@param eraseDestination: bool (Set to True if you want to erase destination first, be carefull, this can erase directories)
-@param overwriteFiles: if True will overwrite files, otherwise will not overwrite when destination exists
-
-### def isMount(path) (l1217)
-
-Return true if pathname path is a mount point:
-A point in a file system where a different file system has been mounted.
-
-### def unlock_(lockname) (l148)
-
-Unlock system-wide interprocess lock
-
-Works similar to j.system.fs.unlock but uses return values to denote unlock
-success instead of raising fatal errors.
-
-This refactoring was mainly done to make the lock implementation easier
-to unit-test.
-
-### def targzCompress(sourcepath, destinationpath,followlinks=False,destInTar="",pathRegexIncludes=['.[a-zA-Z0-9]*'], \ (l1856)
+#### def targzCompress(sourcepath, destinationpath,followlinks=False,destInTar="",pathRegexIncludes=['.[a-zA-Z0-9]*'], \ 
 
 @param sourcepath: Source directory .
 @param destination: Destination filename.
@@ -298,93 +483,43 @@ to unit-test.
 @param extrafiles is array of array [[source,destpath],[source,destpath],...]  adds extra files to tar
 (TAR-GZ-Archive *.tar.gz)
 
-### def getFileExtension(path) (l669)
+#### def targzUncompress(sourceFile,destinationdir,removeDestinationdir=True) 
 
-### def removeDirTree(path, onlyLogWarningOnRemoveError=False) (l410)
+compress dirname recursive
+@param sourceFile: file to uncompress
+@param destinationpath: path of to destiniation dir, sourcefile will end up uncompressed in destination dir
 
-Recursively delete a directory tree.
-@param path: the path to be removed
+#### def touch(paths,overwrite=True) 
 
-### def removeDir(path) (l436)
+can be single path or multiple (then list)
 
-Remove a Directory
-@param path: string (Directory path that should be removed)
+#### def unlink(filename) 
 
-### def readlink(path) (l788)
+Remove the given file if it's a file or a symlink
 
-Works only for unix
-Return a string representing the path to which the symbolic link points.
+@param filename: File path to be removed
+@type filename: string
 
-### def isFile(path, followSoftlink = True) (l1158)
-
-Check if the specified file exists for the given path
-@param path: string
-@param followSoftlink: boolean
-@rtype: boolean (True if file exists for the given path)
-
-### def checkDirOrLinkToDir(fullpath) (l958)
-
-check if path is dir or link to a dir
-
-### def pathRemoveDirPart(path,toremove,removeTrailingSlash=False) (l603)
-
-goal remove dirparts of a dirpath e,g, a basepath which is not needed
-will look for part to remove in full path but only full dirs
-
-### def getBaseName(path) (l540)
-
-Return the base name of pathname path.
-
-### def chmod(path,permissions) (l699)
-
-@param permissions e.g. 0o660 (USE OCTAL !!!)
-
-### def walk(root, recurse=0, pattern='*', return_folders=0, return_files=1, followSoftlinks=True, str=False, depth=None) (l1515)
-
-This is to provide ScanDir similar function
-It is going to be used wherever some one wants to list all files and subfolders
-under one given directly with specific or none matchers
-
-### def hardlinkFile(source, destin) (l1098)
-
-Create a hard link pointing to source named destin. Availability: Unix.
-@param source: string
-@param destin: string
-@rtype: concatenation of dirname, and optionally linkname, etc.
-with exactly one directory separator (os.sep) inserted between components, unless path2 is empty
-
-### def listPyScriptsInDir(path,recursive=True, filter="*.py") (l1023)
-
-Retrieves list of python scripts (with extension .py) in the specified directory
-@param path: string represents the directory path to search in
-@rtype: list
-
-### def renameFile(filePath, new_name) (l281)
-
-OBSOLETE
-
-### def convertFileDirnamesUnicodeToAscii(rootdir,spacesToUnderscore=False) (l1563)
-
-### def convertFileDirnamesSpaceToUnderscore(rootdir) (l1590)
-
-### def createEmptyFile(filename) (l312)
-
-Create an empty file
-@param filename: string (file path name to be created)
-
-### def unlinkFile(filename) (l1254)
+#### def unlinkFile(filename) 
 
 Remove the file path (only for files, not for symlinks)
 @param filename: File path to be removed
 
-### def isDir(path, followSoftlink=True) (l1128)
+#### def unlock(lockname) 
 
-Check if the specified Directory path exists
-@param path: string
-@param followSoftlink: boolean
-@rtype: boolean (True if directory exists)
+Unlock system-wide interprocess lock
 
-### def validateFilename(filename, platform=None) (l1672)
+#### def unlock_(lockname) 
+
+Unlock system-wide interprocess lock
+
+Works similar to j.system.fs.unlock but uses return values to denote unlock
+success instead of raising fatal errors.
+
+This refactoring was mainly done to make the lock implementation easier
+to unit-test.
+
+#### def validateFilename(filename, platform=None) 
 
 Validate a filename for a given (or current) platform
 
@@ -432,186 +567,51 @@ Restrictions are based on information found at these URLs:
 @returns: Whether the filename is valid on the given platform
 @rtype: bool
 
-### def dirEqual(path1,path2) (l587)
+#### def walk(root, recurse=0, pattern='*', return_folders=0, return_files=1, followSoftlinks=True, str=False, depth=None) 
 
-### def islocked(lockname, reentry=False) (l110)
+This is to provide ScanDir similar function
+It is going to be used wherever some one wants to list all files and subfolders
+under one given directly with specific or none matchers
 
-Check if a system-wide interprocess exclusive lock is set
+#### def walkExtended(root, recurse=0, dirPattern='*' , filePattern='*', followSoftLinks = True, dirs=True, files=True ) 
 
-### def checkDirOrLink(fullpath) (l951)
+Extended Walk version: seperate dir and file pattern
+@param  root                : start directory to start the search.
+@type   root                : string
+@param  recurse             : search also in subdirectories.
+@type   recurse             : number
+@param  dirPattern          : search pattern to match directory names. Wildcards can be included.
+@type   dirPattern          : string
+@param  filePattern         : search pattern to match file names. Wildcards can be included.
+@type   filePattern         : string
+@param  followSoftLinks     : determine if links must be followed.
+@type   followSoftLinks     : boolean
+@param  dirs                : determine to return dir results.
+@type   dirs                : boolean
+@param  files               : determine to return file results.
+@type   files               : boolean
 
-check if path is dir or link to a dir
+@return                     : List of files and / or directories that match the search patterns.
+@rtype                      : list of strings
 
-### def constructDirPathFromArray(array) (l1825)
+General guidelines in the usage of the method be means of some examples come next. For the example in /tmp there is
 
-### def grep(fileregex, lineregex) (l1807)
+* a file test.rtt
+* and ./folder1/subfolder/subsubfolder/small_test/test.rtt
 
-Search for lines matching a given regex in all files matching a regex
+To find the first test you can use
+   j.system.fs.walkExtended('/tmp/', dirPattern="*tmp*", filePattern="*.rtt")
+To find only the second one you could use
+   j.system.fs.walkExtended('tmp', recurse=0, dirPattern="*small_test*", filePattern="*.rtt", dirs=False)
 
-@param fileregex: Files to search in
-@type fileregex: string
-@param lineregex: Regex pattern to search for in each file
-@type lineregex: string
+#### def writeFile(filename, contents, append=False) 
 
-### def getParent(path) (l654)
+Open a file and write file contents, close file afterwards
+@param contents: string (file contents to be written)
 
-Returns the parent of the path:
-/dir1/dir2/file_or_dir -> /dir1/dir2/
-/dir1/dir2/            -> /dir1/
-@todo why do we have 2 implementations which are almost the same see getParentDirName()
+#### def writeObjectToFile(filelocation,obj) 
 
-### def checkDirParam(path) (l1116)
-
-### def md5sum(filename) (l1415)
-
-Return the hex digest of a file without loading it all into memory
-@param filename: string (filename to get the hex digest of it) or list of files
-@rtype: md5 of the file
-
-### def listFilesInDir(path, recursive=False, filter=None, minmtime=None, maxmtime=None,depth=None, case_sensitivity='os',exclude=[],followSymlinks=True,listSymlinks=False) (l831)
-
-Retrieves list of files found in the specified directory
-@param path:       directory path to search in
-@type  path:       string
-@param recursive:  recursively look in all subdirs
-@type  recursive:  boolean
-@param filter:     unix-style wildcard (e.g. *.py) - this is not a regular expression
-@type  filter:     string
-@param minmtime:   if not None, only return files whose last modification time > minmtime (epoch in seconds)
-@type  minmtime:   integer
-@param maxmtime:   if not None, only return files whose last modification time < maxmtime (epoch in seconds)
-@Param depth: is levels deep wich we need to go
-@type  maxmtime:   integer
-@Param exclude: list of std filters if matches then exclude
-@rtype: list
-
-### def constructFilePathFromArray(array) (l1835)
-
-### def fileGetContents(filename) (l1284)
-
-Read a file and get contents of that file
-@param filename: string (filename to open for reading )
-@rtype: string representing the file contents
-
-### def lock(lockname, locktimeout=60, reentry=False) (l62)
-
-Take a system-wide interprocess exclusive lock. Default timeout is 60 seconds
-
-### def getFolderMD5sum(folder) (l1438)
-
-### def fileGetUncommentedContents(filename) (l1298)
-
-Read a file and get uncommented contents of that file
-@param filename: string (filename to open for reading )
-@rtype: list of lines of uncommented file contents
-
-### def getParentDirName(path) (l621)
-
-returns parent of path (only for dirs)
-returns empty string when there is no parent
-
-### def listFilesAndDirsInDir(path, recursive=False, filter=None, minmtime=None, maxmtime=None,depth=None,type="fd",followSymlinks=True,listSymlinks=False) (l857)
-
-Retrieves list of files found in the specified directory
-@param path:       directory path to search in
-@type  path:       string
-@param recursive:  recursively look in all subdirs
-@type  recursive:  boolean
-@param filter:     unix-style wildcard (e.g. *.py) - this is not a regular expression
-@type  filter:     string
-@param minmtime:   if not None, only return files whose last modification time > minmtime (epoch in seconds)
-@type  minmtime:   integer
-@param maxmtime:   if not None, only return files whose last modification time < maxmtime (epoch in seconds)
-@Param depth: is levels deep wich we need to go
-@type  maxmtime:   integer
-@param type is string with f & d inside (f for when to find files, d for when to find dirs)
-@rtype: list
-
-### def statPath(path) (l1226)
-
-Perform a stat() system call on the given path
-@rtype: object whose attributes correspond to the members of the stat structure
-
-### def isBinaryFile(filename, checksize=4096) (l1663)
-
-### def joinPaths(*args) (l484)
-
-Join one or more path components.
-If any component is an absolute path, all previous components are thrown away, and joining continues.
-@param path1: string
-@param path2: string
-@param path3: string
-@param .... : string
-@rtype: Concatenation of path1, and optionally path2, etc...,
-with exactly one directory separator (os.sep) inserted between components, unless path2 is empty.
-
-### def readObjectFromFile(filelocation) (l1398)
-
-Read a object from a file(file contents in pickle format)
-@param filelocation: location of the file
-@return: object
-
-### def lock_(lockname, locktimeout=60, reentry=False) (l75)
-
-Take a system-wide interprocess exclusive lock.
-
-Works similar to j.system.fs.lock but uses return values to denote lock
-success instead of raising fatal errors.
-
-This refactoring was mainly done to make the lock implementation easier
-to unit-test.
-
-### def targzUncompress(sourceFile,destinationdir,removeDestinationdir=True) (l1931)
-
-compress dirname recursive
-@param sourceFile: file to uncompress
-@param destinationpath: path of to destiniation dir, sourcefile will end up uncompressed in destination dir
-
-### def replaceWordsInFiles(pathToSearchIn,templateengine,recursive=True, filter=None, minmtime=None, maxmtime=None) (l981)
-
-apply templateengine to list of found files
-@param templateengine =te  #example below
-    te=j.codetools.templateengine.new()
-    te.add("name",self.a.name)
-    te.add("description",self.ayses.description)
-    te.add("version",self.ayses.version)
-
-### def log(msg,level=5,category="") (l219)
-
-### def unlink(filename) (l1269)
-
-Remove the given file if it's a file or a symlink
-
-@param filename: File path to be removed
-@type filename: string
-
-### def gunzip(sourceFile,destFile) (l1922)
-
-### def copyFile(fileFrom, to ,createDirIfNeeded=False,skipProtectedDirs=False,overwriteFile=True) (l224)
-
-Copy file
-
-Copies the file from C\{fileFrom\} to the file or directory C\{to\}.
-If C\{to\} is a directory, a file with the same basename as C\{fileFrom\} is
-created (or overwritten) in the directory specified.
-Permission bits are copied.
-
-@param fileFrom: Source file path name
-@type fileFrom: string
-@param to: Destination file or folder path name
-@type to: string
-
-### def chown(path,user) (l677)
-
-### def getTmpDirPath() (l1600)
-
-create a tmp dir name and makes sure the dir exists
-
-### def gzip(sourceFile,destFile) (l1914)
-
-### def renameDir(dirname, newname,overwrite=False) (l1237)
-
-Rename Directory from dirname to newname
-@param dirname: string (Directory original name)
-@param newname: string (Directory new name to be changed to)
+Write a object to a file(pickle format)
+@param filelocation: location of the file to which we write
+@param obj: object to pickle and write to a file
 

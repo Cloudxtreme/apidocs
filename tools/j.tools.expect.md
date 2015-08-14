@@ -2,7 +2,7 @@
 
 - /opt/jumpscale7/lib/JumpScale/baselib/expect/Expect.py
 
-### @staticmethod (l146)
+#### @staticmethod 
 
 Create a new Expect session
 

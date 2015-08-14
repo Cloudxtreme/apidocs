@@ -4,91 +4,91 @@
 - Properties
     - client
 
-### def btrfsSubvolList() (l164)
+#### def btrfsSubvolCopy(nameFrom,NameDest) 
 
-### def installJumpscale(name) (l417)
+#### def btrfsSubvolDelete(name) 
 
-### def list() (l81)
+#### def btrfsSubvolExists(name) 
 
-return list of names
+#### def btrfsSubvolList() 
 
-### def downloadFile(name, source, dest) (l568)
+#### def btrfsSubvolNew(name) 
 
-get a file located at source in the host to dest on the host
+#### def commit(name,imagename) 
 
-### def destroyall() (l514)
+#### def copy(name,src,dest) 
 
-### def removeRedundantFiles(name) (l210)
-
-### def importRsync(backupname,name,basename="",key="pub") (l218)
-
-@param basename is the name of a start of a machine locally, will be used as basis and then the source will be synced over it
-
-### def ps() (l90)
-
-return detailed info
-
-### def getSSH(name,stdout=False) (l505)
-
-### def getPubPortForInternalPort(name,port) (l449)
-
-### def uploadFile(name, source, dest) (l562)
-
-put a file located at source on the host to dest into the container
-
-### def setHostName(name) (l438)
-
-### def create(name="",ports="",vols="",volsro="",stdout=True,base="despiegk/mc",nameserver=["8.8.8.8"],replace=True,cpu=None,mem=0,jumpscale=False,ssh=True,myinit=True) (l273)
+#### def create(name="",ports="",vols="",volsro="",stdout=True,base="despiegk/mc",nameserver=["8.8.8.8"],replace=True,cpu=None,mem=0,jumpscale=False,ssh=True,myinit=True) 
 
 @param ports in format as follows  "22:8022 80:8080"  the first arg e.g. 22 is the port in the container
 @param vols in format as follows "/var/insidemachine:/var/inhost # /var/1:/var/1 # ..."   '#' is separator
 
-### def pushSSHKey(name) (l457)
+#### def destroy(name) 
 
-### def btrfsSubvolNew(name) (l178)
+#### def destroyall() 
 
-### def btrfsSubvolCopy(nameFrom,NameDest) (l184)
+#### def downloadFile(name, source, dest) 
 
-### def destroy(name) (l532)
+get a file located at source in the host to dest on the host
 
-### def getIp(name) (l108)
+#### def execute(name,path) 
 
-### def getProcessList(name, stdout=True) (l112)
+execute file in docker
+
+#### def exportRsync(name,backupname,key="pub") 
+
+#### def exportTgz(name,backupname) 
+
+#### def getImages() 
+
+#### def getInfo(name) 
+
+#### def getIp(name) 
+
+#### def getProcessList(name, stdout=True) 
 
 @return [["$name",$pid,$mem,$parent],....,[$mem,$cpu]]
 last one is sum of mem & cpu
 
-### def run(name,cmd) (l28)
+#### def getPubPortForInternalPort(name,port) 
 
-### def btrfsSubvolExists(name) (l193)
+#### def getSSH(name,stdout=False) 
 
-### def inspect(name) (l96)
+#### def importRsync(backupname,name,basename="",key="pub") 
 
-### def stop(name) (l543)
+@param basename is the name of a start of a machine locally, will be used as basis and then the source will be synced over it
 
-### def copy(name,src,dest) (l39)
+#### def importTgz(backupname,name) 
 
-### def restart(name) (l549)
+#### def inspect(name) 
 
-### def pull(imagename) (l558)
+#### def installJumpscale(name) 
 
-### def execute(name,path) (l32)
+#### def list() 
 
-execute file in docker
+return list of names
 
-### def getImages() (l428)
+#### def ps() 
 
-### def getInfo(name) (l102)
+return detailed info
 
-### def importTgz(backupname,name) (l262)
+#### def pull(imagename) 
 
-### def btrfsSubvolDelete(name) (l199)
+#### def pushSSHKey(name) 
 
-### def exportRsync(name,backupname,key="pub") (l144)
+#### def removeImages(tag="<none><none>") 
 
-### def exportTgz(name,backupname) (l249)
+#### def removeRedundantFiles(name) 
 
-### def commit(name,imagename) (l552)
+#### def restart(name) 
 
-### def removeImages(tag="<none><none>") (l432)
+#### def run(name,cmd) 
+
+#### def setHostName(name) 
+
+#### def stop(name) 
+
+#### def uploadFile(name, source, dest) 
+
+put a file located at source on the host to dest into the container
 

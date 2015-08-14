@@ -6,9 +6,9 @@
 
     
 
-### def getClient(ipaddr="localhost",port=5432,login="postgres",passwd="rooter",dbname="template") (l24)
+#### def createdb(db,ipaddr="localhost",port=5432,login="postgres",passwd="rooter") 
 
-### def createdb(db,ipaddr="localhost",port=5432,login="postgres",passwd="rooter") (l31)
+#### def dropdb(db,ipaddr="localhost",port=5432,login="postgres",passwd="rooter") 
 
-### def dropdb(db,ipaddr="localhost",port=5432,login="postgres",passwd="rooter") (l44)
+#### def getClient(ipaddr="localhost",port=5432,login="postgres",passwd="rooter",dbname="template") 
 

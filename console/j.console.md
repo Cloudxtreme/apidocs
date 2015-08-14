@@ -10,38 +10,29 @@ self.width=120
 self.indent=0 #current indentation of messages send to console
 self.reformat=False #if True will make sure message fits nicely on screen
 
-### def enableOutput() (l653)
+#### def askArrayRow(array,header=True,descr="",returncol=None) 
 
-### def echo(msg,indent=None,withStar=False,prefix="",log=False,lf=True) (l125)
-
-Display some text to the end-user, use this method instead of print
-@param indent std, will use indent from console object (same for all), this param allows to overrule
-        will only work when j.console.reformat==True
-
-### def formatMessage(message,prefix="",withStar=False,indent=0,width=0,removeemptylines=True) (l77)
-
-Reformat the message to display to the user and calculate length
-@param withStar means put * in front of message
-@returns: Length of last line and message to display
-@rtype: tuple<number, string>
-
-### def rawInputPerChar(callback,params) (l31)
-
-when typing, char per char will be returned
-
-### def echoListItem(msg) (l149)
-
-Echo a list item
-@param msg: Message to display
-
-### def askChoice(choicearray, descr="", sort=True,maxchoice=25,height=30,autocomplete=False) (l399)
+#### def askChoice(choicearray, descr="", sort=True,maxchoice=25,height=30,autocomplete=False) 
 
 @param choicearray is list or dict, when dict key needs to be the object to return,
        the value of the dics is what needs to be returned, the key is the str representation
 
-### def printOutput() (l650)
+#### def askChoiceMultiple(choicearray, descr=None, sort=True) 
 
-### def askIntegers(question, invalid_message="invalid input please try again.", min=None, max=None) (l356)
+#### def askInteger(question, defaultValue = None, minValue = None, maxValue = None, retry = -1, validate=None) 
+
+Get an integer response on asked question
+
+@param question: Question need to get response on
+@param defaultparam: default response on the question if response not passed
+@param minValue: minimum accepted value for that integer
+@param maxValue: maximum accepted value for that integer
+@param retry: int counter to retry ask for respone on the question
+@param validate: Function to validate provided value
+
+@return: integer representing the response on the question
+
+#### def askIntegers(question, invalid_message="invalid input please try again.", min=None, max=None) 
 
 Ask the user for multiple integers
 
@@ -56,24 +47,17 @@ Ask the user for multiple integers
 @return: the input numbers
 @rtype: list<number>
 
-### def echoDict(dictionary,withStar=False,indent=None) (l185)
+#### def askMultiline(question, escapeString='.') 
 
-### def echoListItems(messages, sort=False) (l156)
+Ask the user a question that needs a multi-line answer.
 
-Echo a sequence (iterator, generator, list, set) as list items
+@param question: The question that should be asked to the user
+@type question: string
+@param escapeString: Optional custom escape string that is used by the user to indicate input has ended.
+@type escapeString: string
+@return: string multi-line reply by the user, always ending with a newline
 
-@param messages: messages that need to be written to the console as list items
-@type messages: iterable
-@param sort: sort the messages before echoing them
-@type sort: bool
-@param loglevel: Log level
-@type loglevel: number
-
-### def hideOutput() (l647)
-
-### def transformDictToMessage(dictionary,withStar=False,indent=None) (l192)
-
-### def askPassword(question, confirm=True, regex=None, retry=-1, validate=None) (l240)
+#### def askPassword(question, confirm=True, regex=None, retry=-1, validate=None) 
 
 Present a password input question to the user
 
@@ -87,23 +71,7 @@ Present a password input question to the user
 @returns: Password provided by the user
 @rtype: string
 
-### def showArray(array,header=True) (l656)
-
-### def echoListWithPrefix(messages,prefix) (l178)
-
-print messages
-
-### def askMultiline(question, escapeString='.') (l623)
-
-Ask the user a question that needs a multi-line answer.
-
-@param question: The question that should be asked to the user
-@type question: string
-@param escapeString: Optional custom escape string that is used by the user to indicate input has ended.
-@type escapeString: string
-@return: string multi-line reply by the user, always ending with a newline
-
-### def askString(question, defaultparam='', regex=None, retry=-1, validate=None) (l205)
+#### def askString(question, defaultparam='', regex=None, retry=-1, validate=None) 
 
 Get a string response on a question
 
@@ -116,22 +84,7 @@ Get a string response on a question
 @returns: Response provided by the user
 @rtype: string
 
-### def askInteger(question, defaultValue = None, minValue = None, maxValue = None, retry = -1, validate=None) (l285)
-
-Get an integer response on asked question
-
-@param question: Question need to get response on
-@param defaultparam: default response on the question if response not passed
-@param minValue: minimum accepted value for that integer
-@param maxValue: maximum accepted value for that integer
-@param retry: int counter to retry ask for respone on the question
-@param validate: Function to validate provided value
-
-@return: integer representing the response on the question
-
-### def askChoiceMultiple(choicearray, descr=None, sort=True) (l592)
-
-### def askYesNo(message="") (l332)
+#### def askYesNo(message="") 
 
 Display a yes/no question and loop until a valid answer is entered
 
@@ -141,15 +94,62 @@ Display a yes/no question and loop until a valid answer is entered
 @return: Positive or negative answer
 @rtype: bool
 
-### def askArrayRow(array,header=True,descr="",returncol=None) (l691)
+#### def cls() 
 
-### def echoWithPrefix(message,prefix,withStar=False,indent=None) (l172)
+clear screen
+
+#### def echo(msg,indent=None,withStar=False,prefix="",log=False,lf=True) 
+
+Display some text to the end-user, use this method instead of print
+@param indent std, will use indent from console object (same for all), this param allows to overrule
+        will only work when j.console.reformat==True
+
+#### def echoDict(dictionary,withStar=False,indent=None) 
+
+#### def echoListItem(msg) 
+
+Echo a list item
+@param msg: Message to display
+
+#### def echoListItems(messages, sort=False) 
+
+Echo a sequence (iterator, generator, list, set) as list items
+
+@param messages: messages that need to be written to the console as list items
+@type messages: iterable
+@param sort: sort the messages before echoing them
+@type sort: bool
+@param loglevel: Log level
+@type loglevel: number
+
+#### def echoListWithPrefix(messages,prefix) 
+
+print messages
+
+#### def echoWithPrefix(message,prefix,withStar=False,indent=None) 
 
 print a message which is formatted with a prefix
 
-### def showOutput() (l644)
+#### def enableOutput() 
 
-### def cls() (l199)
+#### def formatMessage(message,prefix="",withStar=False,indent=0,width=0,removeemptylines=True) 
 
-clear screen
+Reformat the message to display to the user and calculate length
+@param withStar means put * in front of message
+@returns: Length of last line and message to display
+@rtype: tuple<number, string>
+
+#### def hideOutput() 
+
+#### def printOutput() 
+
+#### def rawInputPerChar(callback,params) 
+
+when typing, char per char will be returned
+
+#### def showArray(array,header=True) 
+
+#### def showOutput() 
+
+#### def transformDictToMessage(dictionary,withStar=False,indent=None) 
 

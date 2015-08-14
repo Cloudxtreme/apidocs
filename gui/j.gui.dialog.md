@@ -4,9 +4,7 @@
 - Properties
     - easyDialog
 
-### def navigateTo(url) (l247)
-
-### def askChoice(question, choices, defaultValue = None, pageSize = 10, sortChoices=False, sortCallBack=None) (l161)
+#### def askChoice(question, choices, defaultValue = None, pageSize = 10, sortChoices=False, sortCallBack=None) 
 
 Ask the user the supplied question and list the choices to choose from, if no response given the default value is used
 
@@ -19,15 +17,7 @@ Ask the user the supplied question and list the choices to choose from, if no re
 
 @return:  selected choice
 
-### def showProgress(minvalue, maxvalue, currentvalue) (l231)
-
-Shows a progress bar according to the given values
-
-@param minvalue: minVlue of scale
-@param maxvalue: maxvlaue of scale
-@param currentvalue: the current value to show the progress
-
-### def askChoiceMultiple(question, choices, defaultValue = None, pageSize = 10, sortChoices=False, sortCallBack=None) (l177)
+#### def askChoiceMultiple(question, choices, defaultValue = None, pageSize = 10, sortChoices=False, sortCallBack=None) 
 
 Ask the user the supplied question and list the choices to choose from, if no response given the default value[s] is used
 
@@ -40,23 +30,7 @@ Ask the user the supplied question and list the choices to choose from, if no re
 
 @return:  selected choice[s] or default value[s]
 
-### def askMultiline(question, defaultValue=None) (l193)
-
-Asks the user the supplied question, where the answer could be multi-lines
-
-@param question: the question to be displayed
-
-### def pm_setDialogHandler() (l44)
-
-### def askDirPath(message, startPath = None) (l93)
-
-Prompts for a selection of a file path starting from startPath if given and '/' if not
-
-@param message: message that would be displayed to the user above the selection menu
-@param startPath: base dir of the navigation tree
-@return: path to the directory selected
-
-### def askDate(question, minValue = None, maxValue = None, selectedValue = None, format = 'YYYY/MM/DD') (l202)
+#### def askDate(question, minValue = None, maxValue = None, selectedValue = None, format = 'YYYY/MM/DD') 
 
 Asks user a question that its answer is a date between minValue and maxValue
 
@@ -68,31 +42,7 @@ Note: this note my seem out of place, but is is important to note that currently
 @param selectedValue:
 @param  format: the format of the input date
 
-### def askIntegers(question) (l151)
-
-Asks user the supplied question and prompt for an answer
-
-@param question: question to be prompted
-@return: response integer
-
-### def clear() (l253)
-
-### def chooseDialogType(type) (l50)
-
-supported types today: console,win32,wizardserver
-@param type DialogType enumerator
-
-### def askString(question, defaultValue = None, validator=None) (l107)
-
-Asks the user the supplied question and prompt for an answer, if none given the default value is used
-@param question: question to be displayed
-@param defaultValue: if the user did not provide a response this value is used as an answer
-@param validator: regex validation value
-@return: response string or the default value
-
-### def askForm(form) (l250)
-
-### def askDateTime(question, minValue = None, maxValue = None, selectedValue = None, format = 'YYYY/MM/DD hhmm') (l217)
+#### def askDateTime(question, minValue = None, maxValue = None, selectedValue = None, format = 'YYYY/MM/DD hhmm') 
 
 Asks user a question that its answer is a datetime between minValue and maxValue
 
@@ -104,25 +54,15 @@ Note: this note my seem out of place, but is is important to note that currently
 @param selectedValue:
 @param  format: the format of the input date
 
-### def askInteger(question, defaultValue = None) (l139)
+#### def askDirPath(message, startPath = None) 
 
-Asks user the supplied question and prompt for an answer, if none given the default value is used, the response and the default value must be valid integer
+Prompts for a selection of a file path starting from startPath if given and '/' if not
 
-@param question: question to be displayed
-@param defaultValue: if the user did not provide a response this value is used as an answer
-@return: response integer or the default value
+@param message: message that would be displayed to the user above the selection menu
+@param startPath: base dir of the navigation tree
+@return: path to the directory selected
 
-### def showLogging(text) (l241)
-
-Shows logging message
-
-### def message(message) (l70)
-
-prints the given message to the screen
-
-@param message: message to print
-
-### def askFilePath(message, startPath = None) (l79)
+#### def askFilePath(message, startPath = None) 
 
 Prompts for a selection of a file path starting from startPath if given and '/' if not
 
@@ -130,7 +70,75 @@ Prompts for a selection of a file path starting from startPath if given and '/' 
 @param startPath: base dir of the navigation tree
 @return: path to the file selected
 
-### def showMessageBox(message, title, msgboxButtons = "OK", msgboxIcon = "Information", defaultButton = "OK") (l256)
+#### def askForm(form) 
+
+#### def askInteger(question, defaultValue = None) 
+
+Asks user the supplied question and prompt for an answer, if none given the default value is used, the response and the default value must be valid integer
+
+@param question: question to be displayed
+@param defaultValue: if the user did not provide a response this value is used as an answer
+@return: response integer or the default value
+
+#### def askIntegers(question) 
+
+Asks user the supplied question and prompt for an answer
+
+@param question: question to be prompted
+@return: response integer
+
+#### def askMultiline(question, defaultValue=None) 
+
+Asks the user the supplied question, where the answer could be multi-lines
+
+@param question: the question to be displayed
+
+#### def askPassword(question, confirm=True, regex=None, retry=-1, defaultValue=None) 
+
+Asks the supplied question and prompts for password
+
+@param question: question to be displayed
+@return: response string
+
+#### def askString(question, defaultValue = None, validator=None) 
+
+Asks the user the supplied question and prompt for an answer, if none given the default value is used
+@param question: question to be displayed
+@param defaultValue: if the user did not provide a response this value is used as an answer
+@param validator: regex validation value
+@return: response string or the default value
+
+#### def askYesNo(question, defaultValue = None) 
+
+Asks user the supplied question and prompt for an answer, if none given the default value is used, the response and the default value one of the values [y|Y|yes|Yes..n|N|No..]
+
+Note:For the EasyDialogConol implementation, currently the default value effect is ignored since it would require changing the jumpscale vapp
+@param question: question to be prompted
+@param defaultValue: if the user did not provide a response this value is used as an answer
+@return: response answer or the default value
+
+#### def chooseDialogType(type) 
+
+supported types today: console,win32,wizardserver
+@param type DialogType enumerator
+
+#### def clear() 
+
+#### def message(message) 
+
+prints the given message to the screen
+
+@param message: message to print
+
+#### def navigateTo(url) 
+
+#### def pm_setDialogHandler() 
+
+#### def showLogging(text) 
+
+Shows logging message
+
+#### def showMessageBox(message, title, msgboxButtons = "OK", msgboxIcon = "Information", defaultButton = "OK") 
 
 Shows a large message box
 
@@ -142,19 +150,11 @@ Shows a large message box
 
 @return: A JSON encoded string containing the selected button clicked
 
-### def askYesNo(question, defaultValue = None) (l118)
+#### def showProgress(minvalue, maxvalue, currentvalue) 
 
-Asks user the supplied question and prompt for an answer, if none given the default value is used, the response and the default value one of the values [y|Y|yes|Yes..n|N|No..]
+Shows a progress bar according to the given values
 
-Note:For the EasyDialogConol implementation, currently the default value effect is ignored since it would require changing the jumpscale vapp
-@param question: question to be prompted
-@param defaultValue: if the user did not provide a response this value is used as an answer
-@return: response answer or the default value
-
-### def askPassword(question, confirm=True, regex=None, retry=-1, defaultValue=None) (l130)
-
-Asks the supplied question and prompts for password
-
-@param question: question to be displayed
-@return: response string
+@param minvalue: minVlue of scale
+@param maxvalue: maxvlaue of scale
+@param currentvalue: the current value to show the progress
 

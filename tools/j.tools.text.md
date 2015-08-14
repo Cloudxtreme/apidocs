@@ -34,102 +34,13 @@
     - getInt
     - getList
 
-### @staticmethod (l535)
+#### @staticmethod 
 
-do reverse of:
-     SPACE -> \S
-     " -> \Q
-     , -> \K
-     : -> \D
-     \n -> return
+#### @staticmethod 
 
-### @staticmethod (l656)
+#### @staticmethod 
 
-look for 'something,else' the comma needs to be converted to \k
-
-### @staticmethod (l135)
-
-remove all spaces at beginning & end of line when relevant
-
-### @staticmethod (l428)
-
-### @staticmethod (l83)
-
-there can be chars for prefix (e.g. '< :*: aline'  and this function looking for :*: would still work and ignore '< ')
-@param onlyPrefix if True means only when prefix found will be returned, rest discarded
-
-### @staticmethod (l60)
-
-### @staticmethod (l19)
-
-process string so it can be used in a path on windows or linux
-
-### @staticmethod (l131)
-
-### @staticmethod (l104)
-
-### @staticmethod (l578)
-
-do reverse of:
-            SPACE -> \S
-            " -> \Q
-            , -> \K
-            : -> \D
-            
--> \N
-
-### @staticmethod (l505)
-
-'something ' removes ''
-all spaces & commas & : inside ' '  are converted
- SPACE -> \S
- " -> \Q
- , -> \K
- : -> \D
- \n -> \N
-
-### @staticmethod (l702)
-
-keys are always treated as string
-@type can be int,bool or float (otherwise its always str)
-
-### @staticmethod (l316)
-
-look for \{\{\}\} return as list
-
-### @staticmethod (l636)
-
-### @staticmethod (l68)
-
-@param onlyPrefix if True means only when prefix found will be returned, rest discarded
-
-### @staticmethod (l33)
-
-### @staticmethod (l99)
-
-### @staticmethod (l12)
-
-### @staticmethod (l666)
-
-look for [something,2] the comma needs to be converted to \k
-
-### @staticmethod (l432)
-
-try to convert a python object to string representation works for None, bool, integer, float, dict, list
-
-### @staticmethod (l641)
-
-### @staticmethod (l529)
-
-### @staticmethod (l596)
-
-### @staticmethod (l51)
-
-### @staticmethod (l410)
-
-look for \{\{\}\} in code and evaluate as python result is converted back to str
-
-### @staticmethod (l153)
+#### @staticmethod 
 
 look for @ASK statements in text, where found replace with input from user
 
@@ -147,18 +58,107 @@ syntax for ask is:
 
 @ASK can be at any position in the text
 
-### @staticmethod (l113)
+#### @staticmethod 
 
-### @staticmethod (l628)
+look for [something,2] the comma needs to be converted to \k
 
-### @staticmethod (l612)
+#### @staticmethod 
 
-### @staticmethod (l357)
+look for 'something,else' the comma needs to be converted to \k
+
+#### @staticmethod 
+
+look for \{\{\}\} in code and evaluate as python result is converted back to str
+
+#### @staticmethod 
+
+#### @staticmethod 
+
+keys are always treated as string
+@type can be int,bool or float (otherwise its always str)
+
+#### @staticmethod 
+
+#### @staticmethod 
+
+#### @staticmethod 
+
+@type can be int,bool or float (otherwise its always str)
+
+#### @staticmethod 
+
+look for \{\{\}\} return as list
+
+#### @staticmethod 
+
+'something ' removes ''
+all spaces & commas & : inside ' '  are converted
+ SPACE -> \S
+ " -> \Q
+ , -> \K
+ : -> \D
+ \n -> \N
+
+#### @staticmethod 
+
+#### @staticmethod 
+
+#### @staticmethod 
+
+#### @staticmethod 
+
+remove all spaces at beginning & end of line when relevant
+
+#### @staticmethod 
+
+do reverse of:
+            SPACE -> \S
+            " -> \Q
+            , -> \K
+            : -> \D
+            
+-> \N
+
+#### @staticmethod 
+
+do reverse of:
+     SPACE -> \S
+     " -> \Q
+     , -> \K
+     : -> \D
+     \n -> return
+
+#### @staticmethod 
+
+#### @staticmethod 
+
+@param onlyPrefix if True means only when prefix found will be returned, rest discarded
+
+#### @staticmethod 
+
+there can be chars for prefix (e.g. '< :*: aline'  and this function looking for :*: would still work and ignore '< ')
+@param onlyPrefix if True means only when prefix found will be returned, rest discarded
+
+#### @staticmethod 
+
+try to convert a python object to string representation works for None, bool, integer, float, dict, list
+
+#### @staticmethod 
+
+#### @staticmethod 
+
+#### @staticmethod 
 
 convert list, dict of strings 
 or convert 1 string to python objects
 
-### @staticmethod (l676)
+#### @staticmethod 
 
-@type can be int,bool or float (otherwise its always str)
+#### @staticmethod 
+
+process string so it can be used in a path on windows or linux
+
+#### @staticmethod 
+
+#### @staticmethod 
 

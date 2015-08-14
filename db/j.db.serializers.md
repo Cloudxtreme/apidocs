@@ -11,25 +11,7 @@
     - hrd
     - types
 
-### def getSerializerType(type,key="") (l54)
-
-serializationstr FORMATS SUPPORTED FOR NOW
-    m=MESSAGEPACK 
-    c=COMPRESSION WITH BLOSC
-    b=blowfish
-    s=snappy
-    j=json
-    6=base64
-    l=lzma
-    p=pickle
-    r=bin (means is not object (r=raw))
-    l=log
-
-### def getBlosc() (l51)
-
-### def getMessagePack() (l48)
-
-### def get(serializationstr,key="") (l22)
+#### def get(serializationstr,key="") 
 
 serializationstr FORMATS SUPPORTED FOR NOW
     m=MESSAGEPACK 
@@ -47,4 +29,22 @@ serializationstr FORMATS SUPPORTED FOR NOW
  example serializationstr "mcb" would mean first use messagepack serialization then compress using blosc then encrypt (key will be used)
 
 this method returns
+
+#### def getBlosc() 
+
+#### def getMessagePack() 
+
+#### def getSerializerType(type,key="") 
+
+serializationstr FORMATS SUPPORTED FOR NOW
+    m=MESSAGEPACK 
+    c=COMPRESSION WITH BLOSC
+    b=blowfish
+    s=snappy
+    j=json
+    6=base64
+    l=lzma
+    p=pickle
+    r=bin (means is not object (r=raw))
+    l=log
 

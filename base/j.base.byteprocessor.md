@@ -14,23 +14,23 @@
 
 ByteProcessor
 
-### @staticmethod (l36)
+#### @staticmethod 
 
-### @staticmethod (l20)
+#### @staticmethod 
 
-### @staticmethod (l42)
-
-### @staticmethod (l47)
-
-### @staticmethod (l28)
-
-### @staticmethod (l52)
+#### @staticmethod 
 
 returns DispersedBlock object
 
-### @staticmethod (l65)
+#### @staticmethod 
 
-### @staticmethod (l12)
+#### @staticmethod 
 
-### @staticmethod (l61)
+#### @staticmethod 
+
+#### @staticmethod 
+
+#### @staticmethod 
+
+#### @staticmethod 
 

@@ -5,7 +5,7 @@
     - encrkey
     - c
 
-### def dumps(obj,encrkey) (l16)
+#### def dumps(obj,encrkey) 
 
-### def loads(s,encrkey) (l23)
+#### def loads(s,encrkey) 
 

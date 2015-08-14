@@ -2,23 +2,23 @@
 
 - /opt/jumpscale7/lib/JumpScale/portal/docgenerator/Docgenerator.py
 
-### def convertConfluenceToRST(src,dest) (l29)
+#### def convertConfluenceToRST(src,dest) 
 
-### def getConfluence2htmlConvertor() (l64)
+#### def getConfluence2htmlConvertor() 
 
-### def pageNewRST(pagename, htmllibPath=None) (l85)
+#### def getConfluence2rstConvertor() 
 
-### def getConfluence2rstConvertor() (l67)
-
-### def pageGroupNew(pages=\{\}) (l90)
-
-### def getMacroPath() (l94)
-
-### def pageNewConfluence(pagename, parent="Home") (l70)
-
-### def getConfluenceClient(url, login, passwd, spacename, erasespace=False, erasepages=False) (l12)
+#### def getConfluenceClient(url, login, passwd, spacename, erasespace=False, erasepages=False) 
 
 @param url e.g. http://10.0.1.193:8080/confluence
 
-### def pageNewHTML(pagename, htmllibPath=None) (l80)
+#### def getMacroPath() 
+
+#### def pageGroupNew(pages=\{\}) 
+
+#### def pageNewConfluence(pagename, parent="Home") 
+
+#### def pageNewHTML(pagename, htmllibPath=None) 
+
+#### def pageNewRST(pagename, htmllibPath=None) 
 

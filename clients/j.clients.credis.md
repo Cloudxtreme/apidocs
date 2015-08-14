@@ -7,7 +7,7 @@
 
     
 
-### def getRedisClient(ipaddr, port,timeout=None) (l23)
+#### def getRedisClient(ipaddr, port,timeout=None) 
 
-### def getRedisQueue(ipaddr, port, name, namespace="queues") (l29)
+#### def getRedisQueue(ipaddr, port, name, namespace="queues") 
 

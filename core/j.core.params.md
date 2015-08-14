@@ -4,7 +4,15 @@
 
 This factory can create new Params objects
 
-### def isParams(p) (l21)
+#### def get(dictObject=\{\}) 
+
+Create and return a new Params object
+
+@param dictObject when dict given then dict will be converted into params
+@return: a new Params object
+@rtype: Params
+
+#### def isParams(p) 
 
 Return if the argument object is an instance of Params
 
@@ -12,12 +20,4 @@ Return if the argument object is an instance of Params
 @type p: object
 @return: Whether or not `p` is a Params instance
 @rtype: boolean
-
-### def get(dictObject=\{\}) (l11)
-
-Create and return a new Params object
-
-@param dictObject when dict given then dict will be converted into params
-@return: a new Params object
-@rtype: Params
 

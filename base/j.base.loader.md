@@ -2,7 +2,7 @@
 
 - /opt/jumpscale7/lib/JumpScale/core/LOADER.py
 
-### def makeAvailable(obj, path) (l6)
+#### def makeAvailable(obj, path) 
 
 Make sure a path under a object is available
 

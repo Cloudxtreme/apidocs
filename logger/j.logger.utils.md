@@ -4,7 +4,7 @@
 
 Some log related utilities.
 
-### def trace(level=5, enabled=True) (l38)
+#### def trace(level=5, enabled=True) 
 
 Decorator factory. Use enabled to avoid the logging overhead when it's
 not needed. Do not the tracing can *not* be enabled or disabled at

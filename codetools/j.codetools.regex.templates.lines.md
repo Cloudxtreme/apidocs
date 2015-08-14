@@ -4,9 +4,9 @@
 
 regexexamples which find lines
 
-### def findClasslines() (l16)
+#### def findClasslines() 
 
-### def findCommentlines() (l13)
+#### def findCommentlines() 
 
-### def findDeflines() (l19)
+#### def findDeflines() 
 

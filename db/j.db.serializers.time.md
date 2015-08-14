@@ -2,7 +2,7 @@
 
 - /opt/jumpscale7/lib/JumpScale/baselib/serializers/SerializerTime.py
 
-### def dumps(obj) (l5)
+#### def dumps(obj) 
 
-### def loads(s) (l8)
+#### def loads(s) 
 

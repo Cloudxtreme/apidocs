@@ -4,5 +4,5 @@
 - Properties
     - cmdsInterfaces
 
-### def addCMDsInterface(cmdInterfaceClass, category) (l31)
+#### def addCMDsInterface(cmdInterfaceClass, category) 
 

@@ -4,19 +4,16 @@
 - Properties
     - screencmd
 
-### def getSessions(user=None) (l101)
+#### def attachSession(sessionname, windowname=None,user=None) 
 
-### def logWindow(session, name, filename,user=None) (l147)
+#### def createSession(sessionname,screens,user=None) 
 
-### def createWindow(session, name,user=None) (l137)
+@param name is name of session
+@screens is list with nr of screens required in session and their names (is [$screenname,...])
 
-### def windowExists(session, name,user=None) (l155)
+#### def createWindow(session, name,user=None) 
 
-### def getWindows(session, attemps=5,user=None) (l123)
-
-### def killWindow(session, name,user=None) (l169)
-
-### def executeInScreen(sessionname,screenname,cmd,wait=0, cwd=None, env=None,user="root",tmuxuser=None) (l39)
+#### def executeInScreen(sessionname,screenname,cmd,wait=0, cwd=None, env=None,user="root",tmuxuser=None) 
 
 @param sessionname Name of the tmux session
 @type sessionname str
@@ -31,16 +28,19 @@
 @param env environment variables for cmd onlt in new screen see newscr
 @type env dict
 
-### def attachSession(sessionname, windowname=None,user=None) (l191)
+#### def getPid(session, name,user=None) 
 
-### def killSessions(user=None) (l179)
+#### def getSessions(user=None) 
 
-### def getPid(session, name,user=None) (l110)
+#### def getWindows(session, attemps=5,user=None) 
 
-### def killSession(sessionname,user=None) (l185)
+#### def killSession(sessionname,user=None) 
 
-### def createSession(sessionname,screens,user=None) (l9)
+#### def killSessions(user=None) 
 
-@param name is name of session
-@screens is list with nr of screens required in session and their names (is [$screenname,...])
+#### def killWindow(session, name,user=None) 
+
+#### def logWindow(session, name, filename,user=None) 
+
+#### def windowExists(session, name,user=None) 
 

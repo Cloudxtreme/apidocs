@@ -4,9 +4,9 @@
 
 interface on i
 
-### def init() (l111)
+#### def getAccount(accountname="") 
 
-### def getAccount(accountname="") (l83)
+#### def getRepo(accountname="",reponame="") 
 
-### def getRepo(accountname="",reponame="") (l79)
+#### def init() 
 

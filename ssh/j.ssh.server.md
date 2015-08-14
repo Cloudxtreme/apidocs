@@ -2,5 +2,5 @@
 
 - /opt/jumpscale7/lib/JumpScale/lib/ssh/server/manager.py
 
-### def get(con=None) (l15)
+#### def get(con=None) 
 

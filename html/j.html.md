@@ -2,15 +2,15 @@
 
 - /opt/jumpscale7/lib/JumpScale/portal/html/HtmlFactory.py
 
-### def getHtmllibDir() (l35)
+#### def escape(text) 
 
-### def getPageModifierBootstrapForm(page) (l20)
+#### def getHtmllibDir() 
 
-### def unescape(text) (l42)
+#### def getPageModifierBootstrapForm(page) 
 
-### def getPageModifierGalleria(page) (l30)
+#### def getPageModifierGalleria(page) 
 
-### def escape(text) (l39)
+#### def getPageModifierGridDataTables(page) 
 
-### def getPageModifierGridDataTables(page) (l25)
+#### def unescape(text) 
 

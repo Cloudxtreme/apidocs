@@ -2,7 +2,7 @@
 
 - /opt/jumpscale7/lib/JumpScale/core/gui/dialog/EasyDialogWizardForm.py
 
-### def createForm() (l45)
+#### def createForm() 
 
 Create new wizard form object
 

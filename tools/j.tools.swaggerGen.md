@@ -7,15 +7,15 @@
     - client
     - jinjaEnv
 
-### def loadSpecFromStr(spec) (l94)
+#### def generate(baseURL, serverOuput, clientOutput) 
 
-### def generateServer(outputPath) (l106)
+#### def generateActors(destpath) 
 
-### def generateClient(outputPath) (l115)
+#### def generateClient(outputPath) 
 
-### def generateActors(destpath) (l112)
+#### def generateServer(outputPath) 
 
-### def generate(baseURL, serverOuput, clientOutput) (l101)
+#### def loadSpecFromFile(path) 
 
-### def loadSpecFromFile(path) (l97)
+#### def loadSpecFromStr(spec) 
 

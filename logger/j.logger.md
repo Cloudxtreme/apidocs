@@ -12,23 +12,23 @@
     - consolelogCategories
     - maxlevel
 
-### def reset() (l233)
+#### def connectRedis() 
 
-### def connectRedis() (l168)
+#### def disable() 
 
-### def log(message, level=5, category="", tags="", jid="", parentjid="",masterjid="", private=False) (l248)
+#### def getLogObjectFromDict(ddict) 
+
+#### def init() 
+
+#### def log(message, level=5, category="", tags="", jid="", parentjid="",masterjid="", private=False) 
 
 send to all log targets
 
-### def nostdout() (l206)
-
-### def init() (l164)
-
-### def disable() (l242)
-
-### def nologger(func) (l193)
+#### def nologger(func) 
 
 Decorator to disable logging for a specific method (probably not thread safe)
 
-### def getLogObjectFromDict(ddict) (l190)
+#### def nostdout() 
+
+#### def reset() 
 

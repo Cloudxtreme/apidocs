@@ -2,7 +2,7 @@
 
 - /opt/jumpscale7/lib/JumpScale/baselib/codeexecutor/CodeExecutor.py
 
-### def evalFile(path) (l7)
+#### def eval(code) 
 
-### def eval(code) (l12)
+#### def evalFile(path) 
 

@@ -5,27 +5,27 @@
     - stats
     - log
 
-### def send2carbon() (l226)
+#### def clean() 
 
-### def set(key,val,ttype="N",remember=True,memonly=False,percent=False) (l158)
+#### def delete(prefix) 
 
-### def get(key) (l171)
+#### def get(key) 
 
-### def getTime() (l121)
+#### def getAvgMax(key) 
 
-### def send2log(name,key,val) (l124)
+#### def getTime() 
 
-### def getAvgMax(key) (l176)
+#### def list(prefix="",memonly=False,avgmax=False) 
 
-### def list(prefix="",memonly=False,avgmax=False) (l209)
+#### def loadStat(key=None, data=None) 
 
-### def loadStat(key=None, data=None) (l148)
-
-### def registerStats(key,ttype="N",memonly=False,percent=False) (l181)
+#### def registerStats(key,ttype="N",memonly=False,percent=False) 
 
 type is N or D (D from diff)
 
-### def clean() (l193)
+#### def send2carbon() 
 
-### def delete(prefix) (l202)
+#### def send2log(name,key,val) 
+
+#### def set(key,val,ttype="N",remember=True,memonly=False,percent=False) 
 

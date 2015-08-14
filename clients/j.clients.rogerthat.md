@@ -2,5 +2,5 @@
 
 - /opt/jumpscale7/lib/JumpScale/lib/rogerthat/rogerthat.py
 
-### def get(api_key) (l7)
+#### def get(api_key) 
 

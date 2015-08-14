@@ -8,9 +8,9 @@
     - config
     - id
 
-### def init(description="",instance=1) (l55)
+#### def getLocalIPAccessibleByGridMaster() 
 
-### def getLocalIPAccessibleByGridMaster() (l65)
+#### def init(description="",instance=1) 
 
-### def isGridMasterLocal() (l68)
+#### def isGridMasterLocal() 
 

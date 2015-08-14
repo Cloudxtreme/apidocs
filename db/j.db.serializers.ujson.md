@@ -2,7 +2,7 @@
 
 - /opt/jumpscale7/lib/JumpScale/baselib/serializers/SerializerUJson.py
 
-### def dumps(obj) (l8)
+#### def dumps(obj) 
 
-### def loads(s) (l10)
+#### def loads(s) 
 

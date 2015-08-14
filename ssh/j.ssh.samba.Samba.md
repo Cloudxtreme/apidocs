@@ -2,17 +2,17 @@
 
 - /opt/jumpscale7/lib/JumpScale/lib/ssh/samba/manager.py
 
-### def addShare(sharename, path, options=\{\}) (l123)
+#### def addShare(sharename, path, options=\{\}) 
 
-### def addUser(username, password) (l135)
+#### def addUser(username, password) 
 
-### def listUsers() (l129)
+#### def commitShare() 
 
-### def removeUser(username) (l132)
+#### def getShare(sharename) 
 
-### def getShare(sharename) (l117)
+#### def listUsers() 
 
-### def removeShare(sharename) (l120)
+#### def removeShare(sharename) 
 
-### def commitShare() (l126)
+#### def removeUser(username) 
 

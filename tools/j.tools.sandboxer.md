@@ -6,7 +6,7 @@
 
 sandbox any linux app
 
-### def findLibs(path) (l86)
+#### def copyLibsTo(path,dest,recursive=False) 
 
-### def copyLibsTo(path,dest,recursive=False) (l90)
+#### def findLibs(path) 
 

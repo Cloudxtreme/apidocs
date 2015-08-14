@@ -5,26 +5,7 @@
 The key value store factory provides logic to retrieve store instances. It
 also caches the stores based on their type, name and namespace.
 
-### def getMemoryStore(namespace=None) (l81)
-
-Gets a memory key value store.
-
-@return: key value store
-@rtype: MemoryKeyValueStore
-
-### def getLevelDBStore(namespace='',basedir=None,serializers=[]) (l110)
-
-Gets a leveldb key value store.
-
-@param name: name of the store
-@type name: String
-
-@param namespace: namespace of the store, defaults to ''
-@type namespace: String
-
-@return: key value store
-
-### def getArakoonStore(namespace='',serializers=[]) (l31)
+#### def getArakoonStore(namespace='',serializers=[]) 
 
 Gets an Arakoon key value store.
 
@@ -37,7 +18,7 @@ Gets an Arakoon key value store.
 @return: key value store
 @rtype: ArakoonKeyValueStore
 
-### def getFileSystemStore(namespace='', baseDir=None,serializers=[]) (l54)
+#### def getFileSystemStore(namespace='', baseDir=None,serializers=[]) 
 
 Gets a file system key value store.
 
@@ -53,7 +34,26 @@ Gets a file system key value store.
 @return: key value store
 @rtype: FileSystemKeyValueStore
 
-### def getRedisStore(namespace='',host='localhost',port=9999,db=0,password='',serializers=None,masterdb=None,changelog=True) (l91)
+#### def getLevelDBStore(namespace='',basedir=None,serializers=[]) 
+
+Gets a leveldb key value store.
+
+@param name: name of the store
+@type name: String
+
+@param namespace: namespace of the store, defaults to ''
+@type namespace: String
+
+@return: key value store
+
+#### def getMemoryStore(namespace=None) 
+
+Gets a memory key value store.
+
+@return: key value store
+@rtype: MemoryKeyValueStore
+
+#### def getRedisStore(namespace='',host='localhost',port=9999,db=0,password='',serializers=None,masterdb=None,changelog=True) 
 
 Gets a memory key value store.
 

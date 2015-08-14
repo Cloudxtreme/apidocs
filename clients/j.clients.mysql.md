@@ -6,5 +6,5 @@
 
     
 
-### def getClient(ipaddr,port,login,passwd,dbname) (l18)
+#### def getClient(ipaddr,port,login,passwd,dbname) 
 

@@ -2,11 +2,11 @@
 
 - /opt/jumpscale7/lib/JumpScale/grid/tornado/TornadoFactory.py
 
-### def getClient(addr, port, category="core", org="myorg", user="root", passwd="passwd", ssl=False, roles=[]) (l30)
+#### def getClient(addr, port, category="core", org="myorg", user="root", passwd="passwd", ssl=False, roles=[]) 
 
-### def getHAClient(connections, category="core", org="myorg", user="root", passwd="passwd", ssl=False, roles=[],id=None,timeout=60, reconnect=False) (l38)
+#### def getHAClient(connections, category="core", org="myorg", user="root", passwd="passwd", ssl=False, roles=[],id=None,timeout=60, reconnect=False) 
 
-### def getServer(port, sslorg=None, ssluser=None, sslkeyvaluestor=None) (l6)
+#### def getServer(port, sslorg=None, ssluser=None, sslkeyvaluestor=None) 
 
 HOW TO USE:
 daemon=j.servers.tornado.getServer(port=4444)
@@ -26,7 +26,7 @@ daemon.addCMDsInterface(MyCommands,category="optional")  #pass as class not as o
 
 daemon.start()
 
-### def initSSL4Server(organization, serveruser, sslkeyvaluestor=None) (l46)
+#### def initSSL4Server(organization, serveruser, sslkeyvaluestor=None) 
 
 use this to init your ssl keys for the server (they can be used over all transports)
 

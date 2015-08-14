@@ -11,42 +11,56 @@
     - commentblock
     - prefixWithName
 
-### def applyOnContent(content,additionalArgs=OrderedDict()) (l268)
+#### def add2tree(path,recursive=True) 
+
+#### def add2treeFromContent(content) 
+
+#### def applyOnContent(content,additionalArgs=OrderedDict()) 
 
 look for $(name) and replace with hrd value
 
-### def set(key,val,persistent=True) (l42)
+#### def applyOnDir(path,filter=None, minmtime=None, maxmtime=None, depth=None,changeFileName=True,changeContent=True,additionalArgs=OrderedDict()) 
 
-### def exists(key) (l64)
+look for $(name) and replace with hrd value
 
-### def pop(key) (l238)
+#### def applyOnFile(path,additionalArgs=OrderedDict()) 
 
-### def getStr(key,default=None) (l46)
+look for $(name) and replace with hrd value
 
-### def getDictFromPrefix(prefix) (l103)
-
-returns values from prefix return as list
-
-### def prefix(key,depth=0) (l7)
-
-@param depth means prefix level to return
-
-### def getHrd(key) (l37)
-
-### def getListFromPrefix(prefix) (l94)
-
-returns values from prefix return as list
-
-### def getDict(key) (l84)
-
-### def add2tree(path,recursive=True) (l29)
-
-### def checkValidity(template,hrddata=OrderedDict()) (l218)
+#### def checkValidity(template,hrddata=OrderedDict()) 
 
 @param template is example hrd content block, which will be used to check against, 
 if params not found will be added to existing hrd
 
-### def getListFromPrefixEachItemDict(prefix,musthave=[],defaults=OrderedDict(),aredict=OrderedDict(),arelist=[],areint=[],arebool=[]) (l144)
+#### def delete(key) 
+
+#### def exists(key) 
+
+#### def get(key,default=None,) 
+
+#### def getBool(key,default=None) 
+
+#### def getDict(key) 
+
+#### def getDictFromPrefix(prefix) 
+
+returns values from prefix return as list
+
+#### def getFloat(key) 
+
+#### def getHRDAsDict() 
+
+#### def getHrd(key) 
+
+#### def getInt(key,default=None) 
+
+#### def getList(key,default=None) 
+
+#### def getListFromPrefix(prefix) 
+
+returns values from prefix return as list
+
+#### def getListFromPrefixEachItemDict(prefix,musthave=[],defaults=OrderedDict(),aredict=OrderedDict(),arelist=[],areint=[],arebool=[]) 
 
 returns values from prefix return as list
 each value represents a dict
@@ -54,33 +68,19 @@ each value represents a dict
 @param specifies the defaults
 @param aredicts & arelist specifies which types
 
-### def applyOnDir(path,filter=None, minmtime=None, maxmtime=None, depth=None,changeFileName=True,changeContent=True,additionalArgs=OrderedDict()) (l242)
+#### def getStr(key,default=None) 
 
-look for $(name) and replace with hrd value
+#### def listAdd(key,item) 
 
-### def add2treeFromContent(content) (l23)
+#### def pop(key) 
 
-### def applyOnFile(path,additionalArgs=OrderedDict()) (l258)
+#### def prefix(key,depth=0) 
 
-look for $(name) and replace with hrd value
+@param depth means prefix level to return
 
-### def get(key,default=None,) (l50)
+#### def prefixexists(key) 
 
-### def getBool(key,default=None) (l30)
+#### def processall() 
 
-### def listAdd(key,item) (l54)
-
-### def getInt(key,default=None) (l40)
-
-### def getHRDAsDict() (l117)
-
-### def getFloat(key) (l60)
-
-### def prefixexists(key) (l22)
-
-### def getList(key,default=None) (l67)
-
-### def processall() (l234)
-
-### def delete(key) (l46)
+#### def set(key,val,persistent=True) 
 

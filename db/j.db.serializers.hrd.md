@@ -2,7 +2,7 @@
 
 - /opt/jumpscale7/lib/JumpScale/baselib/serializers/SerializerHRD.py
 
-### def dumps(data, prepend='') (l14)
+#### def dumps(data, prepend='') 
 
-### def loads(data) (l66)
+#### def loads(data) 
 

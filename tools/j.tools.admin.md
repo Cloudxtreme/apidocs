@@ -2,5 +2,5 @@
 
 - /opt/jumpscale7/lib/JumpScale/baselib/admin/Admin.py
 
-### def get(path,args,failWhenNotExist=False) (l23)
+#### def get(path,args,failWhenNotExist=False) 
 

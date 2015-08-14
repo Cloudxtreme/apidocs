@@ -4,9 +4,9 @@
 
     
 
-### def getClient(name="",addr="localhost",port=873,login="",passwd="") (l12)
+#### def getClient(name="",addr="localhost",port=873,login="",passwd="") 
 
-### def getServer(root) (l8)
+#### def getClientSecret(addr="localhost",port=873,secret="") 
 
-### def getClientSecret(addr="localhost",port=873,secret="") (l15)
+#### def getServer(root) 
 
