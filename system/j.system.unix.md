@@ -47,7 +47,7 @@ When calling this method, the command will be wrapped inside 'su' to
 be executed as some specific user. This requires the application which
 spawns the command to be running as root.
 
-Next to this, it behaves exactly as C{j.system.process.execute},
+Next to this, it behaves exactly as C\{j.system.process.execute\},
 including the same named arguments.
 
 @param command: Command to execute
@@ -79,7 +79,7 @@ When calling this method, the command will be wrapped inside 'su' to
 be executed as some specific user. This requires the application which
 spawns the command to be running as root.
 
-Next to this, it behaves exactly as C{j.system.process.runDaemon},
+Next to this, it behaves exactly as C\{j.system.process.runDaemon\},
 including the same named arguments.
 
 @param command: Command to execute
@@ -143,8 +143,8 @@ Daemonize a process using a double fork
 
 This method will fork the current process to create a daemon process.
 It will perform a double fork(2), chdir(2) to the given folder (or not
-chdir at all if the C{chdir} argument is C{None}), and set the new
-process umask(2) to the value of the C{umask} argument, or not reset
+chdir at all if the C\{chdir\} argument is C\{None\}), and set the new
+process umask(2) to the value of the C\{umask\} argument, or not reset
 it if this argument is -1.
 
 While forking, a setsid(2) call will be done to become session leader
@@ -156,7 +156,7 @@ including stdin, stdout and stderr, which will be re-opened to
 
 The method returns a tuple<bool, number>. If the first item is True,
 the current process is the daemonized process. If it is False,
-the current process is the process which called the C{daemonize}
+the current process is the process which called the C\{daemonize\}
 method, which can most likely be closed now. The second item is the
 PID of the current process.
 

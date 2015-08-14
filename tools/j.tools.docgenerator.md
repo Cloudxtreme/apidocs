@@ -10,7 +10,7 @@
 
 ### def getConfluence2rstConvertor() (l67)
 
-### def pageGroupNew(pages={}) (l90)
+### def pageGroupNew(pages=\{\}) (l90)
 
 ### def getMacroPath() (l94)
 

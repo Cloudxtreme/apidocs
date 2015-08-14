@@ -127,7 +127,7 @@ try to convert a python object to string representation works for None, bool, in
 
 ### @staticmethod (l410)
 
-look for {{}} in code and evaluate as python result is converted back to str
+look for \{\{\}\} in code and evaluate as python result is converted back to str
 
 ### @staticmethod (l153)
 

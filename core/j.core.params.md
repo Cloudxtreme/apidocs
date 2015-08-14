@@ -13,7 +13,7 @@ Return if the argument object is an instance of Params
 @return: Whether or not `p` is a Params instance
 @rtype: boolean
 
-### def get(dictObject={}) (l11)
+### def get(dictObject=\{\}) (l11)
 
 Create and return a new Params object
 

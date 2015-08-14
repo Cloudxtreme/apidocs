@@ -4,7 +4,7 @@
 
 ### def commit() (l101)
 
-### def add(sharename, path, options={}) (l83)
+### def add(sharename, path, options=\{\}) (l83)
 
 ### def remove(sharename) (l72)
 

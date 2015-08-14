@@ -4,7 +4,7 @@
 
     
 
-### def profile(methodstatement, locals={},globals={}) (l7)
+### def profile(methodstatement, locals=\{\},globals=\{\}) (l7)
 
 create a wrapper method which has no args and then pass that wrapper method to this method as first arg
 method is passed as a string e.g. 'listDirTest()'

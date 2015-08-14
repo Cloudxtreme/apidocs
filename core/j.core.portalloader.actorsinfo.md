@@ -2,7 +2,7 @@
 
 - /opt/jumpscale7/lib/JumpScale/portal/portalloaders/ActorsInfo.py
 
-### def getActorsInfoPage(appname="", actor="", page=None, extraParams={}) (l66)
+### def getActorsInfoPage(appname="", actor="", page=None, extraParams=\{\}) (l66)
 
 ### def getActorInfoPage(appname, actorname, methodname, page=None) (l28)
 

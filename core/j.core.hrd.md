@@ -5,7 +5,7 @@
     - loglevel
     - logenable
 
-### def getHRDFromDict(ddict={}) (l50)
+### def getHRDFromDict(ddict=\{\}) (l50)
 
 ### def getHRDFromOsisObject(osisobj,prefixRootObjectType=True) (l32)
 

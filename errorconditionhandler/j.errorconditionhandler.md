@@ -70,7 +70,7 @@ use this to raise an operational issue about the system
 
 ### def raiseMonitoringError(message, category="",msgpub="",die=False,tags="") (l211)
 
-### def getErrorConditionObject(ddict={},msg="",msgpub="",category="",level=1,type="UNKNOWN",tb=None) (l227)
+### def getErrorConditionObject(ddict=\{\},msg="",msgpub="",category="",level=1,type="UNKNOWN",tb=None) (l227)
 
 @data is dict with fields of errorcondition obj
 returns only ErrorConditionObject which should be used in jumpscale to define an errorcondition (or potential error condition)

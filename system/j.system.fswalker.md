@@ -12,7 +12,7 @@
 
 Walk through filesystem and execute a method per file and dirname
 
-Walk through all files and folders starting at C{root}, recursive by
+Walk through all files and folders starting at C\{root\}, recursive by
 default, calling a given callback with a provided argument and file
 path for every file & dir we could find.
 
@@ -44,11 +44,11 @@ test: /foo/bar/file4
 
 Walk through filesystem and execute a method per file
 
-Walk through all files and folders starting at C{root}, recursive by
+Walk through all files and folders starting at C\{root\}, recursive by
 default, calling a given callback with a provided argument and file
 path for every file we could find.
 
-If C{includeFolders} is True, the callback will be called for every
+If C\{includeFolders\} is True, the callback will be called for every
 folder we found as well.
 
 Examples
@@ -81,7 +81,7 @@ return False if you want recursion to stop (means don't go deeper)
 @param callback: Callable to call for every file found, func(arg, path) (callable)
 @param arg: First argument to pass to callback
 @param recursive: Walk recursive or not (bool)
-@param includeFolders: Whether to call C{callable} for folders as well (bool)
+@param includeFolders: Whether to call C\{callable\} for folders as well (bool)
 @param pathRegexIncludes / Excludes  match paths to array of regex expressions (array(strings))
 @param contentRegexIncludes / Excludes match content of files to array of regex expressions (array(strings))
 @param depths array of depth values e.g. only return depth 0 & 1 (would mean first dir depth and then 1 more deep) (array(int))

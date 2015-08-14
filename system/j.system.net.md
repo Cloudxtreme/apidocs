@@ -144,7 +144,7 @@ Check if a certain port is listening on the system.
 
 ### def getNetworkInfo() (l710)
 
-returns {macaddr_name:[ipaddr,ipaddr],...}
+returns \{macaddr_name:[ipaddr,ipaddr],...\}
 
 REMARK: format changed because there was bug which could not work with bridges
 

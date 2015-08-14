@@ -28,7 +28,7 @@ return parent class for osis implementation (is the implementation from which ea
 
 returns class generated from spec file or from model.py file
 
-### def startDaemon(path="", overwriteHRD=False, overwriteImplementation=False, key="",port=5544,superadminpasswd=None,dbconnections={},hrd=None) (l176)
+### def startDaemon(path="", overwriteHRD=False, overwriteImplementation=False, key="",port=5544,superadminpasswd=None,dbconnections=\{\},hrd=None) (l176)
 
 start deamon
 

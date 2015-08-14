@@ -32,10 +32,10 @@ FindServices looks for actual services that are created
 update the git repo that contains the service templates
 args:
     repos : list of dict of repos to update, if empty, all repos are updated
-            {
+            \{
                 'url' : 'http://github.com/account/repo',
                 'branch' : 'master'
-            }
+            \}
 
 ### def loadService(path, parent=None) (l289)
 
@@ -50,7 +50,7 @@ walk over all services and load into sqllite
 
 ### def findTemplates(domain="", name="", parent=None) (l107)
 
-### def new(domain="", name="", instance="main", path=None, parent=None, args={}) (l246)
+### def new(domain="", name="", instance="main", path=None, parent=None, args=\{\}) (l246)
 
 will create a new service
 

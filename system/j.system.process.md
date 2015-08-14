@@ -87,11 +87,11 @@ to run interactive commands.
 
 Both showOutput and captureOutput can't be True at the same time.
 
-Any extra keyword arguments are passed to L{subprocess.Popen}. These
+Any extra keyword arguments are passed to L\{subprocess.Popen\}. These
 arguments can overwrite any argument set by this function, so setting any of
-the arguments used by this function (including C{stdin}, C{stdout},
-C{stderr}, C{env}, C{shell} and C{preexec_fn}) can change the behavior
-of this function. This could e.g. be used to set C{cwd}.
+the arguments used by this function (including C\{stdin\}, C\{stdout\},
+C\{stderr\}, C\{env\}, C\{shell\} and C\{preexec_fn\}) can change the behavior
+of this function. This could e.g. be used to set C\{cwd\}.
 
 The exit code contained in the returned tuple is the exit code of the
 spawned process if equal to or larger than 0. If the subprocess was killed
@@ -132,7 +132,7 @@ Remarks:
 @type user: string or number
 @param group: Groupname of GID of group to setgid() to
 @type group: string or number
-@param kwargs: Extra arguments passed through to L{subprocess.Popen}
+@param kwargs: Extra arguments passed through to L\{subprocess.Popen\}
 
 @return: Tuple containing subprocess exitcode, stdout and stderr output
 @rtype: tuple(number, string, string)
@@ -167,7 +167,7 @@ This function executes a Python script, making sure the script output will
 not be buffered.
 
 For an overview of the parameters and function behaviour, see the
-documentation of L{jumpscale.system.process.run}.
+documentation of L\{jumpscale.system.process.run\}.
 
 @param script: Script to execute
 @type script: string
@@ -221,9 +221,9 @@ setuid/setgid to this user and group before executing the child process,
 effectively running the daemon process with the privileges of the provided
 user and group.
 
-If C{env} is provided, it will be used as environment in which the daemon
-process will be executed. If it is not set, C{os.environ} will be used. Do
-note C{PYTHONUNBUFFERED} and C{PYTHONPATH} will be slightly altered (in a
+If C\{env\} is provided, it will be used as environment in which the daemon
+process will be executed. If it is not set, C\{os.environ\} will be used. Do
+note C\{PYTHONUNBUFFERED\} and C\{PYTHONPATH\} will be slightly altered (in a
 copy of the provided dictionary) by this function before spawning the
 daemon process.
 
@@ -255,7 +255,7 @@ if exitcode is not zero then the executed command returned with errors
 
 ### def setEnvironmentVariable(varnames, varvalues) (l1700)
 
-Set the value of the environment variables C{varnames}. Existing variable are overwritten
+Set the value of the environment variables C\{varnames\}. Existing variable are overwritten
 
 @param varnames: A list of the names of all the environment variables to set
 @type varnames: list<string>

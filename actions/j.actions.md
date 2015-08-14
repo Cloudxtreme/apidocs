@@ -13,7 +13,7 @@ Check whether actions are currently running
 @returns: Whether actions are runnin
 @rtype: bool
 
-### def start(description="", cmds="",action=None,actionRecover=None,actionArgs={},category="unknown",name="unknown",\ (l43)
+### def start(description="", cmds="",action=None,actionRecover=None,actionArgs=\{\},category="unknown",name="unknown",\ (l43)
 
 @param id is unique id which allows finding back of action
 @param description: Action description (what are we doing)

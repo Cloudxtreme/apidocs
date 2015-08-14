@@ -48,7 +48,7 @@ default path.
 
 return parent path where .git is or None when not found
 
-### def replaceTxtDirVars(txt,additionalArgs={}) (l71)
+### def replaceTxtDirVars(txt,additionalArgs=\{\}) (l71)
 
 replace $base,$vardir,$cfgDir,$bindir,$codedir,$tmpdir,$logdir,$appdir with props of this class
 

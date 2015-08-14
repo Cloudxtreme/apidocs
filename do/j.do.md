@@ -119,7 +119,7 @@ Returns:
 
 ### def expandTarGz(path,destdir,deleteDestFirst=True,deleteSourceAfter=False) (l1043)
 
-### def findDependencies(path,deps={}) (l373)
+### def findDependencies(path,deps=\{\}) (l373)
 
 ### def installPackage(path) (l1367)
 

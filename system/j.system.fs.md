@@ -80,7 +80,7 @@ Open a file and write file contents, close file afterwards
 
 ### def changeFileNames(toReplace,replaceWith,pathToSearchIn,recursive=True, filter=None, minmtime=None, maxmtime=None) (l970)
 
-@param toReplace e.g. {name}
+@param toReplace e.g. \{name\}
 @param replace with e.g. "jumpscale"
 
 ### def getTempFileName(dir=None, prefix='') (l1627)
@@ -427,7 +427,7 @@ Restrictions are based on information found at these URLs:
 @param filename: Filename to check
 @type filename: string
 @param platform: Platform to validate against
-@type platform: L{PlatformType}
+@type platform: L\{PlatformType\}
 
 @returns: Whether the filename is valid on the given platform
 @rtype: bool
@@ -591,8 +591,8 @@ Remove the given file if it's a file or a symlink
 
 Copy file
 
-Copies the file from C{fileFrom} to the file or directory C{to}.
-If C{to} is a directory, a file with the same basename as C{fileFrom} is
+Copies the file from C\{fileFrom\} to the file or directory C\{to\}.
+If C\{to\} is a directory, a file with the same basename as C\{fileFrom\} is
 created (or overwritten) in the directory specified.
 Permission bits are copied.
 
