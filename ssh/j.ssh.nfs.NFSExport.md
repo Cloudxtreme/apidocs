@@ -1,0 +1,1 @@
+    #### def removeClient(name) 
