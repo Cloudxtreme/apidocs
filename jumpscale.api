@@ -11616,3 +11616,1455 @@ j.codetools.regex.yieldRegexMatches?4(['self', 'pattern', 'text', 'flags'])
 j.codetools.templateengine?8
 j.codetools.templateengine.new?4(['self'])
 j.codetools.textToTitle?4(['self', 'text', 'maxnrchars'])
+j.action?8
+j.action.clean?4(['self'])
+j.action.hasRunningActions?4(['self'])
+j.action.printOutput?4(['self'])
+j.action.start?4(['self', 'description', 'errormessage', 'resolutionmessage', 'show', 'messageLevel'])
+j.action.startOutput?4(['self'])
+j.action.stop?4(['self', 'failed'])
+j.action.stopOutput?4(['self'])
+j.application?8
+j.application.agentid?8
+j.application.appname?8
+j.application.config?8
+j.application.config.add2tree?4(['self', 'path', 'recursive'])
+j.application.config.add2treeFromContent?4(['self', 'content'])
+j.application.config.applyOnContent?4(['self', 'content', 'additionalArgs'])
+j.application.config.applyOnDir?4(['self', 'path', 'filter', 'minmtime', 'maxmtime', 'depth', 'changeFileName', 'changeContent', 'additionalArgs'])
+j.application.config.applyOnFile?4(['self', 'path', 'additionalArgs'])
+j.application.config.changed?8
+j.application.config.checkValidity?4(['self', 'template', 'hrddata'])
+j.application.config.commentblock?8
+j.application.config.delete?4(['self', 'key'])
+j.application.config.exists?4(['self', 'key'])
+j.application.config.get?4(['self', 'key', 'default'])
+j.application.config.getBool?4(['self', 'key', 'default'])
+j.application.config.getDict?4(['self', 'key'])
+j.application.config.getDictFromPrefix?4(['self', 'prefix'])
+j.application.config.getFloat?4(['self', 'key'])
+j.application.config.getHRDAsDict?4(['self'])
+j.application.config.getHrd?4(['self', 'key'])
+j.application.config.getInt?4(['self', 'key', 'default'])
+j.application.config.getList?4(['self', 'key', 'default'])
+j.application.config.getListFromPrefix?4(['self', 'prefix'])
+j.application.config.getListFromPrefixEachItemDict?4(['self', 'prefix', 'musthave', 'defaults', 'aredict', 'arelist', 'areint', 'arebool'])
+j.application.config.getStr?4(['self', 'key', 'default'])
+j.application.config.hrds?8
+j.application.config.items?8
+j.application.config.keepformat?8
+j.application.config.listAdd?4(['self', 'key', 'item'])
+j.application.config.name?8
+j.application.config.path?8
+j.application.config.pop?4(['self', 'key'])
+j.application.config.prefix?4(['self', 'key', 'depth'])
+j.application.config.prefixWithName?8
+j.application.config.prefixexists?4(['self', 'key'])
+j.application.config.processall?4(['self'])
+j.application.config.set?4(['self', 'key', 'val', 'persistent'])
+j.application.connectRedis?4(['self'])
+j.application.debug?8
+j.application.existAppInstanceHRD?4(['self', 'name', 'instance', 'domain'])
+j.application.getAgentId?4(['self'])
+j.application.getAppHRDInstanceNames?4(['self', 'name', 'domain'])
+j.application.getAppInstanceHRD?4(['self', 'name', 'instance', 'domain', 'parent'])
+j.application.getAppInstanceHRDs?4(['self', 'name', 'domain'])
+j.application.getCPUUsage?4(['self'])
+j.application.getMemoryUsage?4(['self'])
+j.application.getUniqueMachineId?4(['self'])
+j.application.getWhoAmiStr?4(['self'])
+j.application.gridInitialized?8
+j.application.init?4(['self'])
+j.application.initGrid?4(['self'])
+j.application.initWhoAmI?4(['self', 'reload'])
+j.application.interactive?8
+j.application.jid?8
+j.application.loadConfig?4(['self'])
+j.application.redis?8
+j.application.sandbox?8
+j.application.shellconfig?8
+j.application.shellconfig.checkCreateConfigFile?4(['self', 'configType'])
+j.application.shellconfig.debug?8
+j.application.shellconfig.getConfigFileManager?4(['self', 'configType'])
+j.application.shellconfig.interactive?8
+j.application.shellconfig.ipython?8
+j.application.shellconfig.loadConfigFile?4(['self', 'configType'])
+j.application.shellconfig.refresh?4(['self'])
+j.application.skipTraceback?8
+j.application.start?4(['self', 'name', 'appdir'])
+j.application.state?8
+j.application.stop?4(['self', 'exitcode', 'stop'])
+j.application.systempid?8
+j.application.whoAmI?8
+j.application.whoAmI.gid?8
+j.application.whoAmI.nid?8
+j.application.whoAmI.pid?8
+j.application.whoAmIBytestr?8
+j.application.writeExitcodeOnExit?8
+j.base?8
+j.base.byteprocessor?8
+j.base.byteprocessor.compress?4(['s'])
+j.base.byteprocessor.decompress?4(['s'])
+j.base.byteprocessor.disperse?4(['s', 'nrblocks', 'extrablocks', 'compress'])
+j.base.byteprocessor.getDispersedBlockObject?4([])
+j.base.byteprocessor.hashMd5?4(['s'])
+j.base.byteprocessor.hashTiger160?4(['s'])
+j.base.byteprocessor.hashTiger160bin?4(['s'])
+j.base.byteprocessor.hashTiger192?4(['s'])
+j.base.byteprocessor.undisperse?4(['dispersedBlockObject', 'uncompress'])
+j.base.idgenerator?8
+j.base.idgenerator.generateGUID?4(['self'])
+j.base.idgenerator.generateIncrID?4(['self', 'incrTypeId', 'service', 'reset'])
+j.base.idgenerator.generateRandomInt?4(['self', 'fromInt', 'toInt'])
+j.base.idgenerator.generateXCharID?4(['self', 'x'])
+j.base.idgenerator.getID?4(['self', 'incrTypeId', 'objectUniqueSeedInfo', 'service', 'reset'])
+j.base.loader?8
+j.base.loader.makeAvailable?4(['self', 'obj', 'path'])
+j.base.time?8
+j.base.time.HRDatetoEpoch?4(['self', 'datestr', 'local'])
+j.base.time.epoch2HRDate?4(['self', 'epoch', 'local'])
+j.base.time.epoch2HRDateTime?4(['self', 'epoch', 'local'])
+j.base.time.epoch2HRTime?4(['self', 'epoch', 'local'])
+j.base.time.fiveMinuteIdToEpoch?4(['self', 'fiveMinuteId'])
+j.base.time.formatTime?4(['self', 'epoch', 'formatstr', 'local'])
+j.base.time.get5MinuteId?4(['self', 'epoch'])
+j.base.time.getDayId?4(['self', 'epoch'])
+j.base.time.getDeltaTime?4(['self', 'txt'])
+j.base.time.getEpochAgo?4(['self', 'txt'])
+j.base.time.getEpochFuture?4(['self', 'txt'])
+j.base.time.getHourId?4(['self', 'epoch'])
+j.base.time.getLocalTimeHR?4(['self'])
+j.base.time.getLocalTimeHRForFilesystem?4(['self'])
+j.base.time.getMinuteId?4(['self', 'epoch'])
+j.base.time.getSecondsInHR?4(['self', 'seconds'])
+j.base.time.getTimeEpoch?4(['self'])
+j.base.time.getTimeEpochBin?4(['self'])
+j.basetype?8
+j.basetype.boolean?8
+j.basetype.dictionary?8
+j.basetype.dirpath?8
+j.basetype.duration?8
+j.basetype.enumeration?4(['enumerationtype'])
+j.basetype.filepath?8
+j.basetype.float?8
+j.basetype.guid?8
+j.basetype.integer?8
+j.basetype.ipaddress?8
+j.basetype.ipaddressrange?8
+j.basetype.ipport?8
+j.basetype.list?8
+j.basetype.object?4(['type_'])
+j.basetype.path?8
+j.basetype.set?8
+j.basetype.string?8
+j.basetype.unixdirpath?8
+j.basetype.unixfilepath?8
+j.basetype.windowsdirpath?8
+j.basetype.windowsfilepath?8
+j.clients?8
+j.clients.whmcs?8
+j.clients.whmcs.get?4(['self', 'username', 'md5_password', 'accesskey', 'url', 'cloudspace_product_id', 'operations_user_id', 'operations_department_id', 'instance'])
+j.clients.whmcs.getDummy?4(['self'])
+j.clients.whmcs.log?4(['self', 'msg', 'category', 'level'])
+j.clients.routeros?8
+j.clients.routeros.get?4(['self', 'host', 'login', 'password'])
+j.clients.osis?8
+j.clients.osis.get?4(['self', 'ipaddr', 'port', 'user', 'passwd', 'ssl', 'gevent'])
+j.clients.osis.getByInstance?4(['self', 'instance', 'ssl', 'gevent', 'die'])
+j.clients.osis.getCategory?4(['self', 'client', 'namespace', 'category'])
+j.clients.osis.getNamespace?4(['self', 'namespace', 'client'])
+j.clients.osis.osisConnections?8
+j.clients.osis.osisConnectionsCat?8
+j.clients.mysql?8
+j.clients.mysql.clients?8
+j.clients.mysql.getClient?4(['self', 'ipaddr', 'port', 'login', 'passwd', 'dbname'])
+j.clients.ros?8
+j.clients.ros.get?4(['self', 'instance', 'ip', 'user', 'passwd'])
+j.clients.rogerthat?8
+j.clients.rogerthat.get?4(['self', 'api_key'])
+j.clients.git?8
+j.clients.git.find?4(['self', 'account', 'name', 'interactive', 'returnGitClient'])
+j.clients.git.get?4(['self', 'basedir'])
+j.clients.git.log?4(['self', 'msg', 'category', 'level'])
+j.clients.ciscoswitch?8
+j.clients.ciscoswitch.get?4(['self', 'host', 'login', 'password'])
+j.clients.redis?8
+j.clients.redis.checkAllInstances?4(['self'])
+j.clients.redis.configureInstance?4(['self', 'name', 'port', 'maxram', 'appendonly', 'snapshot', 'slave', 'ismaster', 'passwd', 'unixsocket'])
+j.clients.redis.deleteInstance?4(['self', 'name'])
+j.clients.redis.emptyAllInstances?4(['self'])
+j.clients.redis.emptyInstance?4(['self', 'name'])
+j.clients.redis.getByInstance?4(['self', 'instance', 'gevent'])
+j.clients.redis.getGeventRedisClient?4(['self', 'ipaddr', 'port', 'fromcache', 'password'])
+j.clients.redis.getGeventRedisQueue?4(['self', 'ipaddr', 'port', 'name', 'namespace', 'fromcache'])
+j.clients.redis.getPort?4(['self', 'name'])
+j.clients.redis.getProcessPids?4(['self', 'name'])
+j.clients.redis.getRedisClient?4(['self', 'ipaddr', 'port', 'password', 'fromcache'])
+j.clients.redis.getRedisQueue?4(['self', 'ipaddr', 'port', 'name', 'namespace', 'fromcache'])
+j.clients.redis.gredis?8
+j.clients.redis.gredisq?8
+j.clients.redis.isRunning?4(['self', 'name'])
+j.clients.redis.redis?8
+j.clients.redis.redisq?8
+j.clients.redis.startInstance?4(['self', 'name'])
+j.clients.redis.stopInstance?4(['self', 'name'])
+j.clients.grafana?8
+j.clients.grafana.get?4(['self'])
+j.clients.celery?8
+j.clients.celery.actors?8
+j.clients.celery.app?8
+j.clients.celery.celeryClient?4(['self', 'actorName', 'url', 'actorsPath', 'local'])
+j.clients.celery.celeryStart?4(['self', 'url', 'concurrency', 'actorsPath'])
+j.clients.celery.flowerStart?4(['self', 'url'])
+j.clients.celery.getCodeClient?4(['self', 'path', 'actorName'])
+j.clients.celery.getCodeServer?4(['self', 'path'])
+j.clients.agentcontroller?8
+j.clients.agentcontroller.get?4(['self', 'addr', 'port', 'login', 'passwd', 'new'])
+j.clients.agentcontroller.getByInstance?4(['self', 'instance', 'new'])
+j.clients.agentcontroller.getInstanceConfig?4(['self', 'instance'])
+j.clients.agentcontroller.getProxy?4(['self', 'category', 'addr', 'port', 'login', 'passwd'])
+j.clients.graphite?8
+j.clients.graphite.close?4(['self'])
+j.clients.graphite.query?4(['self', 'query_'])
+j.clients.graphite.send?4(['self', 'msg'])
+j.clients.email?8
+j.clients.email.send?4(['self', 'recipients', 'sender', 'subject', 'message', 'files', 'mimetype'])
+j.clients.redisworker?8
+j.clients.redisworker.checkJumpscriptQueue?4(['self', 'jumpscript', 'queue'])
+j.clients.redisworker.checkQueue?4(['self'])
+j.clients.redisworker.deleteJob?4(['self', 'jobid'])
+j.clients.redisworker.deleteJumpscripts?4(['self'])
+j.clients.redisworker.deleteProcessQueue?4(['self'])
+j.clients.redisworker.deleteQueues?4(['self'])
+j.clients.redisworker.execFunction?4(['self', 'method', '_category', '_organization', '_timeout', '_queue', '_log', '_sync'])
+j.clients.redisworker.execJobAsync?4(['self', 'job'])
+j.clients.redisworker.execJumpscript?4(['self', 'jumpscriptid', 'jumpscript', '_timeout', '_queue', '_log', '_sync'])
+j.clients.redisworker.getFailedJobs?4(['self', 'queue', 'hoursago'])
+j.clients.redisworker.getJob?4(['self', 'jobid'])
+j.clients.redisworker.getJobLine?4(['self', 'job', 'jobid'])
+j.clients.redisworker.getJumpscriptFromId?4(['self', 'jscriptid'])
+j.clients.redisworker.getJumpscriptFromName?4(['self', 'organization', 'name'])
+j.clients.redisworker.getQueuedJobs?4(['self', 'queue', 'asWikiTable'])
+j.clients.redisworker.redis?8
+j.clients.redisworker.redis.RESPONSE_CALLBACKS?7
+j.clients.redisworker.removeJobs?4(['self', 'hoursago', 'failed'])
+j.clients.redisworker.returnQueues?8
+j.clients.redisworker.scheduleJob?4(['self', 'job'])
+j.clients.redisworker.sessionid?8
+j.clients.redisworker.waitJob?4(['self', 'job', 'timeout'])
+j.clients.http?8
+j.clients.http.getConnection?4(['self'])
+j.clients.postgres?8
+j.clients.postgres.clients?8
+j.clients.postgres.createdb?4(['self', 'db', 'ipaddr', 'port', 'login', 'passwd'])
+j.clients.postgres.dropdb?4(['self', 'db', 'ipaddr', 'port', 'login', 'passwd'])
+j.clients.postgres.getClient?4(['self', 'ipaddr', 'port', 'login', 'passwd', 'dbname'])
+j.clients.mongodb?8
+j.clients.mongodb.get?4(['self', 'host', 'port'])
+j.clients.mongodb.getByInstance?4(['self', 'instancename'])
+j.clients.bitbucketi?8
+j.clients.bitbucketi.getAccount?4(['self', 'accountname'])
+j.clients.bitbucketi.getRepo?4(['self', 'accountname', 'reponame'])
+j.clients.bitbucketi.init?4(['self'])
+j.clients.influxdb?8
+j.clients.influxdb.get?4(['self', 'host', 'port', 'username', 'password', 'database', 'ssl', 'verify_ssl', 'timeout', 'use_udp', 'udp_port'])
+j.clients.influxdb.getByInstance?4(['self', 'instancename'])
+j.clients.portal?8
+j.clients.portal.get?4(['self', 'ip', 'port', 'secret'])
+j.clients.portal.get2?4(['self', 'ip', 'port', 'secret'])
+j.clients.portal.getByInstance?4(['self', 'instance'])
+j.clients.oauth?8
+j.clients.oauth.get?4(['self', 'addr', 'accesstokenaddr', 'id', 'secret', 'scope', 'redirect_url', 'user_info_url', 'logout_url', 'instance'])
+j.clients.oauth.log?4(['self', 'msg', 'category', 'level'])
+j.clients.openvcloud?8
+j.clients.openvcloud.get?4(['self', 'apiurl'])
+j.clients.mercurial?8
+j.clients.mercurial.getClient?4(['self', 'hgbasedir', 'remoteUrl', 'branchname', 'cleandir'])
+j.clients.mercurial.log?4(['self', 'msg', 'category', 'level'])
+j.clients.gitlab?8
+j.clients.gitlab.connections?8
+j.clients.gitlab.get?4(['self', 'gitlaburl', 'login', 'passwd', 'instance'])
+j.clients.gitlab.getAccountnameReponameFromUrl?4(['self', 'url'])
+j.clients.gitlab.log?4(['self', 'msg', 'category', 'level'])
+j.clients.ayspm?8
+j.clients.ayspm.getClient?4(['self'])
+j.clients.osticket?8
+j.clients.osticket.clients?8
+j.clients.osticket.getClient?4(['self', 'ipaddr', 'port', 'login', 'passwd', 'dbname'])
+j.clients.credis?8
+j.clients.credis.getRedisClient?4(['self', 'ipaddr', 'port', 'timeout'])
+j.clients.credis.getRedisQueue?4(['self', 'ipaddr', 'port', 'name', 'namespace'])
+j.clients.credis.redis?8
+j.clients.credis.redisq?8
+j.clients.webdis?8
+j.clients.webdis.check?4(['self', 'addr', 'port', 'timeout'])
+j.clients.webdis.get?4(['self', 'addr', 'port', 'timeout'])
+j.clients.webdis.getByInstance?4(['self', 'instance', 'timeout'])
+j.cloud?8
+j.cloud.system?8
+j.console?8
+j.console.askArrayRow?4(['self', 'array', 'header', 'descr', 'returncol'])
+j.console.askChoice?4(['self', 'choicearray', 'descr', 'sort', 'maxchoice', 'height', 'autocomplete'])
+j.console.askChoiceMultiple?4(['self', 'choicearray', 'descr', 'sort'])
+j.console.askInteger?4(['self', 'question', 'defaultValue', 'minValue', 'maxValue', 'retry', 'validate'])
+j.console.askIntegers?4(['self', 'question', 'invalid_message', 'min', 'max'])
+j.console.askMultiline?4(['self', 'question', 'escapeString'])
+j.console.askPassword?4(['self', 'question', 'confirm', 'regex', 'retry', 'validate'])
+j.console.askString?4(['self', 'question', 'defaultparam', 'regex', 'retry', 'validate'])
+j.console.askYesNo?4(['self', 'message'])
+j.console.cls?4(['self'])
+j.console.echo?4(['self', 'msg', 'indent', 'withStar', 'prefix', 'log', 'lf'])
+j.console.echoDict?4(['self', 'dictionary', 'withStar', 'indent'])
+j.console.echoListItem?4(['self', 'msg'])
+j.console.echoListItems?4(['self', 'messages', 'sort'])
+j.console.echoListWithPrefix?4(['self', 'messages', 'prefix'])
+j.console.echoWithPrefix?4(['self', 'message', 'prefix', 'withStar', 'indent'])
+j.console.enableOutput?4(['self'])
+j.console.formatMessage?4(['self', 'message', 'prefix', 'withStar', 'indent', 'width', 'removeemptylines'])
+j.console.hideOutput?4(['self'])
+j.console.indent?8
+j.console.printOutput?4(['self'])
+j.console.rawInputPerChar?4(['self', 'callback', 'params'])
+j.console.showArray?4(['self', 'array', 'header'])
+j.console.showOutput?4(['self'])
+j.console.transformDictToMessage?4(['self', 'dictionary', 'withStar', 'indent'])
+j.console.width?8
+j.core?8
+j.core.hrd?8
+j.core.hrd.get?4(['self', 'path', 'content', 'prefixWithName', 'keepformat', 'args', 'templates'])
+j.core.hrd.getHRDFromDict?4(['self', 'ddict'])
+j.core.hrd.getHRDFromOsisObject?4(['self', 'osisobj', 'prefixRootObjectType'])
+j.core.hrd.log?4(['self', 'msg', 'category', 'level'])
+j.core.hrd.logenable?8
+j.core.hrd.loglevel?8
+j.core.jumpscripts?8
+j.core.jumpscripts.basedir?8
+j.core.jumpscripts.getArchivedJumpscripts?4(['self', 'bz2_compressed', 'types'])
+j.core.jumpscripts.getJSClass?4(['self'])
+j.core.jumpscripts.introspectLuaJumpscript?4(['path'])
+j.core.jumpscripts.loadFromAC?4(['self', 'acl'])
+j.core.jumpscripts.loadFromTar?4(['self', 'tarcontent', 'type'])
+j.core.osis?8
+j.core.osis.decrypt?4(['self', 'val', 'json'])
+j.core.osis.encrypt?4(['self', 'obj'])
+j.core.osis.generateOsisModelDefaults?4(['self', 'namespace', 'specpath'])
+j.core.osis.getLocal?4(['self', 'path', 'overwriteHRD', 'overwriteImplementation', 'namespacename'])
+j.core.osis.getModelTemplate?4(['self'])
+j.core.osis.getOSISBaseObjectComplexType?4(['self'])
+j.core.osis.getOsisBaseObjectClass?4(['self'])
+j.core.osis.getOsisImplementationParentClass?4(['self', 'namespacename'])
+j.core.osis.getOsisModelClass?4(['self', 'namespace', 'category', 'specpath'])
+j.core.osis.namespacesInited?8
+j.core.osis.nodeguids?8
+j.core.osis.osisModels?8
+j.core.osis.startDaemon?4(['self', 'path', 'overwriteHRD', 'overwriteImplementation', 'key', 'port', 'superadminpasswd', 'dbconnections', 'hrd'])
+j.core.taskletengine?8
+j.core.taskletengine.get?4(['self', 'path'])
+j.core.taskletengine.getGroup?4(['self', 'path'])
+j.core.osismodel?8
+j.core.osismodel.destroy?4(['self', 'appname', 'actorname', 'modelname'])
+j.core.osismodel.dict2object?4(['self', 'obj', 'data'])
+j.core.osismodel.get?4(['self', 'appname', 'actorname', 'modelname', 'modelClass', 'db', 'index', 'indexer'])
+j.core.osismodel.getNoDB?4(['self', 'appname', 'actorname', 'modelname', 'modelClass'])
+j.core.osismodel.getRemoteOsisDB?4(['self', 'appname', 'actorname', 'modelname', 'modelClass'])
+j.core.osismodel.inputNormalizeList?4(['self', 'param'])
+j.core.osismodel.osisInstances?8
+j.core.osismodel.rebuildindex?4(['self', 'appname', 'actorname', 'modelname'])
+j.core.tags?8
+j.core.tags.getObject?4(['self', 'tagstring', 'setFunction4Tagstring'])
+j.core.tags.getTagString?4(['self', 'labels', 'tags'])
+j.core.zdaemon?8
+j.core.zdaemon.getZDaemon?4(['self', 'port', 'name', 'nrCmdGreenlets', 'sslorg', 'ssluser', 'sslkeyvaluestor'])
+j.core.zdaemon.getZDaemonAgent?4(['self', 'ipaddr', 'port', 'org', 'user', 'passwd', 'ssl', 'reset', 'roles'])
+j.core.zdaemon.getZDaemonClient?4(['self', 'addr', 'port', 'org', 'user', 'passwd', 'ssl', 'category', 'sendformat', 'returnformat', 'gevent'])
+j.core.zdaemon.getZDaemonHAClient?4(['self', 'connections', 'org', 'user', 'passwd', 'ssl', 'category', 'sendformat', 'returnformat', 'gevent'])
+j.core.zdaemon.getZDaemonTransportClass?4(['self'])
+j.core.zdaemon.initSSL4Server?4(['self', 'organization', 'serveruser', 'sslkeyvaluestor'])
+j.core.codegenerator?8
+j.core.codegenerator.appdir?8
+j.core.codegenerator.classes?8
+j.core.codegenerator.codepath?8
+j.core.codegenerator.generate?4(['self', 'spec', 'type', 'typecheck', 'dieInGenCode', 'appserverclient', 'instance', 'redis', 'wsclient', 'codepath', 'classpath', 'returnClass', 'args', 'makeCopy'])
+j.core.codegenerator.generated?8
+j.core.codegenerator.getActorClass?4(['self', 'appname', 'actor', 'typecheck', 'dieInGenCode', 'codepath'])
+j.core.codegenerator.getClassActorLocal?4(['self', 'appname', 'actor', 'typecheck', 'dieInGenCode'])
+j.core.codegenerator.getClassActorRemote?4(['self', 'appname', 'actor', 'typecheck', 'dieInGenCode', 'instance', 'redis', 'wsclient', 'codepath'])
+j.core.codegenerator.getClassEnumeration?4(['self', 'appname', 'actor', 'enumname', 'typecheck', 'dieInGenCode'])
+j.core.codegenerator.getClassJSModel?4(['self', 'appname', 'actor', 'modelname', 'typecheck', 'dieInGenCode', 'codepath'])
+j.core.codegenerator.getClassesActorMethodGreenlet?4(['self', 'appname', 'actor', 'typecheck', 'dieInGenCode'])
+j.core.codegenerator.getCodeEveModel?4(['self', 'appname', 'actor', 'modelname', 'typecheck', 'dieInGenCode', 'codepath'])
+j.core.codegenerator.getCodeId?4(['self', 'spec', 'type'])
+j.core.codegenerator.getCodeJSModel?4(['self', 'appname', 'actor', 'modelname', 'typecheck', 'dieInGenCode', 'codepath'])
+j.core.codegenerator.removeFromMem?4(['self', 'appname', 'actor'])
+j.core.codegenerator.resetMemNonSystem?4(['self'])
+j.core.codegenerator.setTarget?4(['self', 'target'])
+j.core.portal?8
+j.core.portal.active?8
+j.core.portal.getPortalConfig?4(['self', 'appname'])
+j.core.portal.getServer?4(['self'])
+j.core.portal.inprocess?8
+j.core.portal.loadActorsInProcess?4(['self', 'name'])
+j.core.grid?8
+j.core.grid.brokerClient?8
+j.core.grid.config?8
+j.core.grid.getLocalIPAccessibleByGridMaster?4(['self'])
+j.core.grid.id?8
+j.core.grid.init?4(['self', 'description', 'instance'])
+j.core.grid.isGridMasterLocal?4(['self'])
+j.core.grid.nid?8
+j.core.grid.roles?8
+j.core.processmanager?8
+j.core.processmanager.basedir?8
+j.core.processmanager.checkStartupOlderThan?4(['self', 'secago'])
+j.core.processmanager.daemon?8
+j.core.processmanager.daemon.addCMDsInterface?4(['self', 'cmdInterfaceClass', 'category'])
+j.core.processmanager.daemon.cmdsInterfaces?8
+j.core.processmanager.getCmdsObject?4(['self', 'category'])
+j.core.processmanager.getStartupTime?4(['self'])
+j.core.processmanager.loadCmds?4(['self'])
+j.core.processmanager.loadMonitorObjectTypes?4(['self'])
+j.core.processmanager.redis?8
+j.core.processmanager.redis.RESPONSE_CALLBACKS?7
+j.core.processmanager.restartWorkers?4(['self'])
+j.core.processmanager.start?4(['self'])
+j.core.gevent?8
+j.core.gevent.getGeventLoopClass?4(['self'])
+j.core.params?8
+j.core.params.get?4(['self', 'dictObject'])
+j.core.params.isParams?4(['self', 'p'])
+j.core.specparser?8
+j.core.specparser.actornames?8
+j.core.specparser.addSpec?4(['self', 'spec'])
+j.core.specparser.app_actornames?8
+j.core.specparser.appnames?8
+j.core.specparser.childspecs?8
+j.core.specparser.findSpec?4(['self', 'query', 'appname', 'actorname', 'specname', 'type', 'findFromSpec', 'findOnlyOne'])
+j.core.specparser.getActorSpec?4(['self', 'app', 'name', 'raiseError'])
+j.core.specparser.getChildModelSpec?4(['self', 'app', 'actorname', 'name', 'die'])
+j.core.specparser.getEnumerationSpec?4(['self', 'app', 'actorname', 'name', 'die'])
+j.core.specparser.getModelNames?4(['self', 'appname', 'actorname'])
+j.core.specparser.getModelSpec?4(['self', 'app', 'actorname', 'name', 'die'])
+j.core.specparser.getSpecFromTypeStr?4(['self', 'appname', 'actorname', 'typestr'])
+j.core.specparser.init?4(['self'])
+j.core.specparser.modelnames?8
+j.core.specparser.parseSpecs?4(['self', 'specpath', 'appname', 'actorname'])
+j.core.specparser.removeSpecsForActor?4(['self', 'appname', 'actorname'])
+j.core.specparser.resetMemNonSystem?4(['self'])
+j.core.specparser.roles?8
+j.core.specparser.specs?8
+j.core.portalloader?8
+j.core.portalloader.actorsinfo?8
+j.core.portalloader.actorsinfo.getActorInfoPage?4(['self', 'appname', 'actorname', 'methodname', 'page'])
+j.core.portalloader.actorsinfo.getActorMethodCall?4(['self', 'appname', 'actor', 'method'])
+j.core.portalloader.actorsinfo.getActorsInfoPage?4(['appname', 'actor', 'page', 'extraParams'])
+j.core.portalloader.getActorsLoader?4(['self'])
+j.core.portalloader.getBucketsLoader?4(['self'])
+j.core.portalloader.getSpacesLoader?4(['self'])
+j.core.portalloader.getTemplatesPath?4(['self'])
+j.db?8
+j.db.serializers?8
+j.db.serializers.base64?8
+j.db.serializers.base64.dumps?4(['self', 'obj'])
+j.db.serializers.base64.loads?4(['self', 's'])
+j.db.serializers.blowfish?8
+j.db.serializers.blowfish.c?8
+j.db.serializers.blowfish.dumps?4(['self', 'obj', 'encrkey'])
+j.db.serializers.blowfish.encrkey?8
+j.db.serializers.blowfish.loads?4(['self', 's', 'encrkey'])
+j.db.serializers.dict?8
+j.db.serializers.dict.dumps?4(['self', 'obj'])
+j.db.serializers.dict.loads?4(['self', 's'])
+j.db.serializers.get?4(['self', 'serializationstr', 'key'])
+j.db.serializers.getBlosc?4(['self'])
+j.db.serializers.getMessagePack?4(['self'])
+j.db.serializers.getSerializerType?4(['self', 'type', 'key'])
+j.db.serializers.hrd?8
+j.db.serializers.hrd.dumps?4(['self', 'data', 'prepend'])
+j.db.serializers.hrd.loads?4(['self', 'data'])
+j.db.serializers.int?8
+j.db.serializers.int.dumps?4(['self', 'obj'])
+j.db.serializers.int.loads?4(['self', 's'])
+j.db.serializers.time?8
+j.db.serializers.time.dumps?4(['self', 'obj'])
+j.db.serializers.time.loads?4(['self', 's'])
+j.db.serializers.types?8
+j.db.serializers.ujson?8
+j.db.serializers.ujson.dumps?4(['self', 'obj'])
+j.db.serializers.ujson.loads?4(['self', 's'])
+j.db.sqlalchemy?8
+j.db.sqlalchemy.get?4(['self', 'connectionstring', 'sqlitepath', 'tomlpath'])
+j.db.sqlalchemy.getBaseClass?4(['self'])
+j.db.sqlalchemy.validate_email?4(['self', 'target', 'value', 'oldvalue', 'initiator'])
+j.db.sqlalchemy.validate_lower_strip?4(['self', 'target', 'value', 'oldvalue', 'initiator'])
+j.db.sqlalchemy.validate_tel?4(['self', 'target', 'value', 'oldvalue', 'initiator'])
+j.db.keyvaluestore?8
+j.db.keyvaluestore.getArakoonStore?4(['self', 'namespace', 'serializers'])
+j.db.keyvaluestore.getFileSystemStore?4(['self', 'namespace', 'baseDir', 'serializers'])
+j.db.keyvaluestore.getLevelDBStore?4(['self', 'namespace', 'basedir', 'serializers'])
+j.db.keyvaluestore.getMemoryStore?4(['self', 'namespace'])
+j.db.keyvaluestore.getRedisStore?4(['self', 'namespace', 'host', 'port', 'db', 'password', 'serializers', 'masterdb', 'changelog'])
+j.db.cache?8
+j.db.cache.getRCache?4(['self', 'nritems'])
+j.db.cache.getRWCache?4(['self', 'nrItemsReadCache', 'nrItemsWriteCache', 'maxTimeWriteCache', 'writermethod'])
+j.dirs?8
+j.dirs.addProtectedDir?4(['self', 'path', 'name'])
+j.dirs.amInGitConfigRepo?4(['self'])
+j.dirs.appDir?8
+j.dirs.baseDir?8
+j.dirs.binDir?8
+j.dirs.cfgDir?8
+j.dirs.checkInProtectedDir?4(['self', 'path'])
+j.dirs.codeDir?8
+j.dirs.createGitConfigRepo?4(['self', 'path'])
+j.dirs.getHrdDir?4(['self', 'system'])
+j.dirs.getPathOfRunningFunction?4(['self', 'function'])
+j.dirs.gitConfigDir?8
+j.dirs.hrdDir?8
+j.dirs.init?4(['self', 'reinit'])
+j.dirs.isGitConfigRepo?4(['self', 'path'])
+j.dirs.jsLibDir?8
+j.dirs.libDir?8
+j.dirs.libExtDir?8
+j.dirs.loadProtectedDirs?4(['self'])
+j.dirs.logDir?8
+j.dirs.pidDir?8
+j.dirs.removeProtectedDir?4(['self', 'path'])
+j.dirs.replaceTxtDirVars?4(['self', 'txt', 'additionalArgs'])
+j.dirs.tmpDir?8
+j.dirs.varDir?8
+j.do?8
+j.do.BASE?7
+j.do.CODEDIR?7
+j.do.TMP?7
+j.do.TYPE?7
+j.do.changeDir?4(['self', 'path', 'create'])
+j.do.changeLoginPasswdGitRepos?4(['self', 'provider', 'login', 'passwd'])
+j.do.chdir?4(['self', 'ddir'])
+j.do.checkDirOrLinkToDir?4(['self', 'fullpath'])
+j.do.checkInstalled?4(['self', 'cmdname'])
+j.do.chmod?4(['self', 'path', 'permissions'])
+j.do.chown?4(['self', 'path', 'user'])
+j.do.copyDependencies?4(['self', 'path', 'dest'])
+j.do.copyFile?4(['self', 'source', 'dest', 'deletefirst', 'skipIfExists'])
+j.do.copyTree?4(['self', 'source', 'dest', 'keepsymlinks', 'deletefirst', 'overwriteFiles', 'ignoredir', 'ignorefiles', 'rsync', 'sshkey'])
+j.do.createDir?4(['self', 'path'])
+j.do.debug?8
+j.do.delete?4(['self', 'path', 'force'])
+j.do.download?4(['self', 'url', 'to', 'overwrite', 'retry', 'timeout', 'login', 'passwd', 'minspeed', 'multithread', 'curl'])
+j.do.downloadExpandTarGz?4(['self', 'url', 'destdir', 'deleteDestFirst', 'deleteSourceAfter'])
+j.do.downloadJumpScaleCore?4(['self', 'dest'])
+j.do.excepthook?4(['self', 'ttype', 'pythonExceptionObject', 'tb'])
+j.do.execute?4(['self', 'command', 'outputStdout', 'outputStderr', 'useShell', 'log', 'cwd', 'timeout', 'errors', 'ok', 'captureout', 'dieOnNonZeroExitCode'])
+j.do.executeCmds?4(['self', 'cmdstr', 'outputStdout', 'outputStderr', 'useShell', 'log', 'cwd', 'timeout', 'errors', 'ok', 'captureout', 'dieOnNonZeroExitCode'])
+j.do.executeInteractive?4(['self', 'command'])
+j.do.exists?4(['self', 'path'])
+j.do.expandTarGz?4(['self', 'path', 'destdir', 'deleteDestFirst', 'deleteSourceAfter'])
+j.do.findDependencies?4(['self', 'path', 'deps'])
+j.do.getBaseName?4(['self', 'path'])
+j.do.getDirName?4(['self', 'path', 'lastOnly', 'levelsUp'])
+j.do.getFileExtension?4(['self', 'path'])
+j.do.getGitRepoArgs?4(['self', 'url', 'dest', 'login', 'passwd', 'reset'])
+j.do.getGitReposListLocal?4(['self', 'provider', 'account', 'name', 'errorIfNone'])
+j.do.getParent?4(['self', 'path'])
+j.do.getPythonSiteConfigPath?4(['self'])
+j.do.getTimeEpoch?4(['self'])
+j.do.getTmpPath?4(['self', 'filename'])
+j.do.getWalker?4(['self'])
+j.do.installPackage?4(['self', 'path'])
+j.do.isDir?4(['self', 'path', 'followSoftlink'])
+j.do.isExecutable?4(['self', 'path'])
+j.do.isFile?4(['self', 'path', 'followSoftlink'])
+j.do.isLink?4(['self', 'path', 'checkJunction'])
+j.do.isUnix?4(['self'])
+j.do.isWindows?4(['self'])
+j.do.joinPaths?4(['self'])
+j.do.list?4(['self', 'path'])
+j.do.listDirsInDir?4(['self', 'path', 'recursive', 'dirNameOnly', 'findDirectorySymlinks'])
+j.do.listFilesAndDirsInDir?4(['self', 'path', 'recursive', 'filter', 'minmtime', 'maxmtime', 'depth', 'type', 'followSymlinks', 'listSymlinks'])
+j.do.listFilesInDir?4(['self', 'path', 'recursive', 'filter', 'minmtime', 'maxmtime', 'depth', 'case_sensitivity', 'exclude', 'followSymlinks', 'listSymlinks'])
+j.do.loadScript?4(['self', 'path'])
+j.do.log?4(['self', 'msg', 'level'])
+j.do.pullGitRepo?4(['self', 'url', 'dest', 'login', 'passwd', 'depth', 'ignorelocalchanges', 'reset', 'branch', 'revision'])
+j.do.pushGitRepos?4(['self', 'message', 'name', 'update', 'provider', 'account'])
+j.do.readFile?4(['self', 'filename'])
+j.do.readLink?4(['self', 'path'])
+j.do.removeLinks?4(['self', 'path'])
+j.do.removeSymlink?4(['self', 'path'])
+j.do.rewriteGitRepoUrl?4(['self', 'url', 'login', 'passwd'])
+j.do.sendmail?4(['self', 'ffrom', 'to', 'subject', 'msg', 'smtpuser', 'smtppasswd', 'smtpserver', 'port', 'html'])
+j.do.symlink?4(['self', 'src', 'dest', 'delete'])
+j.do.symlinkFilesInDir?4(['self', 'src', 'dest', 'delete', 'includeDirs'])
+j.do.touch?4(['self', 'path'])
+j.do.updateGitRepos?4(['self', 'provider', 'account', 'name', 'message'])
+j.do.writeFile?4(['self', 'path', 'content', 'strip'])
+j.enumerators?8
+j.errorconditionhandler?8
+j.errorconditionhandler.blacklist?8
+j.errorconditionhandler.checkErrorIgnore?4(['self', 'eco'])
+j.errorconditionhandler.escalateBugToDeveloper?4(['self', 'errorConditionObject', 'tb'])
+j.errorconditionhandler.escalateToRedis?8
+j.errorconditionhandler.excepthook?4(['self', 'ttype', 'pythonExceptionObject', 'tb'])
+j.errorconditionhandler.getErrorConditionObject?4(['self', 'ddict', 'msg', 'msgpub', 'category', 'level', 'type', 'tb'])
+j.errorconditionhandler.getErrorTraceKIS?4(['self', 'tb'])
+j.errorconditionhandler.getFrames?4(['self', 'tb'])
+j.errorconditionhandler.getLevelName?4(['self', 'level'])
+j.errorconditionhandler.halt?4(['self', 'msg', 'eco'])
+j.errorconditionhandler.haltOnError?8
+j.errorconditionhandler.inException?8
+j.errorconditionhandler.lastAction?8
+j.errorconditionhandler.lastActionClear?4(['self'])
+j.errorconditionhandler.lastActionSet?4(['self', 'lastActionDescription'])
+j.errorconditionhandler.lastEco?8
+j.errorconditionhandler.parsePythonErrorObject?4(['self', 'pythonExceptionObject', 'ttype', 'tb', 'level', 'message'])
+j.errorconditionhandler.processPythonExceptionObject?4(['self', 'pythonExceptionObject', 'ttype', 'tb', 'level', 'message', 'sentry'])
+j.errorconditionhandler.raiseBug?4(['self', 'message', 'category', 'pythonExceptionObject', 'pythonTraceBack', 'msgpub', 'die', 'tags', 'level'])
+j.errorconditionhandler.raiseCritical?4(['self', 'message', 'category', 'pythonExceptionObject', 'pythonTraceBack', 'msgpub', 'die', 'tags', 'level'])
+j.errorconditionhandler.raiseInputError?4(['self', 'message', 'category', 'msgpub', 'die', 'backtrace', 'tags'])
+j.errorconditionhandler.raiseMonitoringError?4(['self', 'message', 'category', 'msgpub', 'die', 'tags'])
+j.errorconditionhandler.raiseOperationalCritical?4(['self', 'message', 'category', 'msgpub', 'die', 'tags', 'eco', 'extra'])
+j.errorconditionhandler.raiseOperationalWarning?4(['self', 'message', 'category', 'msgpub', 'tags', 'eco'])
+j.errorconditionhandler.raisePerformanceError?4(['self', 'message', 'category', 'msgpub', 'tags'])
+j.errorconditionhandler.raiseRuntimeErrorWithEco?4(['self', 'eco', 'tostdout'])
+j.errorconditionhandler.raiseWarning?4(['self', 'message', 'category', 'pythonExceptionObject', 'pythonTraceBack', 'msgpub', 'tags'])
+j.errorconditionhandler.reRaiseECO?4(['self', 'eco'])
+j.errorconditionhandler.redis?8
+j.errorconditionhandler.setExceptHook?4(['self'])
+j.errorconditionhandler.toolStripNonAsciFromText?4(['text'])
+j.events?8
+j.events.bug_critical?4(['self', 'msg', 'category', 'jobid', 'e'])
+j.events.bug_warning?4(['self', 'msg', 'category', 'e'])
+j.events.inputerror_critical?4(['self', 'msg', 'category', 'msgpub'])
+j.events.inputerror_warning?4(['self', 'msg', 'category', 'msgpub'])
+j.events.opserror?4(['self', 'msg', 'category', 'e'])
+j.events.opserror_critical?4(['self', 'msg', 'category'])
+j.events.opserror_warning?4(['self', 'msg', 'category', 'e'])
+j.gui?8
+j.gui.dialog?8
+j.gui.dialog.askChoice?4(['self', 'question', 'choices', 'defaultValue', 'pageSize', 'sortChoices', 'sortCallBack'])
+j.gui.dialog.askChoiceMultiple?4(['self', 'question', 'choices', 'defaultValue', 'pageSize', 'sortChoices', 'sortCallBack'])
+j.gui.dialog.askDate?4(['self', 'question', 'minValue', 'maxValue', 'selectedValue', 'format'])
+j.gui.dialog.askDateTime?4(['self', 'question', 'minValue', 'maxValue', 'selectedValue', 'format'])
+j.gui.dialog.askDirPath?4(['self', 'message', 'startPath'])
+j.gui.dialog.askFilePath?4(['self', 'message', 'startPath'])
+j.gui.dialog.askForm?4(['self', 'form'])
+j.gui.dialog.askInteger?4(['self', 'question', 'defaultValue'])
+j.gui.dialog.askIntegers?4(['self', 'question'])
+j.gui.dialog.askMultiline?4(['self', 'question', 'defaultValue'])
+j.gui.dialog.askPassword?4(['self', 'question', 'confirm', 'regex', 'retry', 'defaultValue'])
+j.gui.dialog.askString?4(['self', 'question', 'defaultValue', 'validator'])
+j.gui.dialog.askYesNo?4(['self', 'question', 'defaultValue'])
+j.gui.dialog.chooseDialogType?4(['self', 'type'])
+j.gui.dialog.clear?4(['self'])
+j.gui.dialog.easyDialog?8
+j.gui.dialog.easyDialog.askChoice?4(['self', 'question', 'choices', 'defaultValue', 'pageSize', 'sortChoices', 'sortCallBack'])
+j.gui.dialog.easyDialog.askChoiceMultiple?4(['self', 'question', 'choices', 'defaultValue', 'pageSize', 'sortChoices', 'sortCallBack'])
+j.gui.dialog.easyDialog.askDate?4(['self', 'question', 'minValue', 'maxValue', 'selectedValue', 'format'])
+j.gui.dialog.easyDialog.askDateTime?4(['self', 'question', 'minValue', 'maxValue', 'selectedValue', 'format'])
+j.gui.dialog.easyDialog.askDirPath?4(['self', 'message', 'startPath'])
+j.gui.dialog.easyDialog.askFilePath?4(['self', 'message', 'startPath'])
+j.gui.dialog.easyDialog.askInt?4(['self', 'question', 'defaultValue'])
+j.gui.dialog.easyDialog.askInteger?4(['self', 'question', 'defaultValue'])
+j.gui.dialog.easyDialog.askIntegers?4(['self', 'question'])
+j.gui.dialog.easyDialog.askMultiline?4(['self', 'question'])
+j.gui.dialog.easyDialog.askPassword?4(['self', 'question', 'confirm', 'regex', 'retry', 'defaultValue'])
+j.gui.dialog.easyDialog.askString?4(['self', 'question', 'defaultValue', 'validator'])
+j.gui.dialog.easyDialog.askYesNo?4(['self', 'question', 'defaultValue'])
+j.gui.dialog.easyDialog.chooseDialogType?4(['self', 'type'])
+j.gui.dialog.easyDialog.clear?4(['self'])
+j.gui.dialog.easyDialog.message?4(['self', 'message'])
+j.gui.dialog.easyDialog.navigateTo?4(['self', 'url'])
+j.gui.dialog.easyDialog.showLogging?4(['self', 'text'])
+j.gui.dialog.easyDialog.showMessageBox?4(['self', 'message', 'title', 'msgboxButtons', 'msgboxIcon', 'defaultButton'])
+j.gui.dialog.easyDialog.showProgress?4(['self', 'minvalue', 'maxvalue', 'currentvalue'])
+j.gui.dialog.message?4(['self', 'message'])
+j.gui.dialog.navigateTo?4(['self', 'url'])
+j.gui.dialog.pm_setDialogHandler?4(['self'])
+j.gui.dialog.showLogging?4(['self', 'text'])
+j.gui.dialog.showMessageBox?4(['self', 'message', 'title', 'msgboxButtons', 'msgboxIcon', 'defaultButton'])
+j.gui.dialog.showProgress?4(['self', 'minvalue', 'maxvalue', 'currentvalue'])
+j.gui.form?8
+j.gui.form.createForm?4(['self'])
+j.logger?8
+j.logger.connectRedis?4(['self'])
+j.logger.consolelogCategories?8
+j.logger.consoleloglevel?8
+j.logger.disable?4(['self'])
+j.logger.enabled?8
+j.logger.getLogObjectFromDict?4(['self', 'ddict'])
+j.logger.init?4(['self'])
+j.logger.lastmessage?8
+j.logger.log?4(['self', 'message', 'level', 'category', 'tags', 'jid', 'parentjid', 'masterjid', 'private'])
+j.logger.maxlevel?8
+j.logger.nolog?8
+j.logger.nologger?4(['self', 'func'])
+j.logger.nostdout?4(['self'])
+j.logger.redis?8
+j.logger.redislogging?8
+j.logger.reset?4(['self'])
+j.logger.utils?8
+j.logger.utils.trace?4(['self', 'level', 'enabled'])
+j.remote?8
+j.remote.system?8
+j.remote.system.connect?4(['self', 'ip', 'login', 'password', 'timeout', 'port'])
+j.remote.system.connections?8
+j.remote.system.exceptions?8
+j.remote.system.name?8
+j.remote.cuisine?8
+j.remote.cuisine.connect?4(['self', 'addr', 'port', 'passwd'])
+j.remote.cuisine.help?4(['self'])
+j.remote.avahi?8
+j.remote.avahi.getServices?4(['self'])
+j.remote.avahi.registerService?4(['self', 'servicename', 'port', 'type'])
+j.remote.avahi.removeService?4(['self', 'servicename'])
+j.remote.avahi.resolveAddress?4(['self', 'ipAddress'])
+j.remote.fabric?8
+j.remote.fabric.help?4(['self'])
+j.remote.fabric.setDefaultPasswd?4(['self', 'passwd', 'host'])
+j.remote.fabric.setHost?4(['self', 'host'])
+j.remote.fabric.setHosts?4(['self', 'hosts'])
+j.remote.ssh?8
+j.remote.ssh.getSSHClient?4(['self', 'password', 'host', 'username', 'port', 'timeout'])
+j.remote.ssh.getSSHClientUsingKey?4(['self', 'keypath', 'host', 'username', 'port', 'timeout'])
+j.remote.ssh.getSSHClientUsingSSHAgent?4(['self', 'host', 'username', 'port', 'timeout'])
+j.servers?8
+j.servers.geventws?8
+j.servers.geventws.cache?8
+j.servers.geventws.cachecat?8
+j.servers.geventws.getClient?4(['self', 'addr', 'port', 'category', 'org', 'user', 'passwd', 'ssl', 'roles', 'id', 'timeout'])
+j.servers.geventws.getHAClient?4(['self', 'connections', 'category', 'org', 'user', 'passwd', 'ssl', 'roles', 'id', 'timeout', 'reconnect'])
+j.servers.geventws.getServer?4(['self', 'port', 'sslorg', 'ssluser', 'sslkeyvaluestor'])
+j.servers.geventws.initSSL4Server?4(['self', 'organization', 'serveruser', 'sslkeyvaluestor'])
+j.servers.tornado?8
+j.servers.tornado.getClient?4(['self', 'addr', 'port', 'category', 'org', 'user', 'passwd', 'ssl', 'roles'])
+j.servers.tornado.getHAClient?4(['self', 'connections', 'category', 'org', 'user', 'passwd', 'ssl', 'roles', 'id', 'timeout', 'reconnect'])
+j.servers.tornado.getServer?4(['self', 'port', 'sslorg', 'ssluser', 'sslkeyvaluestor'])
+j.servers.tornado.initSSL4Server?4(['self', 'organization', 'serveruser', 'sslkeyvaluestor'])
+j.servers.zdaemon?8
+j.servers.zdaemon.getZDaemon?4(['self', 'port', 'name', 'nrCmdGreenlets', 'sslorg', 'ssluser', 'sslkeyvaluestor'])
+j.servers.zdaemon.getZDaemonAgent?4(['self', 'ipaddr', 'port', 'org', 'user', 'passwd', 'ssl', 'reset', 'roles'])
+j.servers.zdaemon.getZDaemonClient?4(['self', 'addr', 'port', 'org', 'user', 'passwd', 'ssl', 'category', 'sendformat', 'returnformat', 'gevent'])
+j.servers.zdaemon.getZDaemonHAClient?4(['self', 'connections', 'org', 'user', 'passwd', 'ssl', 'category', 'sendformat', 'returnformat', 'gevent'])
+j.servers.zdaemon.getZDaemonTransportClass?4(['self'])
+j.servers.zdaemon.initSSL4Server?4(['self', 'organization', 'serveruser', 'sslkeyvaluestor'])
+j.servers.tipc?8
+j.servers.tipc.getClient?4(['self', 'servaddr', 'category', 'org', 'user', 'passwd', 'ssl', 'roles'])
+j.servers.tipc.getServer?4(['self', 'servaddr', 'sslorg', 'ssluser', 'sslkeyvaluestor'])
+j.servers.base?8
+j.servers.base.getDaemon?4(['self', 'name', 'sslorg', 'ssluser', 'sslkeyvaluestor'])
+j.servers.base.getDaemonClientClass?4(['self'])
+j.servers.base.initSSL4Server?4(['self', 'organization', 'serveruser', 'sslkeyvaluestor'])
+j.ssh?8
+j.ssh.connect?4(['addr', 'port', 'passwd', 'verbose', 'keypath'])
+j.ssh.aoe?8
+j.ssh.aoe.get?4(['self', 'con'])
+j.ssh.samba?8
+j.ssh.samba.Samba.addShare?4(['self', 'sharename', 'path', 'options'])
+j.ssh.samba.Samba.addUser?4(['self', 'username', 'password'])
+j.ssh.samba.Samba.commitShare?4(['self'])
+j.ssh.samba.Samba.getShare?4(['self', 'sharename'])
+j.ssh.samba.Samba.listUsers?4(['self'])
+j.ssh.samba.Samba.removeShare?4(['self', 'sharename'])
+j.ssh.samba.Samba.removeUser?4(['self', 'username'])
+j.ssh.samba.Samba.SMBUser.add?4(['self', 'username', 'password'])
+j.ssh.samba.Samba.SMBUser.list?4(['self'])
+j.ssh.samba.Samba.SMBUser.remove?4(['self', 'username'])
+j.ssh.samba.Samba.SMBShare.add?4(['self', 'sharename', 'path', 'options'])
+j.ssh.samba.Samba.SMBShare.commit?4(['self'])
+j.ssh.samba.Samba.SMBShare.get?4(['self', 'sharename'])
+j.ssh.samba.Samba.SMBShare.remove?4(['self', 'sharename'])
+j.ssh.samba.Samba.SambaConfigParser.OPTCRE?7
+j.ssh.samba.Samba.SambaConfigParser.OPTCRE_NV?7
+j.ssh.samba.Samba.SambaConfigParser.OPTCRE_SMB?7
+j.ssh.samba.Samba.SambaConfigParser.SECTCRE?7
+j.ssh.samba.get?4(['self', 'con'])
+j.ssh.disklayout?8
+j.ssh.disklayout.get?4(['self', 'connection'])
+j.ssh.rsync?8
+j.ssh.rsync.get?4(['self', 'con'])
+j.ssh.server?8
+j.ssh.server.get?4(['self', 'con'])
+j.ssh.nginx?8
+j.ssh.nginx.get?4(['self', 'con', 'path'])
+j.ssh.unix?8
+j.ssh.unix.get?4(['self', 'connection'])
+j.ssh.nfs?8
+j.ssh.nfs.get?4(['self', 'con'])
+j.ssh.ubuntu?8
+j.ssh.ubuntu.get?4(['self', 'connection'])
+j.system?8
+j.system.fs?8
+j.system.fs.changeDir?4(['self', 'path'])
+j.system.fs.changeFileNames?4(['self', 'toReplace', 'replaceWith', 'pathToSearchIn', 'recursive', 'filter', 'minmtime', 'maxmtime'])
+j.system.fs.checkDirOrLink?4(['self', 'fullpath'])
+j.system.fs.checkDirOrLinkToDir?4(['self', 'fullpath'])
+j.system.fs.checkDirParam?4(['self', 'path'])
+j.system.fs.chmod?4(['self', 'path', 'permissions'])
+j.system.fs.chown?4(['self', 'path', 'user'])
+j.system.fs.cleanupString?4(['string', 'replacewith', 'regex'])
+j.system.fs.constructDirPathFromArray?4(['self', 'array'])
+j.system.fs.constructFilePathFromArray?4(['self', 'array'])
+j.system.fs.convertFileDirnamesSpaceToUnderscore?4(['self', 'rootdir'])
+j.system.fs.convertFileDirnamesUnicodeToAscii?4(['self', 'rootdir', 'spacesToUnderscore'])
+j.system.fs.copyDirTree?4(['self', 'src', 'dst', 'keepsymlinks', 'eraseDestination', 'skipProtectedDirs', 'overwriteFiles', 'applyHrdOnDestPaths'])
+j.system.fs.copyFile?4(['self', 'fileFrom', 'to', 'createDirIfNeeded', 'skipProtectedDirs', 'overwriteFile'])
+j.system.fs.createDir?4(['self', 'newdir', 'skipProtectedDirs'])
+j.system.fs.createEmptyFile?4(['self', 'filename'])
+j.system.fs.dirEqual?4(['self', 'path1', 'path2'])
+j.system.fs.exceptions?8
+j.system.fs.exceptions.LockException?8
+j.system.fs.exceptions.LockTimeoutException?8
+j.system.fs.exists?4(['self', 'path', 'followlinks'])
+j.system.fs.fileConvertLineEndingCRLF?4(['self', 'file'])
+j.system.fs.fileGetContents?4(['self', 'filename'])
+j.system.fs.fileGetTextContents?4(['self', 'filename'])
+j.system.fs.fileGetUncommentedContents?4(['self', 'filename'])
+j.system.fs.fileSize?4(['self', 'filename'])
+j.system.fs.find?4(['self', 'startDir', 'fileregex'])
+j.system.fs.getBaseName?4(['self', 'path'])
+j.system.fs.getDirName?4(['self', 'path', 'lastOnly', 'levelsUp'])
+j.system.fs.getFileExtension?4(['self', 'path'])
+j.system.fs.getFolderMD5sum?4(['self', 'folder'])
+j.system.fs.getParent?4(['self', 'path'])
+j.system.fs.getParentDirName?4(['self', 'path'])
+j.system.fs.getTempFileName?4(['self', 'dir', 'prefix'])
+j.system.fs.getTmpDirPath?4(['self'])
+j.system.fs.getTmpFilePath?4(['self', 'cygwin'])
+j.system.fs.getcwd?4(['self'])
+j.system.fs.grep?4(['self', 'fileregex', 'lineregex'])
+j.system.fs.gunzip?4(['self', 'sourceFile', 'destFile'])
+j.system.fs.gzip?4(['self', 'sourceFile', 'destFile'])
+j.system.fs.hardlinkFile?4(['self', 'source', 'destin'])
+j.system.fs.isAsciiFile?4(['self', 'filename', 'checksize'])
+j.system.fs.isBinaryFile?4(['self', 'filename', 'checksize'])
+j.system.fs.isDir?4(['self', 'path', 'followSoftlink'])
+j.system.fs.isEmptyDir?4(['self', 'path'])
+j.system.fs.isExecutable?4(['self', 'path'])
+j.system.fs.isFile?4(['self', 'path', 'followSoftlink'])
+j.system.fs.isLink?4(['self', 'path', 'checkJunction'])
+j.system.fs.isMount?4(['self', 'path'])
+j.system.fs.islocked?4(['lockname', 'reentry'])
+j.system.fs.joinPaths?4(['self'])
+j.system.fs.listDirsInDir?4(['self', 'path', 'recursive', 'dirNameOnly', 'findDirectorySymlinks'])
+j.system.fs.listFilesAndDirsInDir?4(['self', 'path', 'recursive', 'filter', 'minmtime', 'maxmtime', 'depth', 'type', 'followSymlinks', 'listSymlinks'])
+j.system.fs.listFilesInDir?4(['self', 'path', 'recursive', 'filter', 'minmtime', 'maxmtime', 'depth', 'case_sensitivity', 'exclude', 'followSymlinks', 'listSymlinks'])
+j.system.fs.listPyScriptsInDir?4(['self', 'path', 'recursive', 'filter'])
+j.system.fs.lock?4(['lockname', 'locktimeout', 'reentry'])
+j.system.fs.lock_?4(['lockname', 'locktimeout', 'reentry'])
+j.system.fs.log?4(['self', 'msg', 'level', 'category'])
+j.system.fs.logenable?8
+j.system.fs.loglevel?8
+j.system.fs.md5sum?4(['self', 'filename'])
+j.system.fs.move?4(['self', 'source', 'destin'])
+j.system.fs.moveDir?4(['self', 'source', 'destin'])
+j.system.fs.moveFile?4(['self', 'source', 'destin'])
+j.system.fs.parsePath?4(['self', 'path', 'baseDir', 'existCheck', 'checkIsFile'])
+j.system.fs.pathClean?4(['self', 'path'])
+j.system.fs.pathDirClean?4(['self', 'path'])
+j.system.fs.pathNormalize?4(['self', 'path', 'root'])
+j.system.fs.pathRemoveDirPart?4(['self', 'path', 'toremove', 'removeTrailingSlash'])
+j.system.fs.pathShorten?4(['self', 'path'])
+j.system.fs.pathToUnicode?4(['self', 'path'])
+j.system.fs.processPathForDoubleDots?4(['self', 'path'])
+j.system.fs.readObjectFromFile?4(['self', 'filelocation'])
+j.system.fs.readlink?4(['self', 'path'])
+j.system.fs.remove?4(['self', 'path'])
+j.system.fs.removeDir?4(['self', 'path'])
+j.system.fs.removeDirTree?4(['self', 'path', 'onlyLogWarningOnRemoveError'])
+j.system.fs.removeIrrelevantFiles?4(['self', 'path', 'followSymlinks'])
+j.system.fs.removeLinks?4(['self', 'path'])
+j.system.fs.renameDir?4(['self', 'dirname', 'newname', 'overwrite'])
+j.system.fs.renameFile?4(['self', 'filePath', 'new_name'])
+j.system.fs.replaceWordsInFiles?4(['self', 'pathToSearchIn', 'templateengine', 'recursive', 'filter', 'minmtime', 'maxmtime'])
+j.system.fs.statPath?4(['self', 'path'])
+j.system.fs.symlink?4(['self', 'path', 'target', 'overwriteTarget'])
+j.system.fs.targzCompress?4(['self', 'sourcepath', 'destinationpath', 'followlinks', 'destInTar', 'pathRegexIncludes', 'pathRegexExcludes', 'contentRegexIncludes', 'contentRegexExcludes', 'depths', 'extrafiles'])
+j.system.fs.targzUncompress?4(['self', 'sourceFile', 'destinationdir', 'removeDestinationdir'])
+j.system.fs.touch?4(['self', 'paths', 'overwrite'])
+j.system.fs.unlink?4(['self', 'filename'])
+j.system.fs.unlinkFile?4(['self', 'filename'])
+j.system.fs.unlock?4(['lockname'])
+j.system.fs.unlock_?4(['lockname'])
+j.system.fs.validateFilename?4(['self', 'filename', 'platform'])
+j.system.fs.walk?4(['self', 'root', 'recurse', 'pattern', 'return_folders', 'return_files', 'followSoftlinks', 'str', 'depth'])
+j.system.fs.walkExtended?4(['self', 'root', 'recurse', 'dirPattern', 'filePattern', 'followSoftLinks', 'dirs', 'files'])
+j.system.fs.writeFile?4(['self', 'filename', 'contents', 'append'])
+j.system.fs.writeObjectToFile?4(['self', 'filelocation', 'obj'])
+j.system.fswalker?8
+j.system.fswalker.find?4(['root', 'recursive', 'includeFolders', 'pathRegexIncludes', 'pathRegexExcludes', 'contentRegexIncludes', 'contentRegexExcludes', 'depths'])
+j.system.fswalker.walk?4(['root', 'callback', 'arg', 'recursive', 'includeFolders', 'pathRegexIncludes', 'pathRegexExcludes', 'contentRegexIncludes', 'contentRegexExcludes', 'depths', 'followlinks'])
+j.system.fswalker.walkFunctional?4(['root', 'callbackFunctionFile', 'callbackFunctionDir', 'arg', 'callbackForMatchDir', 'callbackForMatchFile'])
+j.system.net?8
+j.system.net.bridgeExists?4(['self', 'bridgename'])
+j.system.net.checkIpAddressIsLocal?4(['self', 'ipaddr'])
+j.system.net.checkListenPort?4(['self', 'port'])
+j.system.net.checkUrlReachable?4(['self', 'url'])
+j.system.net.download?4(['self', 'url', 'localpath', 'username', 'passwd'])
+j.system.net.downloadIfNonExistent?4(['self', 'url', 'destination_file_path', 'md5_checksum', 'http_auth_username', 'http_auth_password'])
+j.system.net.enableProxy?4(['self'])
+j.system.net.getDefaultIPConfig?4(['self'])
+j.system.net.getDefaultRouter?4(['self'])
+j.system.net.getDomainName?4(['self'])
+j.system.net.getHostByName?4(['self', 'dnsHostname'])
+j.system.net.getHostNamesForIP?4(['self', 'hostsfile', 'ip'])
+j.system.net.getHostname?4(['self'])
+j.system.net.getIpAddress?4(['self', 'interface'])
+j.system.net.getIpAddresses?4(['self', 'up'])
+j.system.net.getMacAddress?4(['self', 'interface'])
+j.system.net.getMacAddressForIp?4(['self', 'ipaddress'])
+j.system.net.getNameServer?4(['self'])
+j.system.net.getNetworkInfo?4(['self'])
+j.system.net.getNicType?4(['self', 'interface'])
+j.system.net.getNics?4(['self', 'up'])
+j.system.net.getReachableIpAddress?4(['self', 'ip', 'port'])
+j.system.net.getVlanTag?4(['self', 'interface', 'nicType'])
+j.system.net.getVlanTagFromInterface?4(['self', 'interface'])
+j.system.net.isIpInHostsFile?4(['self', 'hostsfile', 'ip'])
+j.system.net.isIpLocal?4(['self', 'ipaddress'])
+j.system.net.isNicConnected?4(['self', 'interface'])
+j.system.net.pingMachine?4(['self', 'ip', 'pingtimeout', 'recheck', 'allowhostname'])
+j.system.net.pm_formatMacAddress?4(['self', 'macaddress'])
+j.system.net.removeFromHostsFile?4(['self', 'hostsfile', 'ip'])
+j.system.net.removeNetworkFromInterfaces?4(['self', 'network'])
+j.system.net.resetDefaultGateway?4(['self', 'gw'])
+j.system.net.setBasicNetConfiguration?4(['self', 'interface', 'ipaddr', 'gw', 'mask', 'config'])
+j.system.net.setBasicNetConfigurationBridgePub?4(['self', 'interface', 'ipaddr', 'gw', 'mask'])
+j.system.net.setBasicNetConfigurationDHCP?4(['self', 'interface'])
+j.system.net.tcpPortConnectionTest?4(['self', 'ipaddr', 'port', 'timeout'])
+j.system.net.updateHostsFile?4(['self', 'hostsfile', 'ip', 'hostname'])
+j.system.net.validateIpAddress?4(['self', 'ipaddress'])
+j.system.net.waitConnectionTest?4(['self', 'ipaddr', 'port', 'timeout'])
+j.system.net.waitConnectionTestStopped?4(['self', 'ipaddr', 'port', 'timeout'])
+j.system.platform?8
+j.system.platform.dhcp?8
+j.system.platform.psutil?8
+j.system.platform.ubuntu?8
+j.system.platform.ubuntu.addSourceUri?4(['self', 'url'])
+j.system.platform.ubuntu.addUser2Group?4(['self', 'group', 'user'])
+j.system.platform.ubuntu.changeSourceUri?4(['self', 'newuri'])
+j.system.platform.ubuntu.check?4(['self', 'die'])
+j.system.platform.ubuntu.checkInstall?4(['self', 'packagenames', 'cmdname'])
+j.system.platform.ubuntu.checkroot?4(['self'])
+j.system.platform.ubuntu.createGroup?4(['self', 'groupname'])
+j.system.platform.ubuntu.createUser?4(['self', 'name', 'passwd', 'home', 'creategroup', 'deletefirst'])
+j.system.platform.ubuntu.downloadInstallDebPkg?4(['self', 'url', 'removeDownloaded', 'minspeed'])
+j.system.platform.ubuntu.existsGroup?4(['self', 'name'])
+j.system.platform.ubuntu.existsUser?4(['self', 'name'])
+j.system.platform.ubuntu.find1packageInstalled?4(['self', 'packagename'])
+j.system.platform.ubuntu.findPackagesInstalled?4(['self', 'packagename'])
+j.system.platform.ubuntu.findPackagesRepo?4(['self', 'packagename'])
+j.system.platform.ubuntu.generateLocalSSHKeyPair?4(['self', 'passphrase', 'type', 'overwrite', 'path'])
+j.system.platform.ubuntu.getPackage?4(['self', 'name'])
+j.system.platform.ubuntu.getPackageNamesInstalled?4(['self'])
+j.system.platform.ubuntu.getPackageNamesRepo?4(['self'])
+j.system.platform.ubuntu.getVersion?4(['self'])
+j.system.platform.ubuntu.initApt?4(['self'])
+j.system.platform.ubuntu.install?4(['self', 'packagename'])
+j.system.platform.ubuntu.installDebFile?4(['self', 'path', 'installDeps'])
+j.system.platform.ubuntu.installVersion?4(['self', 'packageName', 'version'])
+j.system.platform.ubuntu.installedPackageNames?8
+j.system.platform.ubuntu.listFilesPkg?4(['self', 'pkgname', 'regex'])
+j.system.platform.ubuntu.listSources?4(['self'])
+j.system.platform.ubuntu.remove?4(['self', 'packagename'])
+j.system.platform.ubuntu.restartService?4(['self', 'servicename'])
+j.system.platform.ubuntu.serviceDisableStartAtBoot?4(['self', 'servicename'])
+j.system.platform.ubuntu.serviceEnableStartAtBoot?4(['self', 'servicename'])
+j.system.platform.ubuntu.serviceInstall?4(['self', 'servicename', 'daemonpath', 'args', 'respawn', 'pwd', 'env', 'reload'])
+j.system.platform.ubuntu.serviceUninstall?4(['self', 'servicename'])
+j.system.platform.ubuntu.startService?4(['self', 'servicename'])
+j.system.platform.ubuntu.statusService?4(['self', 'servicename'])
+j.system.platform.ubuntu.stopService?4(['self', 'servicename'])
+j.system.platform.ubuntu.updatePackageMetadata?4(['self', 'force'])
+j.system.platform.ubuntu.upgradePackages?4(['self', 'force'])
+j.system.platform.ubuntu.whoami?4(['self'])
+j.system.platform.diskmanager?8
+j.system.platform.diskmanager.diskGetFreeRegions?4(['self', 'disk', 'align'])
+j.system.platform.diskmanager.mirrorsFind?4(['self'])
+j.system.platform.diskmanager.parted?8
+j.system.platform.diskmanager.partitionAdd?4(['self', 'disk', 'free', 'align', 'length', 'fs_type', 'type'])
+j.system.platform.diskmanager.partitionsFind?4(['self', 'mounted', 'ttype', 'ssd', 'prefix', 'minsize', 'maxsize', 'devbusy', 'initialize', 'forceinitialize'])
+j.system.platform.diskmanager.partitionsFind_Ext4Data?4(['self'])
+j.system.platform.diskmanager.partitionsGetMounted_Ext4Data?4(['self'])
+j.system.platform.diskmanager.partitionsMount_Ext4Data?4(['self'])
+j.system.platform.diskmanager.partitionsUnmount_Ext4Data?4(['self'])
+j.system.platform.screen?8
+j.system.platform.screen.attachSession?4(['self', 'sessionname', 'windowname', 'user'])
+j.system.platform.screen.createSession?4(['self', 'sessionname', 'screens', 'user'])
+j.system.platform.screen.createWindow?4(['self', 'session', 'name', 'user'])
+j.system.platform.screen.executeInScreen?4(['self', 'sessionname', 'screenname', 'cmd', 'wait', 'cwd', 'env', 'user', 'tmuxuser'])
+j.system.platform.screen.getPid?4(['self', 'session', 'name', 'user'])
+j.system.platform.screen.getSessions?4(['self', 'user'])
+j.system.platform.screen.getWindows?4(['self', 'session', 'attemps', 'user'])
+j.system.platform.screen.killSession?4(['self', 'sessionname', 'user'])
+j.system.platform.screen.killSessions?4(['self', 'user'])
+j.system.platform.screen.killWindow?4(['self', 'session', 'name', 'user'])
+j.system.platform.screen.logWindow?4(['self', 'session', 'name', 'filename', 'user'])
+j.system.platform.screen.screencmd?8
+j.system.platform.screen.windowExists?4(['self', 'session', 'name', 'user'])
+j.system.platform.nginx?8
+j.system.platform.nginx.get?4(['self', 'host', 'password'])
+j.system.platform.lxc?8
+j.system.platform.lxc.btrfsSubvolCopy?4(['self', 'nameFrom', 'NameDest'])
+j.system.platform.lxc.btrfsSubvolDelete?4(['self', 'name'])
+j.system.platform.lxc.btrfsSubvolExists?4(['self', 'name'])
+j.system.platform.lxc.btrfsSubvolList?4(['self'])
+j.system.platform.lxc.btrfsSubvolNew?4(['self', 'name'])
+j.system.platform.lxc.create?4(['self', 'name', 'stdout', 'base', 'start', 'nameserver', 'replace'])
+j.system.platform.lxc.destroy?4(['self', 'name'])
+j.system.platform.lxc.destroyAll?4(['self'])
+j.system.platform.lxc.execute?4(['self', 'command'])
+j.system.platform.lxc.exportRsync?4(['self', 'name', 'backupname', 'key'])
+j.system.platform.lxc.exportTgz?4(['self', 'name', 'backupname'])
+j.system.platform.lxc.getConfig?4(['self', 'name'])
+j.system.platform.lxc.getIp?4(['self', 'name', 'fail'])
+j.system.platform.lxc.getPid?4(['self', 'name', 'fail'])
+j.system.platform.lxc.getProcessList?4(['self', 'name', 'stdout'])
+j.system.platform.lxc.importRsync?4(['self', 'backupname', 'name', 'basename', 'key'])
+j.system.platform.lxc.importTgz?4(['self', 'backupname', 'name'])
+j.system.platform.lxc.list?4(['self'])
+j.system.platform.lxc.networkSet?4(['self', 'machinename', 'netname', 'pubips', 'bridge', 'gateway'])
+j.system.platform.lxc.networkSetPrivateVXLan?4(['self', 'name', 'vxlanid', 'ipaddresses'])
+j.system.platform.lxc.pushSSHKey?4(['self', 'name'])
+j.system.platform.lxc.removeRedundantFiles?4(['self', 'name'])
+j.system.platform.lxc.setHostName?4(['self', 'name'])
+j.system.platform.lxc.start?4(['self', 'name', 'stdout', 'test'])
+j.system.platform.lxc.stop?4(['self', 'name'])
+j.system.platform.shorewall?8
+j.system.platform.shorewall.get?4(['self', 'host', 'password'])
+j.system.platform.qemu_img?8
+j.system.platform.qemu_img.commit?4(['self', 'fileName', 'diskImageFormat'])
+j.system.platform.qemu_img.convert?4(['self', 'fileName', 'diskImageFormat', 'outputFileName', 'outputFormat', 'compressTargetImage', 'encryptTargetImage', 'useCompatibilityLevel6', 'isTargetImageTypeSCSI', 'logger'])
+j.system.platform.qemu_img.create?4(['self', 'fileName', 'diskImageFormat', 'size', 'baseImage', 'encryptTargetImage', 'useCompatibilityLevel6', 'isTargetImageTypeSCSI'])
+j.system.platform.qemu_img.info?4(['self', 'fileName', 'diskImageFormat', 'chain', 'unit'])
+j.system.platformtype?8
+j.system.platformtype.addPlatform?4(['self', 'name', 'parent'])
+j.system.platformtype.checkMatch?4(['self', 'match'])
+j.system.platformtype.dieIfNotPlatform?4(['self', 'platform'])
+j.system.platformtype.getChildren?4(['self', 'name'])
+j.system.platformtype.getMyRelevantPlatforms?4(['self'])
+j.system.platformtype.getParents?4(['self', 'name'])
+j.system.platformtype.getPlatforms?4(['self'])
+j.system.platformtype.has_parent?4(['self', 'name'])
+j.system.platformtype.isGeneric?4(['self'])
+j.system.platformtype.isHyperV?4(['self'])
+j.system.platformtype.isLinux?4(['self'])
+j.system.platformtype.isUnix?4(['self'])
+j.system.platformtype.isVirtualBox?4(['self'])
+j.system.platformtype.isWindows?4(['self'])
+j.system.platformtype.isXen?4(['self'])
+j.system.platformtype.myplatform?8
+j.system.platformtype.platformParents?8
+j.system.process?8
+j.system.process.appCheckActive?4(['self', 'appname'])
+j.system.process.appGetPids?4(['self', 'appname'])
+j.system.process.appGetPidsActive?4(['self', 'appname'])
+j.system.process.appNrInstances?4(['self', 'appname'])
+j.system.process.appNrInstancesActive?4(['self', 'appname'])
+j.system.process.appsGet?4(['self'])
+j.system.process.appsGetNames?4(['self'])
+j.system.process.checkProcessForPid?4(['self', 'pid', 'process'])
+j.system.process.checkProcessRunning?4(['self', 'process', 'min'])
+j.system.process.checkstart?4(['self', 'cmd', 'filterstr', 'nrtimes', 'retry'])
+j.system.process.checkstop?4(['self', 'cmd', 'filterstr', 'retry', 'nrinstances'])
+j.system.process.execute?4(['self', 'command', 'dieOnNonZeroExitCode', 'outputToStdout', 'useShell', 'ignoreErrorOutput'])
+j.system.process.executeAsync?4(['self', 'command', 'args', 'printCommandToStdout', 'redirectStreams', 'argsInCommand', 'useShell', 'outputToStdout'])
+j.system.process.executeCode?4(['self', 'code', 'params'])
+j.system.process.executeInSandbox?4(['self', 'command', 'timeout'])
+j.system.process.executeIndependant?4(['self', 'cmd'])
+j.system.process.executeScript?4(['self', 'scriptName'])
+j.system.process.executeWithoutPipe?4(['self', 'command', 'dieOnNonZeroExitCode', 'printCommandToStdout'])
+j.system.process.getDefunctProcesses?4(['self'])
+j.system.process.getEnviron?4(['self', 'pid'])
+j.system.process.getMyProcessObject?4(['self'])
+j.system.process.getPidsByFilter?4(['self', 'filterstr'])
+j.system.process.getPidsByPort?4(['self', 'port'])
+j.system.process.getProcessByPort?4(['self', 'port'])
+j.system.process.getProcessObject?4(['self', 'pid'])
+j.system.process.getProcessPid?4(['self', 'process'])
+j.system.process.getProcessPidsFromUser?4(['self', 'user'])
+j.system.process.getSimularProcesses?4(['self'])
+j.system.process.isPidAlive?4(['self', 'pid'])
+j.system.process.kill?4(['pid', 'sig'])
+j.system.process.killProcessByName?4(['self', 'name', 'sig'])
+j.system.process.killProcessByPort?4(['self', 'port'])
+j.system.process.killUserProcesses?4(['self', 'user'])
+j.system.process.run?4(['commandline', 'showOutput', 'captureOutput', 'maxSeconds', 'stopOnError', 'user', 'group'])
+j.system.process.runDaemon?4(['commandline', 'stdout', 'stderr', 'user', 'group', 'env'])
+j.system.process.runScript?4(['script', 'showOutput', 'captureOutput', 'maxSeconds', 'stopOnError'])
+j.system.process.setEnvironmentVariable?4(['self', 'varnames', 'varvalues'])
+j.system.string?8
+j.system.string.decodeUnicode2Asci?4(['self', 'text'])
+j.system.string.toolStripNonAsciFromText?4(['self', 'text'])
+j.system.unix?8
+j.system.unix.addCronJob?4(['self', 'commandToExecute', 'interval', 'logFilePath', 'replaceLineIfCommandAlreadyInCrontab', 'unit'])
+j.system.unix.addSystemGroup?4(['self', 'groupname'])
+j.system.unix.addSystemUser?4(['self', 'username', 'groupname', 'shell', 'homedir'])
+j.system.unix.addUserToGroup?4(['self', 'username', 'groupname'])
+j.system.unix.checkApplicationInstalled?4(['self', 'appname'])
+j.system.unix.chmod?4(['self', 'root', 'mode', 'recurse', 'dirPattern', 'filePattern', 'dirs', 'files'])
+j.system.unix.chown?4(['self', 'path', 'user', 'group', 'recursive'])
+j.system.unix.chroot?4(['self', 'path'])
+j.system.unix.daemonize?4(['self', 'chdir', 'umask'])
+j.system.unix.disableUnixUser?4(['self', 'username'])
+j.system.unix.enableUnixUser?4(['self', 'username'])
+j.system.unix.executeAsUser?4(['self', 'command', 'username'])
+j.system.unix.executeDaemonAsUser?4(['self', 'command', 'username'])
+j.system.unix.getBashEnvFromFile?4(['self', 'file', 'var'])
+j.system.unix.getMachineInfo?4(['self'])
+j.system.unix.killGroup?4(['self', 'pid'])
+j.system.unix.removeUnixUser?4(['self', 'username', 'removehome', 'die'])
+j.system.unix.setUnixUserPassword?4(['self', 'username', 'password'])
+j.system.unix.unixGroupExists?4(['self', 'groupname'])
+j.system.unix.unixUserExists?4(['self', 'username'])
+j.system.unix.unixUserIsInGroup?4(['username', 'groupname'])
+j.system.ovsnetconfig?8
+j.system.ovsnetconfig.PHYSMTU?7
+j.system.ovsnetconfig.applyconfig?4(['self', 'interfacenameToExclude', 'backplanename'])
+j.system.ovsnetconfig.configureStaticAddress?4(['self', 'interfacename', 'ipaddr', 'gw'])
+j.system.ovsnetconfig.createVXLanBridge?4(['self', 'networkid', 'backend', 'bridgename'])
+j.system.ovsnetconfig.ensureVXNet?4(['self', 'networkid', 'backend'])
+j.system.ovsnetconfig.getConfigFromSystem?4(['self', 'reload'])
+j.system.ovsnetconfig.getType?4(['self', 'interfaceName'])
+j.system.ovsnetconfig.initNetworkInterfaces?4(['self'])
+j.system.ovsnetconfig.newBondedBackplane?4(['self', 'name', 'interfaces', 'trunks'])
+j.system.ovsnetconfig.newBridge?4(['self', 'name', 'interface'])
+j.system.ovsnetconfig.newVlanBridge?4(['self', 'name', 'parentbridge', 'vlanid', 'mtu'])
+j.system.ovsnetconfig.printConfigFromSystem?4(['self'])
+j.system.ovsnetconfig.removeOldConfig?4(['self'])
+j.system.ovsnetconfig.setBackplane?4(['self', 'interfacename', 'backplanename', 'ipaddr', 'gw'])
+j.system.ovsnetconfig.setBackplaneDhcp?4(['self', 'interfacename', 'backplanename'])
+j.system.ovsnetconfig.setBackplaneNoAddress?4(['self', 'interfacename', 'backplanename'])
+j.system.ovsnetconfig.setBackplaneNoAddressWithBond?4(['self', 'bondname', 'bondinterfaces', 'backplanename'])
+j.system.ovsnetconfig.setBackplaneWithBond?4(['self', 'bondname', 'bondinterfaces', 'backplanename', 'ipaddr', 'gw'])
+j.system.stataggregator?8
+j.system.stataggregator.clean?4(['self'])
+j.system.stataggregator.delete?4(['self', 'prefix'])
+j.system.stataggregator.get?4(['self', 'key'])
+j.system.stataggregator.getAvgMax?4(['self', 'key'])
+j.system.stataggregator.getTime?4(['self'])
+j.system.stataggregator.list?4(['self', 'prefix', 'memonly', 'avgmax'])
+j.system.stataggregator.loadStat?4(['self', 'key', 'data'])
+j.system.stataggregator.log?8
+j.system.stataggregator.registerStats?4(['self', 'key', 'ttype', 'memonly', 'percent'])
+j.system.stataggregator.send2carbon?4(['self'])
+j.system.stataggregator.send2log?4(['self', 'name', 'key', 'val'])
+j.system.stataggregator.set?4(['self', 'key', 'val', 'ttype', 'remember', 'memonly', 'percent'])
+j.system.stataggregator.stats?8
+j.system.stataggregator.stats.copy?4(['self'])
+j.system.stataggregator.stats.iteritems?4(['self'])
+j.system.stataggregator.stats.keys?4(['self'])
+j.system.stataggregator.stats.pop?4(['self', 'key'])
+j.system.btrfs?8
+j.system.btrfs.deviceAdd?4(['self', 'path', 'dev'])
+j.system.btrfs.deviceDelete?4(['self', 'dev', 'path'])
+j.system.btrfs.getSpaceUsage?4(['self', 'path'])
+j.system.btrfs.snapshotReadOnlyCreate?4(['self', 'path', 'dest'])
+j.system.btrfs.subvolumeCreate?4(['self', 'path', 'name'])
+j.system.btrfs.subvolumeDelete?4(['self', 'path', 'name'])
+j.system.btrfs.subvolumeList?4(['self', 'path'])
+j.system.netconfig?8
+j.system.netconfig.addIpToInterface?4(['self', 'dev', 'ipaddr', 'aliasnr', 'start'])
+j.system.netconfig.enableInterface?4(['self', 'dev', 'start', 'dhcp'])
+j.system.netconfig.enableInterfaceBridge?4(['self', 'dev', 'bridgedev', 'start', 'dhcp'])
+j.system.netconfig.enableInterfaceBridgeDhcp?4(['self', 'dev', 'bridgedev', 'start'])
+j.system.netconfig.enableInterfaceBridgeStatic?4(['self', 'dev', 'ipaddr', 'bridgedev', 'gw', 'start'])
+j.system.netconfig.enableInterfaceStatic?4(['self', 'dev', 'ipaddr', 'gw', 'start'])
+j.system.netconfig.remove?4(['self', 'dev'])
+j.system.netconfig.reset?4(['self', 'shutdown'])
+j.system.netconfig.root?8
+j.system.netconfig.setHostname?4(['self', 'hostname'])
+j.system.netconfig.setNameserver?4(['self', 'addr'])
+j.system.netconfig.setRoot?4(['self', 'root'])
+j.system.netconfig.shutdownNetwork?4(['self', 'excludes'])
+j.system.redisstataggregator?8
+j.system.redisstataggregator.popStats?4(['self', 'key'])
+j.system.redisstataggregator.pushStats?4(['self', 'key', 'data'])
+j.system.redisstataggregator.redis?8
+j.system.redisstataggregator.redis.RESPONSE_CALLBACKS?7
+j.tools?8
+j.tools.objectinspector?8
+j.tools.objectinspector.apiFileLocation?8
+j.tools.objectinspector.base?8
+j.tools.objectinspector.classDocs?8
+j.tools.objectinspector.dest?8
+j.tools.objectinspector.errors?8
+j.tools.objectinspector.generateDocs?4(['self', 'dest', 'ignore'])
+j.tools.objectinspector.importAllLibs?4(['self', 'ignore', 'base'])
+j.tools.objectinspector.inspect?4(['self', 'objectLocationPath', 'recursive', 'parent', 'obj'])
+j.tools.objectinspector.raiseError?4(['self', 'errormsg'])
+j.tools.objectinspector.visited?8
+j.tools.objectinspector.writeDocs?4(['self', 'path'])
+j.tools.text?8
+j.tools.text.addCmd?4(['out', 'entity', 'cmd'])
+j.tools.text.addTimeHR?4(['line', 'epoch', 'start'])
+j.tools.text.addVal?4(['out', 'name', 'val', 'addtimehr'])
+j.tools.text.ask?4(['content', 'name', 'args', 'ask'])
+j.tools.text.dealWithList?4(['text'])
+j.tools.text.dealWithQuote?4(['text'])
+j.tools.text.eval?4(['code'])
+j.tools.text.getBool?4(['text'])
+j.tools.text.getDict?4(['text', 'ttype', 'deserialize'])
+j.tools.text.getFloat?4(['text'])
+j.tools.text.getInt?4(['text'])
+j.tools.text.getList?4(['text', 'ttype', 'deserialize'])
+j.tools.text.getMacroCandidates?4(['txt'])
+j.tools.text.hrd2machinetext?4(['value', 'onlyone'])
+j.tools.text.isFloat?4(['text'])
+j.tools.text.isInt?4(['text'])
+j.tools.text.isNumeric?4(['txt'])
+j.tools.text.lstrip?4(['content'])
+j.tools.text.machinetext2str?4(['value'])
+j.tools.text.machinetext2val?4(['value'])
+j.tools.text.prefix?4(['prefix', 'txt'])
+j.tools.text.prefix_remove?4(['prefix', 'txt', 'onlyPrefix'])
+j.tools.text.prefix_remove_withtrailing?4(['prefix', 'txt', 'onlyPrefix'])
+j.tools.text.pythonObjToStr?4(['obj', 'multiline', 'canBeDict', 'partial'])
+j.tools.text.pythonObjToStr1line?4(['obj'])
+j.tools.text.replaceQuotes?4(['value', 'replacewith'])
+j.tools.text.str2var?4(['string'])
+j.tools.text.toAscii?4(['value', 'maxlen'])
+j.tools.text.toSafePath?4(['txt', 'maxlen'])
+j.tools.text.toStr?4(['value', 'codec'])
+j.tools.text.toUnicode?4(['value', 'codec'])
+j.tools.units?8
+j.tools.units.bytes?8
+j.tools.units.bytes.converToBestUnit?4(['self', 'value', 'input'])
+j.tools.units.bytes.toSize?4(['self', 'value', 'input', 'output'])
+j.tools.units.sizes?8
+j.tools.units.sizes.converToBestUnit?4(['self', 'value', 'input'])
+j.tools.units.sizes.toSize?4(['self', 'value', 'input', 'output'])
+j.tools.docpreprocessor?8
+j.tools.docpreprocessor.generate?4(['self', 'preprocessorobject', 'outpath', 'startDoc', 'visibility', 'reset', 'outputdocname', 'format', 'deepcopy'])
+j.tools.docpreprocessor.generateFromDir?4(['self', 'path', 'macrosPaths', 'visibility', 'cacheDir'])
+j.tools.docpreprocessor.get?4(['self', 'contentDirs', 'varsPath', 'spacename'])
+j.tools.docpreprocessor.getMacroPath?4(['self'])
+j.tools.swaggerGen?8
+j.tools.swaggerGen.client?8
+j.tools.swaggerGen.generate?4(['self', 'baseURL', 'serverOuput', 'clientOutput'])
+j.tools.swaggerGen.generateActors?4(['self', 'destpath'])
+j.tools.swaggerGen.generateClient?4(['self', 'outputPath'])
+j.tools.swaggerGen.generateServer?4(['self', 'outputPath'])
+j.tools.swaggerGen.jinjaEnv?8
+j.tools.swaggerGen.loadSpecFromFile?4(['self', 'path'])
+j.tools.swaggerGen.loadSpecFromStr?4(['self', 'spec'])
+j.tools.swaggerGen.server?8
+j.tools.swaggerGen.spec?8
+j.tools.sandboxer?8
+j.tools.sandboxer.copyLibsTo?4(['self', 'path', 'dest', 'recursive'])
+j.tools.sandboxer.exclude?8
+j.tools.sandboxer.findLibs?4(['self', 'path'])
+j.tools.telegrambot?8
+j.tools.telegrambot.demo?4(['self'])
+j.tools.telegrambot.demoMS1?4(['self'])
+j.tools.telegrambot.get?4(['self', 'telegramkey'])
+j.tools.rsync?8
+j.tools.rsync.getClient?4(['self', 'name', 'addr', 'port', 'login', 'passwd'])
+j.tools.rsync.getClientSecret?4(['self', 'addr', 'port', 'secret'])
+j.tools.rsync.getServer?4(['self', 'root'])
+j.tools.performancetrace?8
+j.tools.performancetrace.profile?4(['self', 'methodstatement', 'locals', 'globals'])
+j.tools.sslSigning?8
+j.tools.sslSigning.bundle?4(['self', 'certificate', 'key', 'certification_chain', 'passphrase'])
+j.tools.sslSigning.createCertificateSigningRequest?4(['self', 'common_name'])
+j.tools.sslSigning.createSignedCert?4(['self', 'path', 'keyname'])
+j.tools.sslSigning.create_self_signed_ca_cert?4(['self', 'cert_dir'])
+j.tools.sslSigning.signRequest?4(['self', 'req', 'ca_cert', 'ca_key'])
+j.tools.ms1?8
+j.tools.ms1.get?4(['self', 'apiURL'])
+j.tools.packInCode?8
+j.tools.packInCode.get4python?4(['self'])
+j.tools.hash?8
+j.tools.hash.crc32?4(['path'])
+j.tools.hash.crc32_string?4(['s'])
+j.tools.hash.hashDir?4(['self', 'rootpath'])
+j.tools.hash.md5?4(['path'])
+j.tools.hash.md5_string?4(['s'])
+j.tools.hash.sha1?4(['path'])
+j.tools.hash.sha1_string?4(['s'])
+j.tools.hash.sha256?4(['path'])
+j.tools.hash.sha256_string?4(['s'])
+j.tools.hash.sha512?4(['path'])
+j.tools.hash.sha512_string?4(['s'])
+j.tools.inifile?8
+j.tools.inifile.new?4(['filename'])
+j.tools.inifile.open?4(['filename', 'createIfNonExisting'])
+j.tools.dnsman?8
+j.tools.dnsman.bind?8
+j.tools.dnsman.bind.addRecord?4(['self', 'domain', 'host', 'ip', 'klass', 'type', 'ttl'])
+j.tools.dnsman.bind.cleanCache?4(['self'])
+j.tools.dnsman.bind.deleteHost?4(['self', 'host'])
+j.tools.dnsman.bind.restart?4(['self'])
+j.tools.dnsman.bind.start?4(['self'])
+j.tools.dnsman.bind.stop?4(['self'])
+j.tools.dnsman.bind.updateHostIp?4(['self', 'host', 'ip'])
+j.tools.dnsman.bindObj?8
+j.tools.testengine?8
+j.tools.testengine.initTests?4(['self', 'noOsis', 'osisip', 'login', 'passwd'])
+j.tools.testengine.outputpath?8
+j.tools.testengine.paths?8
+j.tools.testengine.runTests?4(['self', 'testrunname', 'debug'])
+j.tools.testengine.testFile?4(['self', 'testrunname', 'filepath'])
+j.tools.testengine.tests?8
+j.tools.docpreprocessorparser?8
+j.tools.docpreprocessorparser.addUniqueId?4(['self', 'line', 'fullPath', 'ttype'])
+j.tools.docpreprocessorparser.errorTrap?4(['self', 'msg'])
+j.tools.docpreprocessorparser.parseDoc?4(['self', 'doc'])
+j.tools.docpreprocessorparser.shortenDescr?4(['self', 'text', 'maxnrchars'])
+j.tools.admin?8
+j.tools.admin.get?4(['self', 'path', 'args', 'failWhenNotExist'])
+j.tools.dnsmasq?8
+j.tools.dnsmasq.addHost?4(['self', 'macaddress', 'ipaddress', 'name'])
+j.tools.dnsmasq.addToStartupManager?4(['self'])
+j.tools.dnsmasq.reload?4(['self'])
+j.tools.dnsmasq.removeHost?4(['self', 'macaddress'])
+j.tools.dnsmasq.restart?4(['self'])
+j.tools.dnsmasq.setConfigPath?4(['self', 'namespace', 'config_path'])
+j.tools.imagelib?8
+j.tools.imagelib.imageObjectGet?4(['self', 'path'])
+j.tools.imagelib.resize?4(['self', 'path', 'pathnew', 'width', 'overwrite'])
+j.tools.imagelib.resize2subdir1024x?4(['self', 'path', 'overwrite'])
+j.tools.imagelib.resize2subdir1600x?4(['self', 'path', 'overwrite'])
+j.tools.imagelib.resizeFullDir2subdir1024?4(['self', 'path'])
+j.tools.docker?8
+j.tools.docker.basepath?8
+j.tools.docker.btrfsSubvolCopy?4(['self', 'nameFrom', 'NameDest'])
+j.tools.docker.btrfsSubvolDelete?4(['self', 'name'])
+j.tools.docker.btrfsSubvolExists?4(['self', 'name'])
+j.tools.docker.btrfsSubvolList?4(['self'])
+j.tools.docker.btrfsSubvolNew?4(['self', 'name'])
+j.tools.docker.client?8
+j.tools.docker.client.adapters?8
+j.tools.docker.client.api_version?8
+j.tools.docker.commit?4(['self', 'name', 'imagename'])
+j.tools.docker.copy?4(['self', 'name', 'src', 'dest'])
+j.tools.docker.create?4(['self', 'name', 'ports', 'vols', 'volsro', 'stdout', 'base', 'nameserver', 'replace', 'cpu', 'mem', 'jumpscale', 'ssh', 'myinit'])
+j.tools.docker.destroy?4(['self', 'name'])
+j.tools.docker.destroyall?4(['self'])
+j.tools.docker.downloadFile?4(['self', 'name', 'source', 'dest'])
+j.tools.docker.execute?4(['self', 'name', 'path'])
+j.tools.docker.exportRsync?4(['self', 'name', 'backupname', 'key'])
+j.tools.docker.exportTgz?4(['self', 'name', 'backupname'])
+j.tools.docker.getImages?4(['self'])
+j.tools.docker.getInfo?4(['self', 'name'])
+j.tools.docker.getIp?4(['self', 'name'])
+j.tools.docker.getProcessList?4(['self', 'name', 'stdout'])
+j.tools.docker.getPubPortForInternalPort?4(['self', 'name', 'port'])
+j.tools.docker.getSSH?4(['self', 'name', 'stdout'])
+j.tools.docker.importRsync?4(['self', 'backupname', 'name', 'basename', 'key'])
+j.tools.docker.importTgz?4(['self', 'backupname', 'name'])
+j.tools.docker.inspect?4(['self', 'name'])
+j.tools.docker.installJumpscale?4(['self', 'name'])
+j.tools.docker.list?4(['self'])
+j.tools.docker.ps?4(['self'])
+j.tools.docker.pull?4(['self', 'imagename'])
+j.tools.docker.pushSSHKey?4(['self', 'name'])
+j.tools.docker.removeImages?4(['self', 'tag'])
+j.tools.docker.removeRedundantFiles?4(['self', 'name'])
+j.tools.docker.restart?4(['self', 'name'])
+j.tools.docker.run?4(['self', 'name', 'cmd'])
+j.tools.docker.setHostName?4(['self', 'name'])
+j.tools.docker.stop?4(['self', 'name'])
+j.tools.docker.uploadFile?4(['self', 'name', 'source', 'dest'])
+j.tools.docgenerator?8
+j.tools.docgenerator.convertConfluenceToRST?4(['self', 'src', 'dest'])
+j.tools.docgenerator.getConfluence2htmlConvertor?4(['self'])
+j.tools.docgenerator.getConfluence2rstConvertor?4(['self'])
+j.tools.docgenerator.getConfluenceClient?4(['self', 'url', 'login', 'passwd', 'spacename', 'erasespace', 'erasepages'])
+j.tools.docgenerator.getMacroPath?4(['self'])
+j.tools.docgenerator.pageGroupNew?4(['self', 'pages'])
+j.tools.docgenerator.pageNewConfluence?4(['self', 'pagename', 'parent'])
+j.tools.docgenerator.pageNewHTML?4(['self', 'pagename', 'htmllibPath'])
+j.tools.docgenerator.pageNewRST?4(['self', 'pagename', 'htmllibPath'])
+j.tools.expect?8
+j.tools.expect.new?4(['cmd'])
+j.code?8
+j.code.classEditGeany?4(['self', 'classs'])
+j.code.classEditWing?4(['self', 'classs'])
+j.code.classGetBase?4(['self'])
+j.code.classGetJSModelBase?4(['self'])
+j.code.classGetJSRootModelBase?4(['self'])
+j.code.classInfoGet?4(['self', 'classs'])
+j.code.classInfoPrint?4(['self', 'classs'])
+j.code.deIndent?4(['self', 'content', 'level'])
+j.code.dict2JSModelobject?4(['self', 'obj', 'data'])
+j.code.dict2object?4(['self', 'obj', 'data'])
+j.code.indent?4(['self', 'content', 'level'])
+j.code.object2dict?4(['self', 'obj', 'dieOnUnknown', 'ignoreKeys', 'ignoreUnderscoreKeys'])
+j.code.object2dict4index?4(['self', 'obj'])
+j.code.object2json?4(['self', 'obj', 'pretty', 'skiperrors', 'ignoreKeys', 'ignoreUnderscoreKeys'])
+j.code.object2yaml?4(['self', 'obj'])
+j.code.pprint?4(['self', 'obj'])
+j.actions?8
+j.actions.clean?4(['self'])
+j.actions.getActionNamesDone?4(['self', 'action'])
+j.actions.hasRunningActions?4(['self'])
+j.actions.reset?4(['self', 'category'])
+j.actions.setActionNamesDone?4(['self', 'action'])
+j.actions.start?4(['self', 'description', 'cmds', 'action', 'actionRecover', 'actionArgs', 'category', 'name', 'errorMessage', 'resolutionMessage', 'loglevel', 'die', 'stdOutput', 'errorOutput', 'retry', 'serviceObj'])
+j.html?8
+j.html.escape?4(['self', 'text'])
+j.html.getHtmllibDir?4(['self'])
+j.html.getPageModifierBootstrapForm?4(['self', 'page'])
+j.html.getPageModifierGalleria?4(['self', 'page'])
+j.html.getPageModifierGridDataTables?4(['self', 'page'])
+j.html.unescape?4(['self', 'text'])
+j.atyourservice?8
+j.atyourservice.domains?8
+j.atyourservice.findParents?4(['self', 'service', 'name', 'path', 'limit'])
+j.atyourservice.findProducer?4(['self', 'producercategory', 'instancename'])
+j.atyourservice.findServices?4(['self', 'domain', 'name', 'instance', 'parent', 'precise'])
+j.atyourservice.findTemplates?4(['self', 'domain', 'name', 'parent'])
+j.atyourservice.get?4(['self', 'domain', 'name', 'instance', 'parent', 'precise'])
+j.atyourservice.getActionsBaseClass?4(['self'])
+j.atyourservice.getDomains?4(['self'])
+j.atyourservice.getFromStr?4(['self', 'representation', 'parent'])
+j.atyourservice.getId?4(['self', 'domain', 'name', 'instance', 'parent'])
+j.atyourservice.hrd?8
+j.atyourservice.indocker?8
+j.atyourservice.loadService?4(['self', 'path', 'parent'])
+j.atyourservice.loadServicesInSQL?4(['self'])
+j.atyourservice.new?4(['self', 'domain', 'name', 'instance', 'path', 'parent', 'args'])
+j.atyourservice.remove?4(['self', 'domain', 'name', 'instance', 'parent'])
+j.atyourservice.type?8
+j.atyourservice.updateTemplatesRepo?4(['self', 'repos'])
+j.codetools?8
+j.codetools.codemanager?8
+j.codetools.codemanager.getCodeManagerForFile?4(['self', 'path'])
+j.codetools.codemanager.getUserId?4(['self', 'username'])
+j.codetools.codemanager.groups?8
+j.codetools.codemanager.ignoreDirs?8
+j.codetools.codemanager.parse?4(['self', 'path'])
+j.codetools.codemanager.setgroups?4(['self', 'config'])
+j.codetools.codemanager.setusers?4(['self', 'config'])
+j.codetools.codemanager.users?8
+j.codetools.executor?8
+j.codetools.executor.eval?4(['self', 'code'])
+j.codetools.executor.evalFile?4(['self', 'path'])
+j.codetools.getTextFileEditor?4(['self', 'filepath'])
+j.codetools.getWordReplacerTool?4(['self'])
+j.codetools.regex?8
+j.codetools.regex.extractBlocks?4(['self', 'text', 'blockStartPatterns', 'blockStartPatternsNegative', 'blockStopPatterns', 'blockStopPatternsNegative', 'linesIncludePatterns', 'linesExcludePatterns', 'includeMatchingLine'])
+j.codetools.regex.extractFirstFoundBlock?4(['self', 'text', 'blockStartPatterns', 'blockStartPatternsNegative', 'blockStopPatterns', 'blockStopPatternsNegative', 'linesIncludePatterns', 'linesExcludePatterns', 'includeMatchingLine'])
+j.codetools.regex.findAll?4(['self', 'pattern', 'text', 'flags'])
+j.codetools.regex.findHtmlBlock?4(['self', 'subject', 'tofind', 'path', 'dieIfNotFound'])
+j.codetools.regex.findHtmlElement?4(['self', 'subject', 'tofind', 'path', 'dieIfNotFound'])
+j.codetools.regex.findLine?4(['self', 'regex', 'text'])
+j.codetools.regex.findOne?4(['self', 'pattern', 'text', 'flags'])
+j.codetools.regex.getINIAlikeVariableFromText?4(['self', 'variableName', 'text', 'isArray'])
+j.codetools.regex.getRegexMatch?4(['self', 'pattern', 'text', 'flags'])
+j.codetools.regex.getRegexMatches?4(['self', 'pattern', 'text', 'flags'])
+j.codetools.regex.match?4(['self', 'pattern', 'text'])
+j.codetools.regex.matchAllText?4(['self', 'pattern', 'text'])
+j.codetools.regex.matchMultiple?4(['self', 'patterns', 'text'])
+j.codetools.regex.processLines?4(['self', 'text', 'includes', 'excludes'])
+j.codetools.regex.removeLines?4(['self', 'pattern', 'text'])
+j.codetools.regex.replace?4(['self', 'regexFind', 'regexFindsubsetToReplace', 'replaceWith', 'text'])
+j.codetools.regex.replaceLines?4(['self', 'replaceFunction', 'arg', 'text', 'includes', 'excludes'])
+j.codetools.regex.templates?8
+j.codetools.regex.templates.lines?8
+j.codetools.regex.templates.lines.findClasslines?4(['self'])
+j.codetools.regex.templates.lines.findCommentlines?4(['self'])
+j.codetools.regex.templates.lines.findDeflines?4(['self'])
+j.codetools.regex.yieldRegexMatches?4(['self', 'pattern', 'text', 'flags'])
+j.codetools.templateengine?8
+j.codetools.templateengine.new?4(['self'])
+j.codetools.textToTitle?4(['self', 'text', 'maxnrchars'])

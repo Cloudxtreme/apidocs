@@ -95,7 +95,7 @@ keys are always treated as string
 
 ### @staticmethod (l316)
 
-look for {{}} return as list
+look for \{\{\}\} return as list
 
 ### @staticmethod (l636)
 
