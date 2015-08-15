@@ -83241,3 +83241,3962 @@ j.codetools.templateengine.new?4([])
 j.codetools.textToTitle?4([- text
 , - maxnrchars = 60
 ])
+j.action?8
+j.action.clean?4([])
+j.action.hasRunningActions?4([])
+j.action.printOutput?4([])
+j.action.start?4([- description
+, - errormessage
+, - resolutionmessage
+, - show = False
+, - messageLevel = False
+])
+j.action.startOutput?4([])
+j.action.stop?4([- failed = False
+])
+j.action.stopOutput?4([])
+j.application?8
+j.application.agentid?8
+j.application.appname?8
+j.application.config?8
+j.application.config.add2tree?4([- path
+, - recursive = True
+])
+j.application.config.add2treeFromContent?4([- content
+])
+j.application.config.applyOnContent?4([- content
+, - additionalArgs = OrderedDict()
+])
+j.application.config.applyOnDir?4([- path
+, - filter
+, - minmtime
+, - maxmtime
+, - depth
+, - changeFileName = True
+, - changeContent = True
+, - additionalArgs = OrderedDict()
+])
+j.application.config.applyOnFile?4([- path
+, - additionalArgs = OrderedDict()
+])
+j.application.config.changed?8
+j.application.config.checkValidity?4([- template
+, - hrddata = OrderedDict()
+])
+j.application.config.commentblock?8
+j.application.config.delete?4([- key
+])
+j.application.config.exists?4([- key
+])
+j.application.config.get?4([- key
+, - default
+])
+j.application.config.getBool?4([- key
+, - default
+])
+j.application.config.getDict?4([- key
+])
+j.application.config.getDictFromPrefix?4([- prefix
+])
+j.application.config.getFloat?4([- key
+])
+j.application.config.getHRDAsDict?4([])
+j.application.config.getHrd?4([- key
+])
+j.application.config.getInt?4([- key
+, - default
+])
+j.application.config.getList?4([- key
+, - default
+])
+j.application.config.getListFromPrefix?4([- prefix
+])
+j.application.config.getListFromPrefixEachItemDict?4([- prefix
+, - musthave = []
+, - defaults = OrderedDict()
+, - aredict = OrderedDict()
+, - arelist = []
+, - areint = []
+, - arebool = []
+])
+j.application.config.getStr?4([- key
+, - default
+])
+j.application.config.hrds?8
+j.application.config.items?8
+j.application.config.keepformat?8
+j.application.config.listAdd?4([- key
+, - item
+])
+j.application.config.name?8
+j.application.config.path?8
+j.application.config.pop?4([- key
+])
+j.application.config.prefix?4([- key
+, - depth = 0
+])
+j.application.config.prefixWithName?8
+j.application.config.prefixexists?4([- key
+])
+j.application.config.processall?4([])
+j.application.config.set?4([- key
+, - val
+, - persistent = True
+])
+j.application.connectRedis?4([])
+j.application.debug?8
+j.application.existAppInstanceHRD?4([- name
+, - instance
+, - domain = 'jumpscale'
+])
+j.application.getAgentId?4([])
+j.application.getAppHRDInstanceNames?4([- name
+, - domain = 'jumpscale'
+])
+j.application.getAppInstanceHRD?4([- name
+, - instance
+, - domain = 'jumpscale'
+, - parent
+])
+j.application.getAppInstanceHRDs?4([- name
+, - domain = 'jumpscale'
+])
+j.application.getCPUUsage?4([])
+j.application.getMemoryUsage?4([])
+j.application.getUniqueMachineId?4([])
+j.application.getWhoAmiStr?4([])
+j.application.gridInitialized?8
+j.application.init?4([])
+j.application.initGrid?4([])
+j.application.initWhoAmI?4([- reload = False
+])
+j.application.interactive?8
+j.application.jid?8
+j.application.loadConfig?4([])
+j.application.redis?8
+j.application.sandbox?8
+j.application.shellconfig?8
+j.application.shellconfig.checkCreateConfigFile?4([- configType
+])
+j.application.shellconfig.debug?8
+j.application.shellconfig.getConfigFileManager?4([- configType
+])
+j.application.shellconfig.interactive?8
+j.application.shellconfig.ipython?8
+j.application.shellconfig.loadConfigFile?4([- configType
+])
+j.application.shellconfig.refresh?4([])
+j.application.skipTraceback?8
+j.application.start?4([- name
+, - appdir = '.'
+])
+j.application.state?8
+j.application.stop?4([- exitcode = 0
+, - stop = True
+])
+j.application.systempid?8
+j.application.whoAmI?8
+j.application.whoAmI.gid?8
+j.application.whoAmI.nid?8
+j.application.whoAmI.pid?8
+j.application.whoAmIBytestr?8
+j.application.writeExitcodeOnExit?8
+j.base?8
+j.base.byteprocessor?8
+j.base.byteprocessor.compress?4([- s
+])
+j.base.byteprocessor.decompress?4([- s
+])
+j.base.byteprocessor.disperse?4([- s
+, - nrblocks
+, - extrablocks
+, - compress = True
+])
+j.base.byteprocessor.getDispersedBlockObject?4([])
+j.base.byteprocessor.hashMd5?4([- s
+])
+j.base.byteprocessor.hashTiger160?4([- s
+])
+j.base.byteprocessor.hashTiger160bin?4([- s
+])
+j.base.byteprocessor.hashTiger192?4([- s
+])
+j.base.byteprocessor.undisperse?4([- dispersedBlockObject
+, - uncompress = True
+])
+j.base.idgenerator?8
+j.base.idgenerator.generateGUID?4([])
+j.base.idgenerator.generateIncrID?4([- incrTypeId
+, - service
+, - reset = False
+])
+j.base.idgenerator.generateRandomInt?4([- fromInt
+, - toInt
+])
+j.base.idgenerator.generateXCharID?4([- x
+])
+j.base.idgenerator.getID?4([- incrTypeId
+, - objectUniqueSeedInfo
+, - service
+, - reset = False
+])
+j.base.loader?8
+j.base.loader.makeAvailable?4([- obj
+, - path
+])
+j.base.time?8
+j.base.time.HRDatetoEpoch?4([- datestr
+, - local = True
+])
+j.base.time.epoch2HRDate?4([- epoch
+, - local = True
+])
+j.base.time.epoch2HRDateTime?4([- epoch
+, - local = True
+])
+j.base.time.epoch2HRTime?4([- epoch
+, - local = True
+])
+j.base.time.fiveMinuteIdToEpoch?4([- fiveMinuteId
+])
+j.base.time.formatTime?4([- epoch
+, - formatstr = '%Y/%m/%d %H:%M:%S'
+, - local = True
+])
+j.base.time.get5MinuteId?4([- epoch
+])
+j.base.time.getDayId?4([- epoch
+])
+j.base.time.getDeltaTime?4([- txt
+])
+j.base.time.getEpochAgo?4([- txt
+])
+j.base.time.getEpochFuture?4([- txt
+])
+j.base.time.getHourId?4([- epoch
+])
+j.base.time.getLocalTimeHR?4([])
+j.base.time.getLocalTimeHRForFilesystem?4([])
+j.base.time.getMinuteId?4([- epoch
+])
+j.base.time.getSecondsInHR?4([- seconds
+])
+j.base.time.getTimeEpoch?4([])
+j.base.time.getTimeEpochBin?4([])
+j.basetype?8
+j.basetype.boolean?8
+j.basetype.dictionary?8
+j.basetype.dirpath?8
+j.basetype.duration?8
+j.basetype.enumeration?4([- enumerationtype
+, - **kwargs
+])
+j.basetype.filepath?8
+j.basetype.float?8
+j.basetype.guid?8
+j.basetype.integer?8
+j.basetype.ipaddress?8
+j.basetype.ipaddressrange?8
+j.basetype.ipport?8
+j.basetype.list?8
+j.basetype.object?4([- type_
+, - **kwargs
+])
+j.basetype.path?8
+j.basetype.set?8
+j.basetype.string?8
+j.basetype.unixdirpath?8
+j.basetype.unixfilepath?8
+j.basetype.windowsdirpath?8
+j.basetype.windowsfilepath?8
+j.clients?8
+j.clients.whmcs?8
+j.clients.whmcs.get?4([- username = ''
+, - md5_password = ''
+, - accesskey = ''
+, - url = ''
+, - cloudspace_product_id = ''
+, - operations_user_id = ''
+, - operations_department_id = ''
+, - instance = 'main'
+])
+j.clients.whmcs.getDummy?4([])
+j.clients.whmcs.log?4([- msg
+, - category = ''
+, - level = 5
+])
+j.clients.routeros?8
+j.clients.routeros.get?4([- host
+, - login
+, - password
+])
+j.clients.osis?8
+j.clients.osis.get?4([- ipaddr
+, - port = 5544
+, - user
+, - passwd
+, - ssl = False
+, - gevent = False
+])
+j.clients.osis.getByInstance?4([- instance
+, - ssl = False
+, - gevent = False
+, - die = True
+])
+j.clients.osis.getCategory?4([- client
+, - namespace
+, - category
+])
+j.clients.osis.getNamespace?4([- namespace
+, - client
+])
+j.clients.osis.osisConnections?8
+j.clients.osis.osisConnectionsCat?8
+j.clients.mysql?8
+j.clients.mysql.clients?8
+j.clients.mysql.getClient?4([- ipaddr
+, - port
+, - login
+, - passwd
+, - dbname
+])
+j.clients.ros?8
+j.clients.ros.get?4([- instance = 'main'
+, - ip = ''
+, - user = ''
+, - passwd = ''
+])
+j.clients.rogerthat?8
+j.clients.rogerthat.get?4([- api_key
+])
+j.clients.git?8
+j.clients.git.find?4([- account
+, - name
+, - interactive = False
+, - returnGitClient = False
+])
+j.clients.git.get?4([- basedir
+])
+j.clients.git.log?4([- msg
+, - category = ''
+, - level = 5
+])
+j.clients.ciscoswitch?8
+j.clients.ciscoswitch.get?4([- host
+, - login
+, - password
+])
+j.clients.redis?8
+j.clients.redis.checkAllInstances?4([])
+j.clients.redis.configureInstance?4([- name
+, - port
+, - maxram = 200
+, - appendonly = True
+, - snapshot = False
+, - slave = ()
+, - ismaster = False
+, - passwd
+, - unixsocket = False
+])
+j.clients.redis.deleteInstance?4([- name
+])
+j.clients.redis.emptyAllInstances?4([])
+j.clients.redis.emptyInstance?4([- name
+])
+j.clients.redis.getByInstance?4([- instance
+, - gevent = False
+])
+j.clients.redis.getGeventRedisClient?4([- ipaddr
+, - port
+, - fromcache = True
+, - password = ''
+])
+j.clients.redis.getGeventRedisQueue?4([- ipaddr
+, - port
+, - name
+, - namespace = 'queues'
+, - fromcache = False
+])
+j.clients.redis.getPort?4([- name
+])
+j.clients.redis.getProcessPids?4([- name
+])
+j.clients.redis.getRedisClient?4([- ipaddr
+, - port
+, - password = ''
+, - fromcache = True
+])
+j.clients.redis.getRedisQueue?4([- ipaddr
+, - port
+, - name
+, - namespace = 'queues'
+, - fromcache = True
+])
+j.clients.redis.gredis?8
+j.clients.redis.gredisq?8
+j.clients.redis.isRunning?4([- name
+])
+j.clients.redis.redis?8
+j.clients.redis.redisq?8
+j.clients.redis.startInstance?4([- name
+])
+j.clients.redis.stopInstance?4([- name
+])
+j.clients.grafana?8
+j.clients.grafana.get?4([])
+j.clients.celery?8
+j.clients.celery.actors?8
+j.clients.celery.app?8
+j.clients.celery.celeryClient?4([- actorName
+, - url = 'redis://localhost:9999/0'
+, - actorsPath = 'actors'
+, - local = False
+])
+j.clients.celery.celeryStart?4([- url = 'redis://localhost:9999/0'
+, - concurrency = 4
+, - actorsPath = 'actors'
+])
+j.clients.celery.flowerStart?4([- url = 'redis://localhost:9999/0'
+])
+j.clients.celery.getCodeClient?4([- path
+, - actorName
+])
+j.clients.celery.getCodeServer?4([- path
+])
+j.clients.agentcontroller?8
+j.clients.agentcontroller.get?4([- addr
+, - port = 4444
+, - login = 'root'
+, - passwd
+, - new = False
+])
+j.clients.agentcontroller.getByInstance?4([- instance
+, - new = False
+])
+j.clients.agentcontroller.getInstanceConfig?4([- instance
+])
+j.clients.agentcontroller.getProxy?4([- category = 'core'
+, - addr
+, - port = 4444
+, - login = 'root'
+, - passwd
+])
+j.clients.graphite?8
+j.clients.graphite.close?4([])
+j.clients.graphite.query?4([- query_
+, - **kwargs
+])
+j.clients.graphite.send?4([- msg
+])
+j.clients.email?8
+j.clients.email.send?4([- recipients
+, - sender = ''
+, - subject = ''
+, - message = ''
+, - files
+, - mimetype
+])
+j.clients.redisworker?8
+j.clients.redisworker.checkJumpscriptQueue?4([- jumpscript
+, - queue
+])
+j.clients.redisworker.checkQueue?4([])
+j.clients.redisworker.deleteJob?4([- jobid
+])
+j.clients.redisworker.deleteJumpscripts?4([])
+j.clients.redisworker.deleteProcessQueue?4([])
+j.clients.redisworker.deleteQueues?4([])
+j.clients.redisworker.execFunction?4([- method
+, - _category = 'unknown'
+, - _organization = 'unknown'
+, - _timeout = 60
+, - _queue = 'default'
+, - _log = True
+, - _sync = True
+, - **args
+])
+j.clients.redisworker.execJobAsync?4([- job
+])
+j.clients.redisworker.execJumpscript?4([- jumpscriptid
+, - jumpscript
+, - _timeout = 60
+, - _queue = 'default'
+, - _log = True
+, - _sync = True
+, - **args
+])
+j.clients.redisworker.getFailedJobs?4([- queue
+, - hoursago = 0
+])
+j.clients.redisworker.getJob?4([- jobid
+])
+j.clients.redisworker.getJobLine?4([- job
+, - jobid
+])
+j.clients.redisworker.getJumpscriptFromId?4([- jscriptid
+])
+j.clients.redisworker.getJumpscriptFromName?4([- organization
+, - name
+])
+j.clients.redisworker.getQueuedJobs?4([- queue
+, - asWikiTable = True
+])
+j.clients.redisworker.redis?8
+j.clients.redisworker.redis.RESPONSE_CALLBACKS?7
+j.clients.redisworker.removeJobs?4([- hoursago = 48
+, - failed = False
+])
+j.clients.redisworker.returnQueues?8
+j.clients.redisworker.scheduleJob?4([- job
+])
+j.clients.redisworker.sessionid?8
+j.clients.redisworker.waitJob?4([- job
+, - timeout = 600
+])
+j.clients.http?8
+j.clients.http.getConnection?4([])
+j.clients.postgres?8
+j.clients.postgres.clients?8
+j.clients.postgres.createdb?4([- db
+, - ipaddr = 'localhost'
+, - port = 5432
+, - login = 'postgres'
+, - passwd = 'rooter'
+])
+j.clients.postgres.dropdb?4([- db
+, - ipaddr = 'localhost'
+, - port = 5432
+, - login = 'postgres'
+, - passwd = 'rooter'
+])
+j.clients.postgres.getClient?4([- ipaddr = 'localhost'
+, - port = 5432
+, - login = 'postgres'
+, - passwd = 'rooter'
+, - dbname = 'template'
+])
+j.clients.mongodb?8
+j.clients.mongodb.get?4([- host = 'localhost'
+, - port = 27017
+])
+j.clients.mongodb.getByInstance?4([- instancename
+])
+j.clients.bitbucketi?8
+j.clients.bitbucketi.getAccount?4([- accountname = ''
+])
+j.clients.bitbucketi.getRepo?4([- accountname = ''
+, - reponame = ''
+])
+j.clients.bitbucketi.init?4([])
+j.clients.influxdb?8
+j.clients.influxdb.get?4([- host = 'localhost'
+, - port = 8086
+, - username = 'root'
+, - password = 'root'
+, - database
+, - ssl = False
+, - verify_ssl = False
+, - timeout
+, - use_udp = False
+, - udp_port = 4444
+])
+j.clients.influxdb.getByInstance?4([- instancename
+])
+j.clients.portal?8
+j.clients.portal.get?4([- ip = 'localhost'
+, - port = 9900
+, - secret
+])
+j.clients.portal.get2?4([- ip = 'localhost'
+, - port = 82
+, - secret
+])
+j.clients.portal.getByInstance?4([- instance
+])
+j.clients.oauth?8
+j.clients.oauth.get?4([- addr = ''
+, - accesstokenaddr = ''
+, - id = ''
+, - secret = ''
+, - scope = ''
+, - redirect_url = ''
+, - user_info_url = ''
+, - logout_url = ''
+, - instance = 'github'
+])
+j.clients.oauth.log?4([- msg
+, - category = ''
+, - level = 5
+])
+j.clients.openvcloud?8
+j.clients.openvcloud.get?4([- apiurl = 'www.mothership1.com'
+])
+j.clients.mercurial?8
+j.clients.mercurial.getClient?4([- hgbasedir
+, - remoteUrl = ''
+, - branchname
+, - cleandir = False
+])
+j.clients.mercurial.log?4([- msg
+, - category = ''
+, - level = 5
+])
+j.clients.gitlab?8
+j.clients.gitlab.connections?8
+j.clients.gitlab.get?4([- gitlaburl = ''
+, - login = ''
+, - passwd = ''
+, - instance = 'main'
+])
+j.clients.gitlab.getAccountnameReponameFromUrl?4([- url
+])
+j.clients.gitlab.log?4([- msg
+, - category = ''
+, - level = 5
+])
+j.clients.ayspm?8
+j.clients.ayspm.getClient?4([])
+j.clients.osticket?8
+j.clients.osticket.clients?8
+j.clients.osticket.getClient?4([- ipaddr
+, - port
+, - login
+, - passwd
+, - dbname
+])
+j.clients.credis?8
+j.clients.credis.getRedisClient?4([- ipaddr
+, - port
+, - timeout
+])
+j.clients.credis.getRedisQueue?4([- ipaddr
+, - port
+, - name
+, - namespace = 'queues'
+])
+j.clients.credis.redis?8
+j.clients.credis.redisq?8
+j.clients.webdis?8
+j.clients.webdis.check?4([- addr = '127.0.0.1'
+, - port = 7779
+, - timeout = 1
+])
+j.clients.webdis.get?4([- addr = '127.0.0.1'
+, - port = 7779
+, - timeout = 10
+])
+j.clients.webdis.getByInstance?4([- instance
+, - timeout = 10
+])
+j.cloud?8
+j.cloud.system?8
+j.console?8
+j.console.askArrayRow?4([- array
+, - header = True
+, - descr = ''
+, - returncol
+])
+j.console.askChoice?4([- choicearray
+, - descr = ''
+, - sort = True
+, - maxchoice = 25
+, - height = 30
+, - autocomplete = False
+])
+j.console.askChoiceMultiple?4([- choicearray
+, - descr
+, - sort = True
+])
+j.console.askInteger?4([- question
+, - defaultValue
+, - minValue
+, - maxValue
+, - retry = -1
+, - validate
+])
+j.console.askIntegers?4([- question
+, - invalid_message = 'invalid input please try again.'
+, - min
+, - max
+])
+j.console.askMultiline?4([- question
+, - escapeString = '.'
+])
+j.console.askPassword?4([- question
+, - confirm = True
+, - regex
+, - retry = -1
+, - validate
+])
+j.console.askString?4([- question
+, - defaultparam = ''
+, - regex
+, - retry = -1
+, - validate
+])
+j.console.askYesNo?4([- message = ''
+])
+j.console.cls?4([])
+j.console.echo?4([- msg
+, - indent
+, - withStar = False
+, - prefix = ''
+, - log = False
+, - lf = True
+])
+j.console.echoDict?4([- dictionary
+, - withStar = False
+, - indent
+])
+j.console.echoListItem?4([- msg
+])
+j.console.echoListItems?4([- messages
+, - sort = False
+])
+j.console.echoListWithPrefix?4([- messages
+, - prefix
+])
+j.console.echoWithPrefix?4([- message
+, - prefix
+, - withStar = False
+, - indent
+])
+j.console.enableOutput?4([])
+j.console.formatMessage?4([- message
+, - prefix = ''
+, - withStar = False
+, - indent = 0
+, - width = 0
+, - removeemptylines = True
+])
+j.console.hideOutput?4([])
+j.console.indent?8
+j.console.printOutput?4([])
+j.console.rawInputPerChar?4([- callback
+, - params
+])
+j.console.showArray?4([- array
+, - header = True
+])
+j.console.showOutput?4([])
+j.console.transformDictToMessage?4([- dictionary
+, - withStar = False
+, - indent
+])
+j.console.width?8
+j.core?8
+j.core.hrd?8
+j.core.hrd.get?4([- path
+, - content = ''
+, - prefixWithName = True
+, - keepformat = False
+, - args = OrderedDict()
+, - templates = []
+])
+j.core.hrd.getHRDFromDict?4([- ddict = {}
+])
+j.core.hrd.getHRDFromOsisObject?4([- osisobj
+, - prefixRootObjectType = True
+])
+j.core.hrd.log?4([- msg
+, - category = ''
+, - level = 5
+])
+j.core.hrd.logenable?8
+j.core.hrd.loglevel?8
+j.core.jumpscripts?8
+j.core.jumpscripts.basedir?8
+j.core.jumpscripts.getArchivedJumpscripts?4([- bz2_compressed = True
+, - types = ('processmanager', 'jumpscripts')
+])
+j.core.jumpscripts.getJSClass?4([])
+j.core.jumpscripts.introspectLuaJumpscript?4([- path
+])
+j.core.jumpscripts.loadFromAC?4([- acl
+])
+j.core.jumpscripts.loadFromTar?4([- tarcontent
+, - type
+])
+j.core.osis?8
+j.core.osis.decrypt?4([- val
+, - json = False
+])
+j.core.osis.encrypt?4([- obj
+])
+j.core.osis.generateOsisModelDefaults?4([- namespace
+, - specpath = ''
+])
+j.core.osis.getLocal?4([- path = ''
+, - overwriteHRD = False
+, - overwriteImplementation = False
+, - namespacename
+])
+j.core.osis.getModelTemplate?4([])
+j.core.osis.getOSISBaseObjectComplexType?4([])
+j.core.osis.getOsisBaseObjectClass?4([])
+j.core.osis.getOsisImplementationParentClass?4([- namespacename
+])
+j.core.osis.getOsisModelClass?4([- namespace
+, - category
+, - specpath = ''
+])
+j.core.osis.namespacesInited?8
+j.core.osis.nodeguids?8
+j.core.osis.osisModels?8
+j.core.osis.startDaemon?4([- path = ''
+, - overwriteHRD = False
+, - overwriteImplementation = False
+, - key = ''
+, - port = 5544
+, - superadminpasswd
+, - dbconnections = {}
+, - hrd
+])
+j.core.taskletengine?8
+j.core.taskletengine.get?4([- path
+])
+j.core.taskletengine.getGroup?4([- path = ''
+])
+j.core.osismodel?8
+j.core.osismodel.destroy?4([- appname
+, - actorname = '*'
+, - modelname = '*'
+])
+j.core.osismodel.dict2object?4([- obj
+, - data
+])
+j.core.osismodel.get?4([- appname
+, - actorname
+, - modelname
+, - modelClass
+, - db
+, - index = False
+, - indexer
+])
+j.core.osismodel.getNoDB?4([- appname
+, - actorname
+, - modelname
+, - modelClass
+])
+j.core.osismodel.getRemoteOsisDB?4([- appname
+, - actorname
+, - modelname
+, - modelClass
+])
+j.core.osismodel.inputNormalizeList?4([- param
+])
+j.core.osismodel.osisInstances?8
+j.core.osismodel.rebuildindex?4([- appname
+, - actorname = '*'
+, - modelname = '*'
+])
+j.core.tags?8
+j.core.tags.getObject?4([- tagstring = ''
+, - setFunction4Tagstring
+])
+j.core.tags.getTagString?4([- labels
+, - tags
+])
+j.core.zdaemon?8
+j.core.zdaemon.getZDaemon?4([- port = 4444
+, - name = ''
+, - nrCmdGreenlets = 50
+, - sslorg = ''
+, - ssluser = ''
+, - sslkeyvaluestor
+])
+j.core.zdaemon.getZDaemonAgent?4([- ipaddr = '127.0.0.1'
+, - port = 5651
+, - org = 'myorg'
+, - user = 'root'
+, - passwd = '1234'
+, - ssl = False
+, - reset = False
+, - roles = []
+])
+j.core.zdaemon.getZDaemonClient?4([- addr = '127.0.0.1'
+, - port = 5651
+, - org = 'myorg'
+, - user = 'root'
+, - passwd = '1234'
+, - ssl = False
+, - category = 'core'
+, - sendformat = 'm'
+, - returnformat = 'm'
+, - gevent = False
+])
+j.core.zdaemon.getZDaemonHAClient?4([- connections
+, - org = 'myorg'
+, - user = 'root'
+, - passwd = '1234'
+, - ssl = False
+, - category = 'core'
+, - sendformat = 'm'
+, - returnformat = 'm'
+, - gevent = False
+])
+j.core.zdaemon.getZDaemonTransportClass?4([])
+j.core.zdaemon.initSSL4Server?4([- organization
+, - serveruser
+, - sslkeyvaluestor
+])
+j.core.codegenerator?8
+j.core.codegenerator.appdir?8
+j.core.codegenerator.classes?8
+j.core.codegenerator.codepath?8
+j.core.codegenerator.generate?4([- spec
+, - type
+, - typecheck = True
+, - dieInGenCode = True
+, - appserverclient
+, - instance = 0
+, - redis = False
+, - wsclient
+, - codepath
+, - classpath
+, - returnClass = True
+, - args = {}
+, - makeCopy = False
+])
+j.core.codegenerator.generated?8
+j.core.codegenerator.getActorClass?4([- appname
+, - actor
+, - typecheck = True
+, - dieInGenCode = True
+, - codepath
+])
+j.core.codegenerator.getClassActorLocal?4([- appname
+, - actor
+, - typecheck = True
+, - dieInGenCode = True
+])
+j.core.codegenerator.getClassActorRemote?4([- appname
+, - actor
+, - typecheck = True
+, - dieInGenCode = True
+, - instance = 0
+, - redis = False
+, - wsclient
+, - codepath
+])
+j.core.codegenerator.getClassEnumeration?4([- appname
+, - actor
+, - enumname
+, - typecheck = True
+, - dieInGenCode = True
+])
+j.core.codegenerator.getClassJSModel?4([- appname
+, - actor
+, - modelname
+, - typecheck = True
+, - dieInGenCode = True
+, - codepath = ''
+])
+j.core.codegenerator.getClassesActorMethodGreenlet?4([- appname
+, - actor
+, - typecheck = True
+, - dieInGenCode = True
+])
+j.core.codegenerator.getCodeEveModel?4([- appname
+, - actor
+, - modelname
+, - typecheck = True
+, - dieInGenCode = True
+, - codepath = ''
+])
+j.core.codegenerator.getCodeId?4([- spec
+, - type
+])
+j.core.codegenerator.getCodeJSModel?4([- appname
+, - actor
+, - modelname
+, - typecheck = True
+, - dieInGenCode = True
+, - codepath = ''
+])
+j.core.codegenerator.removeFromMem?4([- appname
+, - actor
+])
+j.core.codegenerator.resetMemNonSystem?4([])
+j.core.codegenerator.setTarget?4([- target
+])
+j.core.portal?8
+j.core.portal.active?8
+j.core.portal.getPortalConfig?4([- appname
+])
+j.core.portal.getServer?4([])
+j.core.portal.inprocess?8
+j.core.portal.loadActorsInProcess?4([- name = 'main'
+])
+j.core.grid?8
+j.core.grid.brokerClient?8
+j.core.grid.config?8
+j.core.grid.getLocalIPAccessibleByGridMaster?4([])
+j.core.grid.id?8
+j.core.grid.init?4([- description = ''
+, - instance = 1
+])
+j.core.grid.isGridMasterLocal?4([])
+j.core.grid.nid?8
+j.core.grid.roles?8
+j.core.processmanager?8
+j.core.processmanager.basedir?8
+j.core.processmanager.checkStartupOlderThan?4([- secago
+])
+j.core.processmanager.daemon?8
+j.core.processmanager.daemon.addCMDsInterface?4([- cmdInterfaceClass
+, - category
+])
+j.core.processmanager.daemon.cmdsInterfaces?8
+j.core.processmanager.getCmdsObject?4([- category
+])
+j.core.processmanager.getStartupTime?4([])
+j.core.processmanager.loadCmds?4([])
+j.core.processmanager.loadMonitorObjectTypes?4([])
+j.core.processmanager.redis?8
+j.core.processmanager.redis.RESPONSE_CALLBACKS?7
+j.core.processmanager.restartWorkers?4([])
+j.core.processmanager.start?4([])
+j.core.gevent?8
+j.core.gevent.getGeventLoopClass?4([])
+j.core.params?8
+j.core.params.get?4([- dictObject = {}
+])
+j.core.params.isParams?4([- p
+])
+j.core.specparser?8
+j.core.specparser.actornames?8
+j.core.specparser.addSpec?4([- spec
+])
+j.core.specparser.app_actornames?8
+j.core.specparser.appnames?8
+j.core.specparser.childspecs?8
+j.core.specparser.findSpec?4([- query = ''
+, - appname = ''
+, - actorname = ''
+, - specname = ''
+, - type = ''
+, - findFromSpec
+, - findOnlyOne = True
+])
+j.core.specparser.getActorSpec?4([- app
+, - name
+, - raiseError = True
+])
+j.core.specparser.getChildModelSpec?4([- app
+, - actorname
+, - name
+, - die = True
+])
+j.core.specparser.getEnumerationSpec?4([- app
+, - actorname
+, - name
+, - die = True
+])
+j.core.specparser.getModelNames?4([- appname
+, - actorname
+])
+j.core.specparser.getModelSpec?4([- app
+, - actorname
+, - name
+, - die = True
+])
+j.core.specparser.getSpecFromTypeStr?4([- appname
+, - actorname
+, - typestr
+])
+j.core.specparser.init?4([])
+j.core.specparser.modelnames?8
+j.core.specparser.parseSpecs?4([- specpath
+, - appname
+, - actorname
+])
+j.core.specparser.removeSpecsForActor?4([- appname
+, - actorname
+])
+j.core.specparser.resetMemNonSystem?4([])
+j.core.specparser.roles?8
+j.core.specparser.specs?8
+j.core.portalloader?8
+j.core.portalloader.actorsinfo?8
+j.core.portalloader.actorsinfo.getActorInfoPage?4([- appname
+, - actorname
+, - methodname
+, - page
+])
+j.core.portalloader.actorsinfo.getActorMethodCall?4([- appname
+, - actor
+, - method
+])
+j.core.portalloader.actorsinfo.getActorsInfoPage?4([- appname = ''
+, - actor = ''
+, - page
+, - extraParams = {}
+])
+j.core.portalloader.getActorsLoader?4([])
+j.core.portalloader.getBucketsLoader?4([])
+j.core.portalloader.getSpacesLoader?4([])
+j.core.portalloader.getTemplatesPath?4([])
+j.db?8
+j.db.serializers?8
+j.db.serializers.base64?8
+j.db.serializers.base64.dumps?4([- obj
+])
+j.db.serializers.base64.loads?4([- s
+])
+j.db.serializers.blowfish?8
+j.db.serializers.blowfish.c?8
+j.db.serializers.blowfish.dumps?4([- obj
+, - encrkey
+])
+j.db.serializers.blowfish.encrkey?8
+j.db.serializers.blowfish.loads?4([- s
+, - encrkey
+])
+j.db.serializers.dict?8
+j.db.serializers.dict.dumps?4([- obj
+])
+j.db.serializers.dict.loads?4([- s
+])
+j.db.serializers.get?4([- serializationstr
+, - key = ''
+])
+j.db.serializers.getBlosc?4([])
+j.db.serializers.getMessagePack?4([])
+j.db.serializers.getSerializerType?4([- type
+, - key = ''
+])
+j.db.serializers.hrd?8
+j.db.serializers.hrd.dumps?4([- data
+, - prepend = ''
+])
+j.db.serializers.hrd.loads?4([- data
+])
+j.db.serializers.int?8
+j.db.serializers.int.dumps?4([- obj
+])
+j.db.serializers.int.loads?4([- s
+])
+j.db.serializers.time?8
+j.db.serializers.time.dumps?4([- obj
+])
+j.db.serializers.time.loads?4([- s
+])
+j.db.serializers.types?8
+j.db.serializers.ujson?8
+j.db.serializers.ujson.dumps?4([- obj
+])
+j.db.serializers.ujson.loads?4([- s
+])
+j.db.sqlalchemy?8
+j.db.sqlalchemy.get?4([- connectionstring = ''
+, - sqlitepath = ''
+, - tomlpath = '../data'
+])
+j.db.sqlalchemy.getBaseClass?4([])
+j.db.sqlalchemy.validate_email?4([- target
+, - value
+, - oldvalue
+, - initiator
+])
+j.db.sqlalchemy.validate_lower_strip?4([- target
+, - value
+, - oldvalue
+, - initiator
+])
+j.db.sqlalchemy.validate_tel?4([- target
+, - value
+, - oldvalue
+, - initiator
+])
+j.db.keyvaluestore?8
+j.db.keyvaluestore.getArakoonStore?4([- namespace = ''
+, - serializers = []
+])
+j.db.keyvaluestore.getFileSystemStore?4([- namespace = ''
+, - baseDir
+, - serializers = []
+])
+j.db.keyvaluestore.getLevelDBStore?4([- namespace = ''
+, - basedir
+, - serializers = []
+])
+j.db.keyvaluestore.getMemoryStore?4([- namespace
+])
+j.db.keyvaluestore.getRedisStore?4([- namespace = ''
+, - host = 'localhost'
+, - port = 9999
+, - db = 0
+, - password = ''
+, - serializers
+, - masterdb
+, - changelog = True
+])
+j.db.cache?8
+j.db.cache.getRCache?4([- nritems
+])
+j.db.cache.getRWCache?4([- nrItemsReadCache
+, - nrItemsWriteCache = 50
+, - maxTimeWriteCache = 2000
+, - writermethod
+])
+j.dirs?8
+j.dirs.addProtectedDir?4([- path
+, - name = 'main'
+])
+j.dirs.amInGitConfigRepo?4([])
+j.dirs.appDir?8
+j.dirs.baseDir?8
+j.dirs.binDir?8
+j.dirs.cfgDir?8
+j.dirs.checkInProtectedDir?4([- path
+])
+j.dirs.codeDir?8
+j.dirs.createGitConfigRepo?4([- path
+])
+j.dirs.getHrdDir?4([- system = False
+])
+j.dirs.getPathOfRunningFunction?4([- function
+])
+j.dirs.gitConfigDir?8
+j.dirs.hrdDir?8
+j.dirs.init?4([- reinit = False
+])
+j.dirs.isGitConfigRepo?4([- path
+])
+j.dirs.jsLibDir?8
+j.dirs.libDir?8
+j.dirs.libExtDir?8
+j.dirs.loadProtectedDirs?4([])
+j.dirs.logDir?8
+j.dirs.pidDir?8
+j.dirs.removeProtectedDir?4([- path
+])
+j.dirs.replaceTxtDirVars?4([- txt
+, - additionalArgs = {}
+])
+j.dirs.tmpDir?8
+j.dirs.varDir?8
+j.do?8
+j.do.BASE?7
+j.do.CODEDIR?7
+j.do.TMP?7
+j.do.TYPE?7
+j.do.changeDir?4([- path
+, - create = False
+])
+j.do.changeLoginPasswdGitRepos?4([- provider
+, - login
+, - passwd
+])
+j.do.chdir?4([- ddir = ''
+])
+j.do.checkDirOrLinkToDir?4([- fullpath
+])
+j.do.checkInstalled?4([- cmdname
+])
+j.do.chmod?4([- path
+, - permissions
+])
+j.do.chown?4([- path
+, - user
+])
+j.do.copyDependencies?4([- path
+, - dest
+])
+j.do.copyFile?4([- source
+, - dest
+, - deletefirst = False
+, - skipIfExists = False
+])
+j.do.copyTree?4([- source
+, - dest
+, - keepsymlinks = False
+, - deletefirst = False
+, - overwriteFiles = True
+, - ignoredir = ['.egg-info', '.dist-info']
+, - ignorefiles = ['.egg-info']
+, - rsync = True
+, - sshkey
+])
+j.do.createDir?4([- path
+])
+j.do.debug?8
+j.do.delete?4([- path
+, - force = False
+])
+j.do.download?4([- url
+, - to = ''
+, - overwrite = True
+, - retry = 3
+, - timeout = 0
+, - login = ''
+, - passwd = ''
+, - minspeed = 0
+, - multithread = False
+, - curl = False
+])
+j.do.downloadExpandTarGz?4([- url
+, - destdir
+, - deleteDestFirst = True
+, - deleteSourceAfter = True
+])
+j.do.downloadJumpScaleCore?4([- dest
+])
+j.do.excepthook?4([- ttype
+, - pythonExceptionObject
+, - tb
+])
+j.do.execute?4([- command
+, - outputStdout = True
+, - outputStderr = True
+, - useShell = True
+, - log = True
+, - cwd
+, - timeout = 0
+, - errors = []
+, - ok = []
+, - captureout = True
+, - dieOnNonZeroExitCode = True
+])
+j.do.executeCmds?4([- cmdstr
+, - outputStdout = True
+, - outputStderr = True
+, - useShell = True
+, - log = True
+, - cwd
+, - timeout = 120
+, - errors = []
+, - ok = []
+, - captureout = True
+, - dieOnNonZeroExitCode = True
+])
+j.do.executeInteractive?4([- command
+])
+j.do.exists?4([- path
+])
+j.do.expandTarGz?4([- path
+, - destdir
+, - deleteDestFirst = True
+, - deleteSourceAfter = False
+])
+j.do.findDependencies?4([- path
+, - deps = {}
+])
+j.do.getBaseName?4([- path
+])
+j.do.getDirName?4([- path
+, - lastOnly = False
+, - levelsUp
+])
+j.do.getFileExtension?4([- path
+])
+j.do.getGitRepoArgs?4([- url = ''
+, - dest
+, - login
+, - passwd
+, - reset = False
+])
+j.do.getGitReposListLocal?4([- provider = ''
+, - account = ''
+, - name = ''
+, - errorIfNone = True
+])
+j.do.getParent?4([- path
+])
+j.do.getPythonSiteConfigPath?4([])
+j.do.getTimeEpoch?4([])
+j.do.getTmpPath?4([- filename
+])
+j.do.getWalker?4([])
+j.do.installPackage?4([- path
+])
+j.do.isDir?4([- path
+, - followSoftlink = False
+])
+j.do.isExecutable?4([- path
+])
+j.do.isFile?4([- path
+, - followSoftlink = False
+])
+j.do.isLink?4([- path
+, - checkJunction = False
+])
+j.do.isUnix?4([])
+j.do.isWindows?4([])
+j.do.joinPaths?4([- *args
+])
+j.do.list?4([- path
+])
+j.do.listDirsInDir?4([- path
+, - recursive = False
+, - dirNameOnly = False
+, - findDirectorySymlinks = True
+])
+j.do.listFilesAndDirsInDir?4([- path
+, - recursive = False
+, - filter
+, - minmtime
+, - maxmtime
+, - depth
+, - type = 'fd'
+, - followSymlinks = True
+, - listSymlinks = False
+])
+j.do.listFilesInDir?4([- path
+, - recursive = False
+, - filter
+, - minmtime
+, - maxmtime
+, - depth
+, - case_sensitivity = 'os'
+, - exclude = []
+, - followSymlinks = True
+, - listSymlinks = False
+])
+j.do.loadScript?4([- path
+])
+j.do.log?4([- msg
+, - level
+])
+j.do.pullGitRepo?4([- url = ''
+, - dest
+, - login
+, - passwd
+, - depth = 1
+, - ignorelocalchanges = False
+, - reset = False
+, - branch
+, - revision
+])
+j.do.pushGitRepos?4([- message
+, - name = ''
+, - update = True
+, - provider = ''
+, - account = ''
+])
+j.do.readFile?4([- filename
+])
+j.do.readLink?4([- path
+])
+j.do.removeLinks?4([- path
+])
+j.do.removeSymlink?4([- path
+])
+j.do.rewriteGitRepoUrl?4([- url = ''
+, - login
+, - passwd
+])
+j.do.sendmail?4([- ffrom
+, - to
+, - subject
+, - msg
+, - smtpuser
+, - smtppasswd
+, - smtpserver = 'smtp.mandrillapp.com'
+, - port = 587
+, - html = ''
+])
+j.do.symlink?4([- src
+, - dest
+, - delete = False
+])
+j.do.symlinkFilesInDir?4([- src
+, - dest
+, - delete = True
+, - includeDirs = False
+])
+j.do.touch?4([- path
+])
+j.do.updateGitRepos?4([- provider = ''
+, - account = ''
+, - name = ''
+, - message = ''
+])
+j.do.writeFile?4([- path
+, - content
+, - strip = True
+])
+j.enumerators?8
+j.errorconditionhandler?8
+j.errorconditionhandler.blacklist?8
+j.errorconditionhandler.checkErrorIgnore?4([- eco
+])
+j.errorconditionhandler.escalateBugToDeveloper?4([- errorConditionObject
+, - tb
+])
+j.errorconditionhandler.escalateToRedis?8
+j.errorconditionhandler.excepthook?4([- ttype
+, - pythonExceptionObject
+, - tb
+])
+j.errorconditionhandler.getErrorConditionObject?4([- ddict = {}
+, - msg = ''
+, - msgpub = ''
+, - category = ''
+, - level = 1
+, - type = 'UNKNOWN'
+, - tb
+])
+j.errorconditionhandler.getErrorTraceKIS?4([- tb
+])
+j.errorconditionhandler.getFrames?4([- tb
+])
+j.errorconditionhandler.getLevelName?4([- level
+])
+j.errorconditionhandler.halt?4([- msg
+, - eco
+])
+j.errorconditionhandler.haltOnError?8
+j.errorconditionhandler.inException?8
+j.errorconditionhandler.lastAction?8
+j.errorconditionhandler.lastActionClear?4([])
+j.errorconditionhandler.lastActionSet?4([- lastActionDescription
+])
+j.errorconditionhandler.lastEco?8
+j.errorconditionhandler.parsePythonErrorObject?4([- pythonExceptionObject
+, - ttype
+, - tb
+, - level = 1
+, - message = ''
+])
+j.errorconditionhandler.processPythonExceptionObject?4([- pythonExceptionObject
+, - ttype
+, - tb
+, - level = 1
+, - message = ''
+, - sentry = True
+])
+j.errorconditionhandler.raiseBug?4([- message
+, - category = ''
+, - pythonExceptionObject
+, - pythonTraceBack
+, - msgpub = ''
+, - die = True
+, - tags = ''
+, - level = 1
+])
+j.errorconditionhandler.raiseCritical?4([- message
+, - category = ''
+, - pythonExceptionObject
+, - pythonTraceBack
+, - msgpub = ''
+, - die = True
+, - tags = ''
+, - level = 1
+])
+j.errorconditionhandler.raiseInputError?4([- message = ''
+, - category = 'input'
+, - msgpub = ''
+, - die = True
+, - backtrace = ''
+, - tags = ''
+])
+j.errorconditionhandler.raiseMonitoringError?4([- message
+, - category = ''
+, - msgpub = ''
+, - die = False
+, - tags = ''
+])
+j.errorconditionhandler.raiseOperationalCritical?4([- message = ''
+, - category = ''
+, - msgpub = ''
+, - die = True
+, - tags = ''
+, - eco
+, - extra
+])
+j.errorconditionhandler.raiseOperationalWarning?4([- message = ''
+, - category = ''
+, - msgpub = ''
+, - tags = ''
+, - eco
+])
+j.errorconditionhandler.raisePerformanceError?4([- message
+, - category = ''
+, - msgpub = ''
+, - tags = ''
+])
+j.errorconditionhandler.raiseRuntimeErrorWithEco?4([- eco
+, - tostdout = False
+])
+j.errorconditionhandler.raiseWarning?4([- message
+, - category = ''
+, - pythonExceptionObject
+, - pythonTraceBack
+, - msgpub = ''
+, - tags = ''
+])
+j.errorconditionhandler.reRaiseECO?4([- eco
+])
+j.errorconditionhandler.redis?8
+j.errorconditionhandler.setExceptHook?4([])
+j.errorconditionhandler.toolStripNonAsciFromText?4([- text
+])
+j.events?8
+j.events.bug_critical?4([- msg
+, - category = ''
+, - jobid = 0
+, - e
+])
+j.events.bug_warning?4([- msg
+, - category = ''
+, - e
+])
+j.events.inputerror_critical?4([- msg
+, - category = ''
+, - msgpub = ''
+])
+j.events.inputerror_warning?4([- msg
+, - category = ''
+, - msgpub = ''
+])
+j.events.opserror?4([- msg
+, - category = ''
+, - e
+])
+j.events.opserror_critical?4([- msg
+, - category = ''
+])
+j.events.opserror_warning?4([- msg
+, - category = ''
+, - e
+])
+j.gui?8
+j.gui.dialog?8
+j.gui.dialog.askChoice?4([- question
+, - choices
+, - defaultValue
+, - pageSize = 10
+, - sortChoices = False
+, - sortCallBack
+])
+j.gui.dialog.askChoiceMultiple?4([- question
+, - choices
+, - defaultValue
+, - pageSize = 10
+, - sortChoices = False
+, - sortCallBack
+])
+j.gui.dialog.askDate?4([- question
+, - minValue
+, - maxValue
+, - selectedValue
+, - format = 'YYYY/MM/DD'
+])
+j.gui.dialog.askDateTime?4([- question
+, - minValue
+, - maxValue
+, - selectedValue
+, - format = 'YYYY/MM/DD hh:mm'
+])
+j.gui.dialog.askDirPath?4([- message
+, - startPath
+])
+j.gui.dialog.askFilePath?4([- message
+, - startPath
+])
+j.gui.dialog.askForm?4([- form
+])
+j.gui.dialog.askInteger?4([- question
+, - defaultValue
+])
+j.gui.dialog.askIntegers?4([- question
+])
+j.gui.dialog.askMultiline?4([- question
+, - defaultValue
+])
+j.gui.dialog.askPassword?4([- question
+, - confirm = True
+, - regex
+, - retry = -1
+, - defaultValue
+])
+j.gui.dialog.askString?4([- question
+, - defaultValue
+, - validator
+])
+j.gui.dialog.askYesNo?4([- question
+, - defaultValue
+])
+j.gui.dialog.chooseDialogType?4([- type
+])
+j.gui.dialog.clear?4([])
+j.gui.dialog.easyDialog?8
+j.gui.dialog.easyDialog.askChoice?4([- question
+, - choices
+, - defaultValue
+, - pageSize = 40
+, - sortChoices = False
+, - sortCallBack
+])
+j.gui.dialog.easyDialog.askChoiceMultiple?4([- question
+, - choices
+, - defaultValue
+, - pageSize = 40
+, - sortChoices = False
+, - sortCallBack
+])
+j.gui.dialog.easyDialog.askDate?4([- question
+, - minValue
+, - maxValue
+, - selectedValue
+, - format = '%Y/%m/%d'
+])
+j.gui.dialog.easyDialog.askDateTime?4([- question
+, - minValue
+, - maxValue
+, - selectedValue
+, - format = 'YYYY/MM/DD hh:mm'
+])
+j.gui.dialog.easyDialog.askDirPath?4([- message
+, - startPath
+])
+j.gui.dialog.easyDialog.askFilePath?4([- message
+, - startPath
+])
+j.gui.dialog.easyDialog.askInt?4([- question
+, - defaultValue
+])
+j.gui.dialog.easyDialog.askInteger?4([- question
+, - defaultValue
+])
+j.gui.dialog.easyDialog.askIntegers?4([- question
+])
+j.gui.dialog.easyDialog.askMultiline?4([- question
+])
+j.gui.dialog.easyDialog.askPassword?4([- question
+, - confirm = True
+, - regex
+, - retry = -1
+, - defaultValue
+])
+j.gui.dialog.easyDialog.askString?4([- question
+, - defaultValue
+, - validator
+])
+j.gui.dialog.easyDialog.askYesNo?4([- question
+, - defaultValue
+])
+j.gui.dialog.easyDialog.chooseDialogType?4([- type
+])
+j.gui.dialog.easyDialog.clear?4([])
+j.gui.dialog.easyDialog.message?4([- message
+])
+j.gui.dialog.easyDialog.navigateTo?4([- url
+])
+j.gui.dialog.easyDialog.showLogging?4([- text
+])
+j.gui.dialog.easyDialog.showMessageBox?4([- message
+, - title
+, - msgboxButtons = 'OK'
+, - msgboxIcon = 'Information'
+, - defaultButton = 'OK'
+])
+j.gui.dialog.easyDialog.showProgress?4([- minvalue
+, - maxvalue
+, - currentvalue
+])
+j.gui.dialog.message?4([- message
+])
+j.gui.dialog.navigateTo?4([- url
+])
+j.gui.dialog.pm_setDialogHandler?4([])
+j.gui.dialog.showLogging?4([- text
+])
+j.gui.dialog.showMessageBox?4([- message
+, - title
+, - msgboxButtons = 'OK'
+, - msgboxIcon = 'Information'
+, - defaultButton = 'OK'
+])
+j.gui.dialog.showProgress?4([- minvalue
+, - maxvalue
+, - currentvalue
+])
+j.gui.form?8
+j.gui.form.createForm?4([])
+j.logger?8
+j.logger.connectRedis?4([])
+j.logger.consolelogCategories?8
+j.logger.consoleloglevel?8
+j.logger.disable?4([])
+j.logger.enabled?8
+j.logger.getLogObjectFromDict?4([- ddict
+])
+j.logger.init?4([])
+j.logger.lastmessage?8
+j.logger.log?4([- message
+, - level = 5
+, - category = ''
+, - tags = ''
+, - jid = ''
+, - parentjid = ''
+, - masterjid = ''
+, - private = False
+])
+j.logger.maxlevel?8
+j.logger.nolog?8
+j.logger.nologger?4([- func
+])
+j.logger.nostdout?4([])
+j.logger.redis?8
+j.logger.redislogging?8
+j.logger.reset?4([])
+j.logger.utils?8
+j.logger.utils.trace?4([- level = 5
+, - enabled = True
+])
+j.remote?8
+j.remote.system?8
+j.remote.system.connect?4([- ip
+, - login = ''
+, - password = ''
+, - timeout = 120.0
+, - port = 22
+])
+j.remote.system.connections?8
+j.remote.system.exceptions?8
+j.remote.system.name?8
+j.remote.cuisine?8
+j.remote.cuisine.connect?4([- addr
+, - port
+, - passwd
+])
+j.remote.cuisine.help?4([])
+j.remote.avahi?8
+j.remote.avahi.getServices?4([])
+j.remote.avahi.registerService?4([- servicename
+, - port
+, - type = 'tcp'
+])
+j.remote.avahi.removeService?4([- servicename
+])
+j.remote.avahi.resolveAddress?4([- ipAddress
+])
+j.remote.fabric?8
+j.remote.fabric.help?4([])
+j.remote.fabric.setDefaultPasswd?4([- passwd
+, - host = 'localhost'
+])
+j.remote.fabric.setHost?4([- host = 'localhost'
+])
+j.remote.fabric.setHosts?4([- hosts = ['localhost']
+])
+j.remote.ssh?8
+j.remote.ssh.getSSHClient?4([- password
+, - host = 'localhost'
+, - username = 'root'
+, - port = 22
+, - timeout = 10
+])
+j.remote.ssh.getSSHClientUsingKey?4([- keypath
+, - host = 'localhost'
+, - username = 'root'
+, - port = 22
+, - timeout = 10
+])
+j.remote.ssh.getSSHClientUsingSSHAgent?4([- host = 'localhost'
+, - username = 'root'
+, - port = 22
+, - timeout = 10
+])
+j.servers?8
+j.servers.geventws?8
+j.servers.geventws.cache?8
+j.servers.geventws.cachecat?8
+j.servers.geventws.getClient?4([- addr
+, - port
+, - category = 'core'
+, - org = 'myorg'
+, - user = 'root'
+, - passwd = 'passwd'
+, - ssl = False
+, - roles = []
+, - id
+, - timeout = 60
+])
+j.servers.geventws.getHAClient?4([- connections
+, - category = 'core'
+, - org = 'myorg'
+, - user = 'root'
+, - passwd = 'passwd'
+, - ssl = False
+, - roles = []
+, - id
+, - timeout = 60
+, - reconnect = False
+])
+j.servers.geventws.getServer?4([- port
+, - sslorg
+, - ssluser
+, - sslkeyvaluestor
+])
+j.servers.geventws.initSSL4Server?4([- organization
+, - serveruser
+, - sslkeyvaluestor
+])
+j.servers.tornado?8
+j.servers.tornado.getClient?4([- addr
+, - port
+, - category = 'core'
+, - org = 'myorg'
+, - user = 'root'
+, - passwd = 'passwd'
+, - ssl = False
+, - roles = []
+])
+j.servers.tornado.getHAClient?4([- connections
+, - category = 'core'
+, - org = 'myorg'
+, - user = 'root'
+, - passwd = 'passwd'
+, - ssl = False
+, - roles = []
+, - id
+, - timeout = 60
+, - reconnect = False
+])
+j.servers.tornado.getServer?4([- port
+, - sslorg
+, - ssluser
+, - sslkeyvaluestor
+])
+j.servers.tornado.initSSL4Server?4([- organization
+, - serveruser
+, - sslkeyvaluestor
+])
+j.servers.zdaemon?8
+j.servers.zdaemon.getZDaemon?4([- port = 4444
+, - name = ''
+, - nrCmdGreenlets = 50
+, - sslorg = ''
+, - ssluser = ''
+, - sslkeyvaluestor
+])
+j.servers.zdaemon.getZDaemonAgent?4([- ipaddr = '127.0.0.1'
+, - port = 5651
+, - org = 'myorg'
+, - user = 'root'
+, - passwd = '1234'
+, - ssl = False
+, - reset = False
+, - roles = []
+])
+j.servers.zdaemon.getZDaemonClient?4([- addr = '127.0.0.1'
+, - port = 5651
+, - org = 'myorg'
+, - user = 'root'
+, - passwd = '1234'
+, - ssl = False
+, - category = 'core'
+, - sendformat = 'm'
+, - returnformat = 'm'
+, - gevent = False
+])
+j.servers.zdaemon.getZDaemonHAClient?4([- connections
+, - org = 'myorg'
+, - user = 'root'
+, - passwd = '1234'
+, - ssl = False
+, - category = 'core'
+, - sendformat = 'm'
+, - returnformat = 'm'
+, - gevent = False
+])
+j.servers.zdaemon.getZDaemonTransportClass?4([])
+j.servers.zdaemon.initSSL4Server?4([- organization
+, - serveruser
+, - sslkeyvaluestor
+])
+j.servers.tipc?8
+j.servers.tipc.getClient?4([- servaddr
+, - category = 'core'
+, - org = 'myorg'
+, - user = 'root'
+, - passwd = 'passwd'
+, - ssl = False
+, - roles = []
+])
+j.servers.tipc.getServer?4([- servaddr
+, - sslorg
+, - ssluser
+, - sslkeyvaluestor
+])
+j.servers.base?8
+j.servers.base.getDaemon?4([- name = 'unknown'
+, - sslorg
+, - ssluser
+, - sslkeyvaluestor
+])
+j.servers.base.getDaemonClientClass?4([])
+j.servers.base.initSSL4Server?4([- organization
+, - serveruser
+, - sslkeyvaluestor
+])
+j.ssh?8
+j.ssh.connect?4([- addr = 'localhost'
+, - port = 22
+, - passwd
+, - verbose = True
+, - keypath
+])
+j.ssh.connection?8
+j.ssh.aoe?8
+j.ssh.aoe.VDisk.exposed?8
+j.ssh.aoe.VDisk.inf?8
+j.ssh.aoe.VDisk.major?8
+j.ssh.aoe.VDisk.minor?8
+j.ssh.aoe.VDisk.path?8
+j.ssh.aoe.VDisk.pid?8
+j.ssh.aoe.VDisk.size?8
+j.ssh.aoe.AOEManager.create?4([- storpath
+, - size = 10
+])
+j.ssh.aoe.AOEManager.delete?4([- path
+])
+j.ssh.aoe.AOEManager.expose?4([- storage
+, - major
+, - minor
+, - inf
+])
+j.ssh.aoe.AOEManager.list?4([- storpath = '/mnt/disktargets/'
+])
+j.ssh.aoe.AOEManager.unexpose?4([- storage
+])
+j.ssh.aoe.get?4([- con
+])
+j.ssh.samba?8
+j.ssh.samba.Samba.addShare?4([- sharename
+, - path
+, - options = {}
+])
+j.ssh.samba.Samba.addUser?4([- username
+, - password
+])
+j.ssh.samba.Samba.commitShare?4([])
+j.ssh.samba.Samba.getShare?4([- sharename
+])
+j.ssh.samba.Samba.listUsers?4([])
+j.ssh.samba.Samba.removeShare?4([- sharename
+])
+j.ssh.samba.Samba.removeUser?4([- username
+])
+j.ssh.samba.Samba.SMBUser.add?4([- username
+, - password
+])
+j.ssh.samba.Samba.SMBUser.list?4([])
+j.ssh.samba.Samba.SMBUser.remove?4([- username
+])
+j.ssh.samba.Samba.SMBShare.add?4([- sharename
+, - path
+, - options = {}
+])
+j.ssh.samba.Samba.SMBShare.commit?4([])
+j.ssh.samba.Samba.SMBShare.get?4([- sharename
+])
+j.ssh.samba.Samba.SMBShare.remove?4([- sharename
+])
+j.ssh.samba.Samba.SambaConfigParser.OPTCRE?7
+j.ssh.samba.Samba.SambaConfigParser.OPTCRE_NV?7
+j.ssh.samba.Samba.SambaConfigParser.OPTCRE_SMB?7
+j.ssh.samba.Samba.SambaConfigParser.SECTCRE?7
+j.ssh.samba.get?4([- con
+])
+j.ssh.disklayout?8
+j.ssh.disklayout.get?4([- connection
+])
+j.ssh.rsync?8
+j.ssh.rsync.RsyncModule.get?4([- key
+, - value
+])
+j.ssh.rsync.RsyncModule.name?8
+j.ssh.rsync.RsyncModule.params?8
+j.ssh.rsync.RsyncModule.set?4([- key
+, - value
+])
+j.ssh.rsync.Rsync.addModule?4([- name
+])
+j.ssh.rsync.Rsync.commit?4([])
+j.ssh.rsync.Rsync.erase?4([])
+j.ssh.rsync.Rsync.removeModule?4([- name
+])
+j.ssh.rsync.Rsync.removeParams?4([- key
+])
+j.ssh.rsync.Rsync.restart?4([])
+j.ssh.rsync.Rsync.setParams?4([- key
+, - value
+])
+j.ssh.rsync.Rsync.start?4([])
+j.ssh.rsync.Rsync.stop?4([])
+j.ssh.rsync.get?4([- con
+])
+j.ssh.server?8
+j.ssh.server.SSH.SSH_AUTHORIZED_KEYS?7
+j.ssh.server.SSH.SSH_ROOT?7
+j.ssh.server.SSH.addKey?4([- key
+])
+j.ssh.server.SSH.commit?4([])
+j.ssh.server.SSH.deleteKey?4([- key
+])
+j.ssh.server.SSH.disableNonKeyAccess?4([])
+j.ssh.server.SSH.erase?4([])
+j.ssh.server.get?4([- con
+])
+j.ssh.nginx?8
+j.ssh.nginx.get?4([- con
+, - path = '/etc/nginx/nginx.conf'
+])
+j.ssh.unix?8
+j.ssh.unix.get?4([- connection
+])
+j.ssh.nfs?8
+j.ssh.nfs.NFS.add?4([- path
+])
+j.ssh.nfs.NFS.commit?4([])
+j.ssh.nfs.NFS.delete?4([- path
+])
+j.ssh.nfs.NFS.erase?4([])
+j.ssh.nfs.NFSExport.addClient?4([- name = '*'
+, - options = 'rw,sync'
+])
+j.ssh.nfs.NFSExport.clients?8
+j.ssh.nfs.NFSExport.path?8
+j.ssh.nfs.NFSExport.removeClient?4([- name
+])
+j.ssh.nfs.get?4([- con
+])
+j.ssh.ubuntu?8
+j.ssh.ubuntu.UbuntuManager.connection?8
+j.ssh.ubuntu.UbuntuManager.network?8
+j.ssh.ubuntu.NetworkManager.commit?4([- device
+])
+j.ssh.ubuntu.NetworkManager.ipGet?4([- device
+])
+j.ssh.ubuntu.NetworkManager.ipReset?4([- device
+, - commit = False
+])
+j.ssh.ubuntu.NetworkManager.ipSet?4([- device
+, - ip
+, - netmask
+, - gw
+, - inet = 'dhcp'
+, - commit = False
+])
+j.ssh.ubuntu.NetworkManager.manager?8
+j.ssh.ubuntu.NetworkManager.nsGet?4([])
+j.ssh.ubuntu.NetworkManager.nsSet?4([- nameservers = []
+, - commit = False
+])
+j.ssh.ubuntu.NetworkManager.setHostname?4([- hostname
+])
+j.ssh.ubuntu.get?4([- connection
+])
+j.system?8
+j.system.fs?8
+j.system.fs.changeDir?4([- path
+])
+j.system.fs.changeFileNames?4([- toReplace
+, - replaceWith
+, - pathToSearchIn
+, - recursive = True
+, - filter
+, - minmtime
+, - maxmtime
+])
+j.system.fs.checkDirOrLink?4([- fullpath
+])
+j.system.fs.checkDirOrLinkToDir?4([- fullpath
+])
+j.system.fs.checkDirParam?4([- path
+])
+j.system.fs.chmod?4([- path
+, - permissions
+])
+j.system.fs.chown?4([- path
+, - user
+])
+j.system.fs.cleanupString?4([- string
+, - replacewith = '_'
+, - regex = '([^A-Za-z0-9])'
+])
+j.system.fs.constructDirPathFromArray?4([- array
+])
+j.system.fs.constructFilePathFromArray?4([- array
+])
+j.system.fs.convertFileDirnamesSpaceToUnderscore?4([- rootdir
+])
+j.system.fs.convertFileDirnamesUnicodeToAscii?4([- rootdir
+, - spacesToUnderscore = False
+])
+j.system.fs.copyDirTree?4([- src
+, - dst
+, - keepsymlinks = False
+, - eraseDestination = False
+, - skipProtectedDirs = False
+, - overwriteFiles = True
+, - applyHrdOnDestPaths
+])
+j.system.fs.copyFile?4([- fileFrom
+, - to
+, - createDirIfNeeded = False
+, - skipProtectedDirs = False
+, - overwriteFile = True
+])
+j.system.fs.createDir?4([- newdir
+, - skipProtectedDirs = False
+])
+j.system.fs.createEmptyFile?4([- filename
+])
+j.system.fs.dirEqual?4([- path1
+, - path2
+])
+j.system.fs.exceptions?8
+j.system.fs.exceptions.LockException?8
+j.system.fs.exceptions.LockTimeoutException?8
+j.system.fs.exists?4([- path
+, - followlinks = True
+])
+j.system.fs.fileConvertLineEndingCRLF?4([- file
+])
+j.system.fs.fileGetContents?4([- filename
+])
+j.system.fs.fileGetTextContents?4([- filename
+])
+j.system.fs.fileGetUncommentedContents?4([- filename
+])
+j.system.fs.fileSize?4([- filename
+])
+j.system.fs.find?4([- startDir
+, - fileregex
+])
+j.system.fs.getBaseName?4([- path
+])
+j.system.fs.getDirName?4([- path
+, - lastOnly = False
+, - levelsUp
+])
+j.system.fs.getFileExtension?4([- path
+])
+j.system.fs.getFolderMD5sum?4([- folder
+])
+j.system.fs.getParent?4([- path
+])
+j.system.fs.getParentDirName?4([- path
+])
+j.system.fs.getTempFileName?4([- dir
+, - prefix = ''
+])
+j.system.fs.getTmpDirPath?4([])
+j.system.fs.getTmpFilePath?4([- cygwin = False
+])
+j.system.fs.getcwd?4([])
+j.system.fs.grep?4([- fileregex
+, - lineregex
+])
+j.system.fs.gunzip?4([- sourceFile
+, - destFile
+])
+j.system.fs.gzip?4([- sourceFile
+, - destFile
+])
+j.system.fs.hardlinkFile?4([- source
+, - destin
+])
+j.system.fs.isAsciiFile?4([- filename
+, - checksize = 4096
+])
+j.system.fs.isBinaryFile?4([- filename
+, - checksize = 4096
+])
+j.system.fs.isDir?4([- path
+, - followSoftlink = True
+])
+j.system.fs.isEmptyDir?4([- path
+])
+j.system.fs.isExecutable?4([- path
+])
+j.system.fs.isFile?4([- path
+, - followSoftlink = True
+])
+j.system.fs.isLink?4([- path
+, - checkJunction = False
+])
+j.system.fs.isMount?4([- path
+])
+j.system.fs.islocked?4([- lockname
+, - reentry = False
+])
+j.system.fs.joinPaths?4([- *args
+])
+j.system.fs.listDirsInDir?4([- path
+, - recursive = False
+, - dirNameOnly = False
+, - findDirectorySymlinks = True
+])
+j.system.fs.listFilesAndDirsInDir?4([- path
+, - recursive = False
+, - filter
+, - minmtime
+, - maxmtime
+, - depth
+, - type = 'fd'
+, - followSymlinks = True
+, - listSymlinks = False
+])
+j.system.fs.listFilesInDir?4([- path
+, - recursive = False
+, - filter
+, - minmtime
+, - maxmtime
+, - depth
+, - case_sensitivity = 'os'
+, - exclude = []
+, - followSymlinks = True
+, - listSymlinks = False
+])
+j.system.fs.listPyScriptsInDir?4([- path
+, - recursive = True
+, - filter = '*.py'
+])
+j.system.fs.lock?4([- lockname
+, - locktimeout = 60
+, - reentry = False
+])
+j.system.fs.lock_?4([- lockname
+, - locktimeout = 60
+, - reentry = False
+])
+j.system.fs.log?4([- msg
+, - level = 5
+, - category = ''
+])
+j.system.fs.logenable?8
+j.system.fs.loglevel?8
+j.system.fs.md5sum?4([- filename
+])
+j.system.fs.move?4([- source
+, - destin
+])
+j.system.fs.moveDir?4([- source
+, - destin
+])
+j.system.fs.moveFile?4([- source
+, - destin
+])
+j.system.fs.parsePath?4([- path
+, - baseDir = ''
+, - existCheck = True
+, - checkIsFile = False
+])
+j.system.fs.pathClean?4([- path
+])
+j.system.fs.pathDirClean?4([- path
+])
+j.system.fs.pathNormalize?4([- path
+, - root = ''
+])
+j.system.fs.pathRemoveDirPart?4([- path
+, - toremove
+, - removeTrailingSlash = False
+])
+j.system.fs.pathShorten?4([- path
+])
+j.system.fs.pathToUnicode?4([- path
+])
+j.system.fs.processPathForDoubleDots?4([- path
+])
+j.system.fs.readObjectFromFile?4([- filelocation
+])
+j.system.fs.readlink?4([- path
+])
+j.system.fs.remove?4([- path
+])
+j.system.fs.removeDir?4([- path
+])
+j.system.fs.removeDirTree?4([- path
+, - onlyLogWarningOnRemoveError = False
+])
+j.system.fs.removeIrrelevantFiles?4([- path
+, - followSymlinks = True
+])
+j.system.fs.removeLinks?4([- path
+])
+j.system.fs.renameDir?4([- dirname
+, - newname
+, - overwrite = False
+])
+j.system.fs.renameFile?4([- filePath
+, - new_name
+])
+j.system.fs.replaceWordsInFiles?4([- pathToSearchIn
+, - templateengine
+, - recursive = True
+, - filter
+, - minmtime
+, - maxmtime
+])
+j.system.fs.statPath?4([- path
+])
+j.system.fs.symlink?4([- path
+, - target
+, - overwriteTarget = False
+])
+j.system.fs.targzCompress?4([- sourcepath
+, - destinationpath
+, - followlinks = False
+, - destInTar = ''
+, - pathRegexIncludes = ['.[a-zA-Z0-9]*']
+, - pathRegexExcludes = []
+, - contentRegexIncludes = []
+, - contentRegexExcludes = []
+, - depths = []
+, - extrafiles = []
+])
+j.system.fs.targzUncompress?4([- sourceFile
+, - destinationdir
+, - removeDestinationdir = True
+])
+j.system.fs.touch?4([- paths
+, - overwrite = True
+])
+j.system.fs.unlink?4([- filename
+])
+j.system.fs.unlinkFile?4([- filename
+])
+j.system.fs.unlock?4([- lockname
+])
+j.system.fs.unlock_?4([- lockname
+])
+j.system.fs.validateFilename?4([- filename
+, - platform
+])
+j.system.fs.walk?4([- root
+, - recurse = 0
+, - pattern = '*'
+, - return_folders = 0
+, - return_files = 1
+, - followSoftlinks = True
+, - str = False
+, - depth
+])
+j.system.fs.walkExtended?4([- root
+, - recurse = 0
+, - dirPattern = '*'
+, - filePattern = '*'
+, - followSoftLinks = True
+, - dirs = True
+, - files = True
+])
+j.system.fs.writeFile?4([- filename
+, - contents
+, - append = False
+])
+j.system.fs.writeObjectToFile?4([- filelocation
+, - obj
+])
+j.system.fswalker?8
+j.system.fswalker.find?4([- root
+, - recursive = True
+, - includeFolders = False
+, - pathRegexIncludes = ['.*']
+, - pathRegexExcludes = []
+, - contentRegexIncludes = []
+, - contentRegexExcludes = []
+, - depths = []
+])
+j.system.fswalker.walk?4([- root
+, - callback
+, - arg = ''
+, - recursive = True
+, - includeFolders = False
+, - pathRegexIncludes = ['.*']
+, - pathRegexExcludes = []
+, - contentRegexIncludes = []
+, - contentRegexExcludes = []
+, - depths = []
+, - followlinks = True
+])
+j.system.fswalker.walkFunctional?4([- root
+, - callbackFunctionFile
+, - callbackFunctionDir
+, - arg = ''
+, - callbackForMatchDir
+, - callbackForMatchFile
+])
+j.system.net?8
+j.system.net.bridgeExists?4([- bridgename
+])
+j.system.net.checkIpAddressIsLocal?4([- ipaddr
+])
+j.system.net.checkListenPort?4([- port
+])
+j.system.net.checkUrlReachable?4([- url
+])
+j.system.net.download?4([- url
+, - localpath
+, - username
+, - passwd
+])
+j.system.net.downloadIfNonExistent?4([- url
+, - destination_file_path
+, - md5_checksum
+, - http_auth_username
+, - http_auth_password
+])
+j.system.net.enableProxy?4([])
+j.system.net.getDefaultIPConfig?4([])
+j.system.net.getDefaultRouter?4([])
+j.system.net.getDomainName?4([])
+j.system.net.getHostByName?4([- dnsHostname
+])
+j.system.net.getHostNamesForIP?4([- hostsfile
+, - ip
+])
+j.system.net.getHostname?4([])
+j.system.net.getIpAddress?4([- interface
+])
+j.system.net.getIpAddresses?4([- up = False
+])
+j.system.net.getMacAddress?4([- interface
+])
+j.system.net.getMacAddressForIp?4([- ipaddress
+])
+j.system.net.getNameServer?4([])
+j.system.net.getNetworkInfo?4([])
+j.system.net.getNicType?4([- interface
+])
+j.system.net.getNics?4([- up = False
+])
+j.system.net.getReachableIpAddress?4([- ip
+, - port
+])
+j.system.net.getVlanTag?4([- interface
+, - nicType
+])
+j.system.net.getVlanTagFromInterface?4([- interface
+])
+j.system.net.isIpInHostsFile?4([- hostsfile
+, - ip
+])
+j.system.net.isIpLocal?4([- ipaddress
+])
+j.system.net.isNicConnected?4([- interface
+])
+j.system.net.pingMachine?4([- ip
+, - pingtimeout = 60
+, - recheck = False
+, - allowhostname = True
+])
+j.system.net.pm_formatMacAddress?4([- macaddress
+])
+j.system.net.removeFromHostsFile?4([- hostsfile
+, - ip
+])
+j.system.net.removeNetworkFromInterfaces?4([- network = '192.168.1'
+])
+j.system.net.resetDefaultGateway?4([- gw
+])
+j.system.net.setBasicNetConfiguration?4([- interface = 'eth0'
+, - ipaddr
+, - gw
+, - mask = 24
+, - config = True
+])
+j.system.net.setBasicNetConfigurationBridgePub?4([- interface
+, - ipaddr
+, - gw
+, - mask
+])
+j.system.net.setBasicNetConfigurationDHCP?4([- interface = 'eth0'
+])
+j.system.net.tcpPortConnectionTest?4([- ipaddr
+, - port
+, - timeout
+])
+j.system.net.updateHostsFile?4([- hostsfile
+, - ip
+, - hostname
+])
+j.system.net.validateIpAddress?4([- ipaddress
+])
+j.system.net.waitConnectionTest?4([- ipaddr
+, - port
+, - timeout
+])
+j.system.net.waitConnectionTestStopped?4([- ipaddr
+, - port
+, - timeout
+])
+j.system.platform?8
+j.system.platform.dhcp?8
+j.system.platform.psutil?8
+j.system.platform.ubuntu?8
+j.system.platform.ubuntu.addSourceUri?4([- url
+])
+j.system.platform.ubuntu.addUser2Group?4([- group
+, - user
+])
+j.system.platform.ubuntu.changeSourceUri?4([- newuri
+])
+j.system.platform.ubuntu.check?4([- die = True
+])
+j.system.platform.ubuntu.checkInstall?4([- packagenames
+, - cmdname
+])
+j.system.platform.ubuntu.checkroot?4([])
+j.system.platform.ubuntu.createGroup?4([- groupname
+])
+j.system.platform.ubuntu.createUser?4([- name
+, - passwd
+, - home
+, - creategroup = True
+, - deletefirst = False
+])
+j.system.platform.ubuntu.downloadInstallDebPkg?4([- url
+, - removeDownloaded = False
+, - minspeed = 20
+])
+j.system.platform.ubuntu.existsGroup?4([- name
+])
+j.system.platform.ubuntu.existsUser?4([- name
+])
+j.system.platform.ubuntu.find1packageInstalled?4([- packagename
+])
+j.system.platform.ubuntu.findPackagesInstalled?4([- packagename
+])
+j.system.platform.ubuntu.findPackagesRepo?4([- packagename
+])
+j.system.platform.ubuntu.generateLocalSSHKeyPair?4([- passphrase = ''
+, - type = 'rsa'
+, - overwrite = False
+, - path = '/root/.ssh/id_rsa'
+])
+j.system.platform.ubuntu.getPackage?4([- name
+])
+j.system.platform.ubuntu.getPackageNamesInstalled?4([])
+j.system.platform.ubuntu.getPackageNamesRepo?4([])
+j.system.platform.ubuntu.getVersion?4([])
+j.system.platform.ubuntu.initApt?4([])
+j.system.platform.ubuntu.install?4([- packagename
+])
+j.system.platform.ubuntu.installDebFile?4([- path
+, - installDeps = True
+])
+j.system.platform.ubuntu.installVersion?4([- packageName
+, - version
+])
+j.system.platform.ubuntu.installedPackageNames?8
+j.system.platform.ubuntu.listFilesPkg?4([- pkgname
+, - regex = ''
+])
+j.system.platform.ubuntu.listSources?4([])
+j.system.platform.ubuntu.remove?4([- packagename
+])
+j.system.platform.ubuntu.restartService?4([- servicename
+])
+j.system.platform.ubuntu.serviceDisableStartAtBoot?4([- servicename
+])
+j.system.platform.ubuntu.serviceEnableStartAtBoot?4([- servicename
+])
+j.system.platform.ubuntu.serviceInstall?4([- servicename
+, - daemonpath
+, - args = ''
+, - respawn = True
+, - pwd
+, - env
+, - reload = True
+])
+j.system.platform.ubuntu.serviceUninstall?4([- servicename
+])
+j.system.platform.ubuntu.startService?4([- servicename
+])
+j.system.platform.ubuntu.statusService?4([- servicename
+])
+j.system.platform.ubuntu.stopService?4([- servicename
+])
+j.system.platform.ubuntu.updatePackageMetadata?4([- force = True
+])
+j.system.platform.ubuntu.upgradePackages?4([- force = True
+])
+j.system.platform.ubuntu.whoami?4([])
+j.system.platform.diskmanager?8
+j.system.platform.diskmanager.diskGetFreeRegions?4([- disk
+, - align
+])
+j.system.platform.diskmanager.mirrorsFind?4([])
+j.system.platform.diskmanager.parted?8
+j.system.platform.diskmanager.partitionAdd?4([- disk
+, - free
+, - align
+, - length
+, - fs_type
+, - type
+])
+j.system.platform.diskmanager.partitionsFind?4([- mounted
+, - ttype
+, - ssd
+, - prefix = 'sd'
+, - minsize = 5
+, - maxsize = 5000
+, - devbusy
+, - initialize = False
+, - forceinitialize = False
+])
+j.system.platform.diskmanager.partitionsFind_Ext4Data?4([])
+j.system.platform.diskmanager.partitionsGetMounted_Ext4Data?4([])
+j.system.platform.diskmanager.partitionsMount_Ext4Data?4([])
+j.system.platform.diskmanager.partitionsUnmount_Ext4Data?4([])
+j.system.platform.screen?8
+j.system.platform.screen.attachSession?4([- sessionname
+, - windowname
+, - user
+])
+j.system.platform.screen.createSession?4([- sessionname
+, - screens
+, - user
+])
+j.system.platform.screen.createWindow?4([- session
+, - name
+, - user
+])
+j.system.platform.screen.executeInScreen?4([- sessionname
+, - screenname
+, - cmd
+, - wait = 0
+, - cwd
+, - env
+, - user = 'root'
+, - tmuxuser
+])
+j.system.platform.screen.getPid?4([- session
+, - name
+, - user
+])
+j.system.platform.screen.getSessions?4([- user
+])
+j.system.platform.screen.getWindows?4([- session
+, - attemps = 5
+, - user
+])
+j.system.platform.screen.killSession?4([- sessionname
+, - user
+])
+j.system.platform.screen.killSessions?4([- user
+])
+j.system.platform.screen.killWindow?4([- session
+, - name
+, - user
+])
+j.system.platform.screen.logWindow?4([- session
+, - name
+, - filename
+, - user
+])
+j.system.platform.screen.screencmd?8
+j.system.platform.screen.windowExists?4([- session
+, - name
+, - user
+])
+j.system.platform.nginx?8
+j.system.platform.nginx.get?4([- host
+, - password
+])
+j.system.platform.lxc?8
+j.system.platform.lxc.btrfsSubvolCopy?4([- nameFrom
+, - NameDest
+])
+j.system.platform.lxc.btrfsSubvolDelete?4([- name
+])
+j.system.platform.lxc.btrfsSubvolExists?4([- name
+])
+j.system.platform.lxc.btrfsSubvolList?4([])
+j.system.platform.lxc.btrfsSubvolNew?4([- name
+])
+j.system.platform.lxc.create?4([- name = ''
+, - stdout = True
+, - base = 'base'
+, - start = False
+, - nameserver = '8.8.8.8'
+, - replace = True
+])
+j.system.platform.lxc.destroy?4([- name
+])
+j.system.platform.lxc.destroyAll?4([])
+j.system.platform.lxc.execute?4([- command
+])
+j.system.platform.lxc.exportRsync?4([- name
+, - backupname
+, - key = 'pub'
+])
+j.system.platform.lxc.exportTgz?4([- name
+, - backupname
+])
+j.system.platform.lxc.getConfig?4([- name
+])
+j.system.platform.lxc.getIp?4([- name
+, - fail = True
+])
+j.system.platform.lxc.getPid?4([- name
+, - fail = True
+])
+j.system.platform.lxc.getProcessList?4([- name
+, - stdout = True
+])
+j.system.platform.lxc.importRsync?4([- backupname
+, - name
+, - basename = ''
+, - key = 'pub'
+])
+j.system.platform.lxc.importTgz?4([- backupname
+, - name
+])
+j.system.platform.lxc.list?4([])
+j.system.platform.lxc.networkSet?4([- machinename
+, - netname = 'pub0'
+, - pubips = []
+, - bridge = 'public'
+, - gateway
+])
+j.system.platform.lxc.networkSetPrivateVXLan?4([- name
+, - vxlanid
+, - ipaddresses
+])
+j.system.platform.lxc.pushSSHKey?4([- name
+])
+j.system.platform.lxc.removeRedundantFiles?4([- name
+])
+j.system.platform.lxc.setHostName?4([- name
+])
+j.system.platform.lxc.start?4([- name
+, - stdout = True
+, - test = True
+])
+j.system.platform.lxc.stop?4([- name
+])
+j.system.platform.shorewall?8
+j.system.platform.shorewall.get?4([- host
+, - password
+])
+j.system.platform.qemu_img?8
+j.system.platform.qemu_img.commit?4([- fileName
+, - diskImageFormat
+])
+j.system.platform.qemu_img.convert?4([- fileName
+, - diskImageFormat
+, - outputFileName
+, - outputFormat
+, - compressTargetImage = False
+, - encryptTargetImage = False
+, - useCompatibilityLevel6 = False
+, - isTargetImageTypeSCSI = False
+, - logger
+])
+j.system.platform.qemu_img.create?4([- fileName
+, - diskImageFormat
+, - size
+, - baseImage
+, - encryptTargetImage = False
+, - useCompatibilityLevel6 = False
+, - isTargetImageTypeSCSI = False
+])
+j.system.platform.qemu_img.info?4([- fileName
+, - diskImageFormat
+, - chain = False
+, - unit = 'K'
+])
+j.system.platformtype?8
+j.system.platformtype.addPlatform?4([- name
+, - parent
+])
+j.system.platformtype.checkMatch?4([- match
+])
+j.system.platformtype.dieIfNotPlatform?4([- platform
+])
+j.system.platformtype.getChildren?4([- name
+])
+j.system.platformtype.getMyRelevantPlatforms?4([])
+j.system.platformtype.getParents?4([- name
+])
+j.system.platformtype.getPlatforms?4([])
+j.system.platformtype.has_parent?4([- name
+])
+j.system.platformtype.isGeneric?4([])
+j.system.platformtype.isHyperV?4([])
+j.system.platformtype.isLinux?4([])
+j.system.platformtype.isUnix?4([])
+j.system.platformtype.isVirtualBox?4([])
+j.system.platformtype.isWindows?4([])
+j.system.platformtype.isXen?4([])
+j.system.platformtype.myplatform?8
+j.system.platformtype.platformParents?8
+j.system.process?8
+j.system.process.appCheckActive?4([- appname
+])
+j.system.process.appGetPids?4([- appname
+])
+j.system.process.appGetPidsActive?4([- appname
+])
+j.system.process.appNrInstances?4([- appname
+])
+j.system.process.appNrInstancesActive?4([- appname
+])
+j.system.process.appsGet?4([])
+j.system.process.appsGetNames?4([])
+j.system.process.checkProcessForPid?4([- pid
+, - process
+])
+j.system.process.checkProcessRunning?4([- process
+, - min = 1
+])
+j.system.process.checkstart?4([- cmd
+, - filterstr
+, - nrtimes = 1
+, - retry = 1
+])
+j.system.process.checkstop?4([- cmd
+, - filterstr
+, - retry = 1
+, - nrinstances = 0
+])
+j.system.process.execute?4([- command
+, - dieOnNonZeroExitCode = True
+, - outputToStdout = False
+, - useShell = False
+, - ignoreErrorOutput = False
+])
+j.system.process.executeAsync?4([- command
+, - args = []
+, - printCommandToStdout = False
+, - redirectStreams = True
+, - argsInCommand = False
+, - useShell
+, - outputToStdout = True
+])
+j.system.process.executeCode?4([- code
+, - params
+])
+j.system.process.executeInSandbox?4([- command
+, - timeout = 0
+])
+j.system.process.executeIndependant?4([- cmd
+])
+j.system.process.executeScript?4([- scriptName
+])
+j.system.process.executeWithoutPipe?4([- command
+, - dieOnNonZeroExitCode = True
+, - printCommandToStdout = False
+])
+j.system.process.getDefunctProcesses?4([])
+j.system.process.getEnviron?4([- pid
+])
+j.system.process.getMyProcessObject?4([])
+j.system.process.getPidsByFilter?4([- filterstr
+])
+j.system.process.getPidsByPort?4([- port
+])
+j.system.process.getProcessByPort?4([- port
+])
+j.system.process.getProcessObject?4([- pid
+])
+j.system.process.getProcessPid?4([- process
+])
+j.system.process.getProcessPidsFromUser?4([- user
+])
+j.system.process.getSimularProcesses?4([])
+j.system.process.isPidAlive?4([- pid
+])
+j.system.process.kill?4([- pid
+, - sig
+])
+j.system.process.killProcessByName?4([- name
+, - sig
+])
+j.system.process.killProcessByPort?4([- port
+])
+j.system.process.killUserProcesses?4([- user
+])
+j.system.process.run?4([- commandline
+, - showOutput = False
+, - captureOutput = True
+, - maxSeconds = 0
+, - stopOnError = True
+, - user
+, - group
+, - **kwargs
+])
+j.system.process.runDaemon?4([- commandline
+, - stdout
+, - stderr
+, - user
+, - group
+, - env
+])
+j.system.process.runScript?4([- script
+, - showOutput = False
+, - captureOutput = True
+, - maxSeconds = 0
+, - stopOnError = True
+])
+j.system.process.setEnvironmentVariable?4([- varnames
+, - varvalues
+])
+j.system.string?8
+j.system.string.decodeUnicode2Asci?4([- text
+])
+j.system.string.toolStripNonAsciFromText?4([- text
+])
+j.system.unix?8
+j.system.unix.addCronJob?4([- commandToExecute
+, - interval = 1
+, - logFilePath
+, - replaceLineIfCommandAlreadyInCrontab = True
+, - unit = 1
+])
+j.system.unix.addSystemGroup?4([- groupname
+])
+j.system.unix.addSystemUser?4([- username
+, - groupname
+, - shell = '/bin/bash'
+, - homedir
+])
+j.system.unix.addUserToGroup?4([- username
+, - groupname
+])
+j.system.unix.checkApplicationInstalled?4([- appname
+])
+j.system.unix.chmod?4([- root
+, - mode
+, - recurse = 0
+, - dirPattern = '*'
+, - filePattern = '*'
+, - dirs = True
+, - files = True
+])
+j.system.unix.chown?4([- path
+, - user
+, - group
+, - recursive = False
+])
+j.system.unix.chroot?4([- path
+])
+j.system.unix.daemonize?4([- chdir = '/'
+, - umask = 0
+])
+j.system.unix.disableUnixUser?4([- username
+])
+j.system.unix.enableUnixUser?4([- username
+])
+j.system.unix.executeAsUser?4([- command
+, - username
+, - **kwargs
+])
+j.system.unix.executeDaemonAsUser?4([- command
+, - username
+, - **kwargs
+])
+j.system.unix.getBashEnvFromFile?4([- file
+, - var
+])
+j.system.unix.getMachineInfo?4([])
+j.system.unix.killGroup?4([- pid
+])
+j.system.unix.removeUnixUser?4([- username
+, - removehome = False
+, - die = True
+])
+j.system.unix.setUnixUserPassword?4([- username
+, - password
+])
+j.system.unix.unixGroupExists?4([- groupname
+])
+j.system.unix.unixUserExists?4([- username
+])
+j.system.unix.unixUserIsInGroup?4([- username
+, - groupname
+])
+j.system.ovsnetconfig?8
+j.system.ovsnetconfig.PHYSMTU?7
+j.system.ovsnetconfig.applyconfig?4([- interfacenameToExclude
+, - backplanename
+])
+j.system.ovsnetconfig.configureStaticAddress?4([- interfacename = 'eth0'
+, - ipaddr = '192.168.10.10/24'
+, - gw
+])
+j.system.ovsnetconfig.createVXLanBridge?4([- networkid
+, - backend
+, - bridgename
+])
+j.system.ovsnetconfig.ensureVXNet?4([- networkid
+, - backend
+])
+j.system.ovsnetconfig.getConfigFromSystem?4([- reload = False
+])
+j.system.ovsnetconfig.getType?4([- interfaceName
+])
+j.system.ovsnetconfig.initNetworkInterfaces?4([])
+j.system.ovsnetconfig.newBondedBackplane?4([- name
+, - interfaces
+, - trunks
+])
+j.system.ovsnetconfig.newBridge?4([- name
+, - interface
+])
+j.system.ovsnetconfig.newVlanBridge?4([- name
+, - parentbridge
+, - vlanid
+, - mtu
+])
+j.system.ovsnetconfig.printConfigFromSystem?4([])
+j.system.ovsnetconfig.removeOldConfig?4([])
+j.system.ovsnetconfig.setBackplane?4([- interfacename = 'eth0'
+, - backplanename = 1
+, - ipaddr = '192.168.10.10/24'
+, - gw = ''
+])
+j.system.ovsnetconfig.setBackplaneDhcp?4([- interfacename = 'eth0'
+, - backplanename = 'Public'
+])
+j.system.ovsnetconfig.setBackplaneNoAddress?4([- interfacename = 'eth0'
+, - backplanename = 1
+])
+j.system.ovsnetconfig.setBackplaneNoAddressWithBond?4([- bondname
+, - bondinterfaces
+, - backplanename = 'backplane'
+])
+j.system.ovsnetconfig.setBackplaneWithBond?4([- bondname
+, - bondinterfaces
+, - backplanename = 'backplane'
+, - ipaddr = '192.168.10.10/24'
+, - gw = ''
+])
+j.system.stataggregator?8
+j.system.stataggregator.clean?4([])
+j.system.stataggregator.delete?4([- prefix
+])
+j.system.stataggregator.get?4([- key
+])
+j.system.stataggregator.getAvgMax?4([- key
+])
+j.system.stataggregator.getTime?4([])
+j.system.stataggregator.list?4([- prefix = ''
+, - memonly = False
+, - avgmax = False
+])
+j.system.stataggregator.loadStat?4([- key
+, - data
+])
+j.system.stataggregator.log?8
+j.system.stataggregator.registerStats?4([- key
+, - ttype = 'N'
+, - memonly = False
+, - percent = False
+])
+j.system.stataggregator.send2carbon?4([])
+j.system.stataggregator.send2log?4([- name
+, - key
+, - val
+])
+j.system.stataggregator.set?4([- key
+, - val
+, - ttype = 'N'
+, - remember = True
+, - memonly = False
+, - percent = False
+])
+j.system.stataggregator.stats?8
+j.system.stataggregator.stats.copy?4([])
+j.system.stataggregator.stats.iteritems?4([])
+j.system.stataggregator.stats.keys?4([])
+j.system.stataggregator.stats.pop?4([- key
+])
+j.system.btrfs?8
+j.system.btrfs.deviceAdd?4([- path
+, - dev
+])
+j.system.btrfs.deviceDelete?4([- dev
+, - path
+])
+j.system.btrfs.getSpaceUsage?4([- path
+])
+j.system.btrfs.snapshotReadOnlyCreate?4([- path
+, - dest
+])
+j.system.btrfs.subvolumeCreate?4([- path
+, - name
+])
+j.system.btrfs.subvolumeDelete?4([- path
+, - name
+])
+j.system.btrfs.subvolumeList?4([- path
+])
+j.system.netconfig?8
+j.system.netconfig.addIpToInterface?4([- dev
+, - ipaddr
+, - aliasnr = 1
+, - start = False
+])
+j.system.netconfig.enableInterface?4([- dev = 'eth0'
+, - start = False
+, - dhcp = True
+])
+j.system.netconfig.enableInterfaceBridge?4([- dev
+, - bridgedev
+, - start = False
+, - dhcp = True
+])
+j.system.netconfig.enableInterfaceBridgeDhcp?4([- dev
+, - bridgedev
+, - start = False
+])
+j.system.netconfig.enableInterfaceBridgeStatic?4([- dev
+, - ipaddr
+, - bridgedev
+, - gw
+, - start = False
+])
+j.system.netconfig.enableInterfaceStatic?4([- dev
+, - ipaddr
+, - gw
+, - start = False
+])
+j.system.netconfig.remove?4([- dev
+])
+j.system.netconfig.reset?4([- shutdown = False
+])
+j.system.netconfig.root?8
+j.system.netconfig.setHostname?4([- hostname
+])
+j.system.netconfig.setNameserver?4([- addr
+])
+j.system.netconfig.setRoot?4([- root
+])
+j.system.netconfig.shutdownNetwork?4([- excludes = []
+])
+j.system.redisstataggregator?8
+j.system.redisstataggregator.popStats?4([- key
+])
+j.system.redisstataggregator.pushStats?4([- key
+, - data
+])
+j.system.redisstataggregator.redis?8
+j.system.redisstataggregator.redis.RESPONSE_CALLBACKS?7
+j.tools?8
+j.tools.objectinspector?8
+j.tools.objectinspector.apiFileLocation?8
+j.tools.objectinspector.base?8
+j.tools.objectinspector.classDocs?8
+j.tools.objectinspector.dest?8
+j.tools.objectinspector.errors?8
+j.tools.objectinspector.generateDocs?4([- dest
+, - ignore = []
+])
+j.tools.objectinspector.importAllLibs?4([- ignore = []
+, - base = '/opt/jumpscale7/lib/JumpScale/'
+])
+j.tools.objectinspector.inspect?4([- objectLocationPath = 'j'
+, - recursive = True
+, - parent
+, - obj
+])
+j.tools.objectinspector.raiseError?4([- errormsg
+])
+j.tools.objectinspector.visited?8
+j.tools.objectinspector.writeDocs?4([- path
+])
+j.tools.text?8
+j.tools.text.addCmd?4([- out
+, - entity
+, - cmd
+])
+j.tools.text.addTimeHR?4([- line
+, - epoch
+, - start = 50
+])
+j.tools.text.addVal?4([- out
+, - name
+, - val
+, - addtimehr = False
+])
+j.tools.text.ask?4([- content
+, - name
+, - args = {}
+, - ask = True
+])
+j.tools.text.dealWithList?4([- text
+])
+j.tools.text.dealWithQuote?4([- text
+])
+j.tools.text.eval?4([- code
+])
+j.tools.text.getBool?4([- text
+])
+j.tools.text.getDict?4([- text
+, - ttype
+, - deserialize = False
+])
+j.tools.text.getFloat?4([- text
+])
+j.tools.text.getInt?4([- text
+])
+j.tools.text.getList?4([- text
+, - ttype
+, - deserialize = False
+])
+j.tools.text.getMacroCandidates?4([- txt
+])
+j.tools.text.hrd2machinetext?4([- value
+, - onlyone = False
+])
+j.tools.text.isFloat?4([- text
+])
+j.tools.text.isInt?4([- text
+])
+j.tools.text.isNumeric?4([- txt
+])
+j.tools.text.lstrip?4([- content
+])
+j.tools.text.machinetext2str?4([- value
+])
+j.tools.text.machinetext2val?4([- value
+])
+j.tools.text.prefix?4([- prefix
+, - txt
+])
+j.tools.text.prefix_remove?4([- prefix
+, - txt
+, - onlyPrefix = False
+])
+j.tools.text.prefix_remove_withtrailing?4([- prefix
+, - txt
+, - onlyPrefix = False
+])
+j.tools.text.pythonObjToStr?4([- obj
+, - multiline = True
+, - canBeDict = True
+, - partial = False
+])
+j.tools.text.pythonObjToStr1line?4([- obj
+])
+j.tools.text.replaceQuotes?4([- value
+, - replacewith
+])
+j.tools.text.str2var?4([- string
+])
+j.tools.text.toAscii?4([- value
+, - maxlen = 0
+])
+j.tools.text.toSafePath?4([- txt
+, - maxlen = 0
+])
+j.tools.text.toStr?4([- value
+, - codec = 'utf-8'
+])
+j.tools.text.toUnicode?4([- value
+, - codec = 'utf-8'
+])
+j.tools.units?8
+j.tools.units.bytes?8
+j.tools.units.bytes.converToBestUnit?4([- value
+, - input = ''
+])
+j.tools.units.bytes.toSize?4([- value
+, - input = ''
+, - output = 'K'
+])
+j.tools.units.sizes?8
+j.tools.units.sizes.converToBestUnit?4([- value
+, - input = ''
+])
+j.tools.units.sizes.toSize?4([- value
+, - input = ''
+, - output = 'K'
+])
+j.tools.docpreprocessor?8
+j.tools.docpreprocessor.generate?4([- preprocessorobject
+, - outpath = 'out'
+, - startDoc = 'Home'
+, - visibility = []
+, - reset = True
+, - outputdocname = ''
+, - format = 'preprocess'
+, - deepcopy = False
+])
+j.tools.docpreprocessor.generateFromDir?4([- path
+, - macrosPaths = []
+, - visibility = []
+, - cacheDir = ''
+])
+j.tools.docpreprocessor.get?4([- contentDirs = []
+, - varsPath = ''
+, - spacename = ''
+])
+j.tools.docpreprocessor.getMacroPath?4([])
+j.tools.swaggerGen?8
+j.tools.swaggerGen.client?8
+j.tools.swaggerGen.generate?4([- baseURL
+, - serverOuput
+, - clientOutput
+])
+j.tools.swaggerGen.generateActors?4([- destpath
+])
+j.tools.swaggerGen.generateClient?4([- outputPath
+])
+j.tools.swaggerGen.generateServer?4([- outputPath
+])
+j.tools.swaggerGen.jinjaEnv?8
+j.tools.swaggerGen.loadSpecFromFile?4([- path
+])
+j.tools.swaggerGen.loadSpecFromStr?4([- spec
+])
+j.tools.swaggerGen.server?8
+j.tools.swaggerGen.spec?8
+j.tools.sandboxer?8
+j.tools.sandboxer.copyLibsTo?4([- path
+, - dest
+, - recursive = False
+])
+j.tools.sandboxer.exclude?8
+j.tools.sandboxer.findLibs?4([- path
+])
+j.tools.telegrambot?8
+j.tools.telegrambot.TelegramBot.addDemoHandler?4([])
+j.tools.telegrambot.TelegramBot.addLogHandler?4([- path = '/tmp/chat.log'
+])
+j.tools.telegrambot.TelegramBot.api?8
+j.tools.telegrambot.TelegramBot.start?4([])
+j.tools.telegrambot.demo?4([])
+j.tools.telegrambot.demoMS1?4([])
+j.tools.telegrambot.get?4([- telegramkey = ''
+])
+j.tools.rsync?8
+j.tools.rsync.getClient?4([- name = ''
+, - addr = 'localhost'
+, - port = 873
+, - login = ''
+, - passwd = ''
+])
+j.tools.rsync.getClientSecret?4([- addr = 'localhost'
+, - port = 873
+, - secret = ''
+])
+j.tools.rsync.getServer?4([- root
+])
+j.tools.performancetrace?8
+j.tools.performancetrace.profile?4([- methodstatement
+, - locals = {}
+, - globals = {}
+])
+j.tools.sslSigning?8
+j.tools.sslSigning.bundle?4([- certificate
+, - key
+, - certification_chain = ()
+, - passphrase
+])
+j.tools.sslSigning.createCertificateSigningRequest?4([- common_name
+])
+j.tools.sslSigning.createSignedCert?4([- path
+, - keyname
+])
+j.tools.sslSigning.create_self_signed_ca_cert?4([- cert_dir
+])
+j.tools.sslSigning.signRequest?4([- req
+, - ca_cert
+, - ca_key
+])
+j.tools.ms1?8
+j.tools.ms1.get?4([- apiURL = 'www.mothership1.com'
+])
+j.tools.packInCode?8
+j.tools.packInCode.get4python?4([])
+j.tools.hash?8
+j.tools.hash.crc32?4([- path
+])
+j.tools.hash.crc32_string?4([- s
+])
+j.tools.hash.hashDir?4([- rootpath
+])
+j.tools.hash.md5?4([- path
+])
+j.tools.hash.md5_string?4([- s
+])
+j.tools.hash.sha1?4([- path
+])
+j.tools.hash.sha1_string?4([- s
+])
+j.tools.hash.sha256?4([- path
+])
+j.tools.hash.sha256_string?4([- s
+])
+j.tools.hash.sha512?4([- path
+])
+j.tools.hash.sha512_string?4([- s
+])
+j.tools.inifile?8
+j.tools.inifile.new?4([- filename
+])
+j.tools.inifile.open?4([- filename
+, - createIfNonExisting = True
+])
+j.tools.dnsman?8
+j.tools.dnsman.bind?8
+j.tools.dnsman.bind.addRecord?4([- domain
+, - host
+, - ip
+, - klass
+, - type
+, - ttl
+])
+j.tools.dnsman.bind.cleanCache?4([])
+j.tools.dnsman.bind.deleteHost?4([- host
+])
+j.tools.dnsman.bind.restart?4([])
+j.tools.dnsman.bind.start?4([])
+j.tools.dnsman.bind.stop?4([])
+j.tools.dnsman.bind.updateHostIp?4([- host
+, - ip
+])
+j.tools.dnsman.bindObj?8
+j.tools.testengine?8
+j.tools.testengine.initTests?4([- noOsis
+, - osisip = '127.0.0.1'
+, - login = ''
+, - passwd = ''
+])
+j.tools.testengine.outputpath?8
+j.tools.testengine.paths?8
+j.tools.testengine.runTests?4([- testrunname
+, - debug = False
+])
+j.tools.testengine.testFile?4([- testrunname
+, - filepath
+])
+j.tools.testengine.tests?8
+j.tools.docpreprocessorparser?8
+j.tools.docpreprocessorparser.addUniqueId?4([- line
+, - fullPath
+, - ttype = 'sprint'
+])
+j.tools.docpreprocessorparser.errorTrap?4([- msg
+])
+j.tools.docpreprocessorparser.parseDoc?4([- doc
+])
+j.tools.docpreprocessorparser.shortenDescr?4([- text
+, - maxnrchars = 60
+])
+j.tools.admin?8
+j.tools.admin.get?4([- path
+, - args
+, - failWhenNotExist = False
+])
+j.tools.dnsmasq?8
+j.tools.dnsmasq.addHost?4([- macaddress
+, - ipaddress
+, - name
+])
+j.tools.dnsmasq.addToStartupManager?4([])
+j.tools.dnsmasq.reload?4([])
+j.tools.dnsmasq.removeHost?4([- macaddress
+])
+j.tools.dnsmasq.restart?4([])
+j.tools.dnsmasq.setConfigPath?4([- namespace
+, - config_path
+])
+j.tools.imagelib?8
+j.tools.imagelib.imageObjectGet?4([- path
+])
+j.tools.imagelib.resize?4([- path
+, - pathnew
+, - width = 1024
+, - overwrite = True
+])
+j.tools.imagelib.resize2subdir1024x?4([- path
+, - overwrite = True
+])
+j.tools.imagelib.resize2subdir1600x?4([- path
+, - overwrite = True
+])
+j.tools.imagelib.resizeFullDir2subdir1024?4([- path
+])
+j.tools.docker?8
+j.tools.docker.basepath?8
+j.tools.docker.btrfsSubvolCopy?4([- nameFrom
+, - NameDest
+])
+j.tools.docker.btrfsSubvolDelete?4([- name
+])
+j.tools.docker.btrfsSubvolExists?4([- name
+])
+j.tools.docker.btrfsSubvolList?4([])
+j.tools.docker.btrfsSubvolNew?4([- name
+])
+j.tools.docker.client?8
+j.tools.docker.client.adapters?8
+j.tools.docker.client.api_version?8
+j.tools.docker.commit?4([- name
+, - imagename
+])
+j.tools.docker.copy?4([- name
+, - src
+, - dest
+])
+j.tools.docker.create?4([- name = ''
+, - ports = ''
+, - vols = ''
+, - volsro = ''
+, - stdout = True
+, - base = 'despiegk/mc'
+, - nameserver = ['8.8.8.8']
+, - replace = True
+, - cpu
+, - mem = 0
+, - jumpscale = False
+, - ssh = True
+, - myinit = True
+])
+j.tools.docker.destroy?4([- name
+])
+j.tools.docker.destroyall?4([])
+j.tools.docker.downloadFile?4([- name
+, - source
+, - dest
+])
+j.tools.docker.execute?4([- name
+, - path
+])
+j.tools.docker.exportRsync?4([- name
+, - backupname
+, - key = 'pub'
+])
+j.tools.docker.exportTgz?4([- name
+, - backupname
+])
+j.tools.docker.getImages?4([])
+j.tools.docker.getInfo?4([- name
+])
+j.tools.docker.getIp?4([- name
+])
+j.tools.docker.getProcessList?4([- name
+, - stdout = True
+])
+j.tools.docker.getPubPortForInternalPort?4([- name
+, - port
+])
+j.tools.docker.getSSH?4([- name
+, - stdout = False
+])
+j.tools.docker.importRsync?4([- backupname
+, - name
+, - basename = ''
+, - key = 'pub'
+])
+j.tools.docker.importTgz?4([- backupname
+, - name
+])
+j.tools.docker.inspect?4([- name
+])
+j.tools.docker.installJumpscale?4([- name
+])
+j.tools.docker.list?4([])
+j.tools.docker.ps?4([])
+j.tools.docker.pull?4([- imagename
+])
+j.tools.docker.pushSSHKey?4([- name
+])
+j.tools.docker.removeImages?4([- tag = '<none>:<none>'
+])
+j.tools.docker.removeRedundantFiles?4([- name
+])
+j.tools.docker.restart?4([- name
+])
+j.tools.docker.run?4([- name
+, - cmd
+])
+j.tools.docker.setHostName?4([- name
+])
+j.tools.docker.stop?4([- name
+])
+j.tools.docker.uploadFile?4([- name
+, - source
+, - dest
+])
+j.tools.docgenerator?8
+j.tools.docgenerator.convertConfluenceToRST?4([- src
+, - dest
+])
+j.tools.docgenerator.getConfluence2htmlConvertor?4([])
+j.tools.docgenerator.getConfluence2rstConvertor?4([])
+j.tools.docgenerator.getConfluenceClient?4([- url
+, - login
+, - passwd
+, - spacename
+, - erasespace = False
+, - erasepages = False
+])
+j.tools.docgenerator.getMacroPath?4([])
+j.tools.docgenerator.pageGroupNew?4([- pages = {}
+])
+j.tools.docgenerator.pageNewConfluence?4([- pagename
+, - parent = 'Home'
+])
+j.tools.docgenerator.pageNewHTML?4([- pagename
+, - htmllibPath
+])
+j.tools.docgenerator.pageNewRST?4([- pagename
+, - htmllibPath
+])
+j.tools.expect?8
+j.tools.expect.new?4([- cmd
+])
+j.code?8
+j.code.classEditGeany?4([- classs
+])
+j.code.classEditWing?4([- classs
+])
+j.code.classGetBase?4([])
+j.code.classGetJSModelBase?4([])
+j.code.classGetJSRootModelBase?4([])
+j.code.classInfoGet?4([- classs
+])
+j.code.classInfoPrint?4([- classs
+])
+j.code.deIndent?4([- content
+, - level = 1
+])
+j.code.dict2JSModelobject?4([- obj
+, - data
+])
+j.code.dict2object?4([- obj
+, - data
+])
+j.code.indent?4([- content
+, - level = 1
+])
+j.code.object2dict?4([- obj
+, - dieOnUnknown = False
+, - ignoreKeys = []
+, - ignoreUnderscoreKeys = False
+])
+j.code.object2dict4index?4([- obj
+])
+j.code.object2json?4([- obj
+, - pretty = False
+, - skiperrors = False
+, - ignoreKeys = []
+, - ignoreUnderscoreKeys = False
+])
+j.code.object2yaml?4([- obj
+])
+j.code.pprint?4([- obj
+])
+j.actions?8
+j.actions.clean?4([])
+j.actions.getActionNamesDone?4([- action
+])
+j.actions.hasRunningActions?4([])
+j.actions.reset?4([- category
+])
+j.actions.setActionNamesDone?4([- action
+])
+j.actions.start?4([- description = ''
+, - cmds = ''
+, - action
+, - actionRecover
+, - actionArgs = {}
+, - category = 'unknown'
+, - name = 'unknown'
+, - errorMessage = ''
+, - resolutionMessage = ''
+, - loglevel = 1
+, - die = True
+, - stdOutput = True
+, - errorOutput = True
+, - retry = 1
+, - serviceObj
+])
+j.html?8
+j.html.escape?4([- text
+])
+j.html.getHtmllibDir?4([])
+j.html.getPageModifierBootstrapForm?4([- page
+])
+j.html.getPageModifierGalleria?4([- page
+])
+j.html.getPageModifierGridDataTables?4([- page
+])
+j.html.unescape?4([- text
+])
+j.atyourservice?8
+j.atyourservice.domains?8
+j.atyourservice.findParents?4([- service
+, - name = ''
+, - path = ''
+, - limit
+])
+j.atyourservice.findProducer?4([- producercategory
+, - instancename
+])
+j.atyourservice.findServices?4([- domain = ''
+, - name = ''
+, - instance = ''
+, - parent
+, - precise = False
+])
+j.atyourservice.findTemplates?4([- domain = ''
+, - name = ''
+, - parent
+])
+j.atyourservice.get?4([- domain = ''
+, - name = ''
+, - instance = ''
+, - parent = ''
+, - precise = False
+])
+j.atyourservice.getActionsBaseClass?4([])
+j.atyourservice.getDomains?4([])
+j.atyourservice.getFromStr?4([- representation
+, - parent
+])
+j.atyourservice.getId?4([- domain
+, - name
+, - instance
+, - parent
+])
+j.atyourservice.hrd?8
+j.atyourservice.indocker?8
+j.atyourservice.loadService?4([- path
+, - parent
+])
+j.atyourservice.loadServicesInSQL?4([])
+j.atyourservice.new?4([- domain = ''
+, - name = ''
+, - instance = 'main'
+, - path
+, - parent
+, - args = {}
+])
+j.atyourservice.remove?4([- domain = ''
+, - name = ''
+, - instance = ''
+, - parent
+])
+j.atyourservice.type?8
+j.atyourservice.updateTemplatesRepo?4([- repos = []
+])
+j.codetools?8
+j.codetools.codemanager?8
+j.codetools.codemanager.getCodeManagerForFile?4([- path
+])
+j.codetools.codemanager.getUserId?4([- username
+])
+j.codetools.codemanager.groups?8
+j.codetools.codemanager.ignoreDirs?8
+j.codetools.codemanager.parse?4([- path
+])
+j.codetools.codemanager.setgroups?4([- config
+])
+j.codetools.codemanager.setusers?4([- config
+])
+j.codetools.codemanager.users?8
+j.codetools.executor?8
+j.codetools.executor.eval?4([- code
+])
+j.codetools.executor.evalFile?4([- path
+])
+j.codetools.getTextFileEditor?4([- filepath
+])
+j.codetools.getWordReplacerTool?4([])
+j.codetools.regex?8
+j.codetools.regex.extractBlocks?4([- text
+, - blockStartPatterns = ['.*']
+, - blockStartPatternsNegative = []
+, - blockStopPatterns = []
+, - blockStopPatternsNegative = []
+, - linesIncludePatterns = ['.*']
+, - linesExcludePatterns = []
+, - includeMatchingLine = True
+])
+j.codetools.regex.extractFirstFoundBlock?4([- text
+, - blockStartPatterns
+, - blockStartPatternsNegative = []
+, - blockStopPatterns = []
+, - blockStopPatternsNegative = []
+, - linesIncludePatterns = ['.*']
+, - linesExcludePatterns = []
+, - includeMatchingLine = True
+])
+j.codetools.regex.findAll?4([- pattern
+, - text
+, - flags = 0
+])
+j.codetools.regex.findHtmlBlock?4([- subject
+, - tofind
+, - path
+, - dieIfNotFound = True
+])
+j.codetools.regex.findHtmlElement?4([- subject
+, - tofind
+, - path
+, - dieIfNotFound = True
+])
+j.codetools.regex.findLine?4([- regex
+, - text
+])
+j.codetools.regex.findOne?4([- pattern
+, - text
+, - flags = 0
+])
+j.codetools.regex.getINIAlikeVariableFromText?4([- variableName
+, - text
+, - isArray = False
+])
+j.codetools.regex.getRegexMatch?4([- pattern
+, - text
+, - flags = 0
+])
+j.codetools.regex.getRegexMatches?4([- pattern
+, - text
+, - flags = 0
+])
+j.codetools.regex.match?4([- pattern
+, - text
+])
+j.codetools.regex.matchAllText?4([- pattern
+, - text
+])
+j.codetools.regex.matchMultiple?4([- patterns
+, - text
+])
+j.codetools.regex.processLines?4([- text
+, - includes = ''
+, - excludes = ''
+])
+j.codetools.regex.removeLines?4([- pattern
+, - text
+])
+j.codetools.regex.replace?4([- regexFind
+, - regexFindsubsetToReplace
+, - replaceWith
+, - text
+])
+j.codetools.regex.replaceLines?4([- replaceFunction
+, - arg
+, - text
+, - includes = ''
+, - excludes = ''
+])
+j.codetools.regex.templates?8
+j.codetools.regex.templates.lines?8
+j.codetools.regex.templates.lines.findClasslines?4([])
+j.codetools.regex.templates.lines.findCommentlines?4([])
+j.codetools.regex.templates.lines.findDeflines?4([])
+j.codetools.regex.yieldRegexMatches?4([- pattern
+, - text
+, - flags = 0
+])
+j.codetools.templateengine?8
+j.codetools.templateengine.new?4([])
+j.codetools.textToTitle?4([- text
+, - maxnrchars = 60
+])
