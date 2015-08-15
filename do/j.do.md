@@ -1,5 +1,8 @@
 ## j.do
 
+- [ ] write some articles
+- [x] drink a cup of tea
+
 - /opt/jumpscale7/lib/JumpScale/InstallTools.py
 - Properties
     - TMP
