@@ -2,15 +2,19 @@
 
 - /opt/jumpscale7/lib/JumpScale/baselib/serializers/SerializerDict.py
 
+### Methods
+
 #### dumps 
-- arguments
+##### arguments
+
     - obj
-- comments
-    
+
+##### comments
 
 #### loads 
-- arguments
+##### arguments
+
     - s
-- comments
-    
+
+##### comments
 

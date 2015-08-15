@@ -2,10 +2,13 @@
 
 - /opt/jumpscale7/lib/JumpScale/lib/shorewall/shorewall.py
 
+### Methods
+
 #### get 
-- arguments
+##### arguments
+
     - host
     - password
-- comments
-    
+
+##### comments
 

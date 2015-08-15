@@ -4,19 +4,23 @@
 - Properties
     - exclude
 
+### Methods
+
 sandbox any linux app
 
 #### copyLibsTo 
-- arguments
+##### arguments
+
     - path
     - dest
     - recursive = False
-- comments
-    
+
+##### comments
 
 #### findLibs 
-- arguments
+##### arguments
+
     - path
-- comments
-    
+
+##### comments
 

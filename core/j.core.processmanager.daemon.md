@@ -4,10 +4,13 @@
 - Properties
     - cmdsInterfaces
 
+### Methods
+
 #### addCMDsInterface 
-- arguments
+##### arguments
+
     - cmdInterfaceClass
     - category
-- comments
-    
+
+##### comments
 

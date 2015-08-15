@@ -2,46 +2,61 @@
 
 - /opt/jumpscale7/lib/JumpScale/lib/ssh/aoe/manager.py
 
+### Methods
+
 #### create 
-- arguments
+##### arguments
+
     - storpath
     - size = 10
-- comments
-    Create and vdisk
-    
-    :storpath: is the full image path.
-    :size: size in GB
+
+##### comments
+
+Create and vdisk
+
+:storpath: is the full image path.
+:size: size in GB
 
 #### delete 
-- arguments
+##### arguments
+
     - path
-- comments
-    
+
+##### comments
 
 #### expose 
-- arguments
+##### arguments
+
     - storage
     - major
     - minor
     - inf
-- comments
-    Expose the given image on major:minor and interface
-    
-    :storage: the image path or vdisk
-    :major: Major number (shelf)
-    :minor: Minor number (slot)
-    :inf: Network interface
+
+##### comments
+
+Expose the given image on major:minor and interface
+
+:storage: the image path or vdisk
+:major: Major number (shelf)
+:minor: Minor number (slot)
+:inf: Network interface
 
 #### list 
-- arguments
+##### arguments
+
     - storpath = '/mnt/disktargets/'
-- comments
-    List all vdisks under this location.
-    Note that all files in that directory are assumed to be valid images
+
+##### comments
+
+List all vdisks under this location.
+Note that all files in that directory are assumed to be valid images
 
 #### unexpose 
-- arguments
+##### arguments
+
     - storage
-- comments
-    Unexpose the storage
+
+##### comments
+
+Unexpose the storage
 

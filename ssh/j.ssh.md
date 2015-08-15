@@ -5,13 +5,16 @@
     - connection
     - connect
 
+### Methods
+
 #### connect 
-- arguments
+##### arguments
+
     - addr = 'localhost'
     - port = 22
     - passwd
     - verbose = True
     - keypath
-- comments
-    
+
+##### comments
 

@@ -12,29 +12,33 @@
     - consolelogCategories
     - maxlevel
 
+### Methods
+
 #### connectRedis 
-- arguments
-- comments
-    
+##### arguments
+
+##### comments
 
 #### disable 
-- arguments
-- comments
-    
+##### arguments
+
+##### comments
 
 #### getLogObjectFromDict 
-- arguments
+##### arguments
+
     - ddict
-- comments
-    
+
+##### comments
 
 #### init 
-- arguments
-- comments
-    
+##### arguments
+
+##### comments
 
 #### log 
-- arguments
+##### arguments
+
     - message
     - level = 5
     - category = ''
@@ -43,22 +47,27 @@
     - parentjid = ''
     - masterjid = ''
     - private = False
-- comments
-    send to all log targets
+
+##### comments
+
+send to all log targets
 
 #### nologger 
-- arguments
+##### arguments
+
     - func
-- comments
-    Decorator to disable logging for a specific method (probably not thread safe)
+
+##### comments
+
+Decorator to disable logging for a specific method (probably not thread safe)
 
 #### nostdout 
-- arguments
-- comments
-    
+##### arguments
+
+##### comments
 
 #### reset 
-- arguments
-- comments
-    
+##### arguments
+
+##### comments
 

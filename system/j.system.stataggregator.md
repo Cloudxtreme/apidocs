@@ -5,79 +5,91 @@
     - stats
     - log
 
+### Methods
+
 #### clean 
-- arguments
-- comments
-    
+##### arguments
+
+##### comments
 
 #### delete 
-- arguments
+##### arguments
+
     - prefix
-- comments
-    
+
+##### comments
 
 #### get 
-- arguments
+##### arguments
+
     - key
-- comments
-    
+
+##### comments
 
 #### getAvgMax 
-- arguments
+##### arguments
+
     - key
-- comments
-    
+
+##### comments
 
 #### getTime 
-- arguments
-- comments
-    
+##### arguments
+
+##### comments
 
 #### list 
-- arguments
+##### arguments
+
     - prefix = ''
     - memonly = False
     - avgmax = False
-- comments
-    
+
+##### comments
 
 #### loadStat 
-- arguments
+##### arguments
+
     - key
     - data
-- comments
-    
+
+##### comments
 
 #### registerStats 
-- arguments
+##### arguments
+
     - key
     - ttype = 'N'
     - memonly = False
     - percent = False
-- comments
-    type is N or D (D from diff)
+
+##### comments
+
+type is N or D (D from diff)
 
 #### send2carbon 
-- arguments
-- comments
-    
+##### arguments
+
+##### comments
 
 #### send2log 
-- arguments
+##### arguments
+
     - name
     - key
     - val
-- comments
-    
+
+##### comments
 
 #### set 
-- arguments
+##### arguments
+
     - key
     - val
     - ttype = 'N'
     - remember = True
     - memonly = False
     - percent = False
-- comments
-    
+
+##### comments
 

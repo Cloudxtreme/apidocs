@@ -2,176 +2,208 @@
 
 - /opt/jumpscale7/lib/JumpScale/lib/lxc/Lxc.py
 
+### Methods
+
 #### btrfsSubvolCopy 
-- arguments
+##### arguments
+
     - nameFrom
     - NameDest
-- comments
-    
+
+##### comments
 
 #### btrfsSubvolDelete 
-- arguments
+##### arguments
+
     - name
-- comments
-    
+
+##### comments
 
 #### btrfsSubvolExists 
-- arguments
+##### arguments
+
     - name
-- comments
-    
+
+##### comments
 
 #### btrfsSubvolList 
-- arguments
-- comments
-    
+##### arguments
+
+##### comments
 
 #### btrfsSubvolNew 
-- arguments
+##### arguments
+
     - name
-- comments
-    
+
+##### comments
 
 #### create 
-- arguments
+##### arguments
+
     - name = ''
     - stdout = True
     - base = 'base'
     - start = False
     - nameserver = '8.8.8.8'
     - replace = True
-- comments
-    @param name if "" then will be an incremental nr
+
+##### comments
+
+@param name if "" then will be an incremental nr
 
 #### destroy 
-- arguments
+##### arguments
+
     - name
-- comments
-    
+
+##### comments
 
 #### destroyAll 
-- arguments
-- comments
-    
+##### arguments
+
+##### comments
 
 #### execute 
-- arguments
+##### arguments
+
     - command
-- comments
-    
+
+##### comments
 
 #### exportRsync 
-- arguments
+##### arguments
+
     - name
     - backupname
     - key = 'pub'
-- comments
-    
+
+##### comments
 
 #### exportTgz 
-- arguments
+##### arguments
+
     - name
     - backupname
-- comments
-    
+
+##### comments
 
 #### getConfig 
-- arguments
+##### arguments
+
     - name
-- comments
-    
+
+##### comments
 
 #### getIp 
-- arguments
+##### arguments
+
     - name
     - fail = True
-- comments
-    
+
+##### comments
 
 #### getPid 
-- arguments
+##### arguments
+
     - name
     - fail = True
-- comments
-    
+
+##### comments
 
 #### getProcessList 
-- arguments
+##### arguments
+
     - name
     - stdout = True
-- comments
-    @return [["$name",$pid,$mem,$parent],....,[$mem,$cpu]]
-    last one is sum of mem & cpu
+
+##### comments
+
+@return [["$name",$pid,$mem,$parent],....,[$mem,$cpu]]
+last one is sum of mem & cpu
 
 #### importRsync 
-- arguments
+##### arguments
+
     - backupname
     - name
     - basename = ''
     - key = 'pub'
-- comments
-    @param basename is the name of a start of a machine locally, will be used as basis and then the source will be synced over it
+
+##### comments
+
+@param basename is the name of a start of a machine locally, will be used as basis and then the source will be synced over it
 
 #### importTgz 
-- arguments
+##### arguments
+
     - backupname
     - name
-- comments
-    
+
+##### comments
 
 #### list 
-- arguments
-- comments
-    names of running & stopped machines
-    @return (running,stopped)
+##### arguments
+
+##### comments
+
+names of running & stopped machines
+@return (running,stopped)
 
 #### networkSet 
-- arguments
+##### arguments
+
     - machinename
     - netname = 'pub0'
     - pubips = []
     - bridge = 'public'
     - gateway
-- comments
-    
+
+##### comments
 
 #### networkSetPrivateVXLan 
-- arguments
+##### arguments
+
     - name
     - vxlanid
     - ipaddresses
-- comments
-    
+
+##### comments
 
 #### pushSSHKey 
-- arguments
+##### arguments
+
     - name
-- comments
-    
+
+##### comments
 
 #### removeRedundantFiles 
-- arguments
+##### arguments
+
     - name
-- comments
-    
+
+##### comments
 
 #### setHostName 
-- arguments
+##### arguments
+
     - name
-- comments
-    
+
+##### comments
 
 #### start 
-- arguments
+##### arguments
+
     - name
     - stdout = True
     - test = True
-- comments
-    
+
+##### comments
 
 #### stop 
-- arguments
+##### arguments
+
     - name
-- comments
-    
+
+##### comments
 

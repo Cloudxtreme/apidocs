@@ -2,8 +2,11 @@
 
 - /opt/jumpscale7/lib/JumpScale/lib/whmcs/WhmcsFactory.py
 
+### Methods
+
 #### get 
-- arguments
+##### arguments
+
     - username = ''
     - md5_password = ''
     - accesskey = ''
@@ -12,19 +15,20 @@
     - operations_user_id = ''
     - operations_department_id = ''
     - instance = 'main'
-- comments
-    
+
+##### comments
 
 #### getDummy 
-- arguments
-- comments
-    
+##### arguments
+
+##### comments
 
 #### log 
-- arguments
+##### arguments
+
     - msg
     - category = ''
     - level = 5
-- comments
-    
+
+##### comments
 

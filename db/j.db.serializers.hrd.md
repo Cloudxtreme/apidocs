@@ -2,16 +2,20 @@
 
 - /opt/jumpscale7/lib/JumpScale/baselib/serializers/SerializerHRD.py
 
+### Methods
+
 #### dumps 
-- arguments
+##### arguments
+
     - data
     - prepend = ''
-- comments
-    
+
+##### comments
 
 #### loads 
-- arguments
+##### arguments
+
     - data
-- comments
-    
+
+##### comments
 

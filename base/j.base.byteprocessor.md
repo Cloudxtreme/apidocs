@@ -12,62 +12,74 @@
     - hashMd5
     - getDispersedBlockObject
 
+### Methods
+
 ByteProcessor
 
 #### compress 
-- arguments
+##### arguments
+
     - s
-- comments
-    
+
+##### comments
 
 #### decompress 
-- arguments
+##### arguments
+
     - s
-- comments
-    
+
+##### comments
 
 #### disperse 
-- arguments
+##### arguments
+
     - s
     - nrblocks
     - extrablocks
     - compress = True
-- comments
-    returns DispersedBlock object
+
+##### comments
+
+returns DispersedBlock object
 
 #### getDispersedBlockObject 
-- arguments
-- comments
-    
+##### arguments
+
+##### comments
 
 #### hashMd5 
-- arguments
+##### arguments
+
     - s
-- comments
-    
+
+##### comments
 
 #### hashTiger160 
-- arguments
+##### arguments
+
     - s
-- comments
-    
+
+##### comments
 
 #### hashTiger160bin 
-- arguments
+##### arguments
+
     - s
-- comments
-    
+
+##### comments
 
 #### hashTiger192 
-- arguments
+##### arguments
+
     - s
-- comments
-    
+
+##### comments
 
 #### undisperse 
-- arguments
+##### arguments
+
     - dispersedBlockObject
     - uncompress = True
-- comments
-    
+
+##### comments
 

@@ -2,29 +2,34 @@
 
 - /opt/jumpscale7/lib/JumpScale/baselib/rsync/RsyncFactory.py
 
+### Methods
+
     
 
 #### getClient 
-- arguments
+##### arguments
+
     - name = ''
     - addr = 'localhost'
     - port = 873
     - login = ''
     - passwd = ''
-- comments
-    
+
+##### comments
 
 #### getClientSecret 
-- arguments
+##### arguments
+
     - addr = 'localhost'
     - port = 873
     - secret = ''
-- comments
-    
+
+##### comments
 
 #### getServer 
-- arguments
+##### arguments
+
     - root
-- comments
-    
+
+##### comments
 

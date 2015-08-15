@@ -2,15 +2,19 @@
 
 - /opt/jumpscale7/lib/JumpScale/core/system/string.py
 
+### Methods
+
 #### decodeUnicode2Asci 
-- arguments
+##### arguments
+
     - text
-- comments
-    
+
+##### comments
 
 #### toolStripNonAsciFromText 
-- arguments
+##### arguments
+
     - text
-- comments
-    
+
+##### comments
 

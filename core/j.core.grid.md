@@ -8,20 +8,23 @@
     - config
     - id
 
+### Methods
+
 #### getLocalIPAccessibleByGridMaster 
-- arguments
-- comments
-    
+##### arguments
+
+##### comments
 
 #### init 
-- arguments
+##### arguments
+
     - description = ''
     - instance = 1
-- comments
-    
+
+##### comments
 
 #### isGridMasterLocal 
-- arguments
-- comments
-    
+##### arguments
+
+##### comments
 

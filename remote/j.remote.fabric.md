@@ -4,27 +4,34 @@
 - Properties
     - api
 
+### Methods
+
 #### help 
-- arguments
-- comments
-    
+##### arguments
+
+##### comments
 
 #### setDefaultPasswd 
-- arguments
+##### arguments
+
     - passwd
     - host = 'localhost'
-- comments
-    
+
+##### comments
 
 #### setHost 
-- arguments
+##### arguments
+
     - host = 'localhost'
-- comments
-    
+
+##### comments
 
 #### setHosts 
-- arguments
+##### arguments
+
     - hosts = ['localhost']
-- comments
-    list of hosts on which the commands will work
+
+##### comments
+
+list of hosts on which the commands will work
 

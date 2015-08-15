@@ -2,9 +2,14 @@
 
 - /opt/jumpscale7/lib/JumpScale/lib/ssh/ubuntu/manager.py
 
+### Methods
+
 #### get 
-- arguments
+##### arguments
+
     - connection
-- comments
-    Returns Ubuntu Manager
+
+##### comments
+
+Returns Ubuntu Manager
 

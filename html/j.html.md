@@ -2,38 +2,45 @@
 
 - /opt/jumpscale7/lib/JumpScale/portal/html/HtmlFactory.py
 
+### Methods
+
 #### escape 
-- arguments
+##### arguments
+
     - text
-- comments
-    
+
+##### comments
 
 #### getHtmllibDir 
-- arguments
-- comments
-    
+##### arguments
+
+##### comments
 
 #### getPageModifierBootstrapForm 
-- arguments
+##### arguments
+
     - page
-- comments
-    
+
+##### comments
 
 #### getPageModifierGalleria 
-- arguments
+##### arguments
+
     - page
-- comments
-    
+
+##### comments
 
 #### getPageModifierGridDataTables 
-- arguments
+##### arguments
+
     - page
-- comments
-    
+
+##### comments
 
 #### unescape 
-- arguments
+##### arguments
+
     - text
-- comments
-    
+
+##### comments
 

@@ -5,15 +5,21 @@
     - loglevel
     - logenable
 
+### Methods
+
 #### changeDir 
-- arguments
+##### arguments
+
     - path
-- comments
-    Changes Current Directory
-    @param path: string (Directory path to be changed to)
+
+##### comments
+
+Changes Current Directory
+@param path: string (Directory path to be changed to)
 
 #### changeFileNames 
-- arguments
+##### arguments
+
     - toReplace
     - replaceWith
     - pathToSearchIn
@@ -21,77 +27,98 @@
     - filter
     - minmtime
     - maxmtime
-- comments
-    @param toReplace e.g. \{name\}
-    @param replace with e.g. "jumpscale"
+
+##### comments
+
+@param toReplace e.g. \{name\}
+@param replace with e.g. "jumpscale"
 
 #### checkDirOrLink 
-- arguments
+##### arguments
+
     - fullpath
-- comments
-    check if path is dir or link to a dir
+
+##### comments
+
+check if path is dir or link to a dir
 
 #### checkDirOrLinkToDir 
-- arguments
+##### arguments
+
     - fullpath
-- comments
-    check if path is dir or link to a dir
+
+##### comments
+
+check if path is dir or link to a dir
 
 #### checkDirParam 
-- arguments
+##### arguments
+
     - path
-- comments
-    
+
+##### comments
 
 #### chmod 
-- arguments
+##### arguments
+
     - path
     - permissions
-- comments
-    @param permissions e.g. 0o660 (USE OCTAL !!!)
+
+##### comments
+
+@param permissions e.g. 0o660 (USE OCTAL !!!)
 
 #### chown 
-- arguments
+##### arguments
+
     - path
     - user
-- comments
-    
+
+##### comments
 
 #### cleanupString 
-- arguments
+##### arguments
+
     - string
     - replacewith = '_'
     - regex = '([^A-Za-z0-9])'
-- comments
-    Remove all non-numeric or alphanumeric characters
+
+##### comments
+
+Remove all non-numeric or alphanumeric characters
 
 #### constructDirPathFromArray 
-- arguments
+##### arguments
+
     - array
-- comments
-    
+
+##### comments
 
 #### constructFilePathFromArray 
-- arguments
+##### arguments
+
     - array
-- comments
-    
+
+##### comments
 
 #### convertFileDirnamesSpaceToUnderscore 
-- arguments
+##### arguments
+
     - rootdir
-- comments
-    
+
+##### comments
 
 #### convertFileDirnamesUnicodeToAscii 
-- arguments
+##### arguments
+
     - rootdir
     - spacesToUnderscore = False
-- comments
-    
+
+##### comments
 
 #### copyDirTree 
-- arguments
+##### arguments
+
     - src
     - dst
     - keepsymlinks = False
@@ -99,338 +126,433 @@
     - skipProtectedDirs = False
     - overwriteFiles = True
     - applyHrdOnDestPaths
-- comments
-    Recursively copy an entire directory tree rooted at src.
-    The dst directory may already exist; if not,
-    it will be created as well as missing parent directories
-    @param src: string (source of directory tree to be copied)
-    @param dst: string (path directory to be copied to...should not already exist)
-    @param keepsymlinks: bool (True keeps symlinks instead of copying the content of the file)
-    @param eraseDestination: bool (Set to True if you want to erase destination first, be carefull, this can erase directories)
-    @param overwriteFiles: if True will overwrite files, otherwise will not overwrite when destination exists
+
+##### comments
+
+Recursively copy an entire directory tree rooted at src.
+The dst directory may already exist; if not,
+it will be created as well as missing parent directories
+@param src: string (source of directory tree to be copied)
+@param dst: string (path directory to be copied to...should not already exist)
+@param keepsymlinks: bool (True keeps symlinks instead of copying the content of the file)
+@param eraseDestination: bool (Set to True if you want to erase destination first, be carefull, this can erase directories)
+@param overwriteFiles: if True will overwrite files, otherwise will not overwrite when destination exists
 
 #### copyFile 
-- arguments
+##### arguments
+
     - fileFrom
     - to
     - createDirIfNeeded = False
     - skipProtectedDirs = False
     - overwriteFile = True
-- comments
-    Copy file
-    
-    Copies the file from C\{fileFrom\} to the file or directory C\{to\}.
-    If C\{to\} is a directory, a file with the same basename as C\{fileFrom\} is
-    created (or overwritten) in the directory specified.
-    Permission bits are copied.
-    
-    @param fileFrom: Source file path name
-    @type fileFrom: string
-    @param to: Destination file or folder path name
-    @type to: string
+
+##### comments
+
+Copy file
+
+Copies the file from C\{fileFrom\} to the file or directory C\{to\}.
+If C\{to\} is a directory, a file with the same basename as C\{fileFrom\} is
+created (or overwritten) in the directory specified.
+Permission bits are copied.
+
+@param fileFrom: Source file path name
+@type fileFrom: string
+@param to: Destination file or folder path name
+@type to: string
 
 #### createDir 
-- arguments
+##### arguments
+
     - newdir
     - skipProtectedDirs = False
-- comments
-    Create new Directory
-    @param newdir: string (Directory path/name)
-    if newdir was only given as a directory name, the new directory will be created on the default path,
-    if newdir was given as a complete path with the directory name, the new directory will be created in the specified path
+
+##### comments
+
+Create new Directory
+@param newdir: string (Directory path/name)
+if newdir was only given as a directory name, the new directory will be created on the default path,
+if newdir was given as a complete path with the directory name, the new directory will be created in the specified path
 
 #### createEmptyFile 
-- arguments
+##### arguments
+
     - filename
-- comments
-    Create an empty file
-    @param filename: string (file path name to be created)
+
+##### comments
+
+Create an empty file
+@param filename: string (file path name to be created)
 
 #### dirEqual 
-- arguments
+##### arguments
+
     - path1
     - path2
-- comments
-    
+
+##### comments
 
 #### exists 
-- arguments
+##### arguments
+
     - path
     - followlinks = True
-- comments
-    Check if the specified path exists
-    @param path: string
-    @rtype: boolean (True if path refers to an existing path)
+
+##### comments
+
+Check if the specified path exists
+@param path: string
+@rtype: boolean (True if path refers to an existing path)
 
 #### fileConvertLineEndingCRLF 
-- arguments
+##### arguments
+
     - file
-- comments
-    Convert CRLF line-endings in a file to LF-only endings (
-     -> 
-    )
-    
-            @param file: File to convert
-            @type file: string
+
+##### comments
+
+Convert CRLF line-endings in a file to LF-only endings (
+ -> 
+)
+
+        @param file: File to convert
+        @type file: string
 
 #### fileGetContents 
-- arguments
+##### arguments
+
     - filename
-- comments
-    Read a file and get contents of that file
-    @param filename: string (filename to open for reading )
-    @rtype: string representing the file contents
+
+##### comments
+
+Read a file and get contents of that file
+@param filename: string (filename to open for reading )
+@rtype: string representing the file contents
 
 #### fileGetTextContents 
-- arguments
+##### arguments
+
     - filename
-- comments
-    Read a UTF-8 file and get contents of that file. Takes care of the [BOM](http://en.wikipedia.org/wiki/Byte_order_mark)
-    @param filename: string (filename to open for reading)
-    @rtype: string representing the file contents
+
+##### comments
+
+Read a UTF-8 file and get contents of that file. Takes care of the [BOM](http://en.wikipedia.org/wiki/Byte_order_mark)
+@param filename: string (filename to open for reading)
+@rtype: string representing the file contents
 
 #### fileGetUncommentedContents 
-- arguments
+##### arguments
+
     - filename
-- comments
-    Read a file and get uncommented contents of that file
-    @param filename: string (filename to open for reading )
-    @rtype: list of lines of uncommented file contents
+
+##### comments
+
+Read a file and get uncommented contents of that file
+@param filename: string (filename to open for reading )
+@rtype: list of lines of uncommented file contents
 
 #### fileSize 
-- arguments
+##### arguments
+
     - filename
-- comments
-    Get Filesize of file in bytes
-    @param filename: the file u want to know the filesize of
-    @return: int representing file size
+
+##### comments
+
+Get Filesize of file in bytes
+@param filename: the file u want to know the filesize of
+@return: int representing file size
 
 #### find 
-- arguments
+##### arguments
+
     - startDir
     - fileregex
-- comments
-    Search for files or folders matching a given pattern
-    this is a very weard function, don't use is better to use the list functions
-    make sure you do changedir to the starting dir first
-    example: find("*.pyc")
-    @param fileregex: The regex pattern to match
-    @type fileregex: string
+
+##### comments
+
+Search for files or folders matching a given pattern
+this is a very weard function, don't use is better to use the list functions
+make sure you do changedir to the starting dir first
+example: find("*.pyc")
+@param fileregex: The regex pattern to match
+@type fileregex: string
 
 #### getBaseName 
-- arguments
+##### arguments
+
     - path
-- comments
-    Return the base name of pathname path.
+
+##### comments
+
+Return the base name of pathname path.
 
 #### getDirName 
-- arguments
+##### arguments
+
     - path
     - lastOnly = False
     - levelsUp
-- comments
-    Return a directory name from pathname path.
-    @param path the path to find a directory within
-    @param lastOnly means only the last part of the path which is a dir (overrides levelsUp to 0)
-    @param levelsUp means, return the parent dir levelsUp levels up
-     e.g. ...getDirName("/opt/qbase/bin/something/test.py", levelsUp=0) would return something
-     e.g. ...getDirName("/opt/qbase/bin/something/test.py", levelsUp=1) would return bin
-     e.g. ...getDirName("/opt/qbase/bin/something/test.py", levelsUp=10) would raise an error
+
+##### comments
+
+Return a directory name from pathname path.
+@param path the path to find a directory within
+@param lastOnly means only the last part of the path which is a dir (overrides levelsUp to 0)
+@param levelsUp means, return the parent dir levelsUp levels up
+ e.g. ...getDirName("/opt/qbase/bin/something/test.py", levelsUp=0) would return something
+ e.g. ...getDirName("/opt/qbase/bin/something/test.py", levelsUp=1) would return bin
+ e.g. ...getDirName("/opt/qbase/bin/something/test.py", levelsUp=10) would raise an error
 
 #### getFileExtension 
-- arguments
+##### arguments
+
     - path
-- comments
-    
+
+##### comments
 
 #### getFolderMD5sum 
-- arguments
+##### arguments
+
     - folder
-- comments
-    
+
+##### comments
 
 #### getParent 
-- arguments
+##### arguments
+
     - path
-- comments
-    Returns the parent of the path:
-    /dir1/dir2/file_or_dir -> /dir1/dir2/
-    /dir1/dir2/            -> /dir1/
-    @todo why do we have 2 implementations which are almost the same see getParentDirName()
+
+##### comments
+
+Returns the parent of the path:
+/dir1/dir2/file_or_dir -> /dir1/dir2/
+/dir1/dir2/            -> /dir1/
+@todo why do we have 2 implementations which are almost the same see getParentDirName()
 
 #### getParentDirName 
-- arguments
+##### arguments
+
     - path
-- comments
-    returns parent of path (only for dirs)
-    returns empty string when there is no parent
+
+##### comments
+
+returns parent of path (only for dirs)
+returns empty string when there is no parent
 
 #### getTempFileName 
-- arguments
+##### arguments
+
     - dir
     - prefix = ''
-- comments
-    Generates a temp file for the directory specified
-    @param dir: Directory to generate the temp file
-    @param prefix: string to start the generated name with
-    @rtype: string representing the generated temp file path
+
+##### comments
+
+Generates a temp file for the directory specified
+@param dir: Directory to generate the temp file
+@param prefix: string to start the generated name with
+@rtype: string representing the generated temp file path
 
 #### getTmpDirPath 
-- arguments
-- comments
-    create a tmp dir name and makes sure the dir exists
+##### arguments
+
+##### comments
+
+create a tmp dir name and makes sure the dir exists
 
 #### getTmpFilePath 
-- arguments
+##### arguments
+
     - cygwin = False
-- comments
-    Generate a temp file path
-    Located in temp dir of qbase
-    @rtype: string representing the path of the temp file generated
+
+##### comments
+
+Generate a temp file path
+Located in temp dir of qbase
+@rtype: string representing the path of the temp file generated
 
 #### getcwd 
-- arguments
-- comments
-    get current working directory
-    @rtype: string (current working directory path)
+##### arguments
+
+##### comments
+
+get current working directory
+@rtype: string (current working directory path)
 
 #### grep 
-- arguments
+##### arguments
+
     - fileregex
     - lineregex
-- comments
-    Search for lines matching a given regex in all files matching a regex
-    
-    @param fileregex: Files to search in
-    @type fileregex: string
-    @param lineregex: Regex pattern to search for in each file
-    @type lineregex: string
+
+##### comments
+
+Search for lines matching a given regex in all files matching a regex
+
+@param fileregex: Files to search in
+@type fileregex: string
+@param lineregex: Regex pattern to search for in each file
+@type lineregex: string
 
 #### gunzip 
-- arguments
+##### arguments
+
     - sourceFile
     - destFile
-- comments
-    
+
+##### comments
 
 #### gzip 
-- arguments
+##### arguments
+
     - sourceFile
     - destFile
-- comments
-    
+
+##### comments
 
 #### hardlinkFile 
-- arguments
+##### arguments
+
     - source
     - destin
-- comments
-    Create a hard link pointing to source named destin. Availability: Unix.
-    @param source: string
-    @param destin: string
-    @rtype: concatenation of dirname, and optionally linkname, etc.
-    with exactly one directory separator (os.sep) inserted between components, unless path2 is empty
+
+##### comments
+
+Create a hard link pointing to source named destin. Availability: Unix.
+@param source: string
+@param destin: string
+@rtype: concatenation of dirname, and optionally linkname, etc.
+with exactly one directory separator (os.sep) inserted between components, unless path2 is empty
 
 #### isAsciiFile 
-- arguments
+##### arguments
+
     - filename
     - checksize = 4096
-- comments
-    Read the first <checksize> bytes of <filename>.
-              Validate that only valid ascii characters (32-126), ,       , 
-    are
-              present in the file
+
+##### comments
+
+Read the first <checksize> bytes of <filename>.
+          Validate that only valid ascii characters (32-126), ,       , 
+are
+          present in the file
 
 #### isBinaryFile 
-- arguments
+##### arguments
+
     - filename
     - checksize = 4096
-- comments
-    
+
+##### comments
 
 #### isDir 
-- arguments
+##### arguments
+
     - path
     - followSoftlink = True
-- comments
-    Check if the specified Directory path exists
-    @param path: string
-    @param followSoftlink: boolean
-    @rtype: boolean (True if directory exists)
+
+##### comments
+
+Check if the specified Directory path exists
+@param path: string
+@param followSoftlink: boolean
+@rtype: boolean (True if directory exists)
 
 #### isEmptyDir 
-- arguments
+##### arguments
+
     - path
-- comments
-    Check if the specified directory path is empty
-    @param path: string
-    @rtype: boolean (True if directory is empty)
+
+##### comments
+
+Check if the specified directory path is empty
+@param path: string
+@rtype: boolean (True if directory is empty)
 
 #### isExecutable 
-- arguments
+##### arguments
+
     - path
-- comments
-    
+
+##### comments
 
 #### isFile 
-- arguments
+##### arguments
+
     - path
     - followSoftlink = True
-- comments
-    Check if the specified file exists for the given path
-    @param path: string
-    @param followSoftlink: boolean
-    @rtype: boolean (True if file exists for the given path)
+
+##### comments
+
+Check if the specified file exists for the given path
+@param path: string
+@param followSoftlink: boolean
+@rtype: boolean (True if file exists for the given path)
 
 #### isLink 
-- arguments
+##### arguments
+
     - path
     - checkJunction = False
-- comments
-    Check if the specified path is a link
-    @param path: string
-    @rtype: boolean (True if the specified path is a link)
+
+##### comments
+
+Check if the specified path is a link
+@param path: string
+@rtype: boolean (True if the specified path is a link)
 
 #### isMount 
-- arguments
+##### arguments
+
     - path
-- comments
-    Return true if pathname path is a mount point:
-    A point in a file system where a different file system has been mounted.
+
+##### comments
+
+Return true if pathname path is a mount point:
+A point in a file system where a different file system has been mounted.
 
 #### islocked 
-- arguments
+##### arguments
+
     - lockname
     - reentry = False
-- comments
-    Check if a system-wide interprocess exclusive lock is set
+
+##### comments
+
+Check if a system-wide interprocess exclusive lock is set
 
 #### joinPaths 
-- arguments
+##### arguments
+
     - *args
-- comments
-    Join one or more path components.
-    If any component is an absolute path, all previous components are thrown away, and joining continues.
-    @param path1: string
-    @param path2: string
-    @param path3: string
-    @param .... : string
-    @rtype: Concatenation of path1, and optionally path2, etc...,
-    with exactly one directory separator (os.sep) inserted between components, unless path2 is empty.
+
+##### comments
+
+Join one or more path components.
+If any component is an absolute path, all previous components are thrown away, and joining continues.
+@param path1: string
+@param path2: string
+@param path3: string
+@param .... : string
+@rtype: Concatenation of path1, and optionally path2, etc...,
+with exactly one directory separator (os.sep) inserted between components, unless path2 is empty.
 
 #### listDirsInDir 
-- arguments
+##### arguments
+
     - path
     - recursive = False
     - dirNameOnly = False
     - findDirectorySymlinks = True
-- comments
-    Retrieves list of directories found in the specified directory
-    @param path: string represents directory path to search in
-    @rtype: list
+
+##### comments
+
+Retrieves list of directories found in the specified directory
+@param path: string represents directory path to search in
+@rtype: list
 
 #### listFilesAndDirsInDir 
-- arguments
+##### arguments
+
     - path
     - recursive = False
     - filter
@@ -440,24 +562,27 @@
     - type = 'fd'
     - followSymlinks = True
     - listSymlinks = False
-- comments
-    Retrieves list of files found in the specified directory
-    @param path:       directory path to search in
-    @type  path:       string
-    @param recursive:  recursively look in all subdirs
-    @type  recursive:  boolean
-    @param filter:     unix-style wildcard (e.g. *.py) - this is not a regular expression
-    @type  filter:     string
-    @param minmtime:   if not None, only return files whose last modification time > minmtime (epoch in seconds)
-    @type  minmtime:   integer
-    @param maxmtime:   if not None, only return files whose last modification time < maxmtime (epoch in seconds)
-    @Param depth: is levels deep wich we need to go
-    @type  maxmtime:   integer
-    @param type is string with f & d inside (f for when to find files, d for when to find dirs)
-    @rtype: list
+
+##### comments
+
+Retrieves list of files found in the specified directory
+@param path:       directory path to search in
+@type  path:       string
+@param recursive:  recursively look in all subdirs
+@type  recursive:  boolean
+@param filter:     unix-style wildcard (e.g. *.py) - this is not a regular expression
+@type  filter:     string
+@param minmtime:   if not None, only return files whose last modification time > minmtime (epoch in seconds)
+@type  minmtime:   integer
+@param maxmtime:   if not None, only return files whose last modification time < maxmtime (epoch in seconds)
+@Param depth: is levels deep wich we need to go
+@type  maxmtime:   integer
+@param type is string with f & d inside (f for when to find files, d for when to find dirs)
+@rtype: list
 
 #### listFilesInDir 
-- arguments
+##### arguments
+
     - path
     - recursive = False
     - filter
@@ -468,285 +593,366 @@
     - exclude = []
     - followSymlinks = True
     - listSymlinks = False
-- comments
-    Retrieves list of files found in the specified directory
-    @param path:       directory path to search in
-    @type  path:       string
-    @param recursive:  recursively look in all subdirs
-    @type  recursive:  boolean
-    @param filter:     unix-style wildcard (e.g. *.py) - this is not a regular expression
-    @type  filter:     string
-    @param minmtime:   if not None, only return files whose last modification time > minmtime (epoch in seconds)
-    @type  minmtime:   integer
-    @param maxmtime:   if not None, only return files whose last modification time < maxmtime (epoch in seconds)
-    @Param depth: is levels deep wich we need to go
-    @type  maxmtime:   integer
-    @Param exclude: list of std filters if matches then exclude
-    @rtype: list
+
+##### comments
+
+Retrieves list of files found in the specified directory
+@param path:       directory path to search in
+@type  path:       string
+@param recursive:  recursively look in all subdirs
+@type  recursive:  boolean
+@param filter:     unix-style wildcard (e.g. *.py) - this is not a regular expression
+@type  filter:     string
+@param minmtime:   if not None, only return files whose last modification time > minmtime (epoch in seconds)
+@type  minmtime:   integer
+@param maxmtime:   if not None, only return files whose last modification time < maxmtime (epoch in seconds)
+@Param depth: is levels deep wich we need to go
+@type  maxmtime:   integer
+@Param exclude: list of std filters if matches then exclude
+@rtype: list
 
 #### listPyScriptsInDir 
-- arguments
+##### arguments
+
     - path
     - recursive = True
     - filter = '*.py'
-- comments
-    Retrieves list of python scripts (with extension .py) in the specified directory
-    @param path: string represents the directory path to search in
-    @rtype: list
+
+##### comments
+
+Retrieves list of python scripts (with extension .py) in the specified directory
+@param path: string represents the directory path to search in
+@rtype: list
 
 #### lock 
-- arguments
+##### arguments
+
     - lockname
     - locktimeout = 60
     - reentry = False
-- comments
-    Take a system-wide interprocess exclusive lock. Default timeout is 60 seconds
+
+##### comments
+
+Take a system-wide interprocess exclusive lock. Default timeout is 60 seconds
 
 #### lock_ 
-- arguments
+##### arguments
+
     - lockname
     - locktimeout = 60
     - reentry = False
-- comments
-    Take a system-wide interprocess exclusive lock.
-    
-    Works similar to j.system.fs.lock but uses return values to denote lock
-    success instead of raising fatal errors.
-    
-    This refactoring was mainly done to make the lock implementation easier
-    to unit-test.
+
+##### comments
+
+Take a system-wide interprocess exclusive lock.
+
+Works similar to j.system.fs.lock but uses return values to denote lock
+success instead of raising fatal errors.
+
+This refactoring was mainly done to make the lock implementation easier
+to unit-test.
 
 #### log 
-- arguments
+##### arguments
+
     - msg
     - level = 5
     - category = ''
-- comments
-    
+
+##### comments
 
 #### md5sum 
-- arguments
+##### arguments
+
     - filename
-- comments
-    Return the hex digest of a file without loading it all into memory
-    @param filename: string (filename to get the hex digest of it) or list of files
-    @rtype: md5 of the file
+
+##### comments
+
+Return the hex digest of a file without loading it all into memory
+@param filename: string (filename to get the hex digest of it) or list of files
+@rtype: md5 of the file
 
 #### move 
-- arguments
+##### arguments
+
     - source
     - destin
-- comments
-    Main Move function
-    @param source: string (If the specified source is a File....Calls moveFile function)
-    (If the specified source is a Directory....Calls moveDir function)
+
+##### comments
+
+Main Move function
+@param source: string (If the specified source is a File....Calls moveFile function)
+(If the specified source is a Directory....Calls moveDir function)
 
 #### moveDir 
-- arguments
+##### arguments
+
     - source
     - destin
-- comments
-    Move Directory from source to destination
-    @param source: string (Source path where the directory should be removed from)
-    @param destin: string (Destination path where the directory should be moved into)
+
+##### comments
+
+Move Directory from source to destination
+@param source: string (Source path where the directory should be removed from)
+@param destin: string (Destination path where the directory should be moved into)
 
 #### moveFile 
-- arguments
+##### arguments
+
     - source
     - destin
-- comments
-    Move a  File from source path to destination path
-    @param source: string (Source file path)
-    @param destination: string (Destination path the file should be moved to )
+
+##### comments
+
+Move a  File from source path to destination path
+@param source: string (Source file path)
+@param destination: string (Destination path the file should be moved to )
 
 #### parsePath 
-- arguments
+##### arguments
+
     - path
     - baseDir = ''
     - existCheck = True
     - checkIsFile = False
-- comments
-    parse paths of form /root/tmp/33_adoc.doc into the path, priority which is numbers before _ at beginning of path
-    also returns filename
-    checks if path can be found, if not will fail
-    when filename="" then is directory which has been parsed
-    if basedir specified that part of path will be removed
-    
-    example:
-    j.system.fs.parsePath("/opt/qbase3/apps/specs/myspecs/definitions/cloud/datacenter.txt","/opt/qbase3/apps/specs/myspecs/",existCheck=False)
-    @param path is existing path to a file
-    @param baseDir, is the absolute part of the path not required
-    @return list of dirpath,filename,extension,priority
-         priority = 0 if not specified
+
+##### comments
+
+parse paths of form /root/tmp/33_adoc.doc into the path, priority which is numbers before _ at beginning of path
+also returns filename
+checks if path can be found, if not will fail
+when filename="" then is directory which has been parsed
+if basedir specified that part of path will be removed
+
+example:
+j.system.fs.parsePath("/opt/qbase3/apps/specs/myspecs/definitions/cloud/datacenter.txt","/opt/qbase3/apps/specs/myspecs/",existCheck=False)
+@param path is existing path to a file
+@param baseDir, is the absolute part of the path not required
+@return list of dirpath,filename,extension,priority
+     priority = 0 if not specified
 
 #### pathClean 
-- arguments
+##### arguments
+
     - path
-- comments
-    goal is to get a equal representation in / & \ in relation to os.sep
+
+##### comments
+
+goal is to get a equal representation in / & \ in relation to os.sep
 
 #### pathDirClean 
-- arguments
+##### arguments
+
     - path
-- comments
-    
+
+##### comments
 
 #### pathNormalize 
-- arguments
+##### arguments
+
     - path
     - root = ''
-- comments
-    paths are made absolute & made sure they are in line with os.sep
-    @param path: path to normalize
-    @root is std the application you are in, can overrule
+
+##### comments
+
+paths are made absolute & made sure they are in line with os.sep
+@param path: path to normalize
+@root is std the application you are in, can overrule
 
 #### pathRemoveDirPart 
-- arguments
+##### arguments
+
     - path
     - toremove
     - removeTrailingSlash = False
-- comments
-    goal remove dirparts of a dirpath e,g, a basepath which is not needed
-    will look for part to remove in full path but only full dirs
+
+##### comments
+
+goal remove dirparts of a dirpath e,g, a basepath which is not needed
+will look for part to remove in full path but only full dirs
 
 #### pathShorten 
-- arguments
+##### arguments
+
     - path
-- comments
-    Clean path (change /var/www/../lib to /var/lib). On Windows, if the
-    path exists, the short path name is returned.
-    
-    @param path: Path to clean
-    @type path: string
-    @return: Cleaned (short) path
-    @rtype: string
+
+##### comments
+
+Clean path (change /var/www/../lib to /var/lib). On Windows, if the
+path exists, the short path name is returned.
+
+@param path: Path to clean
+@type path: string
+@return: Cleaned (short) path
+@rtype: string
 
 #### pathToUnicode 
-- arguments
+##### arguments
+
     - path
-- comments
-    Convert path to unicode. Use the local filesystem encoding. Will return
-    path unmodified if path already is unicode.
-    
-    Use this to convert paths you received from the os module to unicode.
-    
-    @param path: path to convert to unicode
-    @type path: basestring
-    @return: unicode path
-    @rtype: unicode
+
+##### comments
+
+Convert path to unicode. Use the local filesystem encoding. Will return
+path unmodified if path already is unicode.
+
+Use this to convert paths you received from the os module to unicode.
+
+@param path: path to convert to unicode
+@type path: basestring
+@return: unicode path
+@rtype: unicode
 
 #### processPathForDoubleDots 
-- arguments
+##### arguments
+
     - path
-- comments
-    /root/somepath/.. would become /root
-    /root/../somepath/ would become /somepath
-    
-    result will always be with / slashes
+
+##### comments
+
+/root/somepath/.. would become /root
+/root/../somepath/ would become /somepath
+
+result will always be with / slashes
 
 #### readObjectFromFile 
-- arguments
+##### arguments
+
     - filelocation
-- comments
-    Read a object from a file(file contents in pickle format)
-    @param filelocation: location of the file
-    @return: object
+
+##### comments
+
+Read a object from a file(file contents in pickle format)
+@param filelocation: location of the file
+@return: object
 
 #### readlink 
-- arguments
+##### arguments
+
     - path
-- comments
-    Works only for unix
-    Return a string representing the path to which the symbolic link points.
+
+##### comments
+
+Works only for unix
+Return a string representing the path to which the symbolic link points.
 
 #### remove 
-- arguments
+##### arguments
+
     - path
-- comments
-    Remove a File
-    @param path: string (File path required to be removed
+
+##### comments
+
+Remove a File
+@param path: string (File path required to be removed
 
 #### removeDir 
-- arguments
+##### arguments
+
     - path
-- comments
-    Remove a Directory
-    @param path: string (Directory path that should be removed)
+
+##### comments
+
+Remove a Directory
+@param path: string (Directory path that should be removed)
 
 #### removeDirTree 
-- arguments
+##### arguments
+
     - path
     - onlyLogWarningOnRemoveError = False
-- comments
-    Recursively delete a directory tree.
-    @param path: the path to be removed
+
+##### comments
+
+Recursively delete a directory tree.
+@param path: the path to be removed
 
 #### removeIrrelevantFiles 
-- arguments
+##### arguments
+
     - path
     - followSymlinks = True
-- comments
-    
+
+##### comments
 
 #### removeLinks 
-- arguments
+##### arguments
+
     - path
-- comments
-    find all links & remove
+
+##### comments
+
+find all links & remove
 
 #### renameDir 
-- arguments
+##### arguments
+
     - dirname
     - newname
     - overwrite = False
-- comments
-    Rename Directory from dirname to newname
-    @param dirname: string (Directory original name)
-    @param newname: string (Directory new name to be changed to)
+
+##### comments
+
+Rename Directory from dirname to newname
+@param dirname: string (Directory original name)
+@param newname: string (Directory new name to be changed to)
 
 #### renameFile 
-- arguments
+##### arguments
+
     - filePath
     - new_name
-- comments
-    OBSOLETE
+
+##### comments
+
+OBSOLETE
 
 #### replaceWordsInFiles 
-- arguments
+##### arguments
+
     - pathToSearchIn
     - templateengine
     - recursive = True
     - filter
     - minmtime
     - maxmtime
-- comments
-    apply templateengine to list of found files
-    @param templateengine =te  #example below
-        te=j.codetools.templateengine.new()
-        te.add("name",self.a.name)
-        te.add("description",self.ayses.description)
-        te.add("version",self.ayses.version)
+
+##### comments
+
+apply templateengine to list of found files
+@param templateengine =te  #example below
+    te=j.codetools.templateengine.new()
+    te.add("name",self.a.name)
+    te.add("description",self.ayses.description)
+    te.add("version",self.ayses.version)
 
 #### statPath 
-- arguments
+##### arguments
+
     - path
-- comments
-    Perform a stat() system call on the given path
-    @rtype: object whose attributes correspond to the members of the stat structure
+
+##### comments
+
+Perform a stat() system call on the given path
+@rtype: object whose attributes correspond to the members of the stat structure
 
 #### symlink 
-- arguments
+##### arguments
+
     - path
     - target
     - overwriteTarget = False
-- comments
-    Create a symbolic link
-    @param path: source path desired to create a symbolic link for
-    @param target: destination path required to create the symbolic link at
-    @param overwriteTarget: boolean indicating whether target can be overwritten
+
+##### comments
+
+Create a symbolic link
+@param path: source path desired to create a symbolic link for
+@param target: destination path required to create the symbolic link at
+@param overwriteTarget: boolean indicating whether target can be overwritten
 
 #### targzCompress 
-- arguments
+##### arguments
+
     - sourcepath
     - destinationpath
     - followlinks = False
@@ -757,122 +963,146 @@
     - contentRegexExcludes = []
     - depths = []
     - extrafiles = []
-- comments
-    @param sourcepath: Source directory .
-    @param destination: Destination filename.
-    @param followlinks: do not tar the links, follow the link and add that file or content of directory to the tar
-    @param pathRegexIncludes: / Excludes  match paths to array of regex expressions (array(strings))
-    @param contentRegexIncludes: / Excludes match content of files to array of regex expressions (array(strings))
-    @param depths: array of depth values e.g. only return depth 0 & 1 (would mean first dir depth and then 1 more deep) (array(int))
-    @param destInTar when not specified the dirs, files under sourcedirpath will be added to root of
-              tar.gz with this param can put something in front e.g. /qbase3/ prefix to dest in tgz
-    @param extrafiles is array of array [[source,destpath],[source,destpath],...]  adds extra files to tar
-    (TAR-GZ-Archive *.tar.gz)
+
+##### comments
+
+@param sourcepath: Source directory .
+@param destination: Destination filename.
+@param followlinks: do not tar the links, follow the link and add that file or content of directory to the tar
+@param pathRegexIncludes: / Excludes  match paths to array of regex expressions (array(strings))
+@param contentRegexIncludes: / Excludes match content of files to array of regex expressions (array(strings))
+@param depths: array of depth values e.g. only return depth 0 & 1 (would mean first dir depth and then 1 more deep) (array(int))
+@param destInTar when not specified the dirs, files under sourcedirpath will be added to root of
+          tar.gz with this param can put something in front e.g. /qbase3/ prefix to dest in tgz
+@param extrafiles is array of array [[source,destpath],[source,destpath],...]  adds extra files to tar
+(TAR-GZ-Archive *.tar.gz)
 
 #### targzUncompress 
-- arguments
+##### arguments
+
     - sourceFile
     - destinationdir
     - removeDestinationdir = True
-- comments
-    compress dirname recursive
-    @param sourceFile: file to uncompress
-    @param destinationpath: path of to destiniation dir, sourcefile will end up uncompressed in destination dir
+
+##### comments
+
+compress dirname recursive
+@param sourceFile: file to uncompress
+@param destinationpath: path of to destiniation dir, sourcefile will end up uncompressed in destination dir
 
 #### touch 
-- arguments
+##### arguments
+
     - paths
     - overwrite = True
-- comments
-    can be single path or multiple (then list)
+
+##### comments
+
+can be single path or multiple (then list)
 
 #### unlink 
-- arguments
+##### arguments
+
     - filename
-- comments
-    Remove the given file if it's a file or a symlink
-    
-    @param filename: File path to be removed
-    @type filename: string
+
+##### comments
+
+Remove the given file if it's a file or a symlink
+
+@param filename: File path to be removed
+@type filename: string
 
 #### unlinkFile 
-- arguments
+##### arguments
+
     - filename
-- comments
-    Remove the file path (only for files, not for symlinks)
-    @param filename: File path to be removed
+
+##### comments
+
+Remove the file path (only for files, not for symlinks)
+@param filename: File path to be removed
 
 #### unlock 
-- arguments
+##### arguments
+
     - lockname
-- comments
-    Unlock system-wide interprocess lock
+
+##### comments
+
+Unlock system-wide interprocess lock
 
 #### unlock_ 
-- arguments
+##### arguments
+
     - lockname
-- comments
-    Unlock system-wide interprocess lock
-    
-    Works similar to j.system.fs.unlock but uses return values to denote unlock
-    success instead of raising fatal errors.
-    
-    This refactoring was mainly done to make the lock implementation easier
-    to unit-test.
+
+##### comments
+
+Unlock system-wide interprocess lock
+
+Works similar to j.system.fs.unlock but uses return values to denote unlock
+success instead of raising fatal errors.
+
+This refactoring was mainly done to make the lock implementation easier
+to unit-test.
 
 #### validateFilename 
-- arguments
+##### arguments
+
     - filename
     - platform
-- comments
-    Validate a filename for a given (or current) platform
-    
-    Check whether a given filename is valid on a given platform, or the
-    current platform if no platform is specified.
-    
-    Rules
-    =====
-    Generic
-    -------
-    Zero-length filenames are not allowed
-    
-    Unix
-    ----
-    Filenames can contain any character except 0x00. We also disallow a
-    forward slash ('/') in filenames.
-    
-    Filenames can be up to 255 characters long.
-    
-    Windows
-    -------
-    Filenames should not contain any character in the 0x00-0x1F range, '<',
-    '>', ':', '"', '/', '', '|', '?' or '*'. Names should not end with a
-    dot ('.') or a space (' ').
-    
-    Several basenames are not allowed, including CON, PRN, AUX, CLOCK$,
-    NUL, COM[1-9] and LPT[1-9].
-    
-    Filenames can be up to 255 characters long.
-    
-    Information sources
-    ===================
-    Restrictions are based on information found at these URLs:
-    
-     * http://en.wikipedia.org/wiki/Filename
-     * http://msdn.microsoft.com/en-us/library/aa365247.aspx
-     * http://www.boost.org/doc/libs/1_35_0/libs/filesystem/doc/portability_guide.htm
-     * http://blogs.msdn.com/brian_dewey/archive/2004/01/19/60263.aspx
-    
-    @param filename: Filename to check
-    @type filename: string
-    @param platform: Platform to validate against
-    @type platform: L\{PlatformType\}
-    
-    @returns: Whether the filename is valid on the given platform
-    @rtype: bool
+
+##### comments
+
+Validate a filename for a given (or current) platform
+
+Check whether a given filename is valid on a given platform, or the
+current platform if no platform is specified.
+
+Rules
+=====
+Generic
+-------
+Zero-length filenames are not allowed
+
+Unix
+----
+Filenames can contain any character except 0x00. We also disallow a
+forward slash ('/') in filenames.
+
+Filenames can be up to 255 characters long.
+
+Windows
+-------
+Filenames should not contain any character in the 0x00-0x1F range, '<',
+'>', ':', '"', '/', '', '|', '?' or '*'. Names should not end with a
+dot ('.') or a space (' ').
+
+Several basenames are not allowed, including CON, PRN, AUX, CLOCK$,
+NUL, COM[1-9] and LPT[1-9].
+
+Filenames can be up to 255 characters long.
+
+Information sources
+===================
+Restrictions are based on information found at these URLs:
+
+ * http://en.wikipedia.org/wiki/Filename
+ * http://msdn.microsoft.com/en-us/library/aa365247.aspx
+ * http://www.boost.org/doc/libs/1_35_0/libs/filesystem/doc/portability_guide.htm
+ * http://blogs.msdn.com/brian_dewey/archive/2004/01/19/60263.aspx
+
+@param filename: Filename to check
+@type filename: string
+@param platform: Platform to validate against
+@type platform: L\{PlatformType\}
+
+@returns: Whether the filename is valid on the given platform
+@rtype: bool
 
 #### walk 
-- arguments
+##### arguments
+
     - root
     - recurse = 0
     - pattern = '*'
@@ -881,13 +1111,16 @@
     - followSoftlinks = True
     - str = False
     - depth
-- comments
-    This is to provide ScanDir similar function
-    It is going to be used wherever some one wants to list all files and subfolders
-    under one given directly with specific or none matchers
+
+##### comments
+
+This is to provide ScanDir similar function
+It is going to be used wherever some one wants to list all files and subfolders
+under one given directly with specific or none matchers
 
 #### walkExtended 
-- arguments
+##### arguments
+
     - root
     - recurse = 0
     - dirPattern = '*'
@@ -895,51 +1128,59 @@
     - followSoftLinks = True
     - dirs = True
     - files = True
-- comments
-    Extended Walk version: seperate dir and file pattern
-    @param  root                : start directory to start the search.
-    @type   root                : string
-    @param  recurse             : search also in subdirectories.
-    @type   recurse             : number
-    @param  dirPattern          : search pattern to match directory names. Wildcards can be included.
-    @type   dirPattern          : string
-    @param  filePattern         : search pattern to match file names. Wildcards can be included.
-    @type   filePattern         : string
-    @param  followSoftLinks     : determine if links must be followed.
-    @type   followSoftLinks     : boolean
-    @param  dirs                : determine to return dir results.
-    @type   dirs                : boolean
-    @param  files               : determine to return file results.
-    @type   files               : boolean
-    
-    @return                     : List of files and / or directories that match the search patterns.
-    @rtype                      : list of strings
-    
-    General guidelines in the usage of the method be means of some examples come next. For the example in /tmp there is
-    
-    * a file test.rtt
-    * and ./folder1/subfolder/subsubfolder/small_test/test.rtt
-    
-    To find the first test you can use
-       j.system.fs.walkExtended('/tmp/', dirPattern="*tmp*", filePattern="*.rtt")
-    To find only the second one you could use
-       j.system.fs.walkExtended('tmp', recurse=0, dirPattern="*small_test*", filePattern="*.rtt", dirs=False)
+
+##### comments
+
+Extended Walk version: seperate dir and file pattern
+@param  root                : start directory to start the search.
+@type   root                : string
+@param  recurse             : search also in subdirectories.
+@type   recurse             : number
+@param  dirPattern          : search pattern to match directory names. Wildcards can be included.
+@type   dirPattern          : string
+@param  filePattern         : search pattern to match file names. Wildcards can be included.
+@type   filePattern         : string
+@param  followSoftLinks     : determine if links must be followed.
+@type   followSoftLinks     : boolean
+@param  dirs                : determine to return dir results.
+@type   dirs                : boolean
+@param  files               : determine to return file results.
+@type   files               : boolean
+
+@return                     : List of files and / or directories that match the search patterns.
+@rtype                      : list of strings
+
+General guidelines in the usage of the method be means of some examples come next. For the example in /tmp there is
+
+* a file test.rtt
+* and ./folder1/subfolder/subsubfolder/small_test/test.rtt
+
+To find the first test you can use
+   j.system.fs.walkExtended('/tmp/', dirPattern="*tmp*", filePattern="*.rtt")
+To find only the second one you could use
+   j.system.fs.walkExtended('tmp', recurse=0, dirPattern="*small_test*", filePattern="*.rtt", dirs=False)
 
 #### writeFile 
-- arguments
+##### arguments
+
     - filename
     - contents
     - append = False
-- comments
-    Open a file and write file contents, close file afterwards
-    @param contents: string (file contents to be written)
+
+##### comments
+
+Open a file and write file contents, close file afterwards
+@param contents: string (file contents to be written)
 
 #### writeObjectToFile 
-- arguments
+##### arguments
+
     - filelocation
     - obj
-- comments
-    Write a object to a file(pickle format)
-    @param filelocation: location of the file to which we write
-    @param obj: object to pickle and write to a file
+
+##### comments
+
+Write a object to a file(pickle format)
+@param filelocation: location of the file to which we write
+@param obj: object to pickle and write to a file
 

@@ -2,21 +2,27 @@
 
 - /opt/jumpscale7/lib/JumpScale/baselib/graphite/GraphiteClient.py
 
+### Methods
+
 #### close 
-- arguments
-- comments
-    
+##### arguments
+
+##### comments
 
 #### query 
-- arguments
+##### arguments
+
     - query_
     - **kwargs
-- comments
-    
+
+##### comments
 
 #### send 
-- arguments
+##### arguments
+
     - msg
-- comments
-    e.g. foo.bar.baz 20
+
+##### comments
+
+e.g. foo.bar.baz 20
 

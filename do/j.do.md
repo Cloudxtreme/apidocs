@@ -8,72 +8,96 @@
     - CODEDIR
     - TYPE
 
+### Methods
+
 #### changeDir 
-- arguments
+##### arguments
+
     - path
     - create = False
-- comments
-    Changes Current Directory
-    @param path: string (Directory path to be changed to)
+
+##### comments
+
+Changes Current Directory
+@param path: string (Directory path to be changed to)
 
 #### changeLoginPasswdGitRepos 
-- arguments
+##### arguments
+
     - provider
     - login
     - passwd
-- comments
-    walk over all git repo's found in account & change login/passwd
+
+##### comments
+
+walk over all git repo's found in account & change login/passwd
 
 #### chdir 
-- arguments
+##### arguments
+
     - ddir = ''
-- comments
-    if ddir=="" then will go to tmpdir
+
+##### comments
+
+if ddir=="" then will go to tmpdir
 
 #### checkDirOrLinkToDir 
-- arguments
+##### arguments
+
     - fullpath
-- comments
-    check if path is dir or link to a dir
+
+##### comments
+
+check if path is dir or link to a dir
 
 #### checkInstalled 
-- arguments
+##### arguments
+
     - cmdname
-- comments
-    @param cmdname is cmd to check e.g. curl
+
+##### comments
+
+@param cmdname is cmd to check e.g. curl
 
 #### chmod 
-- arguments
+##### arguments
+
     - path
     - permissions
-- comments
-    @param permissions e.g. 0o660 (USE OCTAL !!!)
+
+##### comments
+
+@param permissions e.g. 0o660 (USE OCTAL !!!)
 
 #### chown 
-- arguments
+##### arguments
+
     - path
     - user
-- comments
-    
+
+##### comments
 
 #### copyDependencies 
-- arguments
+##### arguments
+
     - path
     - dest
-- comments
-    
+
+##### comments
 
 #### copyFile 
-- arguments
+##### arguments
+
     - source
     - dest
     - deletefirst = False
     - skipIfExists = False
-- comments
-    
+
+##### comments
 
 #### copyTree 
-- arguments
+##### arguments
+
     - source
     - dest
     - keepsymlinks = False
@@ -83,24 +107,27 @@
     - ignorefiles = ['.egg-info']
     - rsync = True
     - sshkey
-- comments
-    
+
+##### comments
 
 #### createDir 
-- arguments
+##### arguments
+
     - path
-- comments
-    
+
+##### comments
 
 #### delete 
-- arguments
+##### arguments
+
     - path
     - force = False
-- comments
-    
+
+##### comments
 
 #### download 
-- arguments
+##### arguments
+
     - url
     - to = ''
     - overwrite = True
@@ -111,36 +138,42 @@
     - minspeed = 0
     - multithread = False
     - curl = False
-- comments
-    @return path of downloaded file
-    @param minspeed is kbytes per sec e.g. 50, if less than 50 kbytes during 10 min it will restart the download (curl only)
-    @param when multithread True then will use aria2 download tool to get multiple threads
+
+##### comments
+
+@return path of downloaded file
+@param minspeed is kbytes per sec e.g. 50, if less than 50 kbytes during 10 min it will restart the download (curl only)
+@param when multithread True then will use aria2 download tool to get multiple threads
 
 #### downloadExpandTarGz 
-- arguments
+##### arguments
+
     - url
     - destdir
     - deleteDestFirst = True
     - deleteSourceAfter = True
-- comments
-    
+
+##### comments
 
 #### downloadJumpScaleCore 
-- arguments
+##### arguments
+
     - dest
-- comments
-    
+
+##### comments
 
 #### excepthook 
-- arguments
+##### arguments
+
     - ttype
     - pythonExceptionObject
     - tb
-- comments
-    
+
+##### comments
 
 #### execute 
-- arguments
+##### arguments
+
     - command
     - outputStdout = True
     - outputStderr = True
@@ -152,12 +185,15 @@
     - ok = []
     - captureout = True
     - dieOnNonZeroExitCode = True
-- comments
-    @param errors is array of statements if found then exit as error
-    return rc,out,err
+
+##### comments
+
+@param errors is array of statements if found then exit as error
+return rc,out,err
 
 #### executeCmds 
-- arguments
+##### arguments
+
     - cmdstr
     - outputStdout = True
     - outputStderr = True
@@ -169,198 +205,236 @@
     - ok = []
     - captureout = True
     - dieOnNonZeroExitCode = True
-- comments
-    
+
+##### comments
 
 #### executeInteractive 
-- arguments
+##### arguments
+
     - command
-- comments
-    
+
+##### comments
 
 #### exists 
-- arguments
+##### arguments
+
     - path
-- comments
-    
+
+##### comments
 
 #### expandTarGz 
-- arguments
+##### arguments
+
     - path
     - destdir
     - deleteDestFirst = True
     - deleteSourceAfter = False
-- comments
-    
+
+##### comments
 
 #### findDependencies 
-- arguments
+##### arguments
+
     - path
     - deps = \{\}
-- comments
-    
+
+##### comments
 
 #### getBaseName 
-- arguments
+##### arguments
+
     - path
-- comments
-    Return the base name of pathname path.
+
+##### comments
+
+Return the base name of pathname path.
 
 #### getDirName 
-- arguments
+##### arguments
+
     - path
     - lastOnly = False
     - levelsUp
-- comments
-    Return a directory name from pathname path.
-    @param path the path to find a directory within
-    @param lastOnly means only the last part of the path which is a dir (overrides levelsUp to 0)
-    @param levelsUp means, return the parent dir levelsUp levels up
-     e.g. ...getDirName("/opt/qbase/bin/something/test.py", levelsUp=0) would return something
-     e.g. ...getDirName("/opt/qbase/bin/something/test.py", levelsUp=1) would return bin
-     e.g. ...getDirName("/opt/qbase/bin/something/test.py", levelsUp=10) would raise an error
+
+##### comments
+
+Return a directory name from pathname path.
+@param path the path to find a directory within
+@param lastOnly means only the last part of the path which is a dir (overrides levelsUp to 0)
+@param levelsUp means, return the parent dir levelsUp levels up
+ e.g. ...getDirName("/opt/qbase/bin/something/test.py", levelsUp=0) would return something
+ e.g. ...getDirName("/opt/qbase/bin/something/test.py", levelsUp=1) would return bin
+ e.g. ...getDirName("/opt/qbase/bin/something/test.py", levelsUp=10) would raise an error
 
 #### getFileExtension 
-- arguments
+##### arguments
+
     - path
-- comments
-    
+
+##### comments
 
 #### getGitRepoArgs 
-- arguments
+##### arguments
+
     - url = ''
     - dest
     - login
     - passwd
     - reset = False
-- comments
-    Extracts and returns data useful in cloning a Git repository.
-    
-    Args:
-        url (str): the HTTP URL of the Git repository to clone from. ex: 'https://github.com/odoo/odoo.git'
-        dest (str): the local filesystem path to clone to
-        login (str): authentication login name
-        passwd (str): authentication login password
-        reset (boolean): if True, any cached clone of the Git repository will be removed
-    
-    Returns:
-        (repository_host, repository_type, repository_account, repository_name, repository_url)
+
+##### comments
+
+Extracts and returns data useful in cloning a Git repository.
+
+Args:
+    url (str): the HTTP URL of the Git repository to clone from. ex: 'https://github.com/odoo/odoo.git'
+    dest (str): the local filesystem path to clone to
+    login (str): authentication login name
+    passwd (str): authentication login password
+    reset (boolean): if True, any cached clone of the Git repository will be removed
+
+Returns:
+    (repository_host, repository_type, repository_account, repository_name, repository_url)
 
 #### getGitReposListLocal 
-- arguments
+##### arguments
+
     - provider = ''
     - account = ''
     - name = ''
     - errorIfNone = True
-- comments
-    
+
+##### comments
 
 #### getParent 
-- arguments
+##### arguments
+
     - path
-- comments
-    Returns the parent of the path:
-    /dir1/dir2/file_or_dir -> /dir1/dir2/
-    /dir1/dir2/            -> /dir1/
-    @todo why do we have 2 implementations which are almost the same see getParentDirName()
+
+##### comments
+
+Returns the parent of the path:
+/dir1/dir2/file_or_dir -> /dir1/dir2/
+/dir1/dir2/            -> /dir1/
+@todo why do we have 2 implementations which are almost the same see getParentDirName()
 
 #### getPythonSiteConfigPath 
-- arguments
-- comments
-    
+##### arguments
+
+##### comments
 
 #### getTimeEpoch 
-- arguments
-- comments
-    Get epoch timestamp (number of seconds passed since January 1, 1970)
+##### arguments
+
+##### comments
+
+Get epoch timestamp (number of seconds passed since January 1, 1970)
 
 #### getTmpPath 
-- arguments
+##### arguments
+
     - filename
-- comments
-    
+
+##### comments
 
 #### getWalker 
-- arguments
-- comments
-    
+##### arguments
+
+##### comments
 
 #### installPackage 
-- arguments
+##### arguments
+
     - path
-- comments
-    
+
+##### comments
 
 #### isDir 
-- arguments
+##### arguments
+
     - path
     - followSoftlink = False
-- comments
-    Check if the specified Directory path exists
-    @param path: string
-    @param followSoftlink: boolean
-    @rtype: boolean (True if directory exists)
+
+##### comments
+
+Check if the specified Directory path exists
+@param path: string
+@param followSoftlink: boolean
+@rtype: boolean (True if directory exists)
 
 #### isExecutable 
-- arguments
+##### arguments
+
     - path
-- comments
-    
+
+##### comments
 
 #### isFile 
-- arguments
+##### arguments
+
     - path
     - followSoftlink = False
-- comments
-    Check if the specified file exists for the given path
-    @param path: string
-    @param followSoftlink: boolean
-    @rtype: boolean (True if file exists for the given path)
+
+##### comments
+
+Check if the specified file exists for the given path
+@param path: string
+@param followSoftlink: boolean
+@rtype: boolean (True if file exists for the given path)
 
 #### isLink 
-- arguments
+##### arguments
+
     - path
     - checkJunction = False
-- comments
-    Check if the specified path is a link
-    @param path: string
-    @rtype: boolean (True if the specified path is a link)
+
+##### comments
+
+Check if the specified path is a link
+@param path: string
+@rtype: boolean (True if the specified path is a link)
 
 #### isUnix 
-- arguments
-- comments
-    
+##### arguments
+
+##### comments
 
 #### isWindows 
-- arguments
-- comments
-    
+##### arguments
+
+##### comments
 
 #### joinPaths 
-- arguments
+##### arguments
+
     - *args
-- comments
-    
+
+##### comments
 
 #### list 
-- arguments
+##### arguments
+
     - path
-- comments
-    
+
+##### comments
 
 #### listDirsInDir 
-- arguments
+##### arguments
+
     - path
     - recursive = False
     - dirNameOnly = False
     - findDirectorySymlinks = True
-- comments
-    Retrieves list of directories found in the specified directory
-    @param path: string represents directory path to search in
-    @rtype: list
+
+##### comments
+
+Retrieves list of directories found in the specified directory
+@param path: string represents directory path to search in
+@rtype: list
 
 #### listFilesAndDirsInDir 
-- arguments
+##### arguments
+
     - path
     - recursive = False
     - filter
@@ -370,24 +444,27 @@
     - type = 'fd'
     - followSymlinks = True
     - listSymlinks = False
-- comments
-    Retrieves list of files found in the specified directory
-    @param path:       directory path to search in
-    @type  path:       string
-    @param recursive:  recursively look in all subdirs
-    @type  recursive:  boolean
-    @param filter:     unix-style wildcard (e.g. *.py) - this is not a regular expression
-    @type  filter:     string
-    @param minmtime:   if not None, only return files whose last modification time > minmtime (epoch in seconds)
-    @type  minmtime:   integer
-    @param maxmtime:   if not None, only return files whose last modification time < maxmtime (epoch in seconds)
-    @Param depth: is levels deep wich we need to go
-    @type  maxmtime:   integer
-    @param type is string with f & d inside (f for when to find files, d for when to find dirs)
-    @rtype: list
+
+##### comments
+
+Retrieves list of files found in the specified directory
+@param path:       directory path to search in
+@type  path:       string
+@param recursive:  recursively look in all subdirs
+@type  recursive:  boolean
+@param filter:     unix-style wildcard (e.g. *.py) - this is not a regular expression
+@type  filter:     string
+@param minmtime:   if not None, only return files whose last modification time > minmtime (epoch in seconds)
+@type  minmtime:   integer
+@param maxmtime:   if not None, only return files whose last modification time < maxmtime (epoch in seconds)
+@Param depth: is levels deep wich we need to go
+@type  maxmtime:   integer
+@param type is string with f & d inside (f for when to find files, d for when to find dirs)
+@rtype: list
 
 #### listFilesInDir 
-- arguments
+##### arguments
+
     - path
     - recursive = False
     - filter
@@ -398,37 +475,42 @@
     - exclude = []
     - followSymlinks = True
     - listSymlinks = False
-- comments
-    Retrieves list of files found in the specified directory
-    @param path:       directory path to search in
-    @type  path:       string
-    @param recursive:  recursively look in all subdirs
-    @type  recursive:  boolean
-    @param filter:     unix-style wildcard (e.g. *.py) - this is not a regular expression
-    @type  filter:     string
-    @param minmtime:   if not None, only return files whose last modification time > minmtime (epoch in seconds)
-    @type  minmtime:   integer
-    @param maxmtime:   if not None, only return files whose last modification time < maxmtime (epoch in seconds)
-    @Param depth: is levels deep wich we need to go
-    @type  maxmtime:   integer
-    @Param exclude: list of std filters if matches then exclude
-    @rtype: list
+
+##### comments
+
+Retrieves list of files found in the specified directory
+@param path:       directory path to search in
+@type  path:       string
+@param recursive:  recursively look in all subdirs
+@type  recursive:  boolean
+@param filter:     unix-style wildcard (e.g. *.py) - this is not a regular expression
+@type  filter:     string
+@param minmtime:   if not None, only return files whose last modification time > minmtime (epoch in seconds)
+@type  minmtime:   integer
+@param maxmtime:   if not None, only return files whose last modification time < maxmtime (epoch in seconds)
+@Param depth: is levels deep wich we need to go
+@type  maxmtime:   integer
+@Param exclude: list of std filters if matches then exclude
+@rtype: list
 
 #### loadScript 
-- arguments
+##### arguments
+
     - path
-- comments
-    
+
+##### comments
 
 #### log 
-- arguments
+##### arguments
+
     - msg
     - level
-- comments
-    
+
+##### comments
 
 #### pullGitRepo 
-- arguments
+##### arguments
+
     - url = ''
     - dest
     - login
@@ -438,68 +520,87 @@
     - reset = False
     - branch
     - revision
-- comments
-    will clone or update repo
-    if dest == None then clone underneath: /opt/code/$type/$account/$repo
-    will ignore changes !!!!!!!!!!!
+
+##### comments
+
+will clone or update repo
+if dest == None then clone underneath: /opt/code/$type/$account/$repo
+will ignore changes !!!!!!!!!!!
 
 #### pushGitRepos 
-- arguments
+##### arguments
+
     - message
     - name = ''
     - update = True
     - provider = ''
     - account = ''
-- comments
-    if name specified then will look under code dir if repo with path can be found
-    if not or more than 1 there will be error
-    @param provider e.g. git, github
+
+##### comments
+
+if name specified then will look under code dir if repo with path can be found
+if not or more than 1 there will be error
+@param provider e.g. git, github
 
 #### readFile 
-- arguments
+##### arguments
+
     - filename
-- comments
-    Read a file and get contents of that file
-    @param filename: string (filename to open for reading )
-    @rtype: string representing the file contents
+
+##### comments
+
+Read a file and get contents of that file
+@param filename: string (filename to open for reading )
+@rtype: string representing the file contents
 
 #### readLink 
-- arguments
+##### arguments
+
     - path
-- comments
-    Works only for unix
-    Return a string representing the path to which the symbolic link points.
+
+##### comments
+
+Works only for unix
+Return a string representing the path to which the symbolic link points.
 
 #### removeLinks 
-- arguments
+##### arguments
+
     - path
-- comments
-    find all links & remove
+
+##### comments
+
+find all links & remove
 
 #### removeSymlink 
-- arguments
+##### arguments
+
     - path
-- comments
-    
+
+##### comments
 
 #### rewriteGitRepoUrl 
-- arguments
+##### arguments
+
     - url = ''
     - login
     - passwd
-- comments
-    Rewrite the url of a git repo with login and passwd if specified
-    
-    Args:
-        url (str): the HTTP URL of the Git repository. ex: 'https://github.com/odoo/odoo'
-        login (str): authentication login name
-        passwd (str): authentication login password
-    
-    Returns:
-        (repository_host, repository_type, repository_account, repository_name, repository_url)
+
+##### comments
+
+Rewrite the url of a git repo with login and passwd if specified
+
+Args:
+    url (str): the HTTP URL of the Git repository. ex: 'https://github.com/odoo/odoo'
+    login (str): authentication login name
+    passwd (str): authentication login password
+
+Returns:
+    (repository_host, repository_type, repository_account, repository_name, repository_url)
 
 #### sendmail 
-- arguments
+##### arguments
+
     - ffrom
     - to
     - subject
@@ -509,46 +610,53 @@
     - smtpserver = 'smtp.mandrillapp.com'
     - port = 587
     - html = ''
-- comments
-    
+
+##### comments
 
 #### symlink 
-- arguments
+##### arguments
+
     - src
     - dest
     - delete = False
-- comments
-    dest is where the link will be created pointing to src
+
+##### comments
+
+dest is where the link will be created pointing to src
 
 #### symlinkFilesInDir 
-- arguments
+##### arguments
+
     - src
     - dest
     - delete = True
     - includeDirs = False
-- comments
-    
+
+##### comments
 
 #### touch 
-- arguments
+##### arguments
+
     - path
-- comments
-    
+
+##### comments
 
 #### updateGitRepos 
-- arguments
+##### arguments
+
     - provider = ''
     - account = ''
     - name = ''
     - message = ''
-- comments
-    
+
+##### comments
 
 #### writeFile 
-- arguments
+##### arguments
+
     - path
     - content
     - strip = True
-- comments
-    
+
+##### comments
 

@@ -5,44 +5,51 @@
     - sessionid
     - returnQueues
 
+### Methods
+
     
 
 #### checkJumpscriptQueue 
-- arguments
+##### arguments
+
     - jumpscript
     - queue
-- comments
-    this checks that jumpscripts are not executed twice when being scheduled recurring
-    one off jobs will always execute !!!
+
+##### comments
+
+this checks that jumpscripts are not executed twice when being scheduled recurring
+one off jobs will always execute !!!
 
 #### checkQueue 
-- arguments
-- comments
-    
+##### arguments
+
+##### comments
 
 #### deleteJob 
-- arguments
+##### arguments
+
     - jobid
-- comments
-    
+
+##### comments
 
 #### deleteJumpscripts 
-- arguments
-- comments
-    
+##### arguments
+
+##### comments
 
 #### deleteProcessQueue 
-- arguments
-- comments
-    
+##### arguments
+
+##### comments
 
 #### deleteQueues 
-- arguments
-- comments
-    
+##### arguments
+
+##### comments
 
 #### execFunction 
-- arguments
+##### arguments
+
     - method
     - _category = 'unknown'
     - _organization = 'unknown'
@@ -51,17 +58,21 @@
     - _log = True
     - _sync = True
     - **args
-- comments
-    @return job
+
+##### comments
+
+@return job
 
 #### execJobAsync 
-- arguments
+##### arguments
+
     - job
-- comments
-    
+
+##### comments
 
 #### execJumpscript 
-- arguments
+##### arguments
+
     - jumpscriptid
     - jumpscript
     - _timeout = 60
@@ -69,66 +80,77 @@
     - _log = True
     - _sync = True
     - **args
-- comments
-    @return job
+
+##### comments
+
+@return job
 
 #### getFailedJobs 
-- arguments
+##### arguments
+
     - queue
     - hoursago = 0
-- comments
-    
+
+##### comments
 
 #### getJob 
-- arguments
+##### arguments
+
     - jobid
-- comments
-    
+
+##### comments
 
 #### getJobLine 
-- arguments
+##### arguments
+
     - job
     - jobid
-- comments
-    
+
+##### comments
 
 #### getJumpscriptFromId 
-- arguments
+##### arguments
+
     - jscriptid
-- comments
-    
+
+##### comments
 
 #### getJumpscriptFromName 
-- arguments
+##### arguments
+
     - organization
     - name
-- comments
-    
+
+##### comments
 
 #### getQueuedJobs 
-- arguments
+##### arguments
+
     - queue
     - asWikiTable = True
-- comments
-    
+
+##### comments
 
 #### removeJobs 
-- arguments
+##### arguments
+
     - hoursago = 48
     - failed = False
-- comments
-    
+
+##### comments
 
 #### scheduleJob 
-- arguments
+##### arguments
+
     - job
-- comments
-    
+
+##### comments
 
 #### waitJob 
-- arguments
+##### arguments
+
     - job
     - timeout = 600
-- comments
-    
+
+##### comments
 

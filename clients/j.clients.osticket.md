@@ -4,15 +4,20 @@
 - Properties
     - clients
 
+### Methods
+
     
 
 #### getClient 
-- arguments
+##### arguments
+
     - ipaddr
     - port
     - login
     - passwd
     - dbname
-- comments
-    use info from osticket db server (mysql)
+
+##### comments
+
+use info from osticket db server (mysql)
 

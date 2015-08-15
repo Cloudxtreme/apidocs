@@ -2,8 +2,11 @@
 
 - /opt/jumpscale7/lib/JumpScale/baselib/oauth/OauthFactory.py
 
+### Methods
+
 #### get 
-- arguments
+##### arguments
+
     - addr = ''
     - accesstokenaddr = ''
     - id = ''
@@ -13,14 +16,15 @@
     - user_info_url = ''
     - logout_url = ''
     - instance = 'github'
-- comments
-    
+
+##### comments
 
 #### log 
-- arguments
+##### arguments
+
     - msg
     - category = ''
     - level = 5
-- comments
-    
+
+##### comments
 

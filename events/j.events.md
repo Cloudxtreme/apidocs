@@ -2,65 +2,88 @@
 
 - /opt/jumpscale7/lib/JumpScale/core/errorhandling/EventHandler.py
 
+### Methods
+
 #### bug_critical 
-- arguments
+##### arguments
+
     - msg
     - category = ''
     - jobid = 0
     - e
-- comments
-    will die
-    @param e is python error object when doing except
+
+##### comments
+
+will die
+@param e is python error object when doing except
 
 #### bug_warning 
-- arguments
+##### arguments
+
     - msg
     - category = ''
     - e
-- comments
-    will die
-    @param e is python error object when doing except
+
+##### comments
+
+will die
+@param e is python error object when doing except
 
 #### inputerror_critical 
-- arguments
+##### arguments
+
     - msg
     - category = ''
     - msgpub = ''
-- comments
-    will die
+
+##### comments
+
+will die
 
 #### inputerror_warning 
-- arguments
+##### arguments
+
     - msg
     - category = ''
     - msgpub = ''
-- comments
-    will die
+
+##### comments
+
+will die
 
 #### opserror 
-- arguments
+##### arguments
+
     - msg
     - category = ''
     - e
-- comments
-    will NOT die
-    will make warning event is the same as opserror_warning
-    @param e is python error object when doing except
+
+##### comments
+
+will NOT die
+will make warning event is the same as opserror_warning
+@param e is python error object when doing except
 
 #### opserror_critical 
-- arguments
+##### arguments
+
     - msg
     - category = ''
-- comments
-    will die
+
+##### comments
+
+will die
 
 #### opserror_warning 
-- arguments
+##### arguments
+
     - msg
     - category = ''
     - e
-- comments
-    will NOT die
-    will make warning event is the same as opserror_warning
-    @param e is python error object when doing except
+
+##### comments
+
+will NOT die
+will make warning event is the same as opserror_warning
+@param e is python error object when doing except
 

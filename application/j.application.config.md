@@ -11,28 +11,36 @@
     - commentblock
     - prefixWithName
 
+### Methods
+
 #### add2tree 
-- arguments
+##### arguments
+
     - path
     - recursive = True
-- comments
-    
+
+##### comments
 
 #### add2treeFromContent 
-- arguments
+##### arguments
+
     - content
-- comments
-    
+
+##### comments
 
 #### applyOnContent 
-- arguments
+##### arguments
+
     - content
     - additionalArgs = OrderedDict()
-- comments
-    look for $(name) and replace with hrd value
+
+##### comments
+
+look for $(name) and replace with hrd value
 
 #### applyOnDir 
-- arguments
+##### arguments
+
     - path
     - filter
     - minmtime
@@ -41,101 +49,125 @@
     - changeFileName = True
     - changeContent = True
     - additionalArgs = OrderedDict()
-- comments
-    look for $(name) and replace with hrd value
+
+##### comments
+
+look for $(name) and replace with hrd value
 
 #### applyOnFile 
-- arguments
+##### arguments
+
     - path
     - additionalArgs = OrderedDict()
-- comments
-    look for $(name) and replace with hrd value
+
+##### comments
+
+look for $(name) and replace with hrd value
 
 #### checkValidity 
-- arguments
+##### arguments
+
     - template
     - hrddata = OrderedDict()
-- comments
-    @param template is example hrd content block, which will be used to check against, 
-    if params not found will be added to existing hrd
+
+##### comments
+
+@param template is example hrd content block, which will be used to check against, 
+if params not found will be added to existing hrd
 
 #### delete 
-- arguments
+##### arguments
+
     - key
-- comments
-    
+
+##### comments
 
 #### exists 
-- arguments
+##### arguments
+
     - key
-- comments
-    
+
+##### comments
 
 #### get 
-- arguments
+##### arguments
+
     - key
     - default
-- comments
-    
+
+##### comments
 
 #### getBool 
-- arguments
+##### arguments
+
     - key
     - default
-- comments
-    
+
+##### comments
 
 #### getDict 
-- arguments
+##### arguments
+
     - key
-- comments
-    
+
+##### comments
 
 #### getDictFromPrefix 
-- arguments
+##### arguments
+
     - prefix
-- comments
-    returns values from prefix return as list
+
+##### comments
+
+returns values from prefix return as list
 
 #### getFloat 
-- arguments
+##### arguments
+
     - key
-- comments
-    
+
+##### comments
 
 #### getHRDAsDict 
-- arguments
-- comments
-    
+##### arguments
+
+##### comments
 
 #### getHrd 
-- arguments
+##### arguments
+
     - key
-- comments
-    
+
+##### comments
 
 #### getInt 
-- arguments
+##### arguments
+
     - key
     - default
-- comments
-    
+
+##### comments
 
 #### getList 
-- arguments
+##### arguments
+
     - key
     - default
-- comments
-    
+
+##### comments
 
 #### getListFromPrefix 
-- arguments
+##### arguments
+
     - prefix
-- comments
-    returns values from prefix return as list
+
+##### comments
+
+returns values from prefix return as list
 
 #### getListFromPrefixEachItemDict 
-- arguments
+##### arguments
+
     - prefix
     - musthave = []
     - defaults = OrderedDict()
@@ -143,56 +175,66 @@
     - arelist = []
     - areint = []
     - arebool = []
-- comments
-    returns values from prefix return as list
-    each value represents a dict
-    @param musthave means for each item which is dict, we need to have following keys
-    @param specifies the defaults
-    @param aredicts & arelist specifies which types
+
+##### comments
+
+returns values from prefix return as list
+each value represents a dict
+@param musthave means for each item which is dict, we need to have following keys
+@param specifies the defaults
+@param aredicts & arelist specifies which types
 
 #### getStr 
-- arguments
+##### arguments
+
     - key
     - default
-- comments
-    
+
+##### comments
 
 #### listAdd 
-- arguments
+##### arguments
+
     - key
     - item
-- comments
-    
+
+##### comments
 
 #### pop 
-- arguments
+##### arguments
+
     - key
-- comments
-    
+
+##### comments
 
 #### prefix 
-- arguments
+##### arguments
+
     - key
     - depth = 0
-- comments
-    @param depth means prefix level to return
+
+##### comments
+
+@param depth means prefix level to return
 
 #### prefixexists 
-- arguments
+##### arguments
+
     - key
-- comments
-    
+
+##### comments
 
 #### processall 
-- arguments
-- comments
-    
+##### arguments
+
+##### comments
 
 #### set 
-- arguments
+##### arguments
+
     - key
     - val
     - persistent = True
-- comments
-    
+
+##### comments
 

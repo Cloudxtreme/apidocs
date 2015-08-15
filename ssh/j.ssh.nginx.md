@@ -2,10 +2,13 @@
 
 - /opt/jumpscale7/lib/JumpScale/lib/ssh/nginx/manager.py
 
+### Methods
+
 #### get 
-- arguments
+##### arguments
+
     - con
     - path = '/etc/nginx/nginx.conf'
-- comments
-    
+
+##### comments
 

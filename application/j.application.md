@@ -18,109 +18,138 @@
     - whoAmI
     - interactive
 
+### Methods
+
 #### connectRedis 
-- arguments
-- comments
-    
+##### arguments
+
+##### comments
 
 #### existAppInstanceHRD 
-- arguments
+##### arguments
+
     - name
     - instance
     - domain = 'jumpscale'
-- comments
-    returns hrd for specific appname & instance name (default domain=jumpscale or not used when inside a config git repo)
+
+##### comments
+
+returns hrd for specific appname & instance name (default domain=jumpscale or not used when inside a config git repo)
 
 #### getAgentId 
-- arguments
-- comments
-    
+##### arguments
+
+##### comments
 
 #### getAppHRDInstanceNames 
-- arguments
+##### arguments
+
     - name
     - domain = 'jumpscale'
-- comments
-    returns hrd instance names for specific appname (default domain=jumpscale)
+
+##### comments
+
+returns hrd instance names for specific appname (default domain=jumpscale)
 
 #### getAppInstanceHRD 
-- arguments
+##### arguments
+
     - name
     - instance
     - domain = 'jumpscale'
     - parent
-- comments
-    returns hrd for specific domain,name and & instance name
+
+##### comments
+
+returns hrd for specific domain,name and & instance name
 
 #### getAppInstanceHRDs 
-- arguments
+##### arguments
+
     - name
     - domain = 'jumpscale'
-- comments
-    returns list of hrd instances for specified app
+
+##### comments
+
+returns list of hrd instances for specified app
 
 #### getCPUUsage 
-- arguments
-- comments
-    try to get cpu usage, if it doesn't work will return 0
-    By default 0 for windows
+##### arguments
+
+##### comments
+
+try to get cpu usage, if it doesn't work will return 0
+By default 0 for windows
 
 #### getMemoryUsage 
-- arguments
-- comments
-    try to get memory usage, if it doesn't work will return 0i
-    By default 0 for windows
+##### arguments
+
+##### comments
+
+try to get memory usage, if it doesn't work will return 0i
+By default 0 for windows
 
 #### getUniqueMachineId 
-- arguments
-- comments
-    will look for network interface and return a hash calculated from lowest mac address from all physical nics
+##### arguments
+
+##### comments
+
+will look for network interface and return a hash calculated from lowest mac address from all physical nics
 
 #### getWhoAmiStr 
-- arguments
-- comments
-    
+##### arguments
+
+##### comments
 
 #### init 
-- arguments
-- comments
-    
+##### arguments
+
+##### comments
 
 #### initGrid 
-- arguments
-- comments
-    
+##### arguments
+
+##### comments
 
 #### initWhoAmI 
-- arguments
+##### arguments
+
     - reload = False
-- comments
-    when in grid:
-        is gid,nid,pid
+
+##### comments
+
+when in grid:
+    is gid,nid,pid
 
 #### loadConfig 
-- arguments
-- comments
-    
+##### arguments
+
+##### comments
 
 #### start 
-- arguments
+##### arguments
+
     - name
     - appdir = '.'
-- comments
-    Start the application
-    
-    You can only stop the application with return code 0 by calling
-    j.Application.stop(). Don't call sys.exit yourself, don't try to run
-    to end-of-script, I will find you anyway!
+
+##### comments
+
+Start the application
+
+You can only stop the application with return code 0 by calling
+j.Application.stop(). Don't call sys.exit yourself, don't try to run
+to end-of-script, I will find you anyway!
 
 #### stop 
-- arguments
+##### arguments
+
     - exitcode = 0
     - stop = True
-- comments
-    Stop the application cleanly using a given exitcode
-    
-    @param exitcode: Exit code to use
-    @type exitcode: number
+
+##### comments
+
+Stop the application cleanly using a given exitcode
+
+@param exitcode: Exit code to use
+@type exitcode: number
 

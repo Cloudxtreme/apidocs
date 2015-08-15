@@ -2,11 +2,14 @@
 
 - /opt/jumpscale7/lib/JumpScale/baselib/admin/Admin.py
 
+### Methods
+
 #### get 
-- arguments
+##### arguments
+
     - path
     - args
     - failWhenNotExist = False
-- comments
-    
+
+##### comments
 

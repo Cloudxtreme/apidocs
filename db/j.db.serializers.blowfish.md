@@ -5,17 +5,21 @@
     - encrkey
     - c
 
+### Methods
+
 #### dumps 
-- arguments
+##### arguments
+
     - obj
     - encrkey
-- comments
-    
+
+##### comments
 
 #### loads 
-- arguments
+##### arguments
+
     - s
     - encrkey
-- comments
-    
+
+##### comments
 

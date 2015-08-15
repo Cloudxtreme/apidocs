@@ -2,10 +2,13 @@
 
 - /opt/jumpscale7/lib/JumpScale/baselib/influxdb/Influxdb.py
 
+### Methods
+
     
 
 #### get 
-- arguments
+##### arguments
+
     - host = 'localhost'
     - port = 8086
     - username = 'root'
@@ -16,12 +19,13 @@
     - timeout
     - use_udp = False
     - udp_port = 4444
-- comments
-    
+
+##### comments
 
 #### getByInstance 
-- arguments
+##### arguments
+
     - instancename
-- comments
-    
+
+##### comments
 

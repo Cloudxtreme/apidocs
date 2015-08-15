@@ -4,38 +4,45 @@
 - Properties
     - connections
 
+### Methods
+
 Gitlab client enables administrators and developers leveraging Gitlab services through JumpScale
 
 #### get 
-- arguments
+##### arguments
+
     - gitlaburl = ''
     - login = ''
     - passwd = ''
     - instance = 'main'
-- comments
-    example for gitlaburl
-        https://despiegk:dddd@git.aydo.com
-    can also be without login:passwd
-        e.g. https://git.aydo.com and specify login/passwd
-    
-    if gitlaburl is empty then 
-        hrd is used as follows:
-        hrd=j.application.getAppInstanceHRD("gitlab_client",instance)
-        gitlaburl=hrd.get("gitlab.client.url")
-        login=hrd.get("gitlab.client.login")
-        passwd=hrd.get("gitlab.client.passwd")
+
+##### comments
+
+example for gitlaburl
+    https://despiegk:dddd@git.aydo.com
+can also be without login:passwd
+    e.g. https://git.aydo.com and specify login/passwd
+
+if gitlaburl is empty then 
+    hrd is used as follows:
+    hrd=j.application.getAppInstanceHRD("gitlab_client",instance)
+    gitlaburl=hrd.get("gitlab.client.url")
+    login=hrd.get("gitlab.client.login")
+    passwd=hrd.get("gitlab.client.passwd")
 
 #### getAccountnameReponameFromUrl 
-- arguments
+##### arguments
+
     - url
-- comments
-    
+
+##### comments
 
 #### log 
-- arguments
+##### arguments
+
     - msg
     - category = ''
     - level = 5
-- comments
-    
+
+##### comments
 

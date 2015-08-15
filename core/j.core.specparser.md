@@ -10,14 +10,18 @@
     - appnames
     - specs
 
+### Methods
+
 #### addSpec 
-- arguments
+##### arguments
+
     - spec
-- comments
-    
+
+##### comments
 
 #### findSpec 
-- arguments
+##### arguments
+
     - query = ''
     - appname = ''
     - actorname = ''
@@ -25,83 +29,97 @@
     - type = ''
     - findFromSpec
     - findOnlyOne = True
-- comments
-    do not specify query with one of the other filter criteria
-    @param query is in dot notation e.g. $appname.$actorname.$modelname ... the items in front are optional
+
+##### comments
+
+do not specify query with one of the other filter criteria
+@param query is in dot notation e.g. $appname.$actorname.$modelname ... the items in front are optional
 
 #### getActorSpec 
-- arguments
+##### arguments
+
     - app
     - name
     - raiseError = True
-- comments
-    
+
+##### comments
 
 #### getChildModelSpec 
-- arguments
+##### arguments
+
     - app
     - actorname
     - name
     - die = True
-- comments
-    
+
+##### comments
 
 #### getEnumerationSpec 
-- arguments
+##### arguments
+
     - app
     - actorname
     - name
     - die = True
-- comments
-    
+
+##### comments
 
 #### getModelNames 
-- arguments
+##### arguments
+
     - appname
     - actorname
-- comments
-    
+
+##### comments
 
 #### getModelSpec 
-- arguments
+##### arguments
+
     - app
     - actorname
     - name
     - die = True
-- comments
-    
+
+##### comments
 
 #### getSpecFromTypeStr 
-- arguments
+##### arguments
+
     - appname
     - actorname
     - typestr
-- comments
-    @param typestr e.g list(machine.status)
-    @return $returntype,$spec  $returntype=list,dict,object,enum (list & dict can be of primitive types or objects (NOT enums))
+
+##### comments
+
+@param typestr e.g list(machine.status)
+@return $returntype,$spec  $returntype=list,dict,object,enum (list & dict can be of primitive types or objects (NOT enums))
 
 #### init 
-- arguments
-- comments
-    
+##### arguments
+
+##### comments
 
 #### parseSpecs 
-- arguments
+##### arguments
+
     - specpath
     - appname
     - actorname
-- comments
-    @param specpath if empty will look for path specs in current dir
+
+##### comments
+
+@param specpath if empty will look for path specs in current dir
 
 #### removeSpecsForActor 
-- arguments
+##### arguments
+
     - appname
     - actorname
-- comments
-    
+
+##### comments
 
 #### resetMemNonSystem 
-- arguments
-- comments
-    
+##### arguments
+
+##### comments
 

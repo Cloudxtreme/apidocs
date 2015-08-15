@@ -2,16 +2,20 @@
 
 - /opt/jumpscale7/lib/JumpScale/grid/mongodbclient/MongoDBClient.py
 
+### Methods
+
 #### get 
-- arguments
+##### arguments
+
     - host = 'localhost'
     - port = 27017
-- comments
-    
+
+##### comments
 
 #### getByInstance 
-- arguments
+##### arguments
+
     - instancename
-- comments
-    
+
+##### comments
 

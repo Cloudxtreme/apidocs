@@ -5,28 +5,35 @@
     - debug
     - ipython
 
+### Methods
+
 attach configuration items to this configure object (can happen at runtime)
 
 #### checkCreateConfigFile 
-- arguments
+##### arguments
+
     - configType
-- comments
-    check if config file exists, if not create and reload
+
+##### comments
+
+check if config file exists, if not create and reload
 
 #### getConfigFileManager 
-- arguments
+##### arguments
+
     - configType
-- comments
-    
+
+##### comments
 
 #### loadConfigFile 
-- arguments
+##### arguments
+
     - configType
-- comments
-    
+
+##### comments
 
 #### refresh 
-- arguments
-- comments
-    
+##### arguments
+
+##### comments
 

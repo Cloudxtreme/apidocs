@@ -6,68 +6,83 @@
     - nodeguids
     - namespacesInited
 
+### Methods
+
     
 
 #### decrypt 
-- arguments
+##### arguments
+
     - val
     - json = False
-- comments
-    
+
+##### comments
 
 #### encrypt 
-- arguments
+##### arguments
+
     - obj
-- comments
-    
+
+##### comments
 
 #### generateOsisModelDefaults 
-- arguments
+##### arguments
+
     - namespace
     - specpath = ''
-- comments
-    
+
+##### comments
 
 #### getLocal 
-- arguments
+##### arguments
+
     - path = ''
     - overwriteHRD = False
     - overwriteImplementation = False
     - namespacename
-- comments
-    create local instance starting from path
+
+##### comments
+
+create local instance starting from path
 
 #### getModelTemplate 
-- arguments
-- comments
-    
+##### arguments
+
+##### comments
 
 #### getOSISBaseObjectComplexType 
-- arguments
-- comments
-    
+##### arguments
+
+##### comments
 
 #### getOsisBaseObjectClass 
-- arguments
-- comments
-    
+##### arguments
+
+##### comments
 
 #### getOsisImplementationParentClass 
-- arguments
+##### arguments
+
     - namespacename
-- comments
-    return parent class for osis implementation (is the implementation from which each namespace & category inherits)
+
+##### comments
+
+return parent class for osis implementation (is the implementation from which each namespace & category inherits)
 
 #### getOsisModelClass 
-- arguments
+##### arguments
+
     - namespace
     - category
     - specpath = ''
-- comments
-    returns class generated from spec file or from model.py file
+
+##### comments
+
+returns class generated from spec file or from model.py file
 
 #### startDaemon 
-- arguments
+##### arguments
+
     - path = ''
     - overwriteHRD = False
     - overwriteImplementation = False
@@ -76,6 +91,8 @@
     - superadminpasswd
     - dbconnections = \{\}
     - hrd
-- comments
-    start deamon
+
+##### comments
+
+start deamon
 

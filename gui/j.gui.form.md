@@ -2,10 +2,14 @@
 
 - /opt/jumpscale7/lib/JumpScale/core/gui/dialog/EasyDialogWizardForm.py
 
+### Methods
+
 #### createForm 
-- arguments
-- comments
-    Create new wizard form object
-    
-    @return: WizardForm object
+##### arguments
+
+##### comments
+
+Create new wizard form object
+
+@return: WizardForm object
 

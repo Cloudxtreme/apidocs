@@ -6,42 +6,46 @@
     - basedir
     - redis
 
+### Methods
+
     
 
 #### checkStartupOlderThan 
-- arguments
+##### arguments
+
     - secago
-- comments
-    
+
+##### comments
 
 #### getCmdsObject 
-- arguments
+##### arguments
+
     - category
-- comments
-    
+
+##### comments
 
 #### getStartupTime 
-- arguments
-- comments
-    
+##### arguments
+
+##### comments
 
 #### loadCmds 
-- arguments
-- comments
-    
+##### arguments
+
+##### comments
 
 #### loadMonitorObjectTypes 
-- arguments
-- comments
-    
+##### arguments
+
+##### comments
 
 #### restartWorkers 
-- arguments
-- comments
-    
+##### arguments
+
+##### comments
 
 #### start 
-- arguments
-- comments
-    
+##### arguments
+
+##### comments
 

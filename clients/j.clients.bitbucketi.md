@@ -2,23 +2,27 @@
 
 - /opt/jumpscale7/lib/JumpScale/baselib/bitbucket/BitbucketInterface.py
 
+### Methods
+
 interface on i
 
 #### getAccount 
-- arguments
+##### arguments
+
     - accountname = ''
-- comments
-    
+
+##### comments
 
 #### getRepo 
-- arguments
+##### arguments
+
     - accountname = ''
     - reponame = ''
-- comments
-    
+
+##### comments
 
 #### init 
-- arguments
-- comments
-    
+##### arguments
+
+##### comments
 

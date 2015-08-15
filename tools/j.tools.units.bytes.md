@@ -2,18 +2,24 @@
 
 - /opt/jumpscale7/lib/JumpScale/baselib/units/units.py
 
+### Methods
+
 #### converToBestUnit 
-- arguments
+##### arguments
+
     - value
     - input = ''
-- comments
-    
+
+##### comments
 
 #### toSize 
-- arguments
+##### arguments
+
     - value
     - input = ''
     - output = 'K'
-- comments
-    Convert value in other measurement
+
+##### comments
+
+Convert value in other measurement
 

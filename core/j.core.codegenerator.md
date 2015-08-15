@@ -7,8 +7,11 @@
     - classes
     - generated
 
+### Methods
+
 #### generate 
-- arguments
+##### arguments
+
     - spec
     - type
     - typecheck = True
@@ -22,34 +25,39 @@
     - returnClass = True
     - args = \{\}
     - makeCopy = False
-- comments
-    param: spec is spec we want to generate from
-    param: type JSModel,actormethodgreenlet,enumeration,actorlocal
-    param: typecheck (means in generated code the types will be checked)
-    param: dieInGenCode  if true means in generated code we will die when something uneforeseen happens
-    return: dict of classes if more than 1 otherwise just the class
+
+##### comments
+
+param: spec is spec we want to generate from
+param: type JSModel,actormethodgreenlet,enumeration,actorlocal
+param: typecheck (means in generated code the types will be checked)
+param: dieInGenCode  if true means in generated code we will die when something uneforeseen happens
+return: dict of classes if more than 1 otherwise just the class
 
 #### getActorClass 
-- arguments
+##### arguments
+
     - appname
     - actor
     - typecheck = True
     - dieInGenCode = True
     - codepath
-- comments
-    
+
+##### comments
 
 #### getClassActorLocal 
-- arguments
+##### arguments
+
     - appname
     - actor
     - typecheck = True
     - dieInGenCode = True
-- comments
-    
+
+##### comments
 
 #### getClassActorRemote 
-- arguments
+##### arguments
+
     - appname
     - actor
     - typecheck = True
@@ -58,83 +66,95 @@
     - redis = False
     - wsclient
     - codepath
-- comments
-    
+
+##### comments
 
 #### getClassEnumeration 
-- arguments
+##### arguments
+
     - appname
     - actor
     - enumname
     - typecheck = True
     - dieInGenCode = True
-- comments
-    
+
+##### comments
 
 #### getClassJSModel 
-- arguments
+##### arguments
+
     - appname
     - actor
     - modelname
     - typecheck = True
     - dieInGenCode = True
     - codepath = ''
-- comments
-    
+
+##### comments
 
 #### getClassesActorMethodGreenlet 
-- arguments
+##### arguments
+
     - appname
     - actor
     - typecheck = True
     - dieInGenCode = True
-- comments
-    return: returns dict with key name methodname and then the class (for each method a class is generated)
+
+##### comments
+
+return: returns dict with key name methodname and then the class (for each method a class is generated)
 
 #### getCodeEveModel 
-- arguments
+##### arguments
+
     - appname
     - actor
     - modelname
     - typecheck = True
     - dieInGenCode = True
     - codepath = ''
-- comments
-    
+
+##### comments
 
 #### getCodeId 
-- arguments
+##### arguments
+
     - spec
     - type
-- comments
-    
+
+##### comments
 
 #### getCodeJSModel 
-- arguments
+##### arguments
+
     - appname
     - actor
     - modelname
     - typecheck = True
     - dieInGenCode = True
     - codepath = ''
-- comments
-    
+
+##### comments
 
 #### removeFromMem 
-- arguments
+##### arguments
+
     - appname
     - actor
-- comments
-    
+
+##### comments
 
 #### resetMemNonSystem 
-- arguments
-- comments
-    
+##### arguments
+
+##### comments
 
 #### setTarget 
-- arguments
+##### arguments
+
     - target
-- comments
-    Sets the target to generate for server or client
+
+##### comments
+
+Sets the target to generate for server or client
 

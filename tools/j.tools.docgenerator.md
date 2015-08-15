@@ -2,63 +2,73 @@
 
 - /opt/jumpscale7/lib/JumpScale/portal/docgenerator/Docgenerator.py
 
+### Methods
+
 #### convertConfluenceToRST 
-- arguments
+##### arguments
+
     - src
     - dest
-- comments
-    
+
+##### comments
 
 #### getConfluence2htmlConvertor 
-- arguments
-- comments
-    
+##### arguments
+
+##### comments
 
 #### getConfluence2rstConvertor 
-- arguments
-- comments
-    
+##### arguments
+
+##### comments
 
 #### getConfluenceClient 
-- arguments
+##### arguments
+
     - url
     - login
     - passwd
     - spacename
     - erasespace = False
     - erasepages = False
-- comments
-    @param url e.g. http://10.0.1.193:8080/confluence
+
+##### comments
+
+@param url e.g. http://10.0.1.193:8080/confluence
 
 #### getMacroPath 
-- arguments
-- comments
-    
+##### arguments
+
+##### comments
 
 #### pageGroupNew 
-- arguments
+##### arguments
+
     - pages = \{\}
-- comments
-    
+
+##### comments
 
 #### pageNewConfluence 
-- arguments
+##### arguments
+
     - pagename
     - parent = 'Home'
-- comments
-    
+
+##### comments
 
 #### pageNewHTML 
-- arguments
+##### arguments
+
     - pagename
     - htmllibPath
-- comments
-    
+
+##### comments
 
 #### pageNewRST 
-- arguments
+##### arguments
+
     - pagename
     - htmllibPath
-- comments
-    
+
+##### comments
 

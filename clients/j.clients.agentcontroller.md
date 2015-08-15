@@ -2,36 +2,44 @@
 
 - /opt/jumpscale7/lib/JumpScale/grid/agentcontroller/AgentControllerFactory.py
 
+### Methods
+
 #### get 
-- arguments
+##### arguments
+
     - addr
     - port = 4444
     - login = 'root'
     - passwd
     - new = False
-- comments
-    @if None will be same as master
+
+##### comments
+
+@if None will be same as master
 
 #### getByInstance 
-- arguments
+##### arguments
+
     - instance
     - new = False
-- comments
-    
+
+##### comments
 
 #### getInstanceConfig 
-- arguments
+##### arguments
+
     - instance
-- comments
-    
+
+##### comments
 
 #### getProxy 
-- arguments
+##### arguments
+
     - category = 'core'
     - addr
     - port = 4444
     - login = 'root'
     - passwd
-- comments
-    
+
+##### comments
 

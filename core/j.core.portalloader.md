@@ -4,23 +4,25 @@
 - Properties
     - actorsinfo
 
+### Methods
+
 #### getActorsLoader 
-- arguments
-- comments
-    
+##### arguments
+
+##### comments
 
 #### getBucketsLoader 
-- arguments
-- comments
-    
+##### arguments
+
+##### comments
 
 #### getSpacesLoader 
-- arguments
-- comments
-    
+##### arguments
+
+##### comments
 
 #### getTemplatesPath 
-- arguments
-- comments
-    
+##### arguments
+
+##### comments
 

@@ -2,11 +2,14 @@
 
 - /opt/jumpscale7/lib/JumpScale/lib/cisco_ios/CiscoSwitchManager.py
 
+### Methods
+
 #### get 
-- arguments
+##### arguments
+
     - host
     - login
     - password
-- comments
-    
+
+##### comments
 

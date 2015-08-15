@@ -4,200 +4,238 @@
 - Properties
     - installedPackageNames
 
+### Methods
+
 #### addSourceUri 
-- arguments
+##### arguments
+
     - url
-- comments
-    
+
+##### comments
 
 #### addUser2Group 
-- arguments
+##### arguments
+
     - group
     - user
-- comments
-    
+
+##### comments
 
 #### changeSourceUri 
-- arguments
+##### arguments
+
     - newuri
-- comments
-    
+
+##### comments
 
 #### check 
-- arguments
+##### arguments
+
     - die = True
-- comments
-    check if ubuntu or mint (which is based on ubuntu)
+
+##### comments
+
+check if ubuntu or mint (which is based on ubuntu)
 
 #### checkInstall 
-- arguments
+##### arguments
+
     - packagenames
     - cmdname
-- comments
-    @param packagenames is name or array of names of ubuntu package to install e.g. curl
-    @param cmdname is cmd to check e.g. curl
+
+##### comments
+
+@param packagenames is name or array of names of ubuntu package to install e.g. curl
+@param cmdname is cmd to check e.g. curl
 
 #### checkroot 
-- arguments
-- comments
-    
+##### arguments
+
+##### comments
 
 #### createGroup 
-- arguments
+##### arguments
+
     - groupname
-- comments
-    
+
+##### comments
 
 #### createUser 
-- arguments
+##### arguments
+
     - name
     - passwd
     - home
     - creategroup = True
     - deletefirst = False
-- comments
-    
+
+##### comments
 
 #### downloadInstallDebPkg 
-- arguments
+##### arguments
+
     - url
     - removeDownloaded = False
     - minspeed = 20
-- comments
-    will download to tmp if not there yet
-    will then install
+
+##### comments
+
+will download to tmp if not there yet
+will then install
 
 #### existsGroup 
-- arguments
+##### arguments
+
     - name
-- comments
-    
+
+##### comments
 
 #### existsUser 
-- arguments
+##### arguments
+
     - name
-- comments
-    
+
+##### comments
 
 #### find1packageInstalled 
-- arguments
+##### arguments
+
     - packagename
-- comments
-    
+
+##### comments
 
 #### findPackagesInstalled 
-- arguments
+##### arguments
+
     - packagename
-- comments
-    
+
+##### comments
 
 #### findPackagesRepo 
-- arguments
+##### arguments
+
     - packagename
-- comments
-    
+
+##### comments
 
 #### generateLocalSSHKeyPair 
-- arguments
+##### arguments
+
     - passphrase = ''
     - type = 'rsa'
     - overwrite = False
     - path = '/root/.ssh/id_rsa'
-- comments
-    
+
+##### comments
 
 #### getPackage 
-- arguments
+##### arguments
+
     - name
-- comments
-    
+
+##### comments
 
 #### getPackageNamesInstalled 
-- arguments
-- comments
-    
+##### arguments
+
+##### comments
 
 #### getPackageNamesRepo 
-- arguments
-- comments
-    
+##### arguments
+
+##### comments
 
 #### getVersion 
-- arguments
-- comments
-    returns codename,descr,id,release
-    known ids" raring, linuxmint
+##### arguments
+
+##### comments
+
+returns codename,descr,id,release
+known ids" raring, linuxmint
 
 #### initApt 
-- arguments
-- comments
-    
+##### arguments
+
+##### comments
 
 #### install 
-- arguments
+##### arguments
+
     - packagename
-- comments
-    
+
+##### comments
 
 #### installDebFile 
-- arguments
+##### arguments
+
     - path
     - installDeps = True
-- comments
-    
+
+##### comments
 
 #### installVersion 
-- arguments
+##### arguments
+
     - packageName
     - version
-- comments
-    Installs a specific version of an ubuntu package.
-    
-    @param packageName: name of the package
-    @type packageName: str
-    
-    @param version: version of the package
-    @type version: str
+
+##### comments
+
+Installs a specific version of an ubuntu package.
+
+@param packageName: name of the package
+@type packageName: str
+
+@param version: version of the package
+@type version: str
 
 #### listFilesPkg 
-- arguments
+##### arguments
+
     - pkgname
     - regex = ''
-- comments
-    list files of dpkg
-    if regex used only output the ones who are matching regex
+
+##### comments
+
+list files of dpkg
+if regex used only output the ones who are matching regex
 
 #### listSources 
-- arguments
-- comments
-    
+##### arguments
+
+##### comments
 
 #### remove 
-- arguments
+##### arguments
+
     - packagename
-- comments
-    
+
+##### comments
 
 #### restartService 
-- arguments
+##### arguments
+
     - servicename
-- comments
-    
+
+##### comments
 
 #### serviceDisableStartAtBoot 
-- arguments
+##### arguments
+
     - servicename
-- comments
-    
+
+##### comments
 
 #### serviceEnableStartAtBoot 
-- arguments
+##### arguments
+
     - servicename
-- comments
-    
+
+##### comments
 
 #### serviceInstall 
-- arguments
+##### arguments
+
     - servicename
     - daemonpath
     - args = ''
@@ -205,47 +243,53 @@
     - pwd
     - env
     - reload = True
-- comments
-    
+
+##### comments
 
 #### serviceUninstall 
-- arguments
+##### arguments
+
     - servicename
-- comments
-    
+
+##### comments
 
 #### startService 
-- arguments
+##### arguments
+
     - servicename
-- comments
-    
+
+##### comments
 
 #### statusService 
-- arguments
+##### arguments
+
     - servicename
-- comments
-    
+
+##### comments
 
 #### stopService 
-- arguments
+##### arguments
+
     - servicename
-- comments
-    
+
+##### comments
 
 #### updatePackageMetadata 
-- arguments
+##### arguments
+
     - force = True
-- comments
-    
+
+##### comments
 
 #### upgradePackages 
-- arguments
+##### arguments
+
     - force = True
-- comments
-    
+
+##### comments
 
 #### whoami 
-- arguments
-- comments
-    
+##### arguments
+
+##### comments
 

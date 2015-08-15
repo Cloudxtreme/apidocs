@@ -4,16 +4,20 @@
 - Properties
     - redis
 
+### Methods
+
 #### popStats 
-- arguments
+##### arguments
+
     - key
-- comments
-    
+
+##### comments
 
 #### pushStats 
-- arguments
+##### arguments
+
     - key
     - data
-- comments
-    
+
+##### comments
 

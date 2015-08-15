@@ -2,110 +2,135 @@
 
 - /opt/jumpscale7/lib/JumpScale/baselib/code/Code.py
 
+### Methods
+
 #### classEditGeany 
-- arguments
+##### arguments
+
     - classs
-- comments
-    look for editor (uses geany) and then edit the file
+
+##### comments
+
+look for editor (uses geany) and then edit the file
 
 #### classEditWing 
-- arguments
+##### arguments
+
     - classs
-- comments
-    look for editor (uses geany) and then edit the file
+
+##### comments
+
+look for editor (uses geany) and then edit the file
 
 #### classGetBase 
-- arguments
-- comments
-    
+##### arguments
+
+##### comments
 
 #### classGetJSModelBase 
-- arguments
-- comments
-    
+##### arguments
+
+##### comments
 
 #### classGetJSRootModelBase 
-- arguments
-- comments
-    
+##### arguments
+
+##### comments
 
 #### classInfoGet 
-- arguments
+##### arguments
+
     - classs
-- comments
-    returns filepath,linenr,sourcecode
+
+##### comments
+
+returns filepath,linenr,sourcecode
 
 #### classInfoPrint 
-- arguments
+##### arguments
+
     - classs
-- comments
-    print info like source code of class
+
+##### comments
+
+print info like source code of class
 
 #### deIndent 
-- arguments
+##### arguments
+
     - content
     - level = 1
-- comments
-    
+
+##### comments
 
 #### dict2JSModelobject 
-- arguments
+##### arguments
+
     - obj
     - data
-- comments
-    
+
+##### comments
 
 #### dict2object 
-- arguments
+##### arguments
+
     - obj
     - data
-- comments
-    
+
+##### comments
 
 #### indent 
-- arguments
+##### arguments
+
     - content
     - level = 1
-- comments
-    
+
+##### comments
 
 #### object2dict 
-- arguments
+##### arguments
+
     - obj
     - dieOnUnknown = False
     - ignoreKeys = []
     - ignoreUnderscoreKeys = False
-- comments
-    
+
+##### comments
 
 #### object2dict4index 
-- arguments
+##### arguments
+
     - obj
-- comments
-    convert object to a dict
-    only properties on first level are considered
-    and properties of basic types like int,str,float,bool,dict,list
-    ideal to index the basics of an object
+
+##### comments
+
+convert object to a dict
+only properties on first level are considered
+and properties of basic types like int,str,float,bool,dict,list
+ideal to index the basics of an object
 
 #### object2json 
-- arguments
+##### arguments
+
     - obj
     - pretty = False
     - skiperrors = False
     - ignoreKeys = []
     - ignoreUnderscoreKeys = False
-- comments
-    
+
+##### comments
 
 #### object2yaml 
-- arguments
+##### arguments
+
     - obj
-- comments
-    
+
+##### comments
 
 #### pprint 
-- arguments
+##### arguments
+
     - obj
-- comments
-    
+
+##### comments
 

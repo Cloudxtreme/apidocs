@@ -2,10 +2,15 @@
 
 - /opt/jumpscale7/lib/JumpScale/core/LOADER.py
 
+### Methods
+
 #### makeAvailable 
-- arguments
+##### arguments
+
     - obj
     - path
-- comments
-    Make sure a path under a object is available
+
+##### comments
+
+Make sure a path under a object is available
 

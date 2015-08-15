@@ -6,26 +6,31 @@
     - paths
     - tests
 
+### Methods
+
 #### initTests 
-- arguments
+##### arguments
+
     - noOsis
     - osisip = '127.0.0.1'
     - login = ''
     - passwd = ''
-- comments
-    
+
+##### comments
 
 #### runTests 
-- arguments
+##### arguments
+
     - testrunname
     - debug = False
-- comments
-    
+
+##### comments
 
 #### testFile 
-- arguments
+##### arguments
+
     - testrunname
     - filepath
-- comments
-    
+
+##### comments
 

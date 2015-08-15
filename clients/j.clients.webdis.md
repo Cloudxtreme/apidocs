@@ -2,28 +2,33 @@
 
 - /opt/jumpscale7/lib/JumpScale/baselib/webdis/Webdis.py
 
+### Methods
+
     
 
 #### check 
-- arguments
+##### arguments
+
     - addr = '127.0.0.1'
     - port = 7779
     - timeout = 1
-- comments
-    
+
+##### comments
 
 #### get 
-- arguments
+##### arguments
+
     - addr = '127.0.0.1'
     - port = 7779
     - timeout = 10
-- comments
-    
+
+##### comments
 
 #### getByInstance 
-- arguments
+##### arguments
+
     - instance
     - timeout = 10
-- comments
-    
+
+##### comments
 

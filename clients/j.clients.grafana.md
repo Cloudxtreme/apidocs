@@ -2,8 +2,10 @@
 
 - /opt/jumpscale7/lib/JumpScale/lib/grafana/grafana.py
 
+### Methods
+
 #### get 
-- arguments
-- comments
-    
+##### arguments
+
+##### comments
 

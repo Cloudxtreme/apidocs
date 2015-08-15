@@ -2,9 +2,14 @@
 
 - /opt/jumpscale7/lib/JumpScale/lib/ssh/unix/manager.py
 
+### Methods
+
 #### get 
-- arguments
+##### arguments
+
     - connection
-- comments
-    Returns Unix Manager
+
+##### comments
+
+Returns Unix Manager
 

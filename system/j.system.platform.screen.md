@@ -4,33 +4,41 @@
 - Properties
     - screencmd
 
+### Methods
+
 #### attachSession 
-- arguments
+##### arguments
+
     - sessionname
     - windowname
     - user
-- comments
-    
+
+##### comments
 
 #### createSession 
-- arguments
+##### arguments
+
     - sessionname
     - screens
     - user
-- comments
-    @param name is name of session
-    @screens is list with nr of screens required in session and their names (is [$screenname,...])
+
+##### comments
+
+@param name is name of session
+@screens is list with nr of screens required in session and their names (is [$screenname,...])
 
 #### createWindow 
-- arguments
+##### arguments
+
     - session
     - name
     - user
-- comments
-    
+
+##### comments
 
 #### executeInScreen 
-- arguments
+##### arguments
+
     - sessionname
     - screenname
     - cmd
@@ -39,77 +47,87 @@
     - env
     - user = 'root'
     - tmuxuser
-- comments
-    @param sessionname Name of the tmux session
-    @type sessionname str
-    @param screenname Name of the window in the session
-    @type screenname str
-    @param cmd command to execute
-    @type cmd str
-    @param wait time to wait for output
-    @type wait int
-    @param cwd workingdir for command only in new screen see newscr
-    @type cwd str
-    @param env environment variables for cmd onlt in new screen see newscr
-    @type env dict
+
+##### comments
+
+@param sessionname Name of the tmux session
+@type sessionname str
+@param screenname Name of the window in the session
+@type screenname str
+@param cmd command to execute
+@type cmd str
+@param wait time to wait for output
+@type wait int
+@param cwd workingdir for command only in new screen see newscr
+@type cwd str
+@param env environment variables for cmd onlt in new screen see newscr
+@type env dict
 
 #### getPid 
-- arguments
+##### arguments
+
     - session
     - name
     - user
-- comments
-    
+
+##### comments
 
 #### getSessions 
-- arguments
+##### arguments
+
     - user
-- comments
-    
+
+##### comments
 
 #### getWindows 
-- arguments
+##### arguments
+
     - session
     - attemps = 5
     - user
-- comments
-    
+
+##### comments
 
 #### killSession 
-- arguments
+##### arguments
+
     - sessionname
     - user
-- comments
-    
+
+##### comments
 
 #### killSessions 
-- arguments
+##### arguments
+
     - user
-- comments
-    
+
+##### comments
 
 #### killWindow 
-- arguments
+##### arguments
+
     - session
     - name
     - user
-- comments
-    
+
+##### comments
 
 #### logWindow 
-- arguments
+##### arguments
+
     - session
     - name
     - filename
     - user
-- comments
-    
+
+##### comments
 
 #### windowExists 
-- arguments
+##### arguments
+
     - session
     - name
     - user
-- comments
-    
+
+##### comments
 

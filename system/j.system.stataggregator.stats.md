@@ -2,24 +2,27 @@
 
 - /opt/jumpscale7/lib/JumpScale/baselib/redis/Redis.py
 
+### Methods
+
 #### copy 
-- arguments
-- comments
-    
+##### arguments
+
+##### comments
 
 #### iteritems 
-- arguments
-- comments
-    
+##### arguments
+
+##### comments
 
 #### keys 
-- arguments
-- comments
-    
+##### arguments
+
+##### comments
 
 #### pop 
-- arguments
+##### arguments
+
     - key
-- comments
-    
+
+##### comments
 

@@ -5,25 +5,32 @@
     - dict2object
     - osisInstances
 
+### Methods
+
     
 
 #### destroy 
-- arguments
+##### arguments
+
     - appname
     - actorname = '*'
     - modelname = '*'
-- comments
-    destroy all objects & indexes with mentioned names
+
+##### comments
+
+destroy all objects & indexes with mentioned names
 
 #### dict2object 
-- arguments
+##### arguments
+
     - obj
     - data
-- comments
-    
+
+##### comments
 
 #### get 
-- arguments
+##### arguments
+
     - appname
     - actorname
     - modelname
@@ -31,41 +38,49 @@
     - db
     - index = False
     - indexer
-- comments
-    
+
+##### comments
 
 #### getNoDB 
-- arguments
+##### arguments
+
     - appname
     - actorname
     - modelname
     - modelClass
-- comments
-    
+
+##### comments
 
 #### getRemoteOsisDB 
-- arguments
+##### arguments
+
     - appname
     - actorname
     - modelname
     - modelClass
-- comments
-    
+
+##### comments
 
 #### inputNormalizeList 
-- arguments
+##### arguments
+
     - param
-- comments
-    comma separated string becomes list
-    list gets checked, if all int then returnformat=1
-    list gets checked, if all str, then returnformat=2
-    @return (returnformat,list)
+
+##### comments
+
+comma separated string becomes list
+list gets checked, if all int then returnformat=1
+list gets checked, if all str, then returnformat=2
+@return (returnformat,list)
 
 #### rebuildindex 
-- arguments
+##### arguments
+
     - appname
     - actorname = '*'
     - modelname = '*'
-- comments
-    destroy all objects & indexes with mentioned names
+
+##### comments
+
+destroy all objects & indexes with mentioned names
 

@@ -2,30 +2,36 @@
 
 - /opt/jumpscale7/lib/JumpScale/portal/docpreprocessor/DocParser.py
 
+### Methods
+
 #### addUniqueId 
-- arguments
+##### arguments
+
     - line
     - fullPath
     - ttype = 'sprint'
-- comments
-    
+
+##### comments
 
 #### errorTrap 
-- arguments
+##### arguments
+
     - msg
-- comments
-    
+
+##### comments
 
 #### parseDoc 
-- arguments
+##### arguments
+
     - doc
-- comments
-    
+
+##### comments
 
 #### shortenDescr 
-- arguments
+##### arguments
+
     - text
     - maxnrchars = 60
-- comments
-    
+
+##### comments
 

@@ -4,53 +4,62 @@
 - Properties
     - client
 
+### Methods
+
 #### btrfsSubvolCopy 
-- arguments
+##### arguments
+
     - nameFrom
     - NameDest
-- comments
-    
+
+##### comments
 
 #### btrfsSubvolDelete 
-- arguments
+##### arguments
+
     - name
-- comments
-    
+
+##### comments
 
 #### btrfsSubvolExists 
-- arguments
+##### arguments
+
     - name
-- comments
-    
+
+##### comments
 
 #### btrfsSubvolList 
-- arguments
-- comments
-    
+##### arguments
+
+##### comments
 
 #### btrfsSubvolNew 
-- arguments
+##### arguments
+
     - name
-- comments
-    
+
+##### comments
 
 #### commit 
-- arguments
+##### arguments
+
     - name
     - imagename
-- comments
-    
+
+##### comments
 
 #### copy 
-- arguments
+##### arguments
+
     - name
     - src
     - dest
-- comments
-    
+
+##### comments
 
 #### create 
-- arguments
+##### arguments
+
     - name = ''
     - ports = ''
     - vols = ''
@@ -64,182 +73,221 @@
     - jumpscale = False
     - ssh = True
     - myinit = True
-- comments
-    @param ports in format as follows  "22:8022 80:8080"  the first arg e.g. 22 is the port in the container
-    @param vols in format as follows "/var/insidemachine:/var/inhost # /var/1:/var/1 # ..."   '#' is separator
+
+##### comments
+
+@param ports in format as follows  "22:8022 80:8080"  the first arg e.g. 22 is the port in the container
+@param vols in format as follows "/var/insidemachine:/var/inhost # /var/1:/var/1 # ..."   '#' is separator
 
 #### destroy 
-- arguments
+##### arguments
+
     - name
-- comments
-    
+
+##### comments
 
 #### destroyall 
-- arguments
-- comments
-    
+##### arguments
+
+##### comments
 
 #### downloadFile 
-- arguments
+##### arguments
+
     - name
     - source
     - dest
-- comments
-    get a file located at source in the host to dest on the host
+
+##### comments
+
+get a file located at source in the host to dest on the host
 
 #### execute 
-- arguments
+##### arguments
+
     - name
     - path
-- comments
-    execute file in docker
+
+##### comments
+
+execute file in docker
 
 #### exportRsync 
-- arguments
+##### arguments
+
     - name
     - backupname
     - key = 'pub'
-- comments
-    
+
+##### comments
 
 #### exportTgz 
-- arguments
+##### arguments
+
     - name
     - backupname
-- comments
-    
+
+##### comments
 
 #### getImages 
-- arguments
-- comments
-    
+##### arguments
+
+##### comments
 
 #### getInfo 
-- arguments
+##### arguments
+
     - name
-- comments
-    
+
+##### comments
 
 #### getIp 
-- arguments
+##### arguments
+
     - name
-- comments
-    
+
+##### comments
 
 #### getProcessList 
-- arguments
+##### arguments
+
     - name
     - stdout = True
-- comments
-    @return [["$name",$pid,$mem,$parent],....,[$mem,$cpu]]
-    last one is sum of mem & cpu
+
+##### comments
+
+@return [["$name",$pid,$mem,$parent],....,[$mem,$cpu]]
+last one is sum of mem & cpu
 
 #### getPubPortForInternalPort 
-- arguments
+##### arguments
+
     - name
     - port
-- comments
-    
+
+##### comments
 
 #### getSSH 
-- arguments
+##### arguments
+
     - name
     - stdout = False
-- comments
-    
+
+##### comments
 
 #### importRsync 
-- arguments
+##### arguments
+
     - backupname
     - name
     - basename = ''
     - key = 'pub'
-- comments
-    @param basename is the name of a start of a machine locally, will be used as basis and then the source will be synced over it
+
+##### comments
+
+@param basename is the name of a start of a machine locally, will be used as basis and then the source will be synced over it
 
 #### importTgz 
-- arguments
+##### arguments
+
     - backupname
     - name
-- comments
-    
+
+##### comments
 
 #### inspect 
-- arguments
+##### arguments
+
     - name
-- comments
-    
+
+##### comments
 
 #### installJumpscale 
-- arguments
+##### arguments
+
     - name
-- comments
-    
+
+##### comments
 
 #### list 
-- arguments
-- comments
-    return list of names
+##### arguments
+
+##### comments
+
+return list of names
 
 #### ps 
-- arguments
-- comments
-    return detailed info
+##### arguments
+
+##### comments
+
+return detailed info
 
 #### pull 
-- arguments
+##### arguments
+
     - imagename
-- comments
-    
+
+##### comments
 
 #### pushSSHKey 
-- arguments
+##### arguments
+
     - name
-- comments
-    
+
+##### comments
 
 #### removeImages 
-- arguments
+##### arguments
+
     - tag = '<none>:<none>'
-- comments
-    
+
+##### comments
 
 #### removeRedundantFiles 
-- arguments
+##### arguments
+
     - name
-- comments
-    
+
+##### comments
 
 #### restart 
-- arguments
+##### arguments
+
     - name
-- comments
-    
+
+##### comments
 
 #### run 
-- arguments
+##### arguments
+
     - name
     - cmd
-- comments
-    
+
+##### comments
 
 #### setHostName 
-- arguments
+##### arguments
+
     - name
-- comments
-    
+
+##### comments
 
 #### stop 
-- arguments
+##### arguments
+
     - name
-- comments
-    
+
+##### comments
 
 #### uploadFile 
-- arguments
+##### arguments
+
     - name
     - source
     - dest
-- comments
-    put a file located at source on the host to dest into the container
+
+##### comments
+
+put a file located at source on the host to dest into the container
 

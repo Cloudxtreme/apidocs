@@ -5,86 +5,110 @@
     - myplatform
     - platformParents
 
+### Methods
+
 #### addPlatform 
-- arguments
+##### arguments
+
     - name
     - parent
-- comments
-    
+
+##### comments
 
 #### checkMatch 
-- arguments
+##### arguments
+
     - match
-- comments
-    match is in form of linux64,darwin
-    if any of the items e.g. darwin is in getMyRelevantPlatforms then return True
+
+##### comments
+
+match is in form of linux64,darwin
+if any of the items e.g. darwin is in getMyRelevantPlatforms then return True
 
 #### dieIfNotPlatform 
-- arguments
+##### arguments
+
     - platform
-- comments
-    
+
+##### comments
 
 #### getChildren 
-- arguments
+##### arguments
+
     - name
-- comments
-    
+
+##### comments
 
 #### getMyRelevantPlatforms 
-- arguments
-- comments
-    
+##### arguments
+
+##### comments
 
 #### getParents 
-- arguments
+##### arguments
+
     - name
-- comments
-    
+
+##### comments
 
 #### getPlatforms 
-- arguments
-- comments
-    
+##### arguments
+
+##### comments
 
 #### has_parent 
-- arguments
+##### arguments
+
     - name
-- comments
-    
+
+##### comments
 
 #### isGeneric 
-- arguments
-- comments
-    Checks whether the platform is generic (they all should)
+##### arguments
+
+##### comments
+
+Checks whether the platform is generic (they all should)
 
 #### isHyperV 
-- arguments
-- comments
-    Check whether the system supports HyperV
+##### arguments
+
+##### comments
+
+Check whether the system supports HyperV
 
 #### isLinux 
-- arguments
-- comments
-    Checks whether the platform is Linux-based
+##### arguments
+
+##### comments
+
+Checks whether the platform is Linux-based
 
 #### isUnix 
-- arguments
-- comments
-    Checks whether the platform is Unix-based
+##### arguments
+
+##### comments
+
+Checks whether the platform is Unix-based
 
 #### isVirtualBox 
-- arguments
-- comments
-    Check whether the system supports VirtualBox
+##### arguments
+
+##### comments
+
+Check whether the system supports VirtualBox
 
 #### isWindows 
-- arguments
-- comments
-    Checks whether the platform is Windows-based
+##### arguments
+
+##### comments
+
+Checks whether the platform is Windows-based
 
 #### isXen 
-- arguments
-- comments
-    Checks whether Xen support is enabled
+##### arguments
+
+##### comments
+
+Checks whether Xen support is enabled
 

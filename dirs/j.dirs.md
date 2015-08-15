@@ -16,77 +16,94 @@
     - jsLibDir
     - tmpDir
 
+### Methods
+
 Utility class to configure and store all relevant directory paths
 
 #### addProtectedDir 
-- arguments
+##### arguments
+
     - path
     - name = 'main'
-- comments
-    
+
+##### comments
 
 #### amInGitConfigRepo 
-- arguments
-- comments
-    return parent path where .git is or None when not found
+##### arguments
+
+##### comments
+
+return parent path where .git is or None when not found
 
 #### checkInProtectedDir 
-- arguments
+##### arguments
+
     - path
-- comments
-    
+
+##### comments
 
 #### createGitConfigRepo 
-- arguments
+##### arguments
+
     - path
-- comments
-    
+
+##### comments
 
 #### getHrdDir 
-- arguments
+##### arguments
+
     - system = False
-- comments
-    
+
+##### comments
 
 #### getPathOfRunningFunction 
-- arguments
+##### arguments
+
     - function
-- comments
-    
+
+##### comments
 
 #### init 
-- arguments
+##### arguments
+
     - reinit = False
-- comments
-    Initializes all the configured directories if needed
-    
-    If a folder attribute is None, set its value to the corresponding
-    default path.
-    
-    @returns: Initialization success
-    @rtype: bool
+
+##### comments
+
+Initializes all the configured directories if needed
+
+If a folder attribute is None, set its value to the corresponding
+default path.
+
+@returns: Initialization success
+@rtype: bool
 
 #### isGitConfigRepo 
-- arguments
+##### arguments
+
     - path
-- comments
-    
+
+##### comments
 
 #### loadProtectedDirs 
-- arguments
-- comments
-    
+##### arguments
+
+##### comments
 
 #### removeProtectedDir 
-- arguments
+##### arguments
+
     - path
-- comments
-    
+
+##### comments
 
 #### replaceTxtDirVars 
-- arguments
+##### arguments
+
     - txt
     - additionalArgs = \{\}
-- comments
-    replace $base,$vardir,$cfgDir,$bindir,$codedir,$tmpdir,$logdir,$appdir with props of this class
+
+##### comments
+
+replace $base,$vardir,$cfgDir,$bindir,$codedir,$tmpdir,$logdir,$appdir with props of this class
 

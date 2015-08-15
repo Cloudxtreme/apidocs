@@ -5,22 +5,26 @@
     - redisq
     - redis
 
+### Methods
+
     
 
 #### getRedisClient 
-- arguments
+##### arguments
+
     - ipaddr
     - port
     - timeout
-- comments
-    
+
+##### comments
 
 #### getRedisQueue 
-- arguments
+##### arguments
+
     - ipaddr
     - port
     - name
     - namespace = 'queues'
-- comments
-    
+
+##### comments
 

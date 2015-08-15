@@ -2,44 +2,52 @@
 
 - /opt/jumpscale7/lib/JumpScale/lib/sqlalchemy/SQLAlchemy.py
 
+### Methods
+
 #### get 
-- arguments
+##### arguments
+
     - connectionstring = ''
     - sqlitepath = ''
     - tomlpath = '../data'
-- comments
-    
+
+##### comments
 
 #### getBaseClass 
-- arguments
-- comments
-    complete example how to use sqlalchemy:
-    https://github.com/Jumpscale/jumpscale_core7/wiki/SQLAlchemy
+##### arguments
+
+##### comments
+
+complete example how to use sqlalchemy:
+https://github.com/Jumpscale/jumpscale_core7/wiki/SQLAlchemy
 
 #### validate_email 
-- arguments
+##### arguments
+
     - target
     - value
     - oldvalue
     - initiator
-- comments
-    
+
+##### comments
 
 #### validate_lower_strip 
-- arguments
+##### arguments
+
     - target
     - value
     - oldvalue
     - initiator
-- comments
-    
+
+##### comments
 
 #### validate_tel 
-- arguments
+##### arguments
+
     - target
     - value
     - oldvalue
     - initiator
-- comments
-    
+
+##### comments
 

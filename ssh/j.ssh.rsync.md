@@ -2,9 +2,12 @@
 
 - /opt/jumpscale7/lib/JumpScale/lib/ssh/rsync/manager.py
 
+### Methods
+
 #### get 
-- arguments
+##### arguments
+
     - con
-- comments
-    
+
+##### comments
 

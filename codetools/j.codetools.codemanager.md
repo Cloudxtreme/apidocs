@@ -6,33 +6,42 @@
     - users
     - groups
 
+### Methods
+
 #### getCodeManagerForFile 
-- arguments
+##### arguments
+
     - path
-- comments
-    
+
+##### comments
 
 #### getUserId 
-- arguments
+##### arguments
+
     - username
-- comments
-    
+
+##### comments
 
 #### parse 
-- arguments
+##### arguments
+
     - path
-- comments
-    directory to walk over and find story, task, ... statements
+
+##### comments
+
+directory to walk over and find story, task, ... statements
 
 #### setgroups 
-- arguments
+##### arguments
+
     - config
-- comments
-    
+
+##### comments
 
 #### setusers 
-- arguments
+##### arguments
+
     - config
-- comments
-    
+
+##### comments
 

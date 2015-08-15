@@ -2,31 +2,38 @@
 
 - /opt/jumpscale7/lib/JumpScale/lib/diskmanager/Diskmanager.py
 
+### Methods
+
 #### diskGetFreeRegions 
-- arguments
+##### arguments
+
     - disk
     - align
-- comments
-    Get a filtered list of free regions, excluding the gaps due to partition alignment
+
+##### comments
+
+Get a filtered list of free regions, excluding the gaps due to partition alignment
 
 #### mirrorsFind 
-- arguments
-- comments
-    
+##### arguments
+
+##### comments
 
 #### partitionAdd 
-- arguments
+##### arguments
+
     - disk
     - free
     - align
     - length
     - fs_type
     - type
-- comments
-    
+
+##### comments
 
 #### partitionsFind 
-- arguments
+##### arguments
+
     - mounted
     - ttype
     - ssd
@@ -36,30 +43,36 @@
     - devbusy
     - initialize = False
     - forceinitialize = False
-- comments
-    looks for disks which are know to be data disks & are formatted ext4
-    return [[$partpath,$size,$free,$ssd]]
-    @param ssd if None then ssd and other
+
+##### comments
+
+looks for disks which are know to be data disks & are formatted ext4
+return [[$partpath,$size,$free,$ssd]]
+@param ssd if None then ssd and other
 
 #### partitionsFind_Ext4Data 
-- arguments
-- comments
-    looks for disks which are know to be data disks & are formatted ext4
-    return [[$partpath,$gid,$partid,$size,$free]]
+##### arguments
+
+##### comments
+
+looks for disks which are know to be data disks & are formatted ext4
+return [[$partpath,$gid,$partid,$size,$free]]
 
 #### partitionsGetMounted_Ext4Data 
-- arguments
-- comments
-    find disks which are mounted
-    @return [[$partid,$size,$free]]
+##### arguments
+
+##### comments
+
+find disks which are mounted
+@return [[$partid,$size,$free]]
 
 #### partitionsMount_Ext4Data 
-- arguments
-- comments
-    
+##### arguments
+
+##### comments
 
 #### partitionsUnmount_Ext4Data 
-- arguments
-- comments
-    
+##### arguments
+
+##### comments
 

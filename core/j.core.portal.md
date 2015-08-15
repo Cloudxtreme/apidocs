@@ -5,20 +5,26 @@
     - active
     - inprocess
 
+### Methods
+
 #### getPortalConfig 
-- arguments
+##### arguments
+
     - appname
-- comments
-    
+
+##### comments
 
 #### getServer 
-- arguments
-- comments
-    
+##### arguments
+
+##### comments
 
 #### loadActorsInProcess 
-- arguments
+##### arguments
+
     - name = 'main'
-- comments
-    make sure all actors are loaded on j.apps...
+
+##### comments
+
+make sure all actors are loaded on j.apps...
 

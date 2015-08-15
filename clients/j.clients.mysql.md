@@ -4,15 +4,18 @@
 - Properties
     - clients
 
+### Methods
+
     
 
 #### getClient 
-- arguments
+##### arguments
+
     - ipaddr
     - port
     - login
     - passwd
     - dbname
-- comments
-    
+
+##### comments
 

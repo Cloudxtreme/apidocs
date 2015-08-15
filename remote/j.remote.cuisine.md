@@ -5,16 +5,19 @@
     - api
     - fabric
 
+### Methods
+
 #### connect 
-- arguments
+##### arguments
+
     - addr
     - port
     - passwd
-- comments
-    
+
+##### comments
 
 #### help 
-- arguments
-- comments
-    
+##### arguments
+
+##### comments
 

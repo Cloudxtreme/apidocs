@@ -4,125 +4,165 @@
 - Properties
     - PHYSMTU
 
+### Methods
+
 #### applyconfig 
-- arguments
+##### arguments
+
     - interfacenameToExclude
     - backplanename
-- comments
-    DANGEROUS, will remove old configuration
+
+##### comments
+
+DANGEROUS, will remove old configuration
 
 #### configureStaticAddress 
-- arguments
+##### arguments
+
     - interfacename = 'eth0'
     - ipaddr = '192.168.10.10/24'
     - gw
-- comments
-    Configure a static address
+
+##### comments
+
+Configure a static address
 
 #### createVXLanBridge 
-- arguments
+##### arguments
+
     - networkid
     - backend
     - bridgename
-- comments
-    Creates a proper vxlan interface and bridge based on a backplane
+
+##### comments
+
+Creates a proper vxlan interface and bridge based on a backplane
 
 #### ensureVXNet 
-- arguments
+##### arguments
+
     - networkid
     - backend
-- comments
-    
+
+##### comments
 
 #### getConfigFromSystem 
-- arguments
+##### arguments
+
     - reload = False
-- comments
-    walk over system and get configuration, result is dict
+
+##### comments
+
+walk over system and get configuration, result is dict
 
 #### getType 
-- arguments
+##### arguments
+
     - interfaceName
-- comments
-    
+
+##### comments
 
 #### initNetworkInterfaces 
-- arguments
-- comments
-    Resets /etc/network/interfaces with a basic configuration
+##### arguments
+
+##### comments
+
+Resets /etc/network/interfaces with a basic configuration
 
 #### newBondedBackplane 
-- arguments
+##### arguments
+
     - name
     - interfaces
     - trunks
-- comments
-    Reasonable defaults  : mode=balance-tcp, lacp=active,fast, bondname=brname-Bond, all vlans allowed
+
+##### comments
+
+Reasonable defaults  : mode=balance-tcp, lacp=active,fast, bondname=brname-Bond, all vlans allowed
 
 #### newBridge 
-- arguments
+##### arguments
+
     - name
     - interface
-- comments
-    @param interface interface where to connect this bridge to
+
+##### comments
+
+@param interface interface where to connect this bridge to
 
 #### newVlanBridge 
-- arguments
+##### arguments
+
     - name
     - parentbridge
     - vlanid
     - mtu
-- comments
-    
+
+##### comments
 
 #### printConfigFromSystem 
-- arguments
-- comments
-    
+##### arguments
+
+##### comments
 
 #### removeOldConfig 
-- arguments
-- comments
-    
+##### arguments
+
+##### comments
 
 #### setBackplane 
-- arguments
+##### arguments
+
     - interfacename = 'eth0'
     - backplanename = 1
     - ipaddr = '192.168.10.10/24'
     - gw = ''
-- comments
-    DANGEROUS, will remove old configuration
+
+##### comments
+
+DANGEROUS, will remove old configuration
 
 #### setBackplaneDhcp 
-- arguments
+##### arguments
+
     - interfacename = 'eth0'
     - backplanename = 'Public'
-- comments
-    DANGEROUS, will remove old configuration
+
+##### comments
+
+DANGEROUS, will remove old configuration
 
 #### setBackplaneNoAddress 
-- arguments
+##### arguments
+
     - interfacename = 'eth0'
     - backplanename = 1
-- comments
-    DANGEROUS, will remove old configuration
+
+##### comments
+
+DANGEROUS, will remove old configuration
 
 #### setBackplaneNoAddressWithBond 
-- arguments
+##### arguments
+
     - bondname
     - bondinterfaces
     - backplanename = 'backplane'
-- comments
-    DANGEROUS, will remove old configuration
+
+##### comments
+
+DANGEROUS, will remove old configuration
 
 #### setBackplaneWithBond 
-- arguments
+##### arguments
+
     - bondname
     - bondinterfaces
     - backplanename = 'backplane'
     - ipaddr = '192.168.10.10/24'
     - gw = ''
-- comments
-    DANGEROUS, will remove old configuration
+
+##### comments
+
+DANGEROUS, will remove old configuration
 

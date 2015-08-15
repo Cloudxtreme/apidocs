@@ -6,121 +6,148 @@
     - domains
     - hrd
 
+### Methods
+
 #### findParents 
-- arguments
+##### arguments
+
     - service
     - name = ''
     - path = ''
     - limit
-- comments
-    
+
+##### comments
 
 #### findProducer 
-- arguments
+##### arguments
+
     - producercategory
     - instancename
-- comments
-    
+
+##### comments
 
 #### findServices 
-- arguments
+##### arguments
+
     - domain = ''
     - name = ''
     - instance = ''
     - parent
     - precise = False
-- comments
-    FindServices looks for actual services that are created
+
+##### comments
+
+FindServices looks for actual services that are created
 
 #### findTemplates 
-- arguments
+##### arguments
+
     - domain = ''
     - name = ''
     - parent
-- comments
-    
+
+##### comments
 
 #### get 
-- arguments
+##### arguments
+
     - domain = ''
     - name = ''
     - instance = ''
     - parent = ''
     - precise = False
-- comments
-    Return service indentifier by domain,name and instance
-    throw error if service is not found or if more than one service is found
+
+##### comments
+
+Return service indentifier by domain,name and instance
+throw error if service is not found or if more than one service is found
 
 #### getActionsBaseClass 
-- arguments
-- comments
-    
+##### arguments
+
+##### comments
 
 #### getDomains 
-- arguments
-- comments
-    
+##### arguments
+
+##### comments
 
 #### getFromStr 
-- arguments
+##### arguments
+
     - representation
     - parent
-- comments
-    return a service instance from its representation 'domain      :name       :instance'
+
+##### comments
+
+return a service instance from its representation 'domain      :name       :instance'
 
 #### getId 
-- arguments
+##### arguments
+
     - domain
     - name
     - instance
     - parent
-- comments
-    
+
+##### comments
 
 #### loadService 
-- arguments
+##### arguments
+
     - path
     - parent
-- comments
-    Load a service instance from files located at path.
-    path should point to a directory that contains these files:
-        service.hrd
-        actions.py
+
+##### comments
+
+Load a service instance from files located at path.
+path should point to a directory that contains these files:
+    service.hrd
+    actions.py
 
 #### loadServicesInSQL 
-- arguments
-- comments
-    walk over all services and load into sqllite
+##### arguments
+
+##### comments
+
+walk over all services and load into sqllite
 
 #### new 
-- arguments
+##### arguments
+
     - domain = ''
     - name = ''
     - instance = 'main'
     - path
     - parent
     - args = \{\}
-- comments
-    will create a new service
+
+##### comments
+
+will create a new service
 
 #### remove 
-- arguments
+##### arguments
+
     - domain = ''
     - name = ''
     - instance = ''
     - parent
-- comments
-    
+
+##### comments
 
 #### updateTemplatesRepo 
-- arguments
+##### arguments
+
     - repos = []
-- comments
-    update the git repo that contains the service templates
-    args:
-        repos : list of dict of repos to update, if empty, all repos are updated
-                \{
-                    'url' : 'http://github.com/account/repo',
-                    'branch' : 'master'
-                \}
+
+##### comments
+
+update the git repo that contains the service templates
+args:
+    repos : list of dict of repos to update, if empty, all repos are updated
+            \{
+                'url' : 'http://github.com/account/repo',
+                'branch' : 'master'
+            \}
 

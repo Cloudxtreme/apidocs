@@ -2,135 +2,175 @@
 
 - /opt/jumpscale7/lib/JumpScale/core/base/time/Time.py
 
+### Methods
+
 generic provider of time functions
 lives at j.base.time
 
 #### HRDatetoEpoch 
-- arguments
+##### arguments
+
     - datestr
     - local = True
-- comments
-    convert string date to epoch
-    Date needs to be formatted as 16/06/1988
+
+##### comments
+
+convert string date to epoch
+Date needs to be formatted as 16/06/1988
 
 #### epoch2HRDate 
-- arguments
+##### arguments
+
     - epoch
     - local = True
-- comments
-    
+
+##### comments
 
 #### epoch2HRDateTime 
-- arguments
+##### arguments
+
     - epoch
     - local = True
-- comments
-    
+
+##### comments
 
 #### epoch2HRTime 
-- arguments
+##### arguments
+
     - epoch
     - local = True
-- comments
-    
+
+##### comments
 
 #### fiveMinuteIdToEpoch 
-- arguments
+##### arguments
+
     - fiveMinuteId
-- comments
-    
+
+##### comments
 
 #### formatTime 
-- arguments
+##### arguments
+
     - epoch
     - formatstr = '%Y/%m/%d %H:%M:%S'
     - local = True
-- comments
-    Returns a formatted time string representing the current time
-    
-    See http://docs.python.org/lib/module-time.html#l2h-2826 for an
-    overview of available formatting options.
-    
-    @param format: Format string
-    @type format: string
-    
-    @returns: Formatted current time
-    @rtype: string
+
+##### comments
+
+Returns a formatted time string representing the current time
+
+See http://docs.python.org/lib/module-time.html#l2h-2826 for an
+overview of available formatting options.
+
+@param format: Format string
+@type format: string
+
+@returns: Formatted current time
+@rtype: string
 
 #### get5MinuteId 
-- arguments
+##### arguments
+
     - epoch
-- comments
-    is # 5 min from jan 1 2010
+
+##### comments
+
+is # 5 min from jan 1 2010
 
 #### getDayId 
-- arguments
+##### arguments
+
     - epoch
-- comments
-    is # day from jan 1 2010
+
+##### comments
+
+is # day from jan 1 2010
 
 #### getDeltaTime 
-- arguments
+##### arguments
+
     - txt
-- comments
-    only supported now is -3m, -3d and -3h (ofcourse 3 can be any int)
-    and an int which would be just be returned
-    means 3 days ago 3 hours ago
-    if 0 or '' then is now
+
+##### comments
+
+only supported now is -3m, -3d and -3h (ofcourse 3 can be any int)
+and an int which would be just be returned
+means 3 days ago 3 hours ago
+if 0 or '' then is now
 
 #### getEpochAgo 
-- arguments
+##### arguments
+
     - txt
-- comments
-    only supported now is -3m, -3d and -3h  (ofcourse 3 can be any int)
-    and an int which would be just be returned
-    means 3 days ago 3 hours ago
-    if 0 or '' then is now
+
+##### comments
+
+only supported now is -3m, -3d and -3h  (ofcourse 3 can be any int)
+and an int which would be just be returned
+means 3 days ago 3 hours ago
+if 0 or '' then is now
 
 #### getEpochFuture 
-- arguments
+##### arguments
+
     - txt
-- comments
-    only supported now is +3d and +3h  (ofcourse 3 can be any int)        
-    +3d means 3 days in future
-    and an int which would be just be returned
-    if txt==None or 0 then will be 1 day ago
+
+##### comments
+
+only supported now is +3d and +3h  (ofcourse 3 can be any int)        
++3d means 3 days in future
+and an int which would be just be returned
+if txt==None or 0 then will be 1 day ago
 
 #### getHourId 
-- arguments
+##### arguments
+
     - epoch
-- comments
-    is # hour from jan 1 2010
+
+##### comments
+
+is # hour from jan 1 2010
 
 #### getLocalTimeHR 
-- arguments
-- comments
-    Get the current local date and time in a human-readable form
+##### arguments
+
+##### comments
+
+Get the current local date and time in a human-readable form
 
 #### getLocalTimeHRForFilesystem 
-- arguments
-- comments
-    
+##### arguments
+
+##### comments
 
 #### getMinuteId 
-- arguments
+##### arguments
+
     - epoch
-- comments
-    is # min from jan 1 2010
+
+##### comments
+
+is # min from jan 1 2010
 
 #### getSecondsInHR 
-- arguments
+##### arguments
+
     - seconds
-- comments
-    
+
+##### comments
 
 #### getTimeEpoch 
-- arguments
-- comments
-    Get epoch timestamp (number of seconds passed since January 1, 1970)
+##### arguments
+
+##### comments
+
+Get epoch timestamp (number of seconds passed since January 1, 1970)
 
 #### getTimeEpochBin 
-- arguments
-- comments
-    Get epoch timestamp (number of seconds passed since January 1, 1970)
+##### arguments
+
+##### comments
+
+Get epoch timestamp (number of seconds passed since January 1, 1970)
 

@@ -7,41 +7,49 @@
     - client
     - jinjaEnv
 
+### Methods
+
 #### generate 
-- arguments
+##### arguments
+
     - baseURL
     - serverOuput
     - clientOutput
-- comments
-    
+
+##### comments
 
 #### generateActors 
-- arguments
+##### arguments
+
     - destpath
-- comments
-    
+
+##### comments
 
 #### generateClient 
-- arguments
+##### arguments
+
     - outputPath
-- comments
-    
+
+##### comments
 
 #### generateServer 
-- arguments
+##### arguments
+
     - outputPath
-- comments
-    
+
+##### comments
 
 #### loadSpecFromFile 
-- arguments
+##### arguments
+
     - path
-- comments
-    
+
+##### comments
 
 #### loadSpecFromStr 
-- arguments
+##### arguments
+
     - spec
-- comments
-    
+
+##### comments
 

@@ -5,35 +5,43 @@
     - loglevel
     - logenable
 
+### Methods
+
 #### get 
-- arguments
+##### arguments
+
     - path
     - content = ''
     - prefixWithName = True
     - keepformat = False
     - args = OrderedDict()
     - templates = []
-- comments
-    @param path
+
+##### comments
+
+@param path
 
 #### getHRDFromDict 
-- arguments
+##### arguments
+
     - ddict = \{\}
-- comments
-    
+
+##### comments
 
 #### getHRDFromOsisObject 
-- arguments
+##### arguments
+
     - osisobj
     - prefixRootObjectType = True
-- comments
-    
+
+##### comments
 
 #### log 
-- arguments
+##### arguments
+
     - msg
     - category = ''
     - level = 5
-- comments
-    
+
+##### comments
 

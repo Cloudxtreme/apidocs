@@ -2,12 +2,15 @@
 
 - /opt/jumpscale7/lib/JumpScale/grid/ros/factory.py
 
+### Methods
+
 #### get 
-- arguments
+##### arguments
+
     - instance = 'main'
     - ip = ''
     - user = ''
     - passwd = ''
-- comments
-    
+
+##### comments
 

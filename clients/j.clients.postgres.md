@@ -4,35 +4,40 @@
 - Properties
     - clients
 
+### Methods
+
     
 
 #### createdb 
-- arguments
+##### arguments
+
     - db
     - ipaddr = 'localhost'
     - port = 5432
     - login = 'postgres'
     - passwd = 'rooter'
-- comments
-    
+
+##### comments
 
 #### dropdb 
-- arguments
+##### arguments
+
     - db
     - ipaddr = 'localhost'
     - port = 5432
     - login = 'postgres'
     - passwd = 'rooter'
-- comments
-    
+
+##### comments
 
 #### getClient 
-- arguments
+##### arguments
+
     - ipaddr = 'localhost'
     - port = 5432
     - login = 'postgres'
     - passwd = 'rooter'
     - dbname = 'template'
-- comments
-    
+
+##### comments
 

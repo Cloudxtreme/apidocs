@@ -9,42 +9,51 @@
     - visited
     - classDocs
 
+### Methods
+
 functionality to inspect objectr structure and generate apifile
 
 #### generateDocs 
-- arguments
+##### arguments
+
     - dest
     - ignore = []
-- comments
-    
+
+##### comments
 
 #### importAllLibs 
-- arguments
+##### arguments
+
     - ignore = []
     - base = '/opt/jumpscale7/lib/JumpScale/'
-- comments
-    
+
+##### comments
 
 #### inspect 
-- arguments
+##### arguments
+
     - objectLocationPath = 'j'
     - recursive = True
     - parent
     - obj
-- comments
-    walk over objects in memory and create code completion api in jumpscale cfgDir under codecompletionapi
-    @param object is start object
-    @param objectLocationPath is full location name in object tree e.g. j.system.fs , no need to fill in
+
+##### comments
+
+walk over objects in memory and create code completion api in jumpscale cfgDir under codecompletionapi
+@param object is start object
+@param objectLocationPath is full location name in object tree e.g. j.system.fs , no need to fill in
 
 #### raiseError 
-- arguments
+##### arguments
+
     - errormsg
-- comments
-    
+
+##### comments
 
 #### writeDocs 
-- arguments
+##### arguments
+
     - path
-- comments
-    
+
+##### comments
 

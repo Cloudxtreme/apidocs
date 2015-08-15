@@ -5,39 +5,46 @@
     - app
     - actors
 
+### Methods
+
 #### celeryClient 
-- arguments
+##### arguments
+
     - actorName
     - url = 'redis://localhost:9999/0'
     - actorsPath = 'actors'
     - local = False
-- comments
-    
+
+##### comments
 
 #### celeryStart 
-- arguments
+##### arguments
+
     - url = 'redis://localhost:9999/0'
     - concurrency = 4
     - actorsPath = 'actors'
-- comments
-    
+
+##### comments
 
 #### flowerStart 
-- arguments
+##### arguments
+
     - url = 'redis://localhost:9999/0'
-- comments
-    
+
+##### comments
 
 #### getCodeClient 
-- arguments
+##### arguments
+
     - path
     - actorName
-- comments
-    
+
+##### comments
 
 #### getCodeServer 
-- arguments
+##### arguments
+
     - path
-- comments
-    
+
+##### comments
 

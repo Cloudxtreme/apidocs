@@ -7,15 +7,18 @@
     - redis
     - gredisq
 
+### Methods
+
     
 
 #### checkAllInstances 
-- arguments
-- comments
-    
+##### arguments
+
+##### comments
 
 #### configureInstance 
-- arguments
+##### arguments
+
     - name
     - port
     - maxram = 200
@@ -25,99 +28,113 @@
     - ismaster = False
     - passwd
     - unixsocket = False
-- comments
-    @param maxram = MB of ram
-    slave example: (192.168.10.10,8888,asecret)   (ip,port,secret)
+
+##### comments
+
+@param maxram = MB of ram
+slave example: (192.168.10.10,8888,asecret)   (ip,port,secret)
 
 #### deleteInstance 
-- arguments
+##### arguments
+
     - name
-- comments
-    
+
+##### comments
 
 #### emptyAllInstances 
-- arguments
-- comments
-    
+##### arguments
+
+##### comments
 
 #### emptyInstance 
-- arguments
+##### arguments
+
     - name
-- comments
-    
+
+##### comments
 
 #### getByInstance 
-- arguments
+##### arguments
+
     - instance
     - gevent = False
-- comments
-    
+
+##### comments
 
 #### getGeventRedisClient 
-- arguments
+##### arguments
+
     - ipaddr
     - port
     - fromcache = True
     - password = ''
-- comments
-    
+
+##### comments
 
 #### getGeventRedisQueue 
-- arguments
+##### arguments
+
     - ipaddr
     - port
     - name
     - namespace = 'queues'
     - fromcache = False
-- comments
-    
+
+##### comments
 
 #### getPort 
-- arguments
+##### arguments
+
     - name
-- comments
-    
+
+##### comments
 
 #### getProcessPids 
-- arguments
+##### arguments
+
     - name
-- comments
-    
+
+##### comments
 
 #### getRedisClient 
-- arguments
+##### arguments
+
     - ipaddr
     - port
     - password = ''
     - fromcache = True
-- comments
-    
+
+##### comments
 
 #### getRedisQueue 
-- arguments
+##### arguments
+
     - ipaddr
     - port
     - name
     - namespace = 'queues'
     - fromcache = True
-- comments
-    
+
+##### comments
 
 #### isRunning 
-- arguments
+##### arguments
+
     - name
-- comments
-    
+
+##### comments
 
 #### startInstance 
-- arguments
+##### arguments
+
     - name
-- comments
-    
+
+##### comments
 
 #### stopInstance 
-- arguments
+##### arguments
+
     - name
-- comments
-    
+
+##### comments
 

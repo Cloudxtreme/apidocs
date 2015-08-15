@@ -4,97 +4,123 @@
 - Properties
     - root
 
+### Methods
+
     
 
 #### addIpToInterface 
-- arguments
+##### arguments
+
     - dev
     - ipaddr
     - aliasnr = 1
     - start = False
-- comments
-    
+
+##### comments
 
 #### enableInterface 
-- arguments
+##### arguments
+
     - dev = 'eth0'
     - start = False
     - dhcp = True
-- comments
-    
+
+##### comments
 
 #### enableInterfaceBridge 
-- arguments
+##### arguments
+
     - dev
     - bridgedev
     - start = False
     - dhcp = True
-- comments
-    
+
+##### comments
 
 #### enableInterfaceBridgeDhcp 
-- arguments
+##### arguments
+
     - dev
     - bridgedev
     - start = False
-- comments
-    
+
+##### comments
 
 #### enableInterfaceBridgeStatic 
-- arguments
+##### arguments
+
     - dev
     - ipaddr
     - bridgedev
     - gw
     - start = False
-- comments
-    ipaddr in form of 192.168.10.2/24 (can be list)
-    gateway in form of 192.168.10.254
+
+##### comments
+
+ipaddr in form of 192.168.10.2/24 (can be list)
+gateway in form of 192.168.10.254
 
 #### enableInterfaceStatic 
-- arguments
+##### arguments
+
     - dev
     - ipaddr
     - gw
     - start = False
-- comments
-    ipaddr in form of 192.168.10.2/24 (can be list)
-    gateway in form of 192.168.10.254
+
+##### comments
+
+ipaddr in form of 192.168.10.2/24 (can be list)
+gateway in form of 192.168.10.254
 
 #### remove 
-- arguments
+##### arguments
+
     - dev
-- comments
-    
+
+##### comments
 
 #### reset 
-- arguments
+##### arguments
+
     - shutdown = False
-- comments
-    empty config of /etc/network/interfaces
+
+##### comments
+
+empty config of /etc/network/interfaces
 
 #### setHostname 
-- arguments
+##### arguments
+
     - hostname
-- comments
-    change hostname
+
+##### comments
+
+change hostname
 
 #### setNameserver 
-- arguments
+##### arguments
+
     - addr
-- comments
-    resolvconf will be disabled
+
+##### comments
+
+resolvconf will be disabled
 
 #### setRoot 
-- arguments
+##### arguments
+
     - root
-- comments
-    
+
+##### comments
 
 #### shutdownNetwork 
-- arguments
+##### arguments
+
     - excludes = []
-- comments
-    find all interfaces and shut them all down with ifdown
-    this is to remove all networking things going on
+
+##### comments
+
+find all interfaces and shut them all down with ifdown
+this is to remove all networking things going on
 

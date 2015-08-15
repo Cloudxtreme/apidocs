@@ -5,41 +5,49 @@
     - osisConnectionsCat
     - osisConnections
 
+### Methods
+
 #### get 
-- arguments
+##### arguments
+
     - ipaddr
     - port = 5544
     - user
     - passwd
     - ssl = False
     - gevent = False
-- comments
-    
+
+##### comments
 
 #### getByInstance 
-- arguments
+##### arguments
+
     - instance
     - ssl = False
     - gevent = False
     - die = True
-- comments
-    
+
+##### comments
 
 #### getCategory 
-- arguments
+##### arguments
+
     - client
     - namespace
     - category
-- comments
-    how to use
-    @param client: osiclient
-    @param namespace: OSIS namespace
-    @param category: OSIS category
+
+##### comments
+
+how to use
+@param client: osiclient
+@param namespace: OSIS namespace
+@param category: OSIS category
 
 #### getNamespace 
-- arguments
+##### arguments
+
     - namespace
     - client
-- comments
-    
+
+##### comments
 
