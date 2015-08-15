@@ -5,10 +5,13 @@
 ### Methods
 
 #### def commit 
+
 ##### arguments
 
 - device
+
 #### def ipGet 
+
 ##### arguments
 
 - device
@@ -22,11 +25,14 @@ Result (ip, netmask, gateway)
 ```
 
 #### def ipReset 
+
 ##### arguments
 
 - device
 - commit = False
+
 #### def ipSet 
+
 ##### arguments
 
 - device
@@ -44,14 +50,19 @@ Return all interfaces that has this ifname
 ```
 
 #### def nsGet 
+
 ##### arguments
 
 #### def nsSet 
+
 ##### arguments
 
 - nameservers = []
 - commit = False
+
 #### def setHostname 
+
 ##### arguments
 
 - hostname
+

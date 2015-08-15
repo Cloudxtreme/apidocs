@@ -5,6 +5,7 @@
 ### Methods
 
 #### def demo 
+
 ##### arguments
 
 ##### comments
@@ -17,6 +18,7 @@ tg.start()
 ```
 
 #### def demoMS1 
+
 ##### arguments
 
 ##### comments
@@ -33,6 +35,7 @@ tg.start()
 ```
 
 #### def get 
+
 ##### arguments
 
 - telegramkey = ''

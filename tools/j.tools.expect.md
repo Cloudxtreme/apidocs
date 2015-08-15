@@ -5,6 +5,7 @@
 ### Methods
 
 #### def new 
+
 ##### arguments
 
 - cmd

@@ -5,21 +5,29 @@
 ### Methods
 
 #### def addUniqueId 
+
 ##### arguments
 
 - line
 - fullPath
 - ttype = 'sprint'
+
 #### def errorTrap 
+
 ##### arguments
 
 - msg
+
 #### def parseDoc 
+
 ##### arguments
 
 - doc
+
 #### def shortenDescr 
+
 ##### arguments
 
 - text
 - maxnrchars = 60
+

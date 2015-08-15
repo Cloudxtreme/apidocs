@@ -8,13 +8,17 @@
 ### Methods
 
 #### def getPortalConfig 
+
 ##### arguments
 
 - appname
+
 #### def getServer 
+
 ##### arguments
 
 #### def loadActorsInProcess 
+
 ##### arguments
 
 - name = 'main'

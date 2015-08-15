@@ -5,11 +5,15 @@
 ### Methods
 
 #### def dumps 
+
 ##### arguments
 
 - data
 - prepend = ''
+
 #### def loads 
+
 ##### arguments
 
 - data
+

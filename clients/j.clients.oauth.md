@@ -5,6 +5,7 @@
 ### Methods
 
 #### def get 
+
 ##### arguments
 
 - addr = ''
@@ -16,9 +17,12 @@
 - user_info_url = ''
 - logout_url = ''
 - instance = 'github'
+
 #### def log 
+
 ##### arguments
 
 - msg
 - category = ''
 - level = 5
+

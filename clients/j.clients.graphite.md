@@ -5,14 +5,18 @@
 ### Methods
 
 #### def close 
+
 ##### arguments
 
 #### def query 
+
 ##### arguments
 
 - query_
 - **kwargs
+
 #### def send 
+
 ##### arguments
 
 - msg

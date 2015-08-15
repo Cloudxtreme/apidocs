@@ -5,17 +5,22 @@
 ### Methods
 
 #### def convertConfluenceToRST 
+
 ##### arguments
 
 - src
 - dest
+
 #### def getConfluence2htmlConvertor 
+
 ##### arguments
 
 #### def getConfluence2rstConvertor 
+
 ##### arguments
 
 #### def getConfluenceClient 
+
 ##### arguments
 
 - url
@@ -33,24 +38,33 @@
 ```
 
 #### def getMacroPath 
+
 ##### arguments
 
 #### def pageGroupNew 
+
 ##### arguments
 
 - pages = \{\}
+
 #### def pageNewConfluence 
+
 ##### arguments
 
 - pagename
 - parent = 'Home'
+
 #### def pageNewHTML 
+
 ##### arguments
 
 - pagename
 - htmllibPath
+
 #### def pageNewRST 
+
 ##### arguments
 
 - pagename
 - htmllibPath
+

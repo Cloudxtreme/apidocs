@@ -7,11 +7,15 @@
 ### Methods
 
 #### def popStats 
+
 ##### arguments
 
 - key
+
 #### def pushStats 
+
 ##### arguments
 
 - key
 - data
+

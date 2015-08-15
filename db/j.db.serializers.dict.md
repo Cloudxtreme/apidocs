@@ -5,10 +5,14 @@
 ### Methods
 
 #### def dumps 
+
 ##### arguments
 
 - obj
+
 #### def loads 
+
 ##### arguments
 
 - s
+

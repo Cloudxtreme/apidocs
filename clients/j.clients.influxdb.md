@@ -7,6 +7,7 @@
     
 
 #### def get 
+
 ##### arguments
 
 - host = 'localhost'
@@ -19,7 +20,10 @@
 - timeout
 - use_udp = False
 - udp_port = 4444
+
 #### def getByInstance 
+
 ##### arguments
 
 - instancename
+

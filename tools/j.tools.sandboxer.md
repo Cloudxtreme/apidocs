@@ -9,12 +9,16 @@
 sandbox any linux app
 
 #### def copyLibsTo 
+
 ##### arguments
 
 - path
 - dest
 - recursive = False
+
 #### def findLibs 
+
 ##### arguments
 
 - path
+

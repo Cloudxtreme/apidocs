@@ -13,10 +13,13 @@
 ### Methods
 
 #### def addSpec 
+
 ##### arguments
 
 - spec
+
 #### def findSpec 
+
 ##### arguments
 
 - query = ''
@@ -31,43 +34,55 @@
 
 ```
 do not specify query with one of the other filter criteria
-@param query is in dot notation e.g. $appname.$actorname.$modelname ... the items in front are optional
+@param query is in dot notation e.g. $appname.$actorname.$modelname ... the
+    items in front are optional
 
 ```
 
 #### def getActorSpec 
+
 ##### arguments
 
 - app
 - name
 - raiseError = True
+
 #### def getChildModelSpec 
+
 ##### arguments
 
 - app
 - actorname
 - name
 - die = True
+
 #### def getEnumerationSpec 
+
 ##### arguments
 
 - app
 - actorname
 - name
 - die = True
+
 #### def getModelNames 
+
 ##### arguments
 
 - appname
 - actorname
+
 #### def getModelSpec 
+
 ##### arguments
 
 - app
 - actorname
 - name
 - die = True
+
 #### def getSpecFromTypeStr 
+
 ##### arguments
 
 - appname
@@ -78,14 +93,17 @@ do not specify query with one of the other filter criteria
 
 ```
 @param typestr e.g list(machine.status)
-@return $returntype,$spec  $returntype=list,dict,object,enum (list & dict can be of primitive types or objects (NOT enums))
+@return $returntype,$spec  $returntype=list,dict,object,enum (list & dict can be
+    of primitive types or objects (NOT enums))
 
 ```
 
 #### def init 
+
 ##### arguments
 
 #### def parseSpecs 
+
 ##### arguments
 
 - specpath
@@ -100,10 +118,13 @@ do not specify query with one of the other filter criteria
 ```
 
 #### def removeSpecsForActor 
+
 ##### arguments
 
 - appname
 - actorname
+
 #### def resetMemNonSystem 
+
 ##### arguments
 

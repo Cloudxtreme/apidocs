@@ -5,5 +5,6 @@
 ### Methods
 
 #### def getConnection 
+
 ##### arguments
 

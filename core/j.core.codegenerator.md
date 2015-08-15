@@ -10,6 +10,7 @@
 ### Methods
 
 #### def generate 
+
 ##### arguments
 
 - spec
@@ -32,12 +33,14 @@
 param: spec is spec we want to generate from
 param: type JSModel,actormethodgreenlet,enumeration,actorlocal
 param: typecheck (means in generated code the types will be checked)
-param: dieInGenCode  if true means in generated code we will die when something uneforeseen happens
+param: dieInGenCode  if true means in generated code we will die when something
+    uneforeseen happens
 return: dict of classes if more than 1 otherwise just the class
 
 ```
 
 #### def getActorClass 
+
 ##### arguments
 
 - appname
@@ -45,14 +48,18 @@ return: dict of classes if more than 1 otherwise just the class
 - typecheck = True
 - dieInGenCode = True
 - codepath
+
 #### def getClassActorLocal 
+
 ##### arguments
 
 - appname
 - actor
 - typecheck = True
 - dieInGenCode = True
+
 #### def getClassActorRemote 
+
 ##### arguments
 
 - appname
@@ -63,7 +70,9 @@ return: dict of classes if more than 1 otherwise just the class
 - redis = False
 - wsclient
 - codepath
+
 #### def getClassEnumeration 
+
 ##### arguments
 
 - appname
@@ -71,7 +80,9 @@ return: dict of classes if more than 1 otherwise just the class
 - enumname
 - typecheck = True
 - dieInGenCode = True
+
 #### def getClassJSModel 
+
 ##### arguments
 
 - appname
@@ -80,7 +91,9 @@ return: dict of classes if more than 1 otherwise just the class
 - typecheck = True
 - dieInGenCode = True
 - codepath = ''
+
 #### def getClassesActorMethodGreenlet 
+
 ##### arguments
 
 - appname
@@ -91,11 +104,13 @@ return: dict of classes if more than 1 otherwise just the class
 ##### comments
 
 ```
-return: returns dict with key name methodname and then the class (for each method a class is generated)
+return: returns dict with key name methodname and then the class (for each
+    method a class is generated)
 
 ```
 
 #### def getCodeEveModel 
+
 ##### arguments
 
 - appname
@@ -104,12 +119,16 @@ return: returns dict with key name methodname and then the class (for each metho
 - typecheck = True
 - dieInGenCode = True
 - codepath = ''
+
 #### def getCodeId 
+
 ##### arguments
 
 - spec
 - type
+
 #### def getCodeJSModel 
+
 ##### arguments
 
 - appname
@@ -118,15 +137,20 @@ return: returns dict with key name methodname and then the class (for each metho
 - typecheck = True
 - dieInGenCode = True
 - codepath = ''
+
 #### def removeFromMem 
+
 ##### arguments
 
 - appname
 - actor
+
 #### def resetMemNonSystem 
+
 ##### arguments
 
 #### def setTarget 
+
 ##### arguments
 
 - target

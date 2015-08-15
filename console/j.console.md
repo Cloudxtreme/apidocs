@@ -13,13 +13,16 @@ self.indent=0 #current indentation of messages send to console
 self.reformat=False #if True will make sure message fits nicely on screen
 
 #### def askArrayRow 
+
 ##### arguments
 
 - array
 - header = True
 - descr = ''
 - returncol
+
 #### def askChoice 
+
 ##### arguments
 
 - choicearray
@@ -32,18 +35,23 @@ self.reformat=False #if True will make sure message fits nicely on screen
 ##### comments
 
 ```
-@param choicearray is list or dict, when dict key needs to be the object to return,
-       the value of the dics is what needs to be returned, the key is the str representation
+@param choicearray is list or dict, when dict key needs to be the object to
+    return,
+       the value of the dics is what needs to be returned, the key is the str
+    representation
 
 ```
 
 #### def askChoiceMultiple 
+
 ##### arguments
 
 - choicearray
 - descr
 - sort = True
+
 #### def askInteger 
+
 ##### arguments
 
 - question
@@ -70,6 +78,7 @@ Get an integer response on asked question
 ```
 
 #### def askIntegers 
+
 ##### arguments
 
 - question
@@ -82,13 +91,17 @@ Get an integer response on asked question
 ```
 Ask the user for multiple integers
 
-@param question: question that will be echoed before the user needs to input integers
+@param question: question that will be echoed before the user needs to input
+    integers
 @type question: string
-@param invalid_message: message that will be echoed when the user inputs a faulty value
+@param invalid_message: message that will be echoed when the user inputs a
+    faulty value
 @type invalid_message: string
-@param min: optional minimal value for input values, all returned values will be at least min
+@param min: optional minimal value for input values, all returned values will be
+    at least min
 @type min: number or None
-@param max: optional maximal value for input values, all returned values will be at least max
+@param max: optional maximal value for input values, all returned values will be
+    at least max
 @type max: number of None
 @return: the input numbers
 @rtype: list<number>
@@ -96,6 +109,7 @@ Ask the user for multiple integers
 ```
 
 #### def askMultiline 
+
 ##### arguments
 
 - question
@@ -108,13 +122,15 @@ Ask the user a question that needs a multi-line answer.
 
 @param question: The question that should be asked to the user
 @type question: string
-@param escapeString: Optional custom escape string that is used by the user to indicate input has ended.
+@param escapeString: Optional custom escape string that is used by the user to
+    indicate input has ended.
 @type escapeString: string
 @return: string multi-line reply by the user, always ending with a newline
 
 ```
 
 #### def askPassword 
+
 ##### arguments
 
 - question
@@ -141,6 +157,7 @@ Present a password input question to the user
 ```
 
 #### def askString 
+
 ##### arguments
 
 - question
@@ -166,6 +183,7 @@ Get a string response on a question
 ```
 
 #### def askYesNo 
+
 ##### arguments
 
 - message = ''
@@ -184,6 +202,7 @@ Display a yes/no question and loop until a valid answer is entered
 ```
 
 #### def cls 
+
 ##### arguments
 
 ##### comments
@@ -194,6 +213,7 @@ clear screen
 ```
 
 #### def echo 
+
 ##### arguments
 
 - msg
@@ -207,18 +227,22 @@ clear screen
 
 ```
 Display some text to the end-user, use this method instead of print
-@param indent std, will use indent from console object (same for all), this param allows to overrule
+@param indent std, will use indent from console object (same for all), this
+    param allows to overrule
         will only work when j.console.reformat==True
 
 ```
 
 #### def echoDict 
+
 ##### arguments
 
 - dictionary
 - withStar = False
 - indent
+
 #### def echoListItem 
+
 ##### arguments
 
 - msg
@@ -232,6 +256,7 @@ Echo a list item
 ```
 
 #### def echoListItems 
+
 ##### arguments
 
 - messages
@@ -252,6 +277,7 @@ Echo a sequence (iterator, generator, list, set) as list items
 ```
 
 #### def echoListWithPrefix 
+
 ##### arguments
 
 - messages
@@ -265,6 +291,7 @@ print messages
 ```
 
 #### def echoWithPrefix 
+
 ##### arguments
 
 - message
@@ -280,9 +307,11 @@ print a message which is formatted with a prefix
 ```
 
 #### def enableOutput 
+
 ##### arguments
 
 #### def formatMessage 
+
 ##### arguments
 
 - message
@@ -303,12 +332,15 @@ Reformat the message to display to the user and calculate length
 ```
 
 #### def hideOutput 
+
 ##### arguments
 
 #### def printOutput 
+
 ##### arguments
 
 #### def rawInputPerChar 
+
 ##### arguments
 
 - callback
@@ -322,16 +354,21 @@ when typing, char per char will be returned
 ```
 
 #### def showArray 
+
 ##### arguments
 
 - array
 - header = True
+
 #### def showOutput 
+
 ##### arguments
 
 #### def transformDictToMessage 
+
 ##### arguments
 
 - dictionary
 - withStar = False
 - indent
+

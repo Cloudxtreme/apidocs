@@ -5,6 +5,7 @@
 ### Methods
 
 #### def diskGetFreeRegions 
+
 ##### arguments
 
 - disk
@@ -13,14 +14,17 @@
 ##### comments
 
 ```
-Get a filtered list of free regions, excluding the gaps due to partition alignment
+Get a filtered list of free regions, excluding the gaps due to partition
+    alignment
 
 ```
 
 #### def mirrorsFind 
+
 ##### arguments
 
 #### def partitionAdd 
+
 ##### arguments
 
 - disk
@@ -29,7 +33,9 @@ Get a filtered list of free regions, excluding the gaps due to partition alignme
 - length
 - fs_type
 - type
+
 #### def partitionsFind 
+
 ##### arguments
 
 - mounted
@@ -52,6 +58,7 @@ return [[$partpath,$size,$free,$ssd]]
 ```
 
 #### def partitionsFind_Ext4Data 
+
 ##### arguments
 
 ##### comments
@@ -63,6 +70,7 @@ return [[$partpath,$gid,$partid,$size,$free]]
 ```
 
 #### def partitionsGetMounted_Ext4Data 
+
 ##### arguments
 
 ##### comments
@@ -74,8 +82,10 @@ find disks which are mounted
 ```
 
 #### def partitionsMount_Ext4Data 
+
 ##### arguments
 
 #### def partitionsUnmount_Ext4Data 
+
 ##### arguments
 

@@ -5,6 +5,7 @@
 ### Methods
 
 #### def generate 
+
 ##### arguments
 
 - preprocessorobject
@@ -15,7 +16,9 @@
 - outputdocname = ''
 - format = 'preprocess'
 - deepcopy = False
+
 #### def generateFromDir 
+
 ##### arguments
 
 - path
@@ -26,13 +29,15 @@
 ##### comments
 
 ```
-@param path is starting point, will look for generate.cfg & params.cfg in this dir, input in these files will determine how preprocessor will work
+@param path is starting point, will look for generate.cfg & params.cfg in this
+    dir, input in these files will determine how preprocessor will work
 @param macrosPaths are dirs where macro's are they are in form of tasklets
 @param cacheDir if non std caching dir override here
 
 ```
 
 #### def get 
+
 ##### arguments
 
 - contentDirs = []
@@ -47,5 +52,6 @@
 ```
 
 #### def getMacroPath 
+
 ##### arguments
 

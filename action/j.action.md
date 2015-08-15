@@ -7,6 +7,7 @@
 Manager controlling actions
 
 #### def clean 
+
 ##### arguments
 
 ##### comments
@@ -17,6 +18,7 @@ Clean the list of running actions
 ```
 
 #### def hasRunningActions 
+
 ##### arguments
 
 ##### comments
@@ -30,9 +32,11 @@ Check whether actions are currently running
 ```
 
 #### def printOutput 
+
 ##### arguments
 
 #### def start 
+
 ##### arguments
 
 - description
@@ -58,16 +62,19 @@ Start a new action
 ```
 
 #### def startOutput 
+
 ##### arguments
 
 ##### comments
 
 ```
-Enable j.console output. Format such that it is nicely shown between action start/stop.
+Enable j.console output. Format such that it is nicely shown between action
+    start/stop.
 
 ```
 
 #### def stop 
+
 ##### arguments
 
 - failed = False
@@ -86,12 +93,14 @@ display a result message.
 ```
 
 #### def stopOutput 
+
 ##### arguments
 
 ##### comments
 
 ```
-Disable j.console output. Format such that it is nicely shown between action start/stop.
+Disable j.console output. Format such that it is nicely shown between action
+    start/stop.
 
 ```
 

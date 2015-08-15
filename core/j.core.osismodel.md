@@ -10,6 +10,7 @@
     
 
 #### def destroy 
+
 ##### arguments
 
 - appname
@@ -24,11 +25,14 @@ destroy all objects & indexes with mentioned names
 ```
 
 #### def dict2object 
+
 ##### arguments
 
 - obj
 - data
+
 #### def get 
+
 ##### arguments
 
 - appname
@@ -38,21 +42,27 @@ destroy all objects & indexes with mentioned names
 - db
 - index = False
 - indexer
+
 #### def getNoDB 
+
 ##### arguments
 
 - appname
 - actorname
 - modelname
 - modelClass
+
 #### def getRemoteOsisDB 
+
 ##### arguments
 
 - appname
 - actorname
 - modelname
 - modelClass
+
 #### def inputNormalizeList 
+
 ##### arguments
 
 - param
@@ -68,6 +78,7 @@ list gets checked, if all str, then returnformat=2
 ```
 
 #### def rebuildindex 
+
 ##### arguments
 
 - appname

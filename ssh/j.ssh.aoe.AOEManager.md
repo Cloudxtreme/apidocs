@@ -5,6 +5,7 @@
 ### Methods
 
 #### def create 
+
 ##### arguments
 
 - storpath
@@ -21,10 +22,13 @@ Create and vdisk
 ```
 
 #### def delete 
+
 ##### arguments
 
 - path
+
 #### def expose 
+
 ##### arguments
 
 - storage
@@ -45,6 +49,7 @@ Expose the given image on major:minor and interface
 ```
 
 #### def list 
+
 ##### arguments
 
 - storpath = '/mnt/disktargets/'
@@ -58,6 +63,7 @@ Note that all files in that directory are assumed to be valid images
 ```
 
 #### def unexpose 
+
 ##### arguments
 
 - storage

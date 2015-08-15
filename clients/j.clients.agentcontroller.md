@@ -5,6 +5,7 @@
 ### Methods
 
 #### def get 
+
 ##### arguments
 
 - addr
@@ -21,15 +22,20 @@
 ```
 
 #### def getByInstance 
+
 ##### arguments
 
 - instance
 - new = False
+
 #### def getInstanceConfig 
+
 ##### arguments
 
 - instance
+
 #### def getProxy 
+
 ##### arguments
 
 - category = 'core'
@@ -37,3 +43,4 @@
 - port = 4444
 - login = 'root'
 - passwd
+

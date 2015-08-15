@@ -5,10 +5,14 @@
 ### Methods
 
 #### def decodeUnicode2Asci 
+
 ##### arguments
 
 - text
+
 #### def toolStripNonAsciFromText 
+
 ##### arguments
 
 - text
+

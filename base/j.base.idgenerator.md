@@ -8,6 +8,7 @@ generic provider of id's
 lives at j.idgenerator
 
 #### def generateGUID 
+
 ##### arguments
 
 ##### comments
@@ -19,6 +20,7 @@ how to use:  j.base.idgenerator.generateGUID()
 ```
 
 #### def generateIncrID 
+
 ##### arguments
 
 - incrTypeId
@@ -36,6 +38,7 @@ how to use:  j.base.idgenerator.generateIncrID("agent")
 ```
 
 #### def generateRandomInt 
+
 ##### arguments
 
 - fromInt
@@ -49,10 +52,13 @@ how to use:  j.base.idgenerator.generateRandomInt(0,10)
 ```
 
 #### def generateXCharID 
+
 ##### arguments
 
 - x
+
 #### def getID 
+
 ##### arguments
 
 - incrTypeId

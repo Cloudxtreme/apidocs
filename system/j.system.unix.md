@@ -5,6 +5,7 @@
 ### Methods
 
 #### def addCronJob 
+
 ##### arguments
 
 - commandToExecute
@@ -24,7 +25,8 @@ Add a cronjob to the system
 @type interval: number
 @param logFilePath: the path of the logfile to redirect the output of crontab to
 @type logFilePath: string
-@param replaceLineIfCommandAlreadyInCrontab: Specifies whether to replace the line if a command already exists in crontab
+@param replaceLineIfCommandAlreadyInCrontab: Specifies whether to replace the
+    line if a command already exists in crontab
 @type replaceLineIfCommandAlreadyInCrontab: bool
 @param unit: The unit of the interval
 @type unit: TimeIntervalUnit
@@ -32,6 +34,7 @@ Add a cronjob to the system
 ```
 
 #### def addSystemGroup 
+
 ##### arguments
 
 - groupname
@@ -49,6 +52,7 @@ Note: you should be root to run this python command.
 ```
 
 #### def addSystemUser 
+
 ##### arguments
 
 - username
@@ -71,11 +75,14 @@ Note: you should be root to run this python command.
 ```
 
 #### def addUserToGroup 
+
 ##### arguments
 
 - username
 - groupname
+
 #### def checkApplicationInstalled 
+
 ##### arguments
 
 - appname
@@ -88,6 +95,7 @@ check if app is installed,  if yes return True
 ```
 
 #### def chmod 
+
 ##### arguments
 
 - root
@@ -106,6 +114,7 @@ Chmod based on system.fs.walk
 ```
 
 #### def chown 
+
 ##### arguments
 
 - path
@@ -121,14 +130,17 @@ Chown a file
 @type path: string
 @param user: username to be used as the new owner
 @type user: string
-@param group: groupname to be used as the new group owner (if None, then root is used as a groupname0
+@param group: groupname to be used as the new group owner (if None, then root is
+    used as a groupname0
 @type group: string
-@param recursive: if path is a directory, all files underneath the path are also chown if True (default False)
+@param recursive: if path is a directory, all files underneath the path are also
+    chown if True (default False)
 @type recursive: boolean
 
 ```
 
 #### def chroot 
+
 ##### arguments
 
 - path
@@ -144,6 +156,7 @@ Change root directory path
 ```
 
 #### def daemonize 
+
 ##### arguments
 
 - chdir = '/'
@@ -173,9 +186,11 @@ the current process is the process which called the C\{daemonize\}
 method, which can most likely be closed now. The second item is the
 PID of the current process.
 
-@attention: Make sure you know really well what fork(2) does before using this method
+@attention: Make sure you know really well what fork(2) does before using this
+    method
 
-@param chdir: Path to chdir(2) to after forking. Set to None to disable chdir'ing
+@param chdir: Path to chdir(2) to after forking. Set to None to disable
+    chdir'ing
 @type chdir: string or None
 @param umask: Umask to set after forking. Set to -1 not to set umask
 @type umask: number
@@ -188,6 +203,7 @@ PID of the current process.
 ```
 
 #### def disableUnixUser 
+
 ##### arguments
 
 - username
@@ -203,6 +219,7 @@ Disables a given unix user
 ```
 
 #### def enableUnixUser 
+
 ##### arguments
 
 - username
@@ -218,6 +235,7 @@ Enables a given unix user
 ```
 
 #### def executeAsUser 
+
 ##### arguments
 
 - command
@@ -253,6 +271,7 @@ including the same named arguments.
 ```
 
 #### def executeDaemonAsUser 
+
 ##### arguments
 
 - command
@@ -288,6 +307,7 @@ including the same named arguments.
 ```
 
 #### def getBashEnvFromFile 
+
 ##### arguments
 
 - file
@@ -306,6 +326,7 @@ Get the value of an environment variable in a Bash file
 ```
 
 #### def getMachineInfo 
+
 ##### arguments
 
 ##### comments
@@ -319,6 +340,7 @@ Get memory and CPU info about this machine
 ```
 
 #### def killGroup 
+
 ##### arguments
 
 - pid
@@ -328,7 +350,8 @@ Get memory and CPU info about this machine
 ```
 Kill a process group
 
-killGroup will get the parent pid from the pid given and kill the group with signal SIGKILL (default)
+killGroup will get the parent pid from the pid given and kill the group with
+    signal SIGKILL (default)
 
 @type pid: int
 @param pid: process id
@@ -336,6 +359,7 @@ killGroup will get the parent pid from the pid given and kill the group with sig
 ```
 
 #### def removeUnixUser 
+
 ##### arguments
 
 - username
@@ -353,6 +377,7 @@ Remove a given unix user
 ```
 
 #### def setUnixUserPassword 
+
 ##### arguments
 
 - username
@@ -372,6 +397,7 @@ Set a password on unix user
 ```
 
 #### def unixGroupExists 
+
 ##### arguments
 
 - groupname
@@ -390,6 +416,7 @@ Checks if a given group already exists in the system
 ```
 
 #### def unixUserExists 
+
 ##### arguments
 
 - username
@@ -408,6 +435,7 @@ Checks if a given user already exists in the system
 ```
 
 #### def unixUserIsInGroup 
+
 ##### arguments
 
 - username

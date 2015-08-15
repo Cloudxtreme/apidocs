@@ -8,6 +8,7 @@
 ### Methods
 
 #### def connect 
+
 ##### arguments
 
 - addr = 'localhost'
@@ -15,3 +16,4 @@
 - passwd
 - verbose = True
 - keypath
+

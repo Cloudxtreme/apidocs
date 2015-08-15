@@ -5,6 +5,7 @@
 ### Methods
 
 #### def find 
+
 ##### arguments
 
 - account
@@ -23,6 +24,7 @@ walk over repo's known on system
 ```
 
 #### def get 
+
 ##### arguments
 
 - basedir
@@ -30,13 +32,17 @@ walk over repo's known on system
 ##### comments
 
 ```
-PLEASE USE SSH, see http://despiegk.gitbooks.io/jumpscale/content/Howto/how_to_use_git.html for more details
+PLEASE USE SSH, see
+    http://despiegk.gitbooks.io/jumpscale/content/Howto/how_to_use_git.html for
+    more details
 
 ```
 
 #### def log 
+
 ##### arguments
 
 - msg
 - category = ''
 - level = 5
+

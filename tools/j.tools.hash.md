@@ -5,6 +5,7 @@
 ### Methods
 
 #### def crc32 
+
 ##### arguments
 
 - path
@@ -26,6 +27,7 @@ used by the hashing implementation will be read.
 ```
 
 #### def crc32_string 
+
 ##### arguments
 
 - s
@@ -44,6 +46,7 @@ Calculate CRC32 hash of input string
 ```
 
 #### def hashDir 
+
 ##### arguments
 
 - rootpath
@@ -51,11 +54,14 @@ Calculate CRC32 hash of input string
 ##### comments
 
 ```
-walk over all files, calculate md5 and of sorted list also calc md5 this is the resulting hash for the dir independant from time and other metadata (appart from path)
+walk over all files, calculate md5 and of sorted list also calc md5 this is the
+    resulting hash for the dir independant from time and other metadata (appart
+    from path)
 
 ```
 
 #### def md5 
+
 ##### arguments
 
 - path
@@ -77,6 +83,7 @@ used by the hashing implementation will be read.
 ```
 
 #### def md5_string 
+
 ##### arguments
 
 - s
@@ -95,6 +102,7 @@ Calculate %(alg)s hash of input string
 ```
 
 #### def sha1 
+
 ##### arguments
 
 - path
@@ -116,6 +124,7 @@ used by the hashing implementation will be read.
 ```
 
 #### def sha1_string 
+
 ##### arguments
 
 - s
@@ -134,6 +143,7 @@ Calculate %(alg)s hash of input string
 ```
 
 #### def sha256 
+
 ##### arguments
 
 - path
@@ -155,6 +165,7 @@ used by the hashing implementation will be read.
 ```
 
 #### def sha256_string 
+
 ##### arguments
 
 - s
@@ -173,6 +184,7 @@ Calculate %(alg)s hash of input string
 ```
 
 #### def sha512 
+
 ##### arguments
 
 - path
@@ -194,6 +206,7 @@ used by the hashing implementation will be read.
 ```
 
 #### def sha512_string 
+
 ##### arguments
 
 - s

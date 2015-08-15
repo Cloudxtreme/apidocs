@@ -5,8 +5,10 @@
 ### Methods
 
 #### def get 
+
 ##### arguments
 
 - path
 - args
 - failWhenNotExist = False
+

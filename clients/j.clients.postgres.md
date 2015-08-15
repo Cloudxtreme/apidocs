@@ -9,6 +9,7 @@
     
 
 #### def createdb 
+
 ##### arguments
 
 - db
@@ -16,7 +17,9 @@
 - port = 5432
 - login = 'postgres'
 - passwd = 'rooter'
+
 #### def dropdb 
+
 ##### arguments
 
 - db
@@ -24,7 +27,9 @@
 - port = 5432
 - login = 'postgres'
 - passwd = 'rooter'
+
 #### def getClient 
+
 ##### arguments
 
 - ipaddr = 'localhost'
@@ -32,3 +37,4 @@
 - login = 'postgres'
 - passwd = 'rooter'
 - dbname = 'template'
+

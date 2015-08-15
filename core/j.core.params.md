@@ -7,6 +7,7 @@
 This factory can create new Params objects
 
 #### def get 
+
 ##### arguments
 
 - dictObject = \{\}
@@ -23,6 +24,7 @@ Create and return a new Params object
 ```
 
 #### def isParams 
+
 ##### arguments
 
 - p

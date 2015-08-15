@@ -5,6 +5,7 @@
 ### Methods
 
 #### def get 
+
 ##### arguments
 
 - username = ''
@@ -15,12 +16,16 @@
 - operations_user_id = ''
 - operations_department_id = ''
 - instance = 'main'
+
 #### def getDummy 
+
 ##### arguments
 
 #### def log 
+
 ##### arguments
 
 - msg
 - category = ''
 - level = 5
+

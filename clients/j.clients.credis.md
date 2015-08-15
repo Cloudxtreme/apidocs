@@ -10,15 +10,19 @@
     
 
 #### def getRedisClient 
+
 ##### arguments
 
 - ipaddr
 - port
 - timeout
+
 #### def getRedisQueue 
+
 ##### arguments
 
 - ipaddr
 - port
 - name
 - namespace = 'queues'
+

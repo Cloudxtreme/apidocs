@@ -5,6 +5,7 @@
 ### Methods
 
 #### def getActorInfoPage 
+
 ##### arguments
 
 - appname
@@ -20,6 +21,7 @@ used for during error show info about 1 actor
 ```
 
 #### def getActorMethodCall 
+
 ##### arguments
 
 - appname
@@ -34,9 +36,11 @@ used for during error show links to methods in browser
 ```
 
 #### def getActorsInfoPage 
+
 ##### arguments
 
 - appname = ''
 - actor = ''
 - page
 - extraParams = \{\}
+

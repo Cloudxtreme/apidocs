@@ -7,18 +7,24 @@
 ### Methods
 
 #### def help 
+
 ##### arguments
 
 #### def setDefaultPasswd 
+
 ##### arguments
 
 - passwd
 - host = 'localhost'
+
 #### def setHost 
+
 ##### arguments
 
 - host = 'localhost'
+
 #### def setHosts 
+
 ##### arguments
 
 - hosts = ['localhost']

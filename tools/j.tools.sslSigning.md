@@ -5,6 +5,7 @@
 ### Methods
 
 #### def bundle 
+
 ##### arguments
 
 - certificate
@@ -21,10 +22,13 @@ Optionally secures it with a passphrase.
 ```
 
 #### def createCertificateSigningRequest 
+
 ##### arguments
 
 - common_name
+
 #### def createSignedCert 
+
 ##### arguments
 
 - path
@@ -39,6 +43,7 @@ The following code sample shows how to sign an X509 certificate using a CA:
 ```
 
 #### def create_self_signed_ca_cert 
+
 ##### arguments
 
 - cert_dir
@@ -53,8 +58,10 @@ self-signed cert and keypair and write them into that directory.
 ```
 
 #### def signRequest 
+
 ##### arguments
 
 - req
 - ca_cert
 - ca_key
+

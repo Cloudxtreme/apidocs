@@ -9,14 +9,19 @@
 ### Methods
 
 #### def getCodeManagerForFile 
+
 ##### arguments
 
 - path
+
 #### def getUserId 
+
 ##### arguments
 
 - username
+
 #### def parse 
+
 ##### arguments
 
 - path
@@ -29,10 +34,14 @@ directory to walk over and find story, task, ... statements
 ```
 
 #### def setgroups 
+
 ##### arguments
 
 - config
+
 #### def setusers 
+
 ##### arguments
 
 - config
+

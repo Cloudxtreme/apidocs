@@ -5,9 +5,11 @@
 ### Methods
 
 #### def addDemoHandler 
+
 ##### arguments
 
 #### def addLogHandler 
+
 ##### arguments
 
 - path = '/tmp/chat.log'
@@ -21,5 +23,6 @@ self.api.add_handler(loggerHandler)
 ```
 
 #### def start 
+
 ##### arguments
 

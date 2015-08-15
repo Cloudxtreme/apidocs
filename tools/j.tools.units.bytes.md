@@ -5,11 +5,14 @@
 ### Methods
 
 #### def converToBestUnit 
+
 ##### arguments
 
 - value
 - input = ''
+
 #### def toSize 
+
 ##### arguments
 
 - value

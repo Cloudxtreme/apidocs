@@ -5,11 +5,15 @@
 ### Methods
 
 #### def addClient 
+
 ##### arguments
 
 - name = '*'
 - options = 'rw,sync'
+
 #### def removeClient 
+
 ##### arguments
 
 - name
+

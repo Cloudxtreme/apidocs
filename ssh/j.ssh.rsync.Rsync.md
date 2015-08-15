@@ -5,6 +5,7 @@
 ### Methods
 
 #### def addModule 
+
 ##### arguments
 
 - name
@@ -20,16 +21,21 @@ rs.commit()
 ```
 
 #### def commit 
+
 ##### arguments
 
 #### def erase 
+
 ##### arguments
 
 #### def removeModule 
+
 ##### arguments
 
 - name
+
 #### def removeParams 
+
 ##### arguments
 
 - key
@@ -42,6 +48,7 @@ remove a global parameter
 ```
 
 #### def restart 
+
 ##### arguments
 
 ##### comments
@@ -52,6 +59,7 @@ restart rsync daemon
 ```
 
 #### def setParams 
+
 ##### arguments
 
 - key
@@ -65,6 +73,7 @@ set a global parameter
 ```
 
 #### def start 
+
 ##### arguments
 
 ##### comments
@@ -75,6 +84,7 @@ start rsync daemon
 ```
 
 #### def stop 
+
 ##### arguments
 
 ##### comments

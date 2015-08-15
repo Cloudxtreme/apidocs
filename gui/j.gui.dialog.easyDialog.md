@@ -5,6 +5,7 @@
 ### Methods
 
 #### def askChoice 
+
 ##### arguments
 
 - question
@@ -17,20 +18,25 @@
 ##### comments
 
 ```
-Ask the user the supplied question and list the choices to choose from, if no response given the default value is used
+Ask the user the supplied question and list the choices to choose from, if no
+    response given the default value is used
 
 @param question: question to be display to the user
 @param choices: list of choinavigateToces for the user to choose from
 @param defaultValue: the value that will be used if no response given
-@param pageSize: max number of choices that can be prompted to the user in a single screen
-@param sortChoices: if True, choices will be sorted before showing them to the user
-@param sortCallBack: A callback function to handle the sorting of the choices (will only be used if sortChoices is set to True)
+@param pageSize: max number of choices that can be prompted to the user in a
+    single screen
+@param sortChoices: if True, choices will be sorted before showing them to the
+    user
+@param sortCallBack: A callback function to handle the sorting of the choices
+    (will only be used if sortChoices is set to True)
 
 @return:  selected choice
 
 ```
 
 #### def askChoiceMultiple 
+
 ##### arguments
 
 - question
@@ -43,20 +49,26 @@ Ask the user the supplied question and list the choices to choose from, if no re
 ##### comments
 
 ```
-Ask the user the supplied question and list the choices to choose from, if no response given the default value[s] is used
+Ask the user the supplied question and list the choices to choose from, if no
+    response given the default value[s] is used
 
 @param question: question to be display to the user
 @param choices: list of choices for the user to choose from
-@param defaultValue: default value assumed if no user response is given, default value can be a single value or a comma separated list of values
-@param pageSize: max number of choices that can be prompted to the user in a single screen
-@param sortChoices: if True, choices will be sorted before showing them to the user
-@param sortCallBack: A callback function to handle the sorting of the choices (will only be used if sortChoices is set to True)
+@param defaultValue: default value assumed if no user response is given, default
+    value can be a single value or a comma separated list of values
+@param pageSize: max number of choices that can be prompted to the user in a
+    single screen
+@param sortChoices: if True, choices will be sorted before showing them to the
+    user
+@param sortCallBack: A callback function to handle the sorting of the choices
+    (will only be used if sortChoices is set to True)
 
 @return:  selected choice[s] or default value[s]
 
 ```
 
 #### def askDate 
+
 ##### arguments
 
 - question
@@ -68,9 +80,11 @@ Ask the user the supplied question and list the choices to choose from, if no re
 ##### comments
 
 ```
-Asks user the supplied question, a valid answer is a date between minValue and maxValue
+Asks user the supplied question, a valid answer is a date between minValue and
+    maxValue
 
-Currently in the EasyDialogConsole implementation ignores the format parameter and  only dates with format YYYY/MM/DD are supported
+Currently in the EasyDialogConsole implementation ignores the format parameter
+    and  only dates with format YYYY/MM/DD are supported
 
 @param question: question that will be prompted to the user
 @param minValue: optional value for the lower boundary date
@@ -81,6 +95,7 @@ Currently in the EasyDialogConsole implementation ignores the format parameter a
 ```
 
 #### def askDateTime 
+
 ##### arguments
 
 - question
@@ -94,7 +109,9 @@ Currently in the EasyDialogConsole implementation ignores the format parameter a
 ```
 Asks user a question that its answer is a datetime between minValue and maxValue
 
-Note: this note my seem out of place, but is is important to note that currently in the EasyDialogConsole implementation only dates with format YYYY/MM/DD are supported
+Note: this note my seem out of place, but is is important to note that currently
+    in the EasyDialogConsole implementation only dates with format YYYY/MM/DD
+    are supported
 
 @param question: question that will be prompted to the user
 @param minValue: optional value for the lower boundary date
@@ -105,6 +122,7 @@ Note: this note my seem out of place, but is is important to note that currently
 ```
 
 #### def askDirPath 
+
 ##### arguments
 
 - message
@@ -113,15 +131,18 @@ Note: this note my seem out of place, but is is important to note that currently
 ##### comments
 
 ```
-Prompts for a selection of a file path starting from startPath if given and '/' if not
+Prompts for a selection of a file path starting from startPath if given and '/'
+    if not
 
-@param message: message that would be displayed to the user above the selection menu
+@param message: message that would be displayed to the user above the selection
+    menu
 @param startPath: base dir of the navigation tree
 @return: path to the directory selected
 
 ```
 
 #### def askFilePath 
+
 ##### arguments
 
 - message
@@ -130,15 +151,18 @@ Prompts for a selection of a file path starting from startPath if given and '/' 
 ##### comments
 
 ```
-Prompts for a selection of a file path starting from startPath if given and '/' if not
+Prompts for a selection of a file path starting from startPath if given and '/'
+    if not
 
-@param message: message that would be displayed to the user above the selection menu
+@param message: message that would be displayed to the user above the selection
+    menu
 @param startPath: base dir of the navigation tree
 @return: path to the file selected
 
 ```
 
 #### def askInt 
+
 ##### arguments
 
 - question
@@ -147,15 +171,19 @@ Prompts for a selection of a file path starting from startPath if given and '/' 
 ##### comments
 
 ```
-Asks user the supplied question and prompt for an answer, if none given the default value is used, the response and the default value must be valid integer
+Asks user the supplied question and prompt for an answer, if none given the
+    default value is used, the response and the default value must be valid
+    integer
 
 @param question: question to be displayed
-@param defaultValue: if the user did not provide a response this value is used as an answer
+@param defaultValue: if the user did not provide a response this value is used
+    as an answer
 @return: response integer or the default value
 
 ```
 
 #### def askInteger 
+
 ##### arguments
 
 - question
@@ -164,15 +192,19 @@ Asks user the supplied question and prompt for an answer, if none given the defa
 ##### comments
 
 ```
-Asks user the supplied question and prompt for an answer, if none given the default value is used, the response and the default value must be valid integer
+Asks user the supplied question and prompt for an answer, if none given the
+    default value is used, the response and the default value must be valid
+    integer
 
 @param question: question to be displayed
-@param defaultValue: if the user did not provide a response this value is used as an answer
+@param defaultValue: if the user did not provide a response this value is used
+    as an answer
 @return: response integer or the default value
 
 ```
 
 #### def askIntegers 
+
 ##### arguments
 
 - question
@@ -188,6 +220,7 @@ Asks user the supplied question and prompt for an answer
 ```
 
 #### def askMultiline 
+
 ##### arguments
 
 - question
@@ -202,6 +235,7 @@ Asks the user the supplied question, where the answer could be multi-lines
 ```
 
 #### def askPassword 
+
 ##### arguments
 
 - question
@@ -221,6 +255,7 @@ Asks the supplied question and prompts for password
 ```
 
 #### def askString 
+
 ##### arguments
 
 - question
@@ -230,15 +265,18 @@ Asks the supplied question and prompts for password
 ##### comments
 
 ```
-Asks the user the supplied question and prompt for an answer, if none given the default value is used
+Asks the user the supplied question and prompt for an answer, if none given the
+    default value is used
 @param question: question to be displayed
-@param defaultValue: if the user did not provide a response this value is used as an answer
+@param defaultValue: if the user did not provide a response this value is used
+    as an answer
 @param validator: regex validation value
 @return: response string or the default value
 
 ```
 
 #### def askYesNo 
+
 ##### arguments
 
 - question
@@ -247,16 +285,21 @@ Asks the user the supplied question and prompt for an answer, if none given the 
 ##### comments
 
 ```
-Asks user the supplied question and prompt for an answer, if none given the default value is used, the response and the default value one of the values [y|Y|yes|Yes..n|N|No..]
+Asks user the supplied question and prompt for an answer, if none given the
+    default value is used, the response and the default value one of the values
+    [y|Y|yes|Yes..n|N|No..]
 
-Currently the default value effect is ignored since it would require changing the jumpscale vapp
+Currently the default value effect is ignored since it would require changing
+    the jumpscale vapp
 @param question: question to be prompted
-@param defaultValue: if the user did not provide a response this value is used as an answer
+@param defaultValue: if the user did not provide a response this value is used
+    as an answer
 @return: response answer or the default value
 
 ```
 
 #### def chooseDialogType 
+
 ##### arguments
 
 - type
@@ -270,6 +313,7 @@ supported types today: console,win32,wizardserver
 ```
 
 #### def clear 
+
 ##### arguments
 
 ##### comments
@@ -280,6 +324,7 @@ Clears the screen/form.
 ```
 
 #### def message 
+
 ##### arguments
 
 - message
@@ -294,10 +339,13 @@ prints the given message to the screen
 ```
 
 #### def navigateTo 
+
 ##### arguments
 
 - url
+
 #### def showLogging 
+
 ##### arguments
 
 - text
@@ -310,6 +358,7 @@ Shows logging message
 ```
 
 #### def showMessageBox 
+
 ##### arguments
 
 - message
@@ -325,15 +374,19 @@ Shows a message box
 
 @param message: message for the messagebox
 @param title: title of the messagebox
-@param msgboxButtons: buttons to show in the messagebox. Possible values are 'OKCancel', 'YesNo', 'YesNoCancel','OK'
-@param msgboxIcon: icon to show in the messagebox. Possible values are 'None','Error', 'Warning', 'Information', 'Question'
-@param defaultButton: default button for the messagebox. Possible values are 'OK', 'Cancel', 'Yes', 'No'
+@param msgboxButtons: buttons to show in the messagebox. Possible values are
+    'OKCancel', 'YesNo', 'YesNoCancel','OK'
+@param msgboxIcon: icon to show in the messagebox. Possible values are
+    'None','Error', 'Warning', 'Information', 'Question'
+@param defaultButton: default button for the messagebox. Possible values are
+    'OK', 'Cancel', 'Yes', 'No'
 
 @return: A JSON encoded string containing the selected button clicked
 
 ```
 
 #### def showProgress 
+
 ##### arguments
 
 - minvalue

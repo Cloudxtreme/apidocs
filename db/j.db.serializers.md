@@ -14,6 +14,7 @@
 ### Methods
 
 #### def get 
+
 ##### arguments
 
 - serializationstr
@@ -23,7 +24,7 @@
 
 ```
 serializationstr FORMATS SUPPORTED FOR NOW
-    m=MESSAGEPACK 
+    m=MESSAGEPACK
     c=COMPRESSION WITH BLOSC
     b=blowfish
     s=snappy
@@ -33,21 +34,26 @@ serializationstr FORMATS SUPPORTED FOR NOW
     p=pickle
     r=bin (means is not object (r=raw))
     l=log
-    d=dict (check if there is a dict to object, if yes use that dict, removes the private properties (starting with _))
+    d=dict (check if there is a dict to object, if yes use that dict, removes
+    the private properties (starting with _))
 
- example serializationstr "mcb" would mean first use messagepack serialization then compress using blosc then encrypt (key will be used)
+ example serializationstr "mcb" would mean first use messagepack serialization
+    then compress using blosc then encrypt (key will be used)
 
 this method returns
 
 ```
 
 #### def getBlosc 
+
 ##### arguments
 
 #### def getMessagePack 
+
 ##### arguments
 
 #### def getSerializerType 
+
 ##### arguments
 
 - type
@@ -57,7 +63,7 @@ this method returns
 
 ```
 serializationstr FORMATS SUPPORTED FOR NOW
-    m=MESSAGEPACK 
+    m=MESSAGEPACK
     c=COMPRESSION WITH BLOSC
     b=blowfish
     s=snappy

@@ -8,11 +8,14 @@
 ### Methods
 
 #### def connect 
+
 ##### arguments
 
 - addr
 - port
 - passwd
+
 #### def help 
+
 ##### arguments
 

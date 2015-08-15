@@ -7,7 +7,9 @@
 ### Methods
 
 #### def addCMDsInterface 
+
 ##### arguments
 
 - cmdInterfaceClass
 - category
+

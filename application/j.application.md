@@ -21,9 +21,11 @@
 ### Methods
 
 #### def connectRedis 
+
 ##### arguments
 
 #### def existAppInstanceHRD 
+
 ##### arguments
 
 - name
@@ -33,14 +35,17 @@
 ##### comments
 
 ```
-returns hrd for specific appname & instance name (default domain=jumpscale or not used when inside a config git repo)
+returns hrd for specific appname & instance name (default domain=jumpscale or
+    not used when inside a config git repo)
 
 ```
 
 #### def getAgentId 
+
 ##### arguments
 
 #### def getAppHRDInstanceNames 
+
 ##### arguments
 
 - name
@@ -54,6 +59,7 @@ returns hrd instance names for specific appname (default domain=jumpscale)
 ```
 
 #### def getAppInstanceHRD 
+
 ##### arguments
 
 - name
@@ -69,6 +75,7 @@ returns hrd for specific domain,name and & instance name
 ```
 
 #### def getAppInstanceHRDs 
+
 ##### arguments
 
 - name
@@ -82,6 +89,7 @@ returns list of hrd instances for specified app
 ```
 
 #### def getCPUUsage 
+
 ##### arguments
 
 ##### comments
@@ -93,6 +101,7 @@ By default 0 for windows
 ```
 
 #### def getMemoryUsage 
+
 ##### arguments
 
 ##### comments
@@ -104,25 +113,31 @@ By default 0 for windows
 ```
 
 #### def getUniqueMachineId 
+
 ##### arguments
 
 ##### comments
 
 ```
-will look for network interface and return a hash calculated from lowest mac address from all physical nics
+will look for network interface and return a hash calculated from lowest mac
+    address from all physical nics
 
 ```
 
 #### def getWhoAmiStr 
+
 ##### arguments
 
 #### def init 
+
 ##### arguments
 
 #### def initGrid 
+
 ##### arguments
 
 #### def initWhoAmI 
+
 ##### arguments
 
 - reload = False
@@ -136,9 +151,11 @@ when in grid:
 ```
 
 #### def loadConfig 
+
 ##### arguments
 
 #### def start 
+
 ##### arguments
 
 - name
@@ -156,6 +173,7 @@ to end-of-script, I will find you anyway!
 ```
 
 #### def stop 
+
 ##### arguments
 
 - exitcode = 0

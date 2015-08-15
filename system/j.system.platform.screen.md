@@ -7,12 +7,15 @@
 ### Methods
 
 #### def attachSession 
+
 ##### arguments
 
 - sessionname
 - windowname
 - user
+
 #### def createSession 
+
 ##### arguments
 
 - sessionname
@@ -23,17 +26,21 @@
 
 ```
 @param name is name of session
-@screens is list with nr of screens required in session and their names (is [$screenname,...])
+@screens is list with nr of screens required in session and their names (is
+    [$screenname,...])
 
 ```
 
 #### def createWindow 
+
 ##### arguments
 
 - session
 - name
 - user
+
 #### def executeInScreen 
+
 ##### arguments
 
 - sessionname
@@ -64,46 +71,62 @@
 ```
 
 #### def getPid 
+
 ##### arguments
 
 - session
 - name
 - user
+
 #### def getSessions 
+
 ##### arguments
 
 - user
+
 #### def getWindows 
+
 ##### arguments
 
 - session
 - attemps = 5
 - user
+
 #### def killSession 
+
 ##### arguments
 
 - sessionname
 - user
+
 #### def killSessions 
+
 ##### arguments
 
 - user
+
 #### def killWindow 
+
 ##### arguments
 
 - session
 - name
 - user
+
 #### def logWindow 
+
 ##### arguments
 
 - session
 - name
 - filename
 - user
+
 #### def windowExists 
+
 ##### arguments
 
 - session
 - name
 - user
+

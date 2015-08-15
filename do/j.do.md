@@ -11,6 +11,7 @@
 ### Methods
 
 #### def changeDir 
+
 ##### arguments
 
 - path
@@ -25,6 +26,7 @@ Changes Current Directory
 ```
 
 #### def changeLoginPasswdGitRepos 
+
 ##### arguments
 
 - provider
@@ -39,6 +41,7 @@ walk over all git repo's found in account & change login/passwd
 ```
 
 #### def chdir 
+
 ##### arguments
 
 - ddir = ''
@@ -51,6 +54,7 @@ if ddir=="" then will go to tmpdir
 ```
 
 #### def checkDirOrLinkToDir 
+
 ##### arguments
 
 - fullpath
@@ -63,6 +67,7 @@ check if path is dir or link to a dir
 ```
 
 #### def checkInstalled 
+
 ##### arguments
 
 - cmdname
@@ -75,6 +80,7 @@ check if path is dir or link to a dir
 ```
 
 #### def chmod 
+
 ##### arguments
 
 - path
@@ -88,23 +94,30 @@ check if path is dir or link to a dir
 ```
 
 #### def chown 
+
 ##### arguments
 
 - path
 - user
+
 #### def copyDependencies 
+
 ##### arguments
 
 - path
 - dest
+
 #### def copyFile 
+
 ##### arguments
 
 - source
 - dest
 - deletefirst = False
 - skipIfExists = False
+
 #### def copyTree 
+
 ##### arguments
 
 - source
@@ -116,16 +129,22 @@ check if path is dir or link to a dir
 - ignorefiles = ['.egg-info']
 - rsync = True
 - sshkey
+
 #### def createDir 
+
 ##### arguments
 
 - path
+
 #### def delete 
+
 ##### arguments
 
 - path
 - force = False
+
 #### def download 
+
 ##### arguments
 
 - url
@@ -143,29 +162,38 @@ check if path is dir or link to a dir
 
 ```
 @return path of downloaded file
-@param minspeed is kbytes per sec e.g. 50, if less than 50 kbytes during 10 min it will restart the download (curl only)
-@param when multithread True then will use aria2 download tool to get multiple threads
+@param minspeed is kbytes per sec e.g. 50, if less than 50 kbytes during 10 min
+    it will restart the download (curl only)
+@param when multithread True then will use aria2 download tool to get multiple
+    threads
 
 ```
 
 #### def downloadExpandTarGz 
+
 ##### arguments
 
 - url
 - destdir
 - deleteDestFirst = True
 - deleteSourceAfter = True
+
 #### def downloadJumpScaleCore 
+
 ##### arguments
 
 - dest
+
 #### def excepthook 
+
 ##### arguments
 
 - ttype
 - pythonExceptionObject
 - tb
+
 #### def execute 
+
 ##### arguments
 
 - command
@@ -189,6 +217,7 @@ return rc,out,err
 ```
 
 #### def executeCmds 
+
 ##### arguments
 
 - cmdstr
@@ -202,27 +231,37 @@ return rc,out,err
 - ok = []
 - captureout = True
 - dieOnNonZeroExitCode = True
+
 #### def executeInteractive 
+
 ##### arguments
 
 - command
+
 #### def exists 
+
 ##### arguments
 
 - path
+
 #### def expandTarGz 
+
 ##### arguments
 
 - path
 - destdir
 - deleteDestFirst = True
 - deleteSourceAfter = False
+
 #### def findDependencies 
+
 ##### arguments
 
 - path
 - deps = \{\}
+
 #### def getBaseName 
+
 ##### arguments
 
 - path
@@ -235,6 +274,7 @@ Return the base name of pathname path.
 ```
 
 #### def getDirName 
+
 ##### arguments
 
 - path
@@ -246,19 +286,26 @@ Return the base name of pathname path.
 ```
 Return a directory name from pathname path.
 @param path the path to find a directory within
-@param lastOnly means only the last part of the path which is a dir (overrides levelsUp to 0)
+@param lastOnly means only the last part of the path which is a dir (overrides
+    levelsUp to 0)
 @param levelsUp means, return the parent dir levelsUp levels up
- e.g. ...getDirName("/opt/qbase/bin/something/test.py", levelsUp=0) would return something
- e.g. ...getDirName("/opt/qbase/bin/something/test.py", levelsUp=1) would return bin
- e.g. ...getDirName("/opt/qbase/bin/something/test.py", levelsUp=10) would raise an error
+ e.g. ...getDirName("/opt/qbase/bin/something/test.py", levelsUp=0) would return
+    something
+ e.g. ...getDirName("/opt/qbase/bin/something/test.py", levelsUp=1) would return
+    bin
+ e.g. ...getDirName("/opt/qbase/bin/something/test.py", levelsUp=10) would raise
+    an error
 
 ```
 
 #### def getFileExtension 
+
 ##### arguments
 
 - path
+
 #### def getGitRepoArgs 
+
 ##### arguments
 
 - url = ''
@@ -273,25 +320,31 @@ Return a directory name from pathname path.
 Extracts and returns data useful in cloning a Git repository.
 
 Args:
-    url (str): the HTTP URL of the Git repository to clone from. ex: 'https://github.com/odoo/odoo.git'
+    url (str): the HTTP URL of the Git repository to clone from. ex:
+    'https://github.com/odoo/odoo.git'
     dest (str): the local filesystem path to clone to
     login (str): authentication login name
     passwd (str): authentication login password
-    reset (boolean): if True, any cached clone of the Git repository will be removed
+    reset (boolean): if True, any cached clone of the Git repository will be
+    removed
 
 Returns:
-    (repository_host, repository_type, repository_account, repository_name, repository_url)
+    (repository_host, repository_type, repository_account, repository_name,
+    repository_url)
 
 ```
 
 #### def getGitReposListLocal 
+
 ##### arguments
 
 - provider = ''
 - account = ''
 - name = ''
 - errorIfNone = True
+
 #### def getParent 
+
 ##### arguments
 
 - path
@@ -302,14 +355,17 @@ Returns:
 Returns the parent of the path:
 /dir1/dir2/file_or_dir -> /dir1/dir2/
 /dir1/dir2/            -> /dir1/
-@todo why do we have 2 implementations which are almost the same see getParentDirName()
+@todo why do we have 2 implementations which are almost the same see
+    getParentDirName()
 
 ```
 
 #### def getPythonSiteConfigPath 
+
 ##### arguments
 
 #### def getTimeEpoch 
+
 ##### arguments
 
 ##### comments
@@ -320,17 +376,23 @@ Get epoch timestamp (number of seconds passed since January 1, 1970)
 ```
 
 #### def getTmpPath 
+
 ##### arguments
 
 - filename
+
 #### def getWalker 
+
 ##### arguments
 
 #### def installPackage 
+
 ##### arguments
 
 - path
+
 #### def isDir 
+
 ##### arguments
 
 - path
@@ -347,10 +409,13 @@ Check if the specified Directory path exists
 ```
 
 #### def isExecutable 
+
 ##### arguments
 
 - path
+
 #### def isFile 
+
 ##### arguments
 
 - path
@@ -367,6 +432,7 @@ Check if the specified file exists for the given path
 ```
 
 #### def isLink 
+
 ##### arguments
 
 - path
@@ -382,20 +448,27 @@ Check if the specified path is a link
 ```
 
 #### def isUnix 
+
 ##### arguments
 
 #### def isWindows 
+
 ##### arguments
 
 #### def joinPaths 
+
 ##### arguments
 
 - *args
+
 #### def list 
+
 ##### arguments
 
 - path
+
 #### def listDirsInDir 
+
 ##### arguments
 
 - path
@@ -413,6 +486,7 @@ Retrieves list of directories found in the specified directory
 ```
 
 #### def listFilesAndDirsInDir 
+
 ##### arguments
 
 - path
@@ -433,19 +507,24 @@ Retrieves list of files found in the specified directory
 @type  path:       string
 @param recursive:  recursively look in all subdirs
 @type  recursive:  boolean
-@param filter:     unix-style wildcard (e.g. *.py) - this is not a regular expression
+@param filter:     unix-style wildcard (e.g. *.py) - this is not a regular
+    expression
 @type  filter:     string
-@param minmtime:   if not None, only return files whose last modification time > minmtime (epoch in seconds)
+@param minmtime:   if not None, only return files whose last modification time >
+    minmtime (epoch in seconds)
 @type  minmtime:   integer
-@param maxmtime:   if not None, only return files whose last modification time < maxmtime (epoch in seconds)
+@param maxmtime:   if not None, only return files whose last modification time <
+    maxmtime (epoch in seconds)
 @Param depth: is levels deep wich we need to go
 @type  maxmtime:   integer
-@param type is string with f & d inside (f for when to find files, d for when to find dirs)
+@param type is string with f & d inside (f for when to find files, d for when to
+    find dirs)
 @rtype: list
 
 ```
 
 #### def listFilesInDir 
+
 ##### arguments
 
 - path
@@ -467,11 +546,14 @@ Retrieves list of files found in the specified directory
 @type  path:       string
 @param recursive:  recursively look in all subdirs
 @type  recursive:  boolean
-@param filter:     unix-style wildcard (e.g. *.py) - this is not a regular expression
+@param filter:     unix-style wildcard (e.g. *.py) - this is not a regular
+    expression
 @type  filter:     string
-@param minmtime:   if not None, only return files whose last modification time > minmtime (epoch in seconds)
+@param minmtime:   if not None, only return files whose last modification time >
+    minmtime (epoch in seconds)
 @type  minmtime:   integer
-@param maxmtime:   if not None, only return files whose last modification time < maxmtime (epoch in seconds)
+@param maxmtime:   if not None, only return files whose last modification time <
+    maxmtime (epoch in seconds)
 @Param depth: is levels deep wich we need to go
 @type  maxmtime:   integer
 @Param exclude: list of std filters if matches then exclude
@@ -480,15 +562,20 @@ Retrieves list of files found in the specified directory
 ```
 
 #### def loadScript 
+
 ##### arguments
 
 - path
+
 #### def log 
+
 ##### arguments
 
 - msg
 - level
+
 #### def pullGitRepo 
+
 ##### arguments
 
 - url = ''
@@ -511,6 +598,7 @@ will ignore changes !!!!!!!!!!!
 ```
 
 #### def pushGitRepos 
+
 ##### arguments
 
 - message
@@ -529,6 +617,7 @@ if not or more than 1 there will be error
 ```
 
 #### def readFile 
+
 ##### arguments
 
 - filename
@@ -543,6 +632,7 @@ Read a file and get contents of that file
 ```
 
 #### def readLink 
+
 ##### arguments
 
 - path
@@ -556,6 +646,7 @@ Return a string representing the path to which the symbolic link points.
 ```
 
 #### def removeLinks 
+
 ##### arguments
 
 - path
@@ -568,10 +659,13 @@ find all links & remove
 ```
 
 #### def removeSymlink 
+
 ##### arguments
 
 - path
+
 #### def rewriteGitRepoUrl 
+
 ##### arguments
 
 - url = ''
@@ -584,16 +678,19 @@ find all links & remove
 Rewrite the url of a git repo with login and passwd if specified
 
 Args:
-    url (str): the HTTP URL of the Git repository. ex: 'https://github.com/odoo/odoo'
+    url (str): the HTTP URL of the Git repository. ex:
+    'https://github.com/odoo/odoo'
     login (str): authentication login name
     passwd (str): authentication login password
 
 Returns:
-    (repository_host, repository_type, repository_account, repository_name, repository_url)
+    (repository_host, repository_type, repository_account, repository_name,
+    repository_url)
 
 ```
 
 #### def sendmail 
+
 ##### arguments
 
 - ffrom
@@ -605,7 +702,9 @@ Returns:
 - smtpserver = 'smtp.mandrillapp.com'
 - port = 587
 - html = ''
+
 #### def symlink 
+
 ##### arguments
 
 - src
@@ -620,26 +719,41 @@ dest is where the link will be created pointing to src
 ```
 
 #### def symlinkFilesInDir 
+
 ##### arguments
 
 - src
 - dest
 - delete = True
 - includeDirs = False
+
+#### def textstrip 
+
+##### arguments
+
+- content
+- ignorecomments = False
+
 #### def touch 
+
 ##### arguments
 
 - path
+
 #### def updateGitRepos 
+
 ##### arguments
 
 - provider = ''
 - account = ''
 - name = ''
 - message = ''
+
 #### def writeFile 
+
 ##### arguments
 
 - path
 - content
 - strip = True
+

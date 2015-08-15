@@ -7,6 +7,7 @@
 Some log related utilities.
 
 #### def trace 
+
 ##### arguments
 
 - level = 5

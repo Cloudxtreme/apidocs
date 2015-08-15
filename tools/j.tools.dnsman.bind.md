@@ -5,6 +5,7 @@
 ### Methods
 
 #### def addRecord 
+
 ##### arguments
 
 - domain
@@ -13,24 +14,33 @@
 - klass
 - type
 - ttl
+
 #### def cleanCache 
+
 ##### arguments
 
 #### def deleteHost 
+
 ##### arguments
 
 - host
+
 #### def restart 
+
 ##### arguments
 
 #### def start 
+
 ##### arguments
 
 #### def stop 
+
 ##### arguments
 
 #### def updateHostIp 
+
 ##### arguments
 
 - host
 - ip
+

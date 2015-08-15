@@ -5,5 +5,6 @@
 ### Methods
 
 #### def getClient 
+
 ##### arguments
 

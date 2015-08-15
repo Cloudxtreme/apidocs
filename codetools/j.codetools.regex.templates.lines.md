@@ -7,11 +7,14 @@
 regexexamples which find lines
 
 #### def findClasslines 
+
 ##### arguments
 
 #### def findCommentlines 
+
 ##### arguments
 
 #### def findDeflines 
+
 ##### arguments
 

@@ -5,6 +5,7 @@
 ### Methods
 
 #### def send 
+
 ##### arguments
 
 - recipients

@@ -5,16 +5,22 @@
 ### Methods
 
 #### def add 
+
 ##### arguments
 
 - path
+
 #### def commit 
+
 ##### arguments
 
 #### def delete 
+
 ##### arguments
 
 - path
+
 #### def erase 
+
 ##### arguments
 

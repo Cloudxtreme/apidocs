@@ -8,6 +8,7 @@ The key value store factory provides logic to retrieve store instances. It
 also caches the stores based on their type, name and namespace.
 
 #### def getArakoonStore 
+
 ##### arguments
 
 - namespace = ''
@@ -30,6 +31,7 @@ Gets an Arakoon key value store.
 ```
 
 #### def getFileSystemStore 
+
 ##### arguments
 
 - namespace = ''
@@ -56,6 +58,7 @@ Gets a file system key value store.
 ```
 
 #### def getLevelDBStore 
+
 ##### arguments
 
 - namespace = ''
@@ -78,6 +81,7 @@ Gets a leveldb key value store.
 ```
 
 #### def getMemoryStore 
+
 ##### arguments
 
 - namespace
@@ -93,6 +97,7 @@ Gets a memory key value store.
 ```
 
 #### def getRedisStore 
+
 ##### arguments
 
 - namespace = ''

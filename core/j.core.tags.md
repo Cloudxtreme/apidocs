@@ -7,6 +7,7 @@
 Factory Class of dealing with TAGS     
 
 #### def getObject 
+
 ##### arguments
 
 - tagstring = ''
@@ -15,7 +16,7 @@ Factory Class of dealing with TAGS
 ##### comments
 
 ```
-check whether labelname exists in the labels 
+check whether labelname exists in the labels
 
 @param tagstring:  example "important customer:kristof"
 @type tagstring: string
@@ -23,6 +24,7 @@ check whether labelname exists in the labels
 ```
 
 #### def getTagString 
+
 ##### arguments
 
 - labels

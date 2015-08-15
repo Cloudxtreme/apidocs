@@ -11,20 +11,27 @@
     
 
 #### def decrypt 
+
 ##### arguments
 
 - val
 - json = False
+
 #### def encrypt 
+
 ##### arguments
 
 - obj
+
 #### def generateOsisModelDefaults 
+
 ##### arguments
 
 - namespace
 - specpath = ''
+
 #### def getLocal 
+
 ##### arguments
 
 - path = ''
@@ -40,15 +47,19 @@ create local instance starting from path
 ```
 
 #### def getModelTemplate 
+
 ##### arguments
 
 #### def getOSISBaseObjectComplexType 
+
 ##### arguments
 
 #### def getOsisBaseObjectClass 
+
 ##### arguments
 
 #### def getOsisImplementationParentClass 
+
 ##### arguments
 
 - namespacename
@@ -56,11 +67,13 @@ create local instance starting from path
 ##### comments
 
 ```
-return parent class for osis implementation (is the implementation from which each namespace & category inherits)
+return parent class for osis implementation (is the implementation from which
+    each namespace & category inherits)
 
 ```
 
 #### def getOsisModelClass 
+
 ##### arguments
 
 - namespace
@@ -75,6 +88,7 @@ returns class generated from spec file or from model.py file
 ```
 
 #### def startDaemon 
+
 ##### arguments
 
 - path = ''

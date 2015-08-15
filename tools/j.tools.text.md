@@ -6,9 +6,11 @@
     - dealWithQuote
     - lstrip
     - pythonObjToStr1line
+    - wrap
     - prefix_remove_withtrailing
     - prefix
     - toSafePath
+    - strip
     - isNumeric
     - addTimeHR
     - machinetext2str
@@ -37,25 +39,32 @@
 ### Methods
 
 #### def addCmd 
+
 ##### arguments
 
 - out
 - entity
 - cmd
+
 #### def addTimeHR 
+
 ##### arguments
 
 - line
 - epoch
 - start = 50
+
 #### def addVal 
+
 ##### arguments
 
 - out
 - name
 - val
 - addtimehr = False
+
 #### def ask 
+
 ##### arguments
 
 - content
@@ -69,7 +78,8 @@
 look for @ASK statements in text, where found replace with input from user
 
 syntax for ask is:
-    @ASK name:aname type:str descr:adescr default:adefault regex:aregex retry:10 minValue:10 maxValue:20 dropdownvals:1,2,3
+    @ASK name:aname type:str descr:adescr default:adefault regex:aregex retry:10
+    minValue:10 maxValue:20 dropdownvals:1,2,3
 
     descr, default & regex can be between '' if spaces inside
 
@@ -85,6 +95,7 @@ syntax for ask is:
 ```
 
 #### def dealWithList 
+
 ##### arguments
 
 - text
@@ -97,6 +108,7 @@ look for [something,2] the comma needs to be converted to \k
 ```
 
 #### def dealWithQuote 
+
 ##### arguments
 
 - text
@@ -109,6 +121,7 @@ look for 'something,else' the comma needs to be converted to \k
 ```
 
 #### def eval 
+
 ##### arguments
 
 - code
@@ -121,10 +134,13 @@ look for \{\{\}\} in code and evaluate as python result is converted back to str
 ```
 
 #### def getBool 
+
 ##### arguments
 
 - text
+
 #### def getDict 
+
 ##### arguments
 
 - text
@@ -140,14 +156,19 @@ keys are always treated as string
 ```
 
 #### def getFloat 
+
 ##### arguments
 
 - text
+
 #### def getInt 
+
 ##### arguments
 
 - text
+
 #### def getList 
+
 ##### arguments
 
 - text
@@ -162,6 +183,7 @@ keys are always treated as string
 ```
 
 #### def getMacroCandidates 
+
 ##### arguments
 
 - txt
@@ -174,6 +196,7 @@ look for \{\{\}\} return as list
 ```
 
 #### def hrd2machinetext 
+
 ##### arguments
 
 - value
@@ -193,18 +216,25 @@ all spaces & commas & : inside ' '  are converted
 ```
 
 #### def isFloat 
+
 ##### arguments
 
 - text
+
 #### def isInt 
+
 ##### arguments
 
 - text
+
 #### def isNumeric 
+
 ##### arguments
 
 - txt
+
 #### def lstrip 
+
 ##### arguments
 
 - content
@@ -217,6 +247,7 @@ remove all spaces at beginning & end of line when relevant
 ```
 
 #### def machinetext2str 
+
 ##### arguments
 
 - value
@@ -224,17 +255,18 @@ remove all spaces at beginning & end of line when relevant
 ##### comments
 
 ```
-do reverse of:
+       do reverse of:
             SPACE -> \S
             " -> \Q
             , -> \K
             : -> \D
-            
+
 -> \N
 
 ```
 
 #### def machinetext2val 
+
 ##### arguments
 
 - value
@@ -252,11 +284,14 @@ do reverse of:
 ```
 
 #### def prefix 
+
 ##### arguments
 
 - prefix
 - txt
+
 #### def prefix_remove 
+
 ##### arguments
 
 - prefix
@@ -266,11 +301,13 @@ do reverse of:
 ##### comments
 
 ```
-@param onlyPrefix if True means only when prefix found will be returned, rest discarded
+@param onlyPrefix if True means only when prefix found will be returned, rest
+    discarded
 
 ```
 
 #### def prefix_remove_withtrailing 
+
 ##### arguments
 
 - prefix
@@ -280,12 +317,15 @@ do reverse of:
 ##### comments
 
 ```
-there can be chars for prefix (e.g. '< :*: aline'  and this function looking for :*: would still work and ignore '< ')
-@param onlyPrefix if True means only when prefix found will be returned, rest discarded
+there can be chars for prefix (e.g. '< :*: aline'  and this function looking for
+    :*: would still work and ignore '< ')
+@param onlyPrefix if True means only when prefix found will be returned, rest
+    discarded
 
 ```
 
 #### def pythonObjToStr 
+
 ##### arguments
 
 - obj
@@ -296,20 +336,26 @@ there can be chars for prefix (e.g. '< :*: aline'  and this function looking for
 ##### comments
 
 ```
-try to convert a python object to string representation works for None, bool, integer, float, dict, list
+try to convert a python object to string representation works for None, bool,
+    integer, float, dict, list
 
 ```
 
 #### def pythonObjToStr1line 
+
 ##### arguments
 
 - obj
+
 #### def replaceQuotes 
+
 ##### arguments
 
 - value
 - replacewith
+
 #### def str2var 
+
 ##### arguments
 
 - string
@@ -317,17 +363,26 @@ try to convert a python object to string representation works for None, bool, in
 ##### comments
 
 ```
-convert list, dict of strings 
+convert list, dict of strings
 or convert 1 string to python objects
 
 ```
 
+#### def strip 
+
+##### arguments
+
+- content
+
 #### def toAscii 
+
 ##### arguments
 
 - value
 - maxlen = 0
+
 #### def toSafePath 
+
 ##### arguments
 
 - txt
@@ -341,12 +396,23 @@ process string so it can be used in a path on windows or linux
 ```
 
 #### def toStr 
+
 ##### arguments
 
 - value
 - codec = 'utf-8'
+
 #### def toUnicode 
+
 ##### arguments
 
 - value
 - codec = 'utf-8'
+
+#### def wrap 
+
+##### arguments
+
+- txt
+- length = 80
+

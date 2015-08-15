@@ -5,15 +5,20 @@
 ### Methods
 
 #### def copy 
+
 ##### arguments
 
 #### def iteritems 
+
 ##### arguments
 
 #### def keys 
+
 ##### arguments
 
 #### def pop 
+
 ##### arguments
 
 - key
+

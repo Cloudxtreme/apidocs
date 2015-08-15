@@ -5,10 +5,13 @@
 ### Methods
 
 #### def get 
+
 ##### arguments
 
 - path
+
 #### def getGroup 
+
 ##### arguments
 
 - path = ''
@@ -16,7 +19,8 @@
 ##### comments
 
 ```
-tasklets are grouped per subdir of directory, each name of subdir will become a taskletengine
+tasklets are grouped per subdir of directory, each name of subdir will become a
+    taskletengine
 
 ```
 

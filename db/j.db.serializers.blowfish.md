@@ -8,12 +8,16 @@
 ### Methods
 
 #### def dumps 
+
 ##### arguments
 
 - obj
 - encrkey
+
 #### def loads 
+
 ##### arguments
 
 - s
 - encrkey
+

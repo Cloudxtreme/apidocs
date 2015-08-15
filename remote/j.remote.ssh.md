@@ -5,6 +5,7 @@
 ### Methods
 
 #### def getSSHClient 
+
 ##### arguments
 
 - password
@@ -33,6 +34,7 @@ Create a new SSHClient instance.
 ```
 
 #### def getSSHClientUsingKey 
+
 ##### arguments
 
 - keypath
@@ -51,6 +53,7 @@ Create a new SSHClient instance.
 ```
 
 #### def getSSHClientUsingSSHAgent 
+
 ##### arguments
 
 - host = 'localhost'

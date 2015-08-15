@@ -8,6 +8,7 @@
 ### Methods
 
 #### def get 
+
 ##### arguments
 
 - path
@@ -25,17 +26,23 @@
 ```
 
 #### def getHRDFromDict 
+
 ##### arguments
 
 - ddict = \{\}
+
 #### def getHRDFromOsisObject 
+
 ##### arguments
 
 - osisobj
 - prefixRootObjectType = True
+
 #### def log 
+
 ##### arguments
 
 - msg
 - category = ''
 - level = 5
+

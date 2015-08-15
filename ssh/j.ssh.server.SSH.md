@@ -5,6 +5,7 @@
 ### Methods
 
 #### def addKey 
+
 ##### arguments
 
 - key
@@ -17,6 +18,7 @@ Add pubkey to authorized_keys
 ```
 
 #### def commit 
+
 ##### arguments
 
 ##### comments
@@ -27,6 +29,7 @@ Apply all pending changes to authorized_keys
 ```
 
 #### def deleteKey 
+
 ##### arguments
 
 - key
@@ -39,6 +42,7 @@ Delete pubkey from authorized_keys
 ```
 
 #### def disableNonKeyAccess 
+
 ##### arguments
 
 ##### comments
@@ -51,6 +55,7 @@ make sure to commit it before you call this method.
 ```
 
 #### def erase 
+
 ##### arguments
 
 ##### comments

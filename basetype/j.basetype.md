@@ -27,6 +27,7 @@
 ### Methods
 
 #### def enumeration 
+
 ##### arguments
 
 - enumerationtype
@@ -41,7 +42,8 @@ You should be aware this is, unlike non-generic basetypes, a function
 generating a class instance, not a class.
 
 @param enumerationtype: Type of which values should be instances
-@type enumerationtype: Subclass of L\{jumpscale.baseclasses.BaseEnumeration.BaseEnumeration\}
+@type enumerationtype: Subclass of
+    L\{jumpscale.baseclasses.BaseEnumeration.BaseEnumeration\}
 @param kwargs: Kwargs sent to L\{jumpscale.pmtypes.base.BaseType.__init__\}
 
 @returns: An instance of a custom descriptor class
@@ -52,6 +54,7 @@ generating a class instance, not a class.
 ```
 
 #### def object 
+
 ##### arguments
 
 - type_

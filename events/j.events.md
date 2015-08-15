@@ -5,6 +5,7 @@
 ### Methods
 
 #### def bug_critical 
+
 ##### arguments
 
 - msg
@@ -21,6 +22,7 @@ will die
 ```
 
 #### def bug_warning 
+
 ##### arguments
 
 - msg
@@ -36,6 +38,7 @@ will die
 ```
 
 #### def inputerror_critical 
+
 ##### arguments
 
 - msg
@@ -50,6 +53,7 @@ will die
 ```
 
 #### def inputerror_warning 
+
 ##### arguments
 
 - msg
@@ -64,6 +68,7 @@ will die
 ```
 
 #### def opserror 
+
 ##### arguments
 
 - msg
@@ -80,6 +85,7 @@ will make warning event is the same as opserror_warning
 ```
 
 #### def opserror_critical 
+
 ##### arguments
 
 - msg
@@ -93,6 +99,7 @@ will die
 ```
 
 #### def opserror_warning 
+
 ##### arguments
 
 - msg

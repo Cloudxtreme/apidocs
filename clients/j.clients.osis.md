@@ -8,6 +8,7 @@
 ### Methods
 
 #### def get 
+
 ##### arguments
 
 - ipaddr
@@ -16,14 +17,18 @@
 - passwd
 - ssl = False
 - gevent = False
+
 #### def getByInstance 
+
 ##### arguments
 
 - instance
 - ssl = False
 - gevent = False
 - die = True
+
 #### def getCategory 
+
 ##### arguments
 
 - client
@@ -41,7 +46,9 @@ how to use
 ```
 
 #### def getNamespace 
+
 ##### arguments
 
 - namespace
 - client
+

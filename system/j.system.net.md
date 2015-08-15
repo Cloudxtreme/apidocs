@@ -5,14 +5,19 @@
 ### Methods
 
 #### def bridgeExists 
+
 ##### arguments
 
 - bridgename
+
 #### def checkIpAddressIsLocal 
+
 ##### arguments
 
 - ipaddr
+
 #### def checkListenPort 
+
 ##### arguments
 
 - port
@@ -28,6 +33,7 @@ Check if a certain port is listening on the system.
 ```
 
 #### def checkUrlReachable 
+
 ##### arguments
 
 - url
@@ -41,6 +47,7 @@ return True if reachable
 ```
 
 #### def download 
+
 ##### arguments
 
 - url
@@ -51,10 +58,12 @@ return True if reachable
 ##### comments
 
 ```
-Download a url to a file or a directory, supported protocols: http, https, ftp, file
+Download a url to a file or a directory, supported protocols: http, https, ftp,
+    file
 @param url: URL to download from
 @type url: string
-@param localpath: filename or directory to download the url to pass - to return data
+@param localpath: filename or directory to download the url to pass - to return
+    data
 @type localpath: string
 @param username: username for the url if it requires authentication
 @type username: string
@@ -64,6 +73,7 @@ Download a url to a file or a directory, supported protocols: http, https, ftp, 
 ```
 
 #### def downloadIfNonExistent 
+
 ##### arguments
 
 - url
@@ -75,18 +85,22 @@ Download a url to a file or a directory, supported protocols: http, https, ftp, 
 ##### comments
 
 ```
-Downloads the file from the specified url to the specified destination if it is not already there
+Downloads the file from the specified url to the specified destination if it is
+    not already there
 or if the target file checksum doesn't match the expected checksum.
 
 ```
 
 #### def enableProxy 
+
 ##### arguments
 
 #### def getDefaultIPConfig 
+
 ##### arguments
 
 #### def getDefaultRouter 
+
 ##### arguments
 
 ##### comments
@@ -98,6 +112,7 @@ Get default router
 ```
 
 #### def getDomainName 
+
 ##### arguments
 
 ##### comments
@@ -108,10 +123,13 @@ Retrieve the dns domain name
 ```
 
 #### def getHostByName 
+
 ##### arguments
 
 - dnsHostname
+
 #### def getHostNamesForIP 
+
 ##### arguments
 
 - hostsfile
@@ -128,6 +146,7 @@ Get hostnames for ip address
 ```
 
 #### def getHostname 
+
 ##### arguments
 
 ##### comments
@@ -138,6 +157,7 @@ Get hostname of the machine
 ```
 
 #### def getIpAddress 
+
 ##### arguments
 
 - interface
@@ -150,10 +170,13 @@ Return a list of ip addresses and netmasks assigned to this interface
 ```
 
 #### def getIpAddresses 
+
 ##### arguments
 
 - up = False
+
 #### def getMacAddress 
+
 ##### arguments
 
 - interface
@@ -166,6 +189,7 @@ Return the MAC address of this interface
 ```
 
 #### def getMacAddressForIp 
+
 ##### arguments
 
 - ipaddress
@@ -183,6 +207,7 @@ Search the MAC address of the given IP address in the ARP table
 ```
 
 #### def getNameServer 
+
 ##### arguments
 
 ##### comments
@@ -201,6 +226,7 @@ Only implemented for Unix based hosts.
 ```
 
 #### def getNetworkInfo 
+
 ##### arguments
 
 ##### comments
@@ -215,6 +241,7 @@ REMARK: format changed because there was bug which could not work with bridges
 ```
 
 #### def getNicType 
+
 ##### arguments
 
 - interface
@@ -229,6 +256,7 @@ Get Nic Type on a certain interface
 ```
 
 #### def getNics 
+
 ##### arguments
 
 - up = False
@@ -243,6 +271,7 @@ Works only for Linux/Solaris systems
 ```
 
 #### def getReachableIpAddress 
+
 ##### arguments
 
 - ip
@@ -251,11 +280,13 @@ Works only for Linux/Solaris systems
 ##### comments
 
 ```
-Returns the first local ip address that can connect to the specified ip on the specified port
+Returns the first local ip address that can connect to the specified ip on the
+    specified port
 
 ```
 
 #### def getVlanTag 
+
 ##### arguments
 
 - interface
@@ -269,6 +300,7 @@ Get VLan tag on the specified interface and vlan type
 ```
 
 #### def getVlanTagFromInterface 
+
 ##### arguments
 
 - interface
@@ -283,6 +315,7 @@ Get vlan tag from interface
 ```
 
 #### def isIpInHostsFile 
+
 ##### arguments
 
 - hostsfile
@@ -298,14 +331,19 @@ Check if ip is in the hostsfile
 ```
 
 #### def isIpLocal 
+
 ##### arguments
 
 - ipaddress
+
 #### def isNicConnected 
+
 ##### arguments
 
 - interface
+
 #### def pingMachine 
+
 ##### arguments
 
 - ip
@@ -326,10 +364,13 @@ Ping a machine to check if it's up/running and accessible
 ```
 
 #### def pm_formatMacAddress 
+
 ##### arguments
 
 - macaddress
+
 #### def removeFromHostsFile 
+
 ##### arguments
 
 - hostsfile
@@ -345,14 +386,19 @@ Update a hostfile, delete ip from hostsfile
 ```
 
 #### def removeNetworkFromInterfaces 
+
 ##### arguments
 
 - network = '192.168.1'
+
 #### def resetDefaultGateway 
+
 ##### arguments
 
 - gw
+
 #### def setBasicNetConfiguration 
+
 ##### arguments
 
 - interface = 'eth0'
@@ -369,6 +415,7 @@ Update a hostfile, delete ip from hostsfile
 ```
 
 #### def setBasicNetConfigurationBridgePub 
+
 ##### arguments
 
 - interface
@@ -381,13 +428,16 @@ Update a hostfile, delete ip from hostsfile
 ```
 will in a safe way configure bridge brpub
 if available and has ip addr to go to internet then nothing will happen
-otherwise system will try in a safe way set this ipaddr, this is a dangerous operation
+otherwise system will try in a safe way set this ipaddr, this is a dangerous
+    operation
 
-if ipaddr == None then will look for existing config on interface and use that one to configure the bridge
+if ipaddr == None then will look for existing config on interface and use that
+    one to configure the bridge
 
 ```
 
 #### def setBasicNetConfigurationDHCP 
+
 ##### arguments
 
 - interface = 'eth0'
@@ -400,12 +450,15 @@ this will bring all bridges down
 ```
 
 #### def tcpPortConnectionTest 
+
 ##### arguments
 
 - ipaddr
 - port
 - timeout
+
 #### def updateHostsFile 
+
 ##### arguments
 
 - hostsfile
@@ -423,6 +476,7 @@ Update a hostfile to contain the basic information install
 ```
 
 #### def validateIpAddress 
+
 ##### arguments
 
 - ipaddress
@@ -430,13 +484,15 @@ Update a hostfile to contain the basic information install
 ##### comments
 
 ```
-Validate wether this ip address is a valid ip address of 4 octets ranging from 0 to 255 or not
+Validate wether this ip address is a valid ip address of 4 octets ranging from 0
+    to 255 or not
 @param ipaddress: ip address to check on
 @rtype: boolean...True if this ip is valid, False if not
 
 ```
 
 #### def waitConnectionTest 
+
 ##### arguments
 
 - ipaddr
@@ -451,6 +507,7 @@ will return false if not successfull (timeout)
 ```
 
 #### def waitConnectionTestStopped 
+
 ##### arguments
 
 - ipaddr

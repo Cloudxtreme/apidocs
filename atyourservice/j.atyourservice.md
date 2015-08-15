@@ -9,18 +9,23 @@
 ### Methods
 
 #### def findParents 
+
 ##### arguments
 
 - service
 - name = ''
 - path = ''
 - limit
+
 #### def findProducer 
+
 ##### arguments
 
 - producercategory
 - instancename
+
 #### def findServices 
+
 ##### arguments
 
 - domain = ''
@@ -37,12 +42,15 @@ FindServices looks for actual services that are created
 ```
 
 #### def findTemplates 
+
 ##### arguments
 
 - domain = ''
 - name = ''
 - parent
+
 #### def get 
+
 ##### arguments
 
 - domain = ''
@@ -60,12 +68,15 @@ throw error if service is not found or if more than one service is found
 ```
 
 #### def getActionsBaseClass 
+
 ##### arguments
 
 #### def getDomains 
+
 ##### arguments
 
 #### def getFromStr 
+
 ##### arguments
 
 - representation
@@ -74,18 +85,22 @@ throw error if service is not found or if more than one service is found
 ##### comments
 
 ```
-return a service instance from its representation 'domain      :name       :instance'
+return a service instance from its representation 'domain      :name
+    :instance'
 
 ```
 
 #### def getId 
+
 ##### arguments
 
 - domain
 - name
 - instance
 - parent
+
 #### def loadService 
+
 ##### arguments
 
 - path
@@ -102,6 +117,7 @@ path should point to a directory that contains these files:
 ```
 
 #### def loadServicesInSQL 
+
 ##### arguments
 
 ##### comments
@@ -112,6 +128,7 @@ walk over all services and load into sqllite
 ```
 
 #### def new 
+
 ##### arguments
 
 - domain = ''
@@ -129,13 +146,16 @@ will create a new service
 ```
 
 #### def remove 
+
 ##### arguments
 
 - domain = ''
 - name = ''
 - instance = ''
 - parent
+
 #### def updateTemplatesRepo 
+
 ##### arguments
 
 - repos = []

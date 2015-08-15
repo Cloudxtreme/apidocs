@@ -5,11 +5,15 @@
 ### Methods
 
 #### def get 
+
 ##### arguments
 
 - host = 'localhost'
 - port = 27017
+
 #### def getByInstance 
+
 ##### arguments
 
 - instancename
+

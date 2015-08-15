@@ -10,6 +10,7 @@
 ### Methods
 
 #### def getTextFileEditor 
+
 ##### arguments
 
 - filepath
@@ -23,9 +24,11 @@ e.g. find blocks, replace lines, ...
 ```
 
 #### def getWordReplacerTool 
+
 ##### arguments
 
 #### def textToTitle 
+
 ##### arguments
 
 - text
@@ -34,7 +37,8 @@ e.g. find blocks, replace lines, ...
 ##### comments
 
 ```
-try to create a title out of text, ignoring irrelevant words and making lower case and removing 
+try to create a title out of text, ignoring irrelevant words and making lower
+    case and removing
 not needed chars
 
 ```

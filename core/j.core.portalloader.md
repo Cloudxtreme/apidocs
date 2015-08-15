@@ -7,14 +7,18 @@
 ### Methods
 
 #### def getActorsLoader 
+
 ##### arguments
 
 #### def getBucketsLoader 
+
 ##### arguments
 
 #### def getSpacesLoader 
+
 ##### arguments
 
 #### def getTemplatesPath 
+
 ##### arguments
 

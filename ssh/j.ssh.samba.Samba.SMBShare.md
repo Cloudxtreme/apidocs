@@ -5,19 +5,26 @@
 ### Methods
 
 #### def add 
+
 ##### arguments
 
 - sharename
 - path
 - options = \{\}
+
 #### def commit 
+
 ##### arguments
 
 #### def get 
+
 ##### arguments
 
 - sharename
+
 #### def remove 
+
 ##### arguments
 
 - sharename
+

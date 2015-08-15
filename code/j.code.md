@@ -5,6 +5,7 @@
 ### Methods
 
 #### def classEditGeany 
+
 ##### arguments
 
 - classs
@@ -17,6 +18,7 @@ look for editor (uses geany) and then edit the file
 ```
 
 #### def classEditWing 
+
 ##### arguments
 
 - classs
@@ -29,15 +31,19 @@ look for editor (uses geany) and then edit the file
 ```
 
 #### def classGetBase 
+
 ##### arguments
 
 #### def classGetJSModelBase 
+
 ##### arguments
 
 #### def classGetJSRootModelBase 
+
 ##### arguments
 
 #### def classInfoGet 
+
 ##### arguments
 
 - classs
@@ -50,6 +56,7 @@ returns filepath,linenr,sourcecode
 ```
 
 #### def classInfoPrint 
+
 ##### arguments
 
 - classs
@@ -62,33 +69,44 @@ print info like source code of class
 ```
 
 #### def deIndent 
+
 ##### arguments
 
 - content
 - level = 1
+
 #### def dict2JSModelobject 
+
 ##### arguments
 
 - obj
 - data
+
 #### def dict2object 
+
 ##### arguments
 
 - obj
 - data
+
 #### def indent 
+
 ##### arguments
 
 - content
 - level = 1
+
 #### def object2dict 
+
 ##### arguments
 
 - obj
 - dieOnUnknown = False
 - ignoreKeys = []
 - ignoreUnderscoreKeys = False
+
 #### def object2dict4index 
+
 ##### arguments
 
 - obj
@@ -104,6 +122,7 @@ ideal to index the basics of an object
 ```
 
 #### def object2json 
+
 ##### arguments
 
 - obj
@@ -111,11 +130,16 @@ ideal to index the basics of an object
 - skiperrors = False
 - ignoreKeys = []
 - ignoreUnderscoreKeys = False
+
 #### def object2yaml 
+
 ##### arguments
 
 - obj
+
 #### def pprint 
+
 ##### arguments
 
 - obj
+

@@ -9,32 +9,41 @@
     
 
 #### def addIpToInterface 
+
 ##### arguments
 
 - dev
 - ipaddr
 - aliasnr = 1
 - start = False
+
 #### def enableInterface 
+
 ##### arguments
 
 - dev = 'eth0'
 - start = False
 - dhcp = True
+
 #### def enableInterfaceBridge 
+
 ##### arguments
 
 - dev
 - bridgedev
 - start = False
 - dhcp = True
+
 #### def enableInterfaceBridgeDhcp 
+
 ##### arguments
 
 - dev
 - bridgedev
 - start = False
+
 #### def enableInterfaceBridgeStatic 
+
 ##### arguments
 
 - dev
@@ -52,6 +61,7 @@ gateway in form of 192.168.10.254
 ```
 
 #### def enableInterfaceStatic 
+
 ##### arguments
 
 - dev
@@ -68,10 +78,13 @@ gateway in form of 192.168.10.254
 ```
 
 #### def remove 
+
 ##### arguments
 
 - dev
+
 #### def reset 
+
 ##### arguments
 
 - shutdown = False
@@ -84,6 +97,7 @@ empty config of /etc/network/interfaces
 ```
 
 #### def setHostname 
+
 ##### arguments
 
 - hostname
@@ -96,6 +110,7 @@ change hostname
 ```
 
 #### def setNameserver 
+
 ##### arguments
 
 - addr
@@ -108,10 +123,13 @@ resolvconf will be disabled
 ```
 
 #### def setRoot 
+
 ##### arguments
 
 - root
+
 #### def shutdownNetwork 
+
 ##### arguments
 
 - excludes = []

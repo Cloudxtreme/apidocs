@@ -7,6 +7,7 @@
 Manager controlling actions
 
 #### def clean 
+
 ##### arguments
 
 ##### comments
@@ -17,10 +18,13 @@ Clean the list of running actions
 ```
 
 #### def getActionNamesDone 
+
 ##### arguments
 
 - action
+
 #### def hasRunningActions 
+
 ##### arguments
 
 ##### comments
@@ -34,14 +38,19 @@ Check whether actions are currently running
 ```
 
 #### def reset 
+
 ##### arguments
 
 - category
+
 #### def setActionNamesDone 
+
 ##### arguments
 
 - action
+
 #### def start 
+
 ##### arguments
 
 - description = ''
@@ -66,7 +75,8 @@ Check whether actions are currently running
 @param id is unique id which allows finding back of action
 @param description: Action description (what are we doing)
 @param errorMessage: message to give when error
-@param resolutionMessage: Action resolution message (how to resolve the action when error)
+@param resolutionMessage: Action resolution message (how to resolve the action
+    when error)
 @param loglevel: Message level
 @param action: python function to execute
 @param actionRecover: python function to execute when error

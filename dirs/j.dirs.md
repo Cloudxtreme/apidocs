@@ -21,11 +21,14 @@
 Utility class to configure and store all relevant directory paths
 
 #### def addProtectedDir 
+
 ##### arguments
 
 - path
 - name = 'main'
+
 #### def amInGitConfigRepo 
+
 ##### arguments
 
 ##### comments
@@ -36,22 +39,31 @@ return parent path where .git is or None when not found
 ```
 
 #### def checkInProtectedDir 
+
 ##### arguments
 
 - path
+
 #### def createGitConfigRepo 
+
 ##### arguments
 
 - path
+
 #### def getHrdDir 
+
 ##### arguments
 
 - system = False
+
 #### def getPathOfRunningFunction 
+
 ##### arguments
 
 - function
+
 #### def init 
+
 ##### arguments
 
 - reinit = False
@@ -70,17 +82,23 @@ default path.
 ```
 
 #### def isGitConfigRepo 
+
 ##### arguments
 
 - path
+
 #### def loadProtectedDirs 
+
 ##### arguments
 
 #### def removeProtectedDir 
+
 ##### arguments
 
 - path
+
 #### def replaceTxtDirVars 
+
 ##### arguments
 
 - txt
@@ -89,7 +107,8 @@ default path.
 ##### comments
 
 ```
-replace $base,$vardir,$cfgDir,$bindir,$codedir,$tmpdir,$logdir,$appdir with props of this class
+replace $base,$vardir,$cfgDir,$bindir,$codedir,$tmpdir,$logdir,$appdir with
+    props of this class
 
 ```
 

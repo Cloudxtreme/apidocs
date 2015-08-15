@@ -5,6 +5,7 @@
 ### Methods
 
 #### def getRCache 
+
 ##### arguments
 
 - nritems
@@ -42,7 +43,7 @@ cache.size = 10 # Auto-shrink on size assignment
 
 for i in range(50): # note: larger than cache size
     cache[i] = i
-    
+
 if 0 not in cache: print 'Zero was discarded.'
 
 if 42 in cache:
@@ -54,9 +55,11 @@ for j in cache:   # iterate (in LRU order)
 ```
 
 #### def getRWCache 
+
 ##### arguments
 
 - nrItemsReadCache
 - nrItemsWriteCache = 50
 - maxTimeWriteCache = 2000
 - writermethod
+

@@ -7,6 +7,7 @@
 ### Methods
 
 #### def applyconfig 
+
 ##### arguments
 
 - interfacenameToExclude
@@ -20,6 +21,7 @@ DANGEROUS, will remove old configuration
 ```
 
 #### def configureStaticAddress 
+
 ##### arguments
 
 - interfacename = 'eth0'
@@ -34,6 +36,7 @@ Configure a static address
 ```
 
 #### def createVXLanBridge 
+
 ##### arguments
 
 - networkid
@@ -48,11 +51,14 @@ Creates a proper vxlan interface and bridge based on a backplane
 ```
 
 #### def ensureVXNet 
+
 ##### arguments
 
 - networkid
 - backend
+
 #### def getConfigFromSystem 
+
 ##### arguments
 
 - reload = False
@@ -65,10 +71,13 @@ walk over system and get configuration, result is dict
 ```
 
 #### def getType 
+
 ##### arguments
 
 - interfaceName
+
 #### def initNetworkInterfaces 
+
 ##### arguments
 
 ##### comments
@@ -79,6 +88,7 @@ Resets /etc/network/interfaces with a basic configuration
 ```
 
 #### def newBondedBackplane 
+
 ##### arguments
 
 - name
@@ -88,11 +98,13 @@ Resets /etc/network/interfaces with a basic configuration
 ##### comments
 
 ```
-Reasonable defaults  : mode=balance-tcp, lacp=active,fast, bondname=brname-Bond, all vlans allowed
+Reasonable defaults  : mode=balance-tcp, lacp=active,fast, bondname=brname-Bond,
+    all vlans allowed
 
 ```
 
 #### def newBridge 
+
 ##### arguments
 
 - name
@@ -106,19 +118,24 @@ Reasonable defaults  : mode=balance-tcp, lacp=active,fast, bondname=brname-Bond,
 ```
 
 #### def newVlanBridge 
+
 ##### arguments
 
 - name
 - parentbridge
 - vlanid
 - mtu
+
 #### def printConfigFromSystem 
+
 ##### arguments
 
 #### def removeOldConfig 
+
 ##### arguments
 
 #### def setBackplane 
+
 ##### arguments
 
 - interfacename = 'eth0'
@@ -134,6 +151,7 @@ DANGEROUS, will remove old configuration
 ```
 
 #### def setBackplaneDhcp 
+
 ##### arguments
 
 - interfacename = 'eth0'
@@ -147,6 +165,7 @@ DANGEROUS, will remove old configuration
 ```
 
 #### def setBackplaneNoAddress 
+
 ##### arguments
 
 - interfacename = 'eth0'
@@ -160,6 +179,7 @@ DANGEROUS, will remove old configuration
 ```
 
 #### def setBackplaneNoAddressWithBond 
+
 ##### arguments
 
 - bondname
@@ -174,6 +194,7 @@ DANGEROUS, will remove old configuration
 ```
 
 #### def setBackplaneWithBond 
+
 ##### arguments
 
 - bondname

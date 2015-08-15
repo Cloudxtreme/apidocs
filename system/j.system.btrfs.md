@@ -5,6 +5,7 @@
 ### Methods
 
 #### def deviceAdd 
+
 ##### arguments
 
 - path
@@ -18,6 +19,7 @@ Add a device to a filesystem.
 ```
 
 #### def deviceDelete 
+
 ##### arguments
 
 - dev
@@ -31,10 +33,13 @@ Remove a device from a filesystem.
 ```
 
 #### def getSpaceUsage 
+
 ##### arguments
 
 - path
+
 #### def snapshotReadOnlyCreate 
+
 ##### arguments
 
 - path
@@ -48,6 +53,7 @@ Create a readonly snapshot
 ```
 
 #### def subvolumeCreate 
+
 ##### arguments
 
 - path
@@ -61,6 +67,7 @@ Create a subvolume in <dest> (or the current directory if not passed).
 ```
 
 #### def subvolumeDelete 
+
 ##### arguments
 
 - path
@@ -74,6 +81,7 @@ Delete the subvolume <name>.
 ```
 
 #### def subvolumeList 
+
 ##### arguments
 
 - path

@@ -5,6 +5,7 @@
 ### Methods
 
 #### def new 
+
 ##### arguments
 
 - filename
@@ -25,6 +26,7 @@ Create a new INI file
 ```
 
 #### def open 
+
 ##### arguments
 
 - filename

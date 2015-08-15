@@ -5,19 +5,25 @@
 ### Methods
 
 #### def getServices 
+
 ##### arguments
 
 #### def registerService 
+
 ##### arguments
 
 - servicename
 - port
 - type = 'tcp'
+
 #### def removeService 
+
 ##### arguments
 
 - servicename
+
 #### def resolveAddress 
+
 ##### arguments
 
 - ipAddress

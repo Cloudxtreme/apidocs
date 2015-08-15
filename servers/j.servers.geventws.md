@@ -8,6 +8,7 @@
 ### Methods
 
 #### def getClient 
+
 ##### arguments
 
 - addr
@@ -20,7 +21,9 @@
 - roles = []
 - id
 - timeout = 60
+
 #### def getHAClient 
+
 ##### arguments
 
 - connections
@@ -33,7 +36,9 @@
 - id
 - timeout = 60
 - reconnect = False
+
 #### def getServer 
+
 ##### arguments
 
 - port
@@ -58,13 +63,15 @@ class MyCommands():
     def echo(self,msg="",session=session):
         return msg
 
-daemon.addCMDsInterface(MyCommands,category="optional")  #pass as class not as object !!! chose category if only 1 then can leave ""
+daemon.addCMDsInterface(MyCommands,category="optional")  #pass as class not as
+    object !!! chose category if only 1 then can leave ""
 
 daemon.start()
 
 ```
 
 #### def initSSL4Server 
+
 ##### arguments
 
 - organization
@@ -74,7 +81,8 @@ daemon.start()
 ##### comments
 
 ```
-use this to init your ssl keys for the server (they can be used over all transports)
+use this to init your ssl keys for the server (they can be used over all
+    transports)
 
 ```
 
