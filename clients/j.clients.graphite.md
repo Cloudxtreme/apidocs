@@ -9,6 +9,10 @@
 
 ##### comments
 
+```
+
+```
+
 #### def query 
 ##### arguments
 
@@ -17,6 +21,10 @@
 
 ##### comments
 
+```
+
+```
+
 #### def send 
 ##### arguments
 
@@ -24,5 +32,8 @@
 
 ##### comments
 
+```
 e.g. foo.bar.baz 20
+
+```
 

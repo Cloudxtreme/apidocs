@@ -11,10 +11,18 @@
 
 ##### comments
 
+```
+
+```
+
 #### def toolStripNonAsciFromText 
 ##### arguments
 
 - text
 
 ##### comments
+
+```
+
+```
 

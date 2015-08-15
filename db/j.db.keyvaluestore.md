@@ -15,6 +15,7 @@ also caches the stores based on their type, name and namespace.
 
 ##### comments
 
+```
 Gets an Arakoon key value store.
 
 @param namespace: namespace of the store, defaults to None
@@ -26,6 +27,8 @@ Gets an Arakoon key value store.
 @return: key value store
 @rtype: ArakoonKeyValueStore
 
+```
+
 #### def getFileSystemStore 
 ##### arguments
 
@@ -35,6 +38,7 @@ Gets an Arakoon key value store.
 
 ##### comments
 
+```
 Gets a file system key value store.
 
 @param namespace: namespace of the store, defaults to an empty string
@@ -49,6 +53,8 @@ Gets a file system key value store.
 @return: key value store
 @rtype: FileSystemKeyValueStore
 
+```
+
 #### def getLevelDBStore 
 ##### arguments
 
@@ -58,6 +64,7 @@ Gets a file system key value store.
 
 ##### comments
 
+```
 Gets a leveldb key value store.
 
 @param name: name of the store
@@ -68,6 +75,8 @@ Gets a leveldb key value store.
 
 @return: key value store
 
+```
+
 #### def getMemoryStore 
 ##### arguments
 
@@ -75,10 +84,13 @@ Gets a leveldb key value store.
 
 ##### comments
 
+```
 Gets a memory key value store.
 
 @return: key value store
 @rtype: MemoryKeyValueStore
+
+```
 
 #### def getRedisStore 
 ##### arguments
@@ -94,6 +106,7 @@ Gets a memory key value store.
 
 ##### comments
 
+```
 Gets a memory key value store.
 
 @param name: name of the store
@@ -104,4 +117,6 @@ Gets a memory key value store.
 
 @return: key value store
 @rtype: MemoryKeyValueStore
+
+```
 

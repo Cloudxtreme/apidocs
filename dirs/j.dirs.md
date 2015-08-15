@@ -28,12 +28,19 @@ Utility class to configure and store all relevant directory paths
 
 ##### comments
 
+```
+
+```
+
 #### def amInGitConfigRepo 
 ##### arguments
 
 ##### comments
 
+```
 return parent path where .git is or None when not found
+
+```
 
 #### def checkInProtectedDir 
 ##### arguments
@@ -42,12 +49,20 @@ return parent path where .git is or None when not found
 
 ##### comments
 
+```
+
+```
+
 #### def createGitConfigRepo 
 ##### arguments
 
 - path
 
 ##### comments
+
+```
+
+```
 
 #### def getHrdDir 
 ##### arguments
@@ -56,12 +71,20 @@ return parent path where .git is or None when not found
 
 ##### comments
 
+```
+
+```
+
 #### def getPathOfRunningFunction 
 ##### arguments
 
 - function
 
 ##### comments
+
+```
+
+```
 
 #### def init 
 ##### arguments
@@ -70,6 +93,7 @@ return parent path where .git is or None when not found
 
 ##### comments
 
+```
 Initializes all the configured directories if needed
 
 If a folder attribute is None, set its value to the corresponding
@@ -78,6 +102,8 @@ default path.
 @returns: Initialization success
 @rtype: bool
 
+```
+
 #### def isGitConfigRepo 
 ##### arguments
 
@@ -85,10 +111,18 @@ default path.
 
 ##### comments
 
+```
+
+```
+
 #### def loadProtectedDirs 
 ##### arguments
 
 ##### comments
+
+```
+
+```
 
 #### def removeProtectedDir 
 ##### arguments
@@ -96,6 +130,10 @@ default path.
 - path
 
 ##### comments
+
+```
+
+```
 
 #### def replaceTxtDirVars 
 ##### arguments
@@ -105,5 +143,8 @@ default path.
 
 ##### comments
 
+```
 replace $base,$vardir,$cfgDir,$bindir,$codedir,$tmpdir,$logdir,$appdir with props of this class
+
+```
 

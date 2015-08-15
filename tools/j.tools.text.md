@@ -45,6 +45,10 @@
 
 ##### comments
 
+```
+
+```
+
 #### def addTimeHR 
 ##### arguments
 
@@ -53,6 +57,10 @@
 - start = 50
 
 ##### comments
+
+```
+
+```
 
 #### def addVal 
 ##### arguments
@@ -64,6 +72,10 @@
 
 ##### comments
 
+```
+
+```
+
 #### def ask 
 ##### arguments
 
@@ -74,6 +86,7 @@
 
 ##### comments
 
+```
 look for @ASK statements in text, where found replace with input from user
 
 syntax for ask is:
@@ -90,6 +103,8 @@ syntax for ask is:
 
 @ASK can be at any position in the text
 
+```
+
 #### def dealWithList 
 ##### arguments
 
@@ -97,7 +112,10 @@ syntax for ask is:
 
 ##### comments
 
+```
 look for [something,2] the comma needs to be converted to \k
+
+```
 
 #### def dealWithQuote 
 ##### arguments
@@ -106,7 +124,10 @@ look for [something,2] the comma needs to be converted to \k
 
 ##### comments
 
+```
 look for 'something,else' the comma needs to be converted to \k
+
+```
 
 #### def eval 
 ##### arguments
@@ -115,7 +136,10 @@ look for 'something,else' the comma needs to be converted to \k
 
 ##### comments
 
+```
 look for \{\{\}\} in code and evaluate as python result is converted back to str
+
+```
 
 #### def getBool 
 ##### arguments
@@ -123,6 +147,10 @@ look for \{\{\}\} in code and evaluate as python result is converted back to str
 - text
 
 ##### comments
+
+```
+
+```
 
 #### def getDict 
 ##### arguments
@@ -133,8 +161,11 @@ look for \{\{\}\} in code and evaluate as python result is converted back to str
 
 ##### comments
 
+```
 keys are always treated as string
 @type can be int,bool or float (otherwise its always str)
+
+```
 
 #### def getFloat 
 ##### arguments
@@ -143,12 +174,20 @@ keys are always treated as string
 
 ##### comments
 
+```
+
+```
+
 #### def getInt 
 ##### arguments
 
 - text
 
 ##### comments
+
+```
+
+```
 
 #### def getList 
 ##### arguments
@@ -159,7 +198,10 @@ keys are always treated as string
 
 ##### comments
 
+```
 @type can be int,bool or float (otherwise its always str)
+
+```
 
 #### def getMacroCandidates 
 ##### arguments
@@ -168,7 +210,10 @@ keys are always treated as string
 
 ##### comments
 
+```
 look for \{\{\}\} return as list
+
+```
 
 #### def hrd2machinetext 
 ##### arguments
@@ -178,6 +223,7 @@ look for \{\{\}\} return as list
 
 ##### comments
 
+```
 'something ' removes ''
 all spaces & commas & : inside ' '  are converted
  SPACE -> \S
@@ -186,12 +232,18 @@ all spaces & commas & : inside ' '  are converted
  : -> \D
  \n -> \N
 
+```
+
 #### def isFloat 
 ##### arguments
 
 - text
 
 ##### comments
+
+```
+
+```
 
 #### def isInt 
 ##### arguments
@@ -200,12 +252,20 @@ all spaces & commas & : inside ' '  are converted
 
 ##### comments
 
+```
+
+```
+
 #### def isNumeric 
 ##### arguments
 
 - txt
 
 ##### comments
+
+```
+
+```
 
 #### def lstrip 
 ##### arguments
@@ -214,7 +274,10 @@ all spaces & commas & : inside ' '  are converted
 
 ##### comments
 
+```
 remove all spaces at beginning & end of line when relevant
+
+```
 
 #### def machinetext2str 
 ##### arguments
@@ -223,6 +286,7 @@ remove all spaces at beginning & end of line when relevant
 
 ##### comments
 
+```
 do reverse of:
             SPACE -> \S
             " -> \Q
@@ -231,6 +295,8 @@ do reverse of:
             
 -> \N
 
+```
+
 #### def machinetext2val 
 ##### arguments
 
@@ -238,12 +304,15 @@ do reverse of:
 
 ##### comments
 
+```
 do reverse of:
      SPACE -> \S
      " -> \Q
      , -> \K
      : -> \D
      \n -> return
+
+```
 
 #### def prefix 
 ##### arguments
@@ -252,6 +321,10 @@ do reverse of:
 - txt
 
 ##### comments
+
+```
+
+```
 
 #### def prefix_remove 
 ##### arguments
@@ -262,7 +335,10 @@ do reverse of:
 
 ##### comments
 
+```
 @param onlyPrefix if True means only when prefix found will be returned, rest discarded
+
+```
 
 #### def prefix_remove_withtrailing 
 ##### arguments
@@ -273,8 +349,11 @@ do reverse of:
 
 ##### comments
 
+```
 there can be chars for prefix (e.g. '< :*: aline'  and this function looking for :*: would still work and ignore '< ')
 @param onlyPrefix if True means only when prefix found will be returned, rest discarded
+
+```
 
 #### def pythonObjToStr 
 ##### arguments
@@ -286,7 +365,10 @@ there can be chars for prefix (e.g. '< :*: aline'  and this function looking for
 
 ##### comments
 
+```
 try to convert a python object to string representation works for None, bool, integer, float, dict, list
+
+```
 
 #### def pythonObjToStr1line 
 ##### arguments
@@ -294,6 +376,10 @@ try to convert a python object to string representation works for None, bool, in
 - obj
 
 ##### comments
+
+```
+
+```
 
 #### def replaceQuotes 
 ##### arguments
@@ -303,6 +389,10 @@ try to convert a python object to string representation works for None, bool, in
 
 ##### comments
 
+```
+
+```
+
 #### def str2var 
 ##### arguments
 
@@ -310,8 +400,11 @@ try to convert a python object to string representation works for None, bool, in
 
 ##### comments
 
+```
 convert list, dict of strings 
 or convert 1 string to python objects
+
+```
 
 #### def toAscii 
 ##### arguments
@@ -321,6 +414,10 @@ or convert 1 string to python objects
 
 ##### comments
 
+```
+
+```
+
 #### def toSafePath 
 ##### arguments
 
@@ -329,7 +426,10 @@ or convert 1 string to python objects
 
 ##### comments
 
+```
 process string so it can be used in a path on windows or linux
+
+```
 
 #### def toStr 
 ##### arguments
@@ -339,6 +439,10 @@ process string so it can be used in a path on windows or linux
 
 ##### comments
 
+```
+
+```
+
 #### def toUnicode 
 ##### arguments
 
@@ -346,4 +450,8 @@ process string so it can be used in a path on windows or linux
 - codec = 'utf-8'
 
 ##### comments
+
+```
+
+```
 

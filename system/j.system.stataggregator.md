@@ -12,12 +12,20 @@
 
 ##### comments
 
+```
+
+```
+
 #### def delete 
 ##### arguments
 
 - prefix
 
 ##### comments
+
+```
+
+```
 
 #### def get 
 ##### arguments
@@ -26,6 +34,10 @@
 
 ##### comments
 
+```
+
+```
+
 #### def getAvgMax 
 ##### arguments
 
@@ -33,10 +45,18 @@
 
 ##### comments
 
+```
+
+```
+
 #### def getTime 
 ##### arguments
 
 ##### comments
+
+```
+
+```
 
 #### def list 
 ##### arguments
@@ -47,6 +67,10 @@
 
 ##### comments
 
+```
+
+```
+
 #### def loadStat 
 ##### arguments
 
@@ -54,6 +78,10 @@
 - data
 
 ##### comments
+
+```
+
+```
 
 #### def registerStats 
 ##### arguments
@@ -65,12 +93,19 @@
 
 ##### comments
 
+```
 type is N or D (D from diff)
+
+```
 
 #### def send2carbon 
 ##### arguments
 
 ##### comments
+
+```
+
+```
 
 #### def send2log 
 ##### arguments
@@ -80,6 +115,10 @@ type is N or D (D from diff)
 - val
 
 ##### comments
+
+```
+
+```
 
 #### def set 
 ##### arguments
@@ -92,4 +131,8 @@ type is N or D (D from diff)
 - percent = False
 
 ##### comments
+
+```
+
+```
 

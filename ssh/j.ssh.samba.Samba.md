@@ -13,6 +13,10 @@
 
 ##### comments
 
+```
+
+```
+
 #### def addUser 
 ##### arguments
 
@@ -21,10 +25,18 @@
 
 ##### comments
 
+```
+
+```
+
 #### def commitShare 
 ##### arguments
 
 ##### comments
+
+```
+
+```
 
 #### def getShare 
 ##### arguments
@@ -33,10 +45,18 @@
 
 ##### comments
 
+```
+
+```
+
 #### def listUsers 
 ##### arguments
 
 ##### comments
+
+```
+
+```
 
 #### def removeShare 
 ##### arguments
@@ -45,10 +65,18 @@
 
 ##### comments
 
+```
+
+```
+
 #### def removeUser 
 ##### arguments
 
 - username
 
 ##### comments
+
+```
+
+```
 

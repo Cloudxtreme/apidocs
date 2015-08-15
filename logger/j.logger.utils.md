@@ -14,6 +14,7 @@ Some log related utilities.
 
 ##### comments
 
+```
 Decorator factory. Use enabled to avoid the logging overhead when it's
 not needed. Do not the tracing can *not* be enabled or disabled at
 runtime.
@@ -32,4 +33,6 @@ def myFunc(arg1, arg2=12):
 @type enabled: boolean
 @return: decorator factory
 @rtype: callable
+
+```
 

@@ -19,6 +19,10 @@
 
 ##### comments
 
+```
+
+```
+
 #### def dropdb 
 ##### arguments
 
@@ -30,6 +34,10 @@
 
 ##### comments
 
+```
+
+```
+
 #### def getClient 
 ##### arguments
 
@@ -40,4 +48,8 @@
 - dbname = 'template'
 
 ##### comments
+
+```
+
+```
 

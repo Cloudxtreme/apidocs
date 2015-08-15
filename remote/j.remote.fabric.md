@@ -11,6 +11,10 @@
 
 ##### comments
 
+```
+
+```
+
 #### def setDefaultPasswd 
 ##### arguments
 
@@ -19,12 +23,20 @@
 
 ##### comments
 
+```
+
+```
+
 #### def setHost 
 ##### arguments
 
 - host = 'localhost'
 
 ##### comments
+
+```
+
+```
 
 #### def setHosts 
 ##### arguments
@@ -33,5 +45,8 @@
 
 ##### comments
 
+```
 list of hosts on which the commands will work
+
+```
 

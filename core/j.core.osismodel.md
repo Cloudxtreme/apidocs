@@ -18,7 +18,10 @@
 
 ##### comments
 
+```
 destroy all objects & indexes with mentioned names
+
+```
 
 #### def dict2object 
 ##### arguments
@@ -27,6 +30,10 @@ destroy all objects & indexes with mentioned names
 - data
 
 ##### comments
+
+```
+
+```
 
 #### def get 
 ##### arguments
@@ -41,6 +48,10 @@ destroy all objects & indexes with mentioned names
 
 ##### comments
 
+```
+
+```
+
 #### def getNoDB 
 ##### arguments
 
@@ -50,6 +61,10 @@ destroy all objects & indexes with mentioned names
 - modelClass
 
 ##### comments
+
+```
+
+```
 
 #### def getRemoteOsisDB 
 ##### arguments
@@ -61,6 +76,10 @@ destroy all objects & indexes with mentioned names
 
 ##### comments
 
+```
+
+```
+
 #### def inputNormalizeList 
 ##### arguments
 
@@ -68,10 +87,13 @@ destroy all objects & indexes with mentioned names
 
 ##### comments
 
+```
 comma separated string becomes list
 list gets checked, if all int then returnformat=1
 list gets checked, if all str, then returnformat=2
 @return (returnformat,list)
+
+```
 
 #### def rebuildindex 
 ##### arguments
@@ -82,5 +104,8 @@ list gets checked, if all str, then returnformat=2
 
 ##### comments
 
+```
 destroy all objects & indexes with mentioned names
+
+```
 

@@ -23,6 +23,10 @@
 
 ##### comments
 
+```
+
+```
+
 #### def getHAClient 
 ##### arguments
 
@@ -39,6 +43,10 @@
 
 ##### comments
 
+```
+
+```
+
 #### def getServer 
 ##### arguments
 
@@ -49,6 +57,7 @@
 
 ##### comments
 
+```
 HOW TO USE:
 daemon=j.servers.geventws.getServer(port=4444)
 
@@ -67,6 +76,8 @@ daemon.addCMDsInterface(MyCommands,category="optional")  #pass as class not as o
 
 daemon.start()
 
+```
+
 #### def initSSL4Server 
 ##### arguments
 
@@ -76,5 +87,8 @@ daemon.start()
 
 ##### comments
 
+```
 use this to init your ssl keys for the server (they can be used over all transports)
+
+```
 

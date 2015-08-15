@@ -18,12 +18,20 @@
 
 ##### comments
 
+```
+
+```
+
 #### def generateActors 
 ##### arguments
 
 - destpath
 
 ##### comments
+
+```
+
+```
 
 #### def generateClient 
 ##### arguments
@@ -32,12 +40,20 @@
 
 ##### comments
 
+```
+
+```
+
 #### def generateServer 
 ##### arguments
 
 - outputPath
 
 ##### comments
+
+```
+
+```
 
 #### def loadSpecFromFile 
 ##### arguments
@@ -46,10 +62,18 @@
 
 ##### comments
 
+```
+
+```
+
 #### def loadSpecFromStr 
 ##### arguments
 
 - spec
 
 ##### comments
+
+```
+
+```
 

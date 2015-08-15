@@ -16,6 +16,7 @@
 
 ##### comments
 
+```
 @param recipients: Recipients of the message
 @type recipients: mixed, string or list
 @param sender: Sender of the email
@@ -28,4 +29,6 @@
 @type files: list of strings
 @param mimetype: Type of the body plain, html or None for autodetection
 @type mimetype: string
+
+```
 

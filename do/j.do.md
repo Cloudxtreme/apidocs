@@ -18,8 +18,11 @@
 
 ##### comments
 
+```
 Changes Current Directory
 @param path: string (Directory path to be changed to)
+
+```
 
 #### def changeLoginPasswdGitRepos 
 ##### arguments
@@ -30,7 +33,10 @@ Changes Current Directory
 
 ##### comments
 
+```
 walk over all git repo's found in account & change login/passwd
+
+```
 
 #### def chdir 
 ##### arguments
@@ -39,7 +45,10 @@ walk over all git repo's found in account & change login/passwd
 
 ##### comments
 
+```
 if ddir=="" then will go to tmpdir
+
+```
 
 #### def checkDirOrLinkToDir 
 ##### arguments
@@ -48,7 +57,10 @@ if ddir=="" then will go to tmpdir
 
 ##### comments
 
+```
 check if path is dir or link to a dir
+
+```
 
 #### def checkInstalled 
 ##### arguments
@@ -57,7 +69,10 @@ check if path is dir or link to a dir
 
 ##### comments
 
+```
 @param cmdname is cmd to check e.g. curl
+
+```
 
 #### def chmod 
 ##### arguments
@@ -67,7 +82,10 @@ check if path is dir or link to a dir
 
 ##### comments
 
+```
 @param permissions e.g. 0o660 (USE OCTAL !!!)
+
+```
 
 #### def chown 
 ##### arguments
@@ -77,6 +95,10 @@ check if path is dir or link to a dir
 
 ##### comments
 
+```
+
+```
+
 #### def copyDependencies 
 ##### arguments
 
@@ -84,6 +106,10 @@ check if path is dir or link to a dir
 - dest
 
 ##### comments
+
+```
+
+```
 
 #### def copyFile 
 ##### arguments
@@ -94,6 +120,10 @@ check if path is dir or link to a dir
 - skipIfExists = False
 
 ##### comments
+
+```
+
+```
 
 #### def copyTree 
 ##### arguments
@@ -110,12 +140,20 @@ check if path is dir or link to a dir
 
 ##### comments
 
+```
+
+```
+
 #### def createDir 
 ##### arguments
 
 - path
 
 ##### comments
+
+```
+
+```
 
 #### def delete 
 ##### arguments
@@ -124,6 +162,10 @@ check if path is dir or link to a dir
 - force = False
 
 ##### comments
+
+```
+
+```
 
 #### def download 
 ##### arguments
@@ -141,9 +183,12 @@ check if path is dir or link to a dir
 
 ##### comments
 
+```
 @return path of downloaded file
 @param minspeed is kbytes per sec e.g. 50, if less than 50 kbytes during 10 min it will restart the download (curl only)
 @param when multithread True then will use aria2 download tool to get multiple threads
+
+```
 
 #### def downloadExpandTarGz 
 ##### arguments
@@ -155,12 +200,20 @@ check if path is dir or link to a dir
 
 ##### comments
 
+```
+
+```
+
 #### def downloadJumpScaleCore 
 ##### arguments
 
 - dest
 
 ##### comments
+
+```
+
+```
 
 #### def excepthook 
 ##### arguments
@@ -170,6 +223,10 @@ check if path is dir or link to a dir
 - tb
 
 ##### comments
+
+```
+
+```
 
 #### def execute 
 ##### arguments
@@ -188,8 +245,11 @@ check if path is dir or link to a dir
 
 ##### comments
 
+```
 @param errors is array of statements if found then exit as error
 return rc,out,err
+
+```
 
 #### def executeCmds 
 ##### arguments
@@ -208,6 +268,10 @@ return rc,out,err
 
 ##### comments
 
+```
+
+```
+
 #### def executeInteractive 
 ##### arguments
 
@@ -215,12 +279,20 @@ return rc,out,err
 
 ##### comments
 
+```
+
+```
+
 #### def exists 
 ##### arguments
 
 - path
 
 ##### comments
+
+```
+
+```
 
 #### def expandTarGz 
 ##### arguments
@@ -232,6 +304,10 @@ return rc,out,err
 
 ##### comments
 
+```
+
+```
+
 #### def findDependencies 
 ##### arguments
 
@@ -240,6 +316,10 @@ return rc,out,err
 
 ##### comments
 
+```
+
+```
+
 #### def getBaseName 
 ##### arguments
 
@@ -247,7 +327,10 @@ return rc,out,err
 
 ##### comments
 
+```
 Return the base name of pathname path.
+
+```
 
 #### def getDirName 
 ##### arguments
@@ -258,6 +341,7 @@ Return the base name of pathname path.
 
 ##### comments
 
+```
 Return a directory name from pathname path.
 @param path the path to find a directory within
 @param lastOnly means only the last part of the path which is a dir (overrides levelsUp to 0)
@@ -266,12 +350,18 @@ Return a directory name from pathname path.
  e.g. ...getDirName("/opt/qbase/bin/something/test.py", levelsUp=1) would return bin
  e.g. ...getDirName("/opt/qbase/bin/something/test.py", levelsUp=10) would raise an error
 
+```
+
 #### def getFileExtension 
 ##### arguments
 
 - path
 
 ##### comments
+
+```
+
+```
 
 #### def getGitRepoArgs 
 ##### arguments
@@ -284,6 +374,7 @@ Return a directory name from pathname path.
 
 ##### comments
 
+```
 Extracts and returns data useful in cloning a Git repository.
 
 Args:
@@ -296,6 +387,8 @@ Args:
 Returns:
     (repository_host, repository_type, repository_account, repository_name, repository_url)
 
+```
+
 #### def getGitReposListLocal 
 ##### arguments
 
@@ -306,6 +399,10 @@ Returns:
 
 ##### comments
 
+```
+
+```
+
 #### def getParent 
 ##### arguments
 
@@ -313,22 +410,32 @@ Returns:
 
 ##### comments
 
+```
 Returns the parent of the path:
 /dir1/dir2/file_or_dir -> /dir1/dir2/
 /dir1/dir2/            -> /dir1/
 @todo why do we have 2 implementations which are almost the same see getParentDirName()
+
+```
 
 #### def getPythonSiteConfigPath 
 ##### arguments
 
 ##### comments
 
+```
+
+```
+
 #### def getTimeEpoch 
 ##### arguments
 
 ##### comments
 
+```
 Get epoch timestamp (number of seconds passed since January 1, 1970)
+
+```
 
 #### def getTmpPath 
 ##### arguments
@@ -337,10 +444,18 @@ Get epoch timestamp (number of seconds passed since January 1, 1970)
 
 ##### comments
 
+```
+
+```
+
 #### def getWalker 
 ##### arguments
 
 ##### comments
+
+```
+
+```
 
 #### def installPackage 
 ##### arguments
@@ -348,6 +463,10 @@ Get epoch timestamp (number of seconds passed since January 1, 1970)
 - path
 
 ##### comments
+
+```
+
+```
 
 #### def isDir 
 ##### arguments
@@ -357,10 +476,13 @@ Get epoch timestamp (number of seconds passed since January 1, 1970)
 
 ##### comments
 
+```
 Check if the specified Directory path exists
 @param path: string
 @param followSoftlink: boolean
 @rtype: boolean (True if directory exists)
+
+```
 
 #### def isExecutable 
 ##### arguments
@@ -368,6 +490,10 @@ Check if the specified Directory path exists
 - path
 
 ##### comments
+
+```
+
+```
 
 #### def isFile 
 ##### arguments
@@ -377,10 +503,13 @@ Check if the specified Directory path exists
 
 ##### comments
 
+```
 Check if the specified file exists for the given path
 @param path: string
 @param followSoftlink: boolean
 @rtype: boolean (True if file exists for the given path)
+
+```
 
 #### def isLink 
 ##### arguments
@@ -390,19 +519,30 @@ Check if the specified file exists for the given path
 
 ##### comments
 
+```
 Check if the specified path is a link
 @param path: string
 @rtype: boolean (True if the specified path is a link)
+
+```
 
 #### def isUnix 
 ##### arguments
 
 ##### comments
 
+```
+
+```
+
 #### def isWindows 
 ##### arguments
 
 ##### comments
+
+```
+
+```
 
 #### def joinPaths 
 ##### arguments
@@ -411,12 +551,20 @@ Check if the specified path is a link
 
 ##### comments
 
+```
+
+```
+
 #### def list 
 ##### arguments
 
 - path
 
 ##### comments
+
+```
+
+```
 
 #### def listDirsInDir 
 ##### arguments
@@ -428,9 +576,12 @@ Check if the specified path is a link
 
 ##### comments
 
+```
 Retrieves list of directories found in the specified directory
 @param path: string represents directory path to search in
 @rtype: list
+
+```
 
 #### def listFilesAndDirsInDir 
 ##### arguments
@@ -447,6 +598,7 @@ Retrieves list of directories found in the specified directory
 
 ##### comments
 
+```
 Retrieves list of files found in the specified directory
 @param path:       directory path to search in
 @type  path:       string
@@ -461,6 +613,8 @@ Retrieves list of files found in the specified directory
 @type  maxmtime:   integer
 @param type is string with f & d inside (f for when to find files, d for when to find dirs)
 @rtype: list
+
+```
 
 #### def listFilesInDir 
 ##### arguments
@@ -478,6 +632,7 @@ Retrieves list of files found in the specified directory
 
 ##### comments
 
+```
 Retrieves list of files found in the specified directory
 @param path:       directory path to search in
 @type  path:       string
@@ -493,12 +648,18 @@ Retrieves list of files found in the specified directory
 @Param exclude: list of std filters if matches then exclude
 @rtype: list
 
+```
+
 #### def loadScript 
 ##### arguments
 
 - path
 
 ##### comments
+
+```
+
+```
 
 #### def log 
 ##### arguments
@@ -507,6 +668,10 @@ Retrieves list of files found in the specified directory
 - level
 
 ##### comments
+
+```
+
+```
 
 #### def pullGitRepo 
 ##### arguments
@@ -523,9 +688,12 @@ Retrieves list of files found in the specified directory
 
 ##### comments
 
+```
 will clone or update repo
 if dest == None then clone underneath: /opt/code/$type/$account/$repo
 will ignore changes !!!!!!!!!!!
+
+```
 
 #### def pushGitRepos 
 ##### arguments
@@ -538,9 +706,12 @@ will ignore changes !!!!!!!!!!!
 
 ##### comments
 
+```
 if name specified then will look under code dir if repo with path can be found
 if not or more than 1 there will be error
 @param provider e.g. git, github
+
+```
 
 #### def readFile 
 ##### arguments
@@ -549,9 +720,12 @@ if not or more than 1 there will be error
 
 ##### comments
 
+```
 Read a file and get contents of that file
 @param filename: string (filename to open for reading )
 @rtype: string representing the file contents
+
+```
 
 #### def readLink 
 ##### arguments
@@ -560,8 +734,11 @@ Read a file and get contents of that file
 
 ##### comments
 
+```
 Works only for unix
 Return a string representing the path to which the symbolic link points.
+
+```
 
 #### def removeLinks 
 ##### arguments
@@ -570,7 +747,10 @@ Return a string representing the path to which the symbolic link points.
 
 ##### comments
 
+```
 find all links & remove
+
+```
 
 #### def removeSymlink 
 ##### arguments
@@ -578,6 +758,10 @@ find all links & remove
 - path
 
 ##### comments
+
+```
+
+```
 
 #### def rewriteGitRepoUrl 
 ##### arguments
@@ -588,6 +772,7 @@ find all links & remove
 
 ##### comments
 
+```
 Rewrite the url of a git repo with login and passwd if specified
 
 Args:
@@ -597,6 +782,8 @@ Args:
 
 Returns:
     (repository_host, repository_type, repository_account, repository_name, repository_url)
+
+```
 
 #### def sendmail 
 ##### arguments
@@ -613,6 +800,10 @@ Returns:
 
 ##### comments
 
+```
+
+```
+
 #### def symlink 
 ##### arguments
 
@@ -622,7 +813,10 @@ Returns:
 
 ##### comments
 
+```
 dest is where the link will be created pointing to src
+
+```
 
 #### def symlinkFilesInDir 
 ##### arguments
@@ -634,12 +828,20 @@ dest is where the link will be created pointing to src
 
 ##### comments
 
+```
+
+```
+
 #### def touch 
 ##### arguments
 
 - path
 
 ##### comments
+
+```
+
+```
 
 #### def updateGitRepos 
 ##### arguments
@@ -651,6 +853,10 @@ dest is where the link will be created pointing to src
 
 ##### comments
 
+```
+
+```
+
 #### def writeFile 
 ##### arguments
 
@@ -659,4 +865,8 @@ dest is where the link will be created pointing to src
 - strip = True
 
 ##### comments
+
+```
+
+```
 

@@ -15,6 +15,7 @@
 
 ##### comments
 
+```
 Add a cronjob to the system
 
 @param commandToExecute: The command to execute
@@ -28,6 +29,8 @@ Add a cronjob to the system
 @param unit: The unit of the interval
 @type unit: TimeIntervalUnit
 
+```
+
 #### def addSystemGroup 
 ##### arguments
 
@@ -35,12 +38,15 @@ Add a cronjob to the system
 
 ##### comments
 
+```
 Add a group to the system
 
 Note: you should be root to run this python command.
 
 @param groupname: Name of the group to add
 @type groupname : string
+
+```
 
 #### def addSystemUser 
 ##### arguments
@@ -52,6 +58,7 @@ Note: you should be root to run this python command.
 
 ##### comments
 
+```
 Add a user to the system
 
 Note: you should be root to run this python command.
@@ -61,6 +68,8 @@ Note: you should be root to run this python command.
 @param shell: Optional param to specify the shell of the user
 @type username: string
 
+```
+
 #### def addUserToGroup 
 ##### arguments
 
@@ -69,6 +78,10 @@ Note: you should be root to run this python command.
 
 ##### comments
 
+```
+
+```
+
 #### def checkApplicationInstalled 
 ##### arguments
 
@@ -76,7 +89,10 @@ Note: you should be root to run this python command.
 
 ##### comments
 
+```
 check if app is installed,  if yes return True
+
+```
 
 #### def chmod 
 ##### arguments
@@ -91,7 +107,10 @@ check if app is installed,  if yes return True
 
 ##### comments
 
+```
 Chmod based on system.fs.walk
+
+```
 
 #### def chown 
 ##### arguments
@@ -103,6 +122,7 @@ Chmod based on system.fs.walk
 
 ##### comments
 
+```
 Chown a file
 @param path: the path of a file or a directory to be chown
 @type path: string
@@ -113,6 +133,8 @@ Chown a file
 @param recursive: if path is a directory, all files underneath the path are also chown if True (default False)
 @type recursive: boolean
 
+```
+
 #### def chroot 
 ##### arguments
 
@@ -120,10 +142,13 @@ Chown a file
 
 ##### comments
 
+```
 Change root directory path
 
 @param path: Path to chroot() to
 @type path: string
+
+```
 
 #### def daemonize 
 ##### arguments
@@ -133,6 +158,7 @@ Change root directory path
 
 ##### comments
 
+```
 Daemonize a process using a double fork
 
 This method will fork the current process to create a daemon process.
@@ -166,6 +192,8 @@ PID of the current process.
 
 @raise RuntimeError: System does not support fork(2)
 
+```
+
 #### def disableUnixUser 
 ##### arguments
 
@@ -173,10 +201,13 @@ PID of the current process.
 
 ##### comments
 
+```
 Disables a given unix user
 
 @param username: Name of the user to disable
 @type username: string
+
+```
 
 #### def enableUnixUser 
 ##### arguments
@@ -185,10 +216,13 @@ Disables a given unix user
 
 ##### comments
 
+```
 Enables a given unix user
 
 @param username: Name of the user to enable
 @type username: string
+
+```
 
 #### def executeAsUser 
 ##### arguments
@@ -199,6 +233,7 @@ Enables a given unix user
 
 ##### comments
 
+```
 Execute a given command as a specific user
 
 When calling this method, the command will be wrapped inside 'su' to
@@ -222,6 +257,8 @@ including the same named arguments.
 
 @see: jumpscale.system.process.SystemProcess.execute
 
+```
+
 #### def executeDaemonAsUser 
 ##### arguments
 
@@ -231,6 +268,7 @@ including the same named arguments.
 
 ##### comments
 
+```
 Execute a given command as a background process as a specific user
 
 When calling this method, the command will be wrapped inside 'su' to
@@ -254,6 +292,8 @@ including the same named arguments.
 
 @see: jumpscale.system.process.runDaemon
 
+```
+
 #### def getBashEnvFromFile 
 ##### arguments
 
@@ -262,6 +302,7 @@ including the same named arguments.
 
 ##### comments
 
+```
 Get the value of an environment variable in a Bash file
 
 @param file: Bash file defining the variable
@@ -269,15 +310,20 @@ Get the value of an environment variable in a Bash file
 @param var: Variable name
 @type var: string
 
+```
+
 #### def getMachineInfo 
 ##### arguments
 
 ##### comments
 
+```
 Get memory and CPU info about this machine
 
 @returns: Amount of available memory, CPU speed and number of CPUs
 @rtype: tuple
+
+```
 
 #### def killGroup 
 ##### arguments
@@ -286,12 +332,15 @@ Get memory and CPU info about this machine
 
 ##### comments
 
+```
 Kill a process group
 
 killGroup will get the parent pid from the pid given and kill the group with signal SIGKILL (default)
 
 @type pid: int
 @param pid: process id
+
+```
 
 #### def removeUnixUser 
 ##### arguments
@@ -302,10 +351,13 @@ killGroup will get the parent pid from the pid given and kill the group with sig
 
 ##### comments
 
+```
 Remove a given unix user
 
 @param username: Name of the user to remove
 @type username: string
+
+```
 
 #### def setUnixUserPassword 
 ##### arguments
@@ -315,6 +367,7 @@ Remove a given unix user
 
 ##### comments
 
+```
 Set a password on unix user
 
 @param username: Name of the user to enable
@@ -323,6 +376,8 @@ Set a password on unix user
 @param password: Password to set on the user
 @type username: string
 
+```
+
 #### def unixGroupExists 
 ##### arguments
 
@@ -330,6 +385,7 @@ Set a password on unix user
 
 ##### comments
 
+```
 Checks if a given group already exists in the system
 
 @param groupname: Name of the group to check for
@@ -338,6 +394,8 @@ Checks if a given group already exists in the system
 @returns: Whether the group exists
 @rtype: bool
 
+```
+
 #### def unixUserExists 
 ##### arguments
 
@@ -345,6 +403,7 @@ Checks if a given group already exists in the system
 
 ##### comments
 
+```
 Checks if a given user already exists in the system
 
 @param username: Username of the user to check for
@@ -352,6 +411,8 @@ Checks if a given user already exists in the system
 
 @returns: Whether the user exists
 @rtype: bool
+
+```
 
 #### def unixUserIsInGroup 
 ##### arguments
@@ -361,6 +422,7 @@ Checks if a given user already exists in the system
 
 ##### comments
 
+```
 Checks if a given user is a member of the given group
 
 @param username: Username to check for
@@ -370,4 +432,6 @@ Checks if a given user is a member of the given group
 
 @returns: Whether the user is a member of the group
 @rtype: bool
+
+```
 

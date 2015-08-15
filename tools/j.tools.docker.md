@@ -14,12 +14,20 @@
 
 ##### comments
 
+```
+
+```
+
 #### def btrfsSubvolDelete 
 ##### arguments
 
 - name
 
 ##### comments
+
+```
+
+```
 
 #### def btrfsSubvolExists 
 ##### arguments
@@ -28,10 +36,18 @@
 
 ##### comments
 
+```
+
+```
+
 #### def btrfsSubvolList 
 ##### arguments
 
 ##### comments
+
+```
+
+```
 
 #### def btrfsSubvolNew 
 ##### arguments
@@ -39,6 +55,10 @@
 - name
 
 ##### comments
+
+```
+
+```
 
 #### def commit 
 ##### arguments
@@ -48,6 +68,10 @@
 
 ##### comments
 
+```
+
+```
+
 #### def copy 
 ##### arguments
 
@@ -56,6 +80,10 @@
 - dest
 
 ##### comments
+
+```
+
+```
 
 #### def create 
 ##### arguments
@@ -76,8 +104,11 @@
 
 ##### comments
 
+```
 @param ports in format as follows  "22:8022 80:8080"  the first arg e.g. 22 is the port in the container
 @param vols in format as follows "/var/insidemachine:/var/inhost # /var/1:/var/1 # ..."   '#' is separator
+
+```
 
 #### def destroy 
 ##### arguments
@@ -86,10 +117,18 @@
 
 ##### comments
 
+```
+
+```
+
 #### def destroyall 
 ##### arguments
 
 ##### comments
+
+```
+
+```
 
 #### def downloadFile 
 ##### arguments
@@ -100,7 +139,10 @@
 
 ##### comments
 
+```
 get a file located at source in the host to dest on the host
+
+```
 
 #### def execute 
 ##### arguments
@@ -110,7 +152,10 @@ get a file located at source in the host to dest on the host
 
 ##### comments
 
+```
 execute file in docker
+
+```
 
 #### def exportRsync 
 ##### arguments
@@ -121,6 +166,10 @@ execute file in docker
 
 ##### comments
 
+```
+
+```
+
 #### def exportTgz 
 ##### arguments
 
@@ -129,10 +178,18 @@ execute file in docker
 
 ##### comments
 
+```
+
+```
+
 #### def getImages 
 ##### arguments
 
 ##### comments
+
+```
+
+```
 
 #### def getInfo 
 ##### arguments
@@ -141,12 +198,20 @@ execute file in docker
 
 ##### comments
 
+```
+
+```
+
 #### def getIp 
 ##### arguments
 
 - name
 
 ##### comments
+
+```
+
+```
 
 #### def getProcessList 
 ##### arguments
@@ -156,8 +221,11 @@ execute file in docker
 
 ##### comments
 
+```
 @return [["$name",$pid,$mem,$parent],....,[$mem,$cpu]]
 last one is sum of mem & cpu
+
+```
 
 #### def getPubPortForInternalPort 
 ##### arguments
@@ -167,6 +235,10 @@ last one is sum of mem & cpu
 
 ##### comments
 
+```
+
+```
+
 #### def getSSH 
 ##### arguments
 
@@ -174,6 +246,10 @@ last one is sum of mem & cpu
 - stdout = False
 
 ##### comments
+
+```
+
+```
 
 #### def importRsync 
 ##### arguments
@@ -185,7 +261,10 @@ last one is sum of mem & cpu
 
 ##### comments
 
+```
 @param basename is the name of a start of a machine locally, will be used as basis and then the source will be synced over it
+
+```
 
 #### def importTgz 
 ##### arguments
@@ -195,12 +274,20 @@ last one is sum of mem & cpu
 
 ##### comments
 
+```
+
+```
+
 #### def inspect 
 ##### arguments
 
 - name
 
 ##### comments
+
+```
+
+```
 
 #### def installJumpscale 
 ##### arguments
@@ -209,19 +296,29 @@ last one is sum of mem & cpu
 
 ##### comments
 
+```
+
+```
+
 #### def list 
 ##### arguments
 
 ##### comments
 
+```
 return list of names
+
+```
 
 #### def ps 
 ##### arguments
 
 ##### comments
 
+```
 return detailed info
+
+```
 
 #### def pull 
 ##### arguments
@@ -230,12 +327,20 @@ return detailed info
 
 ##### comments
 
+```
+
+```
+
 #### def pushSSHKey 
 ##### arguments
 
 - name
 
 ##### comments
+
+```
+
+```
 
 #### def removeImages 
 ##### arguments
@@ -244,6 +349,10 @@ return detailed info
 
 ##### comments
 
+```
+
+```
+
 #### def removeRedundantFiles 
 ##### arguments
 
@@ -251,12 +360,20 @@ return detailed info
 
 ##### comments
 
+```
+
+```
+
 #### def restart 
 ##### arguments
 
 - name
 
 ##### comments
+
+```
+
+```
 
 #### def run 
 ##### arguments
@@ -266,6 +383,10 @@ return detailed info
 
 ##### comments
 
+```
+
+```
+
 #### def setHostName 
 ##### arguments
 
@@ -273,12 +394,20 @@ return detailed info
 
 ##### comments
 
+```
+
+```
+
 #### def stop 
 ##### arguments
 
 - name
 
 ##### comments
+
+```
+
+```
 
 #### def uploadFile 
 ##### arguments
@@ -289,5 +418,8 @@ return detailed info
 
 ##### comments
 
+```
 put a file located at source on the host to dest into the container
+
+```
 

@@ -14,10 +14,13 @@
 
 ##### comments
 
+```
 walk over repo's known on system
 2 locations are checked
     ~/code
     /opt/code
+
+```
 
 #### def get 
 ##### arguments
@@ -26,7 +29,10 @@ walk over repo's known on system
 
 ##### comments
 
+```
 PLEASE USE SSH, see http://despiegk.gitbooks.io/jumpscale/content/Howto/how_to_use_git.html for more details
+
+```
 
 #### def log 
 ##### arguments
@@ -36,4 +42,8 @@ PLEASE USE SSH, see http://despiegk.gitbooks.io/jumpscale/content/Howto/how_to_u
 - level = 5
 
 ##### comments
+
+```
+
+```
 

@@ -19,6 +19,10 @@
 
 ##### comments
 
+```
+
+```
+
 #### def getByInstance 
 ##### arguments
 
@@ -29,6 +33,10 @@
 
 ##### comments
 
+```
+
+```
+
 #### def getCategory 
 ##### arguments
 
@@ -38,10 +46,13 @@
 
 ##### comments
 
+```
 how to use
 @param client: osiclient
 @param namespace: OSIS namespace
 @param category: OSIS category
+
+```
 
 #### def getNamespace 
 ##### arguments
@@ -50,4 +61,8 @@ how to use
 - client
 
 ##### comments
+
+```
+
+```
 

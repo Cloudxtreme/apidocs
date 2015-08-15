@@ -9,6 +9,10 @@
 
 ##### comments
 
+```
+
+```
+
 #### def addLogHandler 
 ##### arguments
 
@@ -16,11 +20,18 @@
 
 ##### comments
 
+```
 loggerHandler = LoggerHandler("chat.log")
 self.api.add_handler(loggerHandler)
+
+```
 
 #### def start 
 ##### arguments
 
 ##### comments
+
+```
+
+```
 

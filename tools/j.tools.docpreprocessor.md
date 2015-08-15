@@ -18,6 +18,10 @@
 
 ##### comments
 
+```
+
+```
+
 #### def generateFromDir 
 ##### arguments
 
@@ -28,9 +32,12 @@
 
 ##### comments
 
+```
 @param path is starting point, will look for generate.cfg & params.cfg in this dir, input in these files will determine how preprocessor will work
 @param macrosPaths are dirs where macro's are they are in form of tasklets
 @param cacheDir if non std caching dir override here
+
+```
 
 #### def get 
 ##### arguments
@@ -41,10 +48,17 @@
 
 ##### comments
 
+```
 @param contentDirs are the dirs where we will load wiki files from & parse
+
+```
 
 #### def getMacroPath 
 ##### arguments
 
 ##### comments
+
+```
+
+```
 

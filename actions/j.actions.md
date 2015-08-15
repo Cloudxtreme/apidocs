@@ -11,7 +11,10 @@ Manager controlling actions
 
 ##### comments
 
+```
 Clean the list of running actions
+
+```
 
 #### def getActionNamesDone 
 ##### arguments
@@ -20,15 +23,22 @@ Clean the list of running actions
 
 ##### comments
 
+```
+
+```
+
 #### def hasRunningActions 
 ##### arguments
 
 ##### comments
 
+```
 Check whether actions are currently running
 
 @returns: Whether actions are runnin
 @rtype: bool
+
+```
 
 #### def reset 
 ##### arguments
@@ -37,12 +47,20 @@ Check whether actions are currently running
 
 ##### comments
 
+```
+
+```
+
 #### def setActionNamesDone 
 ##### arguments
 
 - action
 
 ##### comments
+
+```
+
+```
 
 #### def start 
 ##### arguments
@@ -65,6 +83,7 @@ Check whether actions are currently running
 
 ##### comments
 
+```
 @param id is unique id which allows finding back of action
 @param description: Action description (what are we doing)
 @param errorMessage: message to give when error
@@ -75,4 +94,6 @@ Check whether actions are currently running
 @param actionArgs is dict with arguments
 @param cmds is list of commands to execute on os
 @param state : INIT,RUNNING,OK,ERROR
+
+```
 

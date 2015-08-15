@@ -16,7 +16,10 @@ attach configuration items to this configure object (can happen at runtime)
 
 ##### comments
 
+```
 check if config file exists, if not create and reload
+
+```
 
 #### def getConfigFileManager 
 ##### arguments
@@ -25,6 +28,10 @@ check if config file exists, if not create and reload
 
 ##### comments
 
+```
+
+```
+
 #### def loadConfigFile 
 ##### arguments
 
@@ -32,8 +39,16 @@ check if config file exists, if not create and reload
 
 ##### comments
 
+```
+
+```
+
 #### def refresh 
 ##### arguments
 
 ##### comments
+
+```
+
+```
 

@@ -21,6 +21,10 @@ functionality to inspect objectr structure and generate apifile
 
 ##### comments
 
+```
+
+```
+
 #### def importAllLibs 
 ##### arguments
 
@@ -28,6 +32,10 @@ functionality to inspect objectr structure and generate apifile
 - base = '/opt/jumpscale7/lib/JumpScale/'
 
 ##### comments
+
+```
+
+```
 
 #### def inspect 
 ##### arguments
@@ -39,9 +47,12 @@ functionality to inspect objectr structure and generate apifile
 
 ##### comments
 
+```
 walk over objects in memory and create code completion api in jumpscale cfgDir under codecompletionapi
 @param object is start object
 @param objectLocationPath is full location name in object tree e.g. j.system.fs , no need to fill in
+
+```
 
 #### def raiseError 
 ##### arguments
@@ -50,10 +61,18 @@ walk over objects in memory and create code completion api in jumpscale cfgDir u
 
 ##### comments
 
+```
+
+```
+
 #### def writeDocs 
 ##### arguments
 
 - path
 
 ##### comments
+
+```
+
+```
 

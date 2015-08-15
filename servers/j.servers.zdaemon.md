@@ -16,6 +16,7 @@
 
 ##### comments
 
+```
 is a generic usable zmq daemon which has a data & cmd channel (data channel not completely implemented for now)
 
 zd=j.core.zdaemon.getZDaemon(port=5651,nrCmdGreenlets=50)
@@ -38,6 +39,8 @@ zd.start()
 
 use self.getZDaemonClientClass as client to this daemon
 
+```
+
 #### def getZDaemonAgent 
 ##### arguments
 
@@ -52,6 +55,7 @@ use self.getZDaemonClientClass as client to this daemon
 
 ##### comments
 
+```
 example usage, see example for server at self.getZDaemon
 
 agent=j.core.zdaemon.getZDaemonAgent(ipaddr="127.0.0.1",port=5651,login="root",passwd="1234",ssl=False,roles=["*"])
@@ -59,6 +63,8 @@ agent.start()
 
 @param roles describes which roles the agent can execute e.g. node.1,hypervisor.virtualbox.1,*
     * means all
+
+```
 
 #### def getZDaemonClient 
 ##### arguments
@@ -76,11 +82,14 @@ agent.start()
 
 ##### comments
 
+```
 example usage, see example for server at self.getZDaemon
 
 client=j.core.zdaemon.getZDaemonClient(ipaddr="127.0.0.1",port=5651,login="root",passwd="1234",ssl=False)
 
         print client.echo("Hello World.")
+
+```
 
 #### def getZDaemonHAClient 
 ##### arguments
@@ -97,17 +106,21 @@ client=j.core.zdaemon.getZDaemonClient(ipaddr="127.0.0.1",port=5651,login="root"
 
 ##### comments
 
+```
 example usage, see example for server at self.getZDaemon
 
 client=j.core.zdaemon.getZDaemonHAClient([('127.0.0.1', 5544)],login="root",passwd="1234",ssl=False)
 
         print client.echo("Hello World.")
 
+```
+
 #### def getZDaemonTransportClass 
 ##### arguments
 
 ##### comments
 
+```
 #example usage:
 import JumpScale.grid.zdaemon
 class BlobStorTransport(j.core.zdaemon.getZDaemonTransportClass()):
@@ -116,6 +129,8 @@ class BlobStorTransport(j.core.zdaemon.getZDaemonTransportClass()):
         result=self._cmdchannel.recv_multipart()
         return result
 transp=BlobStorTransport(addr=ipaddr,port=port,gevent=True)
+
+```
 
 #### def initSSL4Server 
 ##### arguments
@@ -126,5 +141,8 @@ transp=BlobStorTransport(addr=ipaddr,port=port,gevent=True)
 
 ##### comments
 
+```
 use this to init your ssl keys for the server (they can be used over all transports)
+
+```
 

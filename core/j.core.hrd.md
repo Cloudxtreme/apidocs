@@ -19,7 +19,10 @@
 
 ##### comments
 
+```
 @param path
+
+```
 
 #### def getHRDFromDict 
 ##### arguments
@@ -27,6 +30,10 @@
 - ddict = \{\}
 
 ##### comments
+
+```
+
+```
 
 #### def getHRDFromOsisObject 
 ##### arguments
@@ -36,6 +43,10 @@
 
 ##### comments
 
+```
+
+```
+
 #### def log 
 ##### arguments
 
@@ -44,4 +55,8 @@
 - level = 5
 
 ##### comments
+
+```
+
+```
 

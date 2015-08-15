@@ -13,12 +13,20 @@
 
 ##### comments
 
+```
+
+```
+
 #### def errorTrap 
 ##### arguments
 
 - msg
 
 ##### comments
+
+```
+
+```
 
 #### def parseDoc 
 ##### arguments
@@ -27,6 +35,10 @@
 
 ##### comments
 
+```
+
+```
+
 #### def shortenDescr 
 ##### arguments
 
@@ -34,4 +46,8 @@
 - maxnrchars = 60
 
 ##### comments
+
+```
+
+```
 

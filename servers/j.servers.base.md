@@ -14,6 +14,7 @@
 
 ##### comments
 
+```
 is the basis for every daemon we create which can be exposed over e.g. zmq or sockets or http
 
 daemon=j.servers.base.getDaemon()
@@ -33,11 +34,14 @@ daemon.addCMDsInterface(MyCommands,category="optional")  #pass as class not as o
 
 #now you need to pass this to a protocol server, its not usable by itself
 
+```
+
 #### def getDaemonClientClass 
 ##### arguments
 
 ##### comments
 
+```
 example usage, see example for server at self.getDaemon (implement transport still)
 
 DaemonClientClass=j.servers.base.getDaemonClientClass()
@@ -69,6 +73,8 @@ myClient(DaemonClientClass):
 client=myClient()
 print client.echo("atest")
 
+```
+
 #### def initSSL4Server 
 ##### arguments
 
@@ -77,4 +83,8 @@ print client.echo("atest")
 - sslkeyvaluestor
 
 ##### comments
+
+```
+
+```
 

@@ -21,6 +21,7 @@
 
 ##### comments
 
+```
 serializationstr FORMATS SUPPORTED FOR NOW
     m=MESSAGEPACK 
     c=COMPRESSION WITH BLOSC
@@ -38,15 +39,25 @@ serializationstr FORMATS SUPPORTED FOR NOW
 
 this method returns
 
+```
+
 #### def getBlosc 
 ##### arguments
 
 ##### comments
 
+```
+
+```
+
 #### def getMessagePack 
 ##### arguments
 
 ##### comments
+
+```
+
+```
 
 #### def getSerializerType 
 ##### arguments
@@ -56,6 +67,7 @@ this method returns
 
 ##### comments
 
+```
 serializationstr FORMATS SUPPORTED FOR NOW
     m=MESSAGEPACK 
     c=COMPRESSION WITH BLOSC
@@ -67,4 +79,6 @@ serializationstr FORMATS SUPPORTED FOR NOW
     p=pickle
     r=bin (means is not object (r=raw))
     l=log
+
+```
 

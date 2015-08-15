@@ -13,13 +13,20 @@
 
 ##### comments
 
+```
+
+```
+
 #### def getBaseClass 
 ##### arguments
 
 ##### comments
 
+```
 complete example how to use sqlalchemy:
 https://github.com/Jumpscale/jumpscale_core7/wiki/SQLAlchemy
+
+```
 
 #### def validate_email 
 ##### arguments
@@ -31,6 +38,10 @@ https://github.com/Jumpscale/jumpscale_core7/wiki/SQLAlchemy
 
 ##### comments
 
+```
+
+```
+
 #### def validate_lower_strip 
 ##### arguments
 
@@ -41,6 +52,10 @@ https://github.com/Jumpscale/jumpscale_core7/wiki/SQLAlchemy
 
 ##### comments
 
+```
+
+```
+
 #### def validate_tel 
 ##### arguments
 
@@ -50,4 +65,8 @@ https://github.com/Jumpscale/jumpscale_core7/wiki/SQLAlchemy
 - initiator
 
 ##### comments
+
+```
+
+```
 

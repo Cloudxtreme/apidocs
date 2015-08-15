@@ -9,15 +9,27 @@
 
 ##### comments
 
+```
+
+```
+
 #### def iteritems 
 ##### arguments
 
 ##### comments
 
+```
+
+```
+
 #### def keys 
 ##### arguments
 
 ##### comments
+
+```
+
+```
 
 #### def pop 
 ##### arguments
@@ -25,4 +37,8 @@
 - key
 
 ##### comments
+
+```
+
+```
 

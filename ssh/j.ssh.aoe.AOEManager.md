@@ -12,10 +12,13 @@
 
 ##### comments
 
+```
 Create and vdisk
 
 :storpath: is the full image path.
 :size: size in GB
+
+```
 
 #### def delete 
 ##### arguments
@@ -23,6 +26,10 @@ Create and vdisk
 - path
 
 ##### comments
+
+```
+
+```
 
 #### def expose 
 ##### arguments
@@ -34,12 +41,15 @@ Create and vdisk
 
 ##### comments
 
+```
 Expose the given image on major:minor and interface
 
 :storage: the image path or vdisk
 :major: Major number (shelf)
 :minor: Minor number (slot)
 :inf: Network interface
+
+```
 
 #### def list 
 ##### arguments
@@ -48,8 +58,11 @@ Expose the given image on major:minor and interface
 
 ##### comments
 
+```
 List all vdisks under this location.
 Note that all files in that directory are assumed to be valid images
+
+```
 
 #### def unexpose 
 ##### arguments
@@ -58,5 +71,8 @@ Note that all files in that directory are assumed to be valid images
 
 ##### comments
 
+```
 Unexpose the storage
+
+```
 

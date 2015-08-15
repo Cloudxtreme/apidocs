@@ -11,6 +11,10 @@
 
 ##### comments
 
+```
+
+```
+
 #### def ipGet 
 ##### arguments
 
@@ -18,8 +22,11 @@
 
 ##### comments
 
+```
 Get IP of devie
 Result (ip, netmask, gateway)
+
+```
 
 #### def ipReset 
 ##### arguments
@@ -28,6 +35,10 @@ Result (ip, netmask, gateway)
 - commit = False
 
 ##### comments
+
+```
+
+```
 
 #### def ipSet 
 ##### arguments
@@ -41,12 +52,19 @@ Result (ip, netmask, gateway)
 
 ##### comments
 
+```
 Return all interfaces that has this ifname
+
+```
 
 #### def nsGet 
 ##### arguments
 
 ##### comments
+
+```
+
+```
 
 #### def nsSet 
 ##### arguments
@@ -56,10 +74,18 @@ Return all interfaces that has this ifname
 
 ##### comments
 
+```
+
+```
+
 #### def setHostname 
 ##### arguments
 
 - hostname
 
 ##### comments
+
+```
+
+```
 

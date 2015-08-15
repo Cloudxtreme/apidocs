@@ -11,6 +11,7 @@
 
 ##### comments
 
+```
 Create a new INI file
 
 @param filename: Filename of INI file
@@ -21,6 +22,8 @@ Create a new INI file
 @returns: New INI file object
 @rtype: jumpscale.inifile.IniFile.IniFile
 
+```
+
 #### def open 
 ##### arguments
 
@@ -29,6 +32,7 @@ Create a new INI file
 
 ##### comments
 
+```
 Open an existing INI file
 
 @param filename: Filename of INI file
@@ -38,4 +42,6 @@ Open an existing INI file
 
 @returns: Opened INI file object
 @rtype: jumpscale.inifile.IniFile.IniFile
+
+```
 

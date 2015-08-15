@@ -9,6 +9,10 @@
 
 ##### comments
 
+```
+
+```
+
 #### def registerService 
 ##### arguments
 
@@ -18,12 +22,20 @@
 
 ##### comments
 
+```
+
+```
+
 #### def removeService 
 ##### arguments
 
 - servicename
 
 ##### comments
+
+```
+
+```
 
 #### def resolveAddress 
 ##### arguments
@@ -32,10 +44,13 @@
 
 ##### comments
 
+```
 Resolve the ip address to its hostname
 
 @param ipAddress: the ip address to resolve
 @type ipAddress: string
 
 @return: the hostname attached to the ip address
+
+```
 

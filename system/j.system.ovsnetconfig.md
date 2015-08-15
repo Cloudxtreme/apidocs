@@ -14,7 +14,10 @@
 
 ##### comments
 
+```
 DANGEROUS, will remove old configuration
+
+```
 
 #### def configureStaticAddress 
 ##### arguments
@@ -25,7 +28,10 @@ DANGEROUS, will remove old configuration
 
 ##### comments
 
+```
 Configure a static address
+
+```
 
 #### def createVXLanBridge 
 ##### arguments
@@ -36,7 +42,10 @@ Configure a static address
 
 ##### comments
 
+```
 Creates a proper vxlan interface and bridge based on a backplane
+
+```
 
 #### def ensureVXNet 
 ##### arguments
@@ -46,6 +55,10 @@ Creates a proper vxlan interface and bridge based on a backplane
 
 ##### comments
 
+```
+
+```
+
 #### def getConfigFromSystem 
 ##### arguments
 
@@ -53,7 +66,10 @@ Creates a proper vxlan interface and bridge based on a backplane
 
 ##### comments
 
+```
 walk over system and get configuration, result is dict
+
+```
 
 #### def getType 
 ##### arguments
@@ -62,12 +78,19 @@ walk over system and get configuration, result is dict
 
 ##### comments
 
+```
+
+```
+
 #### def initNetworkInterfaces 
 ##### arguments
 
 ##### comments
 
+```
 Resets /etc/network/interfaces with a basic configuration
+
+```
 
 #### def newBondedBackplane 
 ##### arguments
@@ -78,7 +101,10 @@ Resets /etc/network/interfaces with a basic configuration
 
 ##### comments
 
+```
 Reasonable defaults  : mode=balance-tcp, lacp=active,fast, bondname=brname-Bond, all vlans allowed
+
+```
 
 #### def newBridge 
 ##### arguments
@@ -88,7 +114,10 @@ Reasonable defaults  : mode=balance-tcp, lacp=active,fast, bondname=brname-Bond,
 
 ##### comments
 
+```
 @param interface interface where to connect this bridge to
+
+```
 
 #### def newVlanBridge 
 ##### arguments
@@ -100,15 +129,27 @@ Reasonable defaults  : mode=balance-tcp, lacp=active,fast, bondname=brname-Bond,
 
 ##### comments
 
+```
+
+```
+
 #### def printConfigFromSystem 
 ##### arguments
 
 ##### comments
 
+```
+
+```
+
 #### def removeOldConfig 
 ##### arguments
 
 ##### comments
+
+```
+
+```
 
 #### def setBackplane 
 ##### arguments
@@ -120,7 +161,10 @@ Reasonable defaults  : mode=balance-tcp, lacp=active,fast, bondname=brname-Bond,
 
 ##### comments
 
+```
 DANGEROUS, will remove old configuration
+
+```
 
 #### def setBackplaneDhcp 
 ##### arguments
@@ -130,7 +174,10 @@ DANGEROUS, will remove old configuration
 
 ##### comments
 
+```
 DANGEROUS, will remove old configuration
+
+```
 
 #### def setBackplaneNoAddress 
 ##### arguments
@@ -140,7 +187,10 @@ DANGEROUS, will remove old configuration
 
 ##### comments
 
+```
 DANGEROUS, will remove old configuration
+
+```
 
 #### def setBackplaneNoAddressWithBond 
 ##### arguments
@@ -151,7 +201,10 @@ DANGEROUS, will remove old configuration
 
 ##### comments
 
+```
 DANGEROUS, will remove old configuration
+
+```
 
 #### def setBackplaneWithBond 
 ##### arguments
@@ -164,5 +217,8 @@ DANGEROUS, will remove old configuration
 
 ##### comments
 
+```
 DANGEROUS, will remove old configuration
+
+```
 

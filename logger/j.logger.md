@@ -19,10 +19,18 @@
 
 ##### comments
 
+```
+
+```
+
 #### def disable 
 ##### arguments
 
 ##### comments
+
+```
+
+```
 
 #### def getLogObjectFromDict 
 ##### arguments
@@ -31,10 +39,18 @@
 
 ##### comments
 
+```
+
+```
+
 #### def init 
 ##### arguments
 
 ##### comments
+
+```
+
+```
 
 #### def log 
 ##### arguments
@@ -50,7 +66,10 @@
 
 ##### comments
 
+```
 send to all log targets
+
+```
 
 #### def nologger 
 ##### arguments
@@ -59,15 +78,26 @@ send to all log targets
 
 ##### comments
 
+```
 Decorator to disable logging for a specific method (probably not thread safe)
+
+```
 
 #### def nostdout 
 ##### arguments
 
 ##### comments
 
+```
+
+```
+
 #### def reset 
 ##### arguments
 
 ##### comments
+
+```
+
+```
 

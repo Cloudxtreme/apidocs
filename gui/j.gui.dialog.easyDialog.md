@@ -16,6 +16,7 @@
 
 ##### comments
 
+```
 Ask the user the supplied question and list the choices to choose from, if no response given the default value is used
 
 @param question: question to be display to the user
@@ -26,6 +27,8 @@ Ask the user the supplied question and list the choices to choose from, if no re
 @param sortCallBack: A callback function to handle the sorting of the choices (will only be used if sortChoices is set to True)
 
 @return:  selected choice
+
+```
 
 #### def askChoiceMultiple 
 ##### arguments
@@ -39,6 +42,7 @@ Ask the user the supplied question and list the choices to choose from, if no re
 
 ##### comments
 
+```
 Ask the user the supplied question and list the choices to choose from, if no response given the default value[s] is used
 
 @param question: question to be display to the user
@@ -49,6 +53,8 @@ Ask the user the supplied question and list the choices to choose from, if no re
 @param sortCallBack: A callback function to handle the sorting of the choices (will only be used if sortChoices is set to True)
 
 @return:  selected choice[s] or default value[s]
+
+```
 
 #### def askDate 
 ##### arguments
@@ -61,6 +67,7 @@ Ask the user the supplied question and list the choices to choose from, if no re
 
 ##### comments
 
+```
 Asks user the supplied question, a valid answer is a date between minValue and maxValue
 
 Currently in the EasyDialogConsole implementation ignores the format parameter and  only dates with format YYYY/MM/DD are supported
@@ -70,6 +77,8 @@ Currently in the EasyDialogConsole implementation ignores the format parameter a
 @param maxValue: optional value for the upper boundary date
 @param selectedValue:
 @param  format: the format of the input date
+
+```
 
 #### def askDateTime 
 ##### arguments
@@ -82,6 +91,7 @@ Currently in the EasyDialogConsole implementation ignores the format parameter a
 
 ##### comments
 
+```
 Asks user a question that its answer is a datetime between minValue and maxValue
 
 Note: this note my seem out of place, but is is important to note that currently in the EasyDialogConsole implementation only dates with format YYYY/MM/DD are supported
@@ -92,6 +102,8 @@ Note: this note my seem out of place, but is is important to note that currently
 @param selectedValue:
 @param  format: the format of the input date
 
+```
+
 #### def askDirPath 
 ##### arguments
 
@@ -100,11 +112,14 @@ Note: this note my seem out of place, but is is important to note that currently
 
 ##### comments
 
+```
 Prompts for a selection of a file path starting from startPath if given and '/' if not
 
 @param message: message that would be displayed to the user above the selection menu
 @param startPath: base dir of the navigation tree
 @return: path to the directory selected
+
+```
 
 #### def askFilePath 
 ##### arguments
@@ -114,11 +129,14 @@ Prompts for a selection of a file path starting from startPath if given and '/' 
 
 ##### comments
 
+```
 Prompts for a selection of a file path starting from startPath if given and '/' if not
 
 @param message: message that would be displayed to the user above the selection menu
 @param startPath: base dir of the navigation tree
 @return: path to the file selected
+
+```
 
 #### def askInt 
 ##### arguments
@@ -128,11 +146,14 @@ Prompts for a selection of a file path starting from startPath if given and '/' 
 
 ##### comments
 
+```
 Asks user the supplied question and prompt for an answer, if none given the default value is used, the response and the default value must be valid integer
 
 @param question: question to be displayed
 @param defaultValue: if the user did not provide a response this value is used as an answer
 @return: response integer or the default value
+
+```
 
 #### def askInteger 
 ##### arguments
@@ -142,11 +163,14 @@ Asks user the supplied question and prompt for an answer, if none given the defa
 
 ##### comments
 
+```
 Asks user the supplied question and prompt for an answer, if none given the default value is used, the response and the default value must be valid integer
 
 @param question: question to be displayed
 @param defaultValue: if the user did not provide a response this value is used as an answer
 @return: response integer or the default value
+
+```
 
 #### def askIntegers 
 ##### arguments
@@ -155,10 +179,13 @@ Asks user the supplied question and prompt for an answer, if none given the defa
 
 ##### comments
 
+```
 Asks user the supplied question and prompt for an answer
 
 @param question: question to be prompted
 @return: response integer
+
+```
 
 #### def askMultiline 
 ##### arguments
@@ -167,9 +194,12 @@ Asks user the supplied question and prompt for an answer
 
 ##### comments
 
+```
 Asks the user the supplied question, where the answer could be multi-lines
 
 @param question: the question to be displayed
+
+```
 
 #### def askPassword 
 ##### arguments
@@ -182,10 +212,13 @@ Asks the user the supplied question, where the answer could be multi-lines
 
 ##### comments
 
+```
 Asks the supplied question and prompts for password
 
 @param question: question to be displayed
 @return: response string
+
+```
 
 #### def askString 
 ##### arguments
@@ -196,11 +229,14 @@ Asks the supplied question and prompts for password
 
 ##### comments
 
+```
 Asks the user the supplied question and prompt for an answer, if none given the default value is used
 @param question: question to be displayed
 @param defaultValue: if the user did not provide a response this value is used as an answer
 @param validator: regex validation value
 @return: response string or the default value
+
+```
 
 #### def askYesNo 
 ##### arguments
@@ -210,12 +246,15 @@ Asks the user the supplied question and prompt for an answer, if none given the 
 
 ##### comments
 
+```
 Asks user the supplied question and prompt for an answer, if none given the default value is used, the response and the default value one of the values [y|Y|yes|Yes..n|N|No..]
 
 Currently the default value effect is ignored since it would require changing the jumpscale vapp
 @param question: question to be prompted
 @param defaultValue: if the user did not provide a response this value is used as an answer
 @return: response answer or the default value
+
+```
 
 #### def chooseDialogType 
 ##### arguments
@@ -224,15 +263,21 @@ Currently the default value effect is ignored since it would require changing th
 
 ##### comments
 
+```
 supported types today: console,win32,wizardserver
 @param type DialogType enumerator
+
+```
 
 #### def clear 
 ##### arguments
 
 ##### comments
 
+```
 Clears the screen/form.
+
+```
 
 #### def message 
 ##### arguments
@@ -241,9 +286,12 @@ Clears the screen/form.
 
 ##### comments
 
+```
 prints the given message to the screen
 
 @param message: message to print
+
+```
 
 #### def navigateTo 
 ##### arguments
@@ -252,6 +300,10 @@ prints the given message to the screen
 
 ##### comments
 
+```
+
+```
+
 #### def showLogging 
 ##### arguments
 
@@ -259,7 +311,10 @@ prints the given message to the screen
 
 ##### comments
 
+```
 Shows logging message
+
+```
 
 #### def showMessageBox 
 ##### arguments
@@ -272,6 +327,7 @@ Shows logging message
 
 ##### comments
 
+```
 Shows a message box
 
 @param message: message for the messagebox
@@ -282,6 +338,8 @@ Shows a message box
 
 @return: A JSON encoded string containing the selected button clicked
 
+```
+
 #### def showProgress 
 ##### arguments
 
@@ -291,9 +349,12 @@ Shows a message box
 
 ##### comments
 
+```
 Shows a progress bar according to the given values
 
 @param minvalue: minVlue of scale
 @param maxvalue: maxvlaue of scale
 @param currentvalue: the current value to show the progress
+
+```
 

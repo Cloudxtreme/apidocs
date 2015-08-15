@@ -15,7 +15,10 @@
 
 ##### comments
 
+```
 @if None will be same as master
+
+```
 
 #### def getByInstance 
 ##### arguments
@@ -25,12 +28,20 @@
 
 ##### comments
 
+```
+
+```
+
 #### def getInstanceConfig 
 ##### arguments
 
 - instance
 
 ##### comments
+
+```
+
+```
 
 #### def getProxy 
 ##### arguments
@@ -42,4 +53,8 @@
 - passwd
 
 ##### comments
+
+```
+
+```
 

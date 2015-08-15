@@ -17,6 +17,10 @@
 
 ##### comments
 
+```
+
+```
+
 #### def celeryStart 
 ##### arguments
 
@@ -26,12 +30,20 @@
 
 ##### comments
 
+```
+
+```
+
 #### def flowerStart 
 ##### arguments
 
 - url = 'redis://localhost:9999/0'
 
 ##### comments
+
+```
+
+```
 
 #### def getCodeClient 
 ##### arguments
@@ -41,10 +53,18 @@
 
 ##### comments
 
+```
+
+```
+
 #### def getCodeServer 
 ##### arguments
 
 - path
 
 ##### comments
+
+```
+
+```
 

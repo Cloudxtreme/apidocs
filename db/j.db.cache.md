@@ -11,6 +11,7 @@
 
 ##### comments
 
+```
 Least-Recently-Used (LRU) cache.
 Written by http://evan.prodromou.name/Software/Python/LRUCache
 
@@ -50,6 +51,8 @@ if 42 in cache:
 for j in cache:   # iterate (in LRU order)
     print j, cache[j] # iterator produces keys, not values
 
+```
+
 #### def getRWCache 
 ##### arguments
 
@@ -59,4 +62,8 @@ for j in cache:   # iterate (in LRU order)
 - writermethod
 
 ##### comments
+
+```
+
+```
 

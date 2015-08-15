@@ -15,6 +15,7 @@
 
 ##### comments
 
+```
 Create a new SSHClient instance.
 
 @param host: Hostname to connect to
@@ -29,6 +30,8 @@ Create a new SSHClient instance.
 @return: SSHClient instance
 @rtype: SSHClient
 
+```
+
 #### def getSSHClientUsingKey 
 ##### arguments
 
@@ -40,9 +43,12 @@ Create a new SSHClient instance.
 
 ##### comments
 
+```
 Create a new SSHClient instance.
 @return: SSHClient instance
 @rtype: SSHClient
+
+```
 
 #### def getSSHClientUsingSSHAgent 
 ##### arguments
@@ -54,5 +60,8 @@ Create a new SSHClient instance.
 
 ##### comments
 
+```
 Create a new SSHClient instance using ssh agent.
+
+```
 

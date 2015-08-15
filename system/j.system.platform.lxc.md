@@ -12,12 +12,20 @@
 
 ##### comments
 
+```
+
+```
+
 #### def btrfsSubvolDelete 
 ##### arguments
 
 - name
 
 ##### comments
+
+```
+
+```
 
 #### def btrfsSubvolExists 
 ##### arguments
@@ -26,10 +34,18 @@
 
 ##### comments
 
+```
+
+```
+
 #### def btrfsSubvolList 
 ##### arguments
 
 ##### comments
+
+```
+
+```
 
 #### def btrfsSubvolNew 
 ##### arguments
@@ -37,6 +53,10 @@
 - name
 
 ##### comments
+
+```
+
+```
 
 #### def create 
 ##### arguments
@@ -50,7 +70,10 @@
 
 ##### comments
 
+```
 @param name if "" then will be an incremental nr
+
+```
 
 #### def destroy 
 ##### arguments
@@ -59,10 +82,18 @@
 
 ##### comments
 
+```
+
+```
+
 #### def destroyAll 
 ##### arguments
 
 ##### comments
+
+```
+
+```
 
 #### def execute 
 ##### arguments
@@ -70,6 +101,10 @@
 - command
 
 ##### comments
+
+```
+
+```
 
 #### def exportRsync 
 ##### arguments
@@ -80,6 +115,10 @@
 
 ##### comments
 
+```
+
+```
+
 #### def exportTgz 
 ##### arguments
 
@@ -88,12 +127,20 @@
 
 ##### comments
 
+```
+
+```
+
 #### def getConfig 
 ##### arguments
 
 - name
 
 ##### comments
+
+```
+
+```
 
 #### def getIp 
 ##### arguments
@@ -103,6 +150,10 @@
 
 ##### comments
 
+```
+
+```
+
 #### def getPid 
 ##### arguments
 
@@ -110,6 +161,10 @@
 - fail = True
 
 ##### comments
+
+```
+
+```
 
 #### def getProcessList 
 ##### arguments
@@ -119,8 +174,11 @@
 
 ##### comments
 
+```
 @return [["$name",$pid,$mem,$parent],....,[$mem,$cpu]]
 last one is sum of mem & cpu
+
+```
 
 #### def importRsync 
 ##### arguments
@@ -132,7 +190,10 @@ last one is sum of mem & cpu
 
 ##### comments
 
+```
 @param basename is the name of a start of a machine locally, will be used as basis and then the source will be synced over it
+
+```
 
 #### def importTgz 
 ##### arguments
@@ -142,13 +203,20 @@ last one is sum of mem & cpu
 
 ##### comments
 
+```
+
+```
+
 #### def list 
 ##### arguments
 
 ##### comments
 
+```
 names of running & stopped machines
 @return (running,stopped)
+
+```
 
 #### def networkSet 
 ##### arguments
@@ -161,6 +229,10 @@ names of running & stopped machines
 
 ##### comments
 
+```
+
+```
+
 #### def networkSetPrivateVXLan 
 ##### arguments
 
@@ -170,12 +242,20 @@ names of running & stopped machines
 
 ##### comments
 
+```
+
+```
+
 #### def pushSSHKey 
 ##### arguments
 
 - name
 
 ##### comments
+
+```
+
+```
 
 #### def removeRedundantFiles 
 ##### arguments
@@ -184,12 +264,20 @@ names of running & stopped machines
 
 ##### comments
 
+```
+
+```
+
 #### def setHostName 
 ##### arguments
 
 - name
 
 ##### comments
+
+```
+
+```
 
 #### def start 
 ##### arguments
@@ -200,10 +288,18 @@ names of running & stopped machines
 
 ##### comments
 
+```
+
+```
+
 #### def stop 
 ##### arguments
 
 - name
 
 ##### comments
+
+```
+
+```
 

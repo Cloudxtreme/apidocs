@@ -14,7 +14,10 @@
 
 ##### comments
 
+```
 used for during error show info about 1 actor
+
+```
 
 #### def getActorMethodCall 
 ##### arguments
@@ -25,7 +28,10 @@ used for during error show info about 1 actor
 
 ##### comments
 
+```
 used for during error show links to methods in browser
+
+```
 
 #### def getActorsInfoPage 
 ##### arguments
@@ -36,4 +42,8 @@ used for during error show links to methods in browser
 - extraParams = \{\}
 
 ##### comments
+
+```
+
+```
 

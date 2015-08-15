@@ -34,6 +34,7 @@
 
 ##### comments
 
+```
 Generic descriptor generator for custom enumeration types
 
 You should be aware this is, unlike non-generic basetypes, a function
@@ -48,6 +49,8 @@ generating a class instance, not a class.
 
 @see: L\{jumpscale.pmtypes.base.BaseType.__init__\}
 
+```
+
 #### def object 
 ##### arguments
 
@@ -56,6 +59,7 @@ generating a class instance, not a class.
 
 ##### comments
 
+```
 Generic descriptor generator for custom object types
 
 You should be aware this is, unlike non-generic basetypes, a function
@@ -69,4 +73,6 @@ generating a class instance, not a class.
 @rtype: L\{jumpscale.pmtypes.base.BaseType.__init__\}
 
 @see: L\{jumpscale.pmtypes.base.BaseType.__init__\}
+
+```
 

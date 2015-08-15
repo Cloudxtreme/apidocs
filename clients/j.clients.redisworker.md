@@ -17,13 +17,20 @@
 
 ##### comments
 
+```
 this checks that jumpscripts are not executed twice when being scheduled recurring
 one off jobs will always execute !!!
+
+```
 
 #### def checkQueue 
 ##### arguments
 
 ##### comments
+
+```
+
+```
 
 #### def deleteJob 
 ##### arguments
@@ -32,20 +39,36 @@ one off jobs will always execute !!!
 
 ##### comments
 
+```
+
+```
+
 #### def deleteJumpscripts 
 ##### arguments
 
 ##### comments
+
+```
+
+```
 
 #### def deleteProcessQueue 
 ##### arguments
 
 ##### comments
 
+```
+
+```
+
 #### def deleteQueues 
 ##### arguments
 
 ##### comments
+
+```
+
+```
 
 #### def execFunction 
 ##### arguments
@@ -61,7 +84,10 @@ one off jobs will always execute !!!
 
 ##### comments
 
+```
 @return job
+
+```
 
 #### def execJobAsync 
 ##### arguments
@@ -69,6 +95,10 @@ one off jobs will always execute !!!
 - job
 
 ##### comments
+
+```
+
+```
 
 #### def execJumpscript 
 ##### arguments
@@ -83,7 +113,10 @@ one off jobs will always execute !!!
 
 ##### comments
 
+```
 @return job
+
+```
 
 #### def getFailedJobs 
 ##### arguments
@@ -93,12 +126,20 @@ one off jobs will always execute !!!
 
 ##### comments
 
+```
+
+```
+
 #### def getJob 
 ##### arguments
 
 - jobid
 
 ##### comments
+
+```
+
+```
 
 #### def getJobLine 
 ##### arguments
@@ -108,12 +149,20 @@ one off jobs will always execute !!!
 
 ##### comments
 
+```
+
+```
+
 #### def getJumpscriptFromId 
 ##### arguments
 
 - jscriptid
 
 ##### comments
+
+```
+
+```
 
 #### def getJumpscriptFromName 
 ##### arguments
@@ -123,6 +172,10 @@ one off jobs will always execute !!!
 
 ##### comments
 
+```
+
+```
+
 #### def getQueuedJobs 
 ##### arguments
 
@@ -130,6 +183,10 @@ one off jobs will always execute !!!
 - asWikiTable = True
 
 ##### comments
+
+```
+
+```
 
 #### def removeJobs 
 ##### arguments
@@ -139,12 +196,20 @@ one off jobs will always execute !!!
 
 ##### comments
 
+```
+
+```
+
 #### def scheduleJob 
 ##### arguments
 
 - job
 
 ##### comments
+
+```
+
+```
 
 #### def waitJob 
 ##### arguments
@@ -153,4 +218,8 @@ one off jobs will always execute !!!
 - timeout = 600
 
 ##### comments
+
+```
+
+```
 

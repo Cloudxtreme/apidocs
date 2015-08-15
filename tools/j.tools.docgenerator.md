@@ -12,15 +12,27 @@
 
 ##### comments
 
+```
+
+```
+
 #### def getConfluence2htmlConvertor 
 ##### arguments
 
 ##### comments
 
+```
+
+```
+
 #### def getConfluence2rstConvertor 
 ##### arguments
 
 ##### comments
+
+```
+
+```
 
 #### def getConfluenceClient 
 ##### arguments
@@ -34,12 +46,19 @@
 
 ##### comments
 
+```
 @param url e.g. http://10.0.1.193:8080/confluence
+
+```
 
 #### def getMacroPath 
 ##### arguments
 
 ##### comments
+
+```
+
+```
 
 #### def pageGroupNew 
 ##### arguments
@@ -47,6 +66,10 @@
 - pages = \{\}
 
 ##### comments
+
+```
+
+```
 
 #### def pageNewConfluence 
 ##### arguments
@@ -56,6 +79,10 @@
 
 ##### comments
 
+```
+
+```
+
 #### def pageNewHTML 
 ##### arguments
 
@@ -64,6 +91,10 @@
 
 ##### comments
 
+```
+
+```
+
 #### def pageNewRST 
 ##### arguments
 
@@ -71,4 +102,8 @@
 - htmllibPath
 
 ##### comments
+
+```
+
+```
 

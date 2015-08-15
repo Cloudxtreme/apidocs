@@ -11,18 +11,34 @@
 
 ##### comments
 
+```
+
+```
+
 #### def getBucketsLoader 
 ##### arguments
 
 ##### comments
+
+```
+
+```
 
 #### def getSpacesLoader 
 ##### arguments
 
 ##### comments
 
+```
+
+```
+
 #### def getTemplatesPath 
 ##### arguments
 
 ##### comments
+
+```
+
+```
 

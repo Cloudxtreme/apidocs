@@ -22,6 +22,10 @@
 
 ##### comments
 
+```
+
+```
+
 #### def walk 
 ##### arguments
 
@@ -39,6 +43,7 @@
 
 ##### comments
 
+```
 Walk through filesystem and execute a method per file
 
 Walk through all files and folders starting at C\{root\}, recursive by
@@ -83,6 +88,8 @@ return False if you want recursion to stop (means don't go deeper)
 @param contentRegexIncludes / Excludes match content of files to array of regex expressions (array(strings))
 @param depths array of depth values e.g. only return depth 0 & 1 (would mean first dir depth and then 1 more deep) (array(int))
 
+```
+
 #### def walkFunctional 
 ##### arguments
 
@@ -95,6 +102,7 @@ return False if you want recursion to stop (means don't go deeper)
 
 ##### comments
 
+```
 Walk through filesystem and execute a method per file and dirname
 
 Walk through all files and folders starting at C\{root\}, recursive by
@@ -124,4 +132,6 @@ test: /foo/bar/file4
 
 @param root: Filesystem root to crawl (string)
 #@todo complete
+
+```
 

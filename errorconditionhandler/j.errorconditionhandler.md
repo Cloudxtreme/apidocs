@@ -18,6 +18,10 @@
 
 ##### comments
 
+```
+
+```
+
 #### def escalateBugToDeveloper 
 ##### arguments
 
@@ -25,6 +29,10 @@
 - tb
 
 ##### comments
+
+```
+
+```
 
 #### def excepthook 
 ##### arguments
@@ -35,11 +43,14 @@
 
 ##### comments
 
+```
 every fatal error in jumpscale or by python itself will result in an exception
 in this function the exception is caught.
 This routine will create an errorobject & escalate to the infoserver
 @ttype : is the description of the error
 @tb : can be a python data object or a Event
+
+```
 
 #### def getErrorConditionObject 
 ##### arguments
@@ -54,8 +65,11 @@ This routine will create an errorobject & escalate to the infoserver
 
 ##### comments
 
+```
 @data is dict with fields of errorcondition obj
 returns only ErrorConditionObject which should be used in jumpscale to define an errorcondition (or potential error condition)
+
+```
 
 #### def getErrorTraceKIS 
 ##### arguments
@@ -64,6 +78,10 @@ returns only ErrorConditionObject which should be used in jumpscale to define an
 
 ##### comments
 
+```
+
+```
+
 #### def getFrames 
 ##### arguments
 
@@ -71,12 +89,20 @@ returns only ErrorConditionObject which should be used in jumpscale to define an
 
 ##### comments
 
+```
+
+```
+
 #### def getLevelName 
 ##### arguments
 
 - level
 
 ##### comments
+
+```
+
+```
 
 #### def halt 
 ##### arguments
@@ -86,12 +112,19 @@ returns only ErrorConditionObject which should be used in jumpscale to define an
 
 ##### comments
 
+```
+
+```
+
 #### def lastActionClear 
 ##### arguments
 
 ##### comments
 
+```
 clear last action so is not printed when error
+
+```
 
 #### def lastActionSet 
 ##### arguments
@@ -100,7 +133,10 @@ clear last action so is not printed when error
 
 ##### comments
 
+```
 will remember action you are doing, this will be added to error message if filled in
+
+```
 
 #### def parsePythonErrorObject 
 ##### arguments
@@ -113,6 +149,7 @@ will remember action you are doing, this will be added to error message if fille
 
 ##### comments
 
+```
 how to use
 
 try:
@@ -129,6 +166,8 @@ next step could be to process the error objecect (eco) e.g. by eco.process()
 
 @return a ErrorConditionObject object as used by jumpscale (should be the only type of object we send around)
 
+```
+
 #### def processPythonExceptionObject 
 ##### arguments
 
@@ -141,6 +180,7 @@ next step could be to process the error objecect (eco) e.g. by eco.process()
 
 ##### comments
 
+```
 how to use
 
 try:
@@ -156,6 +196,8 @@ except Exception,e:
 
 the errorcondition is then also processed e.g. send to local logserver and/or stored locally in errordb
 
+```
+
 #### def raiseBug 
 ##### arguments
 
@@ -170,6 +212,7 @@ the errorcondition is then also processed e.g. send to local logserver and/or st
 
 ##### comments
 
+```
 use this to raise a bug in the code, this is the only time that a stacktrace will be asked for
 level will be Critical
 @param message is the error message which describes the bug
@@ -181,6 +224,8 @@ try:
     ##do something            
 except Exception,e:
     j.errorconditionhandler.raiseBug("an error",category="exceptions.init",e)
+
+```
 
 #### def raiseCritical 
 ##### arguments
@@ -196,6 +241,7 @@ except Exception,e:
 
 ##### comments
 
+```
 use this to raise a bug in the code, this is the only time that a stacktrace will be asked for
 level will be Critical
 @param message is the error message which describes the bug
@@ -207,6 +253,8 @@ try:
     ##do something            
 except Exception,e:
     j.errorconditionhandler.raiseBug("an error",category="exceptions.init",e)
+
+```
 
 #### def raiseInputError 
 ##### arguments
@@ -220,6 +268,10 @@ except Exception,e:
 
 ##### comments
 
+```
+
+```
+
 #### def raiseMonitoringError 
 ##### arguments
 
@@ -230,6 +282,10 @@ except Exception,e:
 - tags = ''
 
 ##### comments
+
+```
+
+```
 
 #### def raiseOperationalCritical 
 ##### arguments
@@ -244,10 +300,13 @@ except Exception,e:
 
 ##### comments
 
+```
 use this to raise an operational issue about the system
 @param message is message we want to use for operators
 @param msgpub is message we want to show to endcustomers (can include a solution)
 @param category is a dot notation to give category for the error condition
+
+```
 
 #### def raiseOperationalWarning 
 ##### arguments
@@ -260,6 +319,10 @@ use this to raise an operational issue about the system
 
 ##### comments
 
+```
+
+```
+
 #### def raisePerformanceError 
 ##### arguments
 
@@ -270,6 +333,10 @@ use this to raise an operational issue about the system
 
 ##### comments
 
+```
+
+```
+
 #### def raiseRuntimeErrorWithEco 
 ##### arguments
 
@@ -277,6 +344,10 @@ use this to raise an operational issue about the system
 - tostdout = False
 
 ##### comments
+
+```
+
+```
 
 #### def raiseWarning 
 ##### arguments
@@ -290,6 +361,7 @@ use this to raise an operational issue about the system
 
 ##### comments
 
+```
 use this to raise a bug in the code, this is the only time that a stacktrace will be asked for
 @param message is the error message which describes the bug
 @param msgpub is message we want to show to endcustomers (can include a solution)
@@ -301,6 +373,8 @@ try:
 except Exception,e:
     j.errorconditionhandler.raiseBug("an error",category="exceptions.init",e)
 
+```
+
 #### def reRaiseECO 
 ##### arguments
 
@@ -308,10 +382,18 @@ except Exception,e:
 
 ##### comments
 
+```
+
+```
+
 #### def setExceptHook 
 ##### arguments
 
 ##### comments
+
+```
+
+```
 
 #### def toolStripNonAsciFromText 
 ##### arguments
@@ -319,4 +401,8 @@ except Exception,e:
 - text
 
 ##### comments
+
+```
+
+```
 

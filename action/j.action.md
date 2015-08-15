@@ -11,22 +11,32 @@ Manager controlling actions
 
 ##### comments
 
+```
 Clean the list of running actions
+
+```
 
 #### def hasRunningActions 
 ##### arguments
 
 ##### comments
 
+```
 Check whether actions are currently running
 
 @returns: Whether actions are runnin
 @rtype: bool
 
+```
+
 #### def printOutput 
 ##### arguments
 
 ##### comments
+
+```
+
+```
 
 #### def start 
 ##### arguments
@@ -39,6 +49,7 @@ Check whether actions are currently running
 
 ##### comments
 
+```
 Start a new action
 
 @param description: Description of the action
@@ -50,12 +61,17 @@ Start a new action
                           the action fails
 @type resolutionmessage: string
 
+```
+
 #### def startOutput 
 ##### arguments
 
 ##### comments
 
+```
 Enable j.console output. Format such that it is nicely shown between action start/stop.
+
+```
 
 #### def stop 
 ##### arguments
@@ -64,6 +80,7 @@ Enable j.console output. Format such that it is nicely shown between action star
 
 ##### comments
 
+```
 Stop the currently running action
 
 This will get the latest started action from the action stack and
@@ -72,10 +89,15 @@ display a result message.
 @param failed: Whether the action failed
 @type failed: bool
 
+```
+
 #### def stopOutput 
 ##### arguments
 
 ##### comments
 
+```
 Disable j.console output. Format such that it is nicely shown between action start/stop.
+
+```
 

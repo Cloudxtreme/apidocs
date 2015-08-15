@@ -11,5 +11,8 @@
 
 ##### comments
 
+```
 Return disk manager for that cuisine connection.
+
+```
 

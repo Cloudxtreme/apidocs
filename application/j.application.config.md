@@ -21,12 +21,20 @@
 
 ##### comments
 
+```
+
+```
+
 #### def add2treeFromContent 
 ##### arguments
 
 - content
 
 ##### comments
+
+```
+
+```
 
 #### def applyOnContent 
 ##### arguments
@@ -36,7 +44,10 @@
 
 ##### comments
 
+```
 look for $(name) and replace with hrd value
+
+```
 
 #### def applyOnDir 
 ##### arguments
@@ -52,7 +63,10 @@ look for $(name) and replace with hrd value
 
 ##### comments
 
+```
 look for $(name) and replace with hrd value
+
+```
 
 #### def applyOnFile 
 ##### arguments
@@ -62,7 +76,10 @@ look for $(name) and replace with hrd value
 
 ##### comments
 
+```
 look for $(name) and replace with hrd value
+
+```
 
 #### def checkValidity 
 ##### arguments
@@ -72,8 +89,11 @@ look for $(name) and replace with hrd value
 
 ##### comments
 
+```
 @param template is example hrd content block, which will be used to check against, 
 if params not found will be added to existing hrd
+
+```
 
 #### def delete 
 ##### arguments
@@ -82,12 +102,20 @@ if params not found will be added to existing hrd
 
 ##### comments
 
+```
+
+```
+
 #### def exists 
 ##### arguments
 
 - key
 
 ##### comments
+
+```
+
+```
 
 #### def get 
 ##### arguments
@@ -97,6 +125,10 @@ if params not found will be added to existing hrd
 
 ##### comments
 
+```
+
+```
+
 #### def getBool 
 ##### arguments
 
@@ -105,12 +137,20 @@ if params not found will be added to existing hrd
 
 ##### comments
 
+```
+
+```
+
 #### def getDict 
 ##### arguments
 
 - key
 
 ##### comments
+
+```
+
+```
 
 #### def getDictFromPrefix 
 ##### arguments
@@ -119,7 +159,10 @@ if params not found will be added to existing hrd
 
 ##### comments
 
+```
 returns values from prefix return as list
+
+```
 
 #### def getFloat 
 ##### arguments
@@ -128,10 +171,18 @@ returns values from prefix return as list
 
 ##### comments
 
+```
+
+```
+
 #### def getHRDAsDict 
 ##### arguments
 
 ##### comments
+
+```
+
+```
 
 #### def getHrd 
 ##### arguments
@@ -139,6 +190,10 @@ returns values from prefix return as list
 - key
 
 ##### comments
+
+```
+
+```
 
 #### def getInt 
 ##### arguments
@@ -148,6 +203,10 @@ returns values from prefix return as list
 
 ##### comments
 
+```
+
+```
+
 #### def getList 
 ##### arguments
 
@@ -156,6 +215,10 @@ returns values from prefix return as list
 
 ##### comments
 
+```
+
+```
+
 #### def getListFromPrefix 
 ##### arguments
 
@@ -163,7 +226,10 @@ returns values from prefix return as list
 
 ##### comments
 
+```
 returns values from prefix return as list
+
+```
 
 #### def getListFromPrefixEachItemDict 
 ##### arguments
@@ -178,11 +244,14 @@ returns values from prefix return as list
 
 ##### comments
 
+```
 returns values from prefix return as list
 each value represents a dict
 @param musthave means for each item which is dict, we need to have following keys
 @param specifies the defaults
 @param aredicts & arelist specifies which types
+
+```
 
 #### def getStr 
 ##### arguments
@@ -192,6 +261,10 @@ each value represents a dict
 
 ##### comments
 
+```
+
+```
+
 #### def listAdd 
 ##### arguments
 
@@ -200,12 +273,20 @@ each value represents a dict
 
 ##### comments
 
+```
+
+```
+
 #### def pop 
 ##### arguments
 
 - key
 
 ##### comments
+
+```
+
+```
 
 #### def prefix 
 ##### arguments
@@ -215,7 +296,10 @@ each value represents a dict
 
 ##### comments
 
+```
 @param depth means prefix level to return
+
+```
 
 #### def prefixexists 
 ##### arguments
@@ -224,10 +308,18 @@ each value represents a dict
 
 ##### comments
 
+```
+
+```
+
 #### def processall 
 ##### arguments
 
 ##### comments
+
+```
+
+```
 
 #### def set 
 ##### arguments
@@ -237,4 +329,8 @@ each value represents a dict
 - persistent = True
 
 ##### comments
+
+```
+
+```
 

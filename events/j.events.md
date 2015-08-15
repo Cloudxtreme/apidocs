@@ -14,8 +14,11 @@
 
 ##### comments
 
+```
 will die
 @param e is python error object when doing except
+
+```
 
 #### def bug_warning 
 ##### arguments
@@ -26,8 +29,11 @@ will die
 
 ##### comments
 
+```
 will die
 @param e is python error object when doing except
+
+```
 
 #### def inputerror_critical 
 ##### arguments
@@ -38,7 +44,10 @@ will die
 
 ##### comments
 
+```
 will die
+
+```
 
 #### def inputerror_warning 
 ##### arguments
@@ -49,7 +58,10 @@ will die
 
 ##### comments
 
+```
 will die
+
+```
 
 #### def opserror 
 ##### arguments
@@ -60,9 +72,12 @@ will die
 
 ##### comments
 
+```
 will NOT die
 will make warning event is the same as opserror_warning
 @param e is python error object when doing except
+
+```
 
 #### def opserror_critical 
 ##### arguments
@@ -72,7 +87,10 @@ will make warning event is the same as opserror_warning
 
 ##### comments
 
+```
 will die
+
+```
 
 #### def opserror_warning 
 ##### arguments
@@ -83,7 +101,10 @@ will die
 
 ##### comments
 
+```
 will NOT die
 will make warning event is the same as opserror_warning
 @param e is python error object when doing except
+
+```
 

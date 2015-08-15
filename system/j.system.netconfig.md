@@ -18,6 +18,10 @@
 
 ##### comments
 
+```
+
+```
+
 #### def enableInterface 
 ##### arguments
 
@@ -26,6 +30,10 @@
 - dhcp = True
 
 ##### comments
+
+```
+
+```
 
 #### def enableInterfaceBridge 
 ##### arguments
@@ -37,6 +45,10 @@
 
 ##### comments
 
+```
+
+```
+
 #### def enableInterfaceBridgeDhcp 
 ##### arguments
 
@@ -45,6 +57,10 @@
 - start = False
 
 ##### comments
+
+```
+
+```
 
 #### def enableInterfaceBridgeStatic 
 ##### arguments
@@ -57,8 +73,11 @@
 
 ##### comments
 
+```
 ipaddr in form of 192.168.10.2/24 (can be list)
 gateway in form of 192.168.10.254
+
+```
 
 #### def enableInterfaceStatic 
 ##### arguments
@@ -70,8 +89,11 @@ gateway in form of 192.168.10.254
 
 ##### comments
 
+```
 ipaddr in form of 192.168.10.2/24 (can be list)
 gateway in form of 192.168.10.254
+
+```
 
 #### def remove 
 ##### arguments
@@ -80,6 +102,10 @@ gateway in form of 192.168.10.254
 
 ##### comments
 
+```
+
+```
+
 #### def reset 
 ##### arguments
 
@@ -87,7 +113,10 @@ gateway in form of 192.168.10.254
 
 ##### comments
 
+```
 empty config of /etc/network/interfaces
+
+```
 
 #### def setHostname 
 ##### arguments
@@ -96,7 +125,10 @@ empty config of /etc/network/interfaces
 
 ##### comments
 
+```
 change hostname
+
+```
 
 #### def setNameserver 
 ##### arguments
@@ -105,7 +137,10 @@ change hostname
 
 ##### comments
 
+```
 resolvconf will be disabled
+
+```
 
 #### def setRoot 
 ##### arguments
@@ -114,6 +149,10 @@ resolvconf will be disabled
 
 ##### comments
 
+```
+
+```
+
 #### def shutdownNetwork 
 ##### arguments
 
@@ -121,6 +160,9 @@ resolvconf will be disabled
 
 ##### comments
 
+```
 find all interfaces and shut them all down with ifdown
 this is to remove all networking things going on
+
+```
 

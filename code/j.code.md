@@ -11,7 +11,10 @@
 
 ##### comments
 
+```
 look for editor (uses geany) and then edit the file
+
+```
 
 #### def classEditWing 
 ##### arguments
@@ -20,22 +23,37 @@ look for editor (uses geany) and then edit the file
 
 ##### comments
 
+```
 look for editor (uses geany) and then edit the file
+
+```
 
 #### def classGetBase 
 ##### arguments
 
 ##### comments
 
+```
+
+```
+
 #### def classGetJSModelBase 
 ##### arguments
 
 ##### comments
 
+```
+
+```
+
 #### def classGetJSRootModelBase 
 ##### arguments
 
 ##### comments
+
+```
+
+```
 
 #### def classInfoGet 
 ##### arguments
@@ -44,7 +62,10 @@ look for editor (uses geany) and then edit the file
 
 ##### comments
 
+```
 returns filepath,linenr,sourcecode
+
+```
 
 #### def classInfoPrint 
 ##### arguments
@@ -53,7 +74,10 @@ returns filepath,linenr,sourcecode
 
 ##### comments
 
+```
 print info like source code of class
+
+```
 
 #### def deIndent 
 ##### arguments
@@ -63,6 +87,10 @@ print info like source code of class
 
 ##### comments
 
+```
+
+```
+
 #### def dict2JSModelobject 
 ##### arguments
 
@@ -70,6 +98,10 @@ print info like source code of class
 - data
 
 ##### comments
+
+```
+
+```
 
 #### def dict2object 
 ##### arguments
@@ -79,6 +111,10 @@ print info like source code of class
 
 ##### comments
 
+```
+
+```
+
 #### def indent 
 ##### arguments
 
@@ -86,6 +122,10 @@ print info like source code of class
 - level = 1
 
 ##### comments
+
+```
+
+```
 
 #### def object2dict 
 ##### arguments
@@ -97,6 +137,10 @@ print info like source code of class
 
 ##### comments
 
+```
+
+```
+
 #### def object2dict4index 
 ##### arguments
 
@@ -104,10 +148,13 @@ print info like source code of class
 
 ##### comments
 
+```
 convert object to a dict
 only properties on first level are considered
 and properties of basic types like int,str,float,bool,dict,list
 ideal to index the basics of an object
+
+```
 
 #### def object2json 
 ##### arguments
@@ -120,6 +167,10 @@ ideal to index the basics of an object
 
 ##### comments
 
+```
+
+```
+
 #### def object2yaml 
 ##### arguments
 
@@ -127,10 +178,18 @@ ideal to index the basics of an object
 
 ##### comments
 
+```
+
+```
+
 #### def pprint 
 ##### arguments
 
 - obj
 
 ##### comments
+
+```
+
+```
 

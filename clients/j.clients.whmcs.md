@@ -18,10 +18,18 @@
 
 ##### comments
 
+```
+
+```
+
 #### def getDummy 
 ##### arguments
 
 ##### comments
+
+```
+
+```
 
 #### def log 
 ##### arguments
@@ -31,4 +39,8 @@
 - level = 5
 
 ##### comments
+
+```
+
+```
 

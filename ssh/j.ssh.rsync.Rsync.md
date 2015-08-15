@@ -11,20 +11,31 @@
 
 ##### comments
 
+```
 add a module
 mod = rsync.addModule('share')
 mod.set('path', '/tmp/share')
 rs.commit()
+
+```
 
 #### def commit 
 ##### arguments
 
 ##### comments
 
+```
+
+```
+
 #### def erase 
 ##### arguments
 
 ##### comments
+
+```
+
+```
 
 #### def removeModule 
 ##### arguments
@@ -33,6 +44,10 @@ rs.commit()
 
 ##### comments
 
+```
+
+```
+
 #### def removeParams 
 ##### arguments
 
@@ -40,14 +55,20 @@ rs.commit()
 
 ##### comments
 
+```
 remove a global parameter
+
+```
 
 #### def restart 
 ##### arguments
 
 ##### comments
 
+```
 restart rsync daemon
+
+```
 
 #### def setParams 
 ##### arguments
@@ -57,19 +78,28 @@ restart rsync daemon
 
 ##### comments
 
+```
 set a global parameter
+
+```
 
 #### def start 
 ##### arguments
 
 ##### comments
 
+```
 start rsync daemon
+
+```
 
 #### def stop 
 ##### arguments
 
 ##### comments
 
+```
 stop rsync daemon
+
+```
 

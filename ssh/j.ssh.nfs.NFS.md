@@ -11,10 +11,18 @@
 
 ##### comments
 
+```
+
+```
+
 #### def commit 
 ##### arguments
 
 ##### comments
+
+```
+
+```
 
 #### def delete 
 ##### arguments
@@ -23,8 +31,16 @@
 
 ##### comments
 
+```
+
+```
+
 #### def erase 
 ##### arguments
 
 ##### comments
+
+```
+
+```
 

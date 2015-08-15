@@ -16,6 +16,10 @@
 
 ##### comments
 
+```
+
+```
+
 #### def configureInstance 
 ##### arguments
 
@@ -31,8 +35,11 @@
 
 ##### comments
 
+```
 @param maxram = MB of ram
 slave example: (192.168.10.10,8888,asecret)   (ip,port,secret)
+
+```
 
 #### def deleteInstance 
 ##### arguments
@@ -41,10 +48,18 @@ slave example: (192.168.10.10,8888,asecret)   (ip,port,secret)
 
 ##### comments
 
+```
+
+```
+
 #### def emptyAllInstances 
 ##### arguments
 
 ##### comments
+
+```
+
+```
 
 #### def emptyInstance 
 ##### arguments
@@ -53,6 +68,10 @@ slave example: (192.168.10.10,8888,asecret)   (ip,port,secret)
 
 ##### comments
 
+```
+
+```
+
 #### def getByInstance 
 ##### arguments
 
@@ -60,6 +79,10 @@ slave example: (192.168.10.10,8888,asecret)   (ip,port,secret)
 - gevent = False
 
 ##### comments
+
+```
+
+```
 
 #### def getGeventRedisClient 
 ##### arguments
@@ -70,6 +93,10 @@ slave example: (192.168.10.10,8888,asecret)   (ip,port,secret)
 - password = ''
 
 ##### comments
+
+```
+
+```
 
 #### def getGeventRedisQueue 
 ##### arguments
@@ -82,6 +109,10 @@ slave example: (192.168.10.10,8888,asecret)   (ip,port,secret)
 
 ##### comments
 
+```
+
+```
+
 #### def getPort 
 ##### arguments
 
@@ -89,12 +120,20 @@ slave example: (192.168.10.10,8888,asecret)   (ip,port,secret)
 
 ##### comments
 
+```
+
+```
+
 #### def getProcessPids 
 ##### arguments
 
 - name
 
 ##### comments
+
+```
+
+```
 
 #### def getRedisClient 
 ##### arguments
@@ -105,6 +144,10 @@ slave example: (192.168.10.10,8888,asecret)   (ip,port,secret)
 - fromcache = True
 
 ##### comments
+
+```
+
+```
 
 #### def getRedisQueue 
 ##### arguments
@@ -117,12 +160,20 @@ slave example: (192.168.10.10,8888,asecret)   (ip,port,secret)
 
 ##### comments
 
+```
+
+```
+
 #### def isRunning 
 ##### arguments
 
 - name
 
 ##### comments
+
+```
+
+```
 
 #### def startInstance 
 ##### arguments
@@ -131,10 +182,18 @@ slave example: (192.168.10.10,8888,asecret)   (ip,port,secret)
 
 ##### comments
 
+```
+
+```
+
 #### def stopInstance 
 ##### arguments
 
 - name
 
 ##### comments
+
+```
+
+```
 

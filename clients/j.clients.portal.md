@@ -13,10 +13,13 @@
 
 ##### comments
 
+```
 return client to manipulate & access a running application server (out of process)
 caching is done so can call this as many times as required
 secret is normally configured from grid
 there is normally no need to use this method, use self.getActorClient in stead
+
+```
 
 #### def get2 
 ##### arguments
@@ -27,10 +30,18 @@ there is normally no need to use this method, use self.getActorClient in stead
 
 ##### comments
 
+```
+
+```
+
 #### def getByInstance 
 ##### arguments
 
 - instance
 
 ##### comments
+
+```
+
+```
 

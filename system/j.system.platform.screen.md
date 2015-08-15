@@ -15,6 +15,10 @@
 
 ##### comments
 
+```
+
+```
+
 #### def createSession 
 ##### arguments
 
@@ -24,8 +28,11 @@
 
 ##### comments
 
+```
 @param name is name of session
 @screens is list with nr of screens required in session and their names (is [$screenname,...])
+
+```
 
 #### def createWindow 
 ##### arguments
@@ -35,6 +42,10 @@
 - user
 
 ##### comments
+
+```
+
+```
 
 #### def executeInScreen 
 ##### arguments
@@ -50,6 +61,7 @@
 
 ##### comments
 
+```
 @param sessionname Name of the tmux session
 @type sessionname str
 @param screenname Name of the window in the session
@@ -63,6 +75,8 @@
 @param env environment variables for cmd onlt in new screen see newscr
 @type env dict
 
+```
+
 #### def getPid 
 ##### arguments
 
@@ -72,12 +86,20 @@
 
 ##### comments
 
+```
+
+```
+
 #### def getSessions 
 ##### arguments
 
 - user
 
 ##### comments
+
+```
+
+```
 
 #### def getWindows 
 ##### arguments
@@ -88,6 +110,10 @@
 
 ##### comments
 
+```
+
+```
+
 #### def killSession 
 ##### arguments
 
@@ -96,12 +122,20 @@
 
 ##### comments
 
+```
+
+```
+
 #### def killSessions 
 ##### arguments
 
 - user
 
 ##### comments
+
+```
+
+```
 
 #### def killWindow 
 ##### arguments
@@ -111,6 +145,10 @@
 - user
 
 ##### comments
+
+```
+
+```
 
 #### def logWindow 
 ##### arguments
@@ -122,6 +160,10 @@
 
 ##### comments
 
+```
+
+```
+
 #### def windowExists 
 ##### arguments
 
@@ -130,4 +172,8 @@
 - user
 
 ##### comments
+
+```
+
+```
 

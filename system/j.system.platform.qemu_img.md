@@ -12,9 +12,12 @@
 
 ##### comments
 
+```
 Commit the changes recorded in <fileName> in its base image.
 @param fileName: a disk image filename
 @param diskImageFormat: disk image format
+
+```
 
 #### def convert 
 ##### arguments
@@ -31,6 +34,7 @@ Commit the changes recorded in <fileName> in its base image.
 
 ##### comments
 
+```
 Convert the disk image <fileName> to disk image <outputFileName> using format <outputFormat>.
 It can be optionally encrypted ("-e" option) or compressed ("-c" option).
 Only the format "qcow" supports encryption or compression. The compression is read-only.
@@ -47,6 +51,8 @@ It means that if a compressed sector is rewritten, then it is rewritten as uncom
 @param logger: Callback method to report progress
 @type logger: function
 
+```
+
 #### def create 
 ##### arguments
 
@@ -60,6 +66,7 @@ It means that if a compressed sector is rewritten, then it is rewritten as uncom
 
 ##### comments
 
+```
 Create a new disk image <fileName> of size <size> and format <diskImageFormat>.
 If base_image is specified, then the image will record only the differences from base_image. No size needs to be specified in this case. base_image will never be modified unless you use the "commit" monitor command.
 @param fileName: a disk image filename
@@ -69,6 +76,8 @@ If base_image is specified, then the image will record only the differences from
 @param encryptTargetImage: indicates that the target image must be encrypted (qcow format only)
 @param useCompatibilityLevel6: indicates that the target image must use compatibility level 6 (vmdk format only)
 @param isTargetImageTypeSCSI: indicates that the target image must be of type SCSI (vmdk format only)
+
+```
 
 #### def info 
 ##### arguments
@@ -80,6 +89,7 @@ If base_image is specified, then the image will record only the differences from
 
 ##### comments
 
+```
 Give information about the disk image <fileName>. Use it in particular to know the size reserved on
 disk which can be different from the displayed size. If VM snapshots are stored in the disk image,
 they are displayed too.
@@ -87,4 +97,6 @@ they are displayed too.
 @param fileName: a disk image filename
 @param diskImageFormat: disk image format
 @result: dict with info in KB
+
+```
 

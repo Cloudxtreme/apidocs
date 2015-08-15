@@ -15,8 +15,11 @@ lives at j.base.time
 
 ##### comments
 
+```
 convert string date to epoch
 Date needs to be formatted as 16/06/1988
+
+```
 
 #### def epoch2HRDate 
 ##### arguments
@@ -26,6 +29,10 @@ Date needs to be formatted as 16/06/1988
 
 ##### comments
 
+```
+
+```
+
 #### def epoch2HRDateTime 
 ##### arguments
 
@@ -33,6 +40,10 @@ Date needs to be formatted as 16/06/1988
 - local = True
 
 ##### comments
+
+```
+
+```
 
 #### def epoch2HRTime 
 ##### arguments
@@ -42,12 +53,20 @@ Date needs to be formatted as 16/06/1988
 
 ##### comments
 
+```
+
+```
+
 #### def fiveMinuteIdToEpoch 
 ##### arguments
 
 - fiveMinuteId
 
 ##### comments
+
+```
+
+```
 
 #### def formatTime 
 ##### arguments
@@ -58,6 +77,7 @@ Date needs to be formatted as 16/06/1988
 
 ##### comments
 
+```
 Returns a formatted time string representing the current time
 
 See http://docs.python.org/lib/module-time.html#l2h-2826 for an
@@ -69,6 +89,8 @@ overview of available formatting options.
 @returns: Formatted current time
 @rtype: string
 
+```
+
 #### def get5MinuteId 
 ##### arguments
 
@@ -76,7 +98,10 @@ overview of available formatting options.
 
 ##### comments
 
+```
 is # 5 min from jan 1 2010
+
+```
 
 #### def getDayId 
 ##### arguments
@@ -85,7 +110,10 @@ is # 5 min from jan 1 2010
 
 ##### comments
 
+```
 is # day from jan 1 2010
+
+```
 
 #### def getDeltaTime 
 ##### arguments
@@ -94,10 +122,13 @@ is # day from jan 1 2010
 
 ##### comments
 
+```
 only supported now is -3m, -3d and -3h (ofcourse 3 can be any int)
 and an int which would be just be returned
 means 3 days ago 3 hours ago
 if 0 or '' then is now
+
+```
 
 #### def getEpochAgo 
 ##### arguments
@@ -106,10 +137,13 @@ if 0 or '' then is now
 
 ##### comments
 
+```
 only supported now is -3m, -3d and -3h  (ofcourse 3 can be any int)
 and an int which would be just be returned
 means 3 days ago 3 hours ago
 if 0 or '' then is now
+
+```
 
 #### def getEpochFuture 
 ##### arguments
@@ -118,10 +152,13 @@ if 0 or '' then is now
 
 ##### comments
 
+```
 only supported now is +3d and +3h  (ofcourse 3 can be any int)        
 +3d means 3 days in future
 and an int which would be just be returned
 if txt==None or 0 then will be 1 day ago
+
+```
 
 #### def getHourId 
 ##### arguments
@@ -130,19 +167,29 @@ if txt==None or 0 then will be 1 day ago
 
 ##### comments
 
+```
 is # hour from jan 1 2010
+
+```
 
 #### def getLocalTimeHR 
 ##### arguments
 
 ##### comments
 
+```
 Get the current local date and time in a human-readable form
+
+```
 
 #### def getLocalTimeHRForFilesystem 
 ##### arguments
 
 ##### comments
+
+```
+
+```
 
 #### def getMinuteId 
 ##### arguments
@@ -151,7 +198,10 @@ Get the current local date and time in a human-readable form
 
 ##### comments
 
+```
 is # min from jan 1 2010
+
+```
 
 #### def getSecondsInHR 
 ##### arguments
@@ -160,17 +210,27 @@ is # min from jan 1 2010
 
 ##### comments
 
+```
+
+```
+
 #### def getTimeEpoch 
 ##### arguments
 
 ##### comments
 
+```
 Get epoch timestamp (number of seconds passed since January 1, 1970)
+
+```
 
 #### def getTimeEpochBin 
 ##### arguments
 
 ##### comments
 
+```
 Get epoch timestamp (number of seconds passed since January 1, 1970)
+
+```
 

@@ -13,15 +13,27 @@
 
 ##### comments
 
+```
+
+```
+
 #### def addToStartupManager 
 ##### arguments
 
 ##### comments
 
+```
+
+```
+
 #### def reload 
 ##### arguments
 
 ##### comments
+
+```
+
+```
 
 #### def removeHost 
 ##### arguments
@@ -30,14 +42,20 @@
 
 ##### comments
 
+```
 Removes a dhcp-host entry from dnsmasq.conf file
+
+```
 
 #### def restart 
 ##### arguments
 
 ##### comments
 
+```
 Restarts dnsmasq
+
+```
 
 #### def setConfigPath 
 ##### arguments
@@ -46,4 +64,8 @@ Restarts dnsmasq
 - config_path
 
 ##### comments
+
+```
+
+```
 

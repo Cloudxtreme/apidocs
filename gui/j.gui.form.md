@@ -9,7 +9,10 @@
 
 ##### comments
 
+```
 Create new wizard form object
 
 @return: WizardForm object
+
+```
 

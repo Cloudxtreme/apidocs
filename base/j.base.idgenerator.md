@@ -12,8 +12,11 @@ lives at j.idgenerator
 
 ##### comments
 
+```
 generate unique guid
 how to use:  j.base.idgenerator.generateGUID()
+
+```
 
 #### def generateIncrID 
 ##### arguments
@@ -24,10 +27,13 @@ how to use:  j.base.idgenerator.generateGUID()
 
 ##### comments
 
+```
 type is like agent, job, jobstep
 needs to be a unique type, can only work if application service is known
 how to use:  j.base.idgenerator.generateIncrID("agent")
 @reset if True means restart from 1
+
+```
 
 #### def generateRandomInt 
 ##### arguments
@@ -37,7 +43,10 @@ how to use:  j.base.idgenerator.generateIncrID("agent")
 
 ##### comments
 
+```
 how to use:  j.base.idgenerator.generateRandomInt(0,10)
+
+```
 
 #### def generateXCharID 
 ##### arguments
@@ -45,6 +54,10 @@ how to use:  j.base.idgenerator.generateRandomInt(0,10)
 - x
 
 ##### comments
+
+```
+
+```
 
 #### def getID 
 ##### arguments
@@ -56,6 +69,9 @@ how to use:  j.base.idgenerator.generateRandomInt(0,10)
 
 ##### comments
 
+```
 get a unique id for an object uniquely identified
 remembers previously given id's
+
+```
 

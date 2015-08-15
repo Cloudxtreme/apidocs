@@ -11,6 +11,10 @@
 
 ##### comments
 
+```
+
+```
+
 #### def resize 
 ##### arguments
 
@@ -21,6 +25,10 @@
 
 ##### comments
 
+```
+
+```
+
 #### def resize2subdir1024x 
 ##### arguments
 
@@ -29,7 +37,10 @@
 
 ##### comments
 
+```
 is a shortcut to resize to widht 1024 typical ok for web usage
+
+```
 
 #### def resize2subdir1600x 
 ##### arguments
@@ -39,7 +50,10 @@ is a shortcut to resize to widht 1024 typical ok for web usage
 
 ##### comments
 
+```
 is a shortcut to resize to widht 1600 typical ok for high quality web usage
+
+```
 
 #### def resizeFullDir2subdir1024 
 ##### arguments
@@ -47,4 +61,8 @@ is a shortcut to resize to widht 1600 typical ok for high quality web usage
 - path
 
 ##### comments
+
+```
+
+```
 

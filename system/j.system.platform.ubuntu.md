@@ -13,6 +13,10 @@
 
 ##### comments
 
+```
+
+```
+
 #### def addUser2Group 
 ##### arguments
 
@@ -21,12 +25,20 @@
 
 ##### comments
 
+```
+
+```
+
 #### def changeSourceUri 
 ##### arguments
 
 - newuri
 
 ##### comments
+
+```
+
+```
 
 #### def check 
 ##### arguments
@@ -35,7 +47,10 @@
 
 ##### comments
 
+```
 check if ubuntu or mint (which is based on ubuntu)
+
+```
 
 #### def checkInstall 
 ##### arguments
@@ -45,13 +60,20 @@ check if ubuntu or mint (which is based on ubuntu)
 
 ##### comments
 
+```
 @param packagenames is name or array of names of ubuntu package to install e.g. curl
 @param cmdname is cmd to check e.g. curl
+
+```
 
 #### def checkroot 
 ##### arguments
 
 ##### comments
+
+```
+
+```
 
 #### def createGroup 
 ##### arguments
@@ -59,6 +81,10 @@ check if ubuntu or mint (which is based on ubuntu)
 - groupname
 
 ##### comments
+
+```
+
+```
 
 #### def createUser 
 ##### arguments
@@ -71,6 +97,10 @@ check if ubuntu or mint (which is based on ubuntu)
 
 ##### comments
 
+```
+
+```
+
 #### def downloadInstallDebPkg 
 ##### arguments
 
@@ -80,8 +110,11 @@ check if ubuntu or mint (which is based on ubuntu)
 
 ##### comments
 
+```
 will download to tmp if not there yet
 will then install
+
+```
 
 #### def existsGroup 
 ##### arguments
@@ -90,12 +123,20 @@ will then install
 
 ##### comments
 
+```
+
+```
+
 #### def existsUser 
 ##### arguments
 
 - name
 
 ##### comments
+
+```
+
+```
 
 #### def find1packageInstalled 
 ##### arguments
@@ -104,6 +145,10 @@ will then install
 
 ##### comments
 
+```
+
+```
+
 #### def findPackagesInstalled 
 ##### arguments
 
@@ -111,12 +156,20 @@ will then install
 
 ##### comments
 
+```
+
+```
+
 #### def findPackagesRepo 
 ##### arguments
 
 - packagename
 
 ##### comments
+
+```
+
+```
 
 #### def generateLocalSSHKeyPair 
 ##### arguments
@@ -128,6 +181,10 @@ will then install
 
 ##### comments
 
+```
+
+```
+
 #### def getPackage 
 ##### arguments
 
@@ -135,28 +192,47 @@ will then install
 
 ##### comments
 
+```
+
+```
+
 #### def getPackageNamesInstalled 
 ##### arguments
 
 ##### comments
+
+```
+
+```
 
 #### def getPackageNamesRepo 
 ##### arguments
 
 ##### comments
 
+```
+
+```
+
 #### def getVersion 
 ##### arguments
 
 ##### comments
 
+```
 returns codename,descr,id,release
 known ids" raring, linuxmint
+
+```
 
 #### def initApt 
 ##### arguments
 
 ##### comments
+
+```
+
+```
 
 #### def install 
 ##### arguments
@@ -164,6 +240,10 @@ known ids" raring, linuxmint
 - packagename
 
 ##### comments
+
+```
+
+```
 
 #### def installDebFile 
 ##### arguments
@@ -173,6 +253,10 @@ known ids" raring, linuxmint
 
 ##### comments
 
+```
+
+```
+
 #### def installVersion 
 ##### arguments
 
@@ -181,6 +265,7 @@ known ids" raring, linuxmint
 
 ##### comments
 
+```
 Installs a specific version of an ubuntu package.
 
 @param packageName: name of the package
@@ -188,6 +273,8 @@ Installs a specific version of an ubuntu package.
 
 @param version: version of the package
 @type version: str
+
+```
 
 #### def listFilesPkg 
 ##### arguments
@@ -197,13 +284,20 @@ Installs a specific version of an ubuntu package.
 
 ##### comments
 
+```
 list files of dpkg
 if regex used only output the ones who are matching regex
+
+```
 
 #### def listSources 
 ##### arguments
 
 ##### comments
+
+```
+
+```
 
 #### def remove 
 ##### arguments
@@ -212,12 +306,20 @@ if regex used only output the ones who are matching regex
 
 ##### comments
 
+```
+
+```
+
 #### def restartService 
 ##### arguments
 
 - servicename
 
 ##### comments
+
+```
+
+```
 
 #### def serviceDisableStartAtBoot 
 ##### arguments
@@ -226,12 +328,20 @@ if regex used only output the ones who are matching regex
 
 ##### comments
 
+```
+
+```
+
 #### def serviceEnableStartAtBoot 
 ##### arguments
 
 - servicename
 
 ##### comments
+
+```
+
+```
 
 #### def serviceInstall 
 ##### arguments
@@ -246,12 +356,20 @@ if regex used only output the ones who are matching regex
 
 ##### comments
 
+```
+
+```
+
 #### def serviceUninstall 
 ##### arguments
 
 - servicename
 
 ##### comments
+
+```
+
+```
 
 #### def startService 
 ##### arguments
@@ -260,12 +378,20 @@ if regex used only output the ones who are matching regex
 
 ##### comments
 
+```
+
+```
+
 #### def statusService 
 ##### arguments
 
 - servicename
 
 ##### comments
+
+```
+
+```
 
 #### def stopService 
 ##### arguments
@@ -274,12 +400,20 @@ if regex used only output the ones who are matching regex
 
 ##### comments
 
+```
+
+```
+
 #### def updatePackageMetadata 
 ##### arguments
 
 - force = True
 
 ##### comments
+
+```
+
+```
 
 #### def upgradePackages 
 ##### arguments
@@ -288,8 +422,16 @@ if regex used only output the ones who are matching regex
 
 ##### comments
 
+```
+
+```
+
 #### def whoami 
 ##### arguments
 
 ##### comments
+
+```
+
+```
 

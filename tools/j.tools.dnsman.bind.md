@@ -16,10 +16,18 @@
 
 ##### comments
 
+```
+
+```
+
 #### def cleanCache 
 ##### arguments
 
 ##### comments
+
+```
+
+```
 
 #### def deleteHost 
 ##### arguments
@@ -28,20 +36,36 @@
 
 ##### comments
 
+```
+
+```
+
 #### def restart 
 ##### arguments
 
 ##### comments
+
+```
+
+```
 
 #### def start 
 ##### arguments
 
 ##### comments
 
+```
+
+```
+
 #### def stop 
 ##### arguments
 
 ##### comments
+
+```
+
+```
 
 #### def updateHostIp 
 ##### arguments
@@ -50,4 +74,8 @@
 - ip
 
 ##### comments
+
+```
+
+```
 

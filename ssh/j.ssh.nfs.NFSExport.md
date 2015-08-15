@@ -12,10 +12,18 @@
 
 ##### comments
 
+```
+
+```
+
 #### def removeClient 
 ##### arguments
 
 - name
 
 ##### comments
+
+```
+
+```
 

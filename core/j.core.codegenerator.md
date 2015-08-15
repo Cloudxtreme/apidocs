@@ -28,11 +28,14 @@
 
 ##### comments
 
+```
 param: spec is spec we want to generate from
 param: type JSModel,actormethodgreenlet,enumeration,actorlocal
 param: typecheck (means in generated code the types will be checked)
 param: dieInGenCode  if true means in generated code we will die when something uneforeseen happens
 return: dict of classes if more than 1 otherwise just the class
+
+```
 
 #### def getActorClass 
 ##### arguments
@@ -45,6 +48,10 @@ return: dict of classes if more than 1 otherwise just the class
 
 ##### comments
 
+```
+
+```
+
 #### def getClassActorLocal 
 ##### arguments
 
@@ -54,6 +61,10 @@ return: dict of classes if more than 1 otherwise just the class
 - dieInGenCode = True
 
 ##### comments
+
+```
+
+```
 
 #### def getClassActorRemote 
 ##### arguments
@@ -69,6 +80,10 @@ return: dict of classes if more than 1 otherwise just the class
 
 ##### comments
 
+```
+
+```
+
 #### def getClassEnumeration 
 ##### arguments
 
@@ -79,6 +94,10 @@ return: dict of classes if more than 1 otherwise just the class
 - dieInGenCode = True
 
 ##### comments
+
+```
+
+```
 
 #### def getClassJSModel 
 ##### arguments
@@ -92,6 +111,10 @@ return: dict of classes if more than 1 otherwise just the class
 
 ##### comments
 
+```
+
+```
+
 #### def getClassesActorMethodGreenlet 
 ##### arguments
 
@@ -102,7 +125,10 @@ return: dict of classes if more than 1 otherwise just the class
 
 ##### comments
 
+```
 return: returns dict with key name methodname and then the class (for each method a class is generated)
+
+```
 
 #### def getCodeEveModel 
 ##### arguments
@@ -116,6 +142,10 @@ return: returns dict with key name methodname and then the class (for each metho
 
 ##### comments
 
+```
+
+```
+
 #### def getCodeId 
 ##### arguments
 
@@ -123,6 +153,10 @@ return: returns dict with key name methodname and then the class (for each metho
 - type
 
 ##### comments
+
+```
+
+```
 
 #### def getCodeJSModel 
 ##### arguments
@@ -136,6 +170,10 @@ return: returns dict with key name methodname and then the class (for each metho
 
 ##### comments
 
+```
+
+```
+
 #### def removeFromMem 
 ##### arguments
 
@@ -144,10 +182,18 @@ return: returns dict with key name methodname and then the class (for each metho
 
 ##### comments
 
+```
+
+```
+
 #### def resetMemNonSystem 
 ##### arguments
 
 ##### comments
+
+```
+
+```
 
 #### def setTarget 
 ##### arguments
@@ -156,5 +202,8 @@ return: returns dict with key name methodname and then the class (for each metho
 
 ##### comments
 
+```
 Sets the target to generate for server or client
+
+```
 

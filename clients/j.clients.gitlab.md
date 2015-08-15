@@ -18,6 +18,7 @@ Gitlab client enables administrators and developers leveraging Gitlab services t
 
 ##### comments
 
+```
 example for gitlaburl
     https://despiegk:dddd@git.aydo.com
 can also be without login:passwd
@@ -30,12 +31,18 @@ if gitlaburl is empty then
     login=hrd.get("gitlab.client.login")
     passwd=hrd.get("gitlab.client.passwd")
 
+```
+
 #### def getAccountnameReponameFromUrl 
 ##### arguments
 
 - url
 
 ##### comments
+
+```
+
+```
 
 #### def log 
 ##### arguments
@@ -45,4 +52,8 @@ if gitlaburl is empty then
 - level = 5
 
 ##### comments
+
+```
+
+```
 

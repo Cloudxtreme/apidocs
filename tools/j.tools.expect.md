@@ -11,6 +11,7 @@
 
 ##### comments
 
+```
 Create a new Expect session
 
 @param cmd: Command to execute
@@ -18,4 +19,6 @@ Create a new Expect session
 
 @returns: Expect session
 @rtype jumpscale.cmdline.Expect.Expect
+
+```
 
