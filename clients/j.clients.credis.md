@@ -15,13 +15,6 @@
 - ipaddr
 - port
 - timeout
-
-##### comments
-
-```
-
-```
-
 #### def getRedisQueue 
 ##### arguments
 
@@ -29,10 +22,3 @@
 - port
 - name
 - namespace = 'queues'
-
-##### comments
-
-```
-
-```
-

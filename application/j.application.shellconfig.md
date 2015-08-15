@@ -25,30 +25,10 @@ check if config file exists, if not create and reload
 ##### arguments
 
 - configType
-
-##### comments
-
-```
-
-```
-
 #### def loadConfigFile 
 ##### arguments
 
 - configType
-
-##### comments
-
-```
-
-```
-
 #### def refresh 
 ##### arguments
-
-##### comments
-
-```
-
-```
 

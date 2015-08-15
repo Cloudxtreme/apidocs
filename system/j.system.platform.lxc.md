@@ -9,55 +9,21 @@
 
 - nameFrom
 - NameDest
-
-##### comments
-
-```
-
-```
-
 #### def btrfsSubvolDelete 
 ##### arguments
 
 - name
-
-##### comments
-
-```
-
-```
-
 #### def btrfsSubvolExists 
 ##### arguments
 
 - name
-
-##### comments
-
-```
-
-```
-
 #### def btrfsSubvolList 
 ##### arguments
-
-##### comments
-
-```
-
-```
 
 #### def btrfsSubvolNew 
 ##### arguments
 
 - name
-
-##### comments
-
-```
-
-```
-
 #### def create 
 ##### arguments
 
@@ -79,93 +45,38 @@
 ##### arguments
 
 - name
-
-##### comments
-
-```
-
-```
-
 #### def destroyAll 
 ##### arguments
-
-##### comments
-
-```
-
-```
 
 #### def execute 
 ##### arguments
 
 - command
-
-##### comments
-
-```
-
-```
-
 #### def exportRsync 
 ##### arguments
 
 - name
 - backupname
 - key = 'pub'
-
-##### comments
-
-```
-
-```
-
 #### def exportTgz 
 ##### arguments
 
 - name
 - backupname
-
-##### comments
-
-```
-
-```
-
 #### def getConfig 
 ##### arguments
 
 - name
-
-##### comments
-
-```
-
-```
-
 #### def getIp 
 ##### arguments
 
 - name
 - fail = True
-
-##### comments
-
-```
-
-```
-
 #### def getPid 
 ##### arguments
 
 - name
 - fail = True
-
-##### comments
-
-```
-
-```
-
 #### def getProcessList 
 ##### arguments
 
@@ -200,13 +111,6 @@ last one is sum of mem & cpu
 
 - backupname
 - name
-
-##### comments
-
-```
-
-```
-
 #### def list 
 ##### arguments
 
@@ -226,80 +130,31 @@ names of running & stopped machines
 - pubips = []
 - bridge = 'public'
 - gateway
-
-##### comments
-
-```
-
-```
-
 #### def networkSetPrivateVXLan 
 ##### arguments
 
 - name
 - vxlanid
 - ipaddresses
-
-##### comments
-
-```
-
-```
-
 #### def pushSSHKey 
 ##### arguments
 
 - name
-
-##### comments
-
-```
-
-```
-
 #### def removeRedundantFiles 
 ##### arguments
 
 - name
-
-##### comments
-
-```
-
-```
-
 #### def setHostName 
 ##### arguments
 
 - name
-
-##### comments
-
-```
-
-```
-
 #### def start 
 ##### arguments
 
 - name
 - stdout = True
 - test = True
-
-##### comments
-
-```
-
-```
-
 #### def stop 
 ##### arguments
 
 - name
-
-##### comments
-
-```
-
-```
-

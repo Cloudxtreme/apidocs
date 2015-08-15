@@ -11,80 +11,32 @@
 
 - nameFrom
 - NameDest
-
-##### comments
-
-```
-
-```
-
 #### def btrfsSubvolDelete 
 ##### arguments
 
 - name
-
-##### comments
-
-```
-
-```
-
 #### def btrfsSubvolExists 
 ##### arguments
 
 - name
-
-##### comments
-
-```
-
-```
-
 #### def btrfsSubvolList 
 ##### arguments
-
-##### comments
-
-```
-
-```
 
 #### def btrfsSubvolNew 
 ##### arguments
 
 - name
-
-##### comments
-
-```
-
-```
-
 #### def commit 
 ##### arguments
 
 - name
 - imagename
-
-##### comments
-
-```
-
-```
-
 #### def copy 
 ##### arguments
 
 - name
 - src
 - dest
-
-##### comments
-
-```
-
-```
-
 #### def create 
 ##### arguments
 
@@ -114,21 +66,8 @@
 ##### arguments
 
 - name
-
-##### comments
-
-```
-
-```
-
 #### def destroyall 
 ##### arguments
-
-##### comments
-
-```
-
-```
 
 #### def downloadFile 
 ##### arguments
@@ -163,56 +102,22 @@ execute file in docker
 - name
 - backupname
 - key = 'pub'
-
-##### comments
-
-```
-
-```
-
 #### def exportTgz 
 ##### arguments
 
 - name
 - backupname
-
-##### comments
-
-```
-
-```
-
 #### def getImages 
 ##### arguments
-
-##### comments
-
-```
-
-```
 
 #### def getInfo 
 ##### arguments
 
 - name
-
-##### comments
-
-```
-
-```
-
 #### def getIp 
 ##### arguments
 
 - name
-
-##### comments
-
-```
-
-```
-
 #### def getProcessList 
 ##### arguments
 
@@ -232,25 +137,11 @@ last one is sum of mem & cpu
 
 - name
 - port
-
-##### comments
-
-```
-
-```
-
 #### def getSSH 
 ##### arguments
 
 - name
 - stdout = False
-
-##### comments
-
-```
-
-```
-
 #### def importRsync 
 ##### arguments
 
@@ -271,35 +162,14 @@ last one is sum of mem & cpu
 
 - backupname
 - name
-
-##### comments
-
-```
-
-```
-
 #### def inspect 
 ##### arguments
 
 - name
-
-##### comments
-
-```
-
-```
-
 #### def installJumpscale 
 ##### arguments
 
 - name
-
-##### comments
-
-```
-
-```
-
 #### def list 
 ##### arguments
 
@@ -324,91 +194,35 @@ return detailed info
 ##### arguments
 
 - imagename
-
-##### comments
-
-```
-
-```
-
 #### def pushSSHKey 
 ##### arguments
 
 - name
-
-##### comments
-
-```
-
-```
-
 #### def removeImages 
 ##### arguments
 
 - tag = '<none>:<none>'
-
-##### comments
-
-```
-
-```
-
 #### def removeRedundantFiles 
 ##### arguments
 
 - name
-
-##### comments
-
-```
-
-```
-
 #### def restart 
 ##### arguments
 
 - name
-
-##### comments
-
-```
-
-```
-
 #### def run 
 ##### arguments
 
 - name
 - cmd
-
-##### comments
-
-```
-
-```
-
 #### def setHostName 
 ##### arguments
 
 - name
-
-##### comments
-
-```
-
-```
-
 #### def stop 
 ##### arguments
 
 - name
-
-##### comments
-
-```
-
-```
-
 #### def uploadFile 
 ##### arguments
 

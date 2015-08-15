@@ -28,13 +28,6 @@ destroy all objects & indexes with mentioned names
 
 - obj
 - data
-
-##### comments
-
-```
-
-```
-
 #### def get 
 ##### arguments
 
@@ -45,13 +38,6 @@ destroy all objects & indexes with mentioned names
 - db
 - index = False
 - indexer
-
-##### comments
-
-```
-
-```
-
 #### def getNoDB 
 ##### arguments
 
@@ -59,13 +45,6 @@ destroy all objects & indexes with mentioned names
 - actorname
 - modelname
 - modelClass
-
-##### comments
-
-```
-
-```
-
 #### def getRemoteOsisDB 
 ##### arguments
 
@@ -73,13 +52,6 @@ destroy all objects & indexes with mentioned names
 - actorname
 - modelname
 - modelClass
-
-##### comments
-
-```
-
-```
-
 #### def inputNormalizeList 
 ##### arguments
 

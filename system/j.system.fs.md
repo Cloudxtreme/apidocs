@@ -67,13 +67,6 @@ check if path is dir or link to a dir
 ##### arguments
 
 - path
-
-##### comments
-
-```
-
-```
-
 #### def chmod 
 ##### arguments
 
@@ -92,13 +85,6 @@ check if path is dir or link to a dir
 
 - path
 - user
-
-##### comments
-
-```
-
-```
-
 #### def cleanupString 
 ##### arguments
 
@@ -117,47 +103,19 @@ Remove all non-numeric or alphanumeric characters
 ##### arguments
 
 - array
-
-##### comments
-
-```
-
-```
-
 #### def constructFilePathFromArray 
 ##### arguments
 
 - array
-
-##### comments
-
-```
-
-```
-
 #### def convertFileDirnamesSpaceToUnderscore 
 ##### arguments
 
 - rootdir
-
-##### comments
-
-```
-
-```
-
 #### def convertFileDirnamesUnicodeToAscii 
 ##### arguments
 
 - rootdir
 - spacesToUnderscore = False
-
-##### comments
-
-```
-
-```
-
 #### def copyDirTree 
 ##### arguments
 
@@ -243,13 +201,6 @@ Create an empty file
 
 - path1
 - path2
-
-##### comments
-
-```
-
-```
-
 #### def exists 
 ##### arguments
 
@@ -392,24 +343,10 @@ Return a directory name from pathname path.
 ##### arguments
 
 - path
-
-##### comments
-
-```
-
-```
-
 #### def getFolderMD5sum 
 ##### arguments
 
 - folder
-
-##### comments
-
-```
-
-```
-
 #### def getParent 
 ##### arguments
 
@@ -512,25 +449,11 @@ Search for lines matching a given regex in all files matching a regex
 
 - sourceFile
 - destFile
-
-##### comments
-
-```
-
-```
-
 #### def gzip 
 ##### arguments
 
 - sourceFile
 - destFile
-
-##### comments
-
-```
-
-```
-
 #### def hardlinkFile 
 ##### arguments
 
@@ -569,13 +492,6 @@ are
 
 - filename
 - checksize = 4096
-
-##### comments
-
-```
-
-```
-
 #### def isDir 
 ##### arguments
 
@@ -610,13 +526,6 @@ Check if the specified directory path is empty
 ##### arguments
 
 - path
-
-##### comments
-
-```
-
-```
-
 #### def isFile 
 ##### arguments
 
@@ -833,13 +742,6 @@ to unit-test.
 - msg
 - level = 5
 - category = ''
-
-##### comments
-
-```
-
-```
-
 #### def md5sum 
 ##### arguments
 
@@ -941,13 +843,6 @@ goal is to get a equal representation in / & \ in relation to os.sep
 ##### arguments
 
 - path
-
-##### comments
-
-```
-
-```
-
 #### def pathNormalize 
 ##### arguments
 
@@ -1103,13 +998,6 @@ Recursively delete a directory tree.
 
 - path
 - followSymlinks = True
-
-##### comments
-
-```
-
-```
-
 #### def removeLinks 
 ##### arguments
 

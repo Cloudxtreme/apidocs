@@ -37,23 +37,9 @@ if gitlaburl is empty then
 ##### arguments
 
 - url
-
-##### comments
-
-```
-
-```
-
 #### def log 
 ##### arguments
 
 - msg
 - category = ''
 - level = 5
-
-##### comments
-
-```
-
-```
-

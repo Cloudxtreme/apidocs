@@ -9,21 +9,7 @@
 
 - host = 'localhost'
 - port = 27017
-
-##### comments
-
-```
-
-```
-
 #### def getByInstance 
 ##### arguments
 
 - instancename
-
-##### comments
-
-```
-
-```
-

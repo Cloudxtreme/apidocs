@@ -9,22 +9,8 @@
 
 - key
 - value
-
-##### comments
-
-```
-
-```
-
 #### def set 
 ##### arguments
 
 - key
 - value
-
-##### comments
-
-```
-
-```
-

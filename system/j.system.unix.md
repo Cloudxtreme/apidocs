@@ -75,13 +75,6 @@ Note: you should be root to run this python command.
 
 - username
 - groupname
-
-##### comments
-
-```
-
-```
-
 #### def checkApplicationInstalled 
 ##### arguments
 

@@ -8,63 +8,22 @@
 ##### arguments
 
 - text
-
-##### comments
-
-```
-
-```
-
 #### def getHtmllibDir 
 ##### arguments
-
-##### comments
-
-```
-
-```
 
 #### def getPageModifierBootstrapForm 
 ##### arguments
 
 - page
-
-##### comments
-
-```
-
-```
-
 #### def getPageModifierGalleria 
 ##### arguments
 
 - page
-
-##### comments
-
-```
-
-```
-
 #### def getPageModifierGridDataTables 
 ##### arguments
 
 - page
-
-##### comments
-
-```
-
-```
-
 #### def unescape 
 ##### arguments
 
 - text
-
-##### comments
-
-```
-
-```
-

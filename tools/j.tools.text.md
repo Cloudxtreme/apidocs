@@ -42,26 +42,12 @@
 - out
 - entity
 - cmd
-
-##### comments
-
-```
-
-```
-
 #### def addTimeHR 
 ##### arguments
 
 - line
 - epoch
 - start = 50
-
-##### comments
-
-```
-
-```
-
 #### def addVal 
 ##### arguments
 
@@ -69,13 +55,6 @@
 - name
 - val
 - addtimehr = False
-
-##### comments
-
-```
-
-```
-
 #### def ask 
 ##### arguments
 
@@ -145,13 +124,6 @@ look for \{\{\}\} in code and evaluate as python result is converted back to str
 ##### arguments
 
 - text
-
-##### comments
-
-```
-
-```
-
 #### def getDict 
 ##### arguments
 
@@ -171,24 +143,10 @@ keys are always treated as string
 ##### arguments
 
 - text
-
-##### comments
-
-```
-
-```
-
 #### def getInt 
 ##### arguments
 
 - text
-
-##### comments
-
-```
-
-```
-
 #### def getList 
 ##### arguments
 
@@ -238,35 +196,14 @@ all spaces & commas & : inside ' '  are converted
 ##### arguments
 
 - text
-
-##### comments
-
-```
-
-```
-
 #### def isInt 
 ##### arguments
 
 - text
-
-##### comments
-
-```
-
-```
-
 #### def isNumeric 
 ##### arguments
 
 - txt
-
-##### comments
-
-```
-
-```
-
 #### def lstrip 
 ##### arguments
 
@@ -319,13 +256,6 @@ do reverse of:
 
 - prefix
 - txt
-
-##### comments
-
-```
-
-```
-
 #### def prefix_remove 
 ##### arguments
 
@@ -374,25 +304,11 @@ try to convert a python object to string representation works for None, bool, in
 ##### arguments
 
 - obj
-
-##### comments
-
-```
-
-```
-
 #### def replaceQuotes 
 ##### arguments
 
 - value
 - replacewith
-
-##### comments
-
-```
-
-```
-
 #### def str2var 
 ##### arguments
 
@@ -411,13 +327,6 @@ or convert 1 string to python objects
 
 - value
 - maxlen = 0
-
-##### comments
-
-```
-
-```
-
 #### def toSafePath 
 ##### arguments
 
@@ -436,22 +345,8 @@ process string so it can be used in a path on windows or linux
 
 - value
 - codec = 'utf-8'
-
-##### comments
-
-```
-
-```
-
 #### def toUnicode 
 ##### arguments
 
 - value
 - codec = 'utf-8'
-
-##### comments
-
-```
-
-```
-

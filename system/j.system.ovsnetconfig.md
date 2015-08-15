@@ -52,13 +52,6 @@ Creates a proper vxlan interface and bridge based on a backplane
 
 - networkid
 - backend
-
-##### comments
-
-```
-
-```
-
 #### def getConfigFromSystem 
 ##### arguments
 
@@ -75,13 +68,6 @@ walk over system and get configuration, result is dict
 ##### arguments
 
 - interfaceName
-
-##### comments
-
-```
-
-```
-
 #### def initNetworkInterfaces 
 ##### arguments
 
@@ -126,30 +112,11 @@ Reasonable defaults  : mode=balance-tcp, lacp=active,fast, bondname=brname-Bond,
 - parentbridge
 - vlanid
 - mtu
-
-##### comments
-
-```
-
-```
-
 #### def printConfigFromSystem 
 ##### arguments
 
-##### comments
-
-```
-
-```
-
 #### def removeOldConfig 
 ##### arguments
-
-##### comments
-
-```
-
-```
 
 #### def setBackplane 
 ##### arguments

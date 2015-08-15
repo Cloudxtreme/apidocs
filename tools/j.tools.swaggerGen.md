@@ -15,65 +15,23 @@
 - baseURL
 - serverOuput
 - clientOutput
-
-##### comments
-
-```
-
-```
-
 #### def generateActors 
 ##### arguments
 
 - destpath
-
-##### comments
-
-```
-
-```
-
 #### def generateClient 
 ##### arguments
 
 - outputPath
-
-##### comments
-
-```
-
-```
-
 #### def generateServer 
 ##### arguments
 
 - outputPath
-
-##### comments
-
-```
-
-```
-
 #### def loadSpecFromFile 
 ##### arguments
 
 - path
-
-##### comments
-
-```
-
-```
-
 #### def loadSpecFromStr 
 ##### arguments
 
 - spec
-
-##### comments
-
-```
-
-```
-

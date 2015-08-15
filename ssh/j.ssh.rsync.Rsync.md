@@ -22,32 +22,13 @@ rs.commit()
 #### def commit 
 ##### arguments
 
-##### comments
-
-```
-
-```
-
 #### def erase 
 ##### arguments
-
-##### comments
-
-```
-
-```
 
 #### def removeModule 
 ##### arguments
 
 - name
-
-##### comments
-
-```
-
-```
-
 #### def removeParams 
 ##### arguments
 

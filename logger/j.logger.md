@@ -17,40 +17,15 @@
 #### def connectRedis 
 ##### arguments
 
-##### comments
-
-```
-
-```
-
 #### def disable 
 ##### arguments
-
-##### comments
-
-```
-
-```
 
 #### def getLogObjectFromDict 
 ##### arguments
 
 - ddict
-
-##### comments
-
-```
-
-```
-
 #### def init 
 ##### arguments
-
-##### comments
-
-```
-
-```
 
 #### def log 
 ##### arguments
@@ -86,18 +61,6 @@ Decorator to disable logging for a specific method (probably not thread safe)
 #### def nostdout 
 ##### arguments
 
-##### comments
-
-```
-
-```
-
 #### def reset 
 ##### arguments
-
-##### comments
-
-```
-
-```
 

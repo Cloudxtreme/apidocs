@@ -15,25 +15,11 @@
 - name = ''
 - path = ''
 - limit
-
-##### comments
-
-```
-
-```
-
 #### def findProducer 
 ##### arguments
 
 - producercategory
 - instancename
-
-##### comments
-
-```
-
-```
-
 #### def findServices 
 ##### arguments
 
@@ -56,13 +42,6 @@ FindServices looks for actual services that are created
 - domain = ''
 - name = ''
 - parent
-
-##### comments
-
-```
-
-```
-
 #### def get 
 ##### arguments
 
@@ -83,20 +62,8 @@ throw error if service is not found or if more than one service is found
 #### def getActionsBaseClass 
 ##### arguments
 
-##### comments
-
-```
-
-```
-
 #### def getDomains 
 ##### arguments
-
-##### comments
-
-```
-
-```
 
 #### def getFromStr 
 ##### arguments
@@ -118,13 +85,6 @@ return a service instance from its representation 'domain      :name       :inst
 - name
 - instance
 - parent
-
-##### comments
-
-```
-
-```
-
 #### def loadService 
 ##### arguments
 
@@ -175,13 +135,6 @@ will create a new service
 - name = ''
 - instance = ''
 - parent
-
-##### comments
-
-```
-
-```
-
 #### def updateTemplatesRepo 
 ##### arguments
 

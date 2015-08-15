@@ -13,30 +13,11 @@
 #### def getLocalIPAccessibleByGridMaster 
 ##### arguments
 
-##### comments
-
-```
-
-```
-
 #### def init 
 ##### arguments
 
 - description = ''
 - instance = 1
-
-##### comments
-
-```
-
-```
-
 #### def isGridMasterLocal 
 ##### arguments
-
-##### comments
-
-```
-
-```
 

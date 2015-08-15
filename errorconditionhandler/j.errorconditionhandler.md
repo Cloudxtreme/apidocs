@@ -15,25 +15,11 @@
 ##### arguments
 
 - eco
-
-##### comments
-
-```
-
-```
-
 #### def escalateBugToDeveloper 
 ##### arguments
 
 - errorConditionObject
 - tb
-
-##### comments
-
-```
-
-```
-
 #### def excepthook 
 ##### arguments
 
@@ -75,47 +61,19 @@ returns only ErrorConditionObject which should be used in jumpscale to define an
 ##### arguments
 
 - tb
-
-##### comments
-
-```
-
-```
-
 #### def getFrames 
 ##### arguments
 
 - tb
-
-##### comments
-
-```
-
-```
-
 #### def getLevelName 
 ##### arguments
 
 - level
-
-##### comments
-
-```
-
-```
-
 #### def halt 
 ##### arguments
 
 - msg
 - eco
-
-##### comments
-
-```
-
-```
-
 #### def lastActionClear 
 ##### arguments
 
@@ -265,13 +223,6 @@ except Exception,e:
 - die = True
 - backtrace = ''
 - tags = ''
-
-##### comments
-
-```
-
-```
-
 #### def raiseMonitoringError 
 ##### arguments
 
@@ -280,13 +231,6 @@ except Exception,e:
 - msgpub = ''
 - die = False
 - tags = ''
-
-##### comments
-
-```
-
-```
-
 #### def raiseOperationalCritical 
 ##### arguments
 
@@ -316,13 +260,6 @@ use this to raise an operational issue about the system
 - msgpub = ''
 - tags = ''
 - eco
-
-##### comments
-
-```
-
-```
-
 #### def raisePerformanceError 
 ##### arguments
 
@@ -330,25 +267,11 @@ use this to raise an operational issue about the system
 - category = ''
 - msgpub = ''
 - tags = ''
-
-##### comments
-
-```
-
-```
-
 #### def raiseRuntimeErrorWithEco 
 ##### arguments
 
 - eco
 - tostdout = False
-
-##### comments
-
-```
-
-```
-
 #### def raiseWarning 
 ##### arguments
 
@@ -379,30 +302,10 @@ except Exception,e:
 ##### arguments
 
 - eco
-
-##### comments
-
-```
-
-```
-
 #### def setExceptHook 
 ##### arguments
-
-##### comments
-
-```
-
-```
 
 #### def toolStripNonAsciFromText 
 ##### arguments
 
 - text
-
-##### comments
-
-```
-
-```
-

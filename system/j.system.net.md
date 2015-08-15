@@ -8,24 +8,10 @@
 ##### arguments
 
 - bridgename
-
-##### comments
-
-```
-
-```
-
 #### def checkIpAddressIsLocal 
 ##### arguments
 
 - ipaddr
-
-##### comments
-
-```
-
-```
-
 #### def checkListenPort 
 ##### arguments
 
@@ -97,20 +83,8 @@ or if the target file checksum doesn't match the expected checksum.
 #### def enableProxy 
 ##### arguments
 
-##### comments
-
-```
-
-```
-
 #### def getDefaultIPConfig 
 ##### arguments
-
-##### comments
-
-```
-
-```
 
 #### def getDefaultRouter 
 ##### arguments
@@ -137,13 +111,6 @@ Retrieve the dns domain name
 ##### arguments
 
 - dnsHostname
-
-##### comments
-
-```
-
-```
-
 #### def getHostNamesForIP 
 ##### arguments
 
@@ -186,13 +153,6 @@ Return a list of ip addresses and netmasks assigned to this interface
 ##### arguments
 
 - up = False
-
-##### comments
-
-```
-
-```
-
 #### def getMacAddress 
 ##### arguments
 
@@ -341,24 +301,10 @@ Check if ip is in the hostsfile
 ##### arguments
 
 - ipaddress
-
-##### comments
-
-```
-
-```
-
 #### def isNicConnected 
 ##### arguments
 
 - interface
-
-##### comments
-
-```
-
-```
-
 #### def pingMachine 
 ##### arguments
 
@@ -383,13 +329,6 @@ Ping a machine to check if it's up/running and accessible
 ##### arguments
 
 - macaddress
-
-##### comments
-
-```
-
-```
-
 #### def removeFromHostsFile 
 ##### arguments
 
@@ -409,24 +348,10 @@ Update a hostfile, delete ip from hostsfile
 ##### arguments
 
 - network = '192.168.1'
-
-##### comments
-
-```
-
-```
-
 #### def resetDefaultGateway 
 ##### arguments
 
 - gw
-
-##### comments
-
-```
-
-```
-
 #### def setBasicNetConfiguration 
 ##### arguments
 
@@ -480,13 +405,6 @@ this will bring all bridges down
 - ipaddr
 - port
 - timeout
-
-##### comments
-
-```
-
-```
-
 #### def updateHostsFile 
 ##### arguments
 

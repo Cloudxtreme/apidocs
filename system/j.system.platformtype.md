@@ -12,13 +12,6 @@
 
 - name
 - parent
-
-##### comments
-
-```
-
-```
-
 #### def checkMatch 
 ##### arguments
 
@@ -36,64 +29,24 @@ if any of the items e.g. darwin is in getMyRelevantPlatforms then return True
 ##### arguments
 
 - platform
-
-##### comments
-
-```
-
-```
-
 #### def getChildren 
 ##### arguments
 
 - name
-
-##### comments
-
-```
-
-```
-
 #### def getMyRelevantPlatforms 
 ##### arguments
-
-##### comments
-
-```
-
-```
 
 #### def getParents 
 ##### arguments
 
 - name
-
-##### comments
-
-```
-
-```
-
 #### def getPlatforms 
 ##### arguments
-
-##### comments
-
-```
-
-```
 
 #### def has_parent 
 ##### arguments
 
 - name
-
-##### comments
-
-```
-
-```
-
 #### def isGeneric 
 ##### arguments
 

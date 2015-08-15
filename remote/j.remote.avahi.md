@@ -7,36 +7,16 @@
 #### def getServices 
 ##### arguments
 
-##### comments
-
-```
-
-```
-
 #### def registerService 
 ##### arguments
 
 - servicename
 - port
 - type = 'tcp'
-
-##### comments
-
-```
-
-```
-
 #### def removeService 
 ##### arguments
 
 - servicename
-
-##### comments
-
-```
-
-```
-
 #### def resolveAddress 
 ##### arguments
 

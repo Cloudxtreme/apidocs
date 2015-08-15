@@ -10,13 +10,6 @@
 - connectionstring = ''
 - sqlitepath = ''
 - tomlpath = '../data'
-
-##### comments
-
-```
-
-```
-
 #### def getBaseClass 
 ##### arguments
 
@@ -35,13 +28,6 @@ https://github.com/Jumpscale/jumpscale_core7/wiki/SQLAlchemy
 - value
 - oldvalue
 - initiator
-
-##### comments
-
-```
-
-```
-
 #### def validate_lower_strip 
 ##### arguments
 
@@ -49,13 +35,6 @@ https://github.com/Jumpscale/jumpscale_core7/wiki/SQLAlchemy
 - value
 - oldvalue
 - initiator
-
-##### comments
-
-```
-
-```
-
 #### def validate_tel 
 ##### arguments
 
@@ -63,10 +42,3 @@ https://github.com/Jumpscale/jumpscale_core7/wiki/SQLAlchemy
 - value
 - oldvalue
 - initiator
-
-##### comments
-
-```
-
-```
-

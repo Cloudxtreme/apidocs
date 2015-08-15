@@ -15,13 +15,6 @@
 - passwd = 'passwd'
 - ssl = False
 - roles = []
-
-##### comments
-
-```
-
-```
-
 #### def getHAClient 
 ##### arguments
 
@@ -35,13 +28,6 @@
 - id
 - timeout = 60
 - reconnect = False
-
-##### comments
-
-```
-
-```
-
 #### def getServer 
 ##### arguments
 

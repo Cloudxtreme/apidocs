@@ -7,9 +7,3 @@
 #### def getGeventLoopClass 
 ##### arguments
 
-##### comments
-
-```
-
-```
-

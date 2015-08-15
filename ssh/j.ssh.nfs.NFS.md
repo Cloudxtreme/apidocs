@@ -8,39 +8,13 @@
 ##### arguments
 
 - path
-
-##### comments
-
-```
-
-```
-
 #### def commit 
 ##### arguments
-
-##### comments
-
-```
-
-```
 
 #### def delete 
 ##### arguments
 
 - path
-
-##### comments
-
-```
-
-```
-
 #### def erase 
 ##### arguments
-
-##### comments
-
-```
-
-```
 

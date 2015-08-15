@@ -19,21 +19,7 @@
 - timeout
 - use_udp = False
 - udp_port = 4444
-
-##### comments
-
-```
-
-```
-
 #### def getByInstance 
 ##### arguments
 
 - instancename
-
-##### comments
-
-```
-
-```
-

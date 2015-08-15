@@ -8,13 +8,6 @@
 ##### arguments
 
 - path
-
-##### comments
-
-```
-
-```
-
 #### def getGroup 
 ##### arguments
 

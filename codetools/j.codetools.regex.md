@@ -39,13 +39,6 @@ example pattern: '^class ' looks for class at beginning of line with space behin
 - linesIncludePatterns = ['.*']
 - linesExcludePatterns = []
 - includeMatchingLine = True
-
-##### comments
-
-```
-
-```
-
 #### def findAll 
 ##### arguments
 
@@ -84,13 +77,6 @@ only find 1 block ideal to find e.g. body & header of html doc
 - tofind
 - path
 - dieIfNotFound = True
-
-##### comments
-
-```
-
-```
-
 #### def findLine 
 ##### arguments
 
@@ -191,13 +177,6 @@ search if there is at least 1 match
 
 - pattern
 - text
-
-##### comments
-
-```
-
-```
-
 #### def matchMultiple 
 ##### arguments
 

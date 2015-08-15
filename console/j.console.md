@@ -19,13 +19,6 @@ self.reformat=False #if True will make sure message fits nicely on screen
 - header = True
 - descr = ''
 - returncol
-
-##### comments
-
-```
-
-```
-
 #### def askChoice 
 ##### arguments
 
@@ -50,13 +43,6 @@ self.reformat=False #if True will make sure message fits nicely on screen
 - choicearray
 - descr
 - sort = True
-
-##### comments
-
-```
-
-```
-
 #### def askInteger 
 ##### arguments
 
@@ -232,13 +218,6 @@ Display some text to the end-user, use this method instead of print
 - dictionary
 - withStar = False
 - indent
-
-##### comments
-
-```
-
-```
-
 #### def echoListItem 
 ##### arguments
 
@@ -303,12 +282,6 @@ print a message which is formatted with a prefix
 #### def enableOutput 
 ##### arguments
 
-##### comments
-
-```
-
-```
-
 #### def formatMessage 
 ##### arguments
 
@@ -332,20 +305,8 @@ Reformat the message to display to the user and calculate length
 #### def hideOutput 
 ##### arguments
 
-##### comments
-
-```
-
-```
-
 #### def printOutput 
 ##### arguments
-
-##### comments
-
-```
-
-```
 
 #### def rawInputPerChar 
 ##### arguments
@@ -365,21 +326,8 @@ when typing, char per char will be returned
 
 - array
 - header = True
-
-##### comments
-
-```
-
-```
-
 #### def showOutput 
 ##### arguments
-
-##### comments
-
-```
-
-```
 
 #### def transformDictToMessage 
 ##### arguments
@@ -387,10 +335,3 @@ when typing, char per char will be returned
 - dictionary
 - withStar = False
 - indent
-
-##### comments
-
-```
-
-```
-

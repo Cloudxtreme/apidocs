@@ -18,24 +18,10 @@
 
 - path
 - recursive = True
-
-##### comments
-
-```
-
-```
-
 #### def add2treeFromContent 
 ##### arguments
 
 - content
-
-##### comments
-
-```
-
-```
-
 #### def applyOnContent 
 ##### arguments
 
@@ -99,59 +85,24 @@ if params not found will be added to existing hrd
 ##### arguments
 
 - key
-
-##### comments
-
-```
-
-```
-
 #### def exists 
 ##### arguments
 
 - key
-
-##### comments
-
-```
-
-```
-
 #### def get 
 ##### arguments
 
 - key
 - default
-
-##### comments
-
-```
-
-```
-
 #### def getBool 
 ##### arguments
 
 - key
 - default
-
-##### comments
-
-```
-
-```
-
 #### def getDict 
 ##### arguments
 
 - key
-
-##### comments
-
-```
-
-```
-
 #### def getDictFromPrefix 
 ##### arguments
 
@@ -168,57 +119,23 @@ returns values from prefix return as list
 ##### arguments
 
 - key
-
-##### comments
-
-```
-
-```
-
 #### def getHRDAsDict 
 ##### arguments
-
-##### comments
-
-```
-
-```
 
 #### def getHrd 
 ##### arguments
 
 - key
-
-##### comments
-
-```
-
-```
-
 #### def getInt 
 ##### arguments
 
 - key
 - default
-
-##### comments
-
-```
-
-```
-
 #### def getList 
 ##### arguments
 
 - key
 - default
-
-##### comments
-
-```
-
-```
-
 #### def getListFromPrefix 
 ##### arguments
 
@@ -258,36 +175,15 @@ each value represents a dict
 
 - key
 - default
-
-##### comments
-
-```
-
-```
-
 #### def listAdd 
 ##### arguments
 
 - key
 - item
-
-##### comments
-
-```
-
-```
-
 #### def pop 
 ##### arguments
 
 - key
-
-##### comments
-
-```
-
-```
-
 #### def prefix 
 ##### arguments
 
@@ -305,21 +201,8 @@ each value represents a dict
 ##### arguments
 
 - key
-
-##### comments
-
-```
-
-```
-
 #### def processall 
 ##### arguments
-
-##### comments
-
-```
-
-```
 
 #### def set 
 ##### arguments
@@ -327,10 +210,3 @@ each value represents a dict
 - key
 - val
 - persistent = True
-
-##### comments
-
-```
-
-```
-

@@ -9,27 +9,9 @@ regexexamples which find lines
 #### def findClasslines 
 ##### arguments
 
-##### comments
-
-```
-
-```
-
 #### def findCommentlines 
 ##### arguments
 
-##### comments
-
-```
-
-```
-
 #### def findDeflines 
 ##### arguments
-
-##### comments
-
-```
-
-```
 

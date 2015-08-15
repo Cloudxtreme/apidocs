@@ -24,13 +24,6 @@ Optionally secures it with a passphrase.
 ##### arguments
 
 - common_name
-
-##### comments
-
-```
-
-```
-
 #### def createSignedCert 
 ##### arguments
 
@@ -65,10 +58,3 @@ self-signed cert and keypair and write them into that directory.
 - req
 - ca_cert
 - ca_key
-
-##### comments
-
-```
-
-```
-

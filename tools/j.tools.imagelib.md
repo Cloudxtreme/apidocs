@@ -8,13 +8,6 @@
 ##### arguments
 
 - path
-
-##### comments
-
-```
-
-```
-
 #### def resize 
 ##### arguments
 
@@ -22,13 +15,6 @@
 - pathnew
 - width = 1024
 - overwrite = True
-
-##### comments
-
-```
-
-```
-
 #### def resize2subdir1024x 
 ##### arguments
 
@@ -59,10 +45,3 @@ is a shortcut to resize to widht 1600 typical ok for high quality web usage
 ##### arguments
 
 - path
-
-##### comments
-
-```
-
-```
-

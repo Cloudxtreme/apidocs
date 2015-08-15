@@ -20,13 +20,6 @@ Clean the list of running actions
 ##### arguments
 
 - action
-
-##### comments
-
-```
-
-```
-
 #### def hasRunningActions 
 ##### arguments
 
@@ -44,24 +37,10 @@ Check whether actions are currently running
 ##### arguments
 
 - category
-
-##### comments
-
-```
-
-```
-
 #### def setActionNamesDone 
 ##### arguments
 
 - action
-
-##### comments
-
-```
-
-```
-
 #### def start 
 ##### arguments
 

@@ -28,35 +28,14 @@
 ##### arguments
 
 - ddict = \{\}
-
-##### comments
-
-```
-
-```
-
 #### def getHRDFromOsisObject 
 ##### arguments
 
 - osisobj
 - prefixRootObjectType = True
-
-##### comments
-
-```
-
-```
-
 #### def log 
 ##### arguments
 
 - msg
 - category = ''
 - level = 5
-
-##### comments
-
-```
-
-```
-

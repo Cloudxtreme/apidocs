@@ -8,74 +8,27 @@
 ##### arguments
 
 - appname
-
-##### comments
-
-```
-
-```
-
 #### def appGetPids 
 ##### arguments
 
 - appname
-
-##### comments
-
-```
-
-```
-
 #### def appGetPidsActive 
 ##### arguments
 
 - appname
-
-##### comments
-
-```
-
-```
-
 #### def appNrInstances 
 ##### arguments
 
 - appname
-
-##### comments
-
-```
-
-```
-
 #### def appNrInstancesActive 
 ##### arguments
 
 - appname
-
-##### comments
-
-```
-
-```
-
 #### def appsGet 
 ##### arguments
 
-##### comments
-
-```
-
-```
-
 #### def appsGetNames 
 ##### arguments
-
-##### comments
-
-```
-
-```
 
 #### def checkProcessForPid 
 ##### arguments
@@ -225,13 +178,6 @@ Executes a command
 ##### arguments
 
 - cmd
-
-##### comments
-
-```
-
-```
-
 #### def executeScript 
 ##### arguments
 
@@ -268,43 +214,17 @@ if exitcode is not zero then the executed command returned with errors
 #### def getDefunctProcesses 
 ##### arguments
 
-##### comments
-
-```
-
-```
-
 #### def getEnviron 
 ##### arguments
 
 - pid
-
-##### comments
-
-```
-
-```
-
 #### def getMyProcessObject 
 ##### arguments
-
-##### comments
-
-```
-
-```
 
 #### def getPidsByFilter 
 ##### arguments
 
 - filterstr
-
-##### comments
-
-```
-
-```
-
 #### def getPidsByPort 
 ##### arguments
 
@@ -338,43 +258,16 @@ Returns the full name of the process that is listening on the given port
 ##### arguments
 
 - pid
-
-##### comments
-
-```
-
-```
-
 #### def getProcessPid 
 ##### arguments
 
 - process
-
-##### comments
-
-```
-
-```
-
 #### def getProcessPidsFromUser 
 ##### arguments
 
 - user
-
-##### comments
-
-```
-
-```
-
 #### def getSimularProcesses 
 ##### arguments
-
-##### comments
-
-```
-
-```
 
 #### def isPidAlive 
 ##### arguments
@@ -411,35 +304,14 @@ Kill a process with a signal
 
 - name
 - sig
-
-##### comments
-
-```
-
-```
-
 #### def killProcessByPort 
 ##### arguments
 
 - port
-
-##### comments
-
-```
-
-```
-
 #### def killUserProcesses 
 ##### arguments
 
 - user
-
-##### comments
-
-```
-
-```
-
 #### def run 
 ##### arguments
 

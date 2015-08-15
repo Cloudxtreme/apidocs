@@ -20,12 +20,6 @@ Get a filtered list of free regions, excluding the gaps due to partition alignme
 #### def mirrorsFind 
 ##### arguments
 
-##### comments
-
-```
-
-```
-
 #### def partitionAdd 
 ##### arguments
 
@@ -35,13 +29,6 @@ Get a filtered list of free regions, excluding the gaps due to partition alignme
 - length
 - fs_type
 - type
-
-##### comments
-
-```
-
-```
-
 #### def partitionsFind 
 ##### arguments
 
@@ -89,18 +76,6 @@ find disks which are mounted
 #### def partitionsMount_Ext4Data 
 ##### arguments
 
-##### comments
-
-```
-
-```
-
 #### def partitionsUnmount_Ext4Data 
 ##### arguments
-
-##### comments
-
-```
-
-```
 

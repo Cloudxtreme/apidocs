@@ -8,13 +8,6 @@
 ##### arguments
 
 - device
-
-##### comments
-
-```
-
-```
-
 #### def ipGet 
 ##### arguments
 
@@ -33,13 +26,6 @@ Result (ip, netmask, gateway)
 
 - device
 - commit = False
-
-##### comments
-
-```
-
-```
-
 #### def ipSet 
 ##### arguments
 
@@ -60,32 +46,12 @@ Return all interfaces that has this ifname
 #### def nsGet 
 ##### arguments
 
-##### comments
-
-```
-
-```
-
 #### def nsSet 
 ##### arguments
 
 - nameservers = []
 - commit = False
-
-##### comments
-
-```
-
-```
-
 #### def setHostname 
 ##### arguments
 
 - hostname
-
-##### comments
-
-```
-
-```
-

@@ -9,21 +9,7 @@
 
 - name = '*'
 - options = 'rw,sync'
-
-##### comments
-
-```
-
-```
-
 #### def removeClient 
 ##### arguments
 
 - name
-
-##### comments
-
-```
-
-```
-

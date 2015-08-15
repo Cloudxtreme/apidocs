@@ -31,29 +31,11 @@ look for editor (uses geany) and then edit the file
 #### def classGetBase 
 ##### arguments
 
-##### comments
-
-```
-
-```
-
 #### def classGetJSModelBase 
 ##### arguments
 
-##### comments
-
-```
-
-```
-
 #### def classGetJSRootModelBase 
 ##### arguments
-
-##### comments
-
-```
-
-```
 
 #### def classInfoGet 
 ##### arguments
@@ -84,49 +66,21 @@ print info like source code of class
 
 - content
 - level = 1
-
-##### comments
-
-```
-
-```
-
 #### def dict2JSModelobject 
 ##### arguments
 
 - obj
 - data
-
-##### comments
-
-```
-
-```
-
 #### def dict2object 
 ##### arguments
 
 - obj
 - data
-
-##### comments
-
-```
-
-```
-
 #### def indent 
 ##### arguments
 
 - content
 - level = 1
-
-##### comments
-
-```
-
-```
-
 #### def object2dict 
 ##### arguments
 
@@ -134,13 +88,6 @@ print info like source code of class
 - dieOnUnknown = False
 - ignoreKeys = []
 - ignoreUnderscoreKeys = False
-
-##### comments
-
-```
-
-```
-
 #### def object2dict4index 
 ##### arguments
 
@@ -164,32 +111,11 @@ ideal to index the basics of an object
 - skiperrors = False
 - ignoreKeys = []
 - ignoreUnderscoreKeys = False
-
-##### comments
-
-```
-
-```
-
 #### def object2yaml 
 ##### arguments
 
 - obj
-
-##### comments
-
-```
-
-```
-
 #### def pprint 
 ##### arguments
 
 - obj
-
-##### comments
-
-```
-
-```
-

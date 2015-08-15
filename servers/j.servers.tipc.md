@@ -14,13 +14,6 @@
 - passwd = 'passwd'
 - ssl = False
 - roles = []
-
-##### comments
-
-```
-
-```
-
 #### def getServer 
 ##### arguments
 

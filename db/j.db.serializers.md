@@ -44,20 +44,8 @@ this method returns
 #### def getBlosc 
 ##### arguments
 
-##### comments
-
-```
-
-```
-
 #### def getMessagePack 
 ##### arguments
-
-##### comments
-
-```
-
-```
 
 #### def getSerializerType 
 ##### arguments

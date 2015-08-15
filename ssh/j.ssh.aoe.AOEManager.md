@@ -24,13 +24,6 @@ Create and vdisk
 ##### arguments
 
 - path
-
-##### comments
-
-```
-
-```
-
 #### def expose 
 ##### arguments
 

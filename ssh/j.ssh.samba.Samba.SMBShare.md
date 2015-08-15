@@ -10,41 +10,14 @@
 - sharename
 - path
 - options = \{\}
-
-##### comments
-
-```
-
-```
-
 #### def commit 
 ##### arguments
-
-##### comments
-
-```
-
-```
 
 #### def get 
 ##### arguments
 
 - sharename
-
-##### comments
-
-```
-
-```
-
 #### def remove 
 ##### arguments
 
 - sharename
-
-##### comments
-
-```
-
-```
-

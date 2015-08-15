@@ -52,13 +52,6 @@ how to use:  j.base.idgenerator.generateRandomInt(0,10)
 ##### arguments
 
 - x
-
-##### comments
-
-```
-
-```
-
 #### def getID 
 ##### arguments
 

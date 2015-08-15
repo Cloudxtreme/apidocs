@@ -14,21 +14,7 @@ sandbox any linux app
 - path
 - dest
 - recursive = False
-
-##### comments
-
-```
-
-```
-
 #### def findLibs 
 ##### arguments
 
 - path
-
-##### comments
-
-```
-
-```
-

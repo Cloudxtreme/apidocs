@@ -8,21 +8,7 @@
 ##### arguments
 
 - text
-
-##### comments
-
-```
-
-```
-
 #### def toolStripNonAsciFromText 
 ##### arguments
 
 - text
-
-##### comments
-
-```
-
-```
-

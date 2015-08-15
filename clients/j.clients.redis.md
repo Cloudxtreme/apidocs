@@ -14,12 +14,6 @@
 #### def checkAllInstances 
 ##### arguments
 
-##### comments
-
-```
-
-```
-
 #### def configureInstance 
 ##### arguments
 
@@ -45,45 +39,18 @@ slave example: (192.168.10.10,8888,asecret)   (ip,port,secret)
 ##### arguments
 
 - name
-
-##### comments
-
-```
-
-```
-
 #### def emptyAllInstances 
 ##### arguments
-
-##### comments
-
-```
-
-```
 
 #### def emptyInstance 
 ##### arguments
 
 - name
-
-##### comments
-
-```
-
-```
-
 #### def getByInstance 
 ##### arguments
 
 - instance
 - gevent = False
-
-##### comments
-
-```
-
-```
-
 #### def getGeventRedisClient 
 ##### arguments
 
@@ -91,13 +58,6 @@ slave example: (192.168.10.10,8888,asecret)   (ip,port,secret)
 - port
 - fromcache = True
 - password = ''
-
-##### comments
-
-```
-
-```
-
 #### def getGeventRedisQueue 
 ##### arguments
 
@@ -106,35 +66,14 @@ slave example: (192.168.10.10,8888,asecret)   (ip,port,secret)
 - name
 - namespace = 'queues'
 - fromcache = False
-
-##### comments
-
-```
-
-```
-
 #### def getPort 
 ##### arguments
 
 - name
-
-##### comments
-
-```
-
-```
-
 #### def getProcessPids 
 ##### arguments
 
 - name
-
-##### comments
-
-```
-
-```
-
 #### def getRedisClient 
 ##### arguments
 
@@ -142,13 +81,6 @@ slave example: (192.168.10.10,8888,asecret)   (ip,port,secret)
 - port
 - password = ''
 - fromcache = True
-
-##### comments
-
-```
-
-```
-
 #### def getRedisQueue 
 ##### arguments
 
@@ -157,43 +89,15 @@ slave example: (192.168.10.10,8888,asecret)   (ip,port,secret)
 - name
 - namespace = 'queues'
 - fromcache = True
-
-##### comments
-
-```
-
-```
-
 #### def isRunning 
 ##### arguments
 
 - name
-
-##### comments
-
-```
-
-```
-
 #### def startInstance 
 ##### arguments
 
 - name
-
-##### comments
-
-```
-
-```
-
 #### def stopInstance 
 ##### arguments
 
 - name
-
-##### comments
-
-```
-
-```
-

@@ -144,13 +144,6 @@ Prompts for a selection of a file path starting from startPath if given and '/' 
 ##### arguments
 
 - form
-
-##### comments
-
-```
-
-```
-
 #### def askInteger 
 ##### arguments
 
@@ -269,12 +262,6 @@ supported types today: console,win32,wizardserver
 #### def clear 
 ##### arguments
 
-##### comments
-
-```
-
-```
-
 #### def message 
 ##### arguments
 
@@ -293,21 +280,8 @@ prints the given message to the screen
 ##### arguments
 
 - url
-
-##### comments
-
-```
-
-```
-
 #### def pm_setDialogHandler 
 ##### arguments
-
-##### comments
-
-```
-
-```
 
 #### def showLogging 
 ##### arguments

@@ -20,13 +20,6 @@
 - roles = []
 - id
 - timeout = 60
-
-##### comments
-
-```
-
-```
-
 #### def getHAClient 
 ##### arguments
 
@@ -40,13 +33,6 @@
 - id
 - timeout = 60
 - reconnect = False
-
-##### comments
-
-```
-
-```
-
 #### def getServer 
 ##### arguments
 

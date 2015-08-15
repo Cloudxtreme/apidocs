@@ -16,13 +16,6 @@
 - port = 5432
 - login = 'postgres'
 - passwd = 'rooter'
-
-##### comments
-
-```
-
-```
-
 #### def dropdb 
 ##### arguments
 
@@ -31,13 +24,6 @@
 - port = 5432
 - login = 'postgres'
 - passwd = 'rooter'
-
-##### comments
-
-```
-
-```
-
 #### def getClient 
 ##### arguments
 
@@ -46,10 +32,3 @@
 - login = 'postgres'
 - passwd = 'rooter'
 - dbname = 'template'
-
-##### comments
-
-```
-
-```
-

@@ -18,25 +18,11 @@ functionality to inspect objectr structure and generate apifile
 
 - dest
 - ignore = []
-
-##### comments
-
-```
-
-```
-
 #### def importAllLibs 
 ##### arguments
 
 - ignore = []
 - base = '/opt/jumpscale7/lib/JumpScale/'
-
-##### comments
-
-```
-
-```
-
 #### def inspect 
 ##### arguments
 
@@ -58,21 +44,7 @@ walk over objects in memory and create code completion api in jumpscale cfgDir u
 ##### arguments
 
 - errormsg
-
-##### comments
-
-```
-
-```
-
 #### def writeDocs 
 ##### arguments
 
 - path
-
-##### comments
-
-```
-
-```
-

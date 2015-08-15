@@ -9,35 +9,15 @@
 #### def help 
 ##### arguments
 
-##### comments
-
-```
-
-```
-
 #### def setDefaultPasswd 
 ##### arguments
 
 - passwd
 - host = 'localhost'
-
-##### comments
-
-```
-
-```
-
 #### def setHost 
 ##### arguments
 
 - host = 'localhost'
-
-##### comments
-
-```
-
-```
-
 #### def setHosts 
 ##### arguments
 

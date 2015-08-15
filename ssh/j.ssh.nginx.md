@@ -9,10 +9,3 @@
 
 - con
 - path = '/etc/nginx/nginx.conf'
-
-##### comments
-
-```
-
-```
-

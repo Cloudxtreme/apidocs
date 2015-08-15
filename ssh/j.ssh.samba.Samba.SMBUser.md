@@ -9,30 +9,10 @@
 
 - username
 - password
-
-##### comments
-
-```
-
-```
-
 #### def list 
 ##### arguments
-
-##### comments
-
-```
-
-```
 
 #### def remove 
 ##### arguments
 
 - username
-
-##### comments
-
-```
-
-```
-

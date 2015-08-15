@@ -26,48 +26,20 @@ Date needs to be formatted as 16/06/1988
 
 - epoch
 - local = True
-
-##### comments
-
-```
-
-```
-
 #### def epoch2HRDateTime 
 ##### arguments
 
 - epoch
 - local = True
-
-##### comments
-
-```
-
-```
-
 #### def epoch2HRTime 
 ##### arguments
 
 - epoch
 - local = True
-
-##### comments
-
-```
-
-```
-
 #### def fiveMinuteIdToEpoch 
 ##### arguments
 
 - fiveMinuteId
-
-##### comments
-
-```
-
-```
-
 #### def formatTime 
 ##### arguments
 
@@ -185,12 +157,6 @@ Get the current local date and time in a human-readable form
 #### def getLocalTimeHRForFilesystem 
 ##### arguments
 
-##### comments
-
-```
-
-```
-
 #### def getMinuteId 
 ##### arguments
 
@@ -207,13 +173,6 @@ is # min from jan 1 2010
 ##### arguments
 
 - seconds
-
-##### comments
-
-```
-
-```
-
 #### def getTimeEpoch 
 ##### arguments
 

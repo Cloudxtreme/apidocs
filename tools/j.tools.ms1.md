@@ -8,10 +8,3 @@
 ##### arguments
 
 - apiURL = 'www.mothership1.com'
-
-##### comments
-
-```
-
-```
-

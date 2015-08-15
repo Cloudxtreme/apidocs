@@ -27,21 +27,7 @@ there is normally no need to use this method, use self.getActorClient in stead
 - ip = 'localhost'
 - port = 82
 - secret
-
-##### comments
-
-```
-
-```
-
 #### def getByInstance 
 ##### arguments
 
 - instance
-
-##### comments
-
-```
-
-```
-

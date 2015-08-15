@@ -7,24 +7,11 @@
 #### def close 
 ##### arguments
 
-##### comments
-
-```
-
-```
-
 #### def query 
 ##### arguments
 
 - query_
 - **kwargs
-
-##### comments
-
-```
-
-```
-
 #### def send 
 ##### arguments
 

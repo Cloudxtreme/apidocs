@@ -25,12 +25,6 @@ e.g. find blocks, replace lines, ...
 #### def getWordReplacerTool 
 ##### arguments
 
-##### comments
-
-```
-
-```
-
 #### def textToTitle 
 ##### arguments
 

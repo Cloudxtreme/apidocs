@@ -15,13 +15,6 @@
 - outputdocname = ''
 - format = 'preprocess'
 - deepcopy = False
-
-##### comments
-
-```
-
-```
-
 #### def generateFromDir 
 ##### arguments
 
@@ -55,10 +48,4 @@
 
 #### def getMacroPath 
 ##### arguments
-
-##### comments
-
-```
-
-```
 

@@ -12,24 +12,10 @@
 ##### arguments
 
 - path
-
-##### comments
-
-```
-
-```
-
 #### def getUserId 
 ##### arguments
 
 - username
-
-##### comments
-
-```
-
-```
-
 #### def parse 
 ##### arguments
 
@@ -46,21 +32,7 @@ directory to walk over and find story, task, ... statements
 ##### arguments
 
 - config
-
-##### comments
-
-```
-
-```
-
 #### def setusers 
 ##### arguments
 
 - config
-
-##### comments
-
-```
-
-```
-

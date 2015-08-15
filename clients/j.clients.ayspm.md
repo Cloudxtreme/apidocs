@@ -7,9 +7,3 @@
 #### def getClient 
 ##### arguments
 
-##### comments
-
-```
-
-```
-

@@ -14,34 +14,13 @@
 - port = 873
 - login = ''
 - passwd = ''
-
-##### comments
-
-```
-
-```
-
 #### def getClientSecret 
 ##### arguments
 
 - addr = 'localhost'
 - port = 873
 - secret = ''
-
-##### comments
-
-```
-
-```
-
 #### def getServer 
 ##### arguments
 
 - root
-
-##### comments
-
-```
-
-```
-

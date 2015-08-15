@@ -26,49 +26,18 @@ one off jobs will always execute !!!
 #### def checkQueue 
 ##### arguments
 
-##### comments
-
-```
-
-```
-
 #### def deleteJob 
 ##### arguments
 
 - jobid
-
-##### comments
-
-```
-
-```
-
 #### def deleteJumpscripts 
 ##### arguments
-
-##### comments
-
-```
-
-```
 
 #### def deleteProcessQueue 
 ##### arguments
 
-##### comments
-
-```
-
-```
-
 #### def deleteQueues 
 ##### arguments
-
-##### comments
-
-```
-
-```
 
 #### def execFunction 
 ##### arguments
@@ -93,13 +62,6 @@ one off jobs will always execute !!!
 ##### arguments
 
 - job
-
-##### comments
-
-```
-
-```
-
 #### def execJumpscript 
 ##### arguments
 
@@ -123,103 +85,40 @@ one off jobs will always execute !!!
 
 - queue
 - hoursago = 0
-
-##### comments
-
-```
-
-```
-
 #### def getJob 
 ##### arguments
 
 - jobid
-
-##### comments
-
-```
-
-```
-
 #### def getJobLine 
 ##### arguments
 
 - job
 - jobid
-
-##### comments
-
-```
-
-```
-
 #### def getJumpscriptFromId 
 ##### arguments
 
 - jscriptid
-
-##### comments
-
-```
-
-```
-
 #### def getJumpscriptFromName 
 ##### arguments
 
 - organization
 - name
-
-##### comments
-
-```
-
-```
-
 #### def getQueuedJobs 
 ##### arguments
 
 - queue
 - asWikiTable = True
-
-##### comments
-
-```
-
-```
-
 #### def removeJobs 
 ##### arguments
 
 - hoursago = 48
 - failed = False
-
-##### comments
-
-```
-
-```
-
 #### def scheduleJob 
 ##### arguments
 
 - job
-
-##### comments
-
-```
-
-```
-
 #### def waitJob 
 ##### arguments
 
 - job
 - timeout = 600
-
-##### comments
-
-```
-
-```
-

@@ -25,24 +25,10 @@
 
 - instance
 - new = False
-
-##### comments
-
-```
-
-```
-
 #### def getInstanceConfig 
 ##### arguments
 
 - instance
-
-##### comments
-
-```
-
-```
-
 #### def getProxy 
 ##### arguments
 
@@ -51,10 +37,3 @@
 - port = 4444
 - login = 'root'
 - passwd
-
-##### comments
-
-```
-
-```
-

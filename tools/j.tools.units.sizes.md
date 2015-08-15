@@ -9,13 +9,6 @@
 
 - value
 - input = ''
-
-##### comments
-
-```
-
-```
-
 #### def toSize 
 ##### arguments
 

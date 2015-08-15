@@ -45,13 +45,6 @@ return: dict of classes if more than 1 otherwise just the class
 - typecheck = True
 - dieInGenCode = True
 - codepath
-
-##### comments
-
-```
-
-```
-
 #### def getClassActorLocal 
 ##### arguments
 
@@ -59,13 +52,6 @@ return: dict of classes if more than 1 otherwise just the class
 - actor
 - typecheck = True
 - dieInGenCode = True
-
-##### comments
-
-```
-
-```
-
 #### def getClassActorRemote 
 ##### arguments
 
@@ -77,13 +63,6 @@ return: dict of classes if more than 1 otherwise just the class
 - redis = False
 - wsclient
 - codepath
-
-##### comments
-
-```
-
-```
-
 #### def getClassEnumeration 
 ##### arguments
 
@@ -92,13 +71,6 @@ return: dict of classes if more than 1 otherwise just the class
 - enumname
 - typecheck = True
 - dieInGenCode = True
-
-##### comments
-
-```
-
-```
-
 #### def getClassJSModel 
 ##### arguments
 
@@ -108,13 +80,6 @@ return: dict of classes if more than 1 otherwise just the class
 - typecheck = True
 - dieInGenCode = True
 - codepath = ''
-
-##### comments
-
-```
-
-```
-
 #### def getClassesActorMethodGreenlet 
 ##### arguments
 
@@ -139,25 +104,11 @@ return: returns dict with key name methodname and then the class (for each metho
 - typecheck = True
 - dieInGenCode = True
 - codepath = ''
-
-##### comments
-
-```
-
-```
-
 #### def getCodeId 
 ##### arguments
 
 - spec
 - type
-
-##### comments
-
-```
-
-```
-
 #### def getCodeJSModel 
 ##### arguments
 
@@ -167,33 +118,13 @@ return: returns dict with key name methodname and then the class (for each metho
 - typecheck = True
 - dieInGenCode = True
 - codepath = ''
-
-##### comments
-
-```
-
-```
-
 #### def removeFromMem 
 ##### arguments
 
 - appname
 - actor
-
-##### comments
-
-```
-
-```
-
 #### def resetMemNonSystem 
 ##### arguments
-
-##### comments
-
-```
-
-```
 
 #### def setTarget 
 ##### arguments

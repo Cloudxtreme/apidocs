@@ -23,12 +23,6 @@
 #### def connectRedis 
 ##### arguments
 
-##### comments
-
-```
-
-```
-
 #### def existAppInstanceHRD 
 ##### arguments
 
@@ -45,12 +39,6 @@ returns hrd for specific appname & instance name (default domain=jumpscale or no
 
 #### def getAgentId 
 ##### arguments
-
-##### comments
-
-```
-
-```
 
 #### def getAppHRDInstanceNames 
 ##### arguments
@@ -128,29 +116,11 @@ will look for network interface and return a hash calculated from lowest mac add
 #### def getWhoAmiStr 
 ##### arguments
 
-##### comments
-
-```
-
-```
-
 #### def init 
 ##### arguments
 
-##### comments
-
-```
-
-```
-
 #### def initGrid 
 ##### arguments
-
-##### comments
-
-```
-
-```
 
 #### def initWhoAmI 
 ##### arguments
@@ -167,12 +137,6 @@ when in grid:
 
 #### def loadConfig 
 ##### arguments
-
-##### comments
-
-```
-
-```
 
 #### def start 
 ##### arguments

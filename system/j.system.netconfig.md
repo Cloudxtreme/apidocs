@@ -15,26 +15,12 @@
 - ipaddr
 - aliasnr = 1
 - start = False
-
-##### comments
-
-```
-
-```
-
 #### def enableInterface 
 ##### arguments
 
 - dev = 'eth0'
 - start = False
 - dhcp = True
-
-##### comments
-
-```
-
-```
-
 #### def enableInterfaceBridge 
 ##### arguments
 
@@ -42,26 +28,12 @@
 - bridgedev
 - start = False
 - dhcp = True
-
-##### comments
-
-```
-
-```
-
 #### def enableInterfaceBridgeDhcp 
 ##### arguments
 
 - dev
 - bridgedev
 - start = False
-
-##### comments
-
-```
-
-```
-
 #### def enableInterfaceBridgeStatic 
 ##### arguments
 
@@ -99,13 +71,6 @@ gateway in form of 192.168.10.254
 ##### arguments
 
 - dev
-
-##### comments
-
-```
-
-```
-
 #### def reset 
 ##### arguments
 
@@ -146,13 +111,6 @@ resolvconf will be disabled
 ##### arguments
 
 - root
-
-##### comments
-
-```
-
-```
-
 #### def shutdownNetwork 
 ##### arguments
 

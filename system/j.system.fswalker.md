@@ -19,13 +19,6 @@
 - contentRegexIncludes = []
 - contentRegexExcludes = []
 - depths = []
-
-##### comments
-
-```
-
-```
-
 #### def walk 
 ##### arguments
 

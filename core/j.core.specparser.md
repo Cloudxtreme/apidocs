@@ -16,13 +16,6 @@
 ##### arguments
 
 - spec
-
-##### comments
-
-```
-
-```
-
 #### def findSpec 
 ##### arguments
 
@@ -48,13 +41,6 @@ do not specify query with one of the other filter criteria
 - app
 - name
 - raiseError = True
-
-##### comments
-
-```
-
-```
-
 #### def getChildModelSpec 
 ##### arguments
 
@@ -62,13 +48,6 @@ do not specify query with one of the other filter criteria
 - actorname
 - name
 - die = True
-
-##### comments
-
-```
-
-```
-
 #### def getEnumerationSpec 
 ##### arguments
 
@@ -76,25 +55,11 @@ do not specify query with one of the other filter criteria
 - actorname
 - name
 - die = True
-
-##### comments
-
-```
-
-```
-
 #### def getModelNames 
 ##### arguments
 
 - appname
 - actorname
-
-##### comments
-
-```
-
-```
-
 #### def getModelSpec 
 ##### arguments
 
@@ -102,13 +67,6 @@ do not specify query with one of the other filter criteria
 - actorname
 - name
 - die = True
-
-##### comments
-
-```
-
-```
-
 #### def getSpecFromTypeStr 
 ##### arguments
 
@@ -126,12 +84,6 @@ do not specify query with one of the other filter criteria
 
 #### def init 
 ##### arguments
-
-##### comments
-
-```
-
-```
 
 #### def parseSpecs 
 ##### arguments
@@ -152,19 +104,6 @@ do not specify query with one of the other filter criteria
 
 - appname
 - actorname
-
-##### comments
-
-```
-
-```
-
 #### def resetMemNonSystem 
 ##### arguments
-
-##### comments
-
-```
-
-```
 

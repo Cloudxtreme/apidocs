@@ -20,24 +20,10 @@ ByteProcessor
 ##### arguments
 
 - s
-
-##### comments
-
-```
-
-```
-
 #### def decompress 
 ##### arguments
 
 - s
-
-##### comments
-
-```
-
-```
-
 #### def disperse 
 ##### arguments
 
@@ -56,65 +42,24 @@ returns DispersedBlock object
 #### def getDispersedBlockObject 
 ##### arguments
 
-##### comments
-
-```
-
-```
-
 #### def hashMd5 
 ##### arguments
 
 - s
-
-##### comments
-
-```
-
-```
-
 #### def hashTiger160 
 ##### arguments
 
 - s
-
-##### comments
-
-```
-
-```
-
 #### def hashTiger160bin 
 ##### arguments
 
 - s
-
-##### comments
-
-```
-
-```
-
 #### def hashTiger192 
 ##### arguments
 
 - s
-
-##### comments
-
-```
-
-```
-
 #### def undisperse 
 ##### arguments
 
 - dispersedBlockObject
 - uncompress = True
-
-##### comments
-
-```
-
-```
-

@@ -16,13 +16,6 @@
 - passwd
 - ssl = False
 - gevent = False
-
-##### comments
-
-```
-
-```
-
 #### def getByInstance 
 ##### arguments
 
@@ -30,13 +23,6 @@
 - ssl = False
 - gevent = False
 - die = True
-
-##### comments
-
-```
-
-```
-
 #### def getCategory 
 ##### arguments
 
@@ -59,10 +45,3 @@ how to use
 
 - namespace
 - client
-
-##### comments
-
-```
-
-```
-

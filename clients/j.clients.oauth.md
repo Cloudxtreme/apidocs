@@ -16,23 +16,9 @@
 - user_info_url = ''
 - logout_url = ''
 - instance = 'github'
-
-##### comments
-
-```
-
-```
-
 #### def log 
 ##### arguments
 
 - msg
 - category = ''
 - level = 5
-
-##### comments
-
-```
-
-```
-

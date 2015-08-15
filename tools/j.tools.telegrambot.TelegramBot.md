@@ -7,12 +7,6 @@
 #### def addDemoHandler 
 ##### arguments
 
-##### comments
-
-```
-
-```
-
 #### def addLogHandler 
 ##### arguments
 
@@ -28,10 +22,4 @@ self.api.add_handler(loggerHandler)
 
 #### def start 
 ##### arguments
-
-##### comments
-
-```
-
-```
 

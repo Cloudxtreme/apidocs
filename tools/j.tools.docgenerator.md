@@ -9,30 +9,11 @@
 
 - src
 - dest
-
-##### comments
-
-```
-
-```
-
 #### def getConfluence2htmlConvertor 
 ##### arguments
 
-##### comments
-
-```
-
-```
-
 #### def getConfluence2rstConvertor 
 ##### arguments
-
-##### comments
-
-```
-
-```
 
 #### def getConfluenceClient 
 ##### arguments
@@ -54,56 +35,22 @@
 #### def getMacroPath 
 ##### arguments
 
-##### comments
-
-```
-
-```
-
 #### def pageGroupNew 
 ##### arguments
 
 - pages = \{\}
-
-##### comments
-
-```
-
-```
-
 #### def pageNewConfluence 
 ##### arguments
 
 - pagename
 - parent = 'Home'
-
-##### comments
-
-```
-
-```
-
 #### def pageNewHTML 
 ##### arguments
 
 - pagename
 - htmllibPath
-
-##### comments
-
-```
-
-```
-
 #### def pageNewRST 
 ##### arguments
 
 - pagename
 - htmllibPath
-
-##### comments
-
-```
-
-```
-

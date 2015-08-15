@@ -32,12 +32,6 @@ Check whether actions are currently running
 #### def printOutput 
 ##### arguments
 
-##### comments
-
-```
-
-```
-
 #### def start 
 ##### arguments
 

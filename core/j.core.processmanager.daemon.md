@@ -11,10 +11,3 @@
 
 - cmdInterfaceClass
 - category
-
-##### comments
-
-```
-
-```
-

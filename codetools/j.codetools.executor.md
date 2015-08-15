@@ -8,21 +8,7 @@
 ##### arguments
 
 - code
-
-##### comments
-
-```
-
-```
-
 #### def evalFile 
 ##### arguments
 
 - path
-
-##### comments
-
-```
-
-```
-

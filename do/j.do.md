@@ -92,25 +92,11 @@ check if path is dir or link to a dir
 
 - path
 - user
-
-##### comments
-
-```
-
-```
-
 #### def copyDependencies 
 ##### arguments
 
 - path
 - dest
-
-##### comments
-
-```
-
-```
-
 #### def copyFile 
 ##### arguments
 
@@ -118,13 +104,6 @@ check if path is dir or link to a dir
 - dest
 - deletefirst = False
 - skipIfExists = False
-
-##### comments
-
-```
-
-```
-
 #### def copyTree 
 ##### arguments
 
@@ -137,36 +116,15 @@ check if path is dir or link to a dir
 - ignorefiles = ['.egg-info']
 - rsync = True
 - sshkey
-
-##### comments
-
-```
-
-```
-
 #### def createDir 
 ##### arguments
 
 - path
-
-##### comments
-
-```
-
-```
-
 #### def delete 
 ##### arguments
 
 - path
 - force = False
-
-##### comments
-
-```
-
-```
-
 #### def download 
 ##### arguments
 
@@ -197,37 +155,16 @@ check if path is dir or link to a dir
 - destdir
 - deleteDestFirst = True
 - deleteSourceAfter = True
-
-##### comments
-
-```
-
-```
-
 #### def downloadJumpScaleCore 
 ##### arguments
 
 - dest
-
-##### comments
-
-```
-
-```
-
 #### def excepthook 
 ##### arguments
 
 - ttype
 - pythonExceptionObject
 - tb
-
-##### comments
-
-```
-
-```
-
 #### def execute 
 ##### arguments
 
@@ -265,35 +202,14 @@ return rc,out,err
 - ok = []
 - captureout = True
 - dieOnNonZeroExitCode = True
-
-##### comments
-
-```
-
-```
-
 #### def executeInteractive 
 ##### arguments
 
 - command
-
-##### comments
-
-```
-
-```
-
 #### def exists 
 ##### arguments
 
 - path
-
-##### comments
-
-```
-
-```
-
 #### def expandTarGz 
 ##### arguments
 
@@ -301,25 +217,11 @@ return rc,out,err
 - destdir
 - deleteDestFirst = True
 - deleteSourceAfter = False
-
-##### comments
-
-```
-
-```
-
 #### def findDependencies 
 ##### arguments
 
 - path
 - deps = \{\}
-
-##### comments
-
-```
-
-```
-
 #### def getBaseName 
 ##### arguments
 
@@ -356,13 +258,6 @@ Return a directory name from pathname path.
 ##### arguments
 
 - path
-
-##### comments
-
-```
-
-```
-
 #### def getGitRepoArgs 
 ##### arguments
 
@@ -396,13 +291,6 @@ Returns:
 - account = ''
 - name = ''
 - errorIfNone = True
-
-##### comments
-
-```
-
-```
-
 #### def getParent 
 ##### arguments
 
@@ -421,12 +309,6 @@ Returns the parent of the path:
 #### def getPythonSiteConfigPath 
 ##### arguments
 
-##### comments
-
-```
-
-```
-
 #### def getTimeEpoch 
 ##### arguments
 
@@ -441,33 +323,13 @@ Get epoch timestamp (number of seconds passed since January 1, 1970)
 ##### arguments
 
 - filename
-
-##### comments
-
-```
-
-```
-
 #### def getWalker 
 ##### arguments
-
-##### comments
-
-```
-
-```
 
 #### def installPackage 
 ##### arguments
 
 - path
-
-##### comments
-
-```
-
-```
-
 #### def isDir 
 ##### arguments
 
@@ -488,13 +350,6 @@ Check if the specified Directory path exists
 ##### arguments
 
 - path
-
-##### comments
-
-```
-
-```
-
 #### def isFile 
 ##### arguments
 
@@ -529,43 +384,17 @@ Check if the specified path is a link
 #### def isUnix 
 ##### arguments
 
-##### comments
-
-```
-
-```
-
 #### def isWindows 
 ##### arguments
-
-##### comments
-
-```
-
-```
 
 #### def joinPaths 
 ##### arguments
 
 - *args
-
-##### comments
-
-```
-
-```
-
 #### def list 
 ##### arguments
 
 - path
-
-##### comments
-
-```
-
-```
-
 #### def listDirsInDir 
 ##### arguments
 
@@ -654,25 +483,11 @@ Retrieves list of files found in the specified directory
 ##### arguments
 
 - path
-
-##### comments
-
-```
-
-```
-
 #### def log 
 ##### arguments
 
 - msg
 - level
-
-##### comments
-
-```
-
-```
-
 #### def pullGitRepo 
 ##### arguments
 
@@ -756,13 +571,6 @@ find all links & remove
 ##### arguments
 
 - path
-
-##### comments
-
-```
-
-```
-
 #### def rewriteGitRepoUrl 
 ##### arguments
 
@@ -797,13 +605,6 @@ Returns:
 - smtpserver = 'smtp.mandrillapp.com'
 - port = 587
 - html = ''
-
-##### comments
-
-```
-
-```
-
 #### def symlink 
 ##### arguments
 
@@ -825,24 +626,10 @@ dest is where the link will be created pointing to src
 - dest
 - delete = True
 - includeDirs = False
-
-##### comments
-
-```
-
-```
-
 #### def touch 
 ##### arguments
 
 - path
-
-##### comments
-
-```
-
-```
-
 #### def updateGitRepos 
 ##### arguments
 
@@ -850,23 +637,9 @@ dest is where the link will be created pointing to src
 - account = ''
 - name = ''
 - message = ''
-
-##### comments
-
-```
-
-```
-
 #### def writeFile 
 ##### arguments
 
 - path
 - content
 - strip = True
-
-##### comments
-
-```
-
-```
-

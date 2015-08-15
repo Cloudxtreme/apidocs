@@ -10,30 +10,11 @@
 - macaddress
 - ipaddress
 - name
-
-##### comments
-
-```
-
-```
-
 #### def addToStartupManager 
 ##### arguments
 
-##### comments
-
-```
-
-```
-
 #### def reload 
 ##### arguments
-
-##### comments
-
-```
-
-```
 
 #### def removeHost 
 ##### arguments
@@ -62,10 +43,3 @@ Restarts dnsmasq
 
 - namespace
 - config_path
-
-##### comments
-
-```
-
-```
-

@@ -34,13 +34,6 @@ Remove a device from a filesystem.
 ##### arguments
 
 - path
-
-##### comments
-
-```
-
-```
-
 #### def snapshotReadOnlyCreate 
 ##### arguments
 

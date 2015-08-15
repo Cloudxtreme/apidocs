@@ -297,13 +297,6 @@ prints the given message to the screen
 ##### arguments
 
 - url
-
-##### comments
-
-```
-
-```
-
 #### def showLogging 
 ##### arguments
 

@@ -25,13 +25,6 @@ Utility class to configure and store all relevant directory paths
 
 - path
 - name = 'main'
-
-##### comments
-
-```
-
-```
-
 #### def amInGitConfigRepo 
 ##### arguments
 
@@ -46,46 +39,18 @@ return parent path where .git is or None when not found
 ##### arguments
 
 - path
-
-##### comments
-
-```
-
-```
-
 #### def createGitConfigRepo 
 ##### arguments
 
 - path
-
-##### comments
-
-```
-
-```
-
 #### def getHrdDir 
 ##### arguments
 
 - system = False
-
-##### comments
-
-```
-
-```
-
 #### def getPathOfRunningFunction 
 ##### arguments
 
 - function
-
-##### comments
-
-```
-
-```
-
 #### def init 
 ##### arguments
 
@@ -108,33 +73,13 @@ default path.
 ##### arguments
 
 - path
-
-##### comments
-
-```
-
-```
-
 #### def loadProtectedDirs 
 ##### arguments
-
-##### comments
-
-```
-
-```
 
 #### def removeProtectedDir 
 ##### arguments
 
 - path
-
-##### comments
-
-```
-
-```
-
 #### def replaceTxtDirVars 
 ##### arguments
 

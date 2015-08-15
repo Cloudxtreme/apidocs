@@ -9,21 +9,7 @@
 
 - data
 - prepend = ''
-
-##### comments
-
-```
-
-```
-
 #### def loads 
 ##### arguments
 
 - data
-
-##### comments
-
-```
-
-```
-

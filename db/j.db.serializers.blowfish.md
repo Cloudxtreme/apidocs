@@ -12,22 +12,8 @@
 
 - obj
 - encrkey
-
-##### comments
-
-```
-
-```
-
 #### def loads 
 ##### arguments
 
 - s
 - encrkey
-
-##### comments
-
-```
-
-```
-

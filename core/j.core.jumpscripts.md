@@ -29,12 +29,6 @@ Args:
 #### def getJSClass 
 ##### arguments
 
-##### comments
-
-```
-
-```
-
 #### def introspectLuaJumpscript 
 ##### arguments
 
@@ -57,22 +51,8 @@ Raises:
 ##### arguments
 
 - acl
-
-##### comments
-
-```
-
-```
-
 #### def loadFromTar 
 ##### arguments
 
 - tarcontent
 - type
-
-##### comments
-
-```
-
-```
-

@@ -15,36 +15,15 @@
 
 - val
 - json = False
-
-##### comments
-
-```
-
-```
-
 #### def encrypt 
 ##### arguments
 
 - obj
-
-##### comments
-
-```
-
-```
-
 #### def generateOsisModelDefaults 
 ##### arguments
 
 - namespace
 - specpath = ''
-
-##### comments
-
-```
-
-```
-
 #### def getLocal 
 ##### arguments
 
@@ -63,29 +42,11 @@ create local instance starting from path
 #### def getModelTemplate 
 ##### arguments
 
-##### comments
-
-```
-
-```
-
 #### def getOSISBaseObjectComplexType 
 ##### arguments
 
-##### comments
-
-```
-
-```
-
 #### def getOsisBaseObjectClass 
 ##### arguments
-
-##### comments
-
-```
-
-```
 
 #### def getOsisImplementationParentClass 
 ##### arguments

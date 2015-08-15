@@ -11,21 +11,8 @@
 ##### arguments
 
 - appname
-
-##### comments
-
-```
-
-```
-
 #### def getServer 
 ##### arguments
-
-##### comments
-
-```
-
-```
 
 #### def loadActorsInProcess 
 ##### arguments

@@ -8,21 +8,7 @@
 ##### arguments
 
 - obj
-
-##### comments
-
-```
-
-```
-
 #### def loads 
 ##### arguments
 
 - s
-
-##### comments
-
-```
-
-```
-

@@ -15,21 +15,8 @@
 - operations_user_id = ''
 - operations_department_id = ''
 - instance = 'main'
-
-##### comments
-
-```
-
-```
-
 #### def getDummy 
 ##### arguments
-
-##### comments
-
-```
-
-```
 
 #### def log 
 ##### arguments
@@ -37,10 +24,3 @@
 - msg
 - category = ''
 - level = 5
-
-##### comments
-
-```
-
-```
-

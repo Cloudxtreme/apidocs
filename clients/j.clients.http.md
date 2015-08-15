@@ -7,9 +7,3 @@
 #### def getConnection 
 ##### arguments
 
-##### comments
-
-```
-
-```
-

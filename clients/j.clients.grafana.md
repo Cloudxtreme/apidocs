@@ -7,9 +7,3 @@
 #### def get 
 ##### arguments
 
-##### comments
-
-```
-
-```
-

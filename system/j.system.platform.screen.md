@@ -12,13 +12,6 @@
 - sessionname
 - windowname
 - user
-
-##### comments
-
-```
-
-```
-
 #### def createSession 
 ##### arguments
 
@@ -40,13 +33,6 @@
 - session
 - name
 - user
-
-##### comments
-
-```
-
-```
-
 #### def executeInScreen 
 ##### arguments
 
@@ -83,73 +69,31 @@
 - session
 - name
 - user
-
-##### comments
-
-```
-
-```
-
 #### def getSessions 
 ##### arguments
 
 - user
-
-##### comments
-
-```
-
-```
-
 #### def getWindows 
 ##### arguments
 
 - session
 - attemps = 5
 - user
-
-##### comments
-
-```
-
-```
-
 #### def killSession 
 ##### arguments
 
 - sessionname
 - user
-
-##### comments
-
-```
-
-```
-
 #### def killSessions 
 ##### arguments
 
 - user
-
-##### comments
-
-```
-
-```
-
 #### def killWindow 
 ##### arguments
 
 - session
 - name
 - user
-
-##### comments
-
-```
-
-```
-
 #### def logWindow 
 ##### arguments
 
@@ -157,23 +101,9 @@
 - name
 - filename
 - user
-
-##### comments
-
-```
-
-```
-
 #### def windowExists 
 ##### arguments
 
 - session
 - name
 - user
-
-##### comments
-
-```
-
-```
-

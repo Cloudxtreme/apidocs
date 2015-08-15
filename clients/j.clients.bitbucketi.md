@@ -10,31 +10,11 @@ interface on i
 ##### arguments
 
 - accountname = ''
-
-##### comments
-
-```
-
-```
-
 #### def getRepo 
 ##### arguments
 
 - accountname = ''
 - reponame = ''
-
-##### comments
-
-```
-
-```
-
 #### def init 
 ##### arguments
-
-##### comments
-
-```
-
-```
 
