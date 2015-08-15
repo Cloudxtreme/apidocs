@@ -1,3 +1,4 @@
+<!-- toc -->
 ## j.tools.telegrambot.TelegramBot
 
 - /opt/jumpscale7/lib/JumpScale/lib/telegram/TelegramFactory.py

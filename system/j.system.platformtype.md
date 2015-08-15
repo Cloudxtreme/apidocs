@@ -1,3 +1,4 @@
+<!-- toc -->
 ## j.system.platformtype
 
 - /opt/jumpscale7/lib/JumpScale/core/PlatformTypes.py

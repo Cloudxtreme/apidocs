@@ -1,3 +1,4 @@
+<!-- toc -->
 ## j.system.netconfig
 
 - /opt/jumpscale7/lib/JumpScale/baselib/netconfig/Netconfig.py

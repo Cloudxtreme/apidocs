@@ -1,3 +1,4 @@
+<!-- toc -->
 ## j.tools.inifile
 
 - /opt/jumpscale7/lib/JumpScale/baselib/inifile/IniFile.py

@@ -1,3 +1,4 @@
+<!-- toc -->
 ## j.base.time
 
 - /opt/jumpscale7/lib/JumpScale/core/base/time/Time.py

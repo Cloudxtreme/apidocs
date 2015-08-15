@@ -1,3 +1,4 @@
+<!-- toc -->
 ## j.base.byteprocessor
 
 - /opt/jumpscale7/lib/JumpScale/core/BYTEPROCESSOR.py

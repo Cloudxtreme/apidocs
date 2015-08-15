@@ -1,3 +1,4 @@
+<!-- toc -->
 ## j.events
 
 - /opt/jumpscale7/lib/JumpScale/core/errorhandling/EventHandler.py

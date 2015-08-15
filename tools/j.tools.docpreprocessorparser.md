@@ -1,3 +1,4 @@
+<!-- toc -->
 ## j.tools.docpreprocessorparser
 
 - /opt/jumpscale7/lib/JumpScale/portal/docpreprocessor/DocParser.py

@@ -1,3 +1,4 @@
+<!-- toc -->
 ## j.clients.graphite
 
 - /opt/jumpscale7/lib/JumpScale/baselib/graphite/GraphiteClient.py

@@ -1,3 +1,4 @@
+<!-- toc -->
 ## j.clients.gitlab
 
 - /opt/jumpscale7/lib/JumpScale/baselib/gitlab/GitlabFactory.py

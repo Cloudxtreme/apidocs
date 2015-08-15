@@ -1,3 +1,4 @@
+<!-- toc -->
 ## j.core.osismodel
 
 - /opt/jumpscale7/lib/JumpScale/grid/osismodel/OSIS.py

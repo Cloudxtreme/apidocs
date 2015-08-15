@@ -1,3 +1,4 @@
+<!-- toc -->
 ## j.system.unix
 
 - /opt/jumpscale7/lib/JumpScale/core/system/unix.py
@@ -25,8 +26,8 @@ Add a cronjob to the system
 @type interval: number
 @param logFilePath: the path of the logfile to redirect the output of crontab to
 @type logFilePath: string
-@param replaceLineIfCommandAlreadyInCrontab: Specifies whether to replace the
-    line if a command already exists in crontab
+@param replaceLineIfCommandAlreadyInCrontab: Specifies whether to replace the line if a
+    command already exists in crontab
 @type replaceLineIfCommandAlreadyInCrontab: bool
 @param unit: The unit of the interval
 @type unit: TimeIntervalUnit
@@ -130,11 +131,11 @@ Chown a file
 @type path: string
 @param user: username to be used as the new owner
 @type user: string
-@param group: groupname to be used as the new group owner (if None, then root is
-    used as a groupname0
+@param group: groupname to be used as the new group owner (if None, then root is used as a
+    groupname0
 @type group: string
-@param recursive: if path is a directory, all files underneath the path are also
-    chown if True (default False)
+@param recursive: if path is a directory, all files underneath the path are also chown if
+    True (default False)
 @type recursive: boolean
 
 ```
@@ -186,11 +187,9 @@ the current process is the process which called the C\{daemonize\}
 method, which can most likely be closed now. The second item is the
 PID of the current process.
 
-@attention: Make sure you know really well what fork(2) does before using this
-    method
+@attention: Make sure you know really well what fork(2) does before using this method
 
-@param chdir: Path to chdir(2) to after forking. Set to None to disable
-    chdir'ing
+@param chdir: Path to chdir(2) to after forking. Set to None to disable chdir'ing
 @type chdir: string or None
 @param umask: Umask to set after forking. Set to -1 not to set umask
 @type umask: number
@@ -350,8 +349,8 @@ Get memory and CPU info about this machine
 ```
 Kill a process group
 
-killGroup will get the parent pid from the pid given and kill the group with
-    signal SIGKILL (default)
+killGroup will get the parent pid from the pid given and kill the group with signal
+    SIGKILL (default)
 
 @type pid: int
 @param pid: process id

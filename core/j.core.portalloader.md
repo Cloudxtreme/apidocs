@@ -1,3 +1,4 @@
+<!-- toc -->
 ## j.core.portalloader
 
 - /opt/jumpscale7/lib/JumpScale/portal/portalloaders/PortalLoaderFactory.py

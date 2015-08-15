@@ -1,3 +1,4 @@
+<!-- toc -->
 ## j.tools.text
 
 - /opt/jumpscale7/lib/JumpScale/core/system/text.py
@@ -301,8 +302,7 @@ do reverse of:
 ##### comments
 
 ```
-@param onlyPrefix if True means only when prefix found will be returned, rest
-    discarded
+@param onlyPrefix if True means only when prefix found will be returned, rest discarded
 
 ```
 
@@ -317,10 +317,9 @@ do reverse of:
 ##### comments
 
 ```
-there can be chars for prefix (e.g. '< :*: aline'  and this function looking for
-    :*: would still work and ignore '< ')
-@param onlyPrefix if True means only when prefix found will be returned, rest
-    discarded
+there can be chars for prefix (e.g. '< :*: aline'  and this function looking for :*: would
+    still work and ignore '< ')
+@param onlyPrefix if True means only when prefix found will be returned, rest discarded
 
 ```
 
@@ -336,8 +335,8 @@ there can be chars for prefix (e.g. '< :*: aline'  and this function looking for
 ##### comments
 
 ```
-try to convert a python object to string representation works for None, bool,
-    integer, float, dict, list
+try to convert a python object to string representation works for None, bool, integer,
+    float, dict, list
 
 ```
 

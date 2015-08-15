@@ -1,3 +1,4 @@
+<!-- toc -->
 ## j.atyourservice
 
 - /opt/jumpscale7/lib/JumpScale/baselib/atyourservice/AtYourServiceFactory.py
@@ -85,8 +86,7 @@ throw error if service is not found or if more than one service is found
 ##### comments
 
 ```
-return a service instance from its representation 'domain      :name
-    :instance'
+return a service instance from its representation 'domain      :name       :instance'
 
 ```
 

@@ -1,3 +1,4 @@
+<!-- toc -->
 ## j.core.codegenerator
 
 - /opt/jumpscale7/lib/JumpScale/baselib/codegentools/CodeGenerator.py
@@ -104,8 +105,8 @@ return: dict of classes if more than 1 otherwise just the class
 ##### comments
 
 ```
-return: returns dict with key name methodname and then the class (for each
-    method a class is generated)
+return: returns dict with key name methodname and then the class (for each method a class
+    is generated)
 
 ```
 

@@ -1,3 +1,4 @@
+<!-- toc -->
 ## j.tools.dnsman.bind
 
 - /opt/jumpscale7/lib/JumpScale/baselib/dnsman/bind.py

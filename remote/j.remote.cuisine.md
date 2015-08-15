@@ -1,3 +1,4 @@
+<!-- toc -->
 ## j.remote.cuisine
 
 - /opt/jumpscale7/lib/JumpScale/baselib/remote/cuisine/Cuisine.py

@@ -1,3 +1,4 @@
+<!-- toc -->
 ## j.system.platform.diskmanager
 
 - /opt/jumpscale7/lib/JumpScale/lib/diskmanager/Diskmanager.py
@@ -14,8 +15,7 @@
 ##### comments
 
 ```
-Get a filtered list of free regions, excluding the gaps due to partition
-    alignment
+Get a filtered list of free regions, excluding the gaps due to partition alignment
 
 ```
 

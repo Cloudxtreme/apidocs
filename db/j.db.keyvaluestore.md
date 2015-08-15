@@ -1,3 +1,4 @@
+<!-- toc -->
 ## j.db.keyvaluestore
 
 - /opt/jumpscale7/lib/JumpScale/baselib/key_value_store/store_factory.py

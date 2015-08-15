@@ -1,3 +1,4 @@
+<!-- toc -->
 ## j.clients.credis
 
 - /opt/jumpscale7/lib/JumpScale/baselib/credis/CRedis.py

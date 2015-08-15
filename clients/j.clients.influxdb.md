@@ -1,3 +1,4 @@
+<!-- toc -->
 ## j.clients.influxdb
 
 - /opt/jumpscale7/lib/JumpScale/baselib/influxdb/Influxdb.py

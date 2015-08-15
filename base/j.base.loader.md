@@ -1,3 +1,4 @@
+<!-- toc -->
 ## j.base.loader
 
 - /opt/jumpscale7/lib/JumpScale/core/LOADER.py

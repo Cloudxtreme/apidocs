@@ -1,3 +1,4 @@
+<!-- toc -->
 ## j.action
 
 - /opt/jumpscale7/lib/JumpScale/baselib/actionsold/action/ActionController.py
@@ -68,8 +69,7 @@ Start a new action
 ##### comments
 
 ```
-Enable j.console output. Format such that it is nicely shown between action
-    start/stop.
+Enable j.console output. Format such that it is nicely shown between action start/stop.
 
 ```
 
@@ -99,8 +99,7 @@ display a result message.
 ##### comments
 
 ```
-Disable j.console output. Format such that it is nicely shown between action
-    start/stop.
+Disable j.console output. Format such that it is nicely shown between action start/stop.
 
 ```
 

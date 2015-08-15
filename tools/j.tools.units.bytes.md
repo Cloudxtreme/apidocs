@@ -1,3 +1,4 @@
+<!-- toc -->
 ## j.tools.units.bytes
 
 - /opt/jumpscale7/lib/JumpScale/baselib/units/units.py

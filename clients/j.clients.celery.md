@@ -1,3 +1,4 @@
+<!-- toc -->
 ## j.clients.celery
 
 - /opt/jumpscale7/lib/JumpScale/lib/celery/CeleryFactory.py

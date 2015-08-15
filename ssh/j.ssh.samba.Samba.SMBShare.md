@@ -1,3 +1,4 @@
+<!-- toc -->
 ## j.ssh.samba.Samba.SMBShare
 
 - /opt/jumpscale7/lib/JumpScale/lib/ssh/samba/manager.py

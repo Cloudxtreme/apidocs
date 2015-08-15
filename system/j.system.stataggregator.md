@@ -1,3 +1,4 @@
+<!-- toc -->
 ## j.system.stataggregator
 
 - /opt/jumpscale7/lib/JumpScale/baselib/stataggregator/StatAggregator.py

@@ -1,3 +1,4 @@
+<!-- toc -->
 ## j.system.platform.ubuntu
 
 - /opt/jumpscale7/lib/JumpScale/baselib/platforms/ubuntu/Ubuntu.py
@@ -48,8 +49,7 @@ check if ubuntu or mint (which is based on ubuntu)
 ##### comments
 
 ```
-@param packagenames is name or array of names of ubuntu package to install e.g.
-    curl
+@param packagenames is name or array of names of ubuntu package to install e.g. curl
 @param cmdname is cmd to check e.g. curl
 
 ```

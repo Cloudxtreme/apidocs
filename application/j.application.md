@@ -1,3 +1,4 @@
+<!-- toc -->
 ## j.application
 
 - /opt/jumpscale7/lib/JumpScale/core/Application.py
@@ -35,8 +36,8 @@
 ##### comments
 
 ```
-returns hrd for specific appname & instance name (default domain=jumpscale or
-    not used when inside a config git repo)
+returns hrd for specific appname & instance name (default domain=jumpscale or not used
+    when inside a config git repo)
 
 ```
 
@@ -119,8 +120,8 @@ By default 0 for windows
 ##### comments
 
 ```
-will look for network interface and return a hash calculated from lowest mac
-    address from all physical nics
+will look for network interface and return a hash calculated from lowest mac address from
+    all physical nics
 
 ```
 

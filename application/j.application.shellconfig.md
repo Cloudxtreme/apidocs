@@ -1,3 +1,4 @@
+<!-- toc -->
 ## j.application.shellconfig
 
 - /opt/jumpscale7/lib/JumpScale/core/shellconfig/ShellConfig.py

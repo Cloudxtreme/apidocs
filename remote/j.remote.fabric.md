@@ -1,3 +1,4 @@
+<!-- toc -->
 ## j.remote.fabric
 
 - /opt/jumpscale7/lib/JumpScale/baselib/remote/fabric/FabricTool.py

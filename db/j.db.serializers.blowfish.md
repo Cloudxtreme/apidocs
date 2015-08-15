@@ -1,3 +1,4 @@
+<!-- toc -->
 ## j.db.serializers.blowfish
 
 - /opt/jumpscale7/lib/JumpScale/baselib/serializers/SerializerBlowfish.py

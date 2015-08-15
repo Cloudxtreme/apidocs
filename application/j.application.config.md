@@ -1,3 +1,4 @@
+<!-- toc -->
 ## j.application.config
 
 - /opt/jumpscale7/lib/JumpScale/baselib/hrd/HRDTree.py
@@ -84,8 +85,7 @@ look for $(name) and replace with hrd value
 ##### comments
 
 ```
-@param template is example hrd content block, which will be used to check
-    against,
+@param template is example hrd content block, which will be used to check against,
 if params not found will be added to existing hrd
 
 ```
@@ -195,8 +195,7 @@ returns values from prefix return as list
 ```
 returns values from prefix return as list
 each value represents a dict
-@param musthave means for each item which is dict, we need to have following
-    keys
+@param musthave means for each item which is dict, we need to have following keys
 @param specifies the defaults
 @param aredicts & arelist specifies which types
 

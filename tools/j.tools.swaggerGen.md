@@ -1,3 +1,4 @@
+<!-- toc -->
 ## j.tools.swaggerGen
 
 - /opt/jumpscale7/lib/JumpScale/baselib/swaggergen/SwaggerGen.py

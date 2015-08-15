@@ -1,3 +1,4 @@
+<!-- toc -->
 ## j.tools.docker
 
 - /opt/jumpscale7/lib/JumpScale/lib/docker/Docker.py
@@ -71,10 +72,10 @@
 ##### comments
 
 ```
-@param ports in format as follows  "22:8022 80:8080"  the first arg e.g. 22 is
-    the port in the container
-@param vols in format as follows "/var/insidemachine:/var/inhost # /var/1:/var/1
-    # ..."   '#' is separator
+@param ports in format as follows  "22:8022 80:8080"  the first arg e.g. 22 is the port in
+    the container
+@param vols in format as follows "/var/insidemachine:/var/inhost # /var/1:/var/1 # ..."
+    '#' is separator
 
 ```
 
@@ -189,8 +190,8 @@ last one is sum of mem & cpu
 ##### comments
 
 ```
-@param basename is the name of a start of a machine locally, will be used as
-    basis and then the source will be synced over it
+@param basename is the name of a start of a machine locally, will be used as basis and
+    then the source will be synced over it
 
 ```
 

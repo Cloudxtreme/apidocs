@@ -1,3 +1,4 @@
+<!-- toc -->
 ## j.ssh.rsync.RsyncModule
 
 - /opt/jumpscale7/lib/JumpScale/lib/ssh/rsync/manager.py

@@ -1,3 +1,4 @@
+<!-- toc -->
 ## j.servers.tornado
 
 - /opt/jumpscale7/lib/JumpScale/grid/tornado/TornadoFactory.py
@@ -58,8 +59,8 @@ class MyCommands():
     def echo(self,msg="",session=session):
         return msg
 
-daemon.addCMDsInterface(MyCommands,category="optional")  #pass as class not as
-    object !!! chose category if only 1 then can leave ""
+daemon.addCMDsInterface(MyCommands,category="optional")  #pass as class not as object !!!
+    chose category if only 1 then can leave ""
 
 daemon.start()
 
@@ -76,8 +77,7 @@ daemon.start()
 ##### comments
 
 ```
-use this to init your ssl keys for the server (they can be used over all
-    transports)
+use this to init your ssl keys for the server (they can be used over all transports)
 
 ```
 

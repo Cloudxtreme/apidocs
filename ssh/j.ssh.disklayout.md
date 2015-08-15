@@ -1,3 +1,4 @@
+<!-- toc -->
 ## j.ssh.disklayout
 
 - /opt/jumpscale7/lib/JumpScale/lib/ssh/disklayout/manager.py

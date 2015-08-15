@@ -1,3 +1,4 @@
+<!-- toc -->
 ## j.tools.admin
 
 - /opt/jumpscale7/lib/JumpScale/baselib/admin/Admin.py

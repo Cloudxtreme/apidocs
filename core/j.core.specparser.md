@@ -1,3 +1,4 @@
+<!-- toc -->
 ## j.core.specparser
 
 - /opt/jumpscale7/lib/JumpScale/baselib/specparser/SpecParser.py
@@ -34,8 +35,8 @@
 
 ```
 do not specify query with one of the other filter criteria
-@param query is in dot notation e.g. $appname.$actorname.$modelname ... the
-    items in front are optional
+@param query is in dot notation e.g. $appname.$actorname.$modelname ... the items in front
+    are optional
 
 ```
 
@@ -93,8 +94,8 @@ do not specify query with one of the other filter criteria
 
 ```
 @param typestr e.g list(machine.status)
-@return $returntype,$spec  $returntype=list,dict,object,enum (list & dict can be
-    of primitive types or objects (NOT enums))
+@return $returntype,$spec  $returntype=list,dict,object,enum (list & dict can be of
+    primitive types or objects (NOT enums))
 
 ```
 

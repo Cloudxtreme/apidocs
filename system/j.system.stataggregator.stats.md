@@ -1,3 +1,4 @@
+<!-- toc -->
 ## j.system.stataggregator.stats
 
 - /opt/jumpscale7/lib/JumpScale/baselib/redis/Redis.py

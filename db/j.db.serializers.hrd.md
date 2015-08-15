@@ -1,3 +1,4 @@
+<!-- toc -->
 ## j.db.serializers.hrd
 
 - /opt/jumpscale7/lib/JumpScale/baselib/serializers/SerializerHRD.py

@@ -1,3 +1,4 @@
+<!-- toc -->
 ## j.db.cache
 
 - /opt/jumpscale7/lib/JumpScale/baselib/lrucache/LRUCacheFactory.py

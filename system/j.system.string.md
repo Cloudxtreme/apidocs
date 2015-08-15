@@ -1,3 +1,4 @@
+<!-- toc -->
 ## j.system.string
 
 - /opt/jumpscale7/lib/JumpScale/core/system/string.py

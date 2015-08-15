@@ -1,3 +1,4 @@
+<!-- toc -->
 ## j.system.fswalker
 
 - /opt/jumpscale7/lib/JumpScale/core/system/fswalker.py
@@ -67,8 +68,7 @@ return False if you want recursion to stop (means don't go deeper)
 ...     arg.append(path)
 ...
 >>> paths = list()
->>> FSWalker.walk('/foo', dirlister, paths, recursive=False,
-    includeFolders=True)
+>>> FSWalker.walk('/foo', dirlister, paths, recursive=False, includeFolders=True)
 /foo/file1
 /foo/file2
 /foo/file3
@@ -77,8 +77,7 @@ return False if you want recursion to stop (means don't go deeper)
 ['/foo/file1', '/foo/file2', '/foo/file3', '/foo/bar']
 
 @param root: Filesystem root to crawl (string)
-@param callback: Callable to call for every file found, func(arg, path)
-    (callable)
+@param callback: Callable to call for every file found, func(arg, path) (callable)
 @param arg: First argument to pass to callback
 @param recursive: Walk recursive or not (bool)
 @param includeFolders: Whether to call C\{callable\} for folders as well (bool)
@@ -86,8 +85,8 @@ return False if you want recursion to stop (means don't go deeper)
     (array(strings))
 @param contentRegexIncludes / Excludes match content of files to array of regex
     expressions (array(strings))
-@param depths array of depth values e.g. only return depth 0 & 1 (would mean
-    first dir depth and then 1 more deep) (array(int))
+@param depths array of depth values e.g. only return depth 0 & 1 (would mean first dir
+    depth and then 1 more deep) (array(int))
 
 ```
 
@@ -111,8 +110,7 @@ Walk through all files and folders starting at C\{root\}, recursive by
 default, calling a given callback with a provided argument and file
 path for every file & dir we could find.
 
-To match the function use the callbackForMatch function which are separate for
-    dir or file
+To match the function use the callbackForMatch function which are separate for dir or file
 when it returns True the path will be further processed
 when None (function not given match will not be done)
 
@@ -121,8 +119,7 @@ Examples
 >>> def my_print(path,arg):
 ...     print arg, path
 ...
-#if return False for callbackFunctionDir then recurse will not happen for that
-    dir
+#if return False for callbackFunctionDir then recurse will not happen for that dir
 
 >>> def matchDirOrFile(path,arg):
 ...     return True #means will match all

@@ -1,3 +1,4 @@
+<!-- toc -->
 ## j.codetools
 
 - /opt/jumpscale7/lib/JumpScale/baselib/codetools/CodeTools.py
@@ -37,8 +38,8 @@ e.g. find blocks, replace lines, ...
 ##### comments
 
 ```
-try to create a title out of text, ignoring irrelevant words and making lower
-    case and removing
+try to create a title out of text, ignoring irrelevant words and making lower case and
+    removing
 not needed chars
 
 ```

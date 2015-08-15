@@ -1,3 +1,4 @@
+<!-- toc -->
 ## j.core.params
 
 - /opt/jumpscale7/lib/JumpScale/baselib/params/Params.py

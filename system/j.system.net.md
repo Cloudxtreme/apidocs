@@ -1,3 +1,4 @@
+<!-- toc -->
 ## j.system.net
 
 - /opt/jumpscale7/lib/JumpScale/core/system/net.py
@@ -58,12 +59,10 @@ return True if reachable
 ##### comments
 
 ```
-Download a url to a file or a directory, supported protocols: http, https, ftp,
-    file
+Download a url to a file or a directory, supported protocols: http, https, ftp, file
 @param url: URL to download from
 @type url: string
-@param localpath: filename or directory to download the url to pass - to return
-    data
+@param localpath: filename or directory to download the url to pass - to return data
 @type localpath: string
 @param username: username for the url if it requires authentication
 @type username: string
@@ -85,8 +84,8 @@ Download a url to a file or a directory, supported protocols: http, https, ftp,
 ##### comments
 
 ```
-Downloads the file from the specified url to the specified destination if it is
-    not already there
+Downloads the file from the specified url to the specified destination if it is not
+    already there
 or if the target file checksum doesn't match the expected checksum.
 
 ```
@@ -280,8 +279,8 @@ Works only for Linux/Solaris systems
 ##### comments
 
 ```
-Returns the first local ip address that can connect to the specified ip on the
-    specified port
+Returns the first local ip address that can connect to the specified ip on the specified
+    port
 
 ```
 
@@ -428,11 +427,10 @@ Update a hostfile, delete ip from hostsfile
 ```
 will in a safe way configure bridge brpub
 if available and has ip addr to go to internet then nothing will happen
-otherwise system will try in a safe way set this ipaddr, this is a dangerous
-    operation
+otherwise system will try in a safe way set this ipaddr, this is a dangerous operation
 
-if ipaddr == None then will look for existing config on interface and use that
-    one to configure the bridge
+if ipaddr == None then will look for existing config on interface and use that one to
+    configure the bridge
 
 ```
 
@@ -484,8 +482,8 @@ Update a hostfile to contain the basic information install
 ##### comments
 
 ```
-Validate wether this ip address is a valid ip address of 4 octets ranging from 0
-    to 255 or not
+Validate wether this ip address is a valid ip address of 4 octets ranging from 0 to 255 or
+    not
 @param ipaddress: ip address to check on
 @rtype: boolean...True if this ip is valid, False if not
 

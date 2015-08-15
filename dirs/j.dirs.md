@@ -1,3 +1,4 @@
+<!-- toc -->
 ## j.dirs
 
 - /opt/jumpscale7/lib/JumpScale/core/Dirs.py
@@ -107,8 +108,8 @@ default path.
 ##### comments
 
 ```
-replace $base,$vardir,$cfgDir,$bindir,$codedir,$tmpdir,$logdir,$appdir with
-    props of this class
+replace $base,$vardir,$cfgDir,$bindir,$codedir,$tmpdir,$logdir,$appdir with props of this
+    class
 
 ```
 

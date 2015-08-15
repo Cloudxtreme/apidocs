@@ -1,3 +1,4 @@
+<!-- toc -->
 ## j.ssh.aoe.AOEManager
 
 - /opt/jumpscale7/lib/JumpScale/lib/ssh/aoe/manager.py

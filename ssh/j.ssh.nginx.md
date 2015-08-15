@@ -1,3 +1,4 @@
+<!-- toc -->
 ## j.ssh.nginx
 
 - /opt/jumpscale7/lib/JumpScale/lib/ssh/nginx/manager.py

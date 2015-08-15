@@ -1,3 +1,4 @@
+<!-- toc -->
 ## j.clients.email
 
 - /opt/jumpscale7/lib/JumpScale/baselib/mailclient/emailclient.py

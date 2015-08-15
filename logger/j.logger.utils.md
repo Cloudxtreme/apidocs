@@ -1,3 +1,4 @@
+<!-- toc -->
 ## j.logger.utils
 
 - /opt/jumpscale7/lib/JumpScale/core/logging/LogHandler.py

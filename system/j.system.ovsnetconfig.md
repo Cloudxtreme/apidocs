@@ -1,3 +1,4 @@
+<!-- toc -->
 ## j.system.ovsnetconfig
 
 - /opt/jumpscale7/lib/JumpScale/lib/ovsnetconfig/NetConfigFactory.py
@@ -98,8 +99,8 @@ Resets /etc/network/interfaces with a basic configuration
 ##### comments
 
 ```
-Reasonable defaults  : mode=balance-tcp, lacp=active,fast, bondname=brname-Bond,
-    all vlans allowed
+Reasonable defaults  : mode=balance-tcp, lacp=active,fast, bondname=brname-Bond, all vlans
+    allowed
 
 ```
 

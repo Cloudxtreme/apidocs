@@ -1,3 +1,4 @@
+<!-- toc -->
 ## j.console
 
 - /opt/jumpscale7/lib/JumpScale/core/Console.py
@@ -35,8 +36,7 @@ self.reformat=False #if True will make sure message fits nicely on screen
 ##### comments
 
 ```
-@param choicearray is list or dict, when dict key needs to be the object to
-    return,
+@param choicearray is list or dict, when dict key needs to be the object to return,
        the value of the dics is what needs to be returned, the key is the str
     representation
 
@@ -91,17 +91,15 @@ Get an integer response on asked question
 ```
 Ask the user for multiple integers
 
-@param question: question that will be echoed before the user needs to input
-    integers
+@param question: question that will be echoed before the user needs to input integers
 @type question: string
-@param invalid_message: message that will be echoed when the user inputs a
-    faulty value
+@param invalid_message: message that will be echoed when the user inputs a faulty value
 @type invalid_message: string
-@param min: optional minimal value for input values, all returned values will be
-    at least min
+@param min: optional minimal value for input values, all returned values will be at least
+    min
 @type min: number or None
-@param max: optional maximal value for input values, all returned values will be
-    at least max
+@param max: optional maximal value for input values, all returned values will be at least
+    max
 @type max: number of None
 @return: the input numbers
 @rtype: list<number>
@@ -122,8 +120,8 @@ Ask the user a question that needs a multi-line answer.
 
 @param question: The question that should be asked to the user
 @type question: string
-@param escapeString: Optional custom escape string that is used by the user to
-    indicate input has ended.
+@param escapeString: Optional custom escape string that is used by the user to indicate
+    input has ended.
 @type escapeString: string
 @return: string multi-line reply by the user, always ending with a newline
 
@@ -227,8 +225,8 @@ clear screen
 
 ```
 Display some text to the end-user, use this method instead of print
-@param indent std, will use indent from console object (same for all), this
-    param allows to overrule
+@param indent std, will use indent from console object (same for all), this param allows
+    to overrule
         will only work when j.console.reformat==True
 
 ```

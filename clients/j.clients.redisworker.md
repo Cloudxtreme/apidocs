@@ -1,3 +1,4 @@
+<!-- toc -->
 ## j.clients.redisworker
 
 - /opt/jumpscale7/lib/JumpScale/baselib/redisworker/RedisWorker.py
@@ -19,8 +20,7 @@
 ##### comments
 
 ```
-this checks that jumpscripts are not executed twice when being scheduled
-    recurring
+this checks that jumpscripts are not executed twice when being scheduled recurring
 one off jobs will always execute !!!
 
 ```

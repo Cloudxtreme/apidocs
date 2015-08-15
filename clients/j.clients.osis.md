@@ -1,3 +1,4 @@
+<!-- toc -->
 ## j.clients.osis
 
 - /opt/jumpscale7/lib/JumpScale/grid/osis/OSISFactory.py

@@ -1,3 +1,4 @@
+<!-- toc -->
 ## j.code
 
 - /opt/jumpscale7/lib/JumpScale/baselib/code/Code.py

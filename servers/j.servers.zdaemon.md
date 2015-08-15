@@ -1,3 +1,4 @@
+<!-- toc -->
 ## j.servers.zdaemon
 
 - /opt/jumpscale7/lib/JumpScale/grid/zdaemon/ZDaemonFactory.py
@@ -18,8 +19,8 @@
 ##### comments
 
 ```
-is a generic usable zmq daemon which has a data & cmd channel (data channel not
-    completely implemented for now)
+is a generic usable zmq daemon which has a data & cmd channel (data channel not completely
+    implemented for now)
 
 zd=j.core.zdaemon.getZDaemon(port=5651,nrCmdGreenlets=50)
 
@@ -33,8 +34,8 @@ class MyCommands():
     def echo(self,msg="",session=None):
         return msg
 
-#remark always need to add **args in method because user & returnformat are
-    passed as params which can
+#remark always need to add **args in method because user & returnformat are passed as
+    params which can
   be used in method
 
 zd.addCMDsInterface(MyCommands)  #pass as class not as object !!!
@@ -62,8 +63,8 @@ use self.getZDaemonClientClass as client to this daemon
 ```
 example usage, see example for server at self.getZDaemon
 
-agent=j.core.zdaemon.getZDaemonAgent(ipaddr="127.0.0.1",port=5651,login="root",p
-    asswd="1234",ssl=False,roles=["*"])
+agent=j.core.zdaemon.getZDaemonAgent(ipaddr="127.0.0.1",port=5651,login="root",passwd="123
+    4",ssl=False,roles=["*"])
 agent.start()
 
 @param roles describes which roles the agent can execute e.g.
@@ -92,8 +93,8 @@ agent.start()
 ```
 example usage, see example for server at self.getZDaemon
 
-client=j.core.zdaemon.getZDaemonClient(ipaddr="127.0.0.1",port=5651,login="root"
-    ,passwd="1234",ssl=False)
+client=j.core.zdaemon.getZDaemonClient(ipaddr="127.0.0.1",port=5651,login="root",passwd="1
+    234",ssl=False)
 
         print client.echo("Hello World.")
 
@@ -154,8 +155,7 @@ transp=BlobStorTransport(addr=ipaddr,port=port,gevent=True)
 ##### comments
 
 ```
-use this to init your ssl keys for the server (they can be used over all
-    transports)
+use this to init your ssl keys for the server (they can be used over all transports)
 
 ```
 

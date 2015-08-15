@@ -1,3 +1,4 @@
+<!-- toc -->
 ## j.core.tags
 
 - /opt/jumpscale7/lib/JumpScale/baselib/tags/TagsFactory.py

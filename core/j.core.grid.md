@@ -1,3 +1,4 @@
+<!-- toc -->
 ## j.core.grid
 
 - /opt/jumpscale7/lib/JumpScale/grid/grid/GridFactory.py

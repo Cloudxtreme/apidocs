@@ -1,3 +1,4 @@
+<!-- toc -->
 ## j.remote.avahi
 
 - /opt/jumpscale7/lib/JumpScale/baselib/remote/avahi/Avahi.py

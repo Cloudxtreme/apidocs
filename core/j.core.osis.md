@@ -1,3 +1,4 @@
+<!-- toc -->
 ## j.core.osis
 
 - /opt/jumpscale7/lib/JumpScale/grid/osis/OSISFactory.py
@@ -67,8 +68,8 @@ create local instance starting from path
 ##### comments
 
 ```
-return parent class for osis implementation (is the implementation from which
-    each namespace & category inherits)
+return parent class for osis implementation (is the implementation from which each
+    namespace & category inherits)
 
 ```
 

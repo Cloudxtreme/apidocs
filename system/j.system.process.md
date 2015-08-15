@@ -1,3 +1,4 @@
+<!-- toc -->
 ## j.system.process
 
 - /opt/jumpscale7/lib/JumpScale/core/system/process.py
@@ -131,8 +132,8 @@ Executes a command, returns the exitcode and the output
 @param command: command to execute
 @param dieOnNonZeroExitCode: boolean to die if got non zero exitcode
 @param outputToStdout: boolean to show/hide output to stdout
-@param ignoreErrorOutput standard stderror is added to stdout in out result, if
-    you want to make sure this does not happen put on True
+@param ignoreErrorOutput standard stderror is added to stdout in out result, if you want
+    to make sure this does not happen put on True
 @rtype: integer represents the exitcode plus the output of the executed command
 if exitcode is not zero then the executed command returned with errors
 
@@ -153,28 +154,26 @@ if exitcode is not zero then the executed command returned with errors
 ##### comments
 
 ```
-Execute command asynchronous. By default, the input, output and error streams of
-    the command will be piped to the returned Popen object. Be sure to call
-    commands that don't expect user input, or send input to the stdin parameter
-    of the returning Popen object.
+Execute command asynchronous. By default, the input, output and error streams of the
+    command will be piped to the returned Popen object. Be sure to call commands that
+    don't expect user input, or send input to the stdin parameter of the returning Popen
+    object.
 @param command: Command to execute. (string)
-@param args: [Optional, [] by default] Arguments to be passed to the command.
-    (Array of string)
-@param printCommandToStdOut: [Optional, False by default] Indicates if the
-    command to be executed needs to be printed to screen. (boolean)
-@param redirectStreams: [Optional, True by default] Indicates if the input,
-    output and error streams should be captured by the returned Popen object. If
-    not, the output and input will be mixed with the streams of the calling
-    process. (boolean)
-@param argsInCommand: [Optional, False by default] Indicates if the command-
-    parameter contains command-line arguments.  If argsInCommand is False and
-    args is not empty, the contents of args will be added to the command when
-    executing.
-@param useShell: [Optional, False by default on Windows, True by default on
-    Linux] Indicates if the command should be executed throug the shell.
-@return: If redirectStreams is true, this function returns a subprocess.Popen
-    object representing the started process. Otherwise, it will return the pid-
-    number of the started process.
+@param args: [Optional, [] by default] Arguments to be passed to the command. (Array of
+    string)
+@param printCommandToStdOut: [Optional, False by default] Indicates if the command to be
+    executed needs to be printed to screen. (boolean)
+@param redirectStreams: [Optional, True by default] Indicates if the input, output and
+    error streams should be captured by the returned Popen object. If not, the output and
+    input will be mixed with the streams of the calling process. (boolean)
+@param argsInCommand: [Optional, False by default] Indicates if the command-parameter
+    contains command-line arguments.  If argsInCommand is False and args is not empty, the
+    contents of args will be added to the command when executing.
+@param useShell: [Optional, False by default on Windows, True by default on Linux]
+    Indicates if the command should be executed throug the shell.
+@return: If redirectStreams is true, this function returns a subprocess.Popen object
+    representing the started process. Otherwise, it will return the pid-number of the
+    started process.
 
 ```
 
@@ -334,8 +333,8 @@ Returns the full name of the process that is listening on the given port
 ```
 Checks whether this pid is alive.
 For unix, a signal is sent to check that the process is alive.
-For windows, the process information is retrieved and it is double checked that
-    the process is python.exe
+For windows, the process information is retrieved and it is double checked that the
+    process is python.exe
 or pythonw.exe
 
 ```
@@ -555,8 +554,7 @@ documentation of L\{jumpscale.system.process.run\}.
 ##### comments
 
 ```
-Set the value of the environment variables C\{varnames\}. Existing variable are
-    overwritten
+Set the value of the environment variables C\{varnames\}. Existing variable are overwritten
 
 @param varnames: A list of the names of all the environment variables to set
 @type varnames: list<string>

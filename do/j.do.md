@@ -1,5 +1,4 @@
 <!-- toc -->
-
 ## j.do
 
 - /opt/jumpscale7/lib/JumpScale/InstallTools.py
@@ -164,10 +163,9 @@ check if path is dir or link to a dir
 
 ```
 @return path of downloaded file
-@param minspeed is kbytes per sec e.g. 50, if less than 50 kbytes during 10 min
-    it will restart the download (curl only)
-@param when multithread True then will use aria2 download tool to get multiple
-    threads
+@param minspeed is kbytes per sec e.g. 50, if less than 50 kbytes during 10 min it will
+    restart the download (curl only)
+@param when multithread True then will use aria2 download tool to get multiple threads
 
 ```
 
@@ -288,15 +286,12 @@ Return the base name of pathname path.
 ```
 Return a directory name from pathname path.
 @param path the path to find a directory within
-@param lastOnly means only the last part of the path which is a dir (overrides
-    levelsUp to 0)
+@param lastOnly means only the last part of the path which is a dir (overrides levelsUp to
+    0)
 @param levelsUp means, return the parent dir levelsUp levels up
- e.g. ...getDirName("/opt/qbase/bin/something/test.py", levelsUp=0) would return
-    something
- e.g. ...getDirName("/opt/qbase/bin/something/test.py", levelsUp=1) would return
-    bin
- e.g. ...getDirName("/opt/qbase/bin/something/test.py", levelsUp=10) would raise
-    an error
+ e.g. ...getDirName("/opt/qbase/bin/something/test.py", levelsUp=0) would return something
+ e.g. ...getDirName("/opt/qbase/bin/something/test.py", levelsUp=1) would return bin
+ e.g. ...getDirName("/opt/qbase/bin/something/test.py", levelsUp=10) would raise an error
 
 ```
 
@@ -327,8 +322,7 @@ Args:
     dest (str): the local filesystem path to clone to
     login (str): authentication login name
     passwd (str): authentication login password
-    reset (boolean): if True, any cached clone of the Git repository will be
-    removed
+    reset (boolean): if True, any cached clone of the Git repository will be removed
 
 Returns:
     (repository_host, repository_type, repository_account, repository_name,
@@ -357,8 +351,7 @@ Returns:
 Returns the parent of the path:
 /dir1/dir2/file_or_dir -> /dir1/dir2/
 /dir1/dir2/            -> /dir1/
-@todo why do we have 2 implementations which are almost the same see
-    getParentDirName()
+@todo why do we have 2 implementations which are almost the same see getParentDirName()
 
 ```
 
@@ -509,18 +502,17 @@ Retrieves list of files found in the specified directory
 @type  path:       string
 @param recursive:  recursively look in all subdirs
 @type  recursive:  boolean
-@param filter:     unix-style wildcard (e.g. *.py) - this is not a regular
-    expression
+@param filter:     unix-style wildcard (e.g. *.py) - this is not a regular expression
 @type  filter:     string
-@param minmtime:   if not None, only return files whose last modification time >
-    minmtime (epoch in seconds)
+@param minmtime:   if not None, only return files whose last modification time > minmtime
+    (epoch in seconds)
 @type  minmtime:   integer
-@param maxmtime:   if not None, only return files whose last modification time <
-    maxmtime (epoch in seconds)
+@param maxmtime:   if not None, only return files whose last modification time < maxmtime
+    (epoch in seconds)
 @Param depth: is levels deep wich we need to go
 @type  maxmtime:   integer
-@param type is string with f & d inside (f for when to find files, d for when to
-    find dirs)
+@param type is string with f & d inside (f for when to find files, d for when to find
+    dirs)
 @rtype: list
 
 ```
@@ -548,14 +540,13 @@ Retrieves list of files found in the specified directory
 @type  path:       string
 @param recursive:  recursively look in all subdirs
 @type  recursive:  boolean
-@param filter:     unix-style wildcard (e.g. *.py) - this is not a regular
-    expression
+@param filter:     unix-style wildcard (e.g. *.py) - this is not a regular expression
 @type  filter:     string
-@param minmtime:   if not None, only return files whose last modification time >
-    minmtime (epoch in seconds)
+@param minmtime:   if not None, only return files whose last modification time > minmtime
+    (epoch in seconds)
 @type  minmtime:   integer
-@param maxmtime:   if not None, only return files whose last modification time <
-    maxmtime (epoch in seconds)
+@param maxmtime:   if not None, only return files whose last modification time < maxmtime
+    (epoch in seconds)
 @Param depth: is levels deep wich we need to go
 @type  maxmtime:   integer
 @Param exclude: list of std filters if matches then exclude
@@ -680,8 +671,7 @@ find all links & remove
 Rewrite the url of a git repo with login and passwd if specified
 
 Args:
-    url (str): the HTTP URL of the Git repository. ex:
-    'https://github.com/odoo/odoo'
+    url (str): the HTTP URL of the Git repository. ex: 'https://github.com/odoo/odoo'
     login (str): authentication login name
     passwd (str): authentication login password
 

@@ -1,3 +1,4 @@
+<!-- toc -->
 ## j.clients.redis
 
 - /opt/jumpscale7/lib/JumpScale/baselib/redis/Redis.py

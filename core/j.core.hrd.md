@@ -1,3 +1,4 @@
+<!-- toc -->
 ## j.core.hrd
 
 - /opt/jumpscale7/lib/JumpScale/baselib/hrd/HRDFactory.py

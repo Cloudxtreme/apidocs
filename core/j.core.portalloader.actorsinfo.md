@@ -1,3 +1,4 @@
+<!-- toc -->
 ## j.core.portalloader.actorsinfo
 
 - /opt/jumpscale7/lib/JumpScale/portal/portalloaders/ActorsInfo.py

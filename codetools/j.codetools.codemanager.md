@@ -1,3 +1,4 @@
+<!-- toc -->
 ## j.codetools.codemanager
 
 - /opt/jumpscale7/lib/JumpScale/baselib/codetools/CodeManager.py

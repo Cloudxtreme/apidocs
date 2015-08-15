@@ -1,3 +1,4 @@
+<!-- toc -->
 ## j.base.idgenerator
 
 - /opt/jumpscale7/lib/JumpScale/core/base/idgenerator/IDGenerator.py

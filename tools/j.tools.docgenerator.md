@@ -1,3 +1,4 @@
+<!-- toc -->
 ## j.tools.docgenerator
 
 - /opt/jumpscale7/lib/JumpScale/portal/docgenerator/Docgenerator.py

@@ -1,3 +1,4 @@
+<!-- toc -->
 ## j.actions
 
 - /opt/jumpscale7/lib/JumpScale/baselib/actions/action/ActionController.py
@@ -75,8 +76,7 @@ Check whether actions are currently running
 @param id is unique id which allows finding back of action
 @param description: Action description (what are we doing)
 @param errorMessage: message to give when error
-@param resolutionMessage: Action resolution message (how to resolve the action
-    when error)
+@param resolutionMessage: Action resolution message (how to resolve the action when error)
 @param loglevel: Message level
 @param action: python function to execute
 @param actionRecover: python function to execute when error

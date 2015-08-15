@@ -1,3 +1,4 @@
+<!-- toc -->
 ## j.db.serializers.dict
 
 - /opt/jumpscale7/lib/JumpScale/baselib/serializers/SerializerDict.py

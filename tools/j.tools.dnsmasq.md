@@ -1,3 +1,4 @@
+<!-- toc -->
 ## j.tools.dnsmasq
 
 - /opt/jumpscale7/lib/JumpScale/baselib/dnsmasq/dnsmasq.py

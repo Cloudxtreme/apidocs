@@ -1,3 +1,4 @@
+<!-- toc -->
 ## j.core.taskletengine
 
 - /opt/jumpscale7/lib/JumpScale/baselib/taskletengine/TaskletEngine.py

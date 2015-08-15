@@ -1,3 +1,4 @@
+<!-- toc -->
 ## j.tools.rsync
 
 - /opt/jumpscale7/lib/JumpScale/baselib/rsync/RsyncFactory.py

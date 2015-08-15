@@ -1,3 +1,4 @@
+<!-- toc -->
 ## j.errorconditionhandler
 
 - /opt/jumpscale7/lib/JumpScale/core/errorhandling/ErrorConditionHandler.py
@@ -109,8 +110,7 @@ clear last action so is not printed when error
 ##### comments
 
 ```
-will remember action you are doing, this will be added to error message if
-    filled in
+will remember action you are doing, this will be added to error message if filled in
 
 ```
 
@@ -137,13 +137,12 @@ except Exception,e:
 eco is jumpscale internal format for an error
 next step could be to process the error objecect (eco) e.g. by eco.process()
 
-@param pythonExceptionObject is errorobject thrown by python when there is an
-    exception
+@param pythonExceptionObject is errorobject thrown by python when there is an exception
 @param ttype : is the description of the error, can be None
 @param tb : can be a python data object for traceback, can be None
 
-@return a ErrorConditionObject object as used by jumpscale (should be the only
-    type of object we send around)
+@return a ErrorConditionObject object as used by jumpscale (should be the only type of
+    object we send around)
 
 ```
 
@@ -168,15 +167,14 @@ try:
 except Exception,e:
     j.errorconditionhandler.processpythonExceptionObject(e)
 
-@param pythonExceptionObject is errorobject thrown by python when there is an
-    exception
+@param pythonExceptionObject is errorobject thrown by python when there is an exception
 @param ttype : is the description of the error, can be None
 @param tb : can be a python data object for traceback, can be None
 
 @return [ecsource,ecid,ecguid]
 
-the errorcondition is then also processed e.g. send to local logserver and/or
-    stored locally in errordb
+the errorcondition is then also processed e.g. send to local logserver and/or stored
+    locally in errordb
 
 ```
 
@@ -196,15 +194,13 @@ the errorcondition is then also processed e.g. send to local logserver and/or
 ##### comments
 
 ```
-use this to raise a bug in the code, this is the only time that a stacktrace
-    will be asked for
+use this to raise a bug in the code, this is the only time that a stacktrace will be asked
+    for
 level will be Critical
 @param message is the error message which describes the bug
-@param msgpub is message we want to show to endcustomers (can include a
-    solution)
+@param msgpub is message we want to show to endcustomers (can include a solution)
 @param category is a dot notation to give category for the error condition
-@param pythonExceptionObject is the object as it comes from a try except
-    statement
+@param pythonExceptionObject is the object as it comes from a try except statement
 
 try:
     ##do something
@@ -229,15 +225,13 @@ except Exception,e:
 ##### comments
 
 ```
-use this to raise a bug in the code, this is the only time that a stacktrace
-    will be asked for
+use this to raise a bug in the code, this is the only time that a stacktrace will be asked
+    for
 level will be Critical
 @param message is the error message which describes the bug
-@param msgpub is message we want to show to endcustomers (can include a
-    solution)
+@param msgpub is message we want to show to endcustomers (can include a solution)
 @param category is a dot notation to give category for the error condition
-@param pythonExceptionObject is the object as it comes from a try except
-    statement
+@param pythonExceptionObject is the object as it comes from a try except statement
 
 try:
     ##do something
@@ -284,8 +278,7 @@ except Exception,e:
 ```
 use this to raise an operational issue about the system
 @param message is message we want to use for operators
-@param msgpub is message we want to show to endcustomers (can include a
-    solution)
+@param msgpub is message we want to show to endcustomers (can include a solution)
 @param category is a dot notation to give category for the error condition
 
 ```
@@ -330,14 +323,12 @@ use this to raise an operational issue about the system
 ##### comments
 
 ```
-use this to raise a bug in the code, this is the only time that a stacktrace
-    will be asked for
+use this to raise a bug in the code, this is the only time that a stacktrace will be asked
+    for
 @param message is the error message which describes the bug
-@param msgpub is message we want to show to endcustomers (can include a
-    solution)
+@param msgpub is message we want to show to endcustomers (can include a solution)
 @param category is a dot notation to give category for the error condition
-@param pythonExceptionObject is the object as it comes from a try except
-    statement
+@param pythonExceptionObject is the object as it comes from a try except statement
 
 try:
     ##do something

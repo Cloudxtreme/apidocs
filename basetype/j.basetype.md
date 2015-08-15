@@ -1,3 +1,4 @@
+<!-- toc -->
 ## j.basetype
 
 - /opt/jumpscale7/lib/JumpScale/core/pmtypes/__init__.py

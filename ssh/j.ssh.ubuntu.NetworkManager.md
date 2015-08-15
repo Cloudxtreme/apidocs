@@ -1,3 +1,4 @@
+<!-- toc -->
 ## j.ssh.ubuntu.NetworkManager
 
 - /opt/jumpscale7/lib/JumpScale/lib/ssh/ubuntu/manager.py

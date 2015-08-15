@@ -1,3 +1,4 @@
+<!-- toc -->
 ## j.system.platform.lxc
 
 - /opt/jumpscale7/lib/JumpScale/lib/lxc/Lxc.py
@@ -129,8 +130,8 @@ last one is sum of mem & cpu
 ##### comments
 
 ```
-@param basename is the name of a start of a machine locally, will be used as
-    basis and then the source will be synced over it
+@param basename is the name of a start of a machine locally, will be used as basis and
+    then the source will be synced over it
 
 ```
 
