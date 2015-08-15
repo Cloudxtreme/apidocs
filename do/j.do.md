@@ -1,7 +1,6 @@
-## j.do
+<!-- toc -->
 
-- [ ] write some articles
-- [x] drink a cup of tea
+## j.do
 
 - /opt/jumpscale7/lib/JumpScale/InstallTools.py
 - Properties
