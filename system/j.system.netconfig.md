@@ -8,116 +8,116 @@
 
     
 
-#### addIpToInterface 
+#### def addIpToInterface 
 ##### arguments
 
-    - dev
-    - ipaddr
-    - aliasnr = 1
-    - start = False
+- dev
+- ipaddr
+- aliasnr = 1
+- start = False
 
 ##### comments
 
-#### enableInterface 
+#### def enableInterface 
 ##### arguments
 
-    - dev = 'eth0'
-    - start = False
-    - dhcp = True
+- dev = 'eth0'
+- start = False
+- dhcp = True
 
 ##### comments
 
-#### enableInterfaceBridge 
+#### def enableInterfaceBridge 
 ##### arguments
 
-    - dev
-    - bridgedev
-    - start = False
-    - dhcp = True
+- dev
+- bridgedev
+- start = False
+- dhcp = True
 
 ##### comments
 
-#### enableInterfaceBridgeDhcp 
+#### def enableInterfaceBridgeDhcp 
 ##### arguments
 
-    - dev
-    - bridgedev
-    - start = False
+- dev
+- bridgedev
+- start = False
 
 ##### comments
 
-#### enableInterfaceBridgeStatic 
+#### def enableInterfaceBridgeStatic 
 ##### arguments
 
-    - dev
-    - ipaddr
-    - bridgedev
-    - gw
-    - start = False
-
-##### comments
-
-ipaddr in form of 192.168.10.2/24 (can be list)
-gateway in form of 192.168.10.254
-
-#### enableInterfaceStatic 
-##### arguments
-
-    - dev
-    - ipaddr
-    - gw
-    - start = False
+- dev
+- ipaddr
+- bridgedev
+- gw
+- start = False
 
 ##### comments
 
 ipaddr in form of 192.168.10.2/24 (can be list)
 gateway in form of 192.168.10.254
 
-#### remove 
+#### def enableInterfaceStatic 
 ##### arguments
 
-    - dev
+- dev
+- ipaddr
+- gw
+- start = False
 
 ##### comments
 
-#### reset 
+ipaddr in form of 192.168.10.2/24 (can be list)
+gateway in form of 192.168.10.254
+
+#### def remove 
 ##### arguments
 
-    - shutdown = False
+- dev
+
+##### comments
+
+#### def reset 
+##### arguments
+
+- shutdown = False
 
 ##### comments
 
 empty config of /etc/network/interfaces
 
-#### setHostname 
+#### def setHostname 
 ##### arguments
 
-    - hostname
+- hostname
 
 ##### comments
 
 change hostname
 
-#### setNameserver 
+#### def setNameserver 
 ##### arguments
 
-    - addr
+- addr
 
 ##### comments
 
 resolvconf will be disabled
 
-#### setRoot 
+#### def setRoot 
 ##### arguments
 
-    - root
+- root
 
 ##### comments
 
-#### shutdownNetwork 
+#### def shutdownNetwork 
 ##### arguments
 
-    - excludes = []
+- excludes = []
 
 ##### comments
 

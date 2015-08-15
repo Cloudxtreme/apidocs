@@ -6,21 +6,21 @@
 
 Manager controlling actions
 
-#### clean 
+#### def clean 
 ##### arguments
 
 ##### comments
 
 Clean the list of running actions
 
-#### getActionNamesDone 
+#### def getActionNamesDone 
 ##### arguments
 
-    - action
+- action
 
 ##### comments
 
-#### hasRunningActions 
+#### def hasRunningActions 
 ##### arguments
 
 ##### comments
@@ -30,38 +30,38 @@ Check whether actions are currently running
 @returns: Whether actions are runnin
 @rtype: bool
 
-#### reset 
+#### def reset 
 ##### arguments
 
-    - category
+- category
 
 ##### comments
 
-#### setActionNamesDone 
+#### def setActionNamesDone 
 ##### arguments
 
-    - action
+- action
 
 ##### comments
 
-#### start 
+#### def start 
 ##### arguments
 
-    - description = ''
-    - cmds = ''
-    - action
-    - actionRecover
-    - actionArgs = \{\}
-    - category = 'unknown'
-    - name = 'unknown'
-    - errorMessage = ''
-    - resolutionMessage = ''
-    - loglevel = 1
-    - die = True
-    - stdOutput = True
-    - errorOutput = True
-    - retry = 1
-    - serviceObj
+- description = ''
+- cmds = ''
+- action
+- actionRecover
+- actionArgs = \{\}
+- category = 'unknown'
+- name = 'unknown'
+- errorMessage = ''
+- resolutionMessage = ''
+- loglevel = 1
+- die = True
+- stdOutput = True
+- errorOutput = True
+- retry = 1
+- serviceObj
 
 ##### comments
 

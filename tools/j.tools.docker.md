@@ -6,286 +6,286 @@
 
 ### Methods
 
-#### btrfsSubvolCopy 
+#### def btrfsSubvolCopy 
 ##### arguments
 
-    - nameFrom
-    - NameDest
+- nameFrom
+- NameDest
 
 ##### comments
 
-#### btrfsSubvolDelete 
+#### def btrfsSubvolDelete 
 ##### arguments
 
-    - name
+- name
 
 ##### comments
 
-#### btrfsSubvolExists 
+#### def btrfsSubvolExists 
 ##### arguments
 
-    - name
+- name
 
 ##### comments
 
-#### btrfsSubvolList 
+#### def btrfsSubvolList 
 ##### arguments
 
 ##### comments
 
-#### btrfsSubvolNew 
+#### def btrfsSubvolNew 
 ##### arguments
 
-    - name
+- name
 
 ##### comments
 
-#### commit 
+#### def commit 
 ##### arguments
 
-    - name
-    - imagename
+- name
+- imagename
 
 ##### comments
 
-#### copy 
+#### def copy 
 ##### arguments
 
-    - name
-    - src
-    - dest
+- name
+- src
+- dest
 
 ##### comments
 
-#### create 
+#### def create 
 ##### arguments
 
-    - name = ''
-    - ports = ''
-    - vols = ''
-    - volsro = ''
-    - stdout = True
-    - base = 'despiegk/mc'
-    - nameserver = ['8.8.8.8']
-    - replace = True
-    - cpu
-    - mem = 0
-    - jumpscale = False
-    - ssh = True
-    - myinit = True
+- name = ''
+- ports = ''
+- vols = ''
+- volsro = ''
+- stdout = True
+- base = 'despiegk/mc'
+- nameserver = ['8.8.8.8']
+- replace = True
+- cpu
+- mem = 0
+- jumpscale = False
+- ssh = True
+- myinit = True
 
 ##### comments
 
 @param ports in format as follows  "22:8022 80:8080"  the first arg e.g. 22 is the port in the container
 @param vols in format as follows "/var/insidemachine:/var/inhost # /var/1:/var/1 # ..."   '#' is separator
 
-#### destroy 
+#### def destroy 
 ##### arguments
 
-    - name
+- name
 
 ##### comments
 
-#### destroyall 
+#### def destroyall 
 ##### arguments
 
 ##### comments
 
-#### downloadFile 
+#### def downloadFile 
 ##### arguments
 
-    - name
-    - source
-    - dest
+- name
+- source
+- dest
 
 ##### comments
 
 get a file located at source in the host to dest on the host
 
-#### execute 
+#### def execute 
 ##### arguments
 
-    - name
-    - path
+- name
+- path
 
 ##### comments
 
 execute file in docker
 
-#### exportRsync 
+#### def exportRsync 
 ##### arguments
 
-    - name
-    - backupname
-    - key = 'pub'
+- name
+- backupname
+- key = 'pub'
 
 ##### comments
 
-#### exportTgz 
+#### def exportTgz 
 ##### arguments
 
-    - name
-    - backupname
+- name
+- backupname
 
 ##### comments
 
-#### getImages 
+#### def getImages 
 ##### arguments
 
 ##### comments
 
-#### getInfo 
+#### def getInfo 
 ##### arguments
 
-    - name
+- name
 
 ##### comments
 
-#### getIp 
+#### def getIp 
 ##### arguments
 
-    - name
+- name
 
 ##### comments
 
-#### getProcessList 
+#### def getProcessList 
 ##### arguments
 
-    - name
-    - stdout = True
+- name
+- stdout = True
 
 ##### comments
 
 @return [["$name",$pid,$mem,$parent],....,[$mem,$cpu]]
 last one is sum of mem & cpu
 
-#### getPubPortForInternalPort 
+#### def getPubPortForInternalPort 
 ##### arguments
 
-    - name
-    - port
+- name
+- port
 
 ##### comments
 
-#### getSSH 
+#### def getSSH 
 ##### arguments
 
-    - name
-    - stdout = False
+- name
+- stdout = False
 
 ##### comments
 
-#### importRsync 
+#### def importRsync 
 ##### arguments
 
-    - backupname
-    - name
-    - basename = ''
-    - key = 'pub'
+- backupname
+- name
+- basename = ''
+- key = 'pub'
 
 ##### comments
 
 @param basename is the name of a start of a machine locally, will be used as basis and then the source will be synced over it
 
-#### importTgz 
+#### def importTgz 
 ##### arguments
 
-    - backupname
-    - name
+- backupname
+- name
 
 ##### comments
 
-#### inspect 
+#### def inspect 
 ##### arguments
 
-    - name
+- name
 
 ##### comments
 
-#### installJumpscale 
+#### def installJumpscale 
 ##### arguments
 
-    - name
+- name
 
 ##### comments
 
-#### list 
+#### def list 
 ##### arguments
 
 ##### comments
 
 return list of names
 
-#### ps 
+#### def ps 
 ##### arguments
 
 ##### comments
 
 return detailed info
 
-#### pull 
+#### def pull 
 ##### arguments
 
-    - imagename
+- imagename
 
 ##### comments
 
-#### pushSSHKey 
+#### def pushSSHKey 
 ##### arguments
 
-    - name
+- name
 
 ##### comments
 
-#### removeImages 
+#### def removeImages 
 ##### arguments
 
-    - tag = '<none>:<none>'
+- tag = '<none>:<none>'
 
 ##### comments
 
-#### removeRedundantFiles 
+#### def removeRedundantFiles 
 ##### arguments
 
-    - name
+- name
 
 ##### comments
 
-#### restart 
+#### def restart 
 ##### arguments
 
-    - name
+- name
 
 ##### comments
 
-#### run 
+#### def run 
 ##### arguments
 
-    - name
-    - cmd
+- name
+- cmd
 
 ##### comments
 
-#### setHostName 
+#### def setHostName 
 ##### arguments
 
-    - name
+- name
 
 ##### comments
 
-#### stop 
+#### def stop 
 ##### arguments
 
-    - name
+- name
 
 ##### comments
 
-#### uploadFile 
+#### def uploadFile 
 ##### arguments
 
-    - name
-    - source
-    - dest
+- name
+- source
+- dest
 
 ##### comments
 

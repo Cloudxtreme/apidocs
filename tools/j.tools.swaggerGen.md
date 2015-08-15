@@ -9,47 +9,47 @@
 
 ### Methods
 
-#### generate 
+#### def generate 
 ##### arguments
 
-    - baseURL
-    - serverOuput
-    - clientOutput
+- baseURL
+- serverOuput
+- clientOutput
 
 ##### comments
 
-#### generateActors 
+#### def generateActors 
 ##### arguments
 
-    - destpath
+- destpath
 
 ##### comments
 
-#### generateClient 
+#### def generateClient 
 ##### arguments
 
-    - outputPath
+- outputPath
 
 ##### comments
 
-#### generateServer 
+#### def generateServer 
 ##### arguments
 
-    - outputPath
+- outputPath
 
 ##### comments
 
-#### loadSpecFromFile 
+#### def loadSpecFromFile 
 ##### arguments
 
-    - path
+- path
 
 ##### comments
 
-#### loadSpecFromStr 
+#### def loadSpecFromStr 
 ##### arguments
 
-    - spec
+- spec
 
 ##### comments
 

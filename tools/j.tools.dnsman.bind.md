@@ -4,50 +4,50 @@
 
 ### Methods
 
-#### addRecord 
+#### def addRecord 
 ##### arguments
 
-    - domain
-    - host
-    - ip
-    - klass
-    - type
-    - ttl
+- domain
+- host
+- ip
+- klass
+- type
+- ttl
 
 ##### comments
 
-#### cleanCache 
-##### arguments
-
-##### comments
-
-#### deleteHost 
-##### arguments
-
-    - host
-
-##### comments
-
-#### restart 
+#### def cleanCache 
 ##### arguments
 
 ##### comments
 
-#### start 
+#### def deleteHost 
+##### arguments
+
+- host
+
+##### comments
+
+#### def restart 
 ##### arguments
 
 ##### comments
 
-#### stop 
+#### def start 
 ##### arguments
 
 ##### comments
 
-#### updateHostIp 
+#### def stop 
 ##### arguments
 
-    - host
-    - ip
+##### comments
+
+#### def updateHostIp 
+##### arguments
+
+- host
+- ip
 
 ##### comments
 

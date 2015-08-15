@@ -4,12 +4,12 @@
 
 ### Methods
 
-#### get 
+#### def get 
 ##### arguments
 
-    - host
-    - login
-    - password
+- host
+- login
+- password
 
 ##### comments
 

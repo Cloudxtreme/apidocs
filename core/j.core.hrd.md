@@ -7,41 +7,41 @@
 
 ### Methods
 
-#### get 
+#### def get 
 ##### arguments
 
-    - path
-    - content = ''
-    - prefixWithName = True
-    - keepformat = False
-    - args = OrderedDict()
-    - templates = []
+- path
+- content = ''
+- prefixWithName = True
+- keepformat = False
+- args = OrderedDict()
+- templates = []
 
 ##### comments
 
 @param path
 
-#### getHRDFromDict 
+#### def getHRDFromDict 
 ##### arguments
 
-    - ddict = \{\}
+- ddict = \{\}
 
 ##### comments
 
-#### getHRDFromOsisObject 
+#### def getHRDFromOsisObject 
 ##### arguments
 
-    - osisobj
-    - prefixRootObjectType = True
+- osisobj
+- prefixRootObjectType = True
 
 ##### comments
 
-#### log 
+#### def log 
 ##### arguments
 
-    - msg
-    - category = ''
-    - level = 5
+- msg
+- category = ''
+- level = 5
 
 ##### comments
 

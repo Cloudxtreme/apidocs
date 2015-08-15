@@ -4,31 +4,31 @@
 
 ### Methods
 
-#### getServices 
+#### def getServices 
 ##### arguments
 
 ##### comments
 
-#### registerService 
+#### def registerService 
 ##### arguments
 
-    - servicename
-    - port
-    - type = 'tcp'
+- servicename
+- port
+- type = 'tcp'
 
 ##### comments
 
-#### removeService 
+#### def removeService 
 ##### arguments
 
-    - servicename
+- servicename
 
 ##### comments
 
-#### resolveAddress 
+#### def resolveAddress 
 ##### arguments
 
-    - ipAddress
+- ipAddress
 
 ##### comments
 

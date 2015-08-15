@@ -7,105 +7,105 @@
 
 ### Methods
 
-#### addPlatform 
+#### def addPlatform 
 ##### arguments
 
-    - name
-    - parent
+- name
+- parent
 
 ##### comments
 
-#### checkMatch 
+#### def checkMatch 
 ##### arguments
 
-    - match
+- match
 
 ##### comments
 
 match is in form of linux64,darwin
 if any of the items e.g. darwin is in getMyRelevantPlatforms then return True
 
-#### dieIfNotPlatform 
+#### def dieIfNotPlatform 
 ##### arguments
 
-    - platform
+- platform
 
 ##### comments
 
-#### getChildren 
+#### def getChildren 
 ##### arguments
 
-    - name
+- name
 
 ##### comments
 
-#### getMyRelevantPlatforms 
-##### arguments
-
-##### comments
-
-#### getParents 
-##### arguments
-
-    - name
-
-##### comments
-
-#### getPlatforms 
+#### def getMyRelevantPlatforms 
 ##### arguments
 
 ##### comments
 
-#### has_parent 
+#### def getParents 
 ##### arguments
 
-    - name
+- name
 
 ##### comments
 
-#### isGeneric 
+#### def getPlatforms 
+##### arguments
+
+##### comments
+
+#### def has_parent 
+##### arguments
+
+- name
+
+##### comments
+
+#### def isGeneric 
 ##### arguments
 
 ##### comments
 
 Checks whether the platform is generic (they all should)
 
-#### isHyperV 
+#### def isHyperV 
 ##### arguments
 
 ##### comments
 
 Check whether the system supports HyperV
 
-#### isLinux 
+#### def isLinux 
 ##### arguments
 
 ##### comments
 
 Checks whether the platform is Linux-based
 
-#### isUnix 
+#### def isUnix 
 ##### arguments
 
 ##### comments
 
 Checks whether the platform is Unix-based
 
-#### isVirtualBox 
+#### def isVirtualBox 
 ##### arguments
 
 ##### comments
 
 Check whether the system supports VirtualBox
 
-#### isWindows 
+#### def isWindows 
 ##### arguments
 
 ##### comments
 
 Checks whether the platform is Windows-based
 
-#### isXen 
+#### def isXen 
 ##### arguments
 
 ##### comments

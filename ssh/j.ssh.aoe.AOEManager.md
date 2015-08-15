@@ -4,11 +4,11 @@
 
 ### Methods
 
-#### create 
+#### def create 
 ##### arguments
 
-    - storpath
-    - size = 10
+- storpath
+- size = 10
 
 ##### comments
 
@@ -17,20 +17,20 @@ Create and vdisk
 :storpath: is the full image path.
 :size: size in GB
 
-#### delete 
+#### def delete 
 ##### arguments
 
-    - path
+- path
 
 ##### comments
 
-#### expose 
+#### def expose 
 ##### arguments
 
-    - storage
-    - major
-    - minor
-    - inf
+- storage
+- major
+- minor
+- inf
 
 ##### comments
 
@@ -41,20 +41,20 @@ Expose the given image on major:minor and interface
 :minor: Minor number (slot)
 :inf: Network interface
 
-#### list 
+#### def list 
 ##### arguments
 
-    - storpath = '/mnt/disktargets/'
+- storpath = '/mnt/disktargets/'
 
 ##### comments
 
 List all vdisks under this location.
 Note that all files in that directory are assumed to be valid images
 
-#### unexpose 
+#### def unexpose 
 ##### arguments
 
-    - storage
+- storage
 
 ##### comments
 

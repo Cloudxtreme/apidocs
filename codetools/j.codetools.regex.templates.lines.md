@@ -6,17 +6,17 @@
 
 regexexamples which find lines
 
-#### findClasslines 
+#### def findClasslines 
 ##### arguments
 
 ##### comments
 
-#### findCommentlines 
+#### def findCommentlines 
 ##### arguments
 
 ##### comments
 
-#### findDeflines 
+#### def findDeflines 
 ##### arguments
 
 ##### comments

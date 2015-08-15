@@ -4,11 +4,11 @@
 
 ### Methods
 
-#### get 
+#### def get 
 ##### arguments
 
-    - con
-    - path = '/etc/nginx/nginx.conf'
+- con
+- path = '/etc/nginx/nginx.conf'
 
 ##### comments
 

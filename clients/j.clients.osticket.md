@@ -8,14 +8,14 @@
 
     
 
-#### getClient 
+#### def getClient 
 ##### arguments
 
-    - ipaddr
-    - port
-    - login
-    - passwd
-    - dbname
+- ipaddr
+- port
+- login
+- passwd
+- dbname
 
 ##### comments
 

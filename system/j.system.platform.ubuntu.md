@@ -6,146 +6,146 @@
 
 ### Methods
 
-#### addSourceUri 
+#### def addSourceUri 
 ##### arguments
 
-    - url
+- url
 
 ##### comments
 
-#### addUser2Group 
+#### def addUser2Group 
 ##### arguments
 
-    - group
-    - user
+- group
+- user
 
 ##### comments
 
-#### changeSourceUri 
+#### def changeSourceUri 
 ##### arguments
 
-    - newuri
+- newuri
 
 ##### comments
 
-#### check 
+#### def check 
 ##### arguments
 
-    - die = True
+- die = True
 
 ##### comments
 
 check if ubuntu or mint (which is based on ubuntu)
 
-#### checkInstall 
+#### def checkInstall 
 ##### arguments
 
-    - packagenames
-    - cmdname
+- packagenames
+- cmdname
 
 ##### comments
 
 @param packagenames is name or array of names of ubuntu package to install e.g. curl
 @param cmdname is cmd to check e.g. curl
 
-#### checkroot 
+#### def checkroot 
 ##### arguments
 
 ##### comments
 
-#### createGroup 
+#### def createGroup 
 ##### arguments
 
-    - groupname
+- groupname
 
 ##### comments
 
-#### createUser 
+#### def createUser 
 ##### arguments
 
-    - name
-    - passwd
-    - home
-    - creategroup = True
-    - deletefirst = False
+- name
+- passwd
+- home
+- creategroup = True
+- deletefirst = False
 
 ##### comments
 
-#### downloadInstallDebPkg 
+#### def downloadInstallDebPkg 
 ##### arguments
 
-    - url
-    - removeDownloaded = False
-    - minspeed = 20
+- url
+- removeDownloaded = False
+- minspeed = 20
 
 ##### comments
 
 will download to tmp if not there yet
 will then install
 
-#### existsGroup 
+#### def existsGroup 
 ##### arguments
 
-    - name
+- name
 
 ##### comments
 
-#### existsUser 
+#### def existsUser 
 ##### arguments
 
-    - name
+- name
 
 ##### comments
 
-#### find1packageInstalled 
+#### def find1packageInstalled 
 ##### arguments
 
-    - packagename
+- packagename
 
 ##### comments
 
-#### findPackagesInstalled 
+#### def findPackagesInstalled 
 ##### arguments
 
-    - packagename
+- packagename
 
 ##### comments
 
-#### findPackagesRepo 
+#### def findPackagesRepo 
 ##### arguments
 
-    - packagename
+- packagename
 
 ##### comments
 
-#### generateLocalSSHKeyPair 
+#### def generateLocalSSHKeyPair 
 ##### arguments
 
-    - passphrase = ''
-    - type = 'rsa'
-    - overwrite = False
-    - path = '/root/.ssh/id_rsa'
+- passphrase = ''
+- type = 'rsa'
+- overwrite = False
+- path = '/root/.ssh/id_rsa'
 
 ##### comments
 
-#### getPackage 
+#### def getPackage 
 ##### arguments
 
-    - name
+- name
 
 ##### comments
 
-#### getPackageNamesInstalled 
-##### arguments
-
-##### comments
-
-#### getPackageNamesRepo 
+#### def getPackageNamesInstalled 
 ##### arguments
 
 ##### comments
 
-#### getVersion 
+#### def getPackageNamesRepo 
+##### arguments
+
+##### comments
+
+#### def getVersion 
 ##### arguments
 
 ##### comments
@@ -153,31 +153,31 @@ will then install
 returns codename,descr,id,release
 known ids" raring, linuxmint
 
-#### initApt 
+#### def initApt 
 ##### arguments
 
 ##### comments
 
-#### install 
+#### def install 
 ##### arguments
 
-    - packagename
+- packagename
 
 ##### comments
 
-#### installDebFile 
+#### def installDebFile 
 ##### arguments
 
-    - path
-    - installDeps = True
+- path
+- installDeps = True
 
 ##### comments
 
-#### installVersion 
+#### def installVersion 
 ##### arguments
 
-    - packageName
-    - version
+- packageName
+- version
 
 ##### comments
 
@@ -189,106 +189,106 @@ Installs a specific version of an ubuntu package.
 @param version: version of the package
 @type version: str
 
-#### listFilesPkg 
+#### def listFilesPkg 
 ##### arguments
 
-    - pkgname
-    - regex = ''
+- pkgname
+- regex = ''
 
 ##### comments
 
 list files of dpkg
 if regex used only output the ones who are matching regex
 
-#### listSources 
+#### def listSources 
 ##### arguments
 
 ##### comments
 
-#### remove 
+#### def remove 
 ##### arguments
 
-    - packagename
+- packagename
 
 ##### comments
 
-#### restartService 
+#### def restartService 
 ##### arguments
 
-    - servicename
+- servicename
 
 ##### comments
 
-#### serviceDisableStartAtBoot 
+#### def serviceDisableStartAtBoot 
 ##### arguments
 
-    - servicename
+- servicename
 
 ##### comments
 
-#### serviceEnableStartAtBoot 
+#### def serviceEnableStartAtBoot 
 ##### arguments
 
-    - servicename
+- servicename
 
 ##### comments
 
-#### serviceInstall 
+#### def serviceInstall 
 ##### arguments
 
-    - servicename
-    - daemonpath
-    - args = ''
-    - respawn = True
-    - pwd
-    - env
-    - reload = True
+- servicename
+- daemonpath
+- args = ''
+- respawn = True
+- pwd
+- env
+- reload = True
 
 ##### comments
 
-#### serviceUninstall 
+#### def serviceUninstall 
 ##### arguments
 
-    - servicename
+- servicename
 
 ##### comments
 
-#### startService 
+#### def startService 
 ##### arguments
 
-    - servicename
+- servicename
 
 ##### comments
 
-#### statusService 
+#### def statusService 
 ##### arguments
 
-    - servicename
+- servicename
 
 ##### comments
 
-#### stopService 
+#### def stopService 
 ##### arguments
 
-    - servicename
+- servicename
 
 ##### comments
 
-#### updatePackageMetadata 
+#### def updatePackageMetadata 
 ##### arguments
 
-    - force = True
+- force = True
 
 ##### comments
 
-#### upgradePackages 
+#### def upgradePackages 
 ##### arguments
 
-    - force = True
+- force = True
 
 ##### comments
 
-#### whoami 
+#### def whoami 
 ##### arguments
 
 ##### comments

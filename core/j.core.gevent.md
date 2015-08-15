@@ -4,7 +4,7 @@
 
 ### Methods
 
-#### getGeventLoopClass 
+#### def getGeventLoopClass 
 ##### arguments
 
 ##### comments

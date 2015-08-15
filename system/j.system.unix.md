@@ -4,14 +4,14 @@
 
 ### Methods
 
-#### addCronJob 
+#### def addCronJob 
 ##### arguments
 
-    - commandToExecute
-    - interval = 1
-    - logFilePath
-    - replaceLineIfCommandAlreadyInCrontab = True
-    - unit = 1
+- commandToExecute
+- interval = 1
+- logFilePath
+- replaceLineIfCommandAlreadyInCrontab = True
+- unit = 1
 
 ##### comments
 
@@ -28,10 +28,10 @@ Add a cronjob to the system
 @param unit: The unit of the interval
 @type unit: TimeIntervalUnit
 
-#### addSystemGroup 
+#### def addSystemGroup 
 ##### arguments
 
-    - groupname
+- groupname
 
 ##### comments
 
@@ -42,13 +42,13 @@ Note: you should be root to run this python command.
 @param groupname: Name of the group to add
 @type groupname : string
 
-#### addSystemUser 
+#### def addSystemUser 
 ##### arguments
 
-    - username
-    - groupname
-    - shell = '/bin/bash'
-    - homedir
+- username
+- groupname
+- shell = '/bin/bash'
+- homedir
 
 ##### comments
 
@@ -61,45 +61,45 @@ Note: you should be root to run this python command.
 @param shell: Optional param to specify the shell of the user
 @type username: string
 
-#### addUserToGroup 
+#### def addUserToGroup 
 ##### arguments
 
-    - username
-    - groupname
+- username
+- groupname
 
 ##### comments
 
-#### checkApplicationInstalled 
+#### def checkApplicationInstalled 
 ##### arguments
 
-    - appname
+- appname
 
 ##### comments
 
 check if app is installed,  if yes return True
 
-#### chmod 
+#### def chmod 
 ##### arguments
 
-    - root
-    - mode
-    - recurse = 0
-    - dirPattern = '*'
-    - filePattern = '*'
-    - dirs = True
-    - files = True
+- root
+- mode
+- recurse = 0
+- dirPattern = '*'
+- filePattern = '*'
+- dirs = True
+- files = True
 
 ##### comments
 
 Chmod based on system.fs.walk
 
-#### chown 
+#### def chown 
 ##### arguments
 
-    - path
-    - user
-    - group
-    - recursive = False
+- path
+- user
+- group
+- recursive = False
 
 ##### comments
 
@@ -113,10 +113,10 @@ Chown a file
 @param recursive: if path is a directory, all files underneath the path are also chown if True (default False)
 @type recursive: boolean
 
-#### chroot 
+#### def chroot 
 ##### arguments
 
-    - path
+- path
 
 ##### comments
 
@@ -125,11 +125,11 @@ Change root directory path
 @param path: Path to chroot() to
 @type path: string
 
-#### daemonize 
+#### def daemonize 
 ##### arguments
 
-    - chdir = '/'
-    - umask = 0
+- chdir = '/'
+- umask = 0
 
 ##### comments
 
@@ -166,10 +166,10 @@ PID of the current process.
 
 @raise RuntimeError: System does not support fork(2)
 
-#### disableUnixUser 
+#### def disableUnixUser 
 ##### arguments
 
-    - username
+- username
 
 ##### comments
 
@@ -178,10 +178,10 @@ Disables a given unix user
 @param username: Name of the user to disable
 @type username: string
 
-#### enableUnixUser 
+#### def enableUnixUser 
 ##### arguments
 
-    - username
+- username
 
 ##### comments
 
@@ -190,12 +190,12 @@ Enables a given unix user
 @param username: Name of the user to enable
 @type username: string
 
-#### executeAsUser 
+#### def executeAsUser 
 ##### arguments
 
-    - command
-    - username
-    - **kwargs
+- command
+- username
+- **kwargs
 
 ##### comments
 
@@ -222,12 +222,12 @@ including the same named arguments.
 
 @see: jumpscale.system.process.SystemProcess.execute
 
-#### executeDaemonAsUser 
+#### def executeDaemonAsUser 
 ##### arguments
 
-    - command
-    - username
-    - **kwargs
+- command
+- username
+- **kwargs
 
 ##### comments
 
@@ -254,11 +254,11 @@ including the same named arguments.
 
 @see: jumpscale.system.process.runDaemon
 
-#### getBashEnvFromFile 
+#### def getBashEnvFromFile 
 ##### arguments
 
-    - file
-    - var
+- file
+- var
 
 ##### comments
 
@@ -269,7 +269,7 @@ Get the value of an environment variable in a Bash file
 @param var: Variable name
 @type var: string
 
-#### getMachineInfo 
+#### def getMachineInfo 
 ##### arguments
 
 ##### comments
@@ -279,10 +279,10 @@ Get memory and CPU info about this machine
 @returns: Amount of available memory, CPU speed and number of CPUs
 @rtype: tuple
 
-#### killGroup 
+#### def killGroup 
 ##### arguments
 
-    - pid
+- pid
 
 ##### comments
 
@@ -293,12 +293,12 @@ killGroup will get the parent pid from the pid given and kill the group with sig
 @type pid: int
 @param pid: process id
 
-#### removeUnixUser 
+#### def removeUnixUser 
 ##### arguments
 
-    - username
-    - removehome = False
-    - die = True
+- username
+- removehome = False
+- die = True
 
 ##### comments
 
@@ -307,11 +307,11 @@ Remove a given unix user
 @param username: Name of the user to remove
 @type username: string
 
-#### setUnixUserPassword 
+#### def setUnixUserPassword 
 ##### arguments
 
-    - username
-    - password
+- username
+- password
 
 ##### comments
 
@@ -323,10 +323,10 @@ Set a password on unix user
 @param password: Password to set on the user
 @type username: string
 
-#### unixGroupExists 
+#### def unixGroupExists 
 ##### arguments
 
-    - groupname
+- groupname
 
 ##### comments
 
@@ -338,10 +338,10 @@ Checks if a given group already exists in the system
 @returns: Whether the group exists
 @rtype: bool
 
-#### unixUserExists 
+#### def unixUserExists 
 ##### arguments
 
-    - username
+- username
 
 ##### comments
 
@@ -353,11 +353,11 @@ Checks if a given user already exists in the system
 @returns: Whether the user exists
 @rtype: bool
 
-#### unixUserIsInGroup 
+#### def unixUserIsInGroup 
 ##### arguments
 
-    - username
-    - groupname
+- username
+- groupname
 
 ##### comments
 

@@ -4,10 +4,10 @@
 
 ### Methods
 
-#### get 
+#### def get 
 ##### arguments
 
-    - apiurl = 'www.mothership1.com'
+- apiurl = 'www.mothership1.com'
 
 ##### comments
 

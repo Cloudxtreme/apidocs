@@ -4,56 +4,56 @@
 
 ### Methods
 
-#### appCheckActive 
+#### def appCheckActive 
 ##### arguments
 
-    - appname
+- appname
 
 ##### comments
 
-#### appGetPids 
+#### def appGetPids 
 ##### arguments
 
-    - appname
+- appname
 
 ##### comments
 
-#### appGetPidsActive 
+#### def appGetPidsActive 
 ##### arguments
 
-    - appname
+- appname
 
 ##### comments
 
-#### appNrInstances 
+#### def appNrInstances 
 ##### arguments
 
-    - appname
+- appname
 
 ##### comments
 
-#### appNrInstancesActive 
+#### def appNrInstancesActive 
 ##### arguments
 
-    - appname
+- appname
 
 ##### comments
 
-#### appsGet 
-##### arguments
-
-##### comments
-
-#### appsGetNames 
+#### def appsGet 
 ##### arguments
 
 ##### comments
 
-#### checkProcessForPid 
+#### def appsGetNames 
 ##### arguments
 
-    - pid
-    - process
+##### comments
+
+#### def checkProcessForPid 
+##### arguments
+
+- pid
+- process
 
 ##### comments
 
@@ -62,11 +62,11 @@ Check whether a given pid actually does belong to a given process name.
 @param process: (str) the process that should have the pid
 @return status: (int) 0 when ok, 1 when not ok.
 
-#### checkProcessRunning 
+#### def checkProcessRunning 
 ##### arguments
 
-    - process
-    - min = 1
+- process
+- min = 1
 
 ##### comments
 
@@ -77,13 +77,13 @@ you can specify minimal running processes needed.
 @param min: (int) minimal threads that should run.
 @return True if ok
 
-#### checkstart 
+#### def checkstart 
 ##### arguments
 
-    - cmd
-    - filterstr
-    - nrtimes = 1
-    - retry = 1
+- cmd
+- filterstr
+- nrtimes = 1
+- retry = 1
 
 ##### comments
 
@@ -91,13 +91,13 @@ you can specify minimal running processes needed.
 @param filterstr is what to check on if its running
 @param nrtimes is how many processes need to run
 
-#### checkstop 
+#### def checkstop 
 ##### arguments
 
-    - cmd
-    - filterstr
-    - retry = 1
-    - nrinstances = 0
+- cmd
+- filterstr
+- retry = 1
+- nrinstances = 0
 
 ##### comments
 
@@ -105,14 +105,14 @@ you can specify minimal running processes needed.
 @param filterstr is what to check on if its running
 @param nrtimes is how many processes need to run
 
-#### execute 
+#### def execute 
 ##### arguments
 
-    - command
-    - dieOnNonZeroExitCode = True
-    - outputToStdout = False
-    - useShell = False
-    - ignoreErrorOutput = False
+- command
+- dieOnNonZeroExitCode = True
+- outputToStdout = False
+- useShell = False
+- ignoreErrorOutput = False
 
 ##### comments
 
@@ -124,16 +124,16 @@ Executes a command, returns the exitcode and the output
 @rtype: integer represents the exitcode plus the output of the executed command
 if exitcode is not zero then the executed command returned with errors
 
-#### executeAsync 
+#### def executeAsync 
 ##### arguments
 
-    - command
-    - args = []
-    - printCommandToStdout = False
-    - redirectStreams = True
-    - argsInCommand = False
-    - useShell
-    - outputToStdout = True
+- command
+- args = []
+- printCommandToStdout = False
+- redirectStreams = True
+- argsInCommand = False
+- useShell
+- outputToStdout = True
 
 ##### comments
 
@@ -146,22 +146,22 @@ Execute command asynchronous. By default, the input, output and error streams of
 @param useShell: [Optional, False by default on Windows, True by default on Linux] Indicates if the command should be executed throug the shell.
 @return: If redirectStreams is true, this function returns a subprocess.Popen object representing the started process. Otherwise, it will return the pid-number of the started process.
 
-#### executeCode 
+#### def executeCode 
 ##### arguments
 
-    - code
-    - params
+- code
+- params
 
 ##### comments
 
 execute a method (python code with def)
 use params=j.core.params.get() as input
 
-#### executeInSandbox 
+#### def executeInSandbox 
 ##### arguments
 
-    - command
-    - timeout = 0
+- command
+- timeout = 0
 
 ##### comments
 
@@ -169,28 +169,28 @@ Executes a command
 @param command: string (command to be executed)
 @param timeout: 0 means to ever, expressed in seconds
 
-#### executeIndependant 
+#### def executeIndependant 
 ##### arguments
 
-    - cmd
+- cmd
 
 ##### comments
 
-#### executeScript 
+#### def executeScript 
 ##### arguments
 
-    - scriptName
+- scriptName
 
 ##### comments
 
 execute python script from shell/Interactive Window
 
-#### executeWithoutPipe 
+#### def executeWithoutPipe 
 ##### arguments
 
-    - command
-    - dieOnNonZeroExitCode = True
-    - printCommandToStdout = False
+- command
+- dieOnNonZeroExitCode = True
+- printCommandToStdout = False
 
 ##### comments
 
@@ -203,43 +203,43 @@ This is platform independent
 @rtype: integer represents the exitcode
 if exitcode is not zero then the executed command returned with errors
 
-#### getDefunctProcesses 
+#### def getDefunctProcesses 
 ##### arguments
 
 ##### comments
 
-#### getEnviron 
+#### def getEnviron 
 ##### arguments
 
-    - pid
+- pid
 
 ##### comments
 
-#### getMyProcessObject 
+#### def getMyProcessObject 
 ##### arguments
 
 ##### comments
 
-#### getPidsByFilter 
+#### def getPidsByFilter 
 ##### arguments
 
-    - filterstr
+- filterstr
 
 ##### comments
 
-#### getPidsByPort 
+#### def getPidsByPort 
 ##### arguments
 
-    - port
+- port
 
 ##### comments
 
 Returns pid of the process that is listening on the given port
 
-#### getProcessByPort 
+#### def getProcessByPort 
 ##### arguments
 
-    - port
+- port
 
 ##### comments
 
@@ -250,36 +250,36 @@ Returns the full name of the process that is listening on the given port
 @return: full process name
 @rtype: string
 
-#### getProcessObject 
+#### def getProcessObject 
 ##### arguments
 
-    - pid
+- pid
 
 ##### comments
 
-#### getProcessPid 
+#### def getProcessPid 
 ##### arguments
 
-    - process
+- process
 
 ##### comments
 
-#### getProcessPidsFromUser 
+#### def getProcessPidsFromUser 
 ##### arguments
 
-    - user
+- user
 
 ##### comments
 
-#### getSimularProcesses 
+#### def getSimularProcesses 
 ##### arguments
 
 ##### comments
 
-#### isPidAlive 
+#### def isPidAlive 
 ##### arguments
 
-    - pid
+- pid
 
 ##### comments
 
@@ -288,11 +288,11 @@ For unix, a signal is sent to check that the process is alive.
 For windows, the process information is retrieved and it is double checked that the process is python.exe
 or pythonw.exe
 
-#### kill 
+#### def kill 
 ##### arguments
 
-    - pid
-    - sig
+- pid
+- sig
 
 ##### comments
 
@@ -300,39 +300,39 @@ Kill a process with a signal
 @param pid: pid of the process to kill
 @param sig: signal. If no signal is specified signal.SIGKILL is used
 
-#### killProcessByName 
+#### def killProcessByName 
 ##### arguments
 
-    - name
-    - sig
+- name
+- sig
 
 ##### comments
 
-#### killProcessByPort 
+#### def killProcessByPort 
 ##### arguments
 
-    - port
+- port
 
 ##### comments
 
-#### killUserProcesses 
+#### def killUserProcesses 
 ##### arguments
 
-    - user
+- user
 
 ##### comments
 
-#### run 
+#### def run 
 ##### arguments
 
-    - commandline
-    - showOutput = False
-    - captureOutput = True
-    - maxSeconds = 0
-    - stopOnError = True
-    - user
-    - group
-    - **kwargs
+- commandline
+- showOutput = False
+- captureOutput = True
+- maxSeconds = 0
+- stopOnError = True
+- user
+- group
+- **kwargs
 
 ##### comments
 
@@ -398,15 +398,15 @@ Remarks:
 @return: Tuple containing subprocess exitcode, stdout and stderr output
 @rtype: tuple(number, string, string)
 
-#### runDaemon 
+#### def runDaemon 
 ##### arguments
 
-    - commandline
-    - stdout
-    - stderr
-    - user
-    - group
-    - env
+- commandline
+- stdout
+- stderr
+- user
+- group
+- env
 
 ##### comments
 
@@ -451,14 +451,14 @@ daemon process.
 @return: PID of the daemonized process
 @rtype: number
 
-#### runScript 
+#### def runScript 
 ##### arguments
 
-    - script
-    - showOutput = False
-    - captureOutput = True
-    - maxSeconds = 0
-    - stopOnError = True
+- script
+- showOutput = False
+- captureOutput = True
+- maxSeconds = 0
+- stopOnError = True
 
 ##### comments
 
@@ -480,11 +480,11 @@ documentation of L\{jumpscale.system.process.run\}.
 
 @see: jumpscale.system.process.run
 
-#### setEnvironmentVariable 
+#### def setEnvironmentVariable 
 ##### arguments
 
-    - varnames
-    - varvalues
+- varnames
+- varvalues
 
 ##### comments
 

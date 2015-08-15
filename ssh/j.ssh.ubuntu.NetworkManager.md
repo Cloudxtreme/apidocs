@@ -4,62 +4,62 @@
 
 ### Methods
 
-#### commit 
+#### def commit 
 ##### arguments
 
-    - device
+- device
 
 ##### comments
 
-#### ipGet 
+#### def ipGet 
 ##### arguments
 
-    - device
+- device
 
 ##### comments
 
 Get IP of devie
 Result (ip, netmask, gateway)
 
-#### ipReset 
+#### def ipReset 
 ##### arguments
 
-    - device
-    - commit = False
+- device
+- commit = False
 
 ##### comments
 
-#### ipSet 
+#### def ipSet 
 ##### arguments
 
-    - device
-    - ip
-    - netmask
-    - gw
-    - inet = 'dhcp'
-    - commit = False
+- device
+- ip
+- netmask
+- gw
+- inet = 'dhcp'
+- commit = False
 
 ##### comments
 
 Return all interfaces that has this ifname
 
-#### nsGet 
+#### def nsGet 
 ##### arguments
 
 ##### comments
 
-#### nsSet 
+#### def nsSet 
 ##### arguments
 
-    - nameservers = []
-    - commit = False
+- nameservers = []
+- commit = False
 
 ##### comments
 
-#### setHostname 
+#### def setHostname 
 ##### arguments
 
-    - hostname
+- hostname
 
 ##### comments
 

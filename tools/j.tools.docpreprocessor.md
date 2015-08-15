@@ -4,27 +4,27 @@
 
 ### Methods
 
-#### generate 
+#### def generate 
 ##### arguments
 
-    - preprocessorobject
-    - outpath = 'out'
-    - startDoc = 'Home'
-    - visibility = []
-    - reset = True
-    - outputdocname = ''
-    - format = 'preprocess'
-    - deepcopy = False
+- preprocessorobject
+- outpath = 'out'
+- startDoc = 'Home'
+- visibility = []
+- reset = True
+- outputdocname = ''
+- format = 'preprocess'
+- deepcopy = False
 
 ##### comments
 
-#### generateFromDir 
+#### def generateFromDir 
 ##### arguments
 
-    - path
-    - macrosPaths = []
-    - visibility = []
-    - cacheDir = ''
+- path
+- macrosPaths = []
+- visibility = []
+- cacheDir = ''
 
 ##### comments
 
@@ -32,18 +32,18 @@
 @param macrosPaths are dirs where macro's are they are in form of tasklets
 @param cacheDir if non std caching dir override here
 
-#### get 
+#### def get 
 ##### arguments
 
-    - contentDirs = []
-    - varsPath = ''
-    - spacename = ''
+- contentDirs = []
+- varsPath = ''
+- spacename = ''
 
 ##### comments
 
 @param contentDirs are the dirs where we will load wiki files from & parse
 
-#### getMacroPath 
+#### def getMacroPath 
 ##### arguments
 
 ##### comments

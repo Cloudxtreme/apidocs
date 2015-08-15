@@ -6,22 +6,22 @@
 
 interface on i
 
-#### getAccount 
+#### def getAccount 
 ##### arguments
 
-    - accountname = ''
+- accountname = ''
 
 ##### comments
 
-#### getRepo 
+#### def getRepo 
 ##### arguments
 
-    - accountname = ''
-    - reponame = ''
+- accountname = ''
+- reponame = ''
 
 ##### comments
 
-#### init 
+#### def init 
 ##### arguments
 
 ##### comments

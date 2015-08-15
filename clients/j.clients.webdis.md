@@ -6,29 +6,29 @@
 
     
 
-#### check 
+#### def check 
 ##### arguments
 
-    - addr = '127.0.0.1'
-    - port = 7779
-    - timeout = 1
+- addr = '127.0.0.1'
+- port = 7779
+- timeout = 1
 
 ##### comments
 
-#### get 
+#### def get 
 ##### arguments
 
-    - addr = '127.0.0.1'
-    - port = 7779
-    - timeout = 10
+- addr = '127.0.0.1'
+- port = 7779
+- timeout = 10
 
 ##### comments
 
-#### getByInstance 
+#### def getByInstance 
 ##### arguments
 
-    - instance
-    - timeout = 10
+- instance
+- timeout = 10
 
 ##### comments
 

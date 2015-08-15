@@ -4,31 +4,31 @@
 
 ### Methods
 
-#### get 
+#### def get 
 ##### arguments
 
-    - username = ''
-    - md5_password = ''
-    - accesskey = ''
-    - url = ''
-    - cloudspace_product_id = ''
-    - operations_user_id = ''
-    - operations_department_id = ''
-    - instance = 'main'
+- username = ''
+- md5_password = ''
+- accesskey = ''
+- url = ''
+- cloudspace_product_id = ''
+- operations_user_id = ''
+- operations_department_id = ''
+- instance = 'main'
 
 ##### comments
 
-#### getDummy 
+#### def getDummy 
 ##### arguments
 
 ##### comments
 
-#### log 
+#### def log 
 ##### arguments
 
-    - msg
-    - category = ''
-    - level = 5
+- msg
+- category = ''
+- level = 5
 
 ##### comments
 

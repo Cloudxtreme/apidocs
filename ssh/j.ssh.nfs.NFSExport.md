@@ -4,18 +4,18 @@
 
 ### Methods
 
-#### addClient 
+#### def addClient 
 ##### arguments
 
-    - name = '*'
-    - options = 'rw,sync'
+- name = '*'
+- options = 'rw,sync'
 
 ##### comments
 
-#### removeClient 
+#### def removeClient 
 ##### arguments
 
-    - name
+- name
 
 ##### comments
 

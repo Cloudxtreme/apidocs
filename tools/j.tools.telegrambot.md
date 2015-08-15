@@ -4,7 +4,7 @@
 
 ### Methods
 
-#### demo 
+#### def demo 
 ##### arguments
 
 ##### comments
@@ -13,7 +13,7 @@ tg=self.get()
 tg.addDemoHandler()
 tg.start()
 
-#### demoMS1 
+#### def demoMS1 
 ##### arguments
 
 ##### comments
@@ -26,10 +26,10 @@ handler = DemoHandlerMS1()
 tg.api.add_handler(handler)
 tg.start()
 
-#### get 
+#### def get 
 ##### arguments
 
-    - telegramkey = ''
+- telegramkey = ''
 
 ##### comments
 

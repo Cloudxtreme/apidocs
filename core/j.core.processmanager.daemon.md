@@ -6,11 +6,11 @@
 
 ### Methods
 
-#### addCMDsInterface 
+#### def addCMDsInterface 
 ##### arguments
 
-    - cmdInterfaceClass
-    - category
+- cmdInterfaceClass
+- category
 
 ##### comments
 

@@ -4,145 +4,145 @@
 
 ### Methods
 
-#### btrfsSubvolCopy 
+#### def btrfsSubvolCopy 
 ##### arguments
 
-    - nameFrom
-    - NameDest
+- nameFrom
+- NameDest
 
 ##### comments
 
-#### btrfsSubvolDelete 
+#### def btrfsSubvolDelete 
 ##### arguments
 
-    - name
+- name
 
 ##### comments
 
-#### btrfsSubvolExists 
+#### def btrfsSubvolExists 
 ##### arguments
 
-    - name
+- name
 
 ##### comments
 
-#### btrfsSubvolList 
+#### def btrfsSubvolList 
 ##### arguments
 
 ##### comments
 
-#### btrfsSubvolNew 
+#### def btrfsSubvolNew 
 ##### arguments
 
-    - name
+- name
 
 ##### comments
 
-#### create 
+#### def create 
 ##### arguments
 
-    - name = ''
-    - stdout = True
-    - base = 'base'
-    - start = False
-    - nameserver = '8.8.8.8'
-    - replace = True
+- name = ''
+- stdout = True
+- base = 'base'
+- start = False
+- nameserver = '8.8.8.8'
+- replace = True
 
 ##### comments
 
 @param name if "" then will be an incremental nr
 
-#### destroy 
+#### def destroy 
 ##### arguments
 
-    - name
+- name
 
 ##### comments
 
-#### destroyAll 
+#### def destroyAll 
 ##### arguments
 
 ##### comments
 
-#### execute 
+#### def execute 
 ##### arguments
 
-    - command
+- command
 
 ##### comments
 
-#### exportRsync 
+#### def exportRsync 
 ##### arguments
 
-    - name
-    - backupname
-    - key = 'pub'
+- name
+- backupname
+- key = 'pub'
 
 ##### comments
 
-#### exportTgz 
+#### def exportTgz 
 ##### arguments
 
-    - name
-    - backupname
+- name
+- backupname
 
 ##### comments
 
-#### getConfig 
+#### def getConfig 
 ##### arguments
 
-    - name
+- name
 
 ##### comments
 
-#### getIp 
+#### def getIp 
 ##### arguments
 
-    - name
-    - fail = True
+- name
+- fail = True
 
 ##### comments
 
-#### getPid 
+#### def getPid 
 ##### arguments
 
-    - name
-    - fail = True
+- name
+- fail = True
 
 ##### comments
 
-#### getProcessList 
+#### def getProcessList 
 ##### arguments
 
-    - name
-    - stdout = True
+- name
+- stdout = True
 
 ##### comments
 
 @return [["$name",$pid,$mem,$parent],....,[$mem,$cpu]]
 last one is sum of mem & cpu
 
-#### importRsync 
+#### def importRsync 
 ##### arguments
 
-    - backupname
-    - name
-    - basename = ''
-    - key = 'pub'
+- backupname
+- name
+- basename = ''
+- key = 'pub'
 
 ##### comments
 
 @param basename is the name of a start of a machine locally, will be used as basis and then the source will be synced over it
 
-#### importTgz 
+#### def importTgz 
 ##### arguments
 
-    - backupname
-    - name
+- backupname
+- name
 
 ##### comments
 
-#### list 
+#### def list 
 ##### arguments
 
 ##### comments
@@ -150,60 +150,60 @@ last one is sum of mem & cpu
 names of running & stopped machines
 @return (running,stopped)
 
-#### networkSet 
+#### def networkSet 
 ##### arguments
 
-    - machinename
-    - netname = 'pub0'
-    - pubips = []
-    - bridge = 'public'
-    - gateway
+- machinename
+- netname = 'pub0'
+- pubips = []
+- bridge = 'public'
+- gateway
 
 ##### comments
 
-#### networkSetPrivateVXLan 
+#### def networkSetPrivateVXLan 
 ##### arguments
 
-    - name
-    - vxlanid
-    - ipaddresses
+- name
+- vxlanid
+- ipaddresses
 
 ##### comments
 
-#### pushSSHKey 
+#### def pushSSHKey 
 ##### arguments
 
-    - name
+- name
 
 ##### comments
 
-#### removeRedundantFiles 
+#### def removeRedundantFiles 
 ##### arguments
 
-    - name
+- name
 
 ##### comments
 
-#### setHostName 
+#### def setHostName 
 ##### arguments
 
-    - name
+- name
 
 ##### comments
 
-#### start 
+#### def start 
 ##### arguments
 
-    - name
-    - stdout = True
-    - test = True
+- name
+- stdout = True
+- test = True
 
 ##### comments
 
-#### stop 
+#### def stop 
 ##### arguments
 
-    - name
+- name
 
 ##### comments
 

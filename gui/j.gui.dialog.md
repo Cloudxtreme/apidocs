@@ -6,15 +6,15 @@
 
 ### Methods
 
-#### askChoice 
+#### def askChoice 
 ##### arguments
 
-    - question
-    - choices
-    - defaultValue
-    - pageSize = 10
-    - sortChoices = False
-    - sortCallBack
+- question
+- choices
+- defaultValue
+- pageSize = 10
+- sortChoices = False
+- sortCallBack
 
 ##### comments
 
@@ -29,15 +29,15 @@ Ask the user the supplied question and list the choices to choose from, if no re
 
 @return:  selected choice
 
-#### askChoiceMultiple 
+#### def askChoiceMultiple 
 ##### arguments
 
-    - question
-    - choices
-    - defaultValue
-    - pageSize = 10
-    - sortChoices = False
-    - sortCallBack
+- question
+- choices
+- defaultValue
+- pageSize = 10
+- sortChoices = False
+- sortCallBack
 
 ##### comments
 
@@ -52,14 +52,14 @@ Ask the user the supplied question and list the choices to choose from, if no re
 
 @return:  selected choice[s] or default value[s]
 
-#### askDate 
+#### def askDate 
 ##### arguments
 
-    - question
-    - minValue
-    - maxValue
-    - selectedValue
-    - format = 'YYYY/MM/DD'
+- question
+- minValue
+- maxValue
+- selectedValue
+- format = 'YYYY/MM/DD'
 
 ##### comments
 
@@ -73,14 +73,14 @@ Note: this note my seem out of place, but is is important to note that currently
 @param selectedValue:
 @param  format: the format of the input date
 
-#### askDateTime 
+#### def askDateTime 
 ##### arguments
 
-    - question
-    - minValue
-    - maxValue
-    - selectedValue
-    - format = 'YYYY/MM/DD hh:mm'
+- question
+- minValue
+- maxValue
+- selectedValue
+- format = 'YYYY/MM/DD hh:mm'
 
 ##### comments
 
@@ -94,11 +94,11 @@ Note: this note my seem out of place, but is is important to note that currently
 @param selectedValue:
 @param  format: the format of the input date
 
-#### askDirPath 
+#### def askDirPath 
 ##### arguments
 
-    - message
-    - startPath
+- message
+- startPath
 
 ##### comments
 
@@ -108,11 +108,11 @@ Prompts for a selection of a file path starting from startPath if given and '/' 
 @param startPath: base dir of the navigation tree
 @return: path to the directory selected
 
-#### askFilePath 
+#### def askFilePath 
 ##### arguments
 
-    - message
-    - startPath
+- message
+- startPath
 
 ##### comments
 
@@ -122,18 +122,18 @@ Prompts for a selection of a file path starting from startPath if given and '/' 
 @param startPath: base dir of the navigation tree
 @return: path to the file selected
 
-#### askForm 
+#### def askForm 
 ##### arguments
 
-    - form
+- form
 
 ##### comments
 
-#### askInteger 
+#### def askInteger 
 ##### arguments
 
-    - question
-    - defaultValue
+- question
+- defaultValue
 
 ##### comments
 
@@ -143,10 +143,10 @@ Asks user the supplied question and prompt for an answer, if none given the defa
 @param defaultValue: if the user did not provide a response this value is used as an answer
 @return: response integer or the default value
 
-#### askIntegers 
+#### def askIntegers 
 ##### arguments
 
-    - question
+- question
 
 ##### comments
 
@@ -155,11 +155,11 @@ Asks user the supplied question and prompt for an answer
 @param question: question to be prompted
 @return: response integer
 
-#### askMultiline 
+#### def askMultiline 
 ##### arguments
 
-    - question
-    - defaultValue
+- question
+- defaultValue
 
 ##### comments
 
@@ -167,14 +167,14 @@ Asks the user the supplied question, where the answer could be multi-lines
 
 @param question: the question to be displayed
 
-#### askPassword 
+#### def askPassword 
 ##### arguments
 
-    - question
-    - confirm = True
-    - regex
-    - retry = -1
-    - defaultValue
+- question
+- confirm = True
+- regex
+- retry = -1
+- defaultValue
 
 ##### comments
 
@@ -183,12 +183,12 @@ Asks the supplied question and prompts for password
 @param question: question to be displayed
 @return: response string
 
-#### askString 
+#### def askString 
 ##### arguments
 
-    - question
-    - defaultValue
-    - validator
+- question
+- defaultValue
+- validator
 
 ##### comments
 
@@ -198,11 +198,11 @@ Asks the user the supplied question and prompt for an answer, if none given the 
 @param validator: regex validation value
 @return: response string or the default value
 
-#### askYesNo 
+#### def askYesNo 
 ##### arguments
 
-    - question
-    - defaultValue
+- question
+- defaultValue
 
 ##### comments
 
@@ -213,25 +213,25 @@ Note:For the EasyDialogConol implementation, currently the default value effect 
 @param defaultValue: if the user did not provide a response this value is used as an answer
 @return: response answer or the default value
 
-#### chooseDialogType 
+#### def chooseDialogType 
 ##### arguments
 
-    - type
+- type
 
 ##### comments
 
 supported types today: console,win32,wizardserver
 @param type DialogType enumerator
 
-#### clear 
+#### def clear 
 ##### arguments
 
 ##### comments
 
-#### message 
+#### def message 
 ##### arguments
 
-    - message
+- message
 
 ##### comments
 
@@ -239,35 +239,35 @@ prints the given message to the screen
 
 @param message: message to print
 
-#### navigateTo 
+#### def navigateTo 
 ##### arguments
 
-    - url
+- url
 
 ##### comments
 
-#### pm_setDialogHandler 
+#### def pm_setDialogHandler 
 ##### arguments
 
 ##### comments
 
-#### showLogging 
+#### def showLogging 
 ##### arguments
 
-    - text
+- text
 
 ##### comments
 
 Shows logging message
 
-#### showMessageBox 
+#### def showMessageBox 
 ##### arguments
 
-    - message
-    - title
-    - msgboxButtons = 'OK'
-    - msgboxIcon = 'Information'
-    - defaultButton = 'OK'
+- message
+- title
+- msgboxButtons = 'OK'
+- msgboxIcon = 'Information'
+- defaultButton = 'OK'
 
 ##### comments
 
@@ -281,12 +281,12 @@ Shows a large message box
 
 @return: A JSON encoded string containing the selected button clicked
 
-#### showProgress 
+#### def showProgress 
 ##### arguments
 
-    - minvalue
-    - maxvalue
-    - currentvalue
+- minvalue
+- maxvalue
+- currentvalue
 
 ##### comments
 

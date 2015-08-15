@@ -4,20 +4,20 @@
 
 ### Methods
 
-#### converToBestUnit 
+#### def converToBestUnit 
 ##### arguments
 
-    - value
-    - input = ''
+- value
+- input = ''
 
 ##### comments
 
-#### toSize 
+#### def toSize 
 ##### arguments
 
-    - value
-    - input = ''
-    - output = 'K'
+- value
+- input = ''
+- output = 'K'
 
 ##### comments
 

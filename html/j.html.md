@@ -4,43 +4,43 @@
 
 ### Methods
 
-#### escape 
+#### def escape 
 ##### arguments
 
-    - text
+- text
 
 ##### comments
 
-#### getHtmllibDir 
+#### def getHtmllibDir 
 ##### arguments
 
 ##### comments
 
-#### getPageModifierBootstrapForm 
+#### def getPageModifierBootstrapForm 
 ##### arguments
 
-    - page
+- page
 
 ##### comments
 
-#### getPageModifierGalleria 
+#### def getPageModifierGalleria 
 ##### arguments
 
-    - page
+- page
 
 ##### comments
 
-#### getPageModifierGridDataTables 
+#### def getPageModifierGridDataTables 
 ##### arguments
 
-    - page
+- page
 
 ##### comments
 
-#### unescape 
+#### def unescape 
 ##### arguments
 
-    - text
+- text
 
 ##### comments
 

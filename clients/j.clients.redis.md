@@ -11,130 +11,130 @@
 
     
 
-#### checkAllInstances 
+#### def checkAllInstances 
 ##### arguments
 
 ##### comments
 
-#### configureInstance 
+#### def configureInstance 
 ##### arguments
 
-    - name
-    - port
-    - maxram = 200
-    - appendonly = True
-    - snapshot = False
-    - slave = ()
-    - ismaster = False
-    - passwd
-    - unixsocket = False
+- name
+- port
+- maxram = 200
+- appendonly = True
+- snapshot = False
+- slave = ()
+- ismaster = False
+- passwd
+- unixsocket = False
 
 ##### comments
 
 @param maxram = MB of ram
 slave example: (192.168.10.10,8888,asecret)   (ip,port,secret)
 
-#### deleteInstance 
+#### def deleteInstance 
 ##### arguments
 
-    - name
+- name
 
 ##### comments
 
-#### emptyAllInstances 
+#### def emptyAllInstances 
 ##### arguments
 
 ##### comments
 
-#### emptyInstance 
+#### def emptyInstance 
 ##### arguments
 
-    - name
+- name
 
 ##### comments
 
-#### getByInstance 
+#### def getByInstance 
 ##### arguments
 
-    - instance
-    - gevent = False
+- instance
+- gevent = False
 
 ##### comments
 
-#### getGeventRedisClient 
+#### def getGeventRedisClient 
 ##### arguments
 
-    - ipaddr
-    - port
-    - fromcache = True
-    - password = ''
+- ipaddr
+- port
+- fromcache = True
+- password = ''
 
 ##### comments
 
-#### getGeventRedisQueue 
+#### def getGeventRedisQueue 
 ##### arguments
 
-    - ipaddr
-    - port
-    - name
-    - namespace = 'queues'
-    - fromcache = False
+- ipaddr
+- port
+- name
+- namespace = 'queues'
+- fromcache = False
 
 ##### comments
 
-#### getPort 
+#### def getPort 
 ##### arguments
 
-    - name
+- name
 
 ##### comments
 
-#### getProcessPids 
+#### def getProcessPids 
 ##### arguments
 
-    - name
+- name
 
 ##### comments
 
-#### getRedisClient 
+#### def getRedisClient 
 ##### arguments
 
-    - ipaddr
-    - port
-    - password = ''
-    - fromcache = True
+- ipaddr
+- port
+- password = ''
+- fromcache = True
 
 ##### comments
 
-#### getRedisQueue 
+#### def getRedisQueue 
 ##### arguments
 
-    - ipaddr
-    - port
-    - name
-    - namespace = 'queues'
-    - fromcache = True
+- ipaddr
+- port
+- name
+- namespace = 'queues'
+- fromcache = True
 
 ##### comments
 
-#### isRunning 
+#### def isRunning 
 ##### arguments
 
-    - name
+- name
 
 ##### comments
 
-#### startInstance 
+#### def startInstance 
 ##### arguments
 
-    - name
+- name
 
 ##### comments
 
-#### stopInstance 
+#### def stopInstance 
 ##### arguments
 
-    - name
+- name
 
 ##### comments
 

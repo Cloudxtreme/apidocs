@@ -4,7 +4,7 @@
 
 ### Methods
 
-#### getConnection 
+#### def getConnection 
 ##### arguments
 
 ##### comments

@@ -4,13 +4,13 @@
 
 ### Methods
 
-#### getDaemon 
+#### def getDaemon 
 ##### arguments
 
-    - name = 'unknown'
-    - sslorg
-    - ssluser
-    - sslkeyvaluestor
+- name = 'unknown'
+- sslorg
+- ssluser
+- sslkeyvaluestor
 
 ##### comments
 
@@ -33,7 +33,7 @@ daemon.addCMDsInterface(MyCommands,category="optional")  #pass as class not as o
 
 #now you need to pass this to a protocol server, its not usable by itself
 
-#### getDaemonClientClass 
+#### def getDaemonClientClass 
 ##### arguments
 
 ##### comments
@@ -69,12 +69,12 @@ myClient(DaemonClientClass):
 client=myClient()
 print client.echo("atest")
 
-#### initSSL4Server 
+#### def initSSL4Server 
 ##### arguments
 
-    - organization
-    - serveruser
-    - sslkeyvaluestor
+- organization
+- serveruser
+- sslkeyvaluestor
 
 ##### comments
 

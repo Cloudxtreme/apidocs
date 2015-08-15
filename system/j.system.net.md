@@ -4,24 +4,24 @@
 
 ### Methods
 
-#### bridgeExists 
+#### def bridgeExists 
 ##### arguments
 
-    - bridgename
+- bridgename
 
 ##### comments
 
-#### checkIpAddressIsLocal 
+#### def checkIpAddressIsLocal 
 ##### arguments
 
-    - ipaddr
+- ipaddr
 
 ##### comments
 
-#### checkListenPort 
+#### def checkListenPort 
 ##### arguments
 
-    - port
+- port
 
 ##### comments
 
@@ -30,23 +30,23 @@ Check if a certain port is listening on the system.
 @param port: sets the port number to check
 @return status: 0 if running 1 if not running
 
-#### checkUrlReachable 
+#### def checkUrlReachable 
 ##### arguments
 
-    - url
+- url
 
 ##### comments
 
 raise operational critical if unreachable
 return True if reachable
 
-#### download 
+#### def download 
 ##### arguments
 
-    - url
-    - localpath
-    - username
-    - passwd
+- url
+- localpath
+- username
+- passwd
 
 ##### comments
 
@@ -60,31 +60,31 @@ Download a url to a file or a directory, supported protocols: http, https, ftp, 
 @param passwd: password for the url if it requires authentication
 @type passwd: string
 
-#### downloadIfNonExistent 
+#### def downloadIfNonExistent 
 ##### arguments
 
-    - url
-    - destination_file_path
-    - md5_checksum
-    - http_auth_username
-    - http_auth_password
+- url
+- destination_file_path
+- md5_checksum
+- http_auth_username
+- http_auth_password
 
 ##### comments
 
 Downloads the file from the specified url to the specified destination if it is not already there
 or if the target file checksum doesn't match the expected checksum.
 
-#### enableProxy 
+#### def enableProxy 
 ##### arguments
 
 ##### comments
 
-#### getDefaultIPConfig 
+#### def getDefaultIPConfig 
 ##### arguments
 
 ##### comments
 
-#### getDefaultRouter 
+#### def getDefaultRouter 
 ##### arguments
 
 ##### comments
@@ -92,25 +92,25 @@ or if the target file checksum doesn't match the expected checksum.
 Get default router
 @rtype: string representing the router interface
 
-#### getDomainName 
+#### def getDomainName 
 ##### arguments
 
 ##### comments
 
 Retrieve the dns domain name
 
-#### getHostByName 
+#### def getHostByName 
 ##### arguments
 
-    - dnsHostname
+- dnsHostname
 
 ##### comments
 
-#### getHostNamesForIP 
+#### def getHostNamesForIP 
 ##### arguments
 
-    - hostsfile
-    - ip
+- hostsfile
+- ip
 
 ##### comments
 
@@ -119,42 +119,42 @@ Get hostnames for ip address
 @param ip: Ip of the machine to get hostnames from
 @return: List of machinehostnames
 
-#### getHostname 
+#### def getHostname 
 ##### arguments
 
 ##### comments
 
 Get hostname of the machine
 
-#### getIpAddress 
+#### def getIpAddress 
 ##### arguments
 
-    - interface
+- interface
 
 ##### comments
 
 Return a list of ip addresses and netmasks assigned to this interface
 
-#### getIpAddresses 
+#### def getIpAddresses 
 ##### arguments
 
-    - up = False
+- up = False
 
 ##### comments
 
-#### getMacAddress 
+#### def getMacAddress 
 ##### arguments
 
-    - interface
+- interface
 
 ##### comments
 
 Return the MAC address of this interface
 
-#### getMacAddressForIp 
+#### def getMacAddressForIp 
 ##### arguments
 
-    - ipaddress
+- ipaddress
 
 ##### comments
 
@@ -165,7 +165,7 @@ Search the MAC address of the given IP address in the ARP table
 @return: The MAC address corresponding with the given IP
 @raise: RuntimeError if no MAC found for IP or if platform is not suppported
 
-#### getNameServer 
+#### def getNameServer 
 ##### arguments
 
 ##### comments
@@ -180,7 +180,7 @@ Only implemented for Unix based hosts.
 @raise NotImplementedError: Non-Unix systems
 @raise RuntimeError: No nameserver could be found in /etc/resolv.conf
 
-#### getNetworkInfo 
+#### def getNetworkInfo 
 ##### arguments
 
 ##### comments
@@ -191,10 +191,10 @@ REMARK: format changed because there was bug which could not work with bridges
 
 @TODO change for windows
 
-#### getNicType 
+#### def getNicType 
 ##### arguments
 
-    - interface
+- interface
 
 ##### comments
 
@@ -202,10 +202,10 @@ Get Nic Type on a certain interface
 @param interface: Interface to determine Nic type on
 @raise RuntimeError: On linux if ethtool is not present on the system
 
-#### getNics 
+#### def getNics 
 ##### arguments
 
-    - up = False
+- up = False
 
 ##### comments
 
@@ -213,30 +213,30 @@ Get Nics on this machine
 Works only for Linux/Solaris systems
 @param up: only returning nics which or up
 
-#### getReachableIpAddress 
+#### def getReachableIpAddress 
 ##### arguments
 
-    - ip
-    - port
+- ip
+- port
 
 ##### comments
 
 Returns the first local ip address that can connect to the specified ip on the specified port
 
-#### getVlanTag 
+#### def getVlanTag 
 ##### arguments
 
-    - interface
-    - nicType
+- interface
+- nicType
 
 ##### comments
 
 Get VLan tag on the specified interface and vlan type
 
-#### getVlanTagFromInterface 
+#### def getVlanTagFromInterface 
 ##### arguments
 
-    - interface
+- interface
 
 ##### comments
 
@@ -244,11 +244,11 @@ Get vlan tag from interface
 @param interface: string interface to get vlan tag on
 @rtype: integer representing the vlan tag
 
-#### isIpInHostsFile 
+#### def isIpInHostsFile 
 ##### arguments
 
-    - hostsfile
-    - ip
+- hostsfile
+- ip
 
 ##### comments
 
@@ -256,27 +256,27 @@ Check if ip is in the hostsfile
 @param hostsfile: File where hosts are defined
 @param ip: Ip of the machine to check
 
-#### isIpLocal 
+#### def isIpLocal 
 ##### arguments
 
-    - ipaddress
+- ipaddress
 
 ##### comments
 
-#### isNicConnected 
+#### def isNicConnected 
 ##### arguments
 
-    - interface
+- interface
 
 ##### comments
 
-#### pingMachine 
+#### def pingMachine 
 ##### arguments
 
-    - ip
-    - pingtimeout = 60
-    - recheck = False
-    - allowhostname = True
+- ip
+- pingtimeout = 60
+- recheck = False
+- allowhostname = True
 
 ##### comments
 
@@ -287,18 +287,18 @@ Ping a machine to check if it's up/running and accessible
 @param allowhostname: allow pinging on hostname (default is false)
 @rtype: True if machine is pingable, False otherwise
 
-#### pm_formatMacAddress 
+#### def pm_formatMacAddress 
 ##### arguments
 
-    - macaddress
+- macaddress
 
 ##### comments
 
-#### removeFromHostsFile 
+#### def removeFromHostsFile 
 ##### arguments
 
-    - hostsfile
-    - ip
+- hostsfile
+- ip
 
 ##### comments
 
@@ -306,40 +306,40 @@ Update a hostfile, delete ip from hostsfile
 @param hostsfile: File where hosts are defined
 @param ip: Ip of the machine to remove
 
-#### removeNetworkFromInterfaces 
+#### def removeNetworkFromInterfaces 
 ##### arguments
 
-    - network = '192.168.1'
+- network = '192.168.1'
 
 ##### comments
 
-#### resetDefaultGateway 
+#### def resetDefaultGateway 
 ##### arguments
 
-    - gw
+- gw
 
 ##### comments
 
-#### setBasicNetConfiguration 
+#### def setBasicNetConfiguration 
 ##### arguments
 
-    - interface = 'eth0'
-    - ipaddr
-    - gw
-    - mask = 24
-    - config = True
+- interface = 'eth0'
+- ipaddr
+- gw
+- mask = 24
+- config = True
 
 ##### comments
 
 @param config if True then will be stored in linux configuration files
 
-#### setBasicNetConfigurationBridgePub 
+#### def setBasicNetConfigurationBridgePub 
 ##### arguments
 
-    - interface
-    - ipaddr
-    - gw
-    - mask
+- interface
+- ipaddr
+- gw
+- mask
 
 ##### comments
 
@@ -349,30 +349,30 @@ otherwise system will try in a safe way set this ipaddr, this is a dangerous ope
 
 if ipaddr == None then will look for existing config on interface and use that one to configure the bridge
 
-#### setBasicNetConfigurationDHCP 
+#### def setBasicNetConfigurationDHCP 
 ##### arguments
 
-    - interface = 'eth0'
+- interface = 'eth0'
 
 ##### comments
 
 this will bring all bridges down
 
-#### tcpPortConnectionTest 
+#### def tcpPortConnectionTest 
 ##### arguments
 
-    - ipaddr
-    - port
-    - timeout
+- ipaddr
+- port
+- timeout
 
 ##### comments
 
-#### updateHostsFile 
+#### def updateHostsFile 
 ##### arguments
 
-    - hostsfile
-    - ip
-    - hostname
+- hostsfile
+- ip
+- hostname
 
 ##### comments
 
@@ -381,10 +381,10 @@ Update a hostfile to contain the basic information install
 @param ip: Ip of the machine to add/modify
 @param hostname: List of machinehostnames to add/modify
 
-#### validateIpAddress 
+#### def validateIpAddress 
 ##### arguments
 
-    - ipaddress
+- ipaddress
 
 ##### comments
 
@@ -392,23 +392,23 @@ Validate wether this ip address is a valid ip address of 4 octets ranging from 0
 @param ipaddress: ip address to check on
 @rtype: boolean...True if this ip is valid, False if not
 
-#### waitConnectionTest 
+#### def waitConnectionTest 
 ##### arguments
 
-    - ipaddr
-    - port
-    - timeout
+- ipaddr
+- port
+- timeout
 
 ##### comments
 
 will return false if not successfull (timeout)
 
-#### waitConnectionTestStopped 
+#### def waitConnectionTestStopped 
 ##### arguments
 
-    - ipaddr
-    - port
-    - timeout
+- ipaddr
+- port
+- timeout
 
 ##### comments
 

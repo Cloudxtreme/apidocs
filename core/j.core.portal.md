@@ -7,22 +7,22 @@
 
 ### Methods
 
-#### getPortalConfig 
+#### def getPortalConfig 
 ##### arguments
 
-    - appname
+- appname
 
 ##### comments
 
-#### getServer 
+#### def getServer 
 ##### arguments
 
 ##### comments
 
-#### loadActorsInProcess 
+#### def loadActorsInProcess 
 ##### arguments
 
-    - name = 'main'
+- name = 'main'
 
 ##### comments
 

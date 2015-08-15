@@ -4,12 +4,12 @@
 
 ### Methods
 
-#### get 
+#### def get 
 ##### arguments
 
-    - path
-    - args
-    - failWhenNotExist = False
+- path
+- args
+- failWhenNotExist = False
 
 ##### comments
 

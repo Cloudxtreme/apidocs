@@ -7,16 +7,16 @@
 
 ### Methods
 
-#### connect 
+#### def connect 
 ##### arguments
 
-    - addr
-    - port
-    - passwd
+- addr
+- port
+- passwd
 
 ##### comments
 
-#### help 
+#### def help 
 ##### arguments
 
 ##### comments

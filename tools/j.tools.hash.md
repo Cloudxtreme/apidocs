@@ -4,10 +4,10 @@
 
 ### Methods
 
-#### crc32 
+#### def crc32 
 ##### arguments
 
-    - path
+- path
 
 ##### comments
 
@@ -22,10 +22,10 @@ used by the hashing implementation will be read.
 @returns: CRC32 hash of data available in the given file
 @rtype: number
 
-#### crc32_string 
+#### def crc32_string 
 ##### arguments
 
-    - s
+- s
 
 ##### comments
 
@@ -37,19 +37,19 @@ Calculate CRC32 hash of input string
 @returns: CRC32 hash of the input value
 @rtype: number
 
-#### hashDir 
+#### def hashDir 
 ##### arguments
 
-    - rootpath
+- rootpath
 
 ##### comments
 
 walk over all files, calculate md5 and of sorted list also calc md5 this is the resulting hash for the dir independant from time and other metadata (appart from path)
 
-#### md5 
+#### def md5 
 ##### arguments
 
-    - path
+- path
 
 ##### comments
 
@@ -64,10 +64,10 @@ used by the hashing implementation will be read.
 @returns: %(alg)s hash hex digest of data available in the given file
 @rtype: string
 
-#### md5_string 
+#### def md5_string 
 ##### arguments
 
-    - s
+- s
 
 ##### comments
 
@@ -79,10 +79,10 @@ Calculate %(alg)s hash of input string
 @returns: %(alg)s hash hex digest of the input value
 @rtype: string
 
-#### sha1 
+#### def sha1 
 ##### arguments
 
-    - path
+- path
 
 ##### comments
 
@@ -97,10 +97,10 @@ used by the hashing implementation will be read.
 @returns: %(alg)s hash hex digest of data available in the given file
 @rtype: string
 
-#### sha1_string 
+#### def sha1_string 
 ##### arguments
 
-    - s
+- s
 
 ##### comments
 
@@ -112,10 +112,10 @@ Calculate %(alg)s hash of input string
 @returns: %(alg)s hash hex digest of the input value
 @rtype: string
 
-#### sha256 
+#### def sha256 
 ##### arguments
 
-    - path
+- path
 
 ##### comments
 
@@ -130,10 +130,10 @@ used by the hashing implementation will be read.
 @returns: %(alg)s hash hex digest of data available in the given file
 @rtype: string
 
-#### sha256_string 
+#### def sha256_string 
 ##### arguments
 
-    - s
+- s
 
 ##### comments
 
@@ -145,10 +145,10 @@ Calculate %(alg)s hash of input string
 @returns: %(alg)s hash hex digest of the input value
 @rtype: string
 
-#### sha512 
+#### def sha512 
 ##### arguments
 
-    - path
+- path
 
 ##### comments
 
@@ -163,10 +163,10 @@ used by the hashing implementation will be read.
 @returns: %(alg)s hash hex digest of data available in the given file
 @rtype: string
 
-#### sha512_string 
+#### def sha512_string 
 ##### arguments
 
-    - s
+- s
 
 ##### comments
 

@@ -13,11 +13,11 @@
 
 ### Methods
 
-#### get 
+#### def get 
 ##### arguments
 
-    - serializationstr
-    - key = ''
+- serializationstr
+- key = ''
 
 ##### comments
 
@@ -38,21 +38,21 @@ serializationstr FORMATS SUPPORTED FOR NOW
 
 this method returns
 
-#### getBlosc 
+#### def getBlosc 
 ##### arguments
 
 ##### comments
 
-#### getMessagePack 
+#### def getMessagePack 
 ##### arguments
 
 ##### comments
 
-#### getSerializerType 
+#### def getSerializerType 
 ##### arguments
 
-    - type
-    - key = ''
+- type
+- key = ''
 
 ##### comments
 

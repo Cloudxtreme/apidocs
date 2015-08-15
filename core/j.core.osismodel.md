@@ -9,62 +9,62 @@
 
     
 
-#### destroy 
+#### def destroy 
 ##### arguments
 
-    - appname
-    - actorname = '*'
-    - modelname = '*'
+- appname
+- actorname = '*'
+- modelname = '*'
 
 ##### comments
 
 destroy all objects & indexes with mentioned names
 
-#### dict2object 
+#### def dict2object 
 ##### arguments
 
-    - obj
-    - data
+- obj
+- data
 
 ##### comments
 
-#### get 
+#### def get 
 ##### arguments
 
-    - appname
-    - actorname
-    - modelname
-    - modelClass
-    - db
-    - index = False
-    - indexer
+- appname
+- actorname
+- modelname
+- modelClass
+- db
+- index = False
+- indexer
 
 ##### comments
 
-#### getNoDB 
+#### def getNoDB 
 ##### arguments
 
-    - appname
-    - actorname
-    - modelname
-    - modelClass
+- appname
+- actorname
+- modelname
+- modelClass
 
 ##### comments
 
-#### getRemoteOsisDB 
+#### def getRemoteOsisDB 
 ##### arguments
 
-    - appname
-    - actorname
-    - modelname
-    - modelClass
+- appname
+- actorname
+- modelname
+- modelClass
 
 ##### comments
 
-#### inputNormalizeList 
+#### def inputNormalizeList 
 ##### arguments
 
-    - param
+- param
 
 ##### comments
 
@@ -73,12 +73,12 @@ list gets checked, if all int then returnformat=1
 list gets checked, if all str, then returnformat=2
 @return (returnformat,list)
 
-#### rebuildindex 
+#### def rebuildindex 
 ##### arguments
 
-    - appname
-    - actorname = '*'
-    - modelname = '*'
+- appname
+- actorname = '*'
+- modelname = '*'
 
 ##### comments
 

@@ -6,14 +6,14 @@
 
 Manager controlling actions
 
-#### clean 
+#### def clean 
 ##### arguments
 
 ##### comments
 
 Clean the list of running actions
 
-#### hasRunningActions 
+#### def hasRunningActions 
 ##### arguments
 
 ##### comments
@@ -23,19 +23,19 @@ Check whether actions are currently running
 @returns: Whether actions are runnin
 @rtype: bool
 
-#### printOutput 
+#### def printOutput 
 ##### arguments
 
 ##### comments
 
-#### start 
+#### def start 
 ##### arguments
 
-    - description
-    - errormessage
-    - resolutionmessage
-    - show = False
-    - messageLevel = False
+- description
+- errormessage
+- resolutionmessage
+- show = False
+- messageLevel = False
 
 ##### comments
 
@@ -50,17 +50,17 @@ Start a new action
                           the action fails
 @type resolutionmessage: string
 
-#### startOutput 
+#### def startOutput 
 ##### arguments
 
 ##### comments
 
 Enable j.console output. Format such that it is nicely shown between action start/stop.
 
-#### stop 
+#### def stop 
 ##### arguments
 
-    - failed = False
+- failed = False
 
 ##### comments
 
@@ -72,7 +72,7 @@ display a result message.
 @param failed: Whether the action failed
 @type failed: bool
 
-#### stopOutput 
+#### def stopOutput 
 ##### arguments
 
 ##### comments

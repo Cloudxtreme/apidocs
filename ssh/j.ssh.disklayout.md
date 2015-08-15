@@ -4,10 +4,10 @@
 
 ### Methods
 
-#### get 
+#### def get 
 ##### arguments
 
-    - connection
+- connection
 
 ##### comments
 

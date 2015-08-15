@@ -4,103 +4,103 @@
 
 ### Methods
 
-#### classEditGeany 
+#### def classEditGeany 
 ##### arguments
 
-    - classs
+- classs
 
 ##### comments
 
 look for editor (uses geany) and then edit the file
 
-#### classEditWing 
+#### def classEditWing 
 ##### arguments
 
-    - classs
+- classs
 
 ##### comments
 
 look for editor (uses geany) and then edit the file
 
-#### classGetBase 
+#### def classGetBase 
 ##### arguments
 
 ##### comments
 
-#### classGetJSModelBase 
+#### def classGetJSModelBase 
 ##### arguments
 
 ##### comments
 
-#### classGetJSRootModelBase 
+#### def classGetJSRootModelBase 
 ##### arguments
 
 ##### comments
 
-#### classInfoGet 
+#### def classInfoGet 
 ##### arguments
 
-    - classs
+- classs
 
 ##### comments
 
 returns filepath,linenr,sourcecode
 
-#### classInfoPrint 
+#### def classInfoPrint 
 ##### arguments
 
-    - classs
+- classs
 
 ##### comments
 
 print info like source code of class
 
-#### deIndent 
+#### def deIndent 
 ##### arguments
 
-    - content
-    - level = 1
+- content
+- level = 1
 
 ##### comments
 
-#### dict2JSModelobject 
+#### def dict2JSModelobject 
 ##### arguments
 
-    - obj
-    - data
+- obj
+- data
 
 ##### comments
 
-#### dict2object 
+#### def dict2object 
 ##### arguments
 
-    - obj
-    - data
+- obj
+- data
 
 ##### comments
 
-#### indent 
+#### def indent 
 ##### arguments
 
-    - content
-    - level = 1
+- content
+- level = 1
 
 ##### comments
 
-#### object2dict 
+#### def object2dict 
 ##### arguments
 
-    - obj
-    - dieOnUnknown = False
-    - ignoreKeys = []
-    - ignoreUnderscoreKeys = False
+- obj
+- dieOnUnknown = False
+- ignoreKeys = []
+- ignoreUnderscoreKeys = False
 
 ##### comments
 
-#### object2dict4index 
+#### def object2dict4index 
 ##### arguments
 
-    - obj
+- obj
 
 ##### comments
 
@@ -109,28 +109,28 @@ only properties on first level are considered
 and properties of basic types like int,str,float,bool,dict,list
 ideal to index the basics of an object
 
-#### object2json 
+#### def object2json 
 ##### arguments
 
-    - obj
-    - pretty = False
-    - skiperrors = False
-    - ignoreKeys = []
-    - ignoreUnderscoreKeys = False
+- obj
+- pretty = False
+- skiperrors = False
+- ignoreKeys = []
+- ignoreUnderscoreKeys = False
 
 ##### comments
 
-#### object2yaml 
+#### def object2yaml 
 ##### arguments
 
-    - obj
+- obj
 
 ##### comments
 
-#### pprint 
+#### def pprint 
 ##### arguments
 
-    - obj
+- obj
 
 ##### comments
 

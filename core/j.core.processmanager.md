@@ -10,41 +10,41 @@
 
     
 
-#### checkStartupOlderThan 
+#### def checkStartupOlderThan 
 ##### arguments
 
-    - secago
+- secago
 
 ##### comments
 
-#### getCmdsObject 
+#### def getCmdsObject 
 ##### arguments
 
-    - category
+- category
 
 ##### comments
 
-#### getStartupTime 
-##### arguments
-
-##### comments
-
-#### loadCmds 
+#### def getStartupTime 
 ##### arguments
 
 ##### comments
 
-#### loadMonitorObjectTypes 
+#### def loadCmds 
 ##### arguments
 
 ##### comments
 
-#### restartWorkers 
+#### def loadMonitorObjectTypes 
 ##### arguments
 
 ##### comments
 
-#### start 
+#### def restartWorkers 
+##### arguments
+
+##### comments
+
+#### def start 
 ##### arguments
 
 ##### comments

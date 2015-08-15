@@ -4,14 +4,14 @@
 
 ### Methods
 
-#### getSSHClient 
+#### def getSSHClient 
 ##### arguments
 
-    - password
-    - host = 'localhost'
-    - username = 'root'
-    - port = 22
-    - timeout = 10
+- password
+- host = 'localhost'
+- username = 'root'
+- port = 22
+- timeout = 10
 
 ##### comments
 
@@ -29,14 +29,14 @@ Create a new SSHClient instance.
 @return: SSHClient instance
 @rtype: SSHClient
 
-#### getSSHClientUsingKey 
+#### def getSSHClientUsingKey 
 ##### arguments
 
-    - keypath
-    - host = 'localhost'
-    - username = 'root'
-    - port = 22
-    - timeout = 10
+- keypath
+- host = 'localhost'
+- username = 'root'
+- port = 22
+- timeout = 10
 
 ##### comments
 
@@ -44,13 +44,13 @@ Create a new SSHClient instance.
 @return: SSHClient instance
 @rtype: SSHClient
 
-#### getSSHClientUsingSSHAgent 
+#### def getSSHClientUsingSSHAgent 
 ##### arguments
 
-    - host = 'localhost'
-    - username = 'root'
-    - port = 22
-    - timeout = 10
+- host = 'localhost'
+- username = 'root'
+- port = 22
+- timeout = 10
 
 ##### comments
 

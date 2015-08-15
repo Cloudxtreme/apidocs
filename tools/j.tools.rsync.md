@@ -6,30 +6,30 @@
 
     
 
-#### getClient 
+#### def getClient 
 ##### arguments
 
-    - name = ''
-    - addr = 'localhost'
-    - port = 873
-    - login = ''
-    - passwd = ''
+- name = ''
+- addr = 'localhost'
+- port = 873
+- login = ''
+- passwd = ''
 
 ##### comments
 
-#### getClientSecret 
+#### def getClientSecret 
 ##### arguments
 
-    - addr = 'localhost'
-    - port = 873
-    - secret = ''
+- addr = 'localhost'
+- port = 873
+- secret = ''
 
 ##### comments
 
-#### getServer 
+#### def getServer 
 ##### arguments
 
-    - root
+- root
 
 ##### comments
 

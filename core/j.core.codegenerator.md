@@ -9,22 +9,22 @@
 
 ### Methods
 
-#### generate 
+#### def generate 
 ##### arguments
 
-    - spec
-    - type
-    - typecheck = True
-    - dieInGenCode = True
-    - appserverclient
-    - instance = 0
-    - redis = False
-    - wsclient
-    - codepath
-    - classpath
-    - returnClass = True
-    - args = \{\}
-    - makeCopy = False
+- spec
+- type
+- typecheck = True
+- dieInGenCode = True
+- appserverclient
+- instance = 0
+- redis = False
+- wsclient
+- codepath
+- classpath
+- returnClass = True
+- args = \{\}
+- makeCopy = False
 
 ##### comments
 
@@ -34,125 +34,125 @@ param: typecheck (means in generated code the types will be checked)
 param: dieInGenCode  if true means in generated code we will die when something uneforeseen happens
 return: dict of classes if more than 1 otherwise just the class
 
-#### getActorClass 
+#### def getActorClass 
 ##### arguments
 
-    - appname
-    - actor
-    - typecheck = True
-    - dieInGenCode = True
-    - codepath
+- appname
+- actor
+- typecheck = True
+- dieInGenCode = True
+- codepath
 
 ##### comments
 
-#### getClassActorLocal 
+#### def getClassActorLocal 
 ##### arguments
 
-    - appname
-    - actor
-    - typecheck = True
-    - dieInGenCode = True
+- appname
+- actor
+- typecheck = True
+- dieInGenCode = True
 
 ##### comments
 
-#### getClassActorRemote 
+#### def getClassActorRemote 
 ##### arguments
 
-    - appname
-    - actor
-    - typecheck = True
-    - dieInGenCode = True
-    - instance = 0
-    - redis = False
-    - wsclient
-    - codepath
+- appname
+- actor
+- typecheck = True
+- dieInGenCode = True
+- instance = 0
+- redis = False
+- wsclient
+- codepath
 
 ##### comments
 
-#### getClassEnumeration 
+#### def getClassEnumeration 
 ##### arguments
 
-    - appname
-    - actor
-    - enumname
-    - typecheck = True
-    - dieInGenCode = True
+- appname
+- actor
+- enumname
+- typecheck = True
+- dieInGenCode = True
 
 ##### comments
 
-#### getClassJSModel 
+#### def getClassJSModel 
 ##### arguments
 
-    - appname
-    - actor
-    - modelname
-    - typecheck = True
-    - dieInGenCode = True
-    - codepath = ''
+- appname
+- actor
+- modelname
+- typecheck = True
+- dieInGenCode = True
+- codepath = ''
 
 ##### comments
 
-#### getClassesActorMethodGreenlet 
+#### def getClassesActorMethodGreenlet 
 ##### arguments
 
-    - appname
-    - actor
-    - typecheck = True
-    - dieInGenCode = True
+- appname
+- actor
+- typecheck = True
+- dieInGenCode = True
 
 ##### comments
 
 return: returns dict with key name methodname and then the class (for each method a class is generated)
 
-#### getCodeEveModel 
+#### def getCodeEveModel 
 ##### arguments
 
-    - appname
-    - actor
-    - modelname
-    - typecheck = True
-    - dieInGenCode = True
-    - codepath = ''
+- appname
+- actor
+- modelname
+- typecheck = True
+- dieInGenCode = True
+- codepath = ''
 
 ##### comments
 
-#### getCodeId 
+#### def getCodeId 
 ##### arguments
 
-    - spec
-    - type
+- spec
+- type
 
 ##### comments
 
-#### getCodeJSModel 
+#### def getCodeJSModel 
 ##### arguments
 
-    - appname
-    - actor
-    - modelname
-    - typecheck = True
-    - dieInGenCode = True
-    - codepath = ''
+- appname
+- actor
+- modelname
+- typecheck = True
+- dieInGenCode = True
+- codepath = ''
 
 ##### comments
 
-#### removeFromMem 
+#### def removeFromMem 
 ##### arguments
 
-    - appname
-    - actor
+- appname
+- actor
 
 ##### comments
 
-#### resetMemNonSystem 
+#### def resetMemNonSystem 
 ##### arguments
 
 ##### comments
 
-#### setTarget 
+#### def setTarget 
 ##### arguments
 
-    - target
+- target
 
 ##### comments
 

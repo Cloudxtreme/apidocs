@@ -20,53 +20,53 @@
 
 Utility class to configure and store all relevant directory paths
 
-#### addProtectedDir 
+#### def addProtectedDir 
 ##### arguments
 
-    - path
-    - name = 'main'
+- path
+- name = 'main'
 
 ##### comments
 
-#### amInGitConfigRepo 
+#### def amInGitConfigRepo 
 ##### arguments
 
 ##### comments
 
 return parent path where .git is or None when not found
 
-#### checkInProtectedDir 
+#### def checkInProtectedDir 
 ##### arguments
 
-    - path
+- path
 
 ##### comments
 
-#### createGitConfigRepo 
+#### def createGitConfigRepo 
 ##### arguments
 
-    - path
+- path
 
 ##### comments
 
-#### getHrdDir 
+#### def getHrdDir 
 ##### arguments
 
-    - system = False
+- system = False
 
 ##### comments
 
-#### getPathOfRunningFunction 
+#### def getPathOfRunningFunction 
 ##### arguments
 
-    - function
+- function
 
 ##### comments
 
-#### init 
+#### def init 
 ##### arguments
 
-    - reinit = False
+- reinit = False
 
 ##### comments
 
@@ -78,30 +78,30 @@ default path.
 @returns: Initialization success
 @rtype: bool
 
-#### isGitConfigRepo 
+#### def isGitConfigRepo 
 ##### arguments
 
-    - path
+- path
 
 ##### comments
 
-#### loadProtectedDirs 
+#### def loadProtectedDirs 
 ##### arguments
 
 ##### comments
 
-#### removeProtectedDir 
+#### def removeProtectedDir 
 ##### arguments
 
-    - path
+- path
 
 ##### comments
 
-#### replaceTxtDirVars 
+#### def replaceTxtDirVars 
 ##### arguments
 
-    - txt
-    - additionalArgs = \{\}
+- txt
+- additionalArgs = \{\}
 
 ##### comments
 

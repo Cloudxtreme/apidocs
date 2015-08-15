@@ -4,15 +4,15 @@
 
 ### Methods
 
-#### getZDaemon 
+#### def getZDaemon 
 ##### arguments
 
-    - port = 4444
-    - name = ''
-    - nrCmdGreenlets = 50
-    - sslorg = ''
-    - ssluser = ''
-    - sslkeyvaluestor
+- port = 4444
+- name = ''
+- nrCmdGreenlets = 50
+- sslorg = ''
+- ssluser = ''
+- sslkeyvaluestor
 
 ##### comments
 
@@ -38,17 +38,17 @@ zd.start()
 
 use self.getZDaemonClientClass as client to this daemon
 
-#### getZDaemonAgent 
+#### def getZDaemonAgent 
 ##### arguments
 
-    - ipaddr = '127.0.0.1'
-    - port = 5651
-    - org = 'myorg'
-    - user = 'root'
-    - passwd = '1234'
-    - ssl = False
-    - reset = False
-    - roles = []
+- ipaddr = '127.0.0.1'
+- port = 5651
+- org = 'myorg'
+- user = 'root'
+- passwd = '1234'
+- ssl = False
+- reset = False
+- roles = []
 
 ##### comments
 
@@ -60,19 +60,19 @@ agent.start()
 @param roles describes which roles the agent can execute e.g. node.1,hypervisor.virtualbox.1,*
     * means all
 
-#### getZDaemonClient 
+#### def getZDaemonClient 
 ##### arguments
 
-    - addr = '127.0.0.1'
-    - port = 5651
-    - org = 'myorg'
-    - user = 'root'
-    - passwd = '1234'
-    - ssl = False
-    - category = 'core'
-    - sendformat = 'm'
-    - returnformat = 'm'
-    - gevent = False
+- addr = '127.0.0.1'
+- port = 5651
+- org = 'myorg'
+- user = 'root'
+- passwd = '1234'
+- ssl = False
+- category = 'core'
+- sendformat = 'm'
+- returnformat = 'm'
+- gevent = False
 
 ##### comments
 
@@ -82,18 +82,18 @@ client=j.core.zdaemon.getZDaemonClient(ipaddr="127.0.0.1",port=5651,login="root"
 
         print client.echo("Hello World.")
 
-#### getZDaemonHAClient 
+#### def getZDaemonHAClient 
 ##### arguments
 
-    - connections
-    - org = 'myorg'
-    - user = 'root'
-    - passwd = '1234'
-    - ssl = False
-    - category = 'core'
-    - sendformat = 'm'
-    - returnformat = 'm'
-    - gevent = False
+- connections
+- org = 'myorg'
+- user = 'root'
+- passwd = '1234'
+- ssl = False
+- category = 'core'
+- sendformat = 'm'
+- returnformat = 'm'
+- gevent = False
 
 ##### comments
 
@@ -103,7 +103,7 @@ client=j.core.zdaemon.getZDaemonHAClient([('127.0.0.1', 5544)],login="root",pass
 
         print client.echo("Hello World.")
 
-#### getZDaemonTransportClass 
+#### def getZDaemonTransportClass 
 ##### arguments
 
 ##### comments
@@ -117,12 +117,12 @@ class BlobStorTransport(j.core.zdaemon.getZDaemonTransportClass()):
         return result
 transp=BlobStorTransport(addr=ipaddr,port=port,gevent=True)
 
-#### initSSL4Server 
+#### def initSSL4Server 
 ##### arguments
 
-    - organization
-    - serveruser
-    - sslkeyvaluestor
+- organization
+- serveruser
+- sslkeyvaluestor
 
 ##### comments
 

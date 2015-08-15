@@ -12,49 +12,49 @@ self.width=120
 self.indent=0 #current indentation of messages send to console
 self.reformat=False #if True will make sure message fits nicely on screen
 
-#### askArrayRow 
+#### def askArrayRow 
 ##### arguments
 
-    - array
-    - header = True
-    - descr = ''
-    - returncol
+- array
+- header = True
+- descr = ''
+- returncol
 
 ##### comments
 
-#### askChoice 
+#### def askChoice 
 ##### arguments
 
-    - choicearray
-    - descr = ''
-    - sort = True
-    - maxchoice = 25
-    - height = 30
-    - autocomplete = False
+- choicearray
+- descr = ''
+- sort = True
+- maxchoice = 25
+- height = 30
+- autocomplete = False
 
 ##### comments
 
 @param choicearray is list or dict, when dict key needs to be the object to return,
        the value of the dics is what needs to be returned, the key is the str representation
 
-#### askChoiceMultiple 
+#### def askChoiceMultiple 
 ##### arguments
 
-    - choicearray
-    - descr
-    - sort = True
+- choicearray
+- descr
+- sort = True
 
 ##### comments
 
-#### askInteger 
+#### def askInteger 
 ##### arguments
 
-    - question
-    - defaultValue
-    - minValue
-    - maxValue
-    - retry = -1
-    - validate
+- question
+- defaultValue
+- minValue
+- maxValue
+- retry = -1
+- validate
 
 ##### comments
 
@@ -69,13 +69,13 @@ Get an integer response on asked question
 
 @return: integer representing the response on the question
 
-#### askIntegers 
+#### def askIntegers 
 ##### arguments
 
-    - question
-    - invalid_message = 'invalid input please try again.'
-    - min
-    - max
+- question
+- invalid_message = 'invalid input please try again.'
+- min
+- max
 
 ##### comments
 
@@ -92,11 +92,11 @@ Ask the user for multiple integers
 @return: the input numbers
 @rtype: list<number>
 
-#### askMultiline 
+#### def askMultiline 
 ##### arguments
 
-    - question
-    - escapeString = '.'
+- question
+- escapeString = '.'
 
 ##### comments
 
@@ -108,14 +108,14 @@ Ask the user a question that needs a multi-line answer.
 @type escapeString: string
 @return: string multi-line reply by the user, always ending with a newline
 
-#### askPassword 
+#### def askPassword 
 ##### arguments
 
-    - question
-    - confirm = True
-    - regex
-    - retry = -1
-    - validate
+- question
+- confirm = True
+- regex
+- retry = -1
+- validate
 
 ##### comments
 
@@ -131,14 +131,14 @@ Present a password input question to the user
 @returns: Password provided by the user
 @rtype: string
 
-#### askString 
+#### def askString 
 ##### arguments
 
-    - question
-    - defaultparam = ''
-    - regex
-    - retry = -1
-    - validate
+- question
+- defaultparam = ''
+- regex
+- retry = -1
+- validate
 
 ##### comments
 
@@ -153,10 +153,10 @@ Get a string response on a question
 @returns: Response provided by the user
 @rtype: string
 
-#### askYesNo 
+#### def askYesNo 
 ##### arguments
 
-    - message = ''
+- message = ''
 
 ##### comments
 
@@ -168,22 +168,22 @@ Display a yes/no question and loop until a valid answer is entered
 @return: Positive or negative answer
 @rtype: bool
 
-#### cls 
+#### def cls 
 ##### arguments
 
 ##### comments
 
 clear screen
 
-#### echo 
+#### def echo 
 ##### arguments
 
-    - msg
-    - indent
-    - withStar = False
-    - prefix = ''
-    - log = False
-    - lf = True
+- msg
+- indent
+- withStar = False
+- prefix = ''
+- log = False
+- lf = True
 
 ##### comments
 
@@ -191,30 +191,30 @@ Display some text to the end-user, use this method instead of print
 @param indent std, will use indent from console object (same for all), this param allows to overrule
         will only work when j.console.reformat==True
 
-#### echoDict 
+#### def echoDict 
 ##### arguments
 
-    - dictionary
-    - withStar = False
-    - indent
+- dictionary
+- withStar = False
+- indent
 
 ##### comments
 
-#### echoListItem 
+#### def echoListItem 
 ##### arguments
 
-    - msg
+- msg
 
 ##### comments
 
 Echo a list item
 @param msg: Message to display
 
-#### echoListItems 
+#### def echoListItems 
 ##### arguments
 
-    - messages
-    - sort = False
+- messages
+- sort = False
 
 ##### comments
 
@@ -227,42 +227,42 @@ Echo a sequence (iterator, generator, list, set) as list items
 @param loglevel: Log level
 @type loglevel: number
 
-#### echoListWithPrefix 
+#### def echoListWithPrefix 
 ##### arguments
 
-    - messages
-    - prefix
+- messages
+- prefix
 
 ##### comments
 
 print messages
 
-#### echoWithPrefix 
+#### def echoWithPrefix 
 ##### arguments
 
-    - message
-    - prefix
-    - withStar = False
-    - indent
+- message
+- prefix
+- withStar = False
+- indent
 
 ##### comments
 
 print a message which is formatted with a prefix
 
-#### enableOutput 
+#### def enableOutput 
 ##### arguments
 
 ##### comments
 
-#### formatMessage 
+#### def formatMessage 
 ##### arguments
 
-    - message
-    - prefix = ''
-    - withStar = False
-    - indent = 0
-    - width = 0
-    - removeemptylines = True
+- message
+- prefix = ''
+- withStar = False
+- indent = 0
+- width = 0
+- removeemptylines = True
 
 ##### comments
 
@@ -271,45 +271,45 @@ Reformat the message to display to the user and calculate length
 @returns: Length of last line and message to display
 @rtype: tuple<number, string>
 
-#### hideOutput 
+#### def hideOutput 
 ##### arguments
 
 ##### comments
 
-#### printOutput 
+#### def printOutput 
 ##### arguments
 
 ##### comments
 
-#### rawInputPerChar 
+#### def rawInputPerChar 
 ##### arguments
 
-    - callback
-    - params
+- callback
+- params
 
 ##### comments
 
 when typing, char per char will be returned
 
-#### showArray 
+#### def showArray 
 ##### arguments
 
-    - array
-    - header = True
+- array
+- header = True
 
 ##### comments
 
-#### showOutput 
+#### def showOutput 
 ##### arguments
 
 ##### comments
 
-#### transformDictToMessage 
+#### def transformDictToMessage 
 ##### arguments
 
-    - dictionary
-    - withStar = False
-    - indent
+- dictionary
+- withStar = False
+- indent
 
 ##### comments
 

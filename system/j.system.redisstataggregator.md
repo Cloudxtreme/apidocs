@@ -6,18 +6,18 @@
 
 ### Methods
 
-#### popStats 
+#### def popStats 
 ##### arguments
 
-    - key
+- key
 
 ##### comments
 
-#### pushStats 
+#### def pushStats 
 ##### arguments
 
-    - key
-    - data
+- key
+- data
 
 ##### comments
 

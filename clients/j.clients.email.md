@@ -4,15 +4,15 @@
 
 ### Methods
 
-#### send 
+#### def send 
 ##### arguments
 
-    - recipients
-    - sender = ''
-    - subject = ''
-    - message = ''
-    - files
-    - mimetype
+- recipients
+- sender = ''
+- subject = ''
+- message = ''
+- files
+- mimetype
 
 ##### comments
 

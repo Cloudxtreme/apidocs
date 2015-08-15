@@ -4,13 +4,13 @@
 
 ### Methods
 
-#### get 
+#### def get 
 ##### arguments
 
-    - instance = 'main'
-    - ip = ''
-    - user = ''
-    - passwd = ''
+- instance = 'main'
+- ip = ''
+- user = ''
+- passwd = ''
 
 ##### comments
 

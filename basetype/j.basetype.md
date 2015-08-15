@@ -26,11 +26,11 @@
 
 ### Methods
 
-#### enumeration 
+#### def enumeration 
 ##### arguments
 
-    - enumerationtype
-    - **kwargs
+- enumerationtype
+- **kwargs
 
 ##### comments
 
@@ -48,11 +48,11 @@ generating a class instance, not a class.
 
 @see: L\{jumpscale.pmtypes.base.BaseType.__init__\}
 
-#### object 
+#### def object 
 ##### arguments
 
-    - type_
-    - **kwargs
+- type_
+- **kwargs
 
 ##### comments
 

@@ -4,11 +4,11 @@
 
 ### Methods
 
-#### makeAvailable 
+#### def makeAvailable 
 ##### arguments
 
-    - obj
-    - path
+- obj
+- path
 
 ##### comments
 

@@ -6,10 +6,10 @@
 
 This factory can create new Params objects
 
-#### get 
+#### def get 
 ##### arguments
 
-    - dictObject = \{\}
+- dictObject = \{\}
 
 ##### comments
 
@@ -19,10 +19,10 @@ Create and return a new Params object
 @return: a new Params object
 @rtype: Params
 
-#### isParams 
+#### def isParams 
 ##### arguments
 
-    - p
+- p
 
 ##### comments
 

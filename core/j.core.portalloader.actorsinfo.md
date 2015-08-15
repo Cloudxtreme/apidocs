@@ -4,36 +4,36 @@
 
 ### Methods
 
-#### getActorInfoPage 
+#### def getActorInfoPage 
 ##### arguments
 
-    - appname
-    - actorname
-    - methodname
-    - page
+- appname
+- actorname
+- methodname
+- page
 
 ##### comments
 
 used for during error show info about 1 actor
 
-#### getActorMethodCall 
+#### def getActorMethodCall 
 ##### arguments
 
-    - appname
-    - actor
-    - method
+- appname
+- actor
+- method
 
 ##### comments
 
 used for during error show links to methods in browser
 
-#### getActorsInfoPage 
+#### def getActorsInfoPage 
 ##### arguments
 
-    - appname = ''
-    - actor = ''
-    - page
-    - extraParams = \{\}
+- appname = ''
+- actor = ''
+- page
+- extraParams = \{\}
 
 ##### comments
 

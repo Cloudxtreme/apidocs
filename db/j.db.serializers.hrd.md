@@ -4,18 +4,18 @@
 
 ### Methods
 
-#### dumps 
+#### def dumps 
 ##### arguments
 
-    - data
-    - prepend = ''
+- data
+- prepend = ''
 
 ##### comments
 
-#### loads 
+#### def loads 
 ##### arguments
 
-    - data
+- data
 
 ##### comments
 

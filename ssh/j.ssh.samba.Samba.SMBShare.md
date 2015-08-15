@@ -4,31 +4,31 @@
 
 ### Methods
 
-#### add 
+#### def add 
 ##### arguments
 
-    - sharename
-    - path
-    - options = \{\}
+- sharename
+- path
+- options = \{\}
 
 ##### comments
 
-#### commit 
+#### def commit 
 ##### arguments
 
 ##### comments
 
-#### get 
+#### def get 
 ##### arguments
 
-    - sharename
+- sharename
 
 ##### comments
 
-#### remove 
+#### def remove 
 ##### arguments
 
-    - sharename
+- sharename
 
 ##### comments
 

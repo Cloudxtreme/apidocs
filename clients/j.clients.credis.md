@@ -9,22 +9,22 @@
 
     
 
-#### getRedisClient 
+#### def getRedisClient 
 ##### arguments
 
-    - ipaddr
-    - port
-    - timeout
+- ipaddr
+- port
+- timeout
 
 ##### comments
 
-#### getRedisQueue 
+#### def getRedisQueue 
 ##### arguments
 
-    - ipaddr
-    - port
-    - name
-    - namespace = 'queues'
+- ipaddr
+- port
+- name
+- namespace = 'queues'
 
 ##### comments
 

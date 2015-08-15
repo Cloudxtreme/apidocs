@@ -7,7 +7,7 @@
 generic provider of id's
 lives at j.idgenerator
 
-#### generateGUID 
+#### def generateGUID 
 ##### arguments
 
 ##### comments
@@ -15,12 +15,12 @@ lives at j.idgenerator
 generate unique guid
 how to use:  j.base.idgenerator.generateGUID()
 
-#### generateIncrID 
+#### def generateIncrID 
 ##### arguments
 
-    - incrTypeId
-    - service
-    - reset = False
+- incrTypeId
+- service
+- reset = False
 
 ##### comments
 
@@ -29,30 +29,30 @@ needs to be a unique type, can only work if application service is known
 how to use:  j.base.idgenerator.generateIncrID("agent")
 @reset if True means restart from 1
 
-#### generateRandomInt 
+#### def generateRandomInt 
 ##### arguments
 
-    - fromInt
-    - toInt
+- fromInt
+- toInt
 
 ##### comments
 
 how to use:  j.base.idgenerator.generateRandomInt(0,10)
 
-#### generateXCharID 
+#### def generateXCharID 
 ##### arguments
 
-    - x
+- x
 
 ##### comments
 
-#### getID 
+#### def getID 
 ##### arguments
 
-    - incrTypeId
-    - objectUniqueSeedInfo
-    - service
-    - reset = False
+- incrTypeId
+- objectUniqueSeedInfo
+- service
+- reset = False
 
 ##### comments
 

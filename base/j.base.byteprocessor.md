@@ -16,70 +16,70 @@
 
 ByteProcessor
 
-#### compress 
+#### def compress 
 ##### arguments
 
-    - s
+- s
 
 ##### comments
 
-#### decompress 
+#### def decompress 
 ##### arguments
 
-    - s
+- s
 
 ##### comments
 
-#### disperse 
+#### def disperse 
 ##### arguments
 
-    - s
-    - nrblocks
-    - extrablocks
-    - compress = True
+- s
+- nrblocks
+- extrablocks
+- compress = True
 
 ##### comments
 
 returns DispersedBlock object
 
-#### getDispersedBlockObject 
+#### def getDispersedBlockObject 
 ##### arguments
 
 ##### comments
 
-#### hashMd5 
+#### def hashMd5 
 ##### arguments
 
-    - s
+- s
 
 ##### comments
 
-#### hashTiger160 
+#### def hashTiger160 
 ##### arguments
 
-    - s
+- s
 
 ##### comments
 
-#### hashTiger160bin 
+#### def hashTiger160bin 
 ##### arguments
 
-    - s
+- s
 
 ##### comments
 
-#### hashTiger192 
+#### def hashTiger192 
 ##### arguments
 
-    - s
+- s
 
 ##### comments
 
-#### undisperse 
+#### def undisperse 
 ##### arguments
 
-    - dispersedBlockObject
-    - uncompress = True
+- dispersedBlockObject
+- uncompress = True
 
 ##### comments
 

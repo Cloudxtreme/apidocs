@@ -6,11 +6,11 @@
 
 Some log related utilities.
 
-#### trace 
+#### def trace 
 ##### arguments
 
-    - level = 5
-    - enabled = True
+- level = 5
+- enabled = True
 
 ##### comments
 

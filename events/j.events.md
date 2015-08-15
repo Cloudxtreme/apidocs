@@ -4,59 +4,59 @@
 
 ### Methods
 
-#### bug_critical 
+#### def bug_critical 
 ##### arguments
 
-    - msg
-    - category = ''
-    - jobid = 0
-    - e
+- msg
+- category = ''
+- jobid = 0
+- e
 
 ##### comments
 
 will die
 @param e is python error object when doing except
 
-#### bug_warning 
+#### def bug_warning 
 ##### arguments
 
-    - msg
-    - category = ''
-    - e
+- msg
+- category = ''
+- e
 
 ##### comments
 
 will die
 @param e is python error object when doing except
 
-#### inputerror_critical 
+#### def inputerror_critical 
 ##### arguments
 
-    - msg
-    - category = ''
-    - msgpub = ''
+- msg
+- category = ''
+- msgpub = ''
 
 ##### comments
 
 will die
 
-#### inputerror_warning 
+#### def inputerror_warning 
 ##### arguments
 
-    - msg
-    - category = ''
-    - msgpub = ''
+- msg
+- category = ''
+- msgpub = ''
 
 ##### comments
 
 will die
 
-#### opserror 
+#### def opserror 
 ##### arguments
 
-    - msg
-    - category = ''
-    - e
+- msg
+- category = ''
+- e
 
 ##### comments
 
@@ -64,22 +64,22 @@ will NOT die
 will make warning event is the same as opserror_warning
 @param e is python error object when doing except
 
-#### opserror_critical 
+#### def opserror_critical 
 ##### arguments
 
-    - msg
-    - category = ''
+- msg
+- category = ''
 
 ##### comments
 
 will die
 
-#### opserror_warning 
+#### def opserror_warning 
 ##### arguments
 
-    - msg
-    - category = ''
-    - e
+- msg
+- category = ''
+- e
 
 ##### comments
 

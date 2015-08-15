@@ -4,11 +4,11 @@
 
 ### Methods
 
-#### commit 
+#### def commit 
 ##### arguments
 
-    - fileName
-    - diskImageFormat
+- fileName
+- diskImageFormat
 
 ##### comments
 
@@ -16,18 +16,18 @@ Commit the changes recorded in <fileName> in its base image.
 @param fileName: a disk image filename
 @param diskImageFormat: disk image format
 
-#### convert 
+#### def convert 
 ##### arguments
 
-    - fileName
-    - diskImageFormat
-    - outputFileName
-    - outputFormat
-    - compressTargetImage = False
-    - encryptTargetImage = False
-    - useCompatibilityLevel6 = False
-    - isTargetImageTypeSCSI = False
-    - logger
+- fileName
+- diskImageFormat
+- outputFileName
+- outputFormat
+- compressTargetImage = False
+- encryptTargetImage = False
+- useCompatibilityLevel6 = False
+- isTargetImageTypeSCSI = False
+- logger
 
 ##### comments
 
@@ -47,16 +47,16 @@ It means that if a compressed sector is rewritten, then it is rewritten as uncom
 @param logger: Callback method to report progress
 @type logger: function
 
-#### create 
+#### def create 
 ##### arguments
 
-    - fileName
-    - diskImageFormat
-    - size
-    - baseImage
-    - encryptTargetImage = False
-    - useCompatibilityLevel6 = False
-    - isTargetImageTypeSCSI = False
+- fileName
+- diskImageFormat
+- size
+- baseImage
+- encryptTargetImage = False
+- useCompatibilityLevel6 = False
+- isTargetImageTypeSCSI = False
 
 ##### comments
 
@@ -70,13 +70,13 @@ If base_image is specified, then the image will record only the differences from
 @param useCompatibilityLevel6: indicates that the target image must use compatibility level 6 (vmdk format only)
 @param isTargetImageTypeSCSI: indicates that the target image must be of type SCSI (vmdk format only)
 
-#### info 
+#### def info 
 ##### arguments
 
-    - fileName
-    - diskImageFormat
-    - chain = False
-    - unit = 'K'
+- fileName
+- diskImageFormat
+- chain = False
+- unit = 'K'
 
 ##### comments
 

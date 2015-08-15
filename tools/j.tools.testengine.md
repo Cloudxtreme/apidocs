@@ -8,29 +8,29 @@
 
 ### Methods
 
-#### initTests 
+#### def initTests 
 ##### arguments
 
-    - noOsis
-    - osisip = '127.0.0.1'
-    - login = ''
-    - passwd = ''
+- noOsis
+- osisip = '127.0.0.1'
+- login = ''
+- passwd = ''
 
 ##### comments
 
-#### runTests 
+#### def runTests 
 ##### arguments
 
-    - testrunname
-    - debug = False
+- testrunname
+- debug = False
 
 ##### comments
 
-#### testFile 
+#### def testFile 
 ##### arguments
 
-    - testrunname
-    - filepath
+- testrunname
+- filepath
 
 ##### comments
 

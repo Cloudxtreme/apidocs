@@ -12,113 +12,113 @@
 
 ### Methods
 
-#### addSpec 
+#### def addSpec 
 ##### arguments
 
-    - spec
+- spec
 
 ##### comments
 
-#### findSpec 
+#### def findSpec 
 ##### arguments
 
-    - query = ''
-    - appname = ''
-    - actorname = ''
-    - specname = ''
-    - type = ''
-    - findFromSpec
-    - findOnlyOne = True
+- query = ''
+- appname = ''
+- actorname = ''
+- specname = ''
+- type = ''
+- findFromSpec
+- findOnlyOne = True
 
 ##### comments
 
 do not specify query with one of the other filter criteria
 @param query is in dot notation e.g. $appname.$actorname.$modelname ... the items in front are optional
 
-#### getActorSpec 
+#### def getActorSpec 
 ##### arguments
 
-    - app
-    - name
-    - raiseError = True
+- app
+- name
+- raiseError = True
 
 ##### comments
 
-#### getChildModelSpec 
+#### def getChildModelSpec 
 ##### arguments
 
-    - app
-    - actorname
-    - name
-    - die = True
+- app
+- actorname
+- name
+- die = True
 
 ##### comments
 
-#### getEnumerationSpec 
+#### def getEnumerationSpec 
 ##### arguments
 
-    - app
-    - actorname
-    - name
-    - die = True
+- app
+- actorname
+- name
+- die = True
 
 ##### comments
 
-#### getModelNames 
+#### def getModelNames 
 ##### arguments
 
-    - appname
-    - actorname
+- appname
+- actorname
 
 ##### comments
 
-#### getModelSpec 
+#### def getModelSpec 
 ##### arguments
 
-    - app
-    - actorname
-    - name
-    - die = True
+- app
+- actorname
+- name
+- die = True
 
 ##### comments
 
-#### getSpecFromTypeStr 
+#### def getSpecFromTypeStr 
 ##### arguments
 
-    - appname
-    - actorname
-    - typestr
+- appname
+- actorname
+- typestr
 
 ##### comments
 
 @param typestr e.g list(machine.status)
 @return $returntype,$spec  $returntype=list,dict,object,enum (list & dict can be of primitive types or objects (NOT enums))
 
-#### init 
+#### def init 
 ##### arguments
 
 ##### comments
 
-#### parseSpecs 
+#### def parseSpecs 
 ##### arguments
 
-    - specpath
-    - appname
-    - actorname
+- specpath
+- appname
+- actorname
 
 ##### comments
 
 @param specpath if empty will look for path specs in current dir
 
-#### removeSpecsForActor 
+#### def removeSpecsForActor 
 ##### arguments
 
-    - appname
-    - actorname
+- appname
+- actorname
 
 ##### comments
 
-#### resetMemNonSystem 
+#### def resetMemNonSystem 
 ##### arguments
 
 ##### comments

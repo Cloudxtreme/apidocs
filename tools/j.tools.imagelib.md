@@ -4,47 +4,47 @@
 
 ### Methods
 
-#### imageObjectGet 
+#### def imageObjectGet 
 ##### arguments
 
-    - path
+- path
 
 ##### comments
 
-#### resize 
+#### def resize 
 ##### arguments
 
-    - path
-    - pathnew
-    - width = 1024
-    - overwrite = True
+- path
+- pathnew
+- width = 1024
+- overwrite = True
 
 ##### comments
 
-#### resize2subdir1024x 
+#### def resize2subdir1024x 
 ##### arguments
 
-    - path
-    - overwrite = True
+- path
+- overwrite = True
 
 ##### comments
 
 is a shortcut to resize to widht 1024 typical ok for web usage
 
-#### resize2subdir1600x 
+#### def resize2subdir1600x 
 ##### arguments
 
-    - path
-    - overwrite = True
+- path
+- overwrite = True
 
 ##### comments
 
 is a shortcut to resize to widht 1600 typical ok for high quality web usage
 
-#### resizeFullDir2subdir1024 
+#### def resizeFullDir2subdir1024 
 ##### arguments
 
-    - path
+- path
 
 ##### comments
 

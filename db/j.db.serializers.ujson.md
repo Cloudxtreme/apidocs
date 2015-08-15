@@ -4,17 +4,17 @@
 
 ### Methods
 
-#### dumps 
+#### def dumps 
 ##### arguments
 
-    - obj
+- obj
 
 ##### comments
 
-#### loads 
+#### def loads 
 ##### arguments
 
-    - s
+- s
 
 ##### comments
 

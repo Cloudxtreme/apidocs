@@ -6,17 +6,17 @@
 
 ### Methods
 
-#### extractBlocks 
+#### def extractBlocks 
 ##### arguments
 
-    - text
-    - blockStartPatterns = ['.*']
-    - blockStartPatternsNegative = []
-    - blockStopPatterns = []
-    - blockStopPatternsNegative = []
-    - linesIncludePatterns = ['.*']
-    - linesExcludePatterns = []
-    - includeMatchingLine = True
+- text
+- blockStartPatterns = ['.*']
+- blockStartPatternsNegative = []
+- blockStopPatterns = []
+- blockStopPatternsNegative = []
+- linesIncludePatterns = ['.*']
+- linesExcludePatterns = []
+- includeMatchingLine = True
 
 ##### comments
 
@@ -25,26 +25,26 @@ block will stop when line found which matches one of patterns in blockStopPatter
 in block lines matching linesIncludePatterns will be kept and reverse for linesExcludePatterns
 example pattern: '^class ' looks for class at beginning of line with space behind
 
-#### extractFirstFoundBlock 
+#### def extractFirstFoundBlock 
 ##### arguments
 
-    - text
-    - blockStartPatterns
-    - blockStartPatternsNegative = []
-    - blockStopPatterns = []
-    - blockStopPatternsNegative = []
-    - linesIncludePatterns = ['.*']
-    - linesExcludePatterns = []
-    - includeMatchingLine = True
+- text
+- blockStartPatterns
+- blockStartPatternsNegative = []
+- blockStopPatterns = []
+- blockStopPatternsNegative = []
+- linesIncludePatterns = ['.*']
+- linesExcludePatterns = []
+- includeMatchingLine = True
 
 ##### comments
 
-#### findAll 
+#### def findAll 
 ##### arguments
 
-    - pattern
-    - text
-    - flags = 0
+- pattern
+- text
+- flags = 0
 
 ##### comments
 
@@ -52,33 +52,33 @@ Search all matches of pattern in text and returns an array
 @param pattern: Regex pattern to search for
 @param text: Text to search in
 
-#### findHtmlBlock 
+#### def findHtmlBlock 
 ##### arguments
 
-    - subject
-    - tofind
-    - path
-    - dieIfNotFound = True
+- subject
+- tofind
+- path
+- dieIfNotFound = True
 
 ##### comments
 
 only find 1 block ideal to find e.g. body & header of html doc
 
-#### findHtmlElement 
+#### def findHtmlElement 
 ##### arguments
 
-    - subject
-    - tofind
-    - path
-    - dieIfNotFound = True
+- subject
+- tofind
+- path
+- dieIfNotFound = True
 
 ##### comments
 
-#### findLine 
+#### def findLine 
 ##### arguments
 
-    - regex
-    - text
+- regex
+- text
 
 ##### comments
 
@@ -86,12 +86,12 @@ returns line when found
 @param regex is what we are looking for
 @param text, we are looking into
 
-#### findOne 
+#### def findOne 
 ##### arguments
 
-    - pattern
-    - text
-    - flags = 0
+- pattern
+- text
+- flags = 0
 
 ##### comments
 
@@ -99,12 +99,12 @@ Searches for a one match only on pattern inside text, will throw a RuntimeError 
 @param pattern: Regex pattern to search for
 @param text: Text to search in
 
-#### getINIAlikeVariableFromText 
+#### def getINIAlikeVariableFromText 
 ##### arguments
 
-    - variableName
-    - text
-    - isArray = False
+- variableName
+- text
+- isArray = False
 
 ##### comments
 
@@ -117,65 +117,65 @@ getINIAlikeVariable("test",text) will return 'something'
 @isArray when True and , in result will make array out of 
 getINIAlikeVariable("testarray",text,True) will return [1,2,4,5]
 
-#### getRegexMatch 
+#### def getRegexMatch 
 ##### arguments
 
-    - pattern
-    - text
-    - flags = 0
+- pattern
+- text
+- flags = 0
 
 ##### comments
 
 find the first match in the string that matches the pattern.
 @return RegexMatch object, or None if didn't match any.
 
-#### getRegexMatches 
+#### def getRegexMatches 
 ##### arguments
 
-    - pattern
-    - text
-    - flags = 0
+- pattern
+- text
+- flags = 0
 
 ##### comments
 
 match all occurences and find start and stop in text
 return RegexMatches  (is array of RegexMatch)
 
-#### match 
+#### def match 
 ##### arguments
 
-    - pattern
-    - text
+- pattern
+- text
 
 ##### comments
 
 search if there is at least 1 match
 
-#### matchAllText 
+#### def matchAllText 
 ##### arguments
 
-    - pattern
-    - text
+- pattern
+- text
 
 ##### comments
 
-#### matchMultiple 
+#### def matchMultiple 
 ##### arguments
 
-    - patterns
-    - text
+- patterns
+- text
 
 ##### comments
 
 see if any patterns matched
 if patterns=[] then will return False
 
-#### processLines 
+#### def processLines 
 ##### arguments
 
-    - text
-    - includes = ''
-    - excludes = ''
+- text
+- includes = ''
+- excludes = ''
 
 ##### comments
 
@@ -183,23 +183,23 @@ includes happens first
 excludes last
 both are arrays
 
-#### removeLines 
+#### def removeLines 
 ##### arguments
 
-    - pattern
-    - text
+- pattern
+- text
 
 ##### comments
 
 remove lines based on pattern
 
-#### replace 
+#### def replace 
 ##### arguments
 
-    - regexFind
-    - regexFindsubsetToReplace
-    - replaceWith
-    - text
+- regexFind
+- regexFindsubsetToReplace
+- replaceWith
+- text
 
 ##### comments
 
@@ -212,14 +212,14 @@ Example:
 @param replacewith: The replacement
 @param text: Text where you want to search and replace
 
-#### replaceLines 
+#### def replaceLines 
 ##### arguments
 
-    - replaceFunction
-    - arg
-    - text
-    - includes = ''
-    - excludes = ''
+- replaceFunction
+- arg
+- text
+- includes = ''
+- excludes = ''
 
 ##### comments
 
@@ -229,12 +229,12 @@ both are arrays
 replace the matched line with line being processed by the functionreplaceFunction(arg,lineWhichMatches)
 the replace function has 2 params, argument & the matching line
 
-#### yieldRegexMatches 
+#### def yieldRegexMatches 
 ##### arguments
 
-    - pattern
-    - text
-    - flags = 0
+- pattern
+- text
+- flags = 0
 
 ##### comments
 

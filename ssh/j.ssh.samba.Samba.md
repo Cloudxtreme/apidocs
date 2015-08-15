@@ -4,51 +4,51 @@
 
 ### Methods
 
-#### addShare 
+#### def addShare 
 ##### arguments
 
-    - sharename
-    - path
-    - options = \{\}
+- sharename
+- path
+- options = \{\}
 
 ##### comments
 
-#### addUser 
+#### def addUser 
 ##### arguments
 
-    - username
-    - password
+- username
+- password
 
 ##### comments
 
-#### commitShare 
-##### arguments
-
-##### comments
-
-#### getShare 
-##### arguments
-
-    - sharename
-
-##### comments
-
-#### listUsers 
+#### def commitShare 
 ##### arguments
 
 ##### comments
 
-#### removeShare 
+#### def getShare 
 ##### arguments
 
-    - sharename
+- sharename
 
 ##### comments
 
-#### removeUser 
+#### def listUsers 
 ##### arguments
 
-    - username
+##### comments
+
+#### def removeShare 
+##### arguments
+
+- sharename
+
+##### comments
+
+#### def removeUser 
+##### arguments
+
+- username
 
 ##### comments
 

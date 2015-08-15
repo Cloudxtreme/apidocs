@@ -4,17 +4,17 @@
 
 ### Methods
 
-#### get 
+#### def get 
 ##### arguments
 
-    - path
+- path
 
 ##### comments
 
-#### getGroup 
+#### def getGroup 
 ##### arguments
 
-    - path = ''
+- path = ''
 
 ##### comments
 

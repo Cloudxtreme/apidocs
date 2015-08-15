@@ -6,161 +6,161 @@
 
 ### Methods
 
-#### applyconfig 
+#### def applyconfig 
 ##### arguments
 
-    - interfacenameToExclude
-    - backplanename
+- interfacenameToExclude
+- backplanename
 
 ##### comments
 
 DANGEROUS, will remove old configuration
 
-#### configureStaticAddress 
+#### def configureStaticAddress 
 ##### arguments
 
-    - interfacename = 'eth0'
-    - ipaddr = '192.168.10.10/24'
-    - gw
+- interfacename = 'eth0'
+- ipaddr = '192.168.10.10/24'
+- gw
 
 ##### comments
 
 Configure a static address
 
-#### createVXLanBridge 
+#### def createVXLanBridge 
 ##### arguments
 
-    - networkid
-    - backend
-    - bridgename
+- networkid
+- backend
+- bridgename
 
 ##### comments
 
 Creates a proper vxlan interface and bridge based on a backplane
 
-#### ensureVXNet 
+#### def ensureVXNet 
 ##### arguments
 
-    - networkid
-    - backend
+- networkid
+- backend
 
 ##### comments
 
-#### getConfigFromSystem 
+#### def getConfigFromSystem 
 ##### arguments
 
-    - reload = False
+- reload = False
 
 ##### comments
 
 walk over system and get configuration, result is dict
 
-#### getType 
+#### def getType 
 ##### arguments
 
-    - interfaceName
+- interfaceName
 
 ##### comments
 
-#### initNetworkInterfaces 
+#### def initNetworkInterfaces 
 ##### arguments
 
 ##### comments
 
 Resets /etc/network/interfaces with a basic configuration
 
-#### newBondedBackplane 
+#### def newBondedBackplane 
 ##### arguments
 
-    - name
-    - interfaces
-    - trunks
+- name
+- interfaces
+- trunks
 
 ##### comments
 
 Reasonable defaults  : mode=balance-tcp, lacp=active,fast, bondname=brname-Bond, all vlans allowed
 
-#### newBridge 
+#### def newBridge 
 ##### arguments
 
-    - name
-    - interface
+- name
+- interface
 
 ##### comments
 
 @param interface interface where to connect this bridge to
 
-#### newVlanBridge 
+#### def newVlanBridge 
 ##### arguments
 
-    - name
-    - parentbridge
-    - vlanid
-    - mtu
+- name
+- parentbridge
+- vlanid
+- mtu
 
 ##### comments
 
-#### printConfigFromSystem 
-##### arguments
-
-##### comments
-
-#### removeOldConfig 
+#### def printConfigFromSystem 
 ##### arguments
 
 ##### comments
 
-#### setBackplane 
+#### def removeOldConfig 
 ##### arguments
-
-    - interfacename = 'eth0'
-    - backplanename = 1
-    - ipaddr = '192.168.10.10/24'
-    - gw = ''
 
 ##### comments
 
-DANGEROUS, will remove old configuration
-
-#### setBackplaneDhcp 
+#### def setBackplane 
 ##### arguments
 
-    - interfacename = 'eth0'
-    - backplanename = 'Public'
+- interfacename = 'eth0'
+- backplanename = 1
+- ipaddr = '192.168.10.10/24'
+- gw = ''
 
 ##### comments
 
 DANGEROUS, will remove old configuration
 
-#### setBackplaneNoAddress 
+#### def setBackplaneDhcp 
 ##### arguments
 
-    - interfacename = 'eth0'
-    - backplanename = 1
+- interfacename = 'eth0'
+- backplanename = 'Public'
 
 ##### comments
 
 DANGEROUS, will remove old configuration
 
-#### setBackplaneNoAddressWithBond 
+#### def setBackplaneNoAddress 
 ##### arguments
 
-    - bondname
-    - bondinterfaces
-    - backplanename = 'backplane'
+- interfacename = 'eth0'
+- backplanename = 1
 
 ##### comments
 
 DANGEROUS, will remove old configuration
 
-#### setBackplaneWithBond 
+#### def setBackplaneNoAddressWithBond 
 ##### arguments
 
-    - bondname
-    - bondinterfaces
-    - backplanename = 'backplane'
-    - ipaddr = '192.168.10.10/24'
-    - gw = ''
+- bondname
+- bondinterfaces
+- backplanename = 'backplane'
+
+##### comments
+
+DANGEROUS, will remove old configuration
+
+#### def setBackplaneWithBond 
+##### arguments
+
+- bondname
+- bondinterfaces
+- backplanename = 'backplane'
+- ipaddr = '192.168.10.10/24'
+- gw = ''
 
 ##### comments
 

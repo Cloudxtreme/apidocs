@@ -4,12 +4,12 @@
 
 ### Methods
 
-#### get 
+#### def get 
 ##### arguments
 
-    - ip = 'localhost'
-    - port = 9900
-    - secret
+- ip = 'localhost'
+- port = 9900
+- secret
 
 ##### comments
 
@@ -18,19 +18,19 @@ caching is done so can call this as many times as required
 secret is normally configured from grid
 there is normally no need to use this method, use self.getActorClient in stead
 
-#### get2 
+#### def get2 
 ##### arguments
 
-    - ip = 'localhost'
-    - port = 82
-    - secret
+- ip = 'localhost'
+- port = 82
+- secret
 
 ##### comments
 
-#### getByInstance 
+#### def getByInstance 
 ##### arguments
 
-    - instance
+- instance
 
 ##### comments
 

@@ -8,40 +8,40 @@
 
 ### Methods
 
-#### getCodeManagerForFile 
+#### def getCodeManagerForFile 
 ##### arguments
 
-    - path
+- path
 
 ##### comments
 
-#### getUserId 
+#### def getUserId 
 ##### arguments
 
-    - username
+- username
 
 ##### comments
 
-#### parse 
+#### def parse 
 ##### arguments
 
-    - path
+- path
 
 ##### comments
 
 directory to walk over and find story, task, ... statements
 
-#### setgroups 
+#### def setgroups 
 ##### arguments
 
-    - config
+- config
 
 ##### comments
 
-#### setusers 
+#### def setusers 
 ##### arguments
 
-    - config
+- config
 
 ##### comments
 

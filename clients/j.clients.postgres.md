@@ -8,36 +8,36 @@
 
     
 
-#### createdb 
+#### def createdb 
 ##### arguments
 
-    - db
-    - ipaddr = 'localhost'
-    - port = 5432
-    - login = 'postgres'
-    - passwd = 'rooter'
+- db
+- ipaddr = 'localhost'
+- port = 5432
+- login = 'postgres'
+- passwd = 'rooter'
 
 ##### comments
 
-#### dropdb 
+#### def dropdb 
 ##### arguments
 
-    - db
-    - ipaddr = 'localhost'
-    - port = 5432
-    - login = 'postgres'
-    - passwd = 'rooter'
+- db
+- ipaddr = 'localhost'
+- port = 5432
+- login = 'postgres'
+- passwd = 'rooter'
 
 ##### comments
 
-#### getClient 
+#### def getClient 
 ##### arguments
 
-    - ipaddr = 'localhost'
-    - port = 5432
-    - login = 'postgres'
-    - passwd = 'rooter'
-    - dbname = 'template'
+- ipaddr = 'localhost'
+- port = 5432
+- login = 'postgres'
+- passwd = 'rooter'
+- dbname = 'template'
 
 ##### comments
 

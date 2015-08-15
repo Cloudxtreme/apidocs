@@ -4,7 +4,7 @@
 
 ### Methods
 
-#### getClient 
+#### def getClient 
 ##### arguments
 
 ##### comments

@@ -10,87 +10,87 @@
 
     
 
-#### decrypt 
+#### def decrypt 
 ##### arguments
 
-    - val
-    - json = False
+- val
+- json = False
 
 ##### comments
 
-#### encrypt 
+#### def encrypt 
 ##### arguments
 
-    - obj
+- obj
 
 ##### comments
 
-#### generateOsisModelDefaults 
+#### def generateOsisModelDefaults 
 ##### arguments
 
-    - namespace
-    - specpath = ''
+- namespace
+- specpath = ''
 
 ##### comments
 
-#### getLocal 
+#### def getLocal 
 ##### arguments
 
-    - path = ''
-    - overwriteHRD = False
-    - overwriteImplementation = False
-    - namespacename
+- path = ''
+- overwriteHRD = False
+- overwriteImplementation = False
+- namespacename
 
 ##### comments
 
 create local instance starting from path
 
-#### getModelTemplate 
+#### def getModelTemplate 
 ##### arguments
 
 ##### comments
 
-#### getOSISBaseObjectComplexType 
+#### def getOSISBaseObjectComplexType 
 ##### arguments
 
 ##### comments
 
-#### getOsisBaseObjectClass 
+#### def getOsisBaseObjectClass 
 ##### arguments
 
 ##### comments
 
-#### getOsisImplementationParentClass 
+#### def getOsisImplementationParentClass 
 ##### arguments
 
-    - namespacename
+- namespacename
 
 ##### comments
 
 return parent class for osis implementation (is the implementation from which each namespace & category inherits)
 
-#### getOsisModelClass 
+#### def getOsisModelClass 
 ##### arguments
 
-    - namespace
-    - category
-    - specpath = ''
+- namespace
+- category
+- specpath = ''
 
 ##### comments
 
 returns class generated from spec file or from model.py file
 
-#### startDaemon 
+#### def startDaemon 
 ##### arguments
 
-    - path = ''
-    - overwriteHRD = False
-    - overwriteImplementation = False
-    - key = ''
-    - port = 5544
-    - superadminpasswd
-    - dbconnections = \{\}
-    - hrd
+- path = ''
+- overwriteHRD = False
+- overwriteImplementation = False
+- key = ''
+- port = 5544
+- superadminpasswd
+- dbconnections = \{\}
+- hrd
 
 ##### comments
 

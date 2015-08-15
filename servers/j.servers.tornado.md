@@ -4,43 +4,43 @@
 
 ### Methods
 
-#### getClient 
+#### def getClient 
 ##### arguments
 
-    - addr
-    - port
-    - category = 'core'
-    - org = 'myorg'
-    - user = 'root'
-    - passwd = 'passwd'
-    - ssl = False
-    - roles = []
+- addr
+- port
+- category = 'core'
+- org = 'myorg'
+- user = 'root'
+- passwd = 'passwd'
+- ssl = False
+- roles = []
 
 ##### comments
 
-#### getHAClient 
+#### def getHAClient 
 ##### arguments
 
-    - connections
-    - category = 'core'
-    - org = 'myorg'
-    - user = 'root'
-    - passwd = 'passwd'
-    - ssl = False
-    - roles = []
-    - id
-    - timeout = 60
-    - reconnect = False
+- connections
+- category = 'core'
+- org = 'myorg'
+- user = 'root'
+- passwd = 'passwd'
+- ssl = False
+- roles = []
+- id
+- timeout = 60
+- reconnect = False
 
 ##### comments
 
-#### getServer 
+#### def getServer 
 ##### arguments
 
-    - port
-    - sslorg
-    - ssluser
-    - sslkeyvaluestor
+- port
+- sslorg
+- ssluser
+- sslkeyvaluestor
 
 ##### comments
 
@@ -62,12 +62,12 @@ daemon.addCMDsInterface(MyCommands,category="optional")  #pass as class not as o
 
 daemon.start()
 
-#### initSSL4Server 
+#### def initSSL4Server 
 ##### arguments
 
-    - organization
-    - serveruser
-    - sslkeyvaluestor
+- organization
+- serveruser
+- sslkeyvaluestor
 
 ##### comments
 

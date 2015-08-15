@@ -9,148 +9,148 @@
 
     
 
-#### checkJumpscriptQueue 
+#### def checkJumpscriptQueue 
 ##### arguments
 
-    - jumpscript
-    - queue
+- jumpscript
+- queue
 
 ##### comments
 
 this checks that jumpscripts are not executed twice when being scheduled recurring
 one off jobs will always execute !!!
 
-#### checkQueue 
+#### def checkQueue 
 ##### arguments
 
 ##### comments
 
-#### deleteJob 
+#### def deleteJob 
 ##### arguments
 
-    - jobid
+- jobid
 
 ##### comments
 
-#### deleteJumpscripts 
-##### arguments
-
-##### comments
-
-#### deleteProcessQueue 
+#### def deleteJumpscripts 
 ##### arguments
 
 ##### comments
 
-#### deleteQueues 
+#### def deleteProcessQueue 
 ##### arguments
 
 ##### comments
 
-#### execFunction 
+#### def deleteQueues 
 ##### arguments
-
-    - method
-    - _category = 'unknown'
-    - _organization = 'unknown'
-    - _timeout = 60
-    - _queue = 'default'
-    - _log = True
-    - _sync = True
-    - **args
 
 ##### comments
 
-@return job
-
-#### execJobAsync 
+#### def execFunction 
 ##### arguments
 
-    - job
-
-##### comments
-
-#### execJumpscript 
-##### arguments
-
-    - jumpscriptid
-    - jumpscript
-    - _timeout = 60
-    - _queue = 'default'
-    - _log = True
-    - _sync = True
-    - **args
+- method
+- _category = 'unknown'
+- _organization = 'unknown'
+- _timeout = 60
+- _queue = 'default'
+- _log = True
+- _sync = True
+- **args
 
 ##### comments
 
 @return job
 
-#### getFailedJobs 
+#### def execJobAsync 
 ##### arguments
 
-    - queue
-    - hoursago = 0
+- job
 
 ##### comments
 
-#### getJob 
+#### def execJumpscript 
 ##### arguments
 
-    - jobid
+- jumpscriptid
+- jumpscript
+- _timeout = 60
+- _queue = 'default'
+- _log = True
+- _sync = True
+- **args
 
 ##### comments
 
-#### getJobLine 
+@return job
+
+#### def getFailedJobs 
 ##### arguments
 
-    - job
-    - jobid
+- queue
+- hoursago = 0
 
 ##### comments
 
-#### getJumpscriptFromId 
+#### def getJob 
 ##### arguments
 
-    - jscriptid
+- jobid
 
 ##### comments
 
-#### getJumpscriptFromName 
+#### def getJobLine 
 ##### arguments
 
-    - organization
-    - name
+- job
+- jobid
 
 ##### comments
 
-#### getQueuedJobs 
+#### def getJumpscriptFromId 
 ##### arguments
 
-    - queue
-    - asWikiTable = True
+- jscriptid
 
 ##### comments
 
-#### removeJobs 
+#### def getJumpscriptFromName 
 ##### arguments
 
-    - hoursago = 48
-    - failed = False
+- organization
+- name
 
 ##### comments
 
-#### scheduleJob 
+#### def getQueuedJobs 
 ##### arguments
 
-    - job
+- queue
+- asWikiTable = True
 
 ##### comments
 
-#### waitJob 
+#### def removeJobs 
 ##### arguments
 
-    - job
-    - timeout = 600
+- hoursago = 48
+- failed = False
+
+##### comments
+
+#### def scheduleJob 
+##### arguments
+
+- job
+
+##### comments
+
+#### def waitJob 
+##### arguments
+
+- job
+- timeout = 600
 
 ##### comments
 

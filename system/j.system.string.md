@@ -4,17 +4,17 @@
 
 ### Methods
 
-#### decodeUnicode2Asci 
+#### def decodeUnicode2Asci 
 ##### arguments
 
-    - text
+- text
 
 ##### comments
 
-#### toolStripNonAsciFromText 
+#### def toolStripNonAsciFromText 
 ##### arguments
 
-    - text
+- text
 
 ##### comments
 

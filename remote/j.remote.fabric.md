@@ -6,30 +6,30 @@
 
 ### Methods
 
-#### help 
+#### def help 
 ##### arguments
 
 ##### comments
 
-#### setDefaultPasswd 
+#### def setDefaultPasswd 
 ##### arguments
 
-    - passwd
-    - host = 'localhost'
+- passwd
+- host = 'localhost'
 
 ##### comments
 
-#### setHost 
+#### def setHost 
 ##### arguments
 
-    - host = 'localhost'
+- host = 'localhost'
 
 ##### comments
 
-#### setHosts 
+#### def setHosts 
 ##### arguments
 
-    - hosts = ['localhost']
+- hosts = ['localhost']
 
 ##### comments
 

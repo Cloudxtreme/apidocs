@@ -6,47 +6,47 @@
 
 ### Methods
 
-#### attachSession 
+#### def attachSession 
 ##### arguments
 
-    - sessionname
-    - windowname
-    - user
+- sessionname
+- windowname
+- user
 
 ##### comments
 
-#### createSession 
+#### def createSession 
 ##### arguments
 
-    - sessionname
-    - screens
-    - user
+- sessionname
+- screens
+- user
 
 ##### comments
 
 @param name is name of session
 @screens is list with nr of screens required in session and their names (is [$screenname,...])
 
-#### createWindow 
+#### def createWindow 
 ##### arguments
 
-    - session
-    - name
-    - user
+- session
+- name
+- user
 
 ##### comments
 
-#### executeInScreen 
+#### def executeInScreen 
 ##### arguments
 
-    - sessionname
-    - screenname
-    - cmd
-    - wait = 0
-    - cwd
-    - env
-    - user = 'root'
-    - tmuxuser
+- sessionname
+- screenname
+- cmd
+- wait = 0
+- cwd
+- env
+- user = 'root'
+- tmuxuser
 
 ##### comments
 
@@ -63,71 +63,71 @@
 @param env environment variables for cmd onlt in new screen see newscr
 @type env dict
 
-#### getPid 
+#### def getPid 
 ##### arguments
 
-    - session
-    - name
-    - user
+- session
+- name
+- user
 
 ##### comments
 
-#### getSessions 
+#### def getSessions 
 ##### arguments
 
-    - user
+- user
 
 ##### comments
 
-#### getWindows 
+#### def getWindows 
 ##### arguments
 
-    - session
-    - attemps = 5
-    - user
+- session
+- attemps = 5
+- user
 
 ##### comments
 
-#### killSession 
+#### def killSession 
 ##### arguments
 
-    - sessionname
-    - user
+- sessionname
+- user
 
 ##### comments
 
-#### killSessions 
+#### def killSessions 
 ##### arguments
 
-    - user
+- user
 
 ##### comments
 
-#### killWindow 
+#### def killWindow 
 ##### arguments
 
-    - session
-    - name
-    - user
+- session
+- name
+- user
 
 ##### comments
 
-#### logWindow 
+#### def logWindow 
 ##### arguments
 
-    - session
-    - name
-    - filename
-    - user
+- session
+- name
+- filename
+- user
 
 ##### comments
 
-#### windowExists 
+#### def windowExists 
 ##### arguments
 
-    - session
-    - name
-    - user
+- session
+- name
+- user
 
 ##### comments
 

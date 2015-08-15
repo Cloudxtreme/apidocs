@@ -4,25 +4,25 @@
 
 ### Methods
 
-#### copy 
+#### def copy 
 ##### arguments
 
 ##### comments
 
-#### iteritems 
+#### def iteritems 
 ##### arguments
 
 ##### comments
 
-#### keys 
+#### def keys 
 ##### arguments
 
 ##### comments
 
-#### pop 
+#### def pop 
 ##### arguments
 
-    - key
+- key
 
 ##### comments
 

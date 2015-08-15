@@ -7,34 +7,34 @@
 
 ### Methods
 
-#### get 
+#### def get 
 ##### arguments
 
-    - ipaddr
-    - port = 5544
-    - user
-    - passwd
-    - ssl = False
-    - gevent = False
+- ipaddr
+- port = 5544
+- user
+- passwd
+- ssl = False
+- gevent = False
 
 ##### comments
 
-#### getByInstance 
+#### def getByInstance 
 ##### arguments
 
-    - instance
-    - ssl = False
-    - gevent = False
-    - die = True
+- instance
+- ssl = False
+- gevent = False
+- die = True
 
 ##### comments
 
-#### getCategory 
+#### def getCategory 
 ##### arguments
 
-    - client
-    - namespace
-    - category
+- client
+- namespace
+- category
 
 ##### comments
 
@@ -43,11 +43,11 @@ how to use
 @param namespace: OSIS namespace
 @param category: OSIS category
 
-#### getNamespace 
+#### def getNamespace 
 ##### arguments
 
-    - namespace
-    - client
+- namespace
+- client
 
 ##### comments
 

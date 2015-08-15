@@ -7,14 +7,14 @@
 
 ### Methods
 
-#### connect 
+#### def connect 
 ##### arguments
 
-    - addr = 'localhost'
-    - port = 22
-    - passwd
-    - verbose = True
-    - keypath
+- addr = 'localhost'
+- port = 22
+- passwd
+- verbose = True
+- keypath
 
 ##### comments
 

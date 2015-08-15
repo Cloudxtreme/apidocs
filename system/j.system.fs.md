@@ -7,125 +7,125 @@
 
 ### Methods
 
-#### changeDir 
+#### def changeDir 
 ##### arguments
 
-    - path
+- path
 
 ##### comments
 
 Changes Current Directory
 @param path: string (Directory path to be changed to)
 
-#### changeFileNames 
+#### def changeFileNames 
 ##### arguments
 
-    - toReplace
-    - replaceWith
-    - pathToSearchIn
-    - recursive = True
-    - filter
-    - minmtime
-    - maxmtime
+- toReplace
+- replaceWith
+- pathToSearchIn
+- recursive = True
+- filter
+- minmtime
+- maxmtime
 
 ##### comments
 
 @param toReplace e.g. \{name\}
 @param replace with e.g. "jumpscale"
 
-#### checkDirOrLink 
+#### def checkDirOrLink 
 ##### arguments
 
-    - fullpath
+- fullpath
 
 ##### comments
 
 check if path is dir or link to a dir
 
-#### checkDirOrLinkToDir 
+#### def checkDirOrLinkToDir 
 ##### arguments
 
-    - fullpath
+- fullpath
 
 ##### comments
 
 check if path is dir or link to a dir
 
-#### checkDirParam 
+#### def checkDirParam 
 ##### arguments
 
-    - path
+- path
 
 ##### comments
 
-#### chmod 
+#### def chmod 
 ##### arguments
 
-    - path
-    - permissions
+- path
+- permissions
 
 ##### comments
 
 @param permissions e.g. 0o660 (USE OCTAL !!!)
 
-#### chown 
+#### def chown 
 ##### arguments
 
-    - path
-    - user
+- path
+- user
 
 ##### comments
 
-#### cleanupString 
+#### def cleanupString 
 ##### arguments
 
-    - string
-    - replacewith = '_'
-    - regex = '([^A-Za-z0-9])'
+- string
+- replacewith = '_'
+- regex = '([^A-Za-z0-9])'
 
 ##### comments
 
 Remove all non-numeric or alphanumeric characters
 
-#### constructDirPathFromArray 
+#### def constructDirPathFromArray 
 ##### arguments
 
-    - array
+- array
 
 ##### comments
 
-#### constructFilePathFromArray 
+#### def constructFilePathFromArray 
 ##### arguments
 
-    - array
+- array
 
 ##### comments
 
-#### convertFileDirnamesSpaceToUnderscore 
+#### def convertFileDirnamesSpaceToUnderscore 
 ##### arguments
 
-    - rootdir
+- rootdir
 
 ##### comments
 
-#### convertFileDirnamesUnicodeToAscii 
+#### def convertFileDirnamesUnicodeToAscii 
 ##### arguments
 
-    - rootdir
-    - spacesToUnderscore = False
+- rootdir
+- spacesToUnderscore = False
 
 ##### comments
 
-#### copyDirTree 
+#### def copyDirTree 
 ##### arguments
 
-    - src
-    - dst
-    - keepsymlinks = False
-    - eraseDestination = False
-    - skipProtectedDirs = False
-    - overwriteFiles = True
-    - applyHrdOnDestPaths
+- src
+- dst
+- keepsymlinks = False
+- eraseDestination = False
+- skipProtectedDirs = False
+- overwriteFiles = True
+- applyHrdOnDestPaths
 
 ##### comments
 
@@ -138,14 +138,14 @@ it will be created as well as missing parent directories
 @param eraseDestination: bool (Set to True if you want to erase destination first, be carefull, this can erase directories)
 @param overwriteFiles: if True will overwrite files, otherwise will not overwrite when destination exists
 
-#### copyFile 
+#### def copyFile 
 ##### arguments
 
-    - fileFrom
-    - to
-    - createDirIfNeeded = False
-    - skipProtectedDirs = False
-    - overwriteFile = True
+- fileFrom
+- to
+- createDirIfNeeded = False
+- skipProtectedDirs = False
+- overwriteFile = True
 
 ##### comments
 
@@ -161,11 +161,11 @@ Permission bits are copied.
 @param to: Destination file or folder path name
 @type to: string
 
-#### createDir 
+#### def createDir 
 ##### arguments
 
-    - newdir
-    - skipProtectedDirs = False
+- newdir
+- skipProtectedDirs = False
 
 ##### comments
 
@@ -174,29 +174,29 @@ Create new Directory
 if newdir was only given as a directory name, the new directory will be created on the default path,
 if newdir was given as a complete path with the directory name, the new directory will be created in the specified path
 
-#### createEmptyFile 
+#### def createEmptyFile 
 ##### arguments
 
-    - filename
+- filename
 
 ##### comments
 
 Create an empty file
 @param filename: string (file path name to be created)
 
-#### dirEqual 
+#### def dirEqual 
 ##### arguments
 
-    - path1
-    - path2
+- path1
+- path2
 
 ##### comments
 
-#### exists 
+#### def exists 
 ##### arguments
 
-    - path
-    - followlinks = True
+- path
+- followlinks = True
 
 ##### comments
 
@@ -204,10 +204,10 @@ Check if the specified path exists
 @param path: string
 @rtype: boolean (True if path refers to an existing path)
 
-#### fileConvertLineEndingCRLF 
+#### def fileConvertLineEndingCRLF 
 ##### arguments
 
-    - file
+- file
 
 ##### comments
 
@@ -218,10 +218,10 @@ Convert CRLF line-endings in a file to LF-only endings (
         @param file: File to convert
         @type file: string
 
-#### fileGetContents 
+#### def fileGetContents 
 ##### arguments
 
-    - filename
+- filename
 
 ##### comments
 
@@ -229,10 +229,10 @@ Read a file and get contents of that file
 @param filename: string (filename to open for reading )
 @rtype: string representing the file contents
 
-#### fileGetTextContents 
+#### def fileGetTextContents 
 ##### arguments
 
-    - filename
+- filename
 
 ##### comments
 
@@ -240,10 +240,10 @@ Read a UTF-8 file and get contents of that file. Takes care of the [BOM](http://
 @param filename: string (filename to open for reading)
 @rtype: string representing the file contents
 
-#### fileGetUncommentedContents 
+#### def fileGetUncommentedContents 
 ##### arguments
 
-    - filename
+- filename
 
 ##### comments
 
@@ -251,10 +251,10 @@ Read a file and get uncommented contents of that file
 @param filename: string (filename to open for reading )
 @rtype: list of lines of uncommented file contents
 
-#### fileSize 
+#### def fileSize 
 ##### arguments
 
-    - filename
+- filename
 
 ##### comments
 
@@ -262,11 +262,11 @@ Get Filesize of file in bytes
 @param filename: the file u want to know the filesize of
 @return: int representing file size
 
-#### find 
+#### def find 
 ##### arguments
 
-    - startDir
-    - fileregex
+- startDir
+- fileregex
 
 ##### comments
 
@@ -277,21 +277,21 @@ example: find("*.pyc")
 @param fileregex: The regex pattern to match
 @type fileregex: string
 
-#### getBaseName 
+#### def getBaseName 
 ##### arguments
 
-    - path
+- path
 
 ##### comments
 
 Return the base name of pathname path.
 
-#### getDirName 
+#### def getDirName 
 ##### arguments
 
-    - path
-    - lastOnly = False
-    - levelsUp
+- path
+- lastOnly = False
+- levelsUp
 
 ##### comments
 
@@ -303,24 +303,24 @@ Return a directory name from pathname path.
  e.g. ...getDirName("/opt/qbase/bin/something/test.py", levelsUp=1) would return bin
  e.g. ...getDirName("/opt/qbase/bin/something/test.py", levelsUp=10) would raise an error
 
-#### getFileExtension 
+#### def getFileExtension 
 ##### arguments
 
-    - path
+- path
 
 ##### comments
 
-#### getFolderMD5sum 
+#### def getFolderMD5sum 
 ##### arguments
 
-    - folder
+- folder
 
 ##### comments
 
-#### getParent 
+#### def getParent 
 ##### arguments
 
-    - path
+- path
 
 ##### comments
 
@@ -329,21 +329,21 @@ Returns the parent of the path:
 /dir1/dir2/            -> /dir1/
 @todo why do we have 2 implementations which are almost the same see getParentDirName()
 
-#### getParentDirName 
+#### def getParentDirName 
 ##### arguments
 
-    - path
+- path
 
 ##### comments
 
 returns parent of path (only for dirs)
 returns empty string when there is no parent
 
-#### getTempFileName 
+#### def getTempFileName 
 ##### arguments
 
-    - dir
-    - prefix = ''
+- dir
+- prefix = ''
 
 ##### comments
 
@@ -352,17 +352,17 @@ Generates a temp file for the directory specified
 @param prefix: string to start the generated name with
 @rtype: string representing the generated temp file path
 
-#### getTmpDirPath 
+#### def getTmpDirPath 
 ##### arguments
 
 ##### comments
 
 create a tmp dir name and makes sure the dir exists
 
-#### getTmpFilePath 
+#### def getTmpFilePath 
 ##### arguments
 
-    - cygwin = False
+- cygwin = False
 
 ##### comments
 
@@ -370,7 +370,7 @@ Generate a temp file path
 Located in temp dir of qbase
 @rtype: string representing the path of the temp file generated
 
-#### getcwd 
+#### def getcwd 
 ##### arguments
 
 ##### comments
@@ -378,11 +378,11 @@ Located in temp dir of qbase
 get current working directory
 @rtype: string (current working directory path)
 
-#### grep 
+#### def grep 
 ##### arguments
 
-    - fileregex
-    - lineregex
+- fileregex
+- lineregex
 
 ##### comments
 
@@ -393,27 +393,27 @@ Search for lines matching a given regex in all files matching a regex
 @param lineregex: Regex pattern to search for in each file
 @type lineregex: string
 
-#### gunzip 
+#### def gunzip 
 ##### arguments
 
-    - sourceFile
-    - destFile
+- sourceFile
+- destFile
 
 ##### comments
 
-#### gzip 
+#### def gzip 
 ##### arguments
 
-    - sourceFile
-    - destFile
+- sourceFile
+- destFile
 
 ##### comments
 
-#### hardlinkFile 
+#### def hardlinkFile 
 ##### arguments
 
-    - source
-    - destin
+- source
+- destin
 
 ##### comments
 
@@ -423,11 +423,11 @@ Create a hard link pointing to source named destin. Availability: Unix.
 @rtype: concatenation of dirname, and optionally linkname, etc.
 with exactly one directory separator (os.sep) inserted between components, unless path2 is empty
 
-#### isAsciiFile 
+#### def isAsciiFile 
 ##### arguments
 
-    - filename
-    - checksize = 4096
+- filename
+- checksize = 4096
 
 ##### comments
 
@@ -436,19 +436,19 @@ Read the first <checksize> bytes of <filename>.
 are
           present in the file
 
-#### isBinaryFile 
+#### def isBinaryFile 
 ##### arguments
 
-    - filename
-    - checksize = 4096
+- filename
+- checksize = 4096
 
 ##### comments
 
-#### isDir 
+#### def isDir 
 ##### arguments
 
-    - path
-    - followSoftlink = True
+- path
+- followSoftlink = True
 
 ##### comments
 
@@ -457,10 +457,10 @@ Check if the specified Directory path exists
 @param followSoftlink: boolean
 @rtype: boolean (True if directory exists)
 
-#### isEmptyDir 
+#### def isEmptyDir 
 ##### arguments
 
-    - path
+- path
 
 ##### comments
 
@@ -468,18 +468,18 @@ Check if the specified directory path is empty
 @param path: string
 @rtype: boolean (True if directory is empty)
 
-#### isExecutable 
+#### def isExecutable 
 ##### arguments
 
-    - path
+- path
 
 ##### comments
 
-#### isFile 
+#### def isFile 
 ##### arguments
 
-    - path
-    - followSoftlink = True
+- path
+- followSoftlink = True
 
 ##### comments
 
@@ -488,11 +488,11 @@ Check if the specified file exists for the given path
 @param followSoftlink: boolean
 @rtype: boolean (True if file exists for the given path)
 
-#### isLink 
+#### def isLink 
 ##### arguments
 
-    - path
-    - checkJunction = False
+- path
+- checkJunction = False
 
 ##### comments
 
@@ -500,30 +500,30 @@ Check if the specified path is a link
 @param path: string
 @rtype: boolean (True if the specified path is a link)
 
-#### isMount 
+#### def isMount 
 ##### arguments
 
-    - path
+- path
 
 ##### comments
 
 Return true if pathname path is a mount point:
 A point in a file system where a different file system has been mounted.
 
-#### islocked 
+#### def islocked 
 ##### arguments
 
-    - lockname
-    - reentry = False
+- lockname
+- reentry = False
 
 ##### comments
 
 Check if a system-wide interprocess exclusive lock is set
 
-#### joinPaths 
+#### def joinPaths 
 ##### arguments
 
-    - *args
+- *args
 
 ##### comments
 
@@ -536,13 +536,13 @@ If any component is an absolute path, all previous components are thrown away, a
 @rtype: Concatenation of path1, and optionally path2, etc...,
 with exactly one directory separator (os.sep) inserted between components, unless path2 is empty.
 
-#### listDirsInDir 
+#### def listDirsInDir 
 ##### arguments
 
-    - path
-    - recursive = False
-    - dirNameOnly = False
-    - findDirectorySymlinks = True
+- path
+- recursive = False
+- dirNameOnly = False
+- findDirectorySymlinks = True
 
 ##### comments
 
@@ -550,18 +550,18 @@ Retrieves list of directories found in the specified directory
 @param path: string represents directory path to search in
 @rtype: list
 
-#### listFilesAndDirsInDir 
+#### def listFilesAndDirsInDir 
 ##### arguments
 
-    - path
-    - recursive = False
-    - filter
-    - minmtime
-    - maxmtime
-    - depth
-    - type = 'fd'
-    - followSymlinks = True
-    - listSymlinks = False
+- path
+- recursive = False
+- filter
+- minmtime
+- maxmtime
+- depth
+- type = 'fd'
+- followSymlinks = True
+- listSymlinks = False
 
 ##### comments
 
@@ -580,19 +580,19 @@ Retrieves list of files found in the specified directory
 @param type is string with f & d inside (f for when to find files, d for when to find dirs)
 @rtype: list
 
-#### listFilesInDir 
+#### def listFilesInDir 
 ##### arguments
 
-    - path
-    - recursive = False
-    - filter
-    - minmtime
-    - maxmtime
-    - depth
-    - case_sensitivity = 'os'
-    - exclude = []
-    - followSymlinks = True
-    - listSymlinks = False
+- path
+- recursive = False
+- filter
+- minmtime
+- maxmtime
+- depth
+- case_sensitivity = 'os'
+- exclude = []
+- followSymlinks = True
+- listSymlinks = False
 
 ##### comments
 
@@ -611,12 +611,12 @@ Retrieves list of files found in the specified directory
 @Param exclude: list of std filters if matches then exclude
 @rtype: list
 
-#### listPyScriptsInDir 
+#### def listPyScriptsInDir 
 ##### arguments
 
-    - path
-    - recursive = True
-    - filter = '*.py'
+- path
+- recursive = True
+- filter = '*.py'
 
 ##### comments
 
@@ -624,23 +624,23 @@ Retrieves list of python scripts (with extension .py) in the specified directory
 @param path: string represents the directory path to search in
 @rtype: list
 
-#### lock 
+#### def lock 
 ##### arguments
 
-    - lockname
-    - locktimeout = 60
-    - reentry = False
+- lockname
+- locktimeout = 60
+- reentry = False
 
 ##### comments
 
 Take a system-wide interprocess exclusive lock. Default timeout is 60 seconds
 
-#### lock_ 
+#### def lock_ 
 ##### arguments
 
-    - lockname
-    - locktimeout = 60
-    - reentry = False
+- lockname
+- locktimeout = 60
+- reentry = False
 
 ##### comments
 
@@ -652,19 +652,19 @@ success instead of raising fatal errors.
 This refactoring was mainly done to make the lock implementation easier
 to unit-test.
 
-#### log 
+#### def log 
 ##### arguments
 
-    - msg
-    - level = 5
-    - category = ''
+- msg
+- level = 5
+- category = ''
 
 ##### comments
 
-#### md5sum 
+#### def md5sum 
 ##### arguments
 
-    - filename
+- filename
 
 ##### comments
 
@@ -672,11 +672,11 @@ Return the hex digest of a file without loading it all into memory
 @param filename: string (filename to get the hex digest of it) or list of files
 @rtype: md5 of the file
 
-#### move 
+#### def move 
 ##### arguments
 
-    - source
-    - destin
+- source
+- destin
 
 ##### comments
 
@@ -684,11 +684,11 @@ Main Move function
 @param source: string (If the specified source is a File....Calls moveFile function)
 (If the specified source is a Directory....Calls moveDir function)
 
-#### moveDir 
+#### def moveDir 
 ##### arguments
 
-    - source
-    - destin
+- source
+- destin
 
 ##### comments
 
@@ -696,11 +696,11 @@ Move Directory from source to destination
 @param source: string (Source path where the directory should be removed from)
 @param destin: string (Destination path where the directory should be moved into)
 
-#### moveFile 
+#### def moveFile 
 ##### arguments
 
-    - source
-    - destin
+- source
+- destin
 
 ##### comments
 
@@ -708,13 +708,13 @@ Move a  File from source path to destination path
 @param source: string (Source file path)
 @param destination: string (Destination path the file should be moved to )
 
-#### parsePath 
+#### def parsePath 
 ##### arguments
 
-    - path
-    - baseDir = ''
-    - existCheck = True
-    - checkIsFile = False
+- path
+- baseDir = ''
+- existCheck = True
+- checkIsFile = False
 
 ##### comments
 
@@ -731,27 +731,27 @@ j.system.fs.parsePath("/opt/qbase3/apps/specs/myspecs/definitions/cloud/datacent
 @return list of dirpath,filename,extension,priority
      priority = 0 if not specified
 
-#### pathClean 
+#### def pathClean 
 ##### arguments
 
-    - path
+- path
 
 ##### comments
 
 goal is to get a equal representation in / & \ in relation to os.sep
 
-#### pathDirClean 
+#### def pathDirClean 
 ##### arguments
 
-    - path
+- path
 
 ##### comments
 
-#### pathNormalize 
+#### def pathNormalize 
 ##### arguments
 
-    - path
-    - root = ''
+- path
+- root = ''
 
 ##### comments
 
@@ -759,22 +759,22 @@ paths are made absolute & made sure they are in line with os.sep
 @param path: path to normalize
 @root is std the application you are in, can overrule
 
-#### pathRemoveDirPart 
+#### def pathRemoveDirPart 
 ##### arguments
 
-    - path
-    - toremove
-    - removeTrailingSlash = False
+- path
+- toremove
+- removeTrailingSlash = False
 
 ##### comments
 
 goal remove dirparts of a dirpath e,g, a basepath which is not needed
 will look for part to remove in full path but only full dirs
 
-#### pathShorten 
+#### def pathShorten 
 ##### arguments
 
-    - path
+- path
 
 ##### comments
 
@@ -786,10 +786,10 @@ path exists, the short path name is returned.
 @return: Cleaned (short) path
 @rtype: string
 
-#### pathToUnicode 
+#### def pathToUnicode 
 ##### arguments
 
-    - path
+- path
 
 ##### comments
 
@@ -803,10 +803,10 @@ Use this to convert paths you received from the os module to unicode.
 @return: unicode path
 @rtype: unicode
 
-#### processPathForDoubleDots 
+#### def processPathForDoubleDots 
 ##### arguments
 
-    - path
+- path
 
 ##### comments
 
@@ -815,10 +815,10 @@ Use this to convert paths you received from the os module to unicode.
 
 result will always be with / slashes
 
-#### readObjectFromFile 
+#### def readObjectFromFile 
 ##### arguments
 
-    - filelocation
+- filelocation
 
 ##### comments
 
@@ -826,70 +826,70 @@ Read a object from a file(file contents in pickle format)
 @param filelocation: location of the file
 @return: object
 
-#### readlink 
+#### def readlink 
 ##### arguments
 
-    - path
+- path
 
 ##### comments
 
 Works only for unix
 Return a string representing the path to which the symbolic link points.
 
-#### remove 
+#### def remove 
 ##### arguments
 
-    - path
+- path
 
 ##### comments
 
 Remove a File
 @param path: string (File path required to be removed
 
-#### removeDir 
+#### def removeDir 
 ##### arguments
 
-    - path
+- path
 
 ##### comments
 
 Remove a Directory
 @param path: string (Directory path that should be removed)
 
-#### removeDirTree 
+#### def removeDirTree 
 ##### arguments
 
-    - path
-    - onlyLogWarningOnRemoveError = False
+- path
+- onlyLogWarningOnRemoveError = False
 
 ##### comments
 
 Recursively delete a directory tree.
 @param path: the path to be removed
 
-#### removeIrrelevantFiles 
+#### def removeIrrelevantFiles 
 ##### arguments
 
-    - path
-    - followSymlinks = True
+- path
+- followSymlinks = True
 
 ##### comments
 
-#### removeLinks 
+#### def removeLinks 
 ##### arguments
 
-    - path
+- path
 
 ##### comments
 
 find all links & remove
 
-#### renameDir 
+#### def renameDir 
 ##### arguments
 
-    - dirname
-    - newname
-    - overwrite = False
+- dirname
+- newname
+- overwrite = False
 
 ##### comments
 
@@ -897,25 +897,25 @@ Rename Directory from dirname to newname
 @param dirname: string (Directory original name)
 @param newname: string (Directory new name to be changed to)
 
-#### renameFile 
+#### def renameFile 
 ##### arguments
 
-    - filePath
-    - new_name
+- filePath
+- new_name
 
 ##### comments
 
 OBSOLETE
 
-#### replaceWordsInFiles 
+#### def replaceWordsInFiles 
 ##### arguments
 
-    - pathToSearchIn
-    - templateengine
-    - recursive = True
-    - filter
-    - minmtime
-    - maxmtime
+- pathToSearchIn
+- templateengine
+- recursive = True
+- filter
+- minmtime
+- maxmtime
 
 ##### comments
 
@@ -926,22 +926,22 @@ apply templateengine to list of found files
     te.add("description",self.ayses.description)
     te.add("version",self.ayses.version)
 
-#### statPath 
+#### def statPath 
 ##### arguments
 
-    - path
+- path
 
 ##### comments
 
 Perform a stat() system call on the given path
 @rtype: object whose attributes correspond to the members of the stat structure
 
-#### symlink 
+#### def symlink 
 ##### arguments
 
-    - path
-    - target
-    - overwriteTarget = False
+- path
+- target
+- overwriteTarget = False
 
 ##### comments
 
@@ -950,19 +950,19 @@ Create a symbolic link
 @param target: destination path required to create the symbolic link at
 @param overwriteTarget: boolean indicating whether target can be overwritten
 
-#### targzCompress 
+#### def targzCompress 
 ##### arguments
 
-    - sourcepath
-    - destinationpath
-    - followlinks = False
-    - destInTar = ''
-    - pathRegexIncludes = ['.[a-zA-Z0-9]*']
-    - pathRegexExcludes = []
-    - contentRegexIncludes = []
-    - contentRegexExcludes = []
-    - depths = []
-    - extrafiles = []
+- sourcepath
+- destinationpath
+- followlinks = False
+- destInTar = ''
+- pathRegexIncludes = ['.[a-zA-Z0-9]*']
+- pathRegexExcludes = []
+- contentRegexIncludes = []
+- contentRegexExcludes = []
+- depths = []
+- extrafiles = []
 
 ##### comments
 
@@ -977,12 +977,12 @@ Create a symbolic link
 @param extrafiles is array of array [[source,destpath],[source,destpath],...]  adds extra files to tar
 (TAR-GZ-Archive *.tar.gz)
 
-#### targzUncompress 
+#### def targzUncompress 
 ##### arguments
 
-    - sourceFile
-    - destinationdir
-    - removeDestinationdir = True
+- sourceFile
+- destinationdir
+- removeDestinationdir = True
 
 ##### comments
 
@@ -990,20 +990,20 @@ compress dirname recursive
 @param sourceFile: file to uncompress
 @param destinationpath: path of to destiniation dir, sourcefile will end up uncompressed in destination dir
 
-#### touch 
+#### def touch 
 ##### arguments
 
-    - paths
-    - overwrite = True
+- paths
+- overwrite = True
 
 ##### comments
 
 can be single path or multiple (then list)
 
-#### unlink 
+#### def unlink 
 ##### arguments
 
-    - filename
+- filename
 
 ##### comments
 
@@ -1012,29 +1012,29 @@ Remove the given file if it's a file or a symlink
 @param filename: File path to be removed
 @type filename: string
 
-#### unlinkFile 
+#### def unlinkFile 
 ##### arguments
 
-    - filename
+- filename
 
 ##### comments
 
 Remove the file path (only for files, not for symlinks)
 @param filename: File path to be removed
 
-#### unlock 
+#### def unlock 
 ##### arguments
 
-    - lockname
+- lockname
 
 ##### comments
 
 Unlock system-wide interprocess lock
 
-#### unlock_ 
+#### def unlock_ 
 ##### arguments
 
-    - lockname
+- lockname
 
 ##### comments
 
@@ -1046,11 +1046,11 @@ success instead of raising fatal errors.
 This refactoring was mainly done to make the lock implementation easier
 to unit-test.
 
-#### validateFilename 
+#### def validateFilename 
 ##### arguments
 
-    - filename
-    - platform
+- filename
+- platform
 
 ##### comments
 
@@ -1100,17 +1100,17 @@ Restrictions are based on information found at these URLs:
 @returns: Whether the filename is valid on the given platform
 @rtype: bool
 
-#### walk 
+#### def walk 
 ##### arguments
 
-    - root
-    - recurse = 0
-    - pattern = '*'
-    - return_folders = 0
-    - return_files = 1
-    - followSoftlinks = True
-    - str = False
-    - depth
+- root
+- recurse = 0
+- pattern = '*'
+- return_folders = 0
+- return_files = 1
+- followSoftlinks = True
+- str = False
+- depth
 
 ##### comments
 
@@ -1118,16 +1118,16 @@ This is to provide ScanDir similar function
 It is going to be used wherever some one wants to list all files and subfolders
 under one given directly with specific or none matchers
 
-#### walkExtended 
+#### def walkExtended 
 ##### arguments
 
-    - root
-    - recurse = 0
-    - dirPattern = '*'
-    - filePattern = '*'
-    - followSoftLinks = True
-    - dirs = True
-    - files = True
+- root
+- recurse = 0
+- dirPattern = '*'
+- filePattern = '*'
+- followSoftLinks = True
+- dirs = True
+- files = True
 
 ##### comments
 
@@ -1160,23 +1160,23 @@ To find the first test you can use
 To find only the second one you could use
    j.system.fs.walkExtended('tmp', recurse=0, dirPattern="*small_test*", filePattern="*.rtt", dirs=False)
 
-#### writeFile 
+#### def writeFile 
 ##### arguments
 
-    - filename
-    - contents
-    - append = False
+- filename
+- contents
+- append = False
 
 ##### comments
 
 Open a file and write file contents, close file afterwards
 @param contents: string (file contents to be written)
 
-#### writeObjectToFile 
+#### def writeObjectToFile 
 ##### arguments
 
-    - filelocation
-    - obj
+- filelocation
+- obj
 
 ##### comments
 

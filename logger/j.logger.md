@@ -14,59 +14,59 @@
 
 ### Methods
 
-#### connectRedis 
+#### def connectRedis 
 ##### arguments
 
 ##### comments
 
-#### disable 
+#### def disable 
 ##### arguments
 
 ##### comments
 
-#### getLogObjectFromDict 
+#### def getLogObjectFromDict 
 ##### arguments
 
-    - ddict
+- ddict
 
 ##### comments
 
-#### init 
+#### def init 
 ##### arguments
 
 ##### comments
 
-#### log 
+#### def log 
 ##### arguments
 
-    - message
-    - level = 5
-    - category = ''
-    - tags = ''
-    - jid = ''
-    - parentjid = ''
-    - masterjid = ''
-    - private = False
+- message
+- level = 5
+- category = ''
+- tags = ''
+- jid = ''
+- parentjid = ''
+- masterjid = ''
+- private = False
 
 ##### comments
 
 send to all log targets
 
-#### nologger 
+#### def nologger 
 ##### arguments
 
-    - func
+- func
 
 ##### comments
 
 Decorator to disable logging for a specific method (probably not thread safe)
 
-#### nostdout 
+#### def nostdout 
 ##### arguments
 
 ##### comments
 
-#### reset 
+#### def reset 
 ##### arguments
 
 ##### comments

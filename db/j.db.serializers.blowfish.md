@@ -7,19 +7,19 @@
 
 ### Methods
 
-#### dumps 
+#### def dumps 
 ##### arguments
 
-    - obj
-    - encrkey
+- obj
+- encrkey
 
 ##### comments
 
-#### loads 
+#### def loads 
 ##### arguments
 
-    - s
-    - encrkey
+- s
+- encrkey
 
 ##### comments
 

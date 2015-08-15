@@ -4,46 +4,46 @@
 
 ### Methods
 
-#### addHost 
+#### def addHost 
 ##### arguments
 
-    - macaddress
-    - ipaddress
-    - name
+- macaddress
+- ipaddress
+- name
 
 ##### comments
 
-#### addToStartupManager 
-##### arguments
-
-##### comments
-
-#### reload 
+#### def addToStartupManager 
 ##### arguments
 
 ##### comments
 
-#### removeHost 
+#### def reload 
 ##### arguments
 
-    - macaddress
+##### comments
+
+#### def removeHost 
+##### arguments
+
+- macaddress
 
 ##### comments
 
 Removes a dhcp-host entry from dnsmasq.conf file
 
-#### restart 
+#### def restart 
 ##### arguments
 
 ##### comments
 
 Restarts dnsmasq
 
-#### setConfigPath 
+#### def setConfigPath 
 ##### arguments
 
-    - namespace
-    - config_path
+- namespace
+- config_path
 
 ##### comments
 

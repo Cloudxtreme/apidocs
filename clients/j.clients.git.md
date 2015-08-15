@@ -4,13 +4,13 @@
 
 ### Methods
 
-#### find 
+#### def find 
 ##### arguments
 
-    - account
-    - name
-    - interactive = False
-    - returnGitClient = False
+- account
+- name
+- interactive = False
+- returnGitClient = False
 
 ##### comments
 
@@ -19,21 +19,21 @@ walk over repo's known on system
     ~/code
     /opt/code
 
-#### get 
+#### def get 
 ##### arguments
 
-    - basedir
+- basedir
 
 ##### comments
 
 PLEASE USE SSH, see http://despiegk.gitbooks.io/jumpscale/content/Howto/how_to_use_git.html for more details
 
-#### log 
+#### def log 
 ##### arguments
 
-    - msg
-    - category = ''
-    - level = 5
+- msg
+- category = ''
+- level = 5
 
 ##### comments
 

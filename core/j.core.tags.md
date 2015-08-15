@@ -6,11 +6,11 @@
 
 Factory Class of dealing with TAGS     
 
-#### getObject 
+#### def getObject 
 ##### arguments
 
-    - tagstring = ''
-    - setFunction4Tagstring
+- tagstring = ''
+- setFunction4Tagstring
 
 ##### comments
 
@@ -19,11 +19,11 @@ check whether labelname exists in the labels
 @param tagstring:  example "important customer:kristof"
 @type tagstring: string
 
-#### getTagString 
+#### def getTagString 
 ##### arguments
 
-    - labels
-    - tags
+- labels
+- tags
 
 ##### comments
 

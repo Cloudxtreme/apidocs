@@ -36,41 +36,41 @@
 
 ### Methods
 
-#### addCmd 
+#### def addCmd 
 ##### arguments
 
-    - out
-    - entity
-    - cmd
+- out
+- entity
+- cmd
 
 ##### comments
 
-#### addTimeHR 
+#### def addTimeHR 
 ##### arguments
 
-    - line
-    - epoch
-    - start = 50
+- line
+- epoch
+- start = 50
 
 ##### comments
 
-#### addVal 
+#### def addVal 
 ##### arguments
 
-    - out
-    - name
-    - val
-    - addtimehr = False
+- out
+- name
+- val
+- addtimehr = False
 
 ##### comments
 
-#### ask 
+#### def ask 
 ##### arguments
 
-    - content
-    - name
-    - args = \{\}
-    - ask = True
+- content
+- name
+- args = \{\}
+- ask = True
 
 ##### comments
 
@@ -90,91 +90,91 @@ syntax for ask is:
 
 @ASK can be at any position in the text
 
-#### dealWithList 
+#### def dealWithList 
 ##### arguments
 
-    - text
+- text
 
 ##### comments
 
 look for [something,2] the comma needs to be converted to \k
 
-#### dealWithQuote 
+#### def dealWithQuote 
 ##### arguments
 
-    - text
+- text
 
 ##### comments
 
 look for 'something,else' the comma needs to be converted to \k
 
-#### eval 
+#### def eval 
 ##### arguments
 
-    - code
+- code
 
 ##### comments
 
 look for \{\{\}\} in code and evaluate as python result is converted back to str
 
-#### getBool 
+#### def getBool 
 ##### arguments
 
-    - text
+- text
 
 ##### comments
 
-#### getDict 
+#### def getDict 
 ##### arguments
 
-    - text
-    - ttype
-    - deserialize = False
+- text
+- ttype
+- deserialize = False
 
 ##### comments
 
 keys are always treated as string
 @type can be int,bool or float (otherwise its always str)
 
-#### getFloat 
+#### def getFloat 
 ##### arguments
 
-    - text
+- text
 
 ##### comments
 
-#### getInt 
+#### def getInt 
 ##### arguments
 
-    - text
+- text
 
 ##### comments
 
-#### getList 
+#### def getList 
 ##### arguments
 
-    - text
-    - ttype
-    - deserialize = False
+- text
+- ttype
+- deserialize = False
 
 ##### comments
 
 @type can be int,bool or float (otherwise its always str)
 
-#### getMacroCandidates 
+#### def getMacroCandidates 
 ##### arguments
 
-    - txt
+- txt
 
 ##### comments
 
 look for \{\{\}\} return as list
 
-#### hrd2machinetext 
+#### def hrd2machinetext 
 ##### arguments
 
-    - value
-    - onlyone = False
+- value
+- onlyone = False
 
 ##### comments
 
@@ -186,40 +186,40 @@ all spaces & commas & : inside ' '  are converted
  : -> \D
  \n -> \N
 
-#### isFloat 
+#### def isFloat 
 ##### arguments
 
-    - text
+- text
 
 ##### comments
 
-#### isInt 
+#### def isInt 
 ##### arguments
 
-    - text
+- text
 
 ##### comments
 
-#### isNumeric 
+#### def isNumeric 
 ##### arguments
 
-    - txt
+- txt
 
 ##### comments
 
-#### lstrip 
+#### def lstrip 
 ##### arguments
 
-    - content
+- content
 
 ##### comments
 
 remove all spaces at beginning & end of line when relevant
 
-#### machinetext2str 
+#### def machinetext2str 
 ##### arguments
 
-    - value
+- value
 
 ##### comments
 
@@ -231,10 +231,10 @@ do reverse of:
             
 -> \N
 
-#### machinetext2val 
+#### def machinetext2val 
 ##### arguments
 
-    - value
+- value
 
 ##### comments
 
@@ -245,105 +245,105 @@ do reverse of:
      : -> \D
      \n -> return
 
-#### prefix 
+#### def prefix 
 ##### arguments
 
-    - prefix
-    - txt
+- prefix
+- txt
 
 ##### comments
 
-#### prefix_remove 
+#### def prefix_remove 
 ##### arguments
 
-    - prefix
-    - txt
-    - onlyPrefix = False
+- prefix
+- txt
+- onlyPrefix = False
 
 ##### comments
 
 @param onlyPrefix if True means only when prefix found will be returned, rest discarded
 
-#### prefix_remove_withtrailing 
+#### def prefix_remove_withtrailing 
 ##### arguments
 
-    - prefix
-    - txt
-    - onlyPrefix = False
+- prefix
+- txt
+- onlyPrefix = False
 
 ##### comments
 
 there can be chars for prefix (e.g. '< :*: aline'  and this function looking for :*: would still work and ignore '< ')
 @param onlyPrefix if True means only when prefix found will be returned, rest discarded
 
-#### pythonObjToStr 
+#### def pythonObjToStr 
 ##### arguments
 
-    - obj
-    - multiline = True
-    - canBeDict = True
-    - partial = False
+- obj
+- multiline = True
+- canBeDict = True
+- partial = False
 
 ##### comments
 
 try to convert a python object to string representation works for None, bool, integer, float, dict, list
 
-#### pythonObjToStr1line 
+#### def pythonObjToStr1line 
 ##### arguments
 
-    - obj
+- obj
 
 ##### comments
 
-#### replaceQuotes 
+#### def replaceQuotes 
 ##### arguments
 
-    - value
-    - replacewith
+- value
+- replacewith
 
 ##### comments
 
-#### str2var 
+#### def str2var 
 ##### arguments
 
-    - string
+- string
 
 ##### comments
 
 convert list, dict of strings 
 or convert 1 string to python objects
 
-#### toAscii 
+#### def toAscii 
 ##### arguments
 
-    - value
-    - maxlen = 0
+- value
+- maxlen = 0
 
 ##### comments
 
-#### toSafePath 
+#### def toSafePath 
 ##### arguments
 
-    - txt
-    - maxlen = 0
+- txt
+- maxlen = 0
 
 ##### comments
 
 process string so it can be used in a path on windows or linux
 
-#### toStr 
+#### def toStr 
 ##### arguments
 
-    - value
-    - codec = 'utf-8'
+- value
+- codec = 'utf-8'
 
 ##### comments
 
-#### toUnicode 
+#### def toUnicode 
 ##### arguments
 
-    - value
-    - codec = 'utf-8'
+- value
+- codec = 'utf-8'
 
 ##### comments
 

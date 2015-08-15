@@ -8,34 +8,34 @@
 
 ### Methods
 
-#### find 
+#### def find 
 ##### arguments
 
-    - root
-    - recursive = True
-    - includeFolders = False
-    - pathRegexIncludes = ['.*']
-    - pathRegexExcludes = []
-    - contentRegexIncludes = []
-    - contentRegexExcludes = []
-    - depths = []
+- root
+- recursive = True
+- includeFolders = False
+- pathRegexIncludes = ['.*']
+- pathRegexExcludes = []
+- contentRegexIncludes = []
+- contentRegexExcludes = []
+- depths = []
 
 ##### comments
 
-#### walk 
+#### def walk 
 ##### arguments
 
-    - root
-    - callback
-    - arg = ''
-    - recursive = True
-    - includeFolders = False
-    - pathRegexIncludes = ['.*']
-    - pathRegexExcludes = []
-    - contentRegexIncludes = []
-    - contentRegexExcludes = []
-    - depths = []
-    - followlinks = True
+- root
+- callback
+- arg = ''
+- recursive = True
+- includeFolders = False
+- pathRegexIncludes = ['.*']
+- pathRegexExcludes = []
+- contentRegexIncludes = []
+- contentRegexExcludes = []
+- depths = []
+- followlinks = True
 
 ##### comments
 
@@ -83,15 +83,15 @@ return False if you want recursion to stop (means don't go deeper)
 @param contentRegexIncludes / Excludes match content of files to array of regex expressions (array(strings))
 @param depths array of depth values e.g. only return depth 0 & 1 (would mean first dir depth and then 1 more deep) (array(int))
 
-#### walkFunctional 
+#### def walkFunctional 
 ##### arguments
 
-    - root
-    - callbackFunctionFile
-    - callbackFunctionDir
-    - arg = ''
-    - callbackForMatchDir
-    - callbackForMatchFile
+- root
+- callbackFunctionFile
+- callbackFunctionDir
+- arg = ''
+- callbackForMatchDir
+- callbackForMatchFile
 
 ##### comments
 

@@ -4,17 +4,17 @@
 
 ### Methods
 
-#### eval 
+#### def eval 
 ##### arguments
 
-    - code
+- code
 
 ##### comments
 
-#### evalFile 
+#### def evalFile 
 ##### arguments
 
-    - path
+- path
 
 ##### comments
 

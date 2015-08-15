@@ -6,12 +6,12 @@
 
     
 
-#### profile 
+#### def profile 
 ##### arguments
 
-    - methodstatement
-    - locals = \{\}
-    - globals = \{\}
+- methodstatement
+- locals = \{\}
+- globals = \{\}
 
 ##### comments
 

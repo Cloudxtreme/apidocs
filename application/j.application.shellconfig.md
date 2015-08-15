@@ -9,30 +9,30 @@
 
 attach configuration items to this configure object (can happen at runtime)
 
-#### checkCreateConfigFile 
+#### def checkCreateConfigFile 
 ##### arguments
 
-    - configType
+- configType
 
 ##### comments
 
 check if config file exists, if not create and reload
 
-#### getConfigFileManager 
+#### def getConfigFileManager 
 ##### arguments
 
-    - configType
+- configType
 
 ##### comments
 
-#### loadConfigFile 
+#### def loadConfigFile 
 ##### arguments
 
-    - configType
+- configType
 
 ##### comments
 
-#### refresh 
+#### def refresh 
 ##### arguments
 
 ##### comments

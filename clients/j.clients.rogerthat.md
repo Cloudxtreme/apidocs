@@ -4,10 +4,10 @@
 
 ### Methods
 
-#### get 
+#### def get 
 ##### arguments
 
-    - api_key
+- api_key
 
 ##### comments
 

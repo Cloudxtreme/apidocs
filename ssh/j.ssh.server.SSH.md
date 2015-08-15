@@ -4,32 +4,32 @@
 
 ### Methods
 
-#### addKey 
+#### def addKey 
 ##### arguments
 
-    - key
+- key
 
 ##### comments
 
 Add pubkey to authorized_keys
 
-#### commit 
+#### def commit 
 ##### arguments
 
 ##### comments
 
 Apply all pending changes to authorized_keys
 
-#### deleteKey 
+#### def deleteKey 
 ##### arguments
 
-    - key
+- key
 
 ##### comments
 
 Delete pubkey from authorized_keys
 
-#### disableNonKeyAccess 
+#### def disableNonKeyAccess 
 ##### arguments
 
 ##### comments
@@ -38,7 +38,7 @@ Disable passowrd login to server. This action doens't require
 calling to commit and applies immediately. So if you added your key
 make sure to commit it before you call this method.
 
-#### erase 
+#### def erase 
 ##### arguments
 
 ##### comments

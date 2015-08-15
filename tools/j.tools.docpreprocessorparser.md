@@ -4,34 +4,34 @@
 
 ### Methods
 
-#### addUniqueId 
+#### def addUniqueId 
 ##### arguments
 
-    - line
-    - fullPath
-    - ttype = 'sprint'
+- line
+- fullPath
+- ttype = 'sprint'
 
 ##### comments
 
-#### errorTrap 
+#### def errorTrap 
 ##### arguments
 
-    - msg
+- msg
 
 ##### comments
 
-#### parseDoc 
+#### def parseDoc 
 ##### arguments
 
-    - doc
+- doc
 
 ##### comments
 
-#### shortenDescr 
+#### def shortenDescr 
 ##### arguments
 
-    - text
-    - maxnrchars = 60
+- text
+- maxnrchars = 60
 
 ##### comments
 

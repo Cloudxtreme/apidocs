@@ -4,27 +4,27 @@
 
 ### Methods
 
-#### get 
+#### def get 
 ##### arguments
 
-    - addr = ''
-    - accesstokenaddr = ''
-    - id = ''
-    - secret = ''
-    - scope = ''
-    - redirect_url = ''
-    - user_info_url = ''
-    - logout_url = ''
-    - instance = 'github'
+- addr = ''
+- accesstokenaddr = ''
+- id = ''
+- secret = ''
+- scope = ''
+- redirect_url = ''
+- user_info_url = ''
+- logout_url = ''
+- instance = 'github'
 
 ##### comments
 
-#### log 
+#### def log 
 ##### arguments
 
-    - msg
-    - category = ''
-    - level = 5
+- msg
+- category = ''
+- level = 5
 
 ##### comments
 

@@ -8,11 +8,11 @@
 
     
 
-#### getArchivedJumpscripts 
+#### def getArchivedJumpscripts 
 ##### arguments
 
-    - bz2_compressed = True
-    - types = ('processmanager', 'jumpscripts')
+- bz2_compressed = True
+- types = ('processmanager', 'jumpscripts')
 
 ##### comments
 
@@ -23,15 +23,15 @@ Args:
     types (sequence of str): A sequence of the types of jumpscripts to be packed in the returned archive.
         possible values in the sequence are 'processmanager', 'jumpscripts', and 'luajumpscripts'.
 
-#### getJSClass 
+#### def getJSClass 
 ##### arguments
 
 ##### comments
 
-#### introspectLuaJumpscript 
+#### def introspectLuaJumpscript 
 ##### arguments
 
-    - path
+- path
 
 ##### comments
 
@@ -43,18 +43,18 @@ Args:
 Raises:
     IOError if the file at the path could not be opened.
 
-#### loadFromAC 
+#### def loadFromAC 
 ##### arguments
 
-    - acl
+- acl
 
 ##### comments
 
-#### loadFromTar 
+#### def loadFromTar 
 ##### arguments
 
-    - tarcontent
-    - type
+- tarcontent
+- type
 
 ##### comments
 

@@ -4,26 +4,26 @@
 
 ### Methods
 
-#### getClient 
+#### def getClient 
 ##### arguments
 
-    - servaddr
-    - category = 'core'
-    - org = 'myorg'
-    - user = 'root'
-    - passwd = 'passwd'
-    - ssl = False
-    - roles = []
+- servaddr
+- category = 'core'
+- org = 'myorg'
+- user = 'root'
+- passwd = 'passwd'
+- ssl = False
+- roles = []
 
 ##### comments
 
-#### getServer 
+#### def getServer 
 ##### arguments
 
-    - servaddr
-    - sslorg
-    - ssluser
-    - sslkeyvaluestor
+- servaddr
+- sslorg
+- ssluser
+- sslkeyvaluestor
 
 ##### comments
 

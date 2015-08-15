@@ -7,11 +7,11 @@
 The key value store factory provides logic to retrieve store instances. It
 also caches the stores based on their type, name and namespace.
 
-#### getArakoonStore 
+#### def getArakoonStore 
 ##### arguments
 
-    - namespace = ''
-    - serializers = []
+- namespace = ''
+- serializers = []
 
 ##### comments
 
@@ -26,12 +26,12 @@ Gets an Arakoon key value store.
 @return: key value store
 @rtype: ArakoonKeyValueStore
 
-#### getFileSystemStore 
+#### def getFileSystemStore 
 ##### arguments
 
-    - namespace = ''
-    - baseDir
-    - serializers = []
+- namespace = ''
+- baseDir
+- serializers = []
 
 ##### comments
 
@@ -49,12 +49,12 @@ Gets a file system key value store.
 @return: key value store
 @rtype: FileSystemKeyValueStore
 
-#### getLevelDBStore 
+#### def getLevelDBStore 
 ##### arguments
 
-    - namespace = ''
-    - basedir
-    - serializers = []
+- namespace = ''
+- basedir
+- serializers = []
 
 ##### comments
 
@@ -68,10 +68,10 @@ Gets a leveldb key value store.
 
 @return: key value store
 
-#### getMemoryStore 
+#### def getMemoryStore 
 ##### arguments
 
-    - namespace
+- namespace
 
 ##### comments
 
@@ -80,17 +80,17 @@ Gets a memory key value store.
 @return: key value store
 @rtype: MemoryKeyValueStore
 
-#### getRedisStore 
+#### def getRedisStore 
 ##### arguments
 
-    - namespace = ''
-    - host = 'localhost'
-    - port = 9999
-    - db = 0
-    - password = ''
-    - serializers
-    - masterdb
-    - changelog = True
+- namespace = ''
+- host = 'localhost'
+- port = 9999
+- db = 0
+- password = ''
+- serializers
+- masterdb
+- changelog = True
 
 ##### comments
 

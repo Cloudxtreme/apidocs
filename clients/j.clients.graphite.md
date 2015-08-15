@@ -4,23 +4,23 @@
 
 ### Methods
 
-#### close 
+#### def close 
 ##### arguments
 
 ##### comments
 
-#### query 
+#### def query 
 ##### arguments
 
-    - query_
-    - **kwargs
+- query_
+- **kwargs
 
 ##### comments
 
-#### send 
+#### def send 
 ##### arguments
 
-    - msg
+- msg
 
 ##### comments
 

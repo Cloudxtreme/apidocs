@@ -4,10 +4,10 @@
 
 ### Methods
 
-#### new 
+#### def new 
 ##### arguments
 
-    - cmd
+- cmd
 
 ##### comments
 

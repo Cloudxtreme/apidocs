@@ -4,7 +4,7 @@
 
 ### Methods
 
-#### new 
+#### def new 
 ##### arguments
 
 ##### comments

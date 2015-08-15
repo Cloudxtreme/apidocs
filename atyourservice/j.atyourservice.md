@@ -8,95 +8,95 @@
 
 ### Methods
 
-#### findParents 
+#### def findParents 
 ##### arguments
 
-    - service
-    - name = ''
-    - path = ''
-    - limit
+- service
+- name = ''
+- path = ''
+- limit
 
 ##### comments
 
-#### findProducer 
+#### def findProducer 
 ##### arguments
 
-    - producercategory
-    - instancename
+- producercategory
+- instancename
 
 ##### comments
 
-#### findServices 
+#### def findServices 
 ##### arguments
 
-    - domain = ''
-    - name = ''
-    - instance = ''
-    - parent
-    - precise = False
+- domain = ''
+- name = ''
+- instance = ''
+- parent
+- precise = False
 
 ##### comments
 
 FindServices looks for actual services that are created
 
-#### findTemplates 
+#### def findTemplates 
 ##### arguments
 
-    - domain = ''
-    - name = ''
-    - parent
+- domain = ''
+- name = ''
+- parent
 
 ##### comments
 
-#### get 
+#### def get 
 ##### arguments
 
-    - domain = ''
-    - name = ''
-    - instance = ''
-    - parent = ''
-    - precise = False
+- domain = ''
+- name = ''
+- instance = ''
+- parent = ''
+- precise = False
 
 ##### comments
 
 Return service indentifier by domain,name and instance
 throw error if service is not found or if more than one service is found
 
-#### getActionsBaseClass 
+#### def getActionsBaseClass 
 ##### arguments
 
 ##### comments
 
-#### getDomains 
+#### def getDomains 
 ##### arguments
 
 ##### comments
 
-#### getFromStr 
+#### def getFromStr 
 ##### arguments
 
-    - representation
-    - parent
+- representation
+- parent
 
 ##### comments
 
 return a service instance from its representation 'domain      :name       :instance'
 
-#### getId 
+#### def getId 
 ##### arguments
 
-    - domain
-    - name
-    - instance
-    - parent
+- domain
+- name
+- instance
+- parent
 
 ##### comments
 
-#### loadService 
+#### def loadService 
 ##### arguments
 
-    - path
-    - parent
+- path
+- parent
 
 ##### comments
 
@@ -105,41 +105,41 @@ path should point to a directory that contains these files:
     service.hrd
     actions.py
 
-#### loadServicesInSQL 
+#### def loadServicesInSQL 
 ##### arguments
 
 ##### comments
 
 walk over all services and load into sqllite
 
-#### new 
+#### def new 
 ##### arguments
 
-    - domain = ''
-    - name = ''
-    - instance = 'main'
-    - path
-    - parent
-    - args = \{\}
+- domain = ''
+- name = ''
+- instance = 'main'
+- path
+- parent
+- args = \{\}
 
 ##### comments
 
 will create a new service
 
-#### remove 
+#### def remove 
 ##### arguments
 
-    - domain = ''
-    - name = ''
-    - instance = ''
-    - parent
+- domain = ''
+- name = ''
+- instance = ''
+- parent
 
 ##### comments
 
-#### updateTemplatesRepo 
+#### def updateTemplatesRepo 
 ##### arguments
 
-    - repos = []
+- repos = []
 
 ##### comments
 

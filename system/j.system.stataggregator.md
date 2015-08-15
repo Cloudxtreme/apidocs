@@ -7,89 +7,89 @@
 
 ### Methods
 
-#### clean 
+#### def clean 
 ##### arguments
 
 ##### comments
 
-#### delete 
+#### def delete 
 ##### arguments
 
-    - prefix
+- prefix
 
 ##### comments
 
-#### get 
+#### def get 
 ##### arguments
 
-    - key
+- key
 
 ##### comments
 
-#### getAvgMax 
+#### def getAvgMax 
 ##### arguments
 
-    - key
+- key
 
 ##### comments
 
-#### getTime 
+#### def getTime 
 ##### arguments
 
 ##### comments
 
-#### list 
+#### def list 
 ##### arguments
 
-    - prefix = ''
-    - memonly = False
-    - avgmax = False
+- prefix = ''
+- memonly = False
+- avgmax = False
 
 ##### comments
 
-#### loadStat 
+#### def loadStat 
 ##### arguments
 
-    - key
-    - data
+- key
+- data
 
 ##### comments
 
-#### registerStats 
+#### def registerStats 
 ##### arguments
 
-    - key
-    - ttype = 'N'
-    - memonly = False
-    - percent = False
+- key
+- ttype = 'N'
+- memonly = False
+- percent = False
 
 ##### comments
 
 type is N or D (D from diff)
 
-#### send2carbon 
+#### def send2carbon 
 ##### arguments
 
 ##### comments
 
-#### send2log 
+#### def send2log 
 ##### arguments
 
-    - name
-    - key
-    - val
+- name
+- key
+- val
 
 ##### comments
 
-#### set 
+#### def set 
 ##### arguments
 
-    - key
-    - val
-    - ttype = 'N'
-    - remember = True
-    - memonly = False
-    - percent = False
+- key
+- val
+- ttype = 'N'
+- remember = True
+- memonly = False
+- percent = False
 
 ##### comments
 

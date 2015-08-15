@@ -4,42 +4,42 @@
 
 ### Methods
 
-#### get 
+#### def get 
 ##### arguments
 
-    - addr
-    - port = 4444
-    - login = 'root'
-    - passwd
-    - new = False
+- addr
+- port = 4444
+- login = 'root'
+- passwd
+- new = False
 
 ##### comments
 
 @if None will be same as master
 
-#### getByInstance 
+#### def getByInstance 
 ##### arguments
 
-    - instance
-    - new = False
+- instance
+- new = False
 
 ##### comments
 
-#### getInstanceConfig 
+#### def getInstanceConfig 
 ##### arguments
 
-    - instance
+- instance
 
 ##### comments
 
-#### getProxy 
+#### def getProxy 
 ##### arguments
 
-    - category = 'core'
-    - addr
-    - port = 4444
-    - login = 'root'
-    - passwd
+- category = 'core'
+- addr
+- port = 4444
+- login = 'root'
+- passwd
 
 ##### comments
 

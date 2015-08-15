@@ -6,22 +6,22 @@
 
 ### Methods
 
-#### getActorsLoader 
+#### def getActorsLoader 
 ##### arguments
 
 ##### comments
 
-#### getBucketsLoader 
+#### def getBucketsLoader 
 ##### arguments
 
 ##### comments
 
-#### getSpacesLoader 
+#### def getSpacesLoader 
 ##### arguments
 
 ##### comments
 
-#### getTemplatesPath 
+#### def getTemplatesPath 
 ##### arguments
 
 ##### comments

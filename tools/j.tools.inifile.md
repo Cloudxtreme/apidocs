@@ -4,10 +4,10 @@
 
 ### Methods
 
-#### new 
+#### def new 
 ##### arguments
 
-    - filename
+- filename
 
 ##### comments
 
@@ -21,11 +21,11 @@ Create a new INI file
 @returns: New INI file object
 @rtype: jumpscale.inifile.IniFile.IniFile
 
-#### open 
+#### def open 
 ##### arguments
 
-    - filename
-    - createIfNonExisting = True
+- filename
+- createIfNonExisting = True
 
 ##### comments
 

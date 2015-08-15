@@ -6,14 +6,14 @@
 
 ### Methods
 
-#### connect 
+#### def connect 
 ##### arguments
 
-    - ip
-    - login = ''
-    - password = ''
-    - timeout = 120.0
-    - port = 22
+- ip
+- login = ''
+- password = ''
+- timeout = 120.0
+- port = 22
 
 ##### comments
 

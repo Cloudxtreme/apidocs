@@ -4,71 +4,71 @@
 
 ### Methods
 
-#### convertConfluenceToRST 
+#### def convertConfluenceToRST 
 ##### arguments
 
-    - src
-    - dest
+- src
+- dest
 
 ##### comments
 
-#### getConfluence2htmlConvertor 
-##### arguments
-
-##### comments
-
-#### getConfluence2rstConvertor 
+#### def getConfluence2htmlConvertor 
 ##### arguments
 
 ##### comments
 
-#### getConfluenceClient 
+#### def getConfluence2rstConvertor 
 ##### arguments
 
-    - url
-    - login
-    - passwd
-    - spacename
-    - erasespace = False
-    - erasepages = False
+##### comments
+
+#### def getConfluenceClient 
+##### arguments
+
+- url
+- login
+- passwd
+- spacename
+- erasespace = False
+- erasepages = False
 
 ##### comments
 
 @param url e.g. http://10.0.1.193:8080/confluence
 
-#### getMacroPath 
+#### def getMacroPath 
 ##### arguments
 
 ##### comments
 
-#### pageGroupNew 
+#### def pageGroupNew 
 ##### arguments
 
-    - pages = \{\}
+- pages = \{\}
 
 ##### comments
 
-#### pageNewConfluence 
+#### def pageNewConfluence 
 ##### arguments
 
-    - pagename
-    - parent = 'Home'
+- pagename
+- parent = 'Home'
 
 ##### comments
 
-#### pageNewHTML 
+#### def pageNewHTML 
 ##### arguments
 
-    - pagename
-    - htmllibPath
+- pagename
+- htmllibPath
 
 ##### comments
 
-#### pageNewRST 
+#### def pageNewRST 
 ##### arguments
 
-    - pagename
-    - htmllibPath
+- pagename
+- htmllibPath
 
 ##### comments
 

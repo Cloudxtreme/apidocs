@@ -4,10 +4,10 @@
 
 ### Methods
 
-#### getRCache 
+#### def getRCache 
 ##### arguments
 
-    - nritems
+- nritems
 
 ##### comments
 
@@ -50,13 +50,13 @@ if 42 in cache:
 for j in cache:   # iterate (in LRU order)
     print j, cache[j] # iterator produces keys, not values
 
-#### getRWCache 
+#### def getRWCache 
 ##### arguments
 
-    - nrItemsReadCache
-    - nrItemsWriteCache = 50
-    - maxTimeWriteCache = 2000
-    - writermethod
+- nrItemsReadCache
+- nrItemsWriteCache = 50
+- maxTimeWriteCache = 2000
+- writermethod
 
 ##### comments
 

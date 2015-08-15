@@ -10,20 +10,20 @@
 
 ### Methods
 
-#### getLocalIPAccessibleByGridMaster 
+#### def getLocalIPAccessibleByGridMaster 
 ##### arguments
 
 ##### comments
 
-#### init 
+#### def init 
 ##### arguments
 
-    - description = ''
-    - instance = 1
+- description = ''
+- instance = 1
 
 ##### comments
 
-#### isGridMasterLocal 
+#### def isGridMasterLocal 
 ##### arguments
 
 ##### comments

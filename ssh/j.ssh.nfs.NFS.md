@@ -4,26 +4,26 @@
 
 ### Methods
 
-#### add 
+#### def add 
 ##### arguments
 
-    - path
+- path
 
 ##### comments
 
-#### commit 
+#### def commit 
 ##### arguments
 
 ##### comments
 
-#### delete 
+#### def delete 
 ##### arguments
 
-    - path
+- path
 
 ##### comments
 
-#### erase 
+#### def erase 
 ##### arguments
 
 ##### comments

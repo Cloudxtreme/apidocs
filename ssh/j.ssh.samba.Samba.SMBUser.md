@@ -4,23 +4,23 @@
 
 ### Methods
 
-#### add 
+#### def add 
 ##### arguments
 
-    - username
-    - password
+- username
+- password
 
 ##### comments
 
-#### list 
+#### def list 
 ##### arguments
 
 ##### comments
 
-#### remove 
+#### def remove 
 ##### arguments
 
-    - username
+- username
 
 ##### comments
 

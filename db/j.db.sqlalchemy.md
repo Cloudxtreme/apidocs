@@ -4,16 +4,16 @@
 
 ### Methods
 
-#### get 
+#### def get 
 ##### arguments
 
-    - connectionstring = ''
-    - sqlitepath = ''
-    - tomlpath = '../data'
+- connectionstring = ''
+- sqlitepath = ''
+- tomlpath = '../data'
 
 ##### comments
 
-#### getBaseClass 
+#### def getBaseClass 
 ##### arguments
 
 ##### comments
@@ -21,33 +21,33 @@
 complete example how to use sqlalchemy:
 https://github.com/Jumpscale/jumpscale_core7/wiki/SQLAlchemy
 
-#### validate_email 
+#### def validate_email 
 ##### arguments
 
-    - target
-    - value
-    - oldvalue
-    - initiator
+- target
+- value
+- oldvalue
+- initiator
 
 ##### comments
 
-#### validate_lower_strip 
+#### def validate_lower_strip 
 ##### arguments
 
-    - target
-    - value
-    - oldvalue
-    - initiator
+- target
+- value
+- oldvalue
+- initiator
 
 ##### comments
 
-#### validate_tel 
+#### def validate_tel 
 ##### arguments
 
-    - target
-    - value
-    - oldvalue
-    - initiator
+- target
+- value
+- oldvalue
+- initiator
 
 ##### comments
 

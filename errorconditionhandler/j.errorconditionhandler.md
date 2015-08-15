@@ -11,27 +11,27 @@
 
 ### Methods
 
-#### checkErrorIgnore 
+#### def checkErrorIgnore 
 ##### arguments
 
-    - eco
+- eco
 
 ##### comments
 
-#### escalateBugToDeveloper 
+#### def escalateBugToDeveloper 
 ##### arguments
 
-    - errorConditionObject
-    - tb
+- errorConditionObject
+- tb
 
 ##### comments
 
-#### excepthook 
+#### def excepthook 
 ##### arguments
 
-    - ttype
-    - pythonExceptionObject
-    - tb
+- ttype
+- pythonExceptionObject
+- tb
 
 ##### comments
 
@@ -41,75 +41,75 @@ This routine will create an errorobject & escalate to the infoserver
 @ttype : is the description of the error
 @tb : can be a python data object or a Event
 
-#### getErrorConditionObject 
+#### def getErrorConditionObject 
 ##### arguments
 
-    - ddict = \{\}
-    - msg = ''
-    - msgpub = ''
-    - category = ''
-    - level = 1
-    - type = 'UNKNOWN'
-    - tb
+- ddict = \{\}
+- msg = ''
+- msgpub = ''
+- category = ''
+- level = 1
+- type = 'UNKNOWN'
+- tb
 
 ##### comments
 
 @data is dict with fields of errorcondition obj
 returns only ErrorConditionObject which should be used in jumpscale to define an errorcondition (or potential error condition)
 
-#### getErrorTraceKIS 
+#### def getErrorTraceKIS 
 ##### arguments
 
-    - tb
+- tb
 
 ##### comments
 
-#### getFrames 
+#### def getFrames 
 ##### arguments
 
-    - tb
+- tb
 
 ##### comments
 
-#### getLevelName 
+#### def getLevelName 
 ##### arguments
 
-    - level
+- level
 
 ##### comments
 
-#### halt 
+#### def halt 
 ##### arguments
 
-    - msg
-    - eco
+- msg
+- eco
 
 ##### comments
 
-#### lastActionClear 
+#### def lastActionClear 
 ##### arguments
 
 ##### comments
 
 clear last action so is not printed when error
 
-#### lastActionSet 
+#### def lastActionSet 
 ##### arguments
 
-    - lastActionDescription
+- lastActionDescription
 
 ##### comments
 
 will remember action you are doing, this will be added to error message if filled in
 
-#### parsePythonErrorObject 
+#### def parsePythonErrorObject 
 ##### arguments
 
-    - pythonExceptionObject
-    - ttype
-    - tb
-    - level = 1
-    - message = ''
+- pythonExceptionObject
+- ttype
+- tb
+- level = 1
+- message = ''
 
 ##### comments
 
@@ -129,15 +129,15 @@ next step could be to process the error objecect (eco) e.g. by eco.process()
 
 @return a ErrorConditionObject object as used by jumpscale (should be the only type of object we send around)
 
-#### processPythonExceptionObject 
+#### def processPythonExceptionObject 
 ##### arguments
 
-    - pythonExceptionObject
-    - ttype
-    - tb
-    - level = 1
-    - message = ''
-    - sentry = True
+- pythonExceptionObject
+- ttype
+- tb
+- level = 1
+- message = ''
+- sentry = True
 
 ##### comments
 
@@ -156,17 +156,17 @@ except Exception,e:
 
 the errorcondition is then also processed e.g. send to local logserver and/or stored locally in errordb
 
-#### raiseBug 
+#### def raiseBug 
 ##### arguments
 
-    - message
-    - category = ''
-    - pythonExceptionObject
-    - pythonTraceBack
-    - msgpub = ''
-    - die = True
-    - tags = ''
-    - level = 1
+- message
+- category = ''
+- pythonExceptionObject
+- pythonTraceBack
+- msgpub = ''
+- die = True
+- tags = ''
+- level = 1
 
 ##### comments
 
@@ -182,17 +182,17 @@ try:
 except Exception,e:
     j.errorconditionhandler.raiseBug("an error",category="exceptions.init",e)
 
-#### raiseCritical 
+#### def raiseCritical 
 ##### arguments
 
-    - message
-    - category = ''
-    - pythonExceptionObject
-    - pythonTraceBack
-    - msgpub = ''
-    - die = True
-    - tags = ''
-    - level = 1
+- message
+- category = ''
+- pythonExceptionObject
+- pythonTraceBack
+- msgpub = ''
+- die = True
+- tags = ''
+- level = 1
 
 ##### comments
 
@@ -208,39 +208,39 @@ try:
 except Exception,e:
     j.errorconditionhandler.raiseBug("an error",category="exceptions.init",e)
 
-#### raiseInputError 
+#### def raiseInputError 
 ##### arguments
 
-    - message = ''
-    - category = 'input'
-    - msgpub = ''
-    - die = True
-    - backtrace = ''
-    - tags = ''
+- message = ''
+- category = 'input'
+- msgpub = ''
+- die = True
+- backtrace = ''
+- tags = ''
 
 ##### comments
 
-#### raiseMonitoringError 
+#### def raiseMonitoringError 
 ##### arguments
 
-    - message
-    - category = ''
-    - msgpub = ''
-    - die = False
-    - tags = ''
+- message
+- category = ''
+- msgpub = ''
+- die = False
+- tags = ''
 
 ##### comments
 
-#### raiseOperationalCritical 
+#### def raiseOperationalCritical 
 ##### arguments
 
-    - message = ''
-    - category = ''
-    - msgpub = ''
-    - die = True
-    - tags = ''
-    - eco
-    - extra
+- message = ''
+- category = ''
+- msgpub = ''
+- die = True
+- tags = ''
+- eco
+- extra
 
 ##### comments
 
@@ -249,44 +249,44 @@ use this to raise an operational issue about the system
 @param msgpub is message we want to show to endcustomers (can include a solution)
 @param category is a dot notation to give category for the error condition
 
-#### raiseOperationalWarning 
+#### def raiseOperationalWarning 
 ##### arguments
 
-    - message = ''
-    - category = ''
-    - msgpub = ''
-    - tags = ''
-    - eco
+- message = ''
+- category = ''
+- msgpub = ''
+- tags = ''
+- eco
 
 ##### comments
 
-#### raisePerformanceError 
+#### def raisePerformanceError 
 ##### arguments
 
-    - message
-    - category = ''
-    - msgpub = ''
-    - tags = ''
+- message
+- category = ''
+- msgpub = ''
+- tags = ''
 
 ##### comments
 
-#### raiseRuntimeErrorWithEco 
+#### def raiseRuntimeErrorWithEco 
 ##### arguments
 
-    - eco
-    - tostdout = False
+- eco
+- tostdout = False
 
 ##### comments
 
-#### raiseWarning 
+#### def raiseWarning 
 ##### arguments
 
-    - message
-    - category = ''
-    - pythonExceptionObject
-    - pythonTraceBack
-    - msgpub = ''
-    - tags = ''
+- message
+- category = ''
+- pythonExceptionObject
+- pythonTraceBack
+- msgpub = ''
+- tags = ''
 
 ##### comments
 
@@ -301,22 +301,22 @@ try:
 except Exception,e:
     j.errorconditionhandler.raiseBug("an error",category="exceptions.init",e)
 
-#### reRaiseECO 
+#### def reRaiseECO 
 ##### arguments
 
-    - eco
+- eco
 
 ##### comments
 
-#### setExceptHook 
+#### def setExceptHook 
 ##### arguments
 
 ##### comments
 
-#### toolStripNonAsciFromText 
+#### def toolStripNonAsciFromText 
 ##### arguments
 
-    - text
+- text
 
 ##### comments
 

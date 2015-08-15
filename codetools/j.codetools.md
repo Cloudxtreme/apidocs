@@ -9,26 +9,26 @@
 
 ### Methods
 
-#### getTextFileEditor 
+#### def getTextFileEditor 
 ##### arguments
 
-    - filepath
+- filepath
 
 ##### comments
 
 returns a class which helps you to edit a text file
 e.g. find blocks, replace lines, ...
 
-#### getWordReplacerTool 
+#### def getWordReplacerTool 
 ##### arguments
 
 ##### comments
 
-#### textToTitle 
+#### def textToTitle 
 ##### arguments
 
-    - text
-    - maxnrchars = 60
+- text
+- maxnrchars = 60
 
 ##### comments
 

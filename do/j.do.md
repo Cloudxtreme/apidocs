@@ -10,134 +10,134 @@
 
 ### Methods
 
-#### changeDir 
+#### def changeDir 
 ##### arguments
 
-    - path
-    - create = False
+- path
+- create = False
 
 ##### comments
 
 Changes Current Directory
 @param path: string (Directory path to be changed to)
 
-#### changeLoginPasswdGitRepos 
+#### def changeLoginPasswdGitRepos 
 ##### arguments
 
-    - provider
-    - login
-    - passwd
+- provider
+- login
+- passwd
 
 ##### comments
 
 walk over all git repo's found in account & change login/passwd
 
-#### chdir 
+#### def chdir 
 ##### arguments
 
-    - ddir = ''
+- ddir = ''
 
 ##### comments
 
 if ddir=="" then will go to tmpdir
 
-#### checkDirOrLinkToDir 
+#### def checkDirOrLinkToDir 
 ##### arguments
 
-    - fullpath
+- fullpath
 
 ##### comments
 
 check if path is dir or link to a dir
 
-#### checkInstalled 
+#### def checkInstalled 
 ##### arguments
 
-    - cmdname
+- cmdname
 
 ##### comments
 
 @param cmdname is cmd to check e.g. curl
 
-#### chmod 
+#### def chmod 
 ##### arguments
 
-    - path
-    - permissions
+- path
+- permissions
 
 ##### comments
 
 @param permissions e.g. 0o660 (USE OCTAL !!!)
 
-#### chown 
+#### def chown 
 ##### arguments
 
-    - path
-    - user
+- path
+- user
 
 ##### comments
 
-#### copyDependencies 
+#### def copyDependencies 
 ##### arguments
 
-    - path
-    - dest
+- path
+- dest
 
 ##### comments
 
-#### copyFile 
+#### def copyFile 
 ##### arguments
 
-    - source
-    - dest
-    - deletefirst = False
-    - skipIfExists = False
+- source
+- dest
+- deletefirst = False
+- skipIfExists = False
 
 ##### comments
 
-#### copyTree 
+#### def copyTree 
 ##### arguments
 
-    - source
-    - dest
-    - keepsymlinks = False
-    - deletefirst = False
-    - overwriteFiles = True
-    - ignoredir = ['.egg-info', '.dist-info']
-    - ignorefiles = ['.egg-info']
-    - rsync = True
-    - sshkey
+- source
+- dest
+- keepsymlinks = False
+- deletefirst = False
+- overwriteFiles = True
+- ignoredir = ['.egg-info', '.dist-info']
+- ignorefiles = ['.egg-info']
+- rsync = True
+- sshkey
 
 ##### comments
 
-#### createDir 
+#### def createDir 
 ##### arguments
 
-    - path
+- path
 
 ##### comments
 
-#### delete 
+#### def delete 
 ##### arguments
 
-    - path
-    - force = False
+- path
+- force = False
 
 ##### comments
 
-#### download 
+#### def download 
 ##### arguments
 
-    - url
-    - to = ''
-    - overwrite = True
-    - retry = 3
-    - timeout = 0
-    - login = ''
-    - passwd = ''
-    - minspeed = 0
-    - multithread = False
-    - curl = False
+- url
+- to = ''
+- overwrite = True
+- retry = 3
+- timeout = 0
+- login = ''
+- passwd = ''
+- minspeed = 0
+- multithread = False
+- curl = False
 
 ##### comments
 
@@ -145,116 +145,116 @@ check if path is dir or link to a dir
 @param minspeed is kbytes per sec e.g. 50, if less than 50 kbytes during 10 min it will restart the download (curl only)
 @param when multithread True then will use aria2 download tool to get multiple threads
 
-#### downloadExpandTarGz 
+#### def downloadExpandTarGz 
 ##### arguments
 
-    - url
-    - destdir
-    - deleteDestFirst = True
-    - deleteSourceAfter = True
+- url
+- destdir
+- deleteDestFirst = True
+- deleteSourceAfter = True
 
 ##### comments
 
-#### downloadJumpScaleCore 
+#### def downloadJumpScaleCore 
 ##### arguments
 
-    - dest
+- dest
 
 ##### comments
 
-#### excepthook 
+#### def excepthook 
 ##### arguments
 
-    - ttype
-    - pythonExceptionObject
-    - tb
+- ttype
+- pythonExceptionObject
+- tb
 
 ##### comments
 
-#### execute 
+#### def execute 
 ##### arguments
 
-    - command
-    - outputStdout = True
-    - outputStderr = True
-    - useShell = True
-    - log = True
-    - cwd
-    - timeout = 0
-    - errors = []
-    - ok = []
-    - captureout = True
-    - dieOnNonZeroExitCode = True
+- command
+- outputStdout = True
+- outputStderr = True
+- useShell = True
+- log = True
+- cwd
+- timeout = 0
+- errors = []
+- ok = []
+- captureout = True
+- dieOnNonZeroExitCode = True
 
 ##### comments
 
 @param errors is array of statements if found then exit as error
 return rc,out,err
 
-#### executeCmds 
+#### def executeCmds 
 ##### arguments
 
-    - cmdstr
-    - outputStdout = True
-    - outputStderr = True
-    - useShell = True
-    - log = True
-    - cwd
-    - timeout = 120
-    - errors = []
-    - ok = []
-    - captureout = True
-    - dieOnNonZeroExitCode = True
+- cmdstr
+- outputStdout = True
+- outputStderr = True
+- useShell = True
+- log = True
+- cwd
+- timeout = 120
+- errors = []
+- ok = []
+- captureout = True
+- dieOnNonZeroExitCode = True
 
 ##### comments
 
-#### executeInteractive 
+#### def executeInteractive 
 ##### arguments
 
-    - command
+- command
 
 ##### comments
 
-#### exists 
+#### def exists 
 ##### arguments
 
-    - path
+- path
 
 ##### comments
 
-#### expandTarGz 
+#### def expandTarGz 
 ##### arguments
 
-    - path
-    - destdir
-    - deleteDestFirst = True
-    - deleteSourceAfter = False
+- path
+- destdir
+- deleteDestFirst = True
+- deleteSourceAfter = False
 
 ##### comments
 
-#### findDependencies 
+#### def findDependencies 
 ##### arguments
 
-    - path
-    - deps = \{\}
+- path
+- deps = \{\}
 
 ##### comments
 
-#### getBaseName 
+#### def getBaseName 
 ##### arguments
 
-    - path
+- path
 
 ##### comments
 
 Return the base name of pathname path.
 
-#### getDirName 
+#### def getDirName 
 ##### arguments
 
-    - path
-    - lastOnly = False
-    - levelsUp
+- path
+- lastOnly = False
+- levelsUp
 
 ##### comments
 
@@ -266,21 +266,21 @@ Return a directory name from pathname path.
  e.g. ...getDirName("/opt/qbase/bin/something/test.py", levelsUp=1) would return bin
  e.g. ...getDirName("/opt/qbase/bin/something/test.py", levelsUp=10) would raise an error
 
-#### getFileExtension 
+#### def getFileExtension 
 ##### arguments
 
-    - path
+- path
 
 ##### comments
 
-#### getGitRepoArgs 
+#### def getGitRepoArgs 
 ##### arguments
 
-    - url = ''
-    - dest
-    - login
-    - passwd
-    - reset = False
+- url = ''
+- dest
+- login
+- passwd
+- reset = False
 
 ##### comments
 
@@ -296,20 +296,20 @@ Args:
 Returns:
     (repository_host, repository_type, repository_account, repository_name, repository_url)
 
-#### getGitReposListLocal 
+#### def getGitReposListLocal 
 ##### arguments
 
-    - provider = ''
-    - account = ''
-    - name = ''
-    - errorIfNone = True
+- provider = ''
+- account = ''
+- name = ''
+- errorIfNone = True
 
 ##### comments
 
-#### getParent 
+#### def getParent 
 ##### arguments
 
-    - path
+- path
 
 ##### comments
 
@@ -318,42 +318,42 @@ Returns the parent of the path:
 /dir1/dir2/            -> /dir1/
 @todo why do we have 2 implementations which are almost the same see getParentDirName()
 
-#### getPythonSiteConfigPath 
+#### def getPythonSiteConfigPath 
 ##### arguments
 
 ##### comments
 
-#### getTimeEpoch 
+#### def getTimeEpoch 
 ##### arguments
 
 ##### comments
 
 Get epoch timestamp (number of seconds passed since January 1, 1970)
 
-#### getTmpPath 
+#### def getTmpPath 
 ##### arguments
 
-    - filename
+- filename
 
 ##### comments
 
-#### getWalker 
+#### def getWalker 
 ##### arguments
 
 ##### comments
 
-#### installPackage 
+#### def installPackage 
 ##### arguments
 
-    - path
+- path
 
 ##### comments
 
-#### isDir 
+#### def isDir 
 ##### arguments
 
-    - path
-    - followSoftlink = False
+- path
+- followSoftlink = False
 
 ##### comments
 
@@ -362,18 +362,18 @@ Check if the specified Directory path exists
 @param followSoftlink: boolean
 @rtype: boolean (True if directory exists)
 
-#### isExecutable 
+#### def isExecutable 
 ##### arguments
 
-    - path
+- path
 
 ##### comments
 
-#### isFile 
+#### def isFile 
 ##### arguments
 
-    - path
-    - followSoftlink = False
+- path
+- followSoftlink = False
 
 ##### comments
 
@@ -382,11 +382,11 @@ Check if the specified file exists for the given path
 @param followSoftlink: boolean
 @rtype: boolean (True if file exists for the given path)
 
-#### isLink 
+#### def isLink 
 ##### arguments
 
-    - path
-    - checkJunction = False
+- path
+- checkJunction = False
 
 ##### comments
 
@@ -394,37 +394,37 @@ Check if the specified path is a link
 @param path: string
 @rtype: boolean (True if the specified path is a link)
 
-#### isUnix 
+#### def isUnix 
 ##### arguments
 
 ##### comments
 
-#### isWindows 
+#### def isWindows 
 ##### arguments
 
 ##### comments
 
-#### joinPaths 
+#### def joinPaths 
 ##### arguments
 
-    - *args
+- *args
 
 ##### comments
 
-#### list 
+#### def list 
 ##### arguments
 
-    - path
+- path
 
 ##### comments
 
-#### listDirsInDir 
+#### def listDirsInDir 
 ##### arguments
 
-    - path
-    - recursive = False
-    - dirNameOnly = False
-    - findDirectorySymlinks = True
+- path
+- recursive = False
+- dirNameOnly = False
+- findDirectorySymlinks = True
 
 ##### comments
 
@@ -432,18 +432,18 @@ Retrieves list of directories found in the specified directory
 @param path: string represents directory path to search in
 @rtype: list
 
-#### listFilesAndDirsInDir 
+#### def listFilesAndDirsInDir 
 ##### arguments
 
-    - path
-    - recursive = False
-    - filter
-    - minmtime
-    - maxmtime
-    - depth
-    - type = 'fd'
-    - followSymlinks = True
-    - listSymlinks = False
+- path
+- recursive = False
+- filter
+- minmtime
+- maxmtime
+- depth
+- type = 'fd'
+- followSymlinks = True
+- listSymlinks = False
 
 ##### comments
 
@@ -462,19 +462,19 @@ Retrieves list of files found in the specified directory
 @param type is string with f & d inside (f for when to find files, d for when to find dirs)
 @rtype: list
 
-#### listFilesInDir 
+#### def listFilesInDir 
 ##### arguments
 
-    - path
-    - recursive = False
-    - filter
-    - minmtime
-    - maxmtime
-    - depth
-    - case_sensitivity = 'os'
-    - exclude = []
-    - followSymlinks = True
-    - listSymlinks = False
+- path
+- recursive = False
+- filter
+- minmtime
+- maxmtime
+- depth
+- case_sensitivity = 'os'
+- exclude = []
+- followSymlinks = True
+- listSymlinks = False
 
 ##### comments
 
@@ -493,33 +493,33 @@ Retrieves list of files found in the specified directory
 @Param exclude: list of std filters if matches then exclude
 @rtype: list
 
-#### loadScript 
+#### def loadScript 
 ##### arguments
 
-    - path
+- path
 
 ##### comments
 
-#### log 
+#### def log 
 ##### arguments
 
-    - msg
-    - level
+- msg
+- level
 
 ##### comments
 
-#### pullGitRepo 
+#### def pullGitRepo 
 ##### arguments
 
-    - url = ''
-    - dest
-    - login
-    - passwd
-    - depth = 1
-    - ignorelocalchanges = False
-    - reset = False
-    - branch
-    - revision
+- url = ''
+- dest
+- login
+- passwd
+- depth = 1
+- ignorelocalchanges = False
+- reset = False
+- branch
+- revision
 
 ##### comments
 
@@ -527,14 +527,14 @@ will clone or update repo
 if dest == None then clone underneath: /opt/code/$type/$account/$repo
 will ignore changes !!!!!!!!!!!
 
-#### pushGitRepos 
+#### def pushGitRepos 
 ##### arguments
 
-    - message
-    - name = ''
-    - update = True
-    - provider = ''
-    - account = ''
+- message
+- name = ''
+- update = True
+- provider = ''
+- account = ''
 
 ##### comments
 
@@ -542,10 +542,10 @@ if name specified then will look under code dir if repo with path can be found
 if not or more than 1 there will be error
 @param provider e.g. git, github
 
-#### readFile 
+#### def readFile 
 ##### arguments
 
-    - filename
+- filename
 
 ##### comments
 
@@ -553,38 +553,38 @@ Read a file and get contents of that file
 @param filename: string (filename to open for reading )
 @rtype: string representing the file contents
 
-#### readLink 
+#### def readLink 
 ##### arguments
 
-    - path
+- path
 
 ##### comments
 
 Works only for unix
 Return a string representing the path to which the symbolic link points.
 
-#### removeLinks 
+#### def removeLinks 
 ##### arguments
 
-    - path
+- path
 
 ##### comments
 
 find all links & remove
 
-#### removeSymlink 
+#### def removeSymlink 
 ##### arguments
 
-    - path
+- path
 
 ##### comments
 
-#### rewriteGitRepoUrl 
+#### def rewriteGitRepoUrl 
 ##### arguments
 
-    - url = ''
-    - login
-    - passwd
+- url = ''
+- login
+- passwd
 
 ##### comments
 
@@ -598,65 +598,65 @@ Args:
 Returns:
     (repository_host, repository_type, repository_account, repository_name, repository_url)
 
-#### sendmail 
+#### def sendmail 
 ##### arguments
 
-    - ffrom
-    - to
-    - subject
-    - msg
-    - smtpuser
-    - smtppasswd
-    - smtpserver = 'smtp.mandrillapp.com'
-    - port = 587
-    - html = ''
+- ffrom
+- to
+- subject
+- msg
+- smtpuser
+- smtppasswd
+- smtpserver = 'smtp.mandrillapp.com'
+- port = 587
+- html = ''
 
 ##### comments
 
-#### symlink 
+#### def symlink 
 ##### arguments
 
-    - src
-    - dest
-    - delete = False
+- src
+- dest
+- delete = False
 
 ##### comments
 
 dest is where the link will be created pointing to src
 
-#### symlinkFilesInDir 
+#### def symlinkFilesInDir 
 ##### arguments
 
-    - src
-    - dest
-    - delete = True
-    - includeDirs = False
+- src
+- dest
+- delete = True
+- includeDirs = False
 
 ##### comments
 
-#### touch 
+#### def touch 
 ##### arguments
 
-    - path
+- path
 
 ##### comments
 
-#### updateGitRepos 
+#### def updateGitRepos 
 ##### arguments
 
-    - provider = ''
-    - account = ''
-    - name = ''
-    - message = ''
+- provider = ''
+- account = ''
+- name = ''
+- message = ''
 
 ##### comments
 
-#### writeFile 
+#### def writeFile 
 ##### arguments
 
-    - path
-    - content
-    - strip = True
+- path
+- content
+- strip = True
 
 ##### comments
 

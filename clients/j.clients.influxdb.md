@@ -6,26 +6,26 @@
 
     
 
-#### get 
+#### def get 
 ##### arguments
 
-    - host = 'localhost'
-    - port = 8086
-    - username = 'root'
-    - password = 'root'
-    - database
-    - ssl = False
-    - verify_ssl = False
-    - timeout
-    - use_udp = False
-    - udp_port = 4444
+- host = 'localhost'
+- port = 8086
+- username = 'root'
+- password = 'root'
+- database
+- ssl = False
+- verify_ssl = False
+- timeout
+- use_udp = False
+- udp_port = 4444
 
 ##### comments
 
-#### getByInstance 
+#### def getByInstance 
 ##### arguments
 
-    - instancename
+- instancename
 
 ##### comments
 

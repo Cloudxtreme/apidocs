@@ -7,44 +7,44 @@
 
 ### Methods
 
-#### celeryClient 
+#### def celeryClient 
 ##### arguments
 
-    - actorName
-    - url = 'redis://localhost:9999/0'
-    - actorsPath = 'actors'
-    - local = False
+- actorName
+- url = 'redis://localhost:9999/0'
+- actorsPath = 'actors'
+- local = False
 
 ##### comments
 
-#### celeryStart 
+#### def celeryStart 
 ##### arguments
 
-    - url = 'redis://localhost:9999/0'
-    - concurrency = 4
-    - actorsPath = 'actors'
+- url = 'redis://localhost:9999/0'
+- concurrency = 4
+- actorsPath = 'actors'
 
 ##### comments
 
-#### flowerStart 
+#### def flowerStart 
 ##### arguments
 
-    - url = 'redis://localhost:9999/0'
+- url = 'redis://localhost:9999/0'
 
 ##### comments
 
-#### getCodeClient 
+#### def getCodeClient 
 ##### arguments
 
-    - path
-    - actorName
+- path
+- actorName
 
 ##### comments
 
-#### getCodeServer 
+#### def getCodeServer 
 ##### arguments
 
-    - path
+- path
 
 ##### comments
 

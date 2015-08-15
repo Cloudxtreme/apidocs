@@ -4,18 +4,18 @@
 
 ### Methods
 
-#### get 
+#### def get 
 ##### arguments
 
-    - host = 'localhost'
-    - port = 27017
+- host = 'localhost'
+- port = 27017
 
 ##### comments
 
-#### getByInstance 
+#### def getByInstance 
 ##### arguments
 
-    - instancename
+- instancename
 
 ##### comments
 
