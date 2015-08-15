@@ -2,12 +2,25 @@
 
 - /opt/jumpscale7/lib/JumpScale/grid/tipc/TipcFactory.py
 
-#### def getClient(servaddr, category="core", org="myorg", user="root", passwd="passwd", ssl=False, roles=[]) 
-
+#### getClient 
+- arguments
+    - servaddr
+    - category = 'core'
+    - org = 'myorg'
+    - user = 'root'
+    - passwd = 'passwd'
+    - ssl = False
+    - roles = []
+- comments
     
 
-#### def getServer(servaddr, sslorg=None, ssluser=None, sslkeyvaluestor=None) 
-
+#### getServer 
+- arguments
+    - servaddr
+    - sslorg
+    - ssluser
+    - sslkeyvaluestor
+- comments
     HOW TO USE:
     daemon=j.servers.tornado.getServer(port=4444)
     

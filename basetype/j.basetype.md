@@ -24,8 +24,11 @@
     - unixdirpath
     - enumeration
 
-#### def Enumeration(enumerationtype, **kwargs) 
-
+#### enumeration 
+- arguments
+    - enumerationtype
+    - **kwargs
+- comments
     Generic descriptor generator for custom enumeration types
     
     You should be aware this is, unlike non-generic basetypes, a function
@@ -40,8 +43,11 @@
     
     @see: L\{jumpscale.pmtypes.base.BaseType.__init__\}
 
-#### def Object(type_, **kwargs) 
-
+#### object 
+- arguments
+    - type_
+    - **kwargs
+- comments
     Generic descriptor generator for custom object types
     
     You should be aware this is, unlike non-generic basetypes, a function

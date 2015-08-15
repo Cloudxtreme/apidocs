@@ -6,15 +6,33 @@
 
     
 
-#### def createdb(db,ipaddr="localhost",port=5432,login="postgres",passwd="rooter") 
-
+#### createdb 
+- arguments
+    - db
+    - ipaddr = 'localhost'
+    - port = 5432
+    - login = 'postgres'
+    - passwd = 'rooter'
+- comments
     
 
-#### def dropdb(db,ipaddr="localhost",port=5432,login="postgres",passwd="rooter") 
-
+#### dropdb 
+- arguments
+    - db
+    - ipaddr = 'localhost'
+    - port = 5432
+    - login = 'postgres'
+    - passwd = 'rooter'
+- comments
     
 
-#### def getClient(ipaddr="localhost",port=5432,login="postgres",passwd="rooter",dbname="template") 
-
+#### getClient 
+- arguments
+    - ipaddr = 'localhost'
+    - port = 5432
+    - login = 'postgres'
+    - passwd = 'rooter'
+    - dbname = 'template'
+- comments
     
 

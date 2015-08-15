@@ -2,11 +2,16 @@
 
 - /opt/jumpscale7/lib/JumpScale/lib/ssh/nfs/manager.py
 
-#### def addClient(name='*', options='rw,sync') 
-
+#### addClient 
+- arguments
+    - name = '*'
+    - options = 'rw,sync'
+- comments
     
 
-#### def removeClient(name) 
-
+#### removeClient 
+- arguments
+    - name
+- comments
     
 

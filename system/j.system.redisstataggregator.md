@@ -4,11 +4,16 @@
 - Properties
     - redis
 
-#### def popStats(key) 
-
+#### popStats 
+- arguments
+    - key
+- comments
     
 
-#### def pushStats(key, data) 
-
+#### pushStats 
+- arguments
+    - key
+    - data
+- comments
     
 

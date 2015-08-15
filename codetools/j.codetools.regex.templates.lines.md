@@ -4,15 +4,18 @@
 
 regexexamples which find lines
 
-#### def findClasslines() 
-
+#### findClasslines 
+- arguments
+- comments
     
 
-#### def findCommentlines() 
-
+#### findCommentlines 
+- arguments
+- comments
     
 
-#### def findDeflines() 
-
+#### findDeflines 
+- arguments
+- comments
     
 

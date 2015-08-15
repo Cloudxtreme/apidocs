@@ -4,21 +4,42 @@
 - Properties
     - screencmd
 
-#### def attachSession(sessionname, windowname=None,user=None) 
-
+#### attachSession 
+- arguments
+    - sessionname
+    - windowname
+    - user
+- comments
     
 
-#### def createSession(sessionname,screens,user=None) 
-
+#### createSession 
+- arguments
+    - sessionname
+    - screens
+    - user
+- comments
     @param name is name of session
     @screens is list with nr of screens required in session and their names (is [$screenname,...])
 
-#### def createWindow(session, name,user=None) 
-
+#### createWindow 
+- arguments
+    - session
+    - name
+    - user
+- comments
     
 
-#### def executeInScreen(sessionname,screenname,cmd,wait=0, cwd=None, env=None,user="root",tmuxuser=None) 
-
+#### executeInScreen 
+- arguments
+    - sessionname
+    - screenname
+    - cmd
+    - wait = 0
+    - cwd
+    - env
+    - user = 'root'
+    - tmuxuser
+- comments
     @param sessionname Name of the tmux session
     @type sessionname str
     @param screenname Name of the window in the session
@@ -32,35 +53,63 @@
     @param env environment variables for cmd onlt in new screen see newscr
     @type env dict
 
-#### def getPid(session, name,user=None) 
-
+#### getPid 
+- arguments
+    - session
+    - name
+    - user
+- comments
     
 
-#### def getSessions(user=None) 
-
+#### getSessions 
+- arguments
+    - user
+- comments
     
 
-#### def getWindows(session, attemps=5,user=None) 
-
+#### getWindows 
+- arguments
+    - session
+    - attemps = 5
+    - user
+- comments
     
 
-#### def killSession(sessionname,user=None) 
-
+#### killSession 
+- arguments
+    - sessionname
+    - user
+- comments
     
 
-#### def killSessions(user=None) 
-
+#### killSessions 
+- arguments
+    - user
+- comments
     
 
-#### def killWindow(session, name,user=None) 
-
+#### killWindow 
+- arguments
+    - session
+    - name
+    - user
+- comments
     
 
-#### def logWindow(session, name, filename,user=None) 
-
+#### logWindow 
+- arguments
+    - session
+    - name
+    - filename
+    - user
+- comments
     
 
-#### def windowExists(session, name,user=None) 
-
+#### windowExists 
+- arguments
+    - session
+    - name
+    - user
+- comments
     
 

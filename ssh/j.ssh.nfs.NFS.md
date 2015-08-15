@@ -2,19 +2,25 @@
 
 - /opt/jumpscale7/lib/JumpScale/lib/ssh/nfs/manager.py
 
-#### def add(path) 
-
+#### add 
+- arguments
+    - path
+- comments
     
 
-#### def commit() 
-
+#### commit 
+- arguments
+- comments
     
 
-#### def delete(path) 
-
+#### delete 
+- arguments
+    - path
+- comments
     
 
-#### def erase() 
-
+#### erase 
+- arguments
+- comments
     
 

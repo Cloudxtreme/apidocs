@@ -18,32 +18,46 @@
 
 Utility class to configure and store all relevant directory paths
 
-#### def addProtectedDir(path,name="main") 
-
+#### addProtectedDir 
+- arguments
+    - path
+    - name = 'main'
+- comments
     
 
-#### def amInGitConfigRepo() 
-
+#### amInGitConfigRepo 
+- arguments
+- comments
     return parent path where .git is or None when not found
 
-#### def checkInProtectedDir(path) 
-
+#### checkInProtectedDir 
+- arguments
+    - path
+- comments
     
 
-#### def createGitConfigRepo(path) 
-
+#### createGitConfigRepo 
+- arguments
+    - path
+- comments
     
 
-#### def getHrdDir(system=False) 
-
+#### getHrdDir 
+- arguments
+    - system = False
+- comments
     
 
-#### def getPathOfRunningFunction(function) 
-
+#### getPathOfRunningFunction 
+- arguments
+    - function
+- comments
     
 
-#### def init(reinit=False) 
-
+#### init 
+- arguments
+    - reinit = False
+- comments
     Initializes all the configured directories if needed
     
     If a folder attribute is None, set its value to the corresponding
@@ -52,19 +66,27 @@ Utility class to configure and store all relevant directory paths
     @returns: Initialization success
     @rtype: bool
 
-#### def isGitConfigRepo(path) 
-
+#### isGitConfigRepo 
+- arguments
+    - path
+- comments
     
 
-#### def loadProtectedDirs() 
-
+#### loadProtectedDirs 
+- arguments
+- comments
     
 
-#### def removeProtectedDir(path) 
-
+#### removeProtectedDir 
+- arguments
+    - path
+- comments
     
 
-#### def replaceTxtDirVars(txt,additionalArgs=\{\}) 
-
+#### replaceTxtDirVars 
+- arguments
+    - txt
+    - additionalArgs = \{\}
+- comments
     replace $base,$vardir,$cfgDir,$bindir,$codedir,$tmpdir,$logdir,$appdir with props of this class
 

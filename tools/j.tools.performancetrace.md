@@ -4,8 +4,12 @@
 
     
 
-#### def profile(methodstatement, locals=\{\},globals=\{\}) 
-
+#### profile 
+- arguments
+    - methodstatement
+    - locals = \{\}
+    - globals = \{\}
+- comments
     create a wrapper method which has no args and then pass that wrapper method to this method as first arg
     method is passed as a string e.g. 'listDirTest()'
     it remove stats is False the path where the stats are will be returned

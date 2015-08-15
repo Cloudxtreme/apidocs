@@ -4,145 +4,242 @@
 - Properties
     - client
 
-#### def btrfsSubvolCopy(nameFrom,NameDest) 
-
+#### btrfsSubvolCopy 
+- arguments
+    - nameFrom
+    - NameDest
+- comments
     
 
-#### def btrfsSubvolDelete(name) 
-
+#### btrfsSubvolDelete 
+- arguments
+    - name
+- comments
     
 
-#### def btrfsSubvolExists(name) 
-
+#### btrfsSubvolExists 
+- arguments
+    - name
+- comments
     
 
-#### def btrfsSubvolList() 
-
+#### btrfsSubvolList 
+- arguments
+- comments
     
 
-#### def btrfsSubvolNew(name) 
-
+#### btrfsSubvolNew 
+- arguments
+    - name
+- comments
     
 
-#### def commit(name,imagename) 
-
+#### commit 
+- arguments
+    - name
+    - imagename
+- comments
     
 
-#### def copy(name,src,dest) 
-
+#### copy 
+- arguments
+    - name
+    - src
+    - dest
+- comments
     
 
-#### def create(name="",ports="",vols="",volsro="",stdout=True,base="despiegk/mc",nameserver=["8.8.8.8"],replace=True,cpu=None,mem=0,jumpscale=False,ssh=True,myinit=True) 
-
+#### create 
+- arguments
+    - name = ''
+    - ports = ''
+    - vols = ''
+    - volsro = ''
+    - stdout = True
+    - base = 'despiegk/mc'
+    - nameserver = ['8.8.8.8']
+    - replace = True
+    - cpu
+    - mem = 0
+    - jumpscale = False
+    - ssh = True
+    - myinit = True
+- comments
     @param ports in format as follows  "22:8022 80:8080"  the first arg e.g. 22 is the port in the container
     @param vols in format as follows "/var/insidemachine:/var/inhost # /var/1:/var/1 # ..."   '#' is separator
 
-#### def destroy(name) 
-
+#### destroy 
+- arguments
+    - name
+- comments
     
 
-#### def destroyall() 
-
+#### destroyall 
+- arguments
+- comments
     
 
-#### def downloadFile(name, source, dest) 
-
+#### downloadFile 
+- arguments
+    - name
+    - source
+    - dest
+- comments
     get a file located at source in the host to dest on the host
 
-#### def execute(name,path) 
-
+#### execute 
+- arguments
+    - name
+    - path
+- comments
     execute file in docker
 
-#### def exportRsync(name,backupname,key="pub") 
-
+#### exportRsync 
+- arguments
+    - name
+    - backupname
+    - key = 'pub'
+- comments
     
 
-#### def exportTgz(name,backupname) 
-
+#### exportTgz 
+- arguments
+    - name
+    - backupname
+- comments
     
 
-#### def getImages() 
-
+#### getImages 
+- arguments
+- comments
     
 
-#### def getInfo(name) 
-
+#### getInfo 
+- arguments
+    - name
+- comments
     
 
-#### def getIp(name) 
-
+#### getIp 
+- arguments
+    - name
+- comments
     
 
-#### def getProcessList(name, stdout=True) 
-
+#### getProcessList 
+- arguments
+    - name
+    - stdout = True
+- comments
     @return [["$name",$pid,$mem,$parent],....,[$mem,$cpu]]
     last one is sum of mem & cpu
 
-#### def getPubPortForInternalPort(name,port) 
-
+#### getPubPortForInternalPort 
+- arguments
+    - name
+    - port
+- comments
     
 
-#### def getSSH(name,stdout=False) 
-
+#### getSSH 
+- arguments
+    - name
+    - stdout = False
+- comments
     
 
-#### def importRsync(backupname,name,basename="",key="pub") 
-
+#### importRsync 
+- arguments
+    - backupname
+    - name
+    - basename = ''
+    - key = 'pub'
+- comments
     @param basename is the name of a start of a machine locally, will be used as basis and then the source will be synced over it
 
-#### def importTgz(backupname,name) 
-
+#### importTgz 
+- arguments
+    - backupname
+    - name
+- comments
     
 
-#### def inspect(name) 
-
+#### inspect 
+- arguments
+    - name
+- comments
     
 
-#### def installJumpscale(name) 
-
+#### installJumpscale 
+- arguments
+    - name
+- comments
     
 
-#### def list() 
-
+#### list 
+- arguments
+- comments
     return list of names
 
-#### def ps() 
-
+#### ps 
+- arguments
+- comments
     return detailed info
 
-#### def pull(imagename) 
-
+#### pull 
+- arguments
+    - imagename
+- comments
     
 
-#### def pushSSHKey(name) 
-
+#### pushSSHKey 
+- arguments
+    - name
+- comments
     
 
-#### def removeImages(tag="<none><none>") 
-
+#### removeImages 
+- arguments
+    - tag = '<none>:<none>'
+- comments
     
 
-#### def removeRedundantFiles(name) 
-
+#### removeRedundantFiles 
+- arguments
+    - name
+- comments
     
 
-#### def restart(name) 
-
+#### restart 
+- arguments
+    - name
+- comments
     
 
-#### def run(name,cmd) 
-
+#### run 
+- arguments
+    - name
+    - cmd
+- comments
     
 
-#### def setHostName(name) 
-
+#### setHostName 
+- arguments
+    - name
+- comments
     
 
-#### def stop(name) 
-
+#### stop 
+- arguments
+    - name
+- comments
     
 
-#### def uploadFile(name, source, dest) 
-
+#### uploadFile 
+- arguments
+    - name
+    - source
+    - dest
+- comments
     put a file located at source on the host to dest into the container
 

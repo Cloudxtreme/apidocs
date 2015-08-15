@@ -5,7 +5,13 @@
     - connection
     - connect
 
-#### def connect(addr='localhost', port=22, passwd=None,verbose=True,keypath=None) 
-
+#### connect 
+- arguments
+    - addr = 'localhost'
+    - port = 22
+    - passwd
+    - verbose = True
+    - keypath
+- comments
     
 

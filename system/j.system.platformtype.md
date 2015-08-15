@@ -5,64 +5,86 @@
     - myplatform
     - platformParents
 
-#### def addPlatform(name,parent) 
-
+#### addPlatform 
+- arguments
+    - name
+    - parent
+- comments
     
 
-#### def checkMatch(match) 
-
+#### checkMatch 
+- arguments
+    - match
+- comments
     match is in form of linux64,darwin
     if any of the items e.g. darwin is in getMyRelevantPlatforms then return True
 
-#### def dieIfNotPlatform(platform) 
-
+#### dieIfNotPlatform 
+- arguments
+    - platform
+- comments
     
 
-#### def getChildren(name) 
-
+#### getChildren 
+- arguments
+    - name
+- comments
     
 
-#### def getMyRelevantPlatforms() 
-
+#### getMyRelevantPlatforms 
+- arguments
+- comments
     
 
-#### def getParents(name) 
-
+#### getParents 
+- arguments
+    - name
+- comments
     
 
-#### def getPlatforms() 
-
+#### getPlatforms 
+- arguments
+- comments
     
 
-#### def has_parent(name) 
-
+#### has_parent 
+- arguments
+    - name
+- comments
     
 
-#### def isGeneric() 
-
+#### isGeneric 
+- arguments
+- comments
     Checks whether the platform is generic (they all should)
 
-#### def isHyperV() 
-
+#### isHyperV 
+- arguments
+- comments
     Check whether the system supports HyperV
 
-#### def isLinux() 
-
+#### isLinux 
+- arguments
+- comments
     Checks whether the platform is Linux-based
 
-#### def isUnix() 
-
+#### isUnix 
+- arguments
+- comments
     Checks whether the platform is Unix-based
 
-#### def isVirtualBox() 
-
+#### isVirtualBox 
+- arguments
+- comments
     Check whether the system supports VirtualBox
 
-#### def isWindows() 
-
+#### isWindows 
+- arguments
+- comments
     Checks whether the platform is Windows-based
 
-#### def isXen() 
-
+#### isXen 
+- arguments
+- comments
     Checks whether Xen support is enabled
 

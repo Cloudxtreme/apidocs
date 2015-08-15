@@ -2,32 +2,52 @@
 
 - /opt/jumpscale7/lib/JumpScale/lib/ssh/ubuntu/manager.py
 
-#### def commit(device=None) 
-
+#### commit 
+- arguments
+    - device
+- comments
     
 
-#### def ipGet(device) 
-
+#### ipGet 
+- arguments
+    - device
+- comments
     Get IP of devie
     Result (ip, netmask, gateway)
 
-#### def ipReset(device, commit=False) 
-
+#### ipReset 
+- arguments
+    - device
+    - commit = False
+- comments
     
 
-#### def ipSet(device, ip=None, netmask=None, gw=None, inet='dhcp', commit=False) 
-
+#### ipSet 
+- arguments
+    - device
+    - ip
+    - netmask
+    - gw
+    - inet = 'dhcp'
+    - commit = False
+- comments
     Return all interfaces that has this ifname
 
-#### def nsGet() 
-
+#### nsGet 
+- arguments
+- comments
     
 
-#### def nsSet(nameservers=[], commit=False) 
-
+#### nsSet 
+- arguments
+    - nameservers = []
+    - commit = False
+- comments
     
 
-#### def setHostname(hostname) 
-
+#### setHostname 
+- arguments
+    - hostname
+- comments
     
 

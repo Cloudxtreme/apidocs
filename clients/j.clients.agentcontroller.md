@@ -2,19 +2,36 @@
 
 - /opt/jumpscale7/lib/JumpScale/grid/agentcontroller/AgentControllerFactory.py
 
-#### def get(addr=None, port=PORT, login='root', passwd=None, new=False) 
-
+#### get 
+- arguments
+    - addr
+    - port = 4444
+    - login = 'root'
+    - passwd
+    - new = False
+- comments
     @if None will be same as master
 
-#### def getByInstance(instance=None, new=False) 
-
+#### getByInstance 
+- arguments
+    - instance
+    - new = False
+- comments
     
 
-#### def getInstanceConfig(instance=None) 
-
+#### getInstanceConfig 
+- arguments
+    - instance
+- comments
     
 
-#### def getProxy(category="core", addr=None, port=PORT, login='root', passwd=None) 
-
+#### getProxy 
+- arguments
+    - category = 'core'
+    - addr
+    - port = 4444
+    - login = 'root'
+    - passwd
+- comments
     
 

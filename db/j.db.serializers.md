@@ -11,8 +11,11 @@
     - hrd
     - types
 
-#### def get(serializationstr,key="") 
-
+#### get 
+- arguments
+    - serializationstr
+    - key = ''
+- comments
     serializationstr FORMATS SUPPORTED FOR NOW
         m=MESSAGEPACK 
         c=COMPRESSION WITH BLOSC
@@ -30,16 +33,21 @@
     
     this method returns
 
-#### def getBlosc() 
-
+#### getBlosc 
+- arguments
+- comments
     
 
-#### def getMessagePack() 
-
+#### getMessagePack 
+- arguments
+- comments
     
 
-#### def getSerializerType(type,key="") 
-
+#### getSerializerType 
+- arguments
+    - type
+    - key = ''
+- comments
     serializationstr FORMATS SUPPORTED FOR NOW
         m=MESSAGEPACK 
         c=COMPRESSION WITH BLOSC

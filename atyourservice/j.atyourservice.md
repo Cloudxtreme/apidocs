@@ -6,64 +6,116 @@
     - domains
     - hrd
 
-#### def findParents(service=None, name='', path='', limit=None) 
-
+#### findParents 
+- arguments
+    - service
+    - name = ''
+    - path = ''
+    - limit
+- comments
     
 
-#### def findProducer(producercategory, instancename) 
-
+#### findProducer 
+- arguments
+    - producercategory
+    - instancename
+- comments
     
 
-#### def findServices(domain="", name="", instance="", parent=None, precise=False) 
-
+#### findServices 
+- arguments
+    - domain = ''
+    - name = ''
+    - instance = ''
+    - parent
+    - precise = False
+- comments
     FindServices looks for actual services that are created
 
-#### def findTemplates(domain="", name="", parent=None) 
-
+#### findTemplates 
+- arguments
+    - domain = ''
+    - name = ''
+    - parent
+- comments
     
 
-#### def get(domain="", name="", instance="", parent='', precise=False) 
-
+#### get 
+- arguments
+    - domain = ''
+    - name = ''
+    - instance = ''
+    - parent = ''
+    - precise = False
+- comments
     Return service indentifier by domain,name and instance
     throw error if service is not found or if more than one service is found
 
-#### def getActionsBaseClass() 
-
+#### getActionsBaseClass 
+- arguments
+- comments
     
 
-#### def getDomains() 
-
+#### getDomains 
+- arguments
+- comments
     
 
-#### def getFromStr(representation, parent=None) 
-
+#### getFromStr 
+- arguments
+    - representation
+    - parent
+- comments
     return a service instance from its representation 'domain      :name       :instance'
 
-#### def getId(domain, name, instance, parent=None) 
-
+#### getId 
+- arguments
+    - domain
+    - name
+    - instance
+    - parent
+- comments
     
 
-#### def loadService(path, parent=None) 
-
+#### loadService 
+- arguments
+    - path
+    - parent
+- comments
     Load a service instance from files located at path.
     path should point to a directory that contains these files:
         service.hrd
         actions.py
 
-#### def loadServicesInSQL() 
-
+#### loadServicesInSQL 
+- arguments
+- comments
     walk over all services and load into sqllite
 
-#### def new(domain="", name="", instance="main", path=None, parent=None, args=\{\}) 
-
+#### new 
+- arguments
+    - domain = ''
+    - name = ''
+    - instance = 'main'
+    - path
+    - parent
+    - args = \{\}
+- comments
     will create a new service
 
-#### def remove(domain="", name="", instance="", parent=None) 
-
+#### remove 
+- arguments
+    - domain = ''
+    - name = ''
+    - instance = ''
+    - parent
+- comments
     
 
-#### def updateTemplatesRepo(repos=[]) 
-
+#### updateTemplatesRepo 
+- arguments
+    - repos = []
+- comments
     update the git repo that contains the service templates
     args:
         repos : list of dict of repos to update, if empty, all repos are updated

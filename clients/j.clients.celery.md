@@ -5,23 +5,39 @@
     - app
     - actors
 
-#### def celeryClient(actorName,url="redis//localhost9999/0",actorsPath="actors",local=False) 
-
+#### celeryClient 
+- arguments
+    - actorName
+    - url = 'redis://localhost:9999/0'
+    - actorsPath = 'actors'
+    - local = False
+- comments
     
 
-#### def celeryStart(url="redis//localhost9999/0",concurrency=4,actorsPath="actors") 
-
+#### celeryStart 
+- arguments
+    - url = 'redis://localhost:9999/0'
+    - concurrency = 4
+    - actorsPath = 'actors'
+- comments
     
 
-#### def flowerStart(url="redis//localhost9999/0") 
-
+#### flowerStart 
+- arguments
+    - url = 'redis://localhost:9999/0'
+- comments
     
 
-#### def getCodeClient(path,actorName) 
-
+#### getCodeClient 
+- arguments
+    - path
+    - actorName
+- comments
     
 
-#### def getCodeServer(path) 
-
+#### getCodeServer 
+- arguments
+    - path
+- comments
     
 

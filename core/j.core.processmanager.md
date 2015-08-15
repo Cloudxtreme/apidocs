@@ -8,31 +8,40 @@
 
     
 
-#### def checkStartupOlderThan(secago) 
-
+#### checkStartupOlderThan 
+- arguments
+    - secago
+- comments
     
 
-#### def getCmdsObject(category) 
-
+#### getCmdsObject 
+- arguments
+    - category
+- comments
     
 
-#### def getStartupTime() 
-
+#### getStartupTime 
+- arguments
+- comments
     
 
-#### def loadCmds() 
-
+#### loadCmds 
+- arguments
+- comments
     
 
-#### def loadMonitorObjectTypes() 
-
+#### loadMonitorObjectTypes 
+- arguments
+- comments
     
 
-#### def restartWorkers() 
-
+#### restartWorkers 
+- arguments
+- comments
     
 
-#### def start() 
-
+#### start 
+- arguments
+- comments
     
 

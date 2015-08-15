@@ -7,27 +7,41 @@
     - client
     - jinjaEnv
 
-#### def generate(baseURL, serverOuput, clientOutput) 
-
+#### generate 
+- arguments
+    - baseURL
+    - serverOuput
+    - clientOutput
+- comments
     
 
-#### def generateActors(destpath) 
-
+#### generateActors 
+- arguments
+    - destpath
+- comments
     
 
-#### def generateClient(outputPath) 
-
+#### generateClient 
+- arguments
+    - outputPath
+- comments
     
 
-#### def generateServer(outputPath) 
-
+#### generateServer 
+- arguments
+    - outputPath
+- comments
     
 
-#### def loadSpecFromFile(path) 
-
+#### loadSpecFromFile 
+- arguments
+    - path
+- comments
     
 
-#### def loadSpecFromStr(spec) 
-
+#### loadSpecFromStr 
+- arguments
+    - spec
+- comments
     
 

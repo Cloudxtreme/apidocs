@@ -2,7 +2,10 @@
 
 - /opt/jumpscale7/lib/JumpScale/lib/shorewall/shorewall.py
 
-#### def get(host, password) 
-
+#### get 
+- arguments
+    - host
+    - password
+- comments
     
 

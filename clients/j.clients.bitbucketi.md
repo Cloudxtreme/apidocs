@@ -4,15 +4,21 @@
 
 interface on i
 
-#### def getAccount(accountname="") 
-
+#### getAccount 
+- arguments
+    - accountname = ''
+- comments
     
 
-#### def getRepo(accountname="",reponame="") 
-
+#### getRepo 
+- arguments
+    - accountname = ''
+    - reponame = ''
+- comments
     
 
-#### def init() 
-
+#### init 
+- arguments
+- comments
     
 

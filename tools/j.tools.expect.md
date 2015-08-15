@@ -2,8 +2,10 @@
 
 - /opt/jumpscale7/lib/JumpScale/baselib/expect/Expect.py
 
-#### @staticmethod 
-
+#### new 
+- arguments
+    - cmd
+- comments
     Create a new Expect session
     
     @param cmd: Command to execute

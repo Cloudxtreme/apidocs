@@ -5,19 +5,35 @@
     - loglevel
     - logenable
 
-#### def get(path=None,content="",prefixWithName=True,keepformat=False,args=OrderedDict(),templates=[]) 
-
+#### get 
+- arguments
+    - path
+    - content = ''
+    - prefixWithName = True
+    - keepformat = False
+    - args = OrderedDict()
+    - templates = []
+- comments
     @param path
 
-#### def getHRDFromDict(ddict=\{\}) 
-
+#### getHRDFromDict 
+- arguments
+    - ddict = \{\}
+- comments
     
 
-#### def getHRDFromOsisObject(osisobj,prefixRootObjectType=True) 
-
+#### getHRDFromOsisObject 
+- arguments
+    - osisobj
+    - prefixRootObjectType = True
+- comments
     
 
-#### def log(msg,category="",level=5) 
-
+#### log 
+- arguments
+    - msg
+    - category = ''
+    - level = 5
+- comments
     
 

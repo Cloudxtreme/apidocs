@@ -2,31 +2,50 @@
 
 - /opt/jumpscale7/lib/JumpScale/lib/btrfs/BtrfsExtension.py
 
-#### def deviceAdd(path, dev) 
-
+#### deviceAdd 
+- arguments
+    - path
+    - dev
+- comments
     Add a device to a filesystem.
 
-#### def deviceDelete(dev, path) 
-
+#### deviceDelete 
+- arguments
+    - dev
+    - path
+- comments
     Remove a device from a filesystem.
 
-#### def getSpaceUsage(path) 
-
+#### getSpaceUsage 
+- arguments
+    - path
+- comments
     
 
-#### def snapshotReadOnlyCreate(path, dest) 
-
+#### snapshotReadOnlyCreate 
+- arguments
+    - path
+    - dest
+- comments
     Create a readonly snapshot
 
-#### def subvolumeCreate(path, name) 
-
+#### subvolumeCreate 
+- arguments
+    - path
+    - name
+- comments
     Create a subvolume in <dest> (or the current directory if not passed).
 
-#### def subvolumeDelete(path, name) 
-
+#### subvolumeDelete 
+- arguments
+    - path
+    - name
+- comments
     Delete the subvolume <name>.
 
-#### def subvolumeList(path) 
-
+#### subvolumeList 
+- arguments
+    - path
+- comments
     List the snapshot/subvolume of a filesystem.
 

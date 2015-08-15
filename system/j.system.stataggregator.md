@@ -5,47 +5,79 @@
     - stats
     - log
 
-#### def clean() 
-
+#### clean 
+- arguments
+- comments
     
 
-#### def delete(prefix) 
-
+#### delete 
+- arguments
+    - prefix
+- comments
     
 
-#### def get(key) 
-
+#### get 
+- arguments
+    - key
+- comments
     
 
-#### def getAvgMax(key) 
-
+#### getAvgMax 
+- arguments
+    - key
+- comments
     
 
-#### def getTime() 
-
+#### getTime 
+- arguments
+- comments
     
 
-#### def list(prefix="",memonly=False,avgmax=False) 
-
+#### list 
+- arguments
+    - prefix = ''
+    - memonly = False
+    - avgmax = False
+- comments
     
 
-#### def loadStat(key=None, data=None) 
-
+#### loadStat 
+- arguments
+    - key
+    - data
+- comments
     
 
-#### def registerStats(key,ttype="N",memonly=False,percent=False) 
-
+#### registerStats 
+- arguments
+    - key
+    - ttype = 'N'
+    - memonly = False
+    - percent = False
+- comments
     type is N or D (D from diff)
 
-#### def send2carbon() 
-
+#### send2carbon 
+- arguments
+- comments
     
 
-#### def send2log(name,key,val) 
-
+#### send2log 
+- arguments
+    - name
+    - key
+    - val
+- comments
     
 
-#### def set(key,val,ttype="N",remember=True,memonly=False,percent=False) 
-
+#### set 
+- arguments
+    - key
+    - val
+    - ttype = 'N'
+    - remember = True
+    - memonly = False
+    - percent = False
+- comments
     
 

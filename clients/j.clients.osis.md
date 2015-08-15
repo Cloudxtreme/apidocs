@@ -5,22 +5,41 @@
     - osisConnectionsCat
     - osisConnections
 
-#### def get(ipaddr=None, port=5544,user=None,passwd=None,ssl=False,gevent=False) 
-
+#### get 
+- arguments
+    - ipaddr
+    - port = 5544
+    - user
+    - passwd
+    - ssl = False
+    - gevent = False
+- comments
     
 
-#### def getByInstance(instance=None, ssl=False, gevent=False,die=True) 
-
+#### getByInstance 
+- arguments
+    - instance
+    - ssl = False
+    - gevent = False
+    - die = True
+- comments
     
 
-#### def getCategory(client, namespace, category) 
-
+#### getCategory 
+- arguments
+    - client
+    - namespace
+    - category
+- comments
     how to use
     @param client: osiclient
     @param namespace: OSIS namespace
     @param category: OSIS category
 
-#### def getNamespace(namespace, client=None) 
-
+#### getNamespace 
+- arguments
+    - namespace
+    - client
+- comments
     
 

@@ -2,43 +2,61 @@
 
 - /opt/jumpscale7/lib/JumpScale/core/system/process.py
 
-#### def appCheckActive(appname) 
-
+#### appCheckActive 
+- arguments
+    - appname
+- comments
     
 
-#### def appGetPids(appname) 
-
+#### appGetPids 
+- arguments
+    - appname
+- comments
     
 
-#### def appGetPidsActive(appname) 
-
+#### appGetPidsActive 
+- arguments
+    - appname
+- comments
     
 
-#### def appNrInstances(appname) 
-
+#### appNrInstances 
+- arguments
+    - appname
+- comments
     
 
-#### def appNrInstancesActive(appname) 
-
+#### appNrInstancesActive 
+- arguments
+    - appname
+- comments
     
 
-#### def appsGet() 
-
+#### appsGet 
+- arguments
+- comments
     
 
-#### def appsGetNames() 
-
+#### appsGetNames 
+- arguments
+- comments
     
 
-#### def checkProcessForPid(pid, process) 
-
+#### checkProcessForPid 
+- arguments
+    - pid
+    - process
+- comments
     Check whether a given pid actually does belong to a given process name.
     @param pid: (int) the pid to check
     @param process: (str) the process that should have the pid
     @return status: (int) 0 when ok, 1 when not ok.
 
-#### def checkProcessRunning(process, min=1) 
-
+#### checkProcessRunning 
+- arguments
+    - process
+    - min = 1
+- comments
     Check if a certain process is running on the system.
     you can specify minimal running processes needed.
     @param process: String with the name of the process we
@@ -46,20 +64,36 @@
     @param min: (int) minimal threads that should run.
     @return True if ok
 
-#### def checkstart(cmd,filterstr,nrtimes=1,retry=1) 
-
+#### checkstart 
+- arguments
+    - cmd
+    - filterstr
+    - nrtimes = 1
+    - retry = 1
+- comments
     @param cmd is which command to execute to start e.g. a daemon
     @param filterstr is what to check on if its running
     @param nrtimes is how many processes need to run
 
-#### def checkstop(cmd,filterstr,retry=1,nrinstances=0) 
-
+#### checkstop 
+- arguments
+    - cmd
+    - filterstr
+    - retry = 1
+    - nrinstances = 0
+- comments
     @param cmd is which command to execute to start e.g. a daemon
     @param filterstr is what to check on if its running
     @param nrtimes is how many processes need to run
 
-#### def execute(command , dieOnNonZeroExitCode=True, outputToStdout=False, useShell = False, ignoreErrorOutput=False) 
-
+#### execute 
+- arguments
+    - command
+    - dieOnNonZeroExitCode = True
+    - outputToStdout = False
+    - useShell = False
+    - ignoreErrorOutput = False
+- comments
     Executes a command, returns the exitcode and the output
     @param command: command to execute
     @param dieOnNonZeroExitCode: boolean to die if got non zero exitcode
@@ -68,8 +102,16 @@
     @rtype: integer represents the exitcode plus the output of the executed command
     if exitcode is not zero then the executed command returned with errors
 
-#### def executeAsync(command, args = [], printCommandToStdout = False, redirectStreams = True, argsInCommand = False, useShell = None, outputToStdout=True) 
-
+#### executeAsync 
+- arguments
+    - command
+    - args = []
+    - printCommandToStdout = False
+    - redirectStreams = True
+    - argsInCommand = False
+    - useShell
+    - outputToStdout = True
+- comments
     Execute command asynchronous. By default, the input, output and error streams of the command will be piped to the returned Popen object. Be sure to call commands that don't expect user input, or send input to the stdin parameter of the returning Popen object.
     @param command: Command to execute. (string)
     @param args: [Optional, [] by default] Arguments to be passed to the command. (Array of string)
@@ -79,27 +121,41 @@
     @param useShell: [Optional, False by default on Windows, True by default on Linux] Indicates if the command should be executed throug the shell.
     @return: If redirectStreams is true, this function returns a subprocess.Popen object representing the started process. Otherwise, it will return the pid-number of the started process.
 
-#### def executeCode(code,params=None) 
-
+#### executeCode 
+- arguments
+    - code
+    - params
+- comments
     execute a method (python code with def)
     use params=j.core.params.get() as input
 
-#### def executeInSandbox(command, timeout=0) 
-
+#### executeInSandbox 
+- arguments
+    - command
+    - timeout = 0
+- comments
     Executes a command
     @param command: string (command to be executed)
     @param timeout: 0 means to ever, expressed in seconds
 
-#### def executeIndependant(cmd) 
-
+#### executeIndependant 
+- arguments
+    - cmd
+- comments
     
 
-#### def executeScript(scriptName) 
-
+#### executeScript 
+- arguments
+    - scriptName
+- comments
     execute python script from shell/Interactive Window
 
-#### def executeWithoutPipe(command, dieOnNonZeroExitCode = True, printCommandToStdout = False) 
-
+#### executeWithoutPipe 
+- arguments
+    - command
+    - dieOnNonZeroExitCode = True
+    - printCommandToStdout = False
+- comments
     Execute command without opening pipes, returns only the exitcode
     This is platform independent
     @param command: command to execute
@@ -109,28 +165,38 @@
     @rtype: integer represents the exitcode
     if exitcode is not zero then the executed command returned with errors
 
-#### def getDefunctProcesses() 
-
+#### getDefunctProcesses 
+- arguments
+- comments
     
 
-#### def getEnviron(pid) 
-
+#### getEnviron 
+- arguments
+    - pid
+- comments
     
 
-#### def getMyProcessObject() 
-
+#### getMyProcessObject 
+- arguments
+- comments
     
 
-#### def getPidsByFilter(filterstr) 
-
+#### getPidsByFilter 
+- arguments
+    - filterstr
+- comments
     
 
-#### def getPidsByPort(port) 
-
+#### getPidsByPort 
+- arguments
+    - port
+- comments
     Returns pid of the process that is listening on the given port
 
-#### def getProcessByPort(port) 
-
+#### getProcessByPort 
+- arguments
+    - port
+- comments
     Returns the full name of the process that is listening on the given port
     
     @param port: the port for which to find the command
@@ -138,49 +204,77 @@
     @return: full process name
     @rtype: string
 
-#### def getProcessObject(pid) 
-
+#### getProcessObject 
+- arguments
+    - pid
+- comments
     
 
-#### def getProcessPid(process) 
-
+#### getProcessPid 
+- arguments
+    - process
+- comments
     
 
-#### def getProcessPidsFromUser(user) 
-
+#### getProcessPidsFromUser 
+- arguments
+    - user
+- comments
     
 
-#### def getSimularProcesses() 
-
+#### getSimularProcesses 
+- arguments
+- comments
     
 
-#### def isPidAlive(pid) 
-
+#### isPidAlive 
+- arguments
+    - pid
+- comments
     Checks whether this pid is alive.
     For unix, a signal is sent to check that the process is alive.
     For windows, the process information is retrieved and it is double checked that the process is python.exe
     or pythonw.exe
 
-#### def kill(pid, sig=None) 
-
+#### kill 
+- arguments
+    - pid
+    - sig
+- comments
     Kill a process with a signal
     @param pid: pid of the process to kill
     @param sig: signal. If no signal is specified signal.SIGKILL is used
 
-#### def killProcessByName(name,sig=None) 
-
+#### killProcessByName 
+- arguments
+    - name
+    - sig
+- comments
     
 
-#### def killProcessByPort(port) 
-
+#### killProcessByPort 
+- arguments
+    - port
+- comments
     
 
-#### def killUserProcesses(user) 
-
+#### killUserProcesses 
+- arguments
+    - user
+- comments
     
 
-#### def run(commandline, showOutput=False, captureOutput=True, maxSeconds=0, 
-
+#### run 
+- arguments
+    - commandline
+    - showOutput = False
+    - captureOutput = True
+    - maxSeconds = 0
+    - stopOnError = True
+    - user
+    - group
+    - **kwargs
+- comments
     Execute a command and wait for its termination
     
     This function spawns a subprocess which executes the given command line in a
@@ -243,8 +337,15 @@
     @return: Tuple containing subprocess exitcode, stdout and stderr output
     @rtype: tuple(number, string, string)
 
-#### def runDaemon(commandline, stdout=None, stderr=None, user=None, group=None, 
-
+#### runDaemon 
+- arguments
+    - commandline
+    - stdout
+    - stderr
+    - user
+    - group
+    - env
+- comments
     Run an application as a background process
     
     This function will execute the given commandline decoupled from the host
@@ -286,8 +387,14 @@
     @return: PID of the daemonized process
     @rtype: number
 
-#### def runScript(script, showOutput=False, captureOutput=True, maxSeconds=0, 
-
+#### runScript 
+- arguments
+    - script
+    - showOutput = False
+    - captureOutput = True
+    - maxSeconds = 0
+    - stopOnError = True
+- comments
     Execute a Python script
     
     This function executes a Python script, making sure the script output will
@@ -306,8 +413,11 @@
     
     @see: jumpscale.system.process.run
 
-#### def setEnvironmentVariable(varnames, varvalues) 
-
+#### setEnvironmentVariable 
+- arguments
+    - varnames
+    - varvalues
+- comments
     Set the value of the environment variables C\{varnames\}. Existing variable are overwritten
     
     @param varnames: A list of the names of all the environment variables to set

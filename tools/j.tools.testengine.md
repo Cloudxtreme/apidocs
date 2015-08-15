@@ -6,15 +6,26 @@
     - paths
     - tests
 
-#### def initTests(noOsis, osisip="127.0.0.1",login="",passwd="") #@todo implement remote osis 
-
+#### initTests 
+- arguments
+    - noOsis
+    - osisip = '127.0.0.1'
+    - login = ''
+    - passwd = ''
+- comments
     
 
-#### def runTests(testrunname=None,debug=False) 
-
+#### runTests 
+- arguments
+    - testrunname
+    - debug = False
+- comments
     
 
-#### def testFile(testrunname, filepath) 
-
+#### testFile 
+- arguments
+    - testrunname
+    - filepath
+- comments
     
 

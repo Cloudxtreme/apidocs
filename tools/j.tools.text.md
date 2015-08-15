@@ -34,20 +34,38 @@
     - getInt
     - getList
 
-#### @staticmethod 
-
+#### addCmd 
+- arguments
+    - out
+    - entity
+    - cmd
+- comments
     
 
-#### @staticmethod 
-
+#### addTimeHR 
+- arguments
+    - line
+    - epoch
+    - start = 50
+- comments
     
 
-#### @staticmethod 
-
+#### addVal 
+- arguments
+    - out
+    - name
+    - val
+    - addtimehr = False
+- comments
     
 
-#### @staticmethod 
-
+#### ask 
+- arguments
+    - content
+    - name
+    - args = \{\}
+    - ask = True
+- comments
     look for @ASK statements in text, where found replace with input from user
     
     syntax for ask is:
@@ -64,45 +82,70 @@
     
     @ASK can be at any position in the text
 
-#### @staticmethod 
-
+#### dealWithList 
+- arguments
+    - text
+- comments
     look for [something,2] the comma needs to be converted to \k
 
-#### @staticmethod 
-
+#### dealWithQuote 
+- arguments
+    - text
+- comments
     look for 'something,else' the comma needs to be converted to \k
 
-#### @staticmethod 
-
+#### eval 
+- arguments
+    - code
+- comments
     look for \{\{\}\} in code and evaluate as python result is converted back to str
 
-#### @staticmethod 
-
+#### getBool 
+- arguments
+    - text
+- comments
     
 
-#### @staticmethod 
-
+#### getDict 
+- arguments
+    - text
+    - ttype
+    - deserialize = False
+- comments
     keys are always treated as string
     @type can be int,bool or float (otherwise its always str)
 
-#### @staticmethod 
-
+#### getFloat 
+- arguments
+    - text
+- comments
     
 
-#### @staticmethod 
-
+#### getInt 
+- arguments
+    - text
+- comments
     
 
-#### @staticmethod 
-
+#### getList 
+- arguments
+    - text
+    - ttype
+    - deserialize = False
+- comments
     @type can be int,bool or float (otherwise its always str)
 
-#### @staticmethod 
-
+#### getMacroCandidates 
+- arguments
+    - txt
+- comments
     look for \{\{\}\} return as list
 
-#### @staticmethod 
-
+#### hrd2machinetext 
+- arguments
+    - value
+    - onlyone = False
+- comments
     'something ' removes ''
     all spaces & commas & : inside ' '  are converted
      SPACE -> \S
@@ -111,24 +154,34 @@
      : -> \D
      \n -> \N
 
-#### @staticmethod 
-
+#### isFloat 
+- arguments
+    - text
+- comments
     
 
-#### @staticmethod 
-
+#### isInt 
+- arguments
+    - text
+- comments
     
 
-#### @staticmethod 
-
+#### isNumeric 
+- arguments
+    - txt
+- comments
     
 
-#### @staticmethod 
-
+#### lstrip 
+- arguments
+    - content
+- comments
     remove all spaces at beginning & end of line when relevant
 
-#### @staticmethod 
-
+#### machinetext2str 
+- arguments
+    - value
+- comments
     do reverse of:
                 SPACE -> \S
                 " -> \Q
@@ -137,8 +190,10 @@
                 
     -> \N
 
-#### @staticmethod 
-
+#### machinetext2val 
+- arguments
+    - value
+- comments
     do reverse of:
          SPACE -> \S
          " -> \Q
@@ -146,49 +201,84 @@
          : -> \D
          \n -> return
 
-#### @staticmethod 
-
+#### prefix 
+- arguments
+    - prefix
+    - txt
+- comments
     
 
-#### @staticmethod 
-
+#### prefix_remove 
+- arguments
+    - prefix
+    - txt
+    - onlyPrefix = False
+- comments
     @param onlyPrefix if True means only when prefix found will be returned, rest discarded
 
-#### @staticmethod 
-
+#### prefix_remove_withtrailing 
+- arguments
+    - prefix
+    - txt
+    - onlyPrefix = False
+- comments
     there can be chars for prefix (e.g. '< :*: aline'  and this function looking for :*: would still work and ignore '< ')
     @param onlyPrefix if True means only when prefix found will be returned, rest discarded
 
-#### @staticmethod 
-
+#### pythonObjToStr 
+- arguments
+    - obj
+    - multiline = True
+    - canBeDict = True
+    - partial = False
+- comments
     try to convert a python object to string representation works for None, bool, integer, float, dict, list
 
-#### @staticmethod 
-
+#### pythonObjToStr1line 
+- arguments
+    - obj
+- comments
     
 
-#### @staticmethod 
-
+#### replaceQuotes 
+- arguments
+    - value
+    - replacewith
+- comments
     
 
-#### @staticmethod 
-
+#### str2var 
+- arguments
+    - string
+- comments
     convert list, dict of strings 
     or convert 1 string to python objects
 
-#### @staticmethod 
-
+#### toAscii 
+- arguments
+    - value
+    - maxlen = 0
+- comments
     
 
-#### @staticmethod 
-
+#### toSafePath 
+- arguments
+    - txt
+    - maxlen = 0
+- comments
     process string so it can be used in a path on windows or linux
 
-#### @staticmethod 
-
+#### toStr 
+- arguments
+    - value
+    - codec = 'utf-8'
+- comments
     
 
-#### @staticmethod 
-
+#### toUnicode 
+- arguments
+    - value
+    - codec = 'utf-8'
+- comments
     
 

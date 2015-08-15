@@ -2,8 +2,10 @@
 
 - /opt/jumpscale7/lib/JumpScale/baselib/lrucache/LRUCacheFactory.py
 
-#### def getRCache(nritems) 
-
+#### getRCache 
+- arguments
+    - nritems
+- comments
     Least-Recently-Used (LRU) cache.
     Written by http://evan.prodromou.name/Software/Python/LRUCache
     
@@ -43,7 +45,12 @@
     for j in cache:   # iterate (in LRU order)
         print j, cache[j] # iterator produces keys, not values
 
-#### def getRWCache(nrItemsReadCache,nrItemsWriteCache=50,maxTimeWriteCache=2000,writermethod=None) 
-
+#### getRWCache 
+- arguments
+    - nrItemsReadCache
+    - nrItemsWriteCache = 50
+    - maxTimeWriteCache = 2000
+    - writermethod
+- comments
     
 

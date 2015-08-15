@@ -8,104 +8,210 @@
     - CODEDIR
     - TYPE
 
-#### def changeDir(path,create=False) 
-
+#### changeDir 
+- arguments
+    - path
+    - create = False
+- comments
     Changes Current Directory
     @param path: string (Directory path to be changed to)
 
-#### def changeLoginPasswdGitRepos(provider,login,passwd) 
-
+#### changeLoginPasswdGitRepos 
+- arguments
+    - provider
+    - login
+    - passwd
+- comments
     walk over all git repo's found in account & change login/passwd
 
-#### def chdir(ddir="") 
-
+#### chdir 
+- arguments
+    - ddir = ''
+- comments
     if ddir=="" then will go to tmpdir
 
-#### def checkDirOrLinkToDir(fullpath) 
-
+#### checkDirOrLinkToDir 
+- arguments
+    - fullpath
+- comments
     check if path is dir or link to a dir
 
-#### def checkInstalled(cmdname) 
-
+#### checkInstalled 
+- arguments
+    - cmdname
+- comments
     @param cmdname is cmd to check e.g. curl
 
-#### def chmod(path,permissions) 
-
+#### chmod 
+- arguments
+    - path
+    - permissions
+- comments
     @param permissions e.g. 0o660 (USE OCTAL !!!)
 
-#### def chown(path,user) 
-
+#### chown 
+- arguments
+    - path
+    - user
+- comments
     
 
-#### def copyDependencies(path,dest) 
-
+#### copyDependencies 
+- arguments
+    - path
+    - dest
+- comments
     
 
-#### def copyFile(source,dest,deletefirst=False,skipIfExists=False) 
-
+#### copyFile 
+- arguments
+    - source
+    - dest
+    - deletefirst = False
+    - skipIfExists = False
+- comments
     
 
-#### def copyTree(source, dest, keepsymlinks = False, deletefirst = False, overwriteFiles=True,ignoredir=[".egg-info",".dist-info"],ignorefiles=[".egg-info"],rsync=True,sshkey=None) 
-
+#### copyTree 
+- arguments
+    - source
+    - dest
+    - keepsymlinks = False
+    - deletefirst = False
+    - overwriteFiles = True
+    - ignoredir = ['.egg-info', '.dist-info']
+    - ignorefiles = ['.egg-info']
+    - rsync = True
+    - sshkey
+- comments
     
 
-#### def createDir(path) 
-
+#### createDir 
+- arguments
+    - path
+- comments
     
 
-#### def delete(path,force=False) 
-
+#### delete 
+- arguments
+    - path
+    - force = False
+- comments
     
 
-#### def download(url,to="",overwrite=True,retry=3,timeout=0,login="",passwd="",minspeed=0,multithread=False,curl=False) 
-
+#### download 
+- arguments
+    - url
+    - to = ''
+    - overwrite = True
+    - retry = 3
+    - timeout = 0
+    - login = ''
+    - passwd = ''
+    - minspeed = 0
+    - multithread = False
+    - curl = False
+- comments
     @return path of downloaded file
     @param minspeed is kbytes per sec e.g. 50, if less than 50 kbytes during 10 min it will restart the download (curl only)
     @param when multithread True then will use aria2 download tool to get multiple threads
 
-#### def downloadExpandTarGz(url,destdir,deleteDestFirst=True,deleteSourceAfter=True) 
-
+#### downloadExpandTarGz 
+- arguments
+    - url
+    - destdir
+    - deleteDestFirst = True
+    - deleteSourceAfter = True
+- comments
     
 
-#### def downloadJumpScaleCore(dest) 
-
+#### downloadJumpScaleCore 
+- arguments
+    - dest
+- comments
     
 
-#### def excepthook(ttype, pythonExceptionObject, tb) 
-
+#### excepthook 
+- arguments
+    - ttype
+    - pythonExceptionObject
+    - tb
+- comments
     
 
-#### def execute(command , outputStdout=True, outputStderr=True, useShell=True, log=True, cwd=None, timeout=0, errors=[], ok=[], captureout=True, dieOnNonZeroExitCode=True) 
-
+#### execute 
+- arguments
+    - command
+    - outputStdout = True
+    - outputStderr = True
+    - useShell = True
+    - log = True
+    - cwd
+    - timeout = 0
+    - errors = []
+    - ok = []
+    - captureout = True
+    - dieOnNonZeroExitCode = True
+- comments
     @param errors is array of statements if found then exit as error
     return rc,out,err
 
-#### def executeCmds(cmdstr, outputStdout=True, outputStderr=True,useShell = True,log=True,cwd=None,timeout=120,errors=[],ok=[],captureout=True,dieOnNonZeroExitCode=True) 
-
+#### executeCmds 
+- arguments
+    - cmdstr
+    - outputStdout = True
+    - outputStderr = True
+    - useShell = True
+    - log = True
+    - cwd
+    - timeout = 120
+    - errors = []
+    - ok = []
+    - captureout = True
+    - dieOnNonZeroExitCode = True
+- comments
     
 
-#### def executeInteractive(command) 
-
+#### executeInteractive 
+- arguments
+    - command
+- comments
     
 
-#### def exists(path) 
-
+#### exists 
+- arguments
+    - path
+- comments
     
 
-#### def expandTarGz(path,destdir,deleteDestFirst=True,deleteSourceAfter=False) 
-
+#### expandTarGz 
+- arguments
+    - path
+    - destdir
+    - deleteDestFirst = True
+    - deleteSourceAfter = False
+- comments
     
 
-#### def findDependencies(path,deps=\{\}) 
-
+#### findDependencies 
+- arguments
+    - path
+    - deps = \{\}
+- comments
     
 
-#### def getBaseName(path) 
-
+#### getBaseName 
+- arguments
+    - path
+- comments
     Return the base name of pathname path.
 
-#### def getDirName(path,lastOnly=False,levelsUp=None) 
-
+#### getDirName 
+- arguments
+    - path
+    - lastOnly = False
+    - levelsUp
+- comments
     Return a directory name from pathname path.
     @param path the path to find a directory within
     @param lastOnly means only the last part of the path which is a dir (overrides levelsUp to 0)
@@ -114,12 +220,20 @@
      e.g. ...getDirName("/opt/qbase/bin/something/test.py", levelsUp=1) would return bin
      e.g. ...getDirName("/opt/qbase/bin/something/test.py", levelsUp=10) would raise an error
 
-#### def getFileExtension(path) 
-
+#### getFileExtension 
+- arguments
+    - path
+- comments
     
 
-#### def getGitRepoArgs(url="", dest=None, login=None, passwd=None, reset=False) 
-
+#### getGitRepoArgs 
+- arguments
+    - url = ''
+    - dest
+    - login
+    - passwd
+    - reset = False
+- comments
     Extracts and returns data useful in cloning a Git repository.
     
     Args:
@@ -132,85 +246,131 @@
     Returns:
         (repository_host, repository_type, repository_account, repository_name, repository_url)
 
-#### def getGitReposListLocal(provider="",account="",name="",errorIfNone=True) 
-
+#### getGitReposListLocal 
+- arguments
+    - provider = ''
+    - account = ''
+    - name = ''
+    - errorIfNone = True
+- comments
     
 
-#### def getParent(path) 
-
+#### getParent 
+- arguments
+    - path
+- comments
     Returns the parent of the path:
     /dir1/dir2/file_or_dir -> /dir1/dir2/
     /dir1/dir2/            -> /dir1/
     @todo why do we have 2 implementations which are almost the same see getParentDirName()
 
-#### def getPythonSiteConfigPath() 
-
+#### getPythonSiteConfigPath 
+- arguments
+- comments
     
 
-#### def getTimeEpoch() 
-
+#### getTimeEpoch 
+- arguments
+- comments
     Get epoch timestamp (number of seconds passed since January 1, 1970)
 
-#### def getTmpPath(filename) 
-
+#### getTmpPath 
+- arguments
+    - filename
+- comments
     
 
-#### def getWalker() 
-
+#### getWalker 
+- arguments
+- comments
     
 
-#### def installPackage(path) 
-
+#### installPackage 
+- arguments
+    - path
+- comments
     
 
-#### def isDir(path, followSoftlink=False) 
-
+#### isDir 
+- arguments
+    - path
+    - followSoftlink = False
+- comments
     Check if the specified Directory path exists
     @param path: string
     @param followSoftlink: boolean
     @rtype: boolean (True if directory exists)
 
-#### def isExecutable(path) 
-
+#### isExecutable 
+- arguments
+    - path
+- comments
     
 
-#### def isFile(path, followSoftlink = False) 
-
+#### isFile 
+- arguments
+    - path
+    - followSoftlink = False
+- comments
     Check if the specified file exists for the given path
     @param path: string
     @param followSoftlink: boolean
     @rtype: boolean (True if file exists for the given path)
 
-#### def isLink(path,checkJunction=False) 
-
+#### isLink 
+- arguments
+    - path
+    - checkJunction = False
+- comments
     Check if the specified path is a link
     @param path: string
     @rtype: boolean (True if the specified path is a link)
 
-#### def isUnix() 
-
+#### isUnix 
+- arguments
+- comments
     
 
-#### def isWindows() 
-
+#### isWindows 
+- arguments
+- comments
     
 
-#### def joinPaths(*args) 
-
+#### joinPaths 
+- arguments
+    - *args
+- comments
     
 
-#### def list(path) 
-
+#### list 
+- arguments
+    - path
+- comments
     
 
-#### def listDirsInDir(path,recursive=False,dirNameOnly=False,findDirectorySymlinks=True) 
-
+#### listDirsInDir 
+- arguments
+    - path
+    - recursive = False
+    - dirNameOnly = False
+    - findDirectorySymlinks = True
+- comments
     Retrieves list of directories found in the specified directory
     @param path: string represents directory path to search in
     @rtype: list
 
-#### def listFilesAndDirsInDir(path, recursive=False, filter=None, minmtime=None, maxmtime=None,depth=None,type="fd",followSymlinks=True,listSymlinks=False) 
-
+#### listFilesAndDirsInDir 
+- arguments
+    - path
+    - recursive = False
+    - filter
+    - minmtime
+    - maxmtime
+    - depth
+    - type = 'fd'
+    - followSymlinks = True
+    - listSymlinks = False
+- comments
     Retrieves list of files found in the specified directory
     @param path:       directory path to search in
     @type  path:       string
@@ -226,8 +386,19 @@
     @param type is string with f & d inside (f for when to find files, d for when to find dirs)
     @rtype: list
 
-#### def listFilesInDir(path, recursive=False, filter=None, minmtime=None, maxmtime=None,depth=None, case_sensitivity='os',exclude=[],followSymlinks=True,listSymlinks=False) 
-
+#### listFilesInDir 
+- arguments
+    - path
+    - recursive = False
+    - filter
+    - minmtime
+    - maxmtime
+    - depth
+    - case_sensitivity = 'os'
+    - exclude = []
+    - followSymlinks = True
+    - listSymlinks = False
+- comments
     Retrieves list of files found in the specified directory
     @param path:       directory path to search in
     @type  path:       string
@@ -243,47 +414,80 @@
     @Param exclude: list of std filters if matches then exclude
     @rtype: list
 
-#### def loadScript(path) 
-
+#### loadScript 
+- arguments
+    - path
+- comments
     
 
-#### def log(msg, level=None) 
-
+#### log 
+- arguments
+    - msg
+    - level
+- comments
     
 
-#### def pullGitRepo(url="",dest=None,login=None,passwd=None,depth=1,ignorelocalchanges=False,reset=False,branch=None,revision=None) 
-
+#### pullGitRepo 
+- arguments
+    - url = ''
+    - dest
+    - login
+    - passwd
+    - depth = 1
+    - ignorelocalchanges = False
+    - reset = False
+    - branch
+    - revision
+- comments
     will clone or update repo
     if dest == None then clone underneath: /opt/code/$type/$account/$repo
     will ignore changes !!!!!!!!!!!
 
-#### def pushGitRepos(message,name="",update=True,provider="",account="") 
-
+#### pushGitRepos 
+- arguments
+    - message
+    - name = ''
+    - update = True
+    - provider = ''
+    - account = ''
+- comments
     if name specified then will look under code dir if repo with path can be found
     if not or more than 1 there will be error
     @param provider e.g. git, github
 
-#### def readFile(filename) 
-
+#### readFile 
+- arguments
+    - filename
+- comments
     Read a file and get contents of that file
     @param filename: string (filename to open for reading )
     @rtype: string representing the file contents
 
-#### def readLink(path) 
-
+#### readLink 
+- arguments
+    - path
+- comments
     Works only for unix
     Return a string representing the path to which the symbolic link points.
 
-#### def removeLinks(path) 
-
+#### removeLinks 
+- arguments
+    - path
+- comments
     find all links & remove
 
-#### def removeSymlink(path) 
-
+#### removeSymlink 
+- arguments
+    - path
+- comments
     
 
-#### def rewriteGitRepoUrl(url="", login=None, passwd=None) 
-
+#### rewriteGitRepoUrl 
+- arguments
+    - url = ''
+    - login
+    - passwd
+- comments
     Rewrite the url of a git repo with login and passwd if specified
     
     Args:
@@ -294,27 +498,57 @@
     Returns:
         (repository_host, repository_type, repository_account, repository_name, repository_url)
 
-#### def sendmail(ffrom,to,subject,msg,smtpuser,smtppasswd,smtpserver="smtp.mandrillapp.com",port=587,html="") 
-
+#### sendmail 
+- arguments
+    - ffrom
+    - to
+    - subject
+    - msg
+    - smtpuser
+    - smtppasswd
+    - smtpserver = 'smtp.mandrillapp.com'
+    - port = 587
+    - html = ''
+- comments
     
 
-#### def symlink(src,dest,delete=False) 
-
+#### symlink 
+- arguments
+    - src
+    - dest
+    - delete = False
+- comments
     dest is where the link will be created pointing to src
 
-#### def symlinkFilesInDir(src,dest,delete=True, includeDirs=False) 
-
+#### symlinkFilesInDir 
+- arguments
+    - src
+    - dest
+    - delete = True
+    - includeDirs = False
+- comments
     
 
-#### def touch(path) 
-
+#### touch 
+- arguments
+    - path
+- comments
     
 
-#### def updateGitRepos(provider="",account="",name="",message="") 
-
+#### updateGitRepos 
+- arguments
+    - provider = ''
+    - account = ''
+    - name = ''
+    - message = ''
+- comments
     
 
-#### def writeFile(path,content,strip=True) 
-
+#### writeFile 
+- arguments
+    - path
+    - content
+    - strip = True
+- comments
     
 

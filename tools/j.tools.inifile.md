@@ -2,8 +2,10 @@
 
 - /opt/jumpscale7/lib/JumpScale/baselib/inifile/IniFile.py
 
-#### @staticmethod 
-
+#### new 
+- arguments
+    - filename
+- comments
     Create a new INI file
     
     @param filename: Filename of INI file
@@ -14,8 +16,11 @@
     @returns: New INI file object
     @rtype: jumpscale.inifile.IniFile.IniFile
 
-#### @staticmethod 
-
+#### open 
+- arguments
+    - filename
+    - createIfNonExisting = True
+- comments
     Open an existing INI file
     
     @param filename: Filename of INI file

@@ -2,42 +2,56 @@
 
 - /opt/jumpscale7/lib/JumpScale/lib/ssh/rsync/manager.py
 
-#### def addModule(name) 
-
+#### addModule 
+- arguments
+    - name
+- comments
     add a module
     mod = rsync.addModule('share')
     mod.set('path', '/tmp/share')
     rs.commit()
 
-#### def commit() 
-
+#### commit 
+- arguments
+- comments
     
 
-#### def erase() 
-
+#### erase 
+- arguments
+- comments
     
 
-#### def removeModule(name) 
-
+#### removeModule 
+- arguments
+    - name
+- comments
     
 
-#### def removeParams(key) 
-
+#### removeParams 
+- arguments
+    - key
+- comments
     remove a global parameter
 
-#### def restart() 
-
+#### restart 
+- arguments
+- comments
     restart rsync daemon
 
-#### def setParams(key, value) 
-
+#### setParams 
+- arguments
+    - key
+    - value
+- comments
     set a global parameter
 
-#### def start() 
-
+#### start 
+- arguments
+- comments
     start rsync daemon
 
-#### def stop() 
-
+#### stop 
+- arguments
+- comments
     stop rsync daemon
 

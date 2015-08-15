@@ -2,7 +2,9 @@
 
 - /opt/jumpscale7/lib/JumpScale/lib/ssh/nfs/manager.py
 
-#### def get(con) 
-
+#### get 
+- arguments
+    - con
+- comments
     
 

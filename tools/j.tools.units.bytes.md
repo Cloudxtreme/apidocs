@@ -2,11 +2,18 @@
 
 - /opt/jumpscale7/lib/JumpScale/baselib/units/units.py
 
-#### def converToBestUnit(value, input='') 
-
+#### converToBestUnit 
+- arguments
+    - value
+    - input = ''
+- comments
     
 
-#### def toSize(value, input='', output='K') 
-
+#### toSize 
+- arguments
+    - value
+    - input = ''
+    - output = 'K'
+- comments
     Convert value in other measurement
 

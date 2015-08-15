@@ -6,8 +6,13 @@
 
 Gitlab client enables administrators and developers leveraging Gitlab services through JumpScale
 
-#### def get(gitlaburl="",login="",passwd="",instance="main") 
-
+#### get 
+- arguments
+    - gitlaburl = ''
+    - login = ''
+    - passwd = ''
+    - instance = 'main'
+- comments
     example for gitlaburl
         https://despiegk:dddd@git.aydo.com
     can also be without login:passwd
@@ -20,11 +25,17 @@ Gitlab client enables administrators and developers leveraging Gitlab services t
         login=hrd.get("gitlab.client.login")
         passwd=hrd.get("gitlab.client.passwd")
 
-#### def getAccountnameReponameFromUrl(url) 
-
+#### getAccountnameReponameFromUrl 
+- arguments
+    - url
+- comments
     
 
-#### def log(msg,category="",level=5) 
-
+#### log 
+- arguments
+    - msg
+    - category = ''
+    - level = 5
+- comments
     
 

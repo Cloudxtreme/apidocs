@@ -4,15 +4,27 @@
 
     
 
-#### def getClient(name="",addr="localhost",port=873,login="",passwd="") 
-
+#### getClient 
+- arguments
+    - name = ''
+    - addr = 'localhost'
+    - port = 873
+    - login = ''
+    - passwd = ''
+- comments
     
 
-#### def getClientSecret(addr="localhost",port=873,secret="") 
-
+#### getClientSecret 
+- arguments
+    - addr = 'localhost'
+    - port = 873
+    - secret = ''
+- comments
     
 
-#### def getServer(root) 
-
+#### getServer 
+- arguments
+    - root
+- comments
     
 

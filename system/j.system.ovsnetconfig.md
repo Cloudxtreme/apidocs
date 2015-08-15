@@ -4,71 +4,125 @@
 - Properties
     - PHYSMTU
 
-#### def applyconfig(interfacenameToExclude=None,backplanename=None) 
-
+#### applyconfig 
+- arguments
+    - interfacenameToExclude
+    - backplanename
+- comments
     DANGEROUS, will remove old configuration
 
-#### def configureStaticAddress(interfacename="eth0",ipaddr="192.168.10.10/24",gw=None) 
-
+#### configureStaticAddress 
+- arguments
+    - interfacename = 'eth0'
+    - ipaddr = '192.168.10.10/24'
+    - gw
+- comments
     Configure a static address
 
-#### def createVXLanBridge(networkid, backend,bridgename=None) 
-
+#### createVXLanBridge 
+- arguments
+    - networkid
+    - backend
+    - bridgename
+- comments
     Creates a proper vxlan interface and bridge based on a backplane
 
-#### def ensureVXNet(networkid, backend) 
-
+#### ensureVXNet 
+- arguments
+    - networkid
+    - backend
+- comments
     
 
-#### def getConfigFromSystem(reload=False) 
-
+#### getConfigFromSystem 
+- arguments
+    - reload = False
+- comments
     walk over system and get configuration, result is dict
 
-#### def getType(interfaceName) 
-
+#### getType 
+- arguments
+    - interfaceName
+- comments
     
 
-#### def initNetworkInterfaces() 
-
+#### initNetworkInterfaces 
+- arguments
+- comments
     Resets /etc/network/interfaces with a basic configuration
 
-#### def newBondedBackplane(name, interfaces, trunks=None) 
-
+#### newBondedBackplane 
+- arguments
+    - name
+    - interfaces
+    - trunks
+- comments
     Reasonable defaults  : mode=balance-tcp, lacp=active,fast, bondname=brname-Bond, all vlans allowed
 
-#### def newBridge(name,interface=None) 
-
+#### newBridge 
+- arguments
+    - name
+    - interface
+- comments
     @param interface interface where to connect this bridge to
 
-#### def newVlanBridge(name, parentbridge, vlanid, mtu=None) 
-
+#### newVlanBridge 
+- arguments
+    - name
+    - parentbridge
+    - vlanid
+    - mtu
+- comments
     
 
-#### def printConfigFromSystem() 
-
+#### printConfigFromSystem 
+- arguments
+- comments
     
 
-#### def removeOldConfig() 
-
+#### removeOldConfig 
+- arguments
+- comments
     
 
-#### def setBackplane(interfacename="eth0",backplanename=1,ipaddr="192.168.10.10/24",gw="") 
-
+#### setBackplane 
+- arguments
+    - interfacename = 'eth0'
+    - backplanename = 1
+    - ipaddr = '192.168.10.10/24'
+    - gw = ''
+- comments
     DANGEROUS, will remove old configuration
 
-#### def setBackplaneDhcp(interfacename="eth0",backplanename="Public") 
-
+#### setBackplaneDhcp 
+- arguments
+    - interfacename = 'eth0'
+    - backplanename = 'Public'
+- comments
     DANGEROUS, will remove old configuration
 
-#### def setBackplaneNoAddress(interfacename="eth0",backplanename=1) 
-
+#### setBackplaneNoAddress 
+- arguments
+    - interfacename = 'eth0'
+    - backplanename = 1
+- comments
     DANGEROUS, will remove old configuration
 
-#### def setBackplaneNoAddressWithBond(bondname, bondinterfaces,backplanename='backplane') 
-
+#### setBackplaneNoAddressWithBond 
+- arguments
+    - bondname
+    - bondinterfaces
+    - backplanename = 'backplane'
+- comments
     DANGEROUS, will remove old configuration
 
-#### def setBackplaneWithBond(bondname, bondinterfaces,backplanename='backplane',ipaddr="192.168.10.10/24",gw="") 
-
+#### setBackplaneWithBond 
+- arguments
+    - bondname
+    - bondinterfaces
+    - backplanename = 'backplane'
+    - ipaddr = '192.168.10.10/24'
+    - gw = ''
+- comments
     DANGEROUS, will remove old configuration
 

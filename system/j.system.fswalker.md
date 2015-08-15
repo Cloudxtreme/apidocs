@@ -6,12 +6,33 @@
     - find
     - walkFunctional
 
-#### @staticmethod 
-
+#### find 
+- arguments
+    - root
+    - recursive = True
+    - includeFolders = False
+    - pathRegexIncludes = ['.*']
+    - pathRegexExcludes = []
+    - contentRegexIncludes = []
+    - contentRegexExcludes = []
+    - depths = []
+- comments
     
 
-#### @staticmethod 
-
+#### walk 
+- arguments
+    - root
+    - callback
+    - arg = ''
+    - recursive = True
+    - includeFolders = False
+    - pathRegexIncludes = ['.*']
+    - pathRegexExcludes = []
+    - contentRegexIncludes = []
+    - contentRegexExcludes = []
+    - depths = []
+    - followlinks = True
+- comments
     Walk through filesystem and execute a method per file
     
     Walk through all files and folders starting at C\{root\}, recursive by
@@ -56,8 +77,15 @@
     @param contentRegexIncludes / Excludes match content of files to array of regex expressions (array(strings))
     @param depths array of depth values e.g. only return depth 0 & 1 (would mean first dir depth and then 1 more deep) (array(int))
 
-#### @staticmethod 
-
+#### walkFunctional 
+- arguments
+    - root
+    - callbackFunctionFile
+    - callbackFunctionDir
+    - arg = ''
+    - callbackForMatchDir
+    - callbackForMatchFile
+- comments
     Walk through filesystem and execute a method per file and dirname
     
     Walk through all files and folders starting at C\{root\}, recursive by

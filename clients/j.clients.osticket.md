@@ -6,7 +6,13 @@
 
     
 
-#### def getClient(ipaddr,port,login,passwd,dbname) 
-
+#### getClient 
+- arguments
+    - ipaddr
+    - port
+    - login
+    - passwd
+    - dbname
+- comments
     use info from osticket db server (mysql)
 

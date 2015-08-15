@@ -2,105 +2,176 @@
 
 - /opt/jumpscale7/lib/JumpScale/lib/lxc/Lxc.py
 
-#### def btrfsSubvolCopy(nameFrom,NameDest) 
-
+#### btrfsSubvolCopy 
+- arguments
+    - nameFrom
+    - NameDest
+- comments
     
 
-#### def btrfsSubvolDelete(name) 
-
+#### btrfsSubvolDelete 
+- arguments
+    - name
+- comments
     
 
-#### def btrfsSubvolExists(name) 
-
+#### btrfsSubvolExists 
+- arguments
+    - name
+- comments
     
 
-#### def btrfsSubvolList() 
-
+#### btrfsSubvolList 
+- arguments
+- comments
     
 
-#### def btrfsSubvolNew(name) 
-
+#### btrfsSubvolNew 
+- arguments
+    - name
+- comments
     
 
-#### def create(name="",stdout=True,base="base",start=False,nameserver="8.8.8.8",replace=True) 
-
+#### create 
+- arguments
+    - name = ''
+    - stdout = True
+    - base = 'base'
+    - start = False
+    - nameserver = '8.8.8.8'
+    - replace = True
+- comments
     @param name if "" then will be an incremental nr
 
-#### def destroy(name) 
-
+#### destroy 
+- arguments
+    - name
+- comments
     
 
-#### def destroyAll() 
-
+#### destroyAll 
+- arguments
+- comments
     
 
-#### def execute(command) 
-
+#### execute 
+- arguments
+    - command
+- comments
     
 
-#### def exportRsync(name,backupname,key="pub") 
-
+#### exportRsync 
+- arguments
+    - name
+    - backupname
+    - key = 'pub'
+- comments
     
 
-#### def exportTgz(name,backupname) 
-
+#### exportTgz 
+- arguments
+    - name
+    - backupname
+- comments
     
 
-#### def getConfig(name) 
-
+#### getConfig 
+- arguments
+    - name
+- comments
     
 
-#### def getIp(name,fail=True) 
-
+#### getIp 
+- arguments
+    - name
+    - fail = True
+- comments
     
 
-#### def getPid(name,fail=True) 
-
+#### getPid 
+- arguments
+    - name
+    - fail = True
+- comments
     
 
-#### def getProcessList(name, stdout=True) 
-
+#### getProcessList 
+- arguments
+    - name
+    - stdout = True
+- comments
     @return [["$name",$pid,$mem,$parent],....,[$mem,$cpu]]
     last one is sum of mem & cpu
 
-#### def importRsync(backupname,name,basename="",key="pub") 
-
+#### importRsync 
+- arguments
+    - backupname
+    - name
+    - basename = ''
+    - key = 'pub'
+- comments
     @param basename is the name of a start of a machine locally, will be used as basis and then the source will be synced over it
 
-#### def importTgz(backupname,name) 
-
+#### importTgz 
+- arguments
+    - backupname
+    - name
+- comments
     
 
-#### def list() 
-
+#### list 
+- arguments
+- comments
     names of running & stopped machines
     @return (running,stopped)
 
-#### def networkSet(machinename,netname="pub0",pubips=[],bridge="public",gateway=None) 
-
+#### networkSet 
+- arguments
+    - machinename
+    - netname = 'pub0'
+    - pubips = []
+    - bridge = 'public'
+    - gateway
+- comments
     
 
-#### def networkSetPrivateVXLan(name, vxlanid, ipaddresses) 
-
+#### networkSetPrivateVXLan 
+- arguments
+    - name
+    - vxlanid
+    - ipaddresses
+- comments
     
 
-#### def pushSSHKey(name) 
-
+#### pushSSHKey 
+- arguments
+    - name
+- comments
     
 
-#### def removeRedundantFiles(name) 
-
+#### removeRedundantFiles 
+- arguments
+    - name
+- comments
     
 
-#### def setHostName(name) 
-
+#### setHostName 
+- arguments
+    - name
+- comments
     
 
-#### def start(name,stdout=True,test=True) 
-
+#### start 
+- arguments
+    - name
+    - stdout = True
+    - test = True
+- comments
     
 
-#### def stop(name) 
-
+#### stop 
+- arguments
+    - name
+- comments
     
 

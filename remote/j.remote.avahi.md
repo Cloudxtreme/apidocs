@@ -2,20 +2,29 @@
 
 - /opt/jumpscale7/lib/JumpScale/baselib/remote/avahi/Avahi.py
 
-#### def getServices() 
-
+#### getServices 
+- arguments
+- comments
     
 
-#### def registerService(servicename, port, type='tcp') 
-
+#### registerService 
+- arguments
+    - servicename
+    - port
+    - type = 'tcp'
+- comments
     
 
-#### def removeService(servicename) 
-
+#### removeService 
+- arguments
+    - servicename
+- comments
     
 
-#### def resolveAddress(ipAddress) 
-
+#### resolveAddress 
+- arguments
+    - ipAddress
+- comments
     Resolve the ip address to its hostname
     
     @param ipAddress: the ip address to resolve

@@ -2,70 +2,110 @@
 
 - /opt/jumpscale7/lib/JumpScale/baselib/code/Code.py
 
-#### def classEditGeany(classs) 
-
+#### classEditGeany 
+- arguments
+    - classs
+- comments
     look for editor (uses geany) and then edit the file
 
-#### def classEditWing(classs) 
-
+#### classEditWing 
+- arguments
+    - classs
+- comments
     look for editor (uses geany) and then edit the file
 
-#### def classGetBase() 
-
+#### classGetBase 
+- arguments
+- comments
     
 
-#### def classGetJSModelBase() 
-
+#### classGetJSModelBase 
+- arguments
+- comments
     
 
-#### def classGetJSRootModelBase() 
-
+#### classGetJSRootModelBase 
+- arguments
+- comments
     
 
-#### def classInfoGet(classs) 
-
+#### classInfoGet 
+- arguments
+    - classs
+- comments
     returns filepath,linenr,sourcecode
 
-#### def classInfoPrint(classs) 
-
+#### classInfoPrint 
+- arguments
+    - classs
+- comments
     print info like source code of class
 
-#### def deIndent(content,level=1) 
-
+#### deIndent 
+- arguments
+    - content
+    - level = 1
+- comments
     
 
-#### def dict2JSModelobject(obj,data) 
-
+#### dict2JSModelobject 
+- arguments
+    - obj
+    - data
+- comments
     
 
-#### def dict2object(obj,data) 
-
+#### dict2object 
+- arguments
+    - obj
+    - data
+- comments
     
 
-#### def indent(content,level=1) 
-
+#### indent 
+- arguments
+    - content
+    - level = 1
+- comments
     
 
-#### def object2dict(obj,dieOnUnknown=False,ignoreKeys=[],ignoreUnderscoreKeys=False) 
-
+#### object2dict 
+- arguments
+    - obj
+    - dieOnUnknown = False
+    - ignoreKeys = []
+    - ignoreUnderscoreKeys = False
+- comments
     
 
-#### def object2dict4index(obj) 
-
+#### object2dict4index 
+- arguments
+    - obj
+- comments
     convert object to a dict
     only properties on first level are considered
     and properties of basic types like int,str,float,bool,dict,list
     ideal to index the basics of an object
 
-#### def object2json(obj,pretty=False,skiperrors=False,ignoreKeys=[],ignoreUnderscoreKeys=False) 
-
+#### object2json 
+- arguments
+    - obj
+    - pretty = False
+    - skiperrors = False
+    - ignoreKeys = []
+    - ignoreUnderscoreKeys = False
+- comments
     
 
-#### def object2yaml(obj) 
-
+#### object2yaml 
+- arguments
+    - obj
+- comments
     
 
-#### def pprint(obj) 
-
+#### pprint 
+- arguments
+    - obj
+- comments
     
 

@@ -7,76 +7,128 @@
 
     
 
-#### def checkJumpscriptQueue(jumpscript,queue) 
-
+#### checkJumpscriptQueue 
+- arguments
+    - jumpscript
+    - queue
+- comments
     this checks that jumpscripts are not executed twice when being scheduled recurring
     one off jobs will always execute !!!
 
-#### def checkQueue() 
-
+#### checkQueue 
+- arguments
+- comments
     
 
-#### def deleteJob(jobid) 
-
+#### deleteJob 
+- arguments
+    - jobid
+- comments
     
 
-#### def deleteJumpscripts() 
-
+#### deleteJumpscripts 
+- arguments
+- comments
     
 
-#### def deleteProcessQueue() 
-
+#### deleteProcessQueue 
+- arguments
+- comments
     
 
-#### def deleteQueues() 
-
+#### deleteQueues 
+- arguments
+- comments
     
 
-#### def execFunction(method,_category="unknown", _organization="unknown",_timeout=60,_queue="default",_log=True,_sync=True,**args) 
-
+#### execFunction 
+- arguments
+    - method
+    - _category = 'unknown'
+    - _organization = 'unknown'
+    - _timeout = 60
+    - _queue = 'default'
+    - _log = True
+    - _sync = True
+    - **args
+- comments
     @return job
 
-#### def execJobAsync(job) 
-
+#### execJobAsync 
+- arguments
+    - job
+- comments
     
 
-#### def execJumpscript(jumpscriptid=None,jumpscript=None,_timeout=60,_queue="default",_log=True,_sync=True,**args) 
-
+#### execJumpscript 
+- arguments
+    - jumpscriptid
+    - jumpscript
+    - _timeout = 60
+    - _queue = 'default'
+    - _log = True
+    - _sync = True
+    - **args
+- comments
     @return job
 
-#### def getFailedJobs(queue=None, hoursago=0) 
-
+#### getFailedJobs 
+- arguments
+    - queue
+    - hoursago = 0
+- comments
     
 
-#### def getJob(jobid) 
-
+#### getJob 
+- arguments
+    - jobid
+- comments
     
 
-#### def getJobLine(job=None,jobid=None) 
-
+#### getJobLine 
+- arguments
+    - job
+    - jobid
+- comments
     
 
-#### def getJumpscriptFromId(jscriptid) 
-
+#### getJumpscriptFromId 
+- arguments
+    - jscriptid
+- comments
     
 
-#### def getJumpscriptFromName(organization,name) 
-
+#### getJumpscriptFromName 
+- arguments
+    - organization
+    - name
+- comments
     
 
-#### def getQueuedJobs(queue=None, asWikiTable=True) 
-
+#### getQueuedJobs 
+- arguments
+    - queue
+    - asWikiTable = True
+- comments
     
 
-#### def removeJobs(hoursago=48, failed=False) 
-
+#### removeJobs 
+- arguments
+    - hoursago = 48
+    - failed = False
+- comments
     
 
-#### def scheduleJob(job) 
-
+#### scheduleJob 
+- arguments
+    - job
+- comments
     
 
-#### def waitJob(job,timeout=600) 
-
+#### waitJob 
+- arguments
+    - job
+    - timeout = 600
+- comments
     
 

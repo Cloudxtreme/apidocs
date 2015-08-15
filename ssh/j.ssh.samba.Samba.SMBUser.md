@@ -2,15 +2,21 @@
 
 - /opt/jumpscale7/lib/JumpScale/lib/ssh/samba/manager.py
 
-#### def add(username, password) 
-
+#### add 
+- arguments
+    - username
+    - password
+- comments
     
 
-#### def list() 
-
+#### list 
+- arguments
+- comments
     
 
-#### def remove(username) 
-
+#### remove 
+- arguments
+    - username
+- comments
     
 

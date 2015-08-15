@@ -2,7 +2,11 @@
 
 - /opt/jumpscale7/lib/JumpScale/lib/routeros/RouterOS.py
 
-#### def get(host, login,password) 
-
+#### get 
+- arguments
+    - host
+    - login
+    - password
+- comments
     
 

@@ -9,53 +9,88 @@
     - inException
     - lastAction
 
-#### def checkErrorIgnore(eco) 
-
+#### checkErrorIgnore 
+- arguments
+    - eco
+- comments
     
 
-#### def escalateBugToDeveloper(errorConditionObject,tb=None) 
-
+#### escalateBugToDeveloper 
+- arguments
+    - errorConditionObject
+    - tb
+- comments
     
 
-#### def excepthook(ttype, pythonExceptionObject, tb) 
-
+#### excepthook 
+- arguments
+    - ttype
+    - pythonExceptionObject
+    - tb
+- comments
     every fatal error in jumpscale or by python itself will result in an exception
     in this function the exception is caught.
     This routine will create an errorobject & escalate to the infoserver
     @ttype : is the description of the error
     @tb : can be a python data object or a Event
 
-#### def getErrorConditionObject(ddict=\{\},msg="",msgpub="",category="",level=1,type="UNKNOWN",tb=None) 
-
+#### getErrorConditionObject 
+- arguments
+    - ddict = \{\}
+    - msg = ''
+    - msgpub = ''
+    - category = ''
+    - level = 1
+    - type = 'UNKNOWN'
+    - tb
+- comments
     @data is dict with fields of errorcondition obj
     returns only ErrorConditionObject which should be used in jumpscale to define an errorcondition (or potential error condition)
 
-#### def getErrorTraceKIS(tb=None) 
-
+#### getErrorTraceKIS 
+- arguments
+    - tb
+- comments
     
 
-#### def getFrames(tb=None) 
-
+#### getFrames 
+- arguments
+    - tb
+- comments
     
 
-#### def getLevelName(level) 
-
+#### getLevelName 
+- arguments
+    - level
+- comments
     
 
-#### def halt(msg, eco) 
-
+#### halt 
+- arguments
+    - msg
+    - eco
+- comments
     
 
-#### def lastActionClear() 
-
+#### lastActionClear 
+- arguments
+- comments
     clear last action so is not printed when error
 
-#### def lastActionSet(lastActionDescription) 
-
+#### lastActionSet 
+- arguments
+    - lastActionDescription
+- comments
     will remember action you are doing, this will be added to error message if filled in
 
-#### def parsePythonErrorObject(pythonExceptionObject,ttype=None, tb=None,level=1,message="") 
-
+#### parsePythonErrorObject 
+- arguments
+    - pythonExceptionObject
+    - ttype
+    - tb
+    - level = 1
+    - message = ''
+- comments
     how to use
     
     try:
@@ -72,8 +107,15 @@
     
     @return a ErrorConditionObject object as used by jumpscale (should be the only type of object we send around)
 
-#### def processPythonExceptionObject(pythonExceptionObject,ttype=None, tb=None,level=1,message="",sentry=True) 
-
+#### processPythonExceptionObject 
+- arguments
+    - pythonExceptionObject
+    - ttype
+    - tb
+    - level = 1
+    - message = ''
+    - sentry = True
+- comments
     how to use
     
     try:
@@ -89,8 +131,17 @@
     
     the errorcondition is then also processed e.g. send to local logserver and/or stored locally in errordb
 
-#### def raiseBug(message,category="", pythonExceptionObject=None,pythonTraceBack=None,msgpub="",die=True,tags="", level=1) 
-
+#### raiseBug 
+- arguments
+    - message
+    - category = ''
+    - pythonExceptionObject
+    - pythonTraceBack
+    - msgpub = ''
+    - die = True
+    - tags = ''
+    - level = 1
+- comments
     use this to raise a bug in the code, this is the only time that a stacktrace will be asked for
     level will be Critical
     @param message is the error message which describes the bug
@@ -103,8 +154,17 @@
     except Exception,e:
         j.errorconditionhandler.raiseBug("an error",category="exceptions.init",e)
 
-#### def raiseBug(message,category="", pythonExceptionObject=None,pythonTraceBack=None,msgpub="",die=True,tags="", level=1) 
-
+#### raiseCritical 
+- arguments
+    - message
+    - category = ''
+    - pythonExceptionObject
+    - pythonTraceBack
+    - msgpub = ''
+    - die = True
+    - tags = ''
+    - level = 1
+- comments
     use this to raise a bug in the code, this is the only time that a stacktrace will be asked for
     level will be Critical
     @param message is the error message which describes the bug
@@ -117,35 +177,77 @@
     except Exception,e:
         j.errorconditionhandler.raiseBug("an error",category="exceptions.init",e)
 
-#### def raiseInputError(message="", category="input",msgpub="",die=True ,backtrace="",tags="") 
-
+#### raiseInputError 
+- arguments
+    - message = ''
+    - category = 'input'
+    - msgpub = ''
+    - die = True
+    - backtrace = ''
+    - tags = ''
+- comments
     
 
-#### def raiseMonitoringError(message, category="",msgpub="",die=False,tags="") 
-
+#### raiseMonitoringError 
+- arguments
+    - message
+    - category = ''
+    - msgpub = ''
+    - die = False
+    - tags = ''
+- comments
     
 
-#### def raiseOperationalCritical(message="", category="",msgpub="",die=True,tags="",eco=None,extra=None) 
-
+#### raiseOperationalCritical 
+- arguments
+    - message = ''
+    - category = ''
+    - msgpub = ''
+    - die = True
+    - tags = ''
+    - eco
+    - extra
+- comments
     use this to raise an operational issue about the system
     @param message is message we want to use for operators
     @param msgpub is message we want to show to endcustomers (can include a solution)
     @param category is a dot notation to give category for the error condition
 
-#### def raiseOperationalWarning(message="", category="",msgpub="",tags="",eco=None) 
-
+#### raiseOperationalWarning 
+- arguments
+    - message = ''
+    - category = ''
+    - msgpub = ''
+    - tags = ''
+    - eco
+- comments
     
 
-#### def raisePerformanceError(message, category="",msgpub="",tags="") 
-
+#### raisePerformanceError 
+- arguments
+    - message
+    - category = ''
+    - msgpub = ''
+    - tags = ''
+- comments
     
 
-#### def raiseRuntimeErrorWithEco(eco,tostdout=False) 
-
+#### raiseRuntimeErrorWithEco 
+- arguments
+    - eco
+    - tostdout = False
+- comments
     
 
-#### def raiseWarning(message,category="", pythonExceptionObject=None,pythonTraceBack=None,msgpub="",tags="") 
-
+#### raiseWarning 
+- arguments
+    - message
+    - category = ''
+    - pythonExceptionObject
+    - pythonTraceBack
+    - msgpub = ''
+    - tags = ''
+- comments
     use this to raise a bug in the code, this is the only time that a stacktrace will be asked for
     @param message is the error message which describes the bug
     @param msgpub is message we want to show to endcustomers (can include a solution)
@@ -157,15 +259,20 @@
     except Exception,e:
         j.errorconditionhandler.raiseBug("an error",category="exceptions.init",e)
 
-#### def reRaiseECO(eco) 
-
+#### reRaiseECO 
+- arguments
+    - eco
+- comments
     
 
-#### def setExceptHook() 
-
+#### setExceptHook 
+- arguments
+- comments
     
 
-#### def toolStripNonAsciFromText(text) 
-
+#### toolStripNonAsciFromText 
+- arguments
+    - text
+- comments
     
 

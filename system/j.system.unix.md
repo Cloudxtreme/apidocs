@@ -2,8 +2,14 @@
 
 - /opt/jumpscale7/lib/JumpScale/core/system/unix.py
 
-#### def addCronJob(commandToExecute, interval=1, logFilePath=None, replaceLineIfCommandAlreadyInCrontab=True, unit=TimeIntervalUnit.MINUTES) 
-
+#### addCronJob 
+- arguments
+    - commandToExecute
+    - interval = 1
+    - logFilePath
+    - replaceLineIfCommandAlreadyInCrontab = True
+    - unit = 1
+- comments
     Add a cronjob to the system
     
     @param commandToExecute: The command to execute
@@ -17,8 +23,10 @@
     @param unit: The unit of the interval
     @type unit: TimeIntervalUnit
 
-#### def addSystemGroup(groupname) 
-
+#### addSystemGroup 
+- arguments
+    - groupname
+- comments
     Add a group to the system
     
     Note: you should be root to run this python command.
@@ -26,8 +34,13 @@
     @param groupname: Name of the group to add
     @type groupname : string
 
-#### def addSystemUser(username, groupname=None, shell="/bin/bash", homedir=None) 
-
+#### addSystemUser 
+- arguments
+    - username
+    - groupname
+    - shell = '/bin/bash'
+    - homedir
+- comments
     Add a user to the system
     
     Note: you should be root to run this python command.
@@ -37,20 +50,38 @@
     @param shell: Optional param to specify the shell of the user
     @type username: string
 
-#### def addUserToGroup(username, groupname) 
-
+#### addUserToGroup 
+- arguments
+    - username
+    - groupname
+- comments
     
 
-#### def checkApplicationInstalled(appname) 
-
+#### checkApplicationInstalled 
+- arguments
+    - appname
+- comments
     check if app is installed,  if yes return True
 
-#### def chmod(root, mode, recurse=0, dirPattern='*', filePattern='*', dirs = True, files = True) 
-
+#### chmod 
+- arguments
+    - root
+    - mode
+    - recurse = 0
+    - dirPattern = '*'
+    - filePattern = '*'
+    - dirs = True
+    - files = True
+- comments
     Chmod based on system.fs.walk
 
-#### def chown(path, user, group,recursive=False) 
-
+#### chown 
+- arguments
+    - path
+    - user
+    - group
+    - recursive = False
+- comments
     Chown a file
     @param path: the path of a file or a directory to be chown
     @type path: string
@@ -61,15 +92,20 @@
     @param recursive: if path is a directory, all files underneath the path are also chown if True (default False)
     @type recursive: boolean
 
-#### def chroot(path) 
-
+#### chroot 
+- arguments
+    - path
+- comments
     Change root directory path
     
     @param path: Path to chroot() to
     @type path: string
 
-#### def daemonize(chdir='/', umask=0) 
-
+#### daemonize 
+- arguments
+    - chdir = '/'
+    - umask = 0
+- comments
     Daemonize a process using a double fork
     
     This method will fork the current process to create a daemon process.
@@ -103,22 +139,30 @@
     
     @raise RuntimeError: System does not support fork(2)
 
-#### def disableUnixUser(username) 
-
+#### disableUnixUser 
+- arguments
+    - username
+- comments
     Disables a given unix user
     
     @param username: Name of the user to disable
     @type username: string
 
-#### def enableUnixUser(username) 
-
+#### enableUnixUser 
+- arguments
+    - username
+- comments
     Enables a given unix user
     
     @param username: Name of the user to enable
     @type username: string
 
-#### def executeAsUser(command, username, **kwargs) 
-
+#### executeAsUser 
+- arguments
+    - command
+    - username
+    - **kwargs
+- comments
     Execute a given command as a specific user
     
     When calling this method, the command will be wrapped inside 'su' to
@@ -142,8 +186,12 @@
     
     @see: jumpscale.system.process.SystemProcess.execute
 
-#### def executeDaemonAsUser(command, username, **kwargs) 
-
+#### executeDaemonAsUser 
+- arguments
+    - command
+    - username
+    - **kwargs
+- comments
     Execute a given command as a background process as a specific user
     
     When calling this method, the command will be wrapped inside 'su' to
@@ -167,8 +215,11 @@
     
     @see: jumpscale.system.process.runDaemon
 
-#### def getBashEnvFromFile(file, var) 
-
+#### getBashEnvFromFile 
+- arguments
+    - file
+    - var
+- comments
     Get the value of an environment variable in a Bash file
     
     @param file: Bash file defining the variable
@@ -176,15 +227,18 @@
     @param var: Variable name
     @type var: string
 
-#### def getMachineInfo() 
-
+#### getMachineInfo 
+- arguments
+- comments
     Get memory and CPU info about this machine
     
     @returns: Amount of available memory, CPU speed and number of CPUs
     @rtype: tuple
 
-#### def killGroup(pid) 
-
+#### killGroup 
+- arguments
+    - pid
+- comments
     Kill a process group
     
     killGroup will get the parent pid from the pid given and kill the group with signal SIGKILL (default)
@@ -192,15 +246,22 @@
     @type pid: int
     @param pid: process id
 
-#### def removeUnixUser(username, removehome=False,die=True) 
-
+#### removeUnixUser 
+- arguments
+    - username
+    - removehome = False
+    - die = True
+- comments
     Remove a given unix user
     
     @param username: Name of the user to remove
     @type username: string
 
-#### def setUnixUserPassword(username, password) 
-
+#### setUnixUserPassword 
+- arguments
+    - username
+    - password
+- comments
     Set a password on unix user
     
     @param username: Name of the user to enable
@@ -209,8 +270,10 @@
     @param password: Password to set on the user
     @type username: string
 
-#### def unixGroupExists(groupname) 
-
+#### unixGroupExists 
+- arguments
+    - groupname
+- comments
     Checks if a given group already exists in the system
     
     @param groupname: Name of the group to check for
@@ -219,8 +282,10 @@
     @returns: Whether the group exists
     @rtype: bool
 
-#### def unixUserExists(username) 
-
+#### unixUserExists 
+- arguments
+    - username
+- comments
     Checks if a given user already exists in the system
     
     @param username: Username of the user to check for
@@ -229,8 +294,11 @@
     @returns: Whether the user exists
     @rtype: bool
 
-#### @staticmethod 
-
+#### unixUserIsInGroup 
+- arguments
+    - username
+    - groupname
+- comments
     Checks if a given user is a member of the given group
     
     @param username: Username to check for

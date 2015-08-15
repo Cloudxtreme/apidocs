@@ -4,8 +4,14 @@
 - Properties
     - connections
 
-#### def connect(ip, login="", password="", timeout=120.0, port=22) 
-
+#### connect 
+- arguments
+    - ip
+    - login = ''
+    - password = ''
+    - timeout = 120.0
+    - port = 22
+- comments
     Creates a connection object to a remote system via ssh.
     
     @param ip: Ipaddress of the remote system

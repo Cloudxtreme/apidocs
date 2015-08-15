@@ -5,16 +5,43 @@
     - cachecat
     - cache
 
-#### def getClient(addr, port, category="core", org="myorg", user="root", passwd="passwd", ssl=False, roles=[],id=None,timeout=60) 
-
+#### getClient 
+- arguments
+    - addr
+    - port
+    - category = 'core'
+    - org = 'myorg'
+    - user = 'root'
+    - passwd = 'passwd'
+    - ssl = False
+    - roles = []
+    - id
+    - timeout = 60
+- comments
     
 
-#### def getHAClient(connections, category="core", org="myorg", user="root", passwd="passwd", ssl=False, roles=[],id=None,timeout=60, reconnect=False) 
-
+#### getHAClient 
+- arguments
+    - connections
+    - category = 'core'
+    - org = 'myorg'
+    - user = 'root'
+    - passwd = 'passwd'
+    - ssl = False
+    - roles = []
+    - id
+    - timeout = 60
+    - reconnect = False
+- comments
     
 
-#### def getServer(port, sslorg=None, ssluser=None, sslkeyvaluestor=None) 
-
+#### getServer 
+- arguments
+    - port
+    - sslorg
+    - ssluser
+    - sslkeyvaluestor
+- comments
     HOW TO USE:
     daemon=j.servers.geventws.getServer(port=4444)
     
@@ -33,7 +60,11 @@
     
     daemon.start()
 
-#### def initSSL4Server(organization, serveruser, sslkeyvaluestor=None) 
-
+#### initSSL4Server 
+- arguments
+    - organization
+    - serveruser
+    - sslkeyvaluestor
+- comments
     use this to init your ssl keys for the server (they can be used over all transports)
 

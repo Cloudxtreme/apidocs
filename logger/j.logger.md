@@ -12,35 +12,53 @@
     - consolelogCategories
     - maxlevel
 
-#### def connectRedis() 
-
+#### connectRedis 
+- arguments
+- comments
     
 
-#### def disable() 
-
+#### disable 
+- arguments
+- comments
     
 
-#### def getLogObjectFromDict(ddict) 
-
+#### getLogObjectFromDict 
+- arguments
+    - ddict
+- comments
     
 
-#### def init() 
-
+#### init 
+- arguments
+- comments
     
 
-#### def log(message, level=5, category="", tags="", jid="", parentjid="",masterjid="", private=False) 
-
+#### log 
+- arguments
+    - message
+    - level = 5
+    - category = ''
+    - tags = ''
+    - jid = ''
+    - parentjid = ''
+    - masterjid = ''
+    - private = False
+- comments
     send to all log targets
 
-#### def nologger(func) 
-
+#### nologger 
+- arguments
+    - func
+- comments
     Decorator to disable logging for a specific method (probably not thread safe)
 
-#### def nostdout() 
-
+#### nostdout 
+- arguments
+- comments
     
 
-#### def reset() 
-
+#### reset 
+- arguments
+- comments
     
 

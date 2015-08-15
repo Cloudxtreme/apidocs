@@ -2,19 +2,28 @@
 
 - /opt/jumpscale7/lib/JumpScale/lib/ssh/samba/manager.py
 
-#### def add(sharename, path, options=\{\}) 
-
+#### add 
+- arguments
+    - sharename
+    - path
+    - options = \{\}
+- comments
     
 
-#### def commit() 
-
+#### commit 
+- arguments
+- comments
     
 
-#### def get(sharename) 
-
+#### get 
+- arguments
+    - sharename
+- comments
     
 
-#### def remove(sharename) 
-
+#### remove 
+- arguments
+    - sharename
+- comments
     
 

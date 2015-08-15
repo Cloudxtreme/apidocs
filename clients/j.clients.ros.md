@@ -2,7 +2,12 @@
 
 - /opt/jumpscale7/lib/JumpScale/grid/ros/factory.py
 
-#### def get(instance='main', ip='', user='', passwd='') 
-
+#### get 
+- arguments
+    - instance = 'main'
+    - ip = ''
+    - user = ''
+    - passwd = ''
+- comments
     
 

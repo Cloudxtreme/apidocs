@@ -6,54 +6,95 @@
 
     
 
-#### def addIpToInterface(dev,ipaddr,aliasnr=1,start=False) 
-
+#### addIpToInterface 
+- arguments
+    - dev
+    - ipaddr
+    - aliasnr = 1
+    - start = False
+- comments
     
 
-#### def enableInterface(dev="eth0",start=False,dhcp=True) 
-
+#### enableInterface 
+- arguments
+    - dev = 'eth0'
+    - start = False
+    - dhcp = True
+- comments
     
 
-#### def enableInterfaceBridge(dev,bridgedev,start=False,dhcp=True) 
-
+#### enableInterfaceBridge 
+- arguments
+    - dev
+    - bridgedev
+    - start = False
+    - dhcp = True
+- comments
     
 
-#### def enableInterfaceBridgeDhcp(dev,bridgedev,start=False) 
-
+#### enableInterfaceBridgeDhcp 
+- arguments
+    - dev
+    - bridgedev
+    - start = False
+- comments
     
 
-#### def enableInterfaceBridgeStatic(dev,ipaddr=None,bridgedev=None,gw=None,start=False) 
-
+#### enableInterfaceBridgeStatic 
+- arguments
+    - dev
+    - ipaddr
+    - bridgedev
+    - gw
+    - start = False
+- comments
     ipaddr in form of 192.168.10.2/24 (can be list)
     gateway in form of 192.168.10.254
 
-#### def enableInterfaceStatic(dev,ipaddr,gw=None,start=False) 
-
+#### enableInterfaceStatic 
+- arguments
+    - dev
+    - ipaddr
+    - gw
+    - start = False
+- comments
     ipaddr in form of 192.168.10.2/24 (can be list)
     gateway in form of 192.168.10.254
 
-#### def remove(dev) 
-
+#### remove 
+- arguments
+    - dev
+- comments
     
 
-#### def reset(shutdown=False) 
-
+#### reset 
+- arguments
+    - shutdown = False
+- comments
     empty config of /etc/network/interfaces
 
-#### def setHostname(hostname) 
-
+#### setHostname 
+- arguments
+    - hostname
+- comments
     change hostname
 
-#### def setNameserver(addr) 
-
+#### setNameserver 
+- arguments
+    - addr
+- comments
     resolvconf will be disabled
 
-#### def setRoot(root) 
-
+#### setRoot 
+- arguments
+    - root
+- comments
     
 
-#### def shutdownNetwork(excludes=[]) 
-
+#### shutdownNetwork 
+- arguments
+    - excludes = []
+- comments
     find all interfaces and shut them all down with ifdown
     this is to remove all networking things going on
 

@@ -2,8 +2,10 @@
 
 - /opt/jumpscale7/lib/JumpScale/baselib/hash/HashTool.py
 
-#### def crc32_file(path) 
-
+#### crc32 
+- arguments
+    - path
+- comments
     Calculate CRC32 hash of data available in a file
     
     The file will be opened in read/binary mode and blocks of the blocksize
@@ -15,8 +17,10 @@
     @returns: CRC32 hash of data available in the given file
     @rtype: number
 
-#### def crc32(s) 
-
+#### crc32_string 
+- arguments
+    - s
+- comments
     Calculate CRC32 hash of input string
     
     @param s: String value to hash
@@ -25,12 +29,16 @@
     @returns: CRC32 hash of the input value
     @rtype: number
 
-#### def hashDir(rootpath) 
-
+#### hashDir 
+- arguments
+    - rootpath
+- comments
     walk over all files, calculate md5 and of sorted list also calc md5 this is the resulting hash for the dir independant from time and other metadata (appart from path)
 
-#### def _file(path) 
-
+#### md5 
+- arguments
+    - path
+- comments
     Calculate %(alg)s hash of data available in a file
     
     The file will be opened in read/binary mode and blocks of the blocksize
@@ -42,8 +50,10 @@
     @returns: %(alg)s hash hex digest of data available in the given file
     @rtype: string
 
-#### def _string(s) 
-
+#### md5_string 
+- arguments
+    - s
+- comments
     Calculate %(alg)s hash of input string
     
     @param s: String value to hash
@@ -52,8 +62,10 @@
     @returns: %(alg)s hash hex digest of the input value
     @rtype: string
 
-#### def _file(path) 
-
+#### sha1 
+- arguments
+    - path
+- comments
     Calculate %(alg)s hash of data available in a file
     
     The file will be opened in read/binary mode and blocks of the blocksize
@@ -65,8 +77,10 @@
     @returns: %(alg)s hash hex digest of data available in the given file
     @rtype: string
 
-#### def _string(s) 
-
+#### sha1_string 
+- arguments
+    - s
+- comments
     Calculate %(alg)s hash of input string
     
     @param s: String value to hash
@@ -75,8 +89,10 @@
     @returns: %(alg)s hash hex digest of the input value
     @rtype: string
 
-#### def _file(path) 
-
+#### sha256 
+- arguments
+    - path
+- comments
     Calculate %(alg)s hash of data available in a file
     
     The file will be opened in read/binary mode and blocks of the blocksize
@@ -88,8 +104,10 @@
     @returns: %(alg)s hash hex digest of data available in the given file
     @rtype: string
 
-#### def _string(s) 
-
+#### sha256_string 
+- arguments
+    - s
+- comments
     Calculate %(alg)s hash of input string
     
     @param s: String value to hash
@@ -98,8 +116,10 @@
     @returns: %(alg)s hash hex digest of the input value
     @rtype: string
 
-#### def _file(path) 
-
+#### sha512 
+- arguments
+    - path
+- comments
     Calculate %(alg)s hash of data available in a file
     
     The file will be opened in read/binary mode and blocks of the blocksize
@@ -111,8 +131,10 @@
     @returns: %(alg)s hash hex digest of data available in the given file
     @rtype: string
 
-#### def _string(s) 
-
+#### sha512_string 
+- arguments
+    - s
+- comments
     Calculate %(alg)s hash of input string
     
     @param s: String value to hash

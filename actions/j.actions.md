@@ -4,31 +4,55 @@
 
 Manager controlling actions
 
-#### def clean() 
-
+#### clean 
+- arguments
+- comments
     Clean the list of running actions
 
-#### def getActionNamesDone(action) 
-
+#### getActionNamesDone 
+- arguments
+    - action
+- comments
     
 
-#### def hasRunningActions() 
-
+#### hasRunningActions 
+- arguments
+- comments
     Check whether actions are currently running
     
     @returns: Whether actions are runnin
     @rtype: bool
 
-#### def reset(category=None) 
-
+#### reset 
+- arguments
+    - category
+- comments
     
 
-#### def setActionNamesDone(action) 
-
+#### setActionNamesDone 
+- arguments
+    - action
+- comments
     
 
-#### def start(description="", cmds="",action=None,actionRecover=None,actionArgs=\{\},category="unknown",name="unknown",\ 
-
+#### start 
+- arguments
+    - description = ''
+    - cmds = ''
+    - action
+    - actionRecover
+    - actionArgs = \{\}
+    - category = 'unknown'
+    - name = 'unknown'
+    - errorMessage = ''
+    - resolutionMessage = ''
+    - loglevel = 1
+    - die = True
+    - stdOutput = True
+    - errorOutput = True
+    - retry = 1
+    - serviceObj
+- comments
     @param id is unique id which allows finding back of action
     @param description: Action description (what are we doing)
     @param errorMessage: message to give when error

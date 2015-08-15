@@ -5,11 +5,17 @@
     - encrkey
     - c
 
-#### def dumps(obj,encrkey) 
-
+#### dumps 
+- arguments
+    - obj
+    - encrkey
+- comments
     
 
-#### def loads(s,encrkey) 
-
+#### loads 
+- arguments
+    - s
+    - encrkey
+- comments
     
 

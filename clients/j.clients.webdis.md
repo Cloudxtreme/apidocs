@@ -4,15 +4,26 @@
 
     
 
-#### def check(addr="127.0.0.1",port=7779,timeout=1) 
-
+#### check 
+- arguments
+    - addr = '127.0.0.1'
+    - port = 7779
+    - timeout = 1
+- comments
     
 
-#### def get(addr="127.0.0.1",port=7779,timeout=10) 
-
+#### get 
+- arguments
+    - addr = '127.0.0.1'
+    - port = 7779
+    - timeout = 10
+- comments
     
 
-#### def getByInstance(instance=None, timeout=10) 
-
+#### getByInstance 
+- arguments
+    - instance
+    - timeout = 10
+- comments
     
 

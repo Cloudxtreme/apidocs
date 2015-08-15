@@ -2,16 +2,20 @@
 
 - /opt/jumpscale7/lib/JumpScale/lib/telegram/TelegramFactory.py
 
-#### def addDemoHandler() 
-
+#### addDemoHandler 
+- arguments
+- comments
     
 
-#### def addLogHandler(path="/tmp/chat.log") 
-
+#### addLogHandler 
+- arguments
+    - path = '/tmp/chat.log'
+- comments
     loggerHandler = LoggerHandler("chat.log")
     self.api.add_handler(loggerHandler)
 
-#### def start() 
-
+#### start 
+- arguments
+- comments
     
 

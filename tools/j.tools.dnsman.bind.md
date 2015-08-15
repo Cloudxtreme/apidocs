@@ -2,31 +2,47 @@
 
 - /opt/jumpscale7/lib/JumpScale/baselib/dnsman/bind.py
 
-#### def addRecord(domain, host, ip, klass, type, ttl) 
-
+#### addRecord 
+- arguments
+    - domain
+    - host
+    - ip
+    - klass
+    - type
+    - ttl
+- comments
     
 
-#### def cleanCache() 
-
+#### cleanCache 
+- arguments
+- comments
     
 
-#### def deleteHost(host) 
-
+#### deleteHost 
+- arguments
+    - host
+- comments
     
 
-#### def restart() 
-
+#### restart 
+- arguments
+- comments
     
 
-#### def start() 
-
+#### start 
+- arguments
+- comments
     
 
-#### def stop() 
-
+#### stop 
+- arguments
+- comments
     
 
-#### def updateHostIp(host, ip) 
-
+#### updateHostIp 
+- arguments
+    - host
+    - ip
+- comments
     
 

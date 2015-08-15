@@ -2,11 +2,17 @@
 
 - /opt/jumpscale7/lib/JumpScale/lib/ssh/rsync/manager.py
 
-#### def get(key, value) 
-
+#### get 
+- arguments
+    - key
+    - value
+- comments
     
 
-#### def set(key, value) 
-
+#### set 
+- arguments
+    - key
+    - value
+- comments
     
 

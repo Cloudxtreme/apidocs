@@ -5,15 +5,20 @@
     - active
     - inprocess
 
-#### def getPortalConfig(appname) 
-
+#### getPortalConfig 
+- arguments
+    - appname
+- comments
     
 
-#### def getServer() 
-
+#### getServer 
+- arguments
+- comments
     
 
-#### def loadActorsInProcess(name='main') 
-
+#### loadActorsInProcess 
+- arguments
+    - name = 'main'
+- comments
     make sure all actors are loaded on j.apps...
 

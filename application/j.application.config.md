@@ -11,112 +11,188 @@
     - commentblock
     - prefixWithName
 
-#### def add2tree(path,recursive=True) 
-
+#### add2tree 
+- arguments
+    - path
+    - recursive = True
+- comments
     
 
-#### def add2treeFromContent(content) 
-
+#### add2treeFromContent 
+- arguments
+    - content
+- comments
     
 
-#### def applyOnContent(content,additionalArgs=OrderedDict()) 
-
+#### applyOnContent 
+- arguments
+    - content
+    - additionalArgs = OrderedDict()
+- comments
     look for $(name) and replace with hrd value
 
-#### def applyOnDir(path,filter=None, minmtime=None, maxmtime=None, depth=None,changeFileName=True,changeContent=True,additionalArgs=OrderedDict()) 
-
+#### applyOnDir 
+- arguments
+    - path
+    - filter
+    - minmtime
+    - maxmtime
+    - depth
+    - changeFileName = True
+    - changeContent = True
+    - additionalArgs = OrderedDict()
+- comments
     look for $(name) and replace with hrd value
 
-#### def applyOnFile(path,additionalArgs=OrderedDict()) 
-
+#### applyOnFile 
+- arguments
+    - path
+    - additionalArgs = OrderedDict()
+- comments
     look for $(name) and replace with hrd value
 
-#### def checkValidity(template,hrddata=OrderedDict()) 
-
+#### checkValidity 
+- arguments
+    - template
+    - hrddata = OrderedDict()
+- comments
     @param template is example hrd content block, which will be used to check against, 
     if params not found will be added to existing hrd
 
-#### def delete(key) 
-
+#### delete 
+- arguments
+    - key
+- comments
     
 
-#### def exists(key) 
-
+#### exists 
+- arguments
+    - key
+- comments
     
 
-#### def get(key,default=None,) 
-
+#### get 
+- arguments
+    - key
+    - default
+- comments
     
 
-#### def getBool(key,default=None) 
-
+#### getBool 
+- arguments
+    - key
+    - default
+- comments
     
 
-#### def getDict(key) 
-
+#### getDict 
+- arguments
+    - key
+- comments
     
 
-#### def getDictFromPrefix(prefix) 
-
+#### getDictFromPrefix 
+- arguments
+    - prefix
+- comments
     returns values from prefix return as list
 
-#### def getFloat(key) 
-
+#### getFloat 
+- arguments
+    - key
+- comments
     
 
-#### def getHRDAsDict() 
-
+#### getHRDAsDict 
+- arguments
+- comments
     
 
-#### def getHrd(key) 
-
+#### getHrd 
+- arguments
+    - key
+- comments
     
 
-#### def getInt(key,default=None) 
-
+#### getInt 
+- arguments
+    - key
+    - default
+- comments
     
 
-#### def getList(key,default=None) 
-
+#### getList 
+- arguments
+    - key
+    - default
+- comments
     
 
-#### def getListFromPrefix(prefix) 
-
+#### getListFromPrefix 
+- arguments
+    - prefix
+- comments
     returns values from prefix return as list
 
-#### def getListFromPrefixEachItemDict(prefix,musthave=[],defaults=OrderedDict(),aredict=OrderedDict(),arelist=[],areint=[],arebool=[]) 
-
+#### getListFromPrefixEachItemDict 
+- arguments
+    - prefix
+    - musthave = []
+    - defaults = OrderedDict()
+    - aredict = OrderedDict()
+    - arelist = []
+    - areint = []
+    - arebool = []
+- comments
     returns values from prefix return as list
     each value represents a dict
     @param musthave means for each item which is dict, we need to have following keys
     @param specifies the defaults
     @param aredicts & arelist specifies which types
 
-#### def getStr(key,default=None) 
-
+#### getStr 
+- arguments
+    - key
+    - default
+- comments
     
 
-#### def listAdd(key,item) 
-
+#### listAdd 
+- arguments
+    - key
+    - item
+- comments
     
 
-#### def pop(key) 
-
+#### pop 
+- arguments
+    - key
+- comments
     
 
-#### def prefix(key,depth=0) 
-
+#### prefix 
+- arguments
+    - key
+    - depth = 0
+- comments
     @param depth means prefix level to return
 
-#### def prefixexists(key) 
-
+#### prefixexists 
+- arguments
+    - key
+- comments
     
 
-#### def processall() 
-
+#### processall 
+- arguments
+- comments
     
 
-#### def set(key,val,persistent=True) 
-
+#### set 
+- arguments
+    - key
+    - val
+    - persistent = True
+- comments
     
 

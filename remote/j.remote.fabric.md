@@ -4,19 +4,27 @@
 - Properties
     - api
 
-#### def help() 
-
+#### help 
+- arguments
+- comments
     
 
-#### def setDefaultPasswd(passwd,host="localhost") 
-
+#### setDefaultPasswd 
+- arguments
+    - passwd
+    - host = 'localhost'
+- comments
     
 
-#### def setHost(host="localhost") 
-
+#### setHost 
+- arguments
+    - host = 'localhost'
+- comments
     
 
-#### def setHosts(hosts=["localhost"]) 
-
+#### setHosts 
+- arguments
+    - hosts = ['localhost']
+- comments
     list of hosts on which the commands will work
 

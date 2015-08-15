@@ -2,15 +2,29 @@
 
 - /opt/jumpscale7/lib/JumpScale/portal/portalloaders/ActorsInfo.py
 
-#### def getActorInfoPage(appname, actorname, methodname, page=None) 
-
+#### getActorInfoPage 
+- arguments
+    - appname
+    - actorname
+    - methodname
+    - page
+- comments
     used for during error show info about 1 actor
 
-#### def getActorMethodCall(appname, actor, method) 
-
+#### getActorMethodCall 
+- arguments
+    - appname
+    - actor
+    - method
+- comments
     used for during error show links to methods in browser
 
-#### def getActorsInfoPage(appname="", actor="", page=None, extraParams=\{\}) 
-
+#### getActorsInfoPage 
+- arguments
+    - appname = ''
+    - actor = ''
+    - page
+    - extraParams = \{\}
+- comments
     
 

@@ -11,25 +11,40 @@
 
 functionality to inspect objectr structure and generate apifile
 
-#### def generateDocs(dest,ignore=[]) 
-
+#### generateDocs 
+- arguments
+    - dest
+    - ignore = []
+- comments
     
 
-#### def importAllLibs(ignore=[],base="/opt/jumpscale7/lib/JumpScale/") 
-
+#### importAllLibs 
+- arguments
+    - ignore = []
+    - base = '/opt/jumpscale7/lib/JumpScale/'
+- comments
     
 
-#### def inspect(objectLocationPath="j",recursive=True,parent=None,obj=None) 
-
+#### inspect 
+- arguments
+    - objectLocationPath = 'j'
+    - recursive = True
+    - parent
+    - obj
+- comments
     walk over objects in memory and create code completion api in jumpscale cfgDir under codecompletionapi
     @param object is start object
     @param objectLocationPath is full location name in object tree e.g. j.system.fs , no need to fill in
 
-#### def raiseError(errormsg) 
-
+#### raiseError 
+- arguments
+    - errormsg
+- comments
     
 
-#### def writeDocs(path) 
-
+#### writeDocs 
+- arguments
+    - path
+- comments
     
 

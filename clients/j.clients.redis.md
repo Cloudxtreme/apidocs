@@ -9,64 +9,115 @@
 
     
 
-#### def checkAllInstances() 
-
+#### checkAllInstances 
+- arguments
+- comments
     
 
-#### def configureInstance(name, port, maxram=200, appendonly=True,snapshot=False,slave=(),ismaster=False,passwd=None,unixsocket=False) 
-
+#### configureInstance 
+- arguments
+    - name
+    - port
+    - maxram = 200
+    - appendonly = True
+    - snapshot = False
+    - slave = ()
+    - ismaster = False
+    - passwd
+    - unixsocket = False
+- comments
     @param maxram = MB of ram
     slave example: (192.168.10.10,8888,asecret)   (ip,port,secret)
 
-#### def deleteInstance(name) 
-
+#### deleteInstance 
+- arguments
+    - name
+- comments
     
 
-#### def emptyAllInstances() 
-
+#### emptyAllInstances 
+- arguments
+- comments
     
 
-#### def emptyInstance(name) 
-
+#### emptyInstance 
+- arguments
+    - name
+- comments
     
 
-#### def getByInstance(instance, gevent=False) 
-
+#### getByInstance 
+- arguments
+    - instance
+    - gevent = False
+- comments
     
 
-#### def getGeventRedisClient(ipaddr, port, fromcache=True,password="") 
-
+#### getGeventRedisClient 
+- arguments
+    - ipaddr
+    - port
+    - fromcache = True
+    - password = ''
+- comments
     
 
-#### def getGeventRedisQueue(ipaddr, port, name, namespace="queues", fromcache=False) 
-
+#### getGeventRedisQueue 
+- arguments
+    - ipaddr
+    - port
+    - name
+    - namespace = 'queues'
+    - fromcache = False
+- comments
     
 
-#### def getPort(name) 
-
+#### getPort 
+- arguments
+    - name
+- comments
     
 
-#### def getProcessPids(name) 
-
+#### getProcessPids 
+- arguments
+    - name
+- comments
     
 
-#### def getRedisClient(ipaddr, port, password="", fromcache=True) 
-
+#### getRedisClient 
+- arguments
+    - ipaddr
+    - port
+    - password = ''
+    - fromcache = True
+- comments
     
 
-#### def getRedisQueue(ipaddr, port, name, namespace="queues", fromcache=True) 
-
+#### getRedisQueue 
+- arguments
+    - ipaddr
+    - port
+    - name
+    - namespace = 'queues'
+    - fromcache = True
+- comments
     
 
-#### def isRunning(name) 
-
+#### isRunning 
+- arguments
+    - name
+- comments
     
 
-#### def startInstance(name) 
-
+#### startInstance 
+- arguments
+    - name
+- comments
     
 
-#### def stopInstance(name) 
-
+#### stopInstance 
+- arguments
+    - name
+- comments
     
 

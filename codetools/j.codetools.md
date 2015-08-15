@@ -7,17 +7,23 @@
     - templateengine
     - codemanager
 
-#### def getTextFileEditor(filepath) 
-
+#### getTextFileEditor 
+- arguments
+    - filepath
+- comments
     returns a class which helps you to edit a text file
     e.g. find blocks, replace lines, ...
 
-#### def getWordReplacerTool() 
-
+#### getWordReplacerTool 
+- arguments
+- comments
     
 
-#### def textToTitle(text,maxnrchars=60) 
-
+#### textToTitle 
+- arguments
+    - text
+    - maxnrchars = 60
+- comments
     try to create a title out of text, ignoring irrelevant words and making lower case and removing 
     not needed chars
 

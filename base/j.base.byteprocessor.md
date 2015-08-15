@@ -14,39 +14,60 @@
 
 ByteProcessor
 
-#### @staticmethod 
-
+#### compress 
+- arguments
+    - s
+- comments
     
 
-#### @staticmethod 
-
+#### decompress 
+- arguments
+    - s
+- comments
     
 
-#### @staticmethod 
-
+#### disperse 
+- arguments
+    - s
+    - nrblocks
+    - extrablocks
+    - compress = True
+- comments
     returns DispersedBlock object
 
-#### @staticmethod 
-
+#### getDispersedBlockObject 
+- arguments
+- comments
     
 
-#### @staticmethod 
-
+#### hashMd5 
+- arguments
+    - s
+- comments
     
 
-#### @staticmethod 
-
+#### hashTiger160 
+- arguments
+    - s
+- comments
     
 
-#### @staticmethod 
-
+#### hashTiger160bin 
+- arguments
+    - s
+- comments
     
 
-#### @staticmethod 
-
+#### hashTiger192 
+- arguments
+    - s
+- comments
     
 
-#### @staticmethod 
-
+#### undisperse 
+- arguments
+    - dispersedBlockObject
+    - uncompress = True
+- comments
     
 
